@@ -1,0 +1,25 @@
+# 
+# Wavefront material file
+# Created with Kaydara FBX
+# 
+
+newmtl Trunk
+map_Kd deciduous-tree-bark-texture-1236954294_31.jpg
+Ka 0.000000 0.000000 0.000000
+Kd 0.800000 0.800000 0.800000
+illum 1
+Tr 1.000000
+
+newmtl leaves02__leaf_branch_02_01_512_png_002
+map_Kd leaf.png
+Ka 0.000000 0.000000 0.000000
+Kd 1.000000 1.000000 1.000000
+illum 1
+Tr 1.000000
+
+newmtl lambert2
+map_Kd leaf.png
+Ka 0.000000 0.000000 0.000000
+Kd 1.000000 1.000000 1.000000
+illum 1
+Tr 1.000000

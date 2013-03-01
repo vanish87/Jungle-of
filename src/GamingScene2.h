@@ -42,6 +42,8 @@ namespace Jungle
 		vector<ofxAssimpModelLoader> trees_;
 		ofVec3f shadow_pos_;
 		ofCamera main_camera_;
+        
+        ofVec3f look_at_;
 		ofLight light_;
 
 		int w_;

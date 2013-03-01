@@ -68,7 +68,7 @@
         </RIGHT>
     </POSE>
     <POSE>
-        <NAME>GIRAFFE</NAME>
+        <NAME>TREE</NAME>
         <TIMEMIN>15</TIMEMIN>
         <LEFT>
             <HAND>2</HAND>
@@ -78,7 +78,44 @@
             <SHOULDER>8</SHOULDER>
             <HAND>2</HAND>
         </RIGHT>
+    </POSE>    
+    <POSE>
+        <NAME>TREE</NAME>
+        <TIMEMIN>15</TIMEMIN>
+        <LEFT>
+            <HAND>2</HAND>
+            <SHOULDER>9</SHOULDER>
+        </LEFT>
+        <RIGHT>
+            <SHOULDER>7</SHOULDER>
+            <HAND>2</HAND>
+        </RIGHT>
     </POSE>
+    <POSE>
+        <NAME>TREE</NAME>
+        <TIMEMIN>15</TIMEMIN>
+        <LEFT>
+            <HAND>1</HAND>
+            <SHOULDER>8</SHOULDER>
+        </LEFT>
+        <RIGHT>
+            <SHOULDER>8</SHOULDER>
+            <HAND>3</HAND>
+        </RIGHT>
+    </POSE>
+    <POSE>
+        <NAME>TREE</NAME>
+        <TIMEMIN>15</TIMEMIN>
+        <LEFT>
+            <HAND>3</HAND>
+            <SHOULDER>8</SHOULDER>
+        </LEFT>
+        <RIGHT>
+            <SHOULDER>8</SHOULDER>
+            <HAND>1</HAND>
+        </RIGHT>
+    </POSE>
+    
     <POSE>
         <NAME>SUPERMAN</NAME>
         <TIMEMIN>15</TIMEMIN>
