@@ -28,13 +28,26 @@ namespace Jungle
 		shadow_.setPosition(0,1,0);
 		shadow_.setScale(0.01,0.0001,0.01);
 		
-		bird_enable_ = true;
+		bird_enable_ = false;
 		if(bird_enable_)
 		{
 			bird_.loadModel("smooth_birdy.dae");
 			bird_.setPosition(0,1,0);
 			bird_.setScale(0.01,0.01,0.01);
 		}
+
+		hand_.loadImage("hand.png");
+		tree_button_1_.loadImage("button_interface_notpressed_02.png");
+		tree_button_pos_1_ = ofPoint(w_*7/8, 0);
+		button_1_time_= 0;
+
+		tree_button_2_.loadImage("button_interface_notpressed_02.png");
+		tree_button_pos_2_ = ofPoint(w_*7/8, h_ * 1/5);
+		button_2_time_ = 0;
+
+		loading_.loadImage("hourglass_placeholder_02.gif");
+		loading_pos_ = ofPoint(-1,-1);
+
 
 		light_.setPosition(0, 50, 50);
         //light_.setSpotlight();
@@ -60,9 +73,9 @@ namespace Jungle
 	{
         //light_.setOrientation(shadow_pos_);
 		ofxUser* user = JungleApp::KinectInstance().users;
-		for(int i =0; i< 1; ++i)
+		for(int i =0; i< MAX_USERS; ++i)
 		{
-			if(user[i].isActive&& user[i].isIni)
+			if(user[i].isActive&& user[i].bones)
 			{
 				Bones bone = user[i].bonesPoints;
 				ofVec3f torsor_pos = bone.torso;
@@ -131,12 +144,63 @@ namespace Jungle
 
 					bird_.updateAnimation(1);
 				}
+
+				ofVec3f lh_pos = bone.right_hand;
+				hand_pos_.x = ofMap(lh_pos.x , 160, 480, 0, 1280-80, true);
+				hand_pos_.y = ofMap(lh_pos.y , 120, 360, 0, 720-80, true);
+
+			}
+		}
+
+		ofRectangle hand_rec = ofRectangle(hand_pos_.x,hand_pos_.y, 80,80);
+		ofRectangle button_1_rec = ofRectangle(tree_button_pos_1_.x,tree_button_pos_1_.y, 150,150);
+		ofRectangle button_2_rec = ofRectangle(tree_button_pos_2_.x,tree_button_pos_2_.y, 150,150);
+
+		if(hand_rec.intersects(button_1_rec))			
+		{
+
+			tree_button_2_.loadImage("button_interface_notpressed_02.png");
+			button_1_time_ += ofGetLastFrameTime();
+			loading_pos_ = tree_button_pos_1_;
+			loading_pos_ += 30;
+			if(button_1_time_ > 2.0f)
+			{
+				button_1_time_ = 0;
+				loading_pos_.x= -1;
+				tree_button_1_.loadImage("button_interface_pressed_01.png");
+				cout<<"Inter with 1"<<endl;
+			}
+		}
+		else
+		{
+			button_1_time_ = 0;
+			loading_pos_.x= -1;
+			tree_button_1_.loadImage("button_interface_notpressed_02.png");
+			if(hand_rec.intersects(button_2_rec))
+			{
+				button_2_time_ += ofGetLastFrameTime();
+				loading_pos_ = tree_button_pos_2_;
+				loading_pos_ += 30;
+				if(button_2_time_ > 2.0f)
+				{
+					button_2_time_ = 0;
+					loading_pos_.x= -1;
+					tree_button_2_.loadImage("button_interface_pressed_01.png");
+					cout<<"Inter with 2"<<endl;
+				}
+			}
+			else
+			{
+				button_2_time_ = 0;
+				loading_pos_.x= -1;
+				tree_button_2_.loadImage("button_interface_notpressed_02.png");
 			}
 		}
 	}
 
 	void GamingScene2::Draw()
 	{
+		ofEnableBlendMode(OF_BLENDMODE_ALPHA);
         ofSetColor(255, 255, 255);
 		main_camera_.begin();
 		glPushMatrix();
@@ -158,6 +222,16 @@ namespace Jungle
 			ofScale(0.4, 0.4);
 			JungleApp::KinectInstance().debugDraw();
 			glPopMatrix();
+		}
+
+		//draw GUI
+		tree_button_1_.draw(tree_button_pos_1_.x, tree_button_pos_1_.y, 0, 150, 150);
+		tree_button_2_.draw(tree_button_pos_2_.x, tree_button_pos_2_.y, 0, 150, 150);
+		
+		hand_.draw(hand_pos_.x,hand_pos_.y, 0 ,80,80);
+		if(loading_pos_.x >=0)
+		{
+			loading_.draw(loading_pos_.x, loading_pos_.y, 50, 50);
 		}
 	}
 
@@ -271,7 +345,7 @@ namespace Jungle
 						can_add = false;
 					}
 				}
-				if(can_add)
+				if(can_add && user.velF < 10.0f)
 				{
 					ofxAssimpModelLoader new_tree;
 					new_tree.loadModel("Abstratc_tree.dae");

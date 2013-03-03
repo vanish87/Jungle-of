@@ -82,3 +82,10 @@ Desktop.ini
 .mailmap
 
 .DS_Store
+
+/bin/*.exe
+/bin/*.dll
+/bin/*.exp
+/bin/*.ilk
+/bin/*.lib
+/bin/*.pdb

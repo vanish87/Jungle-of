@@ -68,6 +68,66 @@
         </RIGHT>
     </POSE>
     <POSE>
+      <NAME>LEFT</NAME>
+      <TIMEMIN>15</TIMEMIN>
+      <LEFT>
+        <HAND>1</HAND>
+        <SHOULDER>3</SHOULDER>
+      </LEFT>
+      <RIGHT>
+        <SHOULDER>2</SHOULDER>
+        <HAND>8</HAND>
+      </RIGHT>
+    </POSE>
+     <POSE>
+      <NAME>LEFT</NAME>
+      <TIMEMIN>15</TIMEMIN>
+      <LEFT>
+        <HAND>2</HAND>
+        <SHOULDER>3</SHOULDER>
+      </LEFT>
+      <RIGHT>
+        <SHOULDER>2</SHOULDER>
+        <HAND>8</HAND>
+      </RIGHT>
+    </POSE>
+    <POSE>
+      <NAME>LEFT</NAME>
+      <TIMEMIN>15</TIMEMIN>
+      <LEFT>
+        <HAND>3</HAND>
+        <SHOULDER>3</SHOULDER>
+      </LEFT>
+      <RIGHT>
+        <SHOULDER>2</SHOULDER>
+        <HAND>8</HAND>
+      </RIGHT>
+    </POSE>
+    <POSE>
+      <NAME>LEFT</NAME>
+      <TIMEMIN>15</TIMEMIN>
+      <LEFT>
+        <HAND>4</HAND>
+        <SHOULDER>3</SHOULDER>
+      </LEFT>
+      <RIGHT>
+        <SHOULDER>2</SHOULDER>
+        <HAND>8</HAND>
+      </RIGHT>
+    </POSE>
+    <POSE>
+      <NAME>LEFT</NAME>
+      <TIMEMIN>15</TIMEMIN>
+      <LEFT>
+        <HAND>5</HAND>
+        <SHOULDER>3</SHOULDER>
+      </LEFT>
+      <RIGHT>
+        <SHOULDER>2</SHOULDER>
+        <HAND>8</HAND>
+      </RIGHT>
+    </POSE>
+    <POSE>
         <NAME>TREE</NAME>
         <TIMEMIN>15</TIMEMIN>
         <LEFT>
@@ -291,4 +351,14 @@
 </NATGESTURES>
 <TUIO>
     <ABSOLUTE>1</ABSOLUTE>
+    <HANDAREA>
+      <WIDTH>500</WIDTH>
+      <HEIGHT>500</HEIGHT>
+      <DEPTH>300</DEPTH>
+    </HANDAREA>
+    <Z>1</Z>
+    <PUSHCLICK>1</PUSHCLICK>
+    <TRIGGERS>
+      <LEFTHAND>ALLTIME</LEFTHAND>    
+    </TRIGGERS>
 </TUIO>

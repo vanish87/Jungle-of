@@ -46,6 +46,19 @@ namespace Jungle
         ofVec3f look_at_;
 		ofLight light_;
 
+		ofImage hand_;
+		ofPoint hand_pos_;
+
+		ofImage tree_button_1_;
+		ofPoint tree_button_pos_1_;
+		float button_1_time_;
+		ofImage tree_button_2_;
+		ofPoint tree_button_pos_2_;
+		float button_2_time_;
+
+		ofImage loading_;
+		ofPoint loading_pos_;
+
 		int w_;
 		int h_;
 		int x_;
