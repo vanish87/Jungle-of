@@ -158,7 +158,6 @@ namespace Jungle
 
 		if(hand_rec.intersects(button_1_rec))			
 		{
-
 			tree_button_2_.loadImage("button_interface_notpressed_02.png");
 			button_1_time_ += ofGetLastFrameTime();
 			loading_pos_ = tree_button_pos_1_;
