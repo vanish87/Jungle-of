@@ -57,7 +57,8 @@ namespace Jungle
 	void JungleApp::keyReleased(int key){
 		switch (key) 
 		{
-#if defined HARDWARE
+#if defined (TARGET_OSX)
+#ifdef HARDWARE
 			//adjust kinect camera
 			case 357: // up key
 				KinectInstance().CameraMoveUp();
@@ -66,6 +67,7 @@ namespace Jungle
 			case 359: // down key
 				KinectInstance().CameraMoveDown();
 				break;
+#endif
 #endif
 			default:
 				break;
