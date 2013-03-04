@@ -7,6 +7,7 @@
 
 namespace Jungle
 {
+    static const int MAX_SPEED = 1;
 	class GamingScene2
 		:public State
 	{
@@ -38,6 +39,10 @@ namespace Jungle
 		ofxAssimpModelLoader stage_;
 		ofxAssimpModelLoader shadow_;
 		ofxAssimpModelLoader bird_;
+        ofVec3f bird_pos_;
+        float bird_speed_;
+        bool flying_;
+        
 		bool bird_enable_;
 		vector<ofxAssimpModelLoader> trees_;
 		ofVec3f shadow_pos_;
@@ -52,9 +57,12 @@ namespace Jungle
 		ofImage tree_button_1_;
 		ofPoint tree_button_pos_1_;
 		float button_1_time_;
+        bool button_1_pressed_;
+        
 		ofImage tree_button_2_;
 		ofPoint tree_button_pos_2_;
-		float button_2_time_;
+		float button_2_time_;        
+        bool button_2_pressed_;
 
 		ofImage loading_;
 		ofPoint loading_pos_;

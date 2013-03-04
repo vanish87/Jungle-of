@@ -57,7 +57,7 @@
 <POSES>
     <POSE>
         <NAME>DANVINCI</NAME>
-        <TIMEMIN>15</TIMEMIN>
+        <TIMEMIN>1</TIMEMIN>
         <LEFT>
             <HAND>4</HAND>
             <SHOULDER>6</SHOULDER>
@@ -65,6 +65,30 @@
         <RIGHT>
             <SHOULDER>4</SHOULDER>
             <HAND>6</HAND>
+        </RIGHT>
+    </POSE>
+    <POSE>
+        <NAME>DANVINCI</NAME>
+        <TIMEMIN>1</TIMEMIN>
+        <LEFT>
+            <HAND>1</HAND>
+            <SHOULDER>6</SHOULDER>
+        </LEFT>
+        <RIGHT>
+            <SHOULDER>4</SHOULDER>
+            <HAND>3</HAND>
+        </RIGHT>
+    </POSE>
+    <POSE>
+        <NAME>DANVINCI</NAME>
+        <TIMEMIN>1</TIMEMIN>
+        <LEFT>
+            <HAND>7</HAND>
+            <SHOULDER>3</SHOULDER>
+        </LEFT>
+        <RIGHT>
+            <SHOULDER>1</SHOULDER>
+            <HAND>9</HAND>
         </RIGHT>
     </POSE>
     <POSE>

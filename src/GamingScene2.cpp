@@ -18,32 +18,37 @@ namespace Jungle
 		h_ = ofGetWindowHeight();
 		x_ = ofGetWindowPositionX();
 		y_ = ofGetWindowPositionY();
-		stage_.loadModel("stage_04.dae");
-		stage_.setPosition(0, 0, 0);
-
-		stage_.setRotation(2, 180, 0, 0, 1);
-		stage_.setScale(0.1,0.1,0.1);
+		stage_.loadModel("Tree_Stage_Smooth.dae");
+		stage_.setPosition(0, -139, 0);        
+		stage_.setScale(0.5,0.5,0.5);
+		stage_.setRotation(0, 180, 0, 0, 1);
+        stage_.setRotation(1, -90, 0, 1, 0);
 
 		shadow_.loadModel("shadow.dae");
-		shadow_.setPosition(0,1,0);
+		shadow_.setPosition(0,0,0);
 		shadow_.setScale(0.01,0.0001,0.01);
 		
 		bird_enable_ = false;
-		if(bird_enable_)
+		//if(bird_enable_)
 		{
 			bird_.loadModel("smooth_birdy.dae");
-			bird_.setPosition(0,1,0);
-			bird_.setScale(0.01,0.01,0.01);
+            bird_pos_ = ofVec3f(0,3.5,0);
+			bird_.setPosition(bird_pos_.x,bird_pos_.y,bird_pos_.z);
+			bird_.setScale(0.001,0.001,0.001);
+            bird_speed_ = 0.1;
+            flying_ = false;
 		}
 
 		hand_.loadImage("hand.png");
 		tree_button_1_.loadImage("button_interface_notpressed_02.png");
 		tree_button_pos_1_ = ofPoint(w_*7/8, 0);
 		button_1_time_= 0;
+        button_1_pressed_ = false;
 
 		tree_button_2_.loadImage("button_interface_notpressed_02.png");
 		tree_button_pos_2_ = ofPoint(w_*7/8, h_ * 1/5);
 		button_2_time_ = 0;
+        button_2_pressed_ = false;
 
 		loading_.loadImage("hourglass_placeholder_02.gif");
 		loading_pos_ = ofPoint(-1,-1);
@@ -56,8 +61,8 @@ namespace Jungle
 		light_.enable();
         //light_.
 
-		main_camera_.setPosition(ofVec3f(0, 10, 50));
-        look_at_ = ofVec3f(0,0,0);
+		main_camera_.setPosition(ofVec3f(0, 3.5, 10));
+        look_at_ = ofVec3f(0,3.5,0);
 		main_camera_.lookAt(look_at_);
 
 		ofBackground(0);
@@ -167,6 +172,7 @@ namespace Jungle
 				button_1_time_ = 0;
 				loading_pos_.x= -1;
 				tree_button_1_.loadImage("button_interface_pressed_01.png");
+                button_1_pressed_ = true;
 				cout<<"Inter with 1"<<endl;
 			}
 		}
@@ -174,7 +180,7 @@ namespace Jungle
 		{
 			button_1_time_ = 0;
 			loading_pos_.x= -1;
-			tree_button_1_.loadImage("button_interface_notpressed_02.png");
+			//tree_button_1_.loadImage("button_interface_notpressed_02.png");
 			if(hand_rec.intersects(button_2_rec))
 			{
 				button_2_time_ += ofGetLastFrameTime();
@@ -185,6 +191,7 @@ namespace Jungle
 					button_2_time_ = 0;
 					loading_pos_.x= -1;
 					tree_button_2_.loadImage("button_interface_pressed_01.png");
+                    button_2_pressed_ = true;
 					cout<<"Inter with 2"<<endl;
 				}
 			}
@@ -192,9 +199,29 @@ namespace Jungle
 			{
 				button_2_time_ = 0;
 				loading_pos_.x= -1;
-				tree_button_2_.loadImage("button_interface_notpressed_02.png");
+				//tree_button_2_.loadImage("button_interface_notpressed_02.png");
 			}
 		}
+        
+        
+        if(button_1_pressed_ && button_2_pressed_)
+        { 
+            
+            if(bird_pos_.y > 0)
+                bird_pos_.y -= bird_speed_*0.1;
+            bird_pos_.x = shadow_pos_.x/10;
+            bird_pos_.z = shadow_pos_.z/10;
+            
+            ofVec3f pos = main_camera_.getPosition();
+            pos.y = bird_pos_.y;
+            main_camera_.setPosition(pos);
+            look_at_ = bird_pos_;
+            main_camera_.lookAt(look_at_);
+            bird_enable_= true;
+            
+            bird_.setPosition(bird_pos_.x,bird_pos_.y,bird_pos_.z);
+
+        }
 	}
 
 	void GamingScene2::Draw()
@@ -254,11 +281,13 @@ namespace Jungle
                 break;	
             case 'q':
                 pos.y++;
+                look_at_.y++;
                 main_camera_.setPosition(pos);                
                 main_camera_.lookAt(look_at_);
                 break;
             case 'z':
                 pos.y--;
+                look_at_.y--;
                 main_camera_.setPosition(pos);
                 main_camera_.lookAt(look_at_);
                 break;
@@ -301,6 +330,10 @@ namespace Jungle
 			shadow_pos_ . x++;
 			shadow_.setPosition(shadow_pos_.x, shadow_pos_.y, shadow_pos_.z);
 			break;
+        case 'v':     
+            bird_pos_.y+=bird_speed_;
+            cout<<bird_pos_.y<<endl;
+            break;
 		default:
 			break;
 		}
@@ -359,6 +392,10 @@ namespace Jungle
 
 			}
 		}
+        if(user.pose == "DANVINCI")
+		{
+            bird_pos_.y+=bird_speed_;
+        }
 	}
 
 	void GamingScene2::inGesture( ofxUser & user )
