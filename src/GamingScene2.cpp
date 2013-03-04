@@ -57,6 +57,11 @@ namespace Jungle
 		button_2_time_ = 0;
         button_2_pressed_ = false;
 
+		sphere_pos_ = ofVec3f(0, 10.5, 0);
+		sphere_radius_ = 1;
+		stayed_time_ = 0;
+		sphere_collided_ = false;
+
 		loading_.loadImage("hourglass_placeholder_02.gif");
 		loading_pos_ = ofPoint(-1,-1);
 
@@ -168,9 +173,10 @@ namespace Jungle
 		ofRectangle hand_rec = ofRectangle(hand_pos_.x,hand_pos_.y, 80,80);
 		ofRectangle button_1_rec = ofRectangle(tree_button_pos_1_.x,tree_button_pos_1_.y, 150,150);
 		ofRectangle button_2_rec = ofRectangle(tree_button_pos_2_.x,tree_button_pos_2_.y, 150,150);
-		
+			
 		if(button_1_pressed_ && button_2_pressed_)
 		{ 
+			sphere_collided_ = false;
 			hand_pos_.x = -1;
 			hand_rec = ofRectangle(hand_pos_.x,hand_pos_.y, 80,80);
 			if(bird_pos_.y > 3.5)
@@ -230,6 +236,19 @@ namespace Jungle
 				//tree_button_2_.loadImage("button_interface_notpressed_02.png");
 			}
 		}
+
+		float dis_to_bird = ofDistSquared(bird_pos_.x, bird_pos_.y, sphere_pos_.x, sphere_pos_.y);
+		if(dis_to_bird < sphere_radius_ && (button_1_pressed_ && button_2_pressed_))
+		{
+			stayed_time_+= ofGetLastFrameTime();
+			if(stayed_time_ > 2)
+			{
+				stayed_time_ = 0;
+				sphere_collided_ = true;
+				button_1_pressed_ = false;
+				button_2_pressed_ = false;
+			}
+		}
         
         
 
@@ -249,6 +268,9 @@ namespace Jungle
 			trees_[i].drawFaces();
 		if(bird_enable_)
 			bird_.drawFaces();
+		if(sphere_collided_)
+			ofSetColor(0, 255, 0);	
+		ofSphere(sphere_pos_.x,sphere_pos_.y,sphere_pos_.z, sphere_radius_);
 		glPopMatrix();
 		glDisable(GL_DEPTH_TEST);
 		main_camera_.end();
@@ -260,9 +282,10 @@ namespace Jungle
 			ofScale(0.4, 0.4);
 			JungleApp::KinectInstance().debugDraw();
 			glPopMatrix();
-			ofSetColor(255, 255, 255);	
 		}
 
+
+		ofSetColor(255, 255, 255);	
 		//draw GUI
 		tree_button_1_.draw(tree_button_pos_1_.x, tree_button_pos_1_.y, 0, 150, 150);
 		tree_button_2_.draw(tree_button_pos_2_.x, tree_button_pos_2_.y, 0, 150, 150);

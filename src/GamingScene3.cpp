@@ -29,7 +29,7 @@ namespace Jungle
 		shadow_.setScale(0.01,0.0001,0.01);
 
 		bird_enable_ = false;
-		if(bird_enable_)
+		//if(bird_enable_)
 		{
 			bird_.loadModel("smooth_birdy.dae");
 			bird_.setPosition(0,1,0);
@@ -227,6 +227,9 @@ namespace Jungle
 
 			shadow_pos_ . x++;
 			shadow_.setPosition(shadow_pos_.x, shadow_pos_.y, shadow_pos_.z);
+			break;
+		case 'b':
+			bird_enable_ = !bird_enable_;
 			break;
 		default:
 			break;

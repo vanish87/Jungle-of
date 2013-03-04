@@ -65,6 +65,11 @@ namespace Jungle
 		float button_2_time_;        
         bool button_2_pressed_;
 
+		ofVec3f sphere_pos_;
+		float sphere_radius_;
+		float stayed_time_;
+		bool sphere_collided_;
+
 		ofImage loading_;
 		ofPoint loading_pos_;
 
