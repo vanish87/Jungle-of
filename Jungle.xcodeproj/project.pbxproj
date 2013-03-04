@@ -58,6 +58,7 @@
 		BC0193A016D17D6600867BBC /* OscPrintReceivedElements.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BC01939416D17D6600867BBC /* OscPrintReceivedElements.cpp */; };
 		BC0193A116D17D6600867BBC /* OscReceivedElements.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BC01939616D17D6600867BBC /* OscReceivedElements.cpp */; };
 		BC0193A216D17D6600867BBC /* OscTypes.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BC01939816D17D6600867BBC /* OscTypes.cpp */; };
+		BC42777316E4664B00FF4CFE /* GamingScene3.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BC42777116E4664B00FF4CFE /* GamingScene3.cpp */; };
 		BC48739B16DBFAD9009E7B19 /* Animal.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BC48739A16DBFAD9009E7B19 /* Animal.cpp */; };
 		BCAF17D116DA0C790067261D /* ofxGifDecoder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BCAF17CB16DA0C790067261D /* ofxGifDecoder.cpp */; };
 		BCAF17D216DA0C790067261D /* ofxGifFile.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BCAF17CD16DA0C790067261D /* ofxGifFile.cpp */; };
@@ -379,6 +380,8 @@
 		BC01939816D17D6600867BBC /* OscTypes.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = OscTypes.cpp; sourceTree = "<group>"; };
 		BC01939916D17D6600867BBC /* OscTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OscTypes.h; sourceTree = "<group>"; };
 		BC0193A316D1837400867BBC /* config.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = config.xml; path = bin/data/config.xml; sourceTree = SOURCE_ROOT; };
+		BC42777116E4664B00FF4CFE /* GamingScene3.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GamingScene3.cpp; sourceTree = "<group>"; };
+		BC42777216E4664B00FF4CFE /* GamingScene3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GamingScene3.h; sourceTree = "<group>"; };
 		BC48739916DBFACC009E7B19 /* Animal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Animal.h; sourceTree = "<group>"; };
 		BC48739A16DBFAD9009E7B19 /* Animal.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Animal.cpp; sourceTree = "<group>"; };
 		BCAF17CB16DA0C790067261D /* ofxGifDecoder.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxGifDecoder.cpp; sourceTree = "<group>"; };
@@ -1097,6 +1100,8 @@
 		E4B69E1C0A3A1BDC003C02F2 /* src */ = {
 			isa = PBXGroup;
 			children = (
+				BC42777116E4664B00FF4CFE /* GamingScene3.cpp */,
+				BC42777216E4664B00FF4CFE /* GamingScene3.h */,
 				BCDA581216DFE70100EC5ED9 /* GamingScene2.cpp */,
 				BCDA581316DFE70100EC5ED9 /* GamingScene2.h */,
 				BCAF17D416DAA6630067261D /* GamingScene_1.cpp */,
@@ -1255,6 +1260,7 @@
 				BCAF17E116DAA6630067261D /* StateManager.cpp in Sources */,
 				BC48739B16DBFAD9009E7B19 /* Animal.cpp in Sources */,
 				BCDA581416DFE70100EC5ED9 /* GamingScene2.cpp in Sources */,
+				BC42777316E4664B00FF4CFE /* GamingScene3.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
