@@ -24,7 +24,7 @@ namespace Jungle
 	{
 		if(op == SOP_PUSH)
 		{
-			game_state->Steup();
+			if(current_state_ == game_state) return;
 			game_state->SetParent(current_state_);
 			current_state_ = game_state;
 		}

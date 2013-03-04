@@ -1,5 +1,5 @@
-#ifndef GAMESCENE2_
-#define GAMESCENE2_
+#ifndef GAMESCENE3_
+#define GAMESCENE3_
 
 #pragma once
 #include "State.h"
@@ -7,13 +7,12 @@
 
 namespace Jungle
 {
-    static const int MAX_SPEED = 1;
-	class GamingScene2
+	class GamingScene3
 		:public State
 	{
 	public:
-		GamingScene2(void);
-		~GamingScene2(void);
+		GamingScene3(void);
+		~GamingScene3(void);
 
 		virtual void Steup();
 
@@ -37,36 +36,15 @@ namespace Jungle
 
 	private:
 		ofxAssimpModelLoader stage_;
-		ofxAssimpModelLoader background_;
 		ofxAssimpModelLoader shadow_;
 		ofxAssimpModelLoader bird_;
-        ofVec3f bird_pos_;
-        float bird_speed_;
-        bool flying_;
-        
 		bool bird_enable_;
 		vector<ofxAssimpModelLoader> trees_;
 		ofVec3f shadow_pos_;
 		ofCamera main_camera_;
-        
-        ofVec3f look_at_;
+
+		ofVec3f look_at_;
 		ofLight light_;
-
-		ofImage hand_;
-		ofPoint hand_pos_;
-
-		ofImage tree_button_1_;
-		ofPoint tree_button_pos_1_;
-		float button_1_time_;
-        bool button_1_pressed_;
-        
-		ofImage tree_button_2_;
-		ofPoint tree_button_pos_2_;
-		float button_2_time_;        
-        bool button_2_pressed_;
-
-		ofImage loading_;
-		ofPoint loading_pos_;
 
 		int w_;
 		int h_;
@@ -77,4 +55,3 @@ namespace Jungle
 }
 
 #endif
-

@@ -6,6 +6,7 @@
 #include "StateManager.h"
 #include "GamingScene_1.h"
 #include "GamingScene2.h"
+#include "GamingScene3.h"
 
 namespace Jungle
 {
@@ -30,6 +31,7 @@ namespace Jungle
 	private:
 		GamingScene_1* game_1_;
 		GamingScene2* game_2_;
+		GamingScene3* game_3_;
 
 
 		void	inPose(ofxUser & user);

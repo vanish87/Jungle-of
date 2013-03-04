@@ -23,6 +23,13 @@ namespace Jungle
 		stage_.setScale(0.5,0.5,0.5);
 		stage_.setRotation(0, 180, 0, 0, 1);
         stage_.setRotation(1, -90, 0, 1, 0);
+		background_.loadModel("background.dae");
+		background_.setPosition(18, -70, -10);        
+		background_.setScale(1 , 0.3 ,0.5);
+		background_.setRotation(0, 180, 0, 0, 1);
+		background_.setRotation(1, -90, 0, 1, 0);
+		background_.disableMaterials();
+		background_.disableNormals();
 
 		shadow_.loadModel("shadow.dae");
 		shadow_.setPosition(0,0,0);
@@ -32,9 +39,9 @@ namespace Jungle
 		//if(bird_enable_)
 		{
 			bird_.loadModel("smooth_birdy.dae");
-            bird_pos_ = ofVec3f(0,3.5,0);
+            bird_pos_ = ofVec3f(2,3.5,5);
 			bird_.setPosition(bird_pos_.x,bird_pos_.y,bird_pos_.z);
-			bird_.setScale(0.001,0.001,0.001);
+			bird_.setScale(0.003,0.003,0.003);
             bird_speed_ = 0.1;
             flying_ = false;
 		}
@@ -53,7 +60,8 @@ namespace Jungle
 		loading_.loadImage("hourglass_placeholder_02.gif");
 		loading_pos_ = ofPoint(-1,-1);
 
-
+		ofDisableSeparateSpecularLight();
+		light_.setSpecularColor(ofFloatColor(0, 0, 0));
 		light_.setPosition(0, 50, 50);
         //light_.setSpotlight();
         //light_.setSpotlightCutOff(30);
@@ -61,8 +69,8 @@ namespace Jungle
 		light_.enable();
         //light_.
 
-		main_camera_.setPosition(ofVec3f(0, 3.5, 10));
-        look_at_ = ofVec3f(0,3.5,0);
+		main_camera_.setPosition(ofVec3f(2, 3.5, 12));
+        look_at_ = ofVec3f(2,3.5,0);
 		main_camera_.lookAt(look_at_);
 
 		ofBackground(0);
@@ -160,6 +168,26 @@ namespace Jungle
 		ofRectangle hand_rec = ofRectangle(hand_pos_.x,hand_pos_.y, 80,80);
 		ofRectangle button_1_rec = ofRectangle(tree_button_pos_1_.x,tree_button_pos_1_.y, 150,150);
 		ofRectangle button_2_rec = ofRectangle(tree_button_pos_2_.x,tree_button_pos_2_.y, 150,150);
+		
+		if(button_1_pressed_ && button_2_pressed_)
+		{ 
+			hand_pos_.x = -1;
+			hand_rec = ofRectangle(hand_pos_.x,hand_pos_.y, 80,80);
+			if(bird_pos_.y > 3.5)
+				bird_pos_.y -= bird_speed_*0.1;
+			bird_pos_.x = shadow_pos_.x/10 ;
+			bird_pos_.z = shadow_pos_.z/10 - 2;
+
+			ofVec3f pos = main_camera_.getPosition();
+			pos.y = bird_pos_.y;
+			main_camera_.setPosition(pos);
+			look_at_ = bird_pos_;
+			main_camera_.lookAt(look_at_);
+			bird_enable_= true;
+
+			bird_.setPosition(bird_pos_.x,bird_pos_.y,bird_pos_.z);
+
+		}
 
 		if(hand_rec.intersects(button_1_rec))			
 		{
@@ -204,33 +232,17 @@ namespace Jungle
 		}
         
         
-        if(button_1_pressed_ && button_2_pressed_)
-        { 
-            
-            if(bird_pos_.y > 0)
-                bird_pos_.y -= bird_speed_*0.1;
-            bird_pos_.x = shadow_pos_.x/10;
-            bird_pos_.z = shadow_pos_.z/10;
-            
-            ofVec3f pos = main_camera_.getPosition();
-            pos.y = bird_pos_.y;
-            main_camera_.setPosition(pos);
-            look_at_ = bird_pos_;
-            main_camera_.lookAt(look_at_);
-            bird_enable_= true;
-            
-            bird_.setPosition(bird_pos_.x,bird_pos_.y,bird_pos_.z);
 
-        }
 	}
 
 	void GamingScene2::Draw()
 	{
 		ofEnableBlendMode(OF_BLENDMODE_ALPHA);
-        ofSetColor(255, 255, 255);
+        ofSetColor(255, 255, 255);		
 		main_camera_.begin();
 		glPushMatrix();
 		glEnable(GL_DEPTH_TEST);
+		background_.drawFaces();
 		stage_.drawFaces();
 		shadow_.drawFaces();
 		for(int i =0; i < trees_.size(); ++i)
@@ -248,13 +260,15 @@ namespace Jungle
 			ofScale(0.4, 0.4);
 			JungleApp::KinectInstance().debugDraw();
 			glPopMatrix();
+			ofSetColor(255, 255, 255);	
 		}
 
 		//draw GUI
 		tree_button_1_.draw(tree_button_pos_1_.x, tree_button_pos_1_.y, 0, 150, 150);
 		tree_button_2_.draw(tree_button_pos_2_.x, tree_button_pos_2_.y, 0, 150, 150);
 		
-		hand_.draw(hand_pos_.x,hand_pos_.y, 0 ,80,80);
+		if(hand_pos_.x >=0)
+			hand_.draw(hand_pos_.x,hand_pos_.y, 0 ,80,80);
 		if(loading_pos_.x >=0)
 		{
 			loading_.draw(loading_pos_.x, loading_pos_.y, 50, 50);
@@ -394,7 +408,7 @@ namespace Jungle
 		}
         if(user.pose == "DANVINCI")
 		{
-            bird_pos_.y+=bird_speed_;
+            bird_pos_.y+=bird_speed_*2;
         }
 	}
 

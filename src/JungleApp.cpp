@@ -15,8 +15,13 @@ namespace Jungle
             ofAddListener(KinectInstance().userOut,this,&JungleApp::userOut);
         }
 
+		game_1_ = 0;
 		game_2_ = new GamingScene2();
-		StateManagerInstance().ChangeState(game_2_, SOP_PUSH);
+		game_2_->Steup();
+		
+		game_3_ = new GamingScene3();
+		game_3_->Steup();
+		StateManagerInstance().ChangeState(game_3_, SOP_PUSH);
 		//ofEnableAlphaBlending();
 	}
 
@@ -69,6 +74,11 @@ namespace Jungle
 				break;
 #endif
 #endif
+			case '2':
+				StateManagerInstance().ChangeState(game_2_,SOP_PUSH);
+				break;
+			case '3':
+				StateManagerInstance().ChangeState(game_2_,SOP_POP);
 			default:
 				break;
 		}

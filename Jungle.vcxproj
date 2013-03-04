@@ -159,6 +159,7 @@ if not exist "$(ProjectDir)\bin\data" mkdir  "$(ProjectDir)\bin\data"
     <ClCompile Include="..\..\..\addons\ofxXmlSettings\src\ofxXmlSettings.cpp" />
     <ClCompile Include="src\Animal.cpp" />
     <ClCompile Include="src\GamingScene2.cpp" />
+    <ClCompile Include="src\GamingScene3.cpp" />
     <ClCompile Include="src\GamingScene_1.cpp" />
     <ClCompile Include="src\main.cpp" />
     <ClCompile Include="src\JungleApp.cpp" />
@@ -344,6 +345,7 @@ if not exist "$(ProjectDir)\bin\data" mkdir  "$(ProjectDir)\bin\data"
     <ClInclude Include="..\..\..\addons\ofxXmlSettings\src\ofxXmlSettings.h" />
     <ClInclude Include="src\Animal.h" />
     <ClInclude Include="src\GamingScene2.h" />
+    <ClInclude Include="src\GamingScene3.h" />
     <ClInclude Include="src\GamingScene_1.h" />
     <ClInclude Include="src\JungleApp.h" />
     <ClInclude Include="src\State.h" />

@@ -136,6 +136,9 @@
     <ClCompile Include="..\..\..\addons\ofxOpenNI\src\ofxGestureGenerator.cpp">
       <Filter>addons\ofxOpenNI</Filter>
     </ClCompile>
+    <ClCompile Include="src\GamingScene3.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\Animal.h">
@@ -683,6 +686,9 @@
     </ClInclude>
     <ClInclude Include="..\..\..\addons\ofxOpenNI\src\ofxGestureGenerator.h">
       <Filter>addons\ofxOpenNI</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GamingScene3.h">
+      <Filter>src</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
