@@ -38,6 +38,8 @@ namespace Jungle
 	private:
 		ofxAssimpModelLoader stage_;
 		ofxAssimpModelLoader background_;
+        
+        int tree_rotation_;
 		ofxAssimpModelLoader shadow_;
 		ofxAssimpModelLoader bird_;
         ofVec3f bird_pos_;

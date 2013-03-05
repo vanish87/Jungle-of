@@ -19,15 +19,16 @@ namespace Jungle
 		x_ = ofGetWindowPositionX();
 		y_ = ofGetWindowPositionY();
 		stage_.loadModel("Tree_Stage_Smooth.dae");
+        tree_rotation_ = 0;
 		stage_.setPosition(0, -139, 0);        
 		stage_.setScale(0.5,0.5,0.5);
 		stage_.setRotation(0, 180, 0, 0, 1);
-        stage_.setRotation(1, -90, 0, 1, 0);
+        stage_.setRotation(1, -90 + tree_rotation_, 0, 1, 0);
 		background_.loadModel("background.dae");
 		background_.setPosition(18, -70, -10);        
 		background_.setScale(1 , 0.3 ,0.5);
 		background_.setRotation(0, 180, 0, 0, 1);
-		background_.setRotation(1, -90, 0, 1, 0);
+		background_.setRotation(1, -90+ tree_rotation_, 0, 1, 0);
 		background_.disableMaterials();
 		background_.disableNormals();
 
@@ -46,7 +47,7 @@ namespace Jungle
             flying_ = false;
 		}
 
-		hand_.loadImage("hand.png");
+		hand_.loadImage("button_interface_notpressed_02.png");
 		tree_button_1_.loadImage("button_interface_notpressed_02.png");
 		tree_button_pos_1_ = ofPoint(w_*7/8, 0);
 		button_1_time_= 0;
@@ -251,6 +252,14 @@ namespace Jungle
 		}
         
         
+        stage_.setRotation(1, -90 + tree_rotation_, 0, 1, 0);
+        if(bird_pos_.x > 3)
+            tree_rotation_ --;
+        if(bird_pos_.y < -3+2)
+            tree_rotation_ ++;
+        //background_.setRotation(1, -90 + tree_rotation_, 0, 1, 0);
+        
+        
 
 	}
 
@@ -371,6 +380,12 @@ namespace Jungle
             bird_pos_.y+=bird_speed_;
             cout<<bird_pos_.y<<endl;
             break;
+        case 'o':     
+                tree_rotation_++;
+                break;
+        case 'p':     
+                tree_rotation_--;
+                break;
 		default:
 			break;
 		}
