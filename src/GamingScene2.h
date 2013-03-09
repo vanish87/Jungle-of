@@ -22,8 +22,9 @@ namespace Jungle
 		virtual void Draw();
 
 		virtual void keyPressed( int key );
-
 		virtual void keyReleased( int key );
+
+		virtual void mouseMoved(int x, int y );
 
 		virtual void inPose( ofxUser & user );
 
@@ -50,6 +51,8 @@ namespace Jungle
 		vector<ofxAssimpModelLoader> trees_;
 		ofVec3f shadow_pos_;
 		ofCamera main_camera_;
+
+		ofQuaternion quat_;
         
         ofVec3f look_at_;
 		ofLight light_;

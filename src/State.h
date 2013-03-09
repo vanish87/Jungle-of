@@ -2,6 +2,7 @@
 #define GAMESTATE_H_
 
 #pragma once
+#include "PreDef.h"
 
 class ofxUser;
 namespace Jungle

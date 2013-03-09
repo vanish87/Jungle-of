@@ -348,6 +348,7 @@ if not exist "$(ProjectDir)\bin\data" mkdir  "$(ProjectDir)\bin\data"
     <ClInclude Include="src\GamingScene3.h" />
     <ClInclude Include="src\GamingScene_1.h" />
     <ClInclude Include="src\JungleApp.h" />
+    <ClInclude Include="src\PreDef.h" />
     <ClInclude Include="src\State.h" />
     <ClInclude Include="src\StateManager.h" />
   </ItemGroup>

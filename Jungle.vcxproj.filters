@@ -690,6 +690,9 @@
     <ClInclude Include="src\GamingScene3.h">
       <Filter>src</Filter>
     </ClInclude>
+    <ClInclude Include="src\PreDef.h">
+      <Filter>src</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="src">

@@ -7,6 +7,7 @@
 #include "State.h"
 #include "ofxKinectUsers.h"
 
+
 namespace Jungle
 {
 	enum StateOP

@@ -175,6 +175,7 @@ namespace Jungle
 		ofRectangle button_1_rec = ofRectangle(tree_button_pos_1_.x,tree_button_pos_1_.y, 150,150);
 		ofRectangle button_2_rec = ofRectangle(tree_button_pos_2_.x,tree_button_pos_2_.y, 150,150);
 			
+
 		if(button_1_pressed_ && button_2_pressed_)
 		{ 
 			sphere_collided_ = false;
@@ -316,14 +317,16 @@ namespace Jungle
 		switch (key)
 		{
             case 's':
-                pos.z++;
-                main_camera_.setPosition(pos);                
-                main_camera_.lookAt(look_at_);
+//                 pos.z++;
+//                 main_camera_.setPosition(pos);                
+//                 main_camera_.lookAt(look_at_);
+				main_camera_.dolly(1);
                 break;
             case 'w':
-                pos.z--;
-                main_camera_.setPosition(pos);
-                main_camera_.lookAt(look_at_);
+//                 pos.z--;
+//                 main_camera_.setPosition(pos);
+//                 main_camera_.lookAt(look_at_);
+				main_camera_.dolly(-1);
                 break;	
             case 'q':
                 pos.y++;
@@ -338,14 +341,16 @@ namespace Jungle
                 main_camera_.lookAt(look_at_);
                 break;
             case 'a':
-                pos.x--;
-                main_camera_.setPosition(pos);                
-                main_camera_.lookAt(look_at_);
+//                 pos.x--;
+//                 main_camera_.setPosition(pos);                
+//                 main_camera_.lookAt(look_at_);
+				main_camera_.truck(-1);
                 break;
             case 'd':
-                pos.x++;
-                main_camera_.setPosition(pos);
-                main_camera_.lookAt(look_at_);
+//                 pos.x++;
+//                 main_camera_.setPosition(pos);
+//                 main_camera_.lookAt(look_at_);
+				main_camera_.truck(1);
                 break;
             case 'e':
                 look_at_.y++;
@@ -464,6 +469,17 @@ namespace Jungle
 
 	void GamingScene2::userOut( ofxUser & user )
 	{
+	}
+
+	void GamingScene2::mouseMoved( int x, int y )
+	{
+		int dx = x - ofGetPreviousMouseX();
+		int dy = y - ofGetPreviousMouseY();
+  		if( dx != 0)
+  			main_camera_.rotate(-dx, ofVec3f(0, 1, 0));
+		else
+			if(dy != 0)
+ 				main_camera_.tilt(-dy);
 	}
 
 }
