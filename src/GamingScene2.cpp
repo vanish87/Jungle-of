@@ -32,6 +32,8 @@ namespace Jungle
 		background_.disableMaterials();
 		background_.disableNormals();
 
+
+
 		shadow_.loadModel("shadow.dae");
 		shadow_.setPosition(0,0,0);
 		shadow_.setScale(0.01,0.0001,0.01);
@@ -41,6 +43,7 @@ namespace Jungle
 		{
 			bird_.loadModel("smooth_birdy.dae");
             bird_pos_ = ofVec3f(2,3.5,5);
+			bird_rot_ = ofVec3f(0, 0, 0);
 			bird_.setPosition(bird_pos_.x,bird_pos_.y,bird_pos_.z);
 			bird_.setScale(0.003,0.003,0.003);
             bird_speed_ = 0.1;
@@ -51,12 +54,12 @@ namespace Jungle
 		tree_button_1_.loadImage("button_interface_notpressed_02.png");
 		tree_button_pos_1_ = ofPoint(w_*7/8, 0);
 		button_1_time_= 0;
-        button_1_pressed_ = false;
+        button_1_pressed_ = true;
 
 		tree_button_2_.loadImage("button_interface_notpressed_02.png");
 		tree_button_pos_2_ = ofPoint(w_*7/8, h_ * 1/5);
 		button_2_time_ = 0;
-        button_2_pressed_ = false;
+        button_2_pressed_ = true;
 
 		sphere_pos_ = ofVec3f(0, 10.5, 0);
 		sphere_radius_ = 1;
@@ -76,8 +79,10 @@ namespace Jungle
         //light_.
 
 		main_camera_.setPosition(ofVec3f(2, 3.5, 12));
-        look_at_ = ofVec3f(2,3.5,0);
-		main_camera_.lookAt(look_at_);
+        virtual_looking_obj_.setGlobalPosition(ofVec3f(2,3.5,0));
+		main_camera_.lookAt(virtual_looking_obj_.getGlobalPosition());
+		camera_orbit_para_ = ofVec3f(0,0,15);
+		main_camera_.orbit(camera_orbit_para_.x,camera_orbit_para_.y, camera_orbit_para_.z,virtual_looking_obj_);
 
 		ofBackground(0);
 		ofSetFrameRate(60);
@@ -98,7 +103,7 @@ namespace Jungle
 			{
 				Bones bone = user[i].bonesPoints;
 				ofVec3f torsor_pos = bone.torso;
-				torsor_pos.x = ofMap(torsor_pos.x , 0, 640, -50, 50, true);
+				torsor_pos.x = ofMap(torsor_pos.x , 0, 640, -10, 50, true);
 				torsor_pos.z = ofMap(torsor_pos.z , 1000, 6000, 0, 100, true);
 				shadow_pos_ = torsor_pos;
 				//cout<<shadow_pos_.x<<" "<<shadow_pos_.y<<" "<<shadow_pos_.z<<"\r";
@@ -183,17 +188,36 @@ namespace Jungle
 			hand_rec = ofRectangle(hand_pos_.x,hand_pos_.y, 80,80);
 			if(bird_pos_.y > 3.5)
 				bird_pos_.y -= bird_speed_*0.1;
-			bird_pos_.x = shadow_pos_.x/10 ;
-			bird_pos_.z = shadow_pos_.z/10 - 2;
-
+			bird_pos_.x = shadow_pos_.x ;
+			bird_pos_.z = shadow_pos_.z ;
+			
+			cout <<shadow_pos_.x<<" "<<shadow_pos_.z <<endl;
+			if(bird_pos_.x > 8)
+			{
+				camera_orbit_para_.x++;
+				bird_rot_.y++;
+			}
+			else
+				if(bird_pos_.x < -8)
+				{
+					camera_orbit_para_.x--;
+					bird_rot_.y--;
+				}
 			ofVec3f pos = main_camera_.getPosition();
 			pos.y = bird_pos_.y;
-			main_camera_.setPosition(pos);
-			look_at_ = bird_pos_;
-			main_camera_.lookAt(look_at_);
+			//main_camera_.setPosition(pos);
+			//pos = bird_pos_;
+			//virtual_looking_obj_.setGlobalPosition(ofVec3f(0, 0, 0));
 			bird_enable_= true;
 
-			bird_.setPosition(bird_pos_.x,bird_pos_.y,bird_pos_.z);
+			ofVec3f vo_pos = virtual_looking_obj_.getGlobalPosition();
+			ofVec3f camera_pos = main_camera_.getPosition();
+
+			ofVec3f dir = (camera_pos - vo_pos).normalize();
+			dir *= camera_orbit_para_.z * 0.4;
+
+			bird_.setPosition(dir.x,dir.y,dir.z);
+			//bird_.setRotation(0, bird_rot_.y, 0, 1, 0);
 
 		}
 
@@ -250,16 +274,9 @@ namespace Jungle
 				button_1_pressed_ = false;
 				button_2_pressed_ = false;
 			}
-		}
-        
-        
-        stage_.setRotation(1, -90 + tree_rotation_, 0, 1, 0);
-        if(bird_pos_.x > 3)
-            tree_rotation_ --;
-        if(bird_pos_.y < -3+2)
-            tree_rotation_ ++;
+		}       
+
         //background_.setRotation(1, -90 + tree_rotation_, 0, 1, 0);
-        
         
 
 	}
@@ -306,13 +323,15 @@ namespace Jungle
 		{
 			loading_.draw(loading_pos_.x, loading_pos_.y, 50, 50);
 		}
+
+		main_camera_.orbit(camera_orbit_para_.x, camera_orbit_para_.y, camera_orbit_para_.z, virtual_looking_obj_);
 	}
 
 	void GamingScene2::keyPressed( int key )
 	{
 
 		ofVec3f pos = main_camera_.getPosition();
-
+		ofVec3f vo_pos = virtual_looking_obj_.getGlobalPosition();
 		shadow_pos_= shadow_.getPosition();
 		switch (key)
 		{
@@ -320,56 +339,68 @@ namespace Jungle
 //                 pos.z++;
 //                 main_camera_.setPosition(pos);                
 //                 main_camera_.lookAt(look_at_);
-				main_camera_.dolly(1);
+				//main_camera_.dolly(1);
+				if(camera_orbit_para_.y > -90)
+					camera_orbit_para_.y--;
                 break;
             case 'w':
 //                 pos.z--;
 //                 main_camera_.setPosition(pos);
 //                 main_camera_.lookAt(look_at_);
-				main_camera_.dolly(-1);
+				//main_camera_.dolly(-1);
+				if(camera_orbit_para_.y < 90)
+					camera_orbit_para_.y++;
                 break;	
             case 'q':
                 pos.y++;
-                look_at_.y++;
+                //look_at_.y++;
                 main_camera_.setPosition(pos);                
-                main_camera_.lookAt(look_at_);
+                //main_camera_.lookAt(look_at_);
                 break;
             case 'z':
                 pos.y--;
-                look_at_.y--;
+                //look_at_.y--;
                 main_camera_.setPosition(pos);
-                main_camera_.lookAt(look_at_);
+                //main_camera_.lookAt(look_at_);
                 break;
             case 'a':
 //                 pos.x--;
 //                 main_camera_.setPosition(pos);                
 //                 main_camera_.lookAt(look_at_);
-				main_camera_.truck(-1);
+				//main_camera_.truck(-1);
+				//camera_orbit_para_.x--;
+				bird_pos_.x++;
                 break;
             case 'd':
 //                 pos.x++;
 //                 main_camera_.setPosition(pos);
 //                 main_camera_.lookAt(look_at_);
-				main_camera_.truck(1);
+				//main_camera_.truck(1);
+				//camera_orbit_para_.x++;
+				bird_pos_.x--;
                 break;
             case 'e':
-                look_at_.y++;
+                //look_at_.y++;
                 main_camera_.setPosition(pos);                
-                main_camera_.lookAt(look_at_);
+                //main_camera_.lookAt(look_at_);
                 break;
             case 'c':
-                look_at_.y--;
+               // look_at_.y--;
                 main_camera_.setPosition(pos);
-                main_camera_.lookAt(look_at_);
+                //main_camera_.lookAt(look_at_);
                 break;
 		case 'y':
 			shadow_pos_ . z--;
 			shadow_.setPosition(shadow_pos_.x, shadow_pos_.y, shadow_pos_.z);
+			vo_pos.y++;
+			virtual_looking_obj_.setGlobalPosition(vo_pos);
 			break;
 		case 'h':
 
 			shadow_pos_ . z++;
 			shadow_.setPosition(shadow_pos_.x, shadow_pos_.y, shadow_pos_.z);
+			vo_pos.y--;
+			virtual_looking_obj_.setGlobalPosition(vo_pos);
 			break;
 		case 'g':
 

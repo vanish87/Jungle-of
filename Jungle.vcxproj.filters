@@ -139,6 +139,9 @@
     <ClCompile Include="src\GamingScene3.cpp">
       <Filter>src</Filter>
     </ClCompile>
+    <ClCompile Include="src\GamingScene4.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\Animal.h">
@@ -691,6 +694,9 @@
       <Filter>src</Filter>
     </ClInclude>
     <ClInclude Include="src\PreDef.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GamingScene4.h">
       <Filter>src</Filter>
     </ClInclude>
   </ItemGroup>

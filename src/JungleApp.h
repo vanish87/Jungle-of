@@ -7,9 +7,12 @@
 #include "GamingScene_1.h"
 #include "GamingScene2.h"
 #include "GamingScene3.h"
+#include "GamingScene4.h"
 
 namespace Jungle
 {
+
+	static const bool KINECT_ENABLE = false;
 	class JungleApp : public ofBaseApp{
 	public:
 		void setup();
@@ -31,6 +34,7 @@ namespace Jungle
 		GamingScene_1* game_1_;
 		GamingScene2* game_2_;
 		GamingScene3* game_3_;
+		GamingScene4* game_4_;
 
 
 		void	inPose(ofxUser & user);

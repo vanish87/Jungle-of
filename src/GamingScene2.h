@@ -39,22 +39,31 @@ namespace Jungle
 	private:
 		ofxAssimpModelLoader stage_;
 		ofxAssimpModelLoader background_;
+
+
         
         int tree_rotation_;
 		ofxAssimpModelLoader shadow_;
 		ofxAssimpModelLoader bird_;
         ofVec3f bird_pos_;
+		ofVec3f bird_rot_;
         float bird_speed_;
         bool flying_;
         
 		bool bird_enable_;
 		vector<ofxAssimpModelLoader> trees_;
 		ofVec3f shadow_pos_;
+
 		ofCamera main_camera_;
+		//the imaginary obj that camera look at
+		ofNode virtual_looking_obj_;
+		//longitude(x), latitude(y) of orbit camera radius(z)
+		ofVec3f camera_orbit_para_;
 
 		ofQuaternion quat_;
         
-        ofVec3f look_at_;
+        //ofVec3f look_at_;
+
 		ofLight light_;
 
 		ofImage hand_;

@@ -312,7 +312,7 @@
 <GESTURES>
     <GESTURE>
         <NAME>FLY</NAME>
-        <TIMEMAX>25</TIMEMAX>
+        <TIMEMAX>30</TIMEMAX>
         <BEGIN>
             <LEFT>
                 <HAND>4</HAND>
@@ -334,7 +334,106 @@
             </RIGHT>
         </END>
     </GESTURE>
-    <GESTURE>
+  <GESTURE>
+      <NAME>LeftBigWind</NAME>
+      <TIMEMAX>30</TIMEMAX>
+      <BEGIN>
+          <LEFT>
+             <HAND>8</HAND>
+             <SHOULDER>2</SHOULDER>
+          </LEFT>
+          <RIGHT>
+            <SHOULDER>0</SHOULDER>
+            <HAND>0</HAND>
+          </RIGHT>
+    </BEGIN>
+    <END>
+      <LEFT>
+        <HAND>3</HAND>
+        <SHOULDER>9</SHOULDER>
+      </LEFT>
+      <RIGHT>
+        <SHOULDER>0</SHOULDER>
+        <HAND>0</HAND>
+      </RIGHT>
+    </END>
+  </GESTURE>
+  <GESTURE>
+    <NAME>LeftWind</NAME>
+    <TIMEMAX>30</TIMEMAX>
+    <BEGIN>
+      <LEFT>
+        <HAND>7</HAND>
+        <SHOULDER>3</SHOULDER>
+      </LEFT>
+      <RIGHT>
+        <SHOULDER>0</SHOULDER>
+        <HAND>0</HAND>
+      </RIGHT>
+    </BEGIN>
+    <END>
+      <LEFT>
+        <HAND>1</HAND>
+        <SHOULDER>3</SHOULDER>
+      </LEFT>
+      <RIGHT>
+        <SHOULDER>0</SHOULDER>
+        <HAND>0</HAND>
+      </RIGHT>
+    </END>
+  </GESTURE>
+
+  <GESTURE>
+    <NAME>LeftWind</NAME>
+    <TIMEMAX>30</TIMEMAX>
+    <BEGIN>
+      <LEFT>
+        <HAND>7</HAND>
+        <SHOULDER>3</SHOULDER>
+      </LEFT>
+      <RIGHT>
+        <SHOULDER>0</SHOULDER>
+        <HAND>0</HAND>
+      </RIGHT>
+    </BEGIN>
+    <END>
+      <LEFT>
+        <HAND>2</HAND>
+        <SHOULDER>3</SHOULDER>
+      </LEFT>
+      <RIGHT>
+        <SHOULDER>0</SHOULDER>
+        <HAND>0</HAND>
+      </RIGHT>
+    </END>
+  </GESTURE>
+
+  <GESTURE>
+    <NAME>LeftWind</NAME>
+    <TIMEMAX>30</TIMEMAX>
+    <BEGIN>
+      <LEFT>
+        <HAND>7</HAND>
+        <SHOULDER>2</SHOULDER>
+      </LEFT>
+      <RIGHT>
+        <SHOULDER>0</SHOULDER>
+        <HAND>0</HAND>
+      </RIGHT>
+    </BEGIN>
+    <END>
+      <LEFT>
+        <HAND>1</HAND>
+        <SHOULDER>3</SHOULDER>
+      </LEFT>
+      <RIGHT>
+        <SHOULDER>0</SHOULDER>
+        <HAND>0</HAND>
+      </RIGHT>
+    </END>
+  </GESTURE>
+  
+  <GESTURE>
         <NAME>UP_APPLAUSE</NAME>
         <TIMEMAX>30</TIMEMAX>
         <BEGIN>
