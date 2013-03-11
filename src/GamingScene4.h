@@ -64,6 +64,10 @@ namespace Jungle
 		//longitude(x), latitude(y) of orbit camera radius(z)
 		ofVec3f camera_orbit_para_;
 
+		float gesture_timer_;
+		bool left_wind_start_;
+		bool right_wind_start_;
+
 		int w_;
 		int h_;
 		int x_;

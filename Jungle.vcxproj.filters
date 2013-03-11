@@ -621,9 +621,6 @@
     <ClInclude Include="..\..\..\addons\ofxGifDecoder\src\ofxGifFrame.h">
       <Filter>addons\ofxOthers</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\addons\ofxKinectUsers\src\ofxKTools.h">
-      <Filter>addons\ofxOthers</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\..\addons\ofxOsc\src\ofxOsc.h">
       <Filter>addons\ofxOthers</Filter>
     </ClInclude>
@@ -698,6 +695,9 @@
     </ClInclude>
     <ClInclude Include="src\GamingScene4.h">
       <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxKinectUsers\src\ofxKTools.h">
+      <Filter>addons\ofxKinectUsers</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

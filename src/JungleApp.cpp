@@ -2,6 +2,7 @@
 
 namespace Jungle
 {
+
 	//--------------------------------------------------------------
 	void JungleApp::setup(){
         ofSetLogLevel(OF_LOG_VERBOSE);
