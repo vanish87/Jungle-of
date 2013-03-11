@@ -38,7 +38,6 @@ namespace Jungle
 		sphere_.setPosition(sphere_pos_.x, sphere_pos_.y, sphere_pos_.z);
 		sphere_radius_ = 2.0f;
 		sphere_collided_ = false;
-		//sphere_.setRotation(1, -90, 0, 1, 0);
 
 		shadow_.loadModel("shadow.dae");
 		shadow_.setPosition(0,0,0);
@@ -109,6 +108,13 @@ namespace Jungle
 		else
 			if(bird_pos_.x < -5+2)
 				tree_rotation_++;
+        
+        //with 2 x cood shift
+		if(bird_pos_.x > 5 + 2 + 1)
+			bird_pos_.x = 8;
+		else
+			if(bird_pos_.x < -5+2 -1)
+				bird_pos_.x = -4;
 
 
 		//cout<<bird_pos_.x<<" "<<bird_pos_.y<<" "<<bird_pos_.z<<endl;
@@ -143,7 +149,7 @@ namespace Jungle
 		if(rw_enabled_)
 		{			
 			bird_.setRotation(0, bird_rot_.z, 0, 0 ,1); 
-			bird_pos_ +=ofVec3f(-1* bird_rot_.z * 0.005,-1.5* bird_rot_.z * 0.005,0);
+			bird_pos_ +=ofVec3f(-1* bird_rot_.z * 0.005,abs(5.5* bird_rot_.z * 0.005),0);
 			if(bird_rot_.z < 0) 
 			{
 				bird_rot_.z+=2;
@@ -161,7 +167,8 @@ namespace Jungle
 		}
 
 		shadow_.setPosition(shadow_pos_.x, 0, shadow_pos_.z);
-		bird_.setPosition(bird_pos_.x, bird_pos_.y, bird_pos_.z);
+		bird_.setPosition(bird_pos_.x, bird_pos_.y, bird_pos_.z);        
+		sphere_.setRotation(1, -90+ tree_rotation_, 0, 1, 0);
 	}
 
 	void GamingScene4::Draw()
@@ -335,6 +342,27 @@ namespace Jungle
 			rw_enabled_ = true;
 			bird_rot_.z-=60;
 		}
+        
+        if(user.gesture == "RightWind")
+        {
+            rw_enabled_ = true;
+			bird_rot_.z+=60;
+        }
+        
+        if(user.gesture == "UpWind")
+        {
+            
+            ofVec3f vo_pos = virtual_looking_obj_.getGlobalPosition();
+            vo_pos.y--;
+			virtual_looking_obj_.setGlobalPosition(vo_pos);
+        }
+         if(user.gesture == "DownWind")
+         {
+             
+             ofVec3f vo_pos = virtual_looking_obj_.getGlobalPosition();
+             vo_pos.y++;
+             virtual_looking_obj_.setGlobalPosition(vo_pos);
+         }
 	}
 
 	void GamingScene4::userIn( ofxUser & user )

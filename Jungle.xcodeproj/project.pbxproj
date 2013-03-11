@@ -60,6 +60,7 @@
 		BC0193A216D17D6600867BBC /* OscTypes.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BC01939816D17D6600867BBC /* OscTypes.cpp */; };
 		BC42777316E4664B00FF4CFE /* GamingScene3.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BC42777116E4664B00FF4CFE /* GamingScene3.cpp */; };
 		BC48739B16DBFAD9009E7B19 /* Animal.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BC48739A16DBFAD9009E7B19 /* Animal.cpp */; };
+		BC67296616ECF672001F7C77 /* GamingScene4.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BC67296416ECF672001F7C77 /* GamingScene4.cpp */; };
 		BCAF17D116DA0C790067261D /* ofxGifDecoder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BCAF17CB16DA0C790067261D /* ofxGifDecoder.cpp */; };
 		BCAF17D216DA0C790067261D /* ofxGifFile.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BCAF17CD16DA0C790067261D /* ofxGifFile.cpp */; };
 		BCAF17D316DA0C790067261D /* ofxGifFrame.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BCAF17CF16DA0C790067261D /* ofxGifFrame.cpp */; };
@@ -384,6 +385,8 @@
 		BC42777216E4664B00FF4CFE /* GamingScene3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GamingScene3.h; sourceTree = "<group>"; };
 		BC48739916DBFACC009E7B19 /* Animal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Animal.h; sourceTree = "<group>"; };
 		BC48739A16DBFAD9009E7B19 /* Animal.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Animal.cpp; sourceTree = "<group>"; };
+		BC67296416ECF672001F7C77 /* GamingScene4.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GamingScene4.cpp; sourceTree = "<group>"; };
+		BC67296516ECF672001F7C77 /* GamingScene4.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GamingScene4.h; sourceTree = "<group>"; };
 		BCAF17CB16DA0C790067261D /* ofxGifDecoder.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxGifDecoder.cpp; sourceTree = "<group>"; };
 		BCAF17CC16DA0C790067261D /* ofxGifDecoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxGifDecoder.h; sourceTree = "<group>"; };
 		BCAF17CD16DA0C790067261D /* ofxGifFile.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxGifFile.cpp; sourceTree = "<group>"; };
@@ -1100,6 +1103,8 @@
 		E4B69E1C0A3A1BDC003C02F2 /* src */ = {
 			isa = PBXGroup;
 			children = (
+				BC67296416ECF672001F7C77 /* GamingScene4.cpp */,
+				BC67296516ECF672001F7C77 /* GamingScene4.h */,
 				BC42777116E4664B00FF4CFE /* GamingScene3.cpp */,
 				BC42777216E4664B00FF4CFE /* GamingScene3.h */,
 				BCDA581216DFE70100EC5ED9 /* GamingScene2.cpp */,
@@ -1261,6 +1266,7 @@
 				BC48739B16DBFAD9009E7B19 /* Animal.cpp in Sources */,
 				BCDA581416DFE70100EC5ED9 /* GamingScene2.cpp in Sources */,
 				BC42777316E4664B00FF4CFE /* GamingScene3.cpp in Sources */,
+				BC67296616ECF672001F7C77 /* GamingScene4.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
