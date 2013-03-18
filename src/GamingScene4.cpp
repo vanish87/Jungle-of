@@ -47,10 +47,6 @@ namespace Jungle
 		bird_.loadModel("Yellow_Butterfly_1.dae");
 		bird_pos_ = ofVec3f(2,3.5,5);
 		bird_.setPosition(bird_pos_.x,bird_pos_.y,bird_pos_.z);
-<<<<<<< HEAD
-		bird_.setRotation(0, 150, 1, 0, 0);
-=======
->>>>>>> particle
 		bird_.setScale(0.05,0.05,0.05);
 		bird_rot_.set(0, 0, 0);
 		animation_time_= 0;
@@ -76,6 +72,8 @@ namespace Jungle
         {
             ofLog( OF_LOG_ERROR, "testApp::setup() - failed to load emitter config" );
         }
+
+		particle_scale_ =1;
 
 		gesture_timer_ = 0;
 
@@ -103,6 +101,11 @@ namespace Jungle
 				torsor_pos.z = ofMap(torsor_pos.z ,
 					MIN_KINECT_AREA.z, MAX_KINECT_AREA.z, MIN_PLAY_AREA.z, MAX_PLAY_AREA.z, true);
 				shadow_pos_ = torsor_pos;
+
+				ofVec3f hand_pos = bone.right_hand;
+				pre_hand_pos_ = hand_pos_;
+				hand_pos_.x = ofMap(hand_pos.x , 0, 640, 0, w_, true);
+				hand_pos_.y = ofMap(hand_pos.y , 0, 480, 0, h_, true);
 				//cout<<shadow_pos_.x<<" "<<shadow_pos_.y<<" "<<shadow_pos_.z<<"\r";
 				
 			}
@@ -112,11 +115,13 @@ namespace Jungle
 		ofVec3f vo_pos = virtual_looking_obj_.getGlobalPosition();
 		ofVec3f camera_pos = main_camera_.getPosition();
 
+/*
 		ofVec3f dir = (camera_pos - vo_pos).normalize();
 		dir *= camera_orbit_para_.z * 0.4;
-		bird_pos_.y = dir.y + vo_pos.y;
+		bird_pos_.y = dir.y + vo_pos.y;*/
 
 
+/*
 		//with 2 x cood shift
 		if(bird_pos_.x > 5+2)
 			tree_rotation_--;
@@ -129,7 +134,7 @@ namespace Jungle
 			bird_pos_.x = 8;
 		else
 			if(bird_pos_.x < -5+2 -1)
-				bird_pos_.x = -4;
+				bird_pos_.x = -4;*/
 
 
 		//cout<<bird_pos_.x<<" "<<bird_pos_.y<<" "<<bird_pos_.z<<endl;
@@ -138,11 +143,11 @@ namespace Jungle
 		//cout<<bird_pos_.x<<" "<<bird_pos_.y<<" "<<bird_pos_.z<<endl;
 		//cout<<sphere_pos_.x<<" "<<sphere_pos_.y<<" "<<sphere_pos_.z<<endl;
 		
-		ofVec3f world_pos = sphere_pos_;
+		/*ofVec3f world_pos = sphere_pos_;
 		world_pos.rotate(tree_rotation_, ofVec3f(0, 1, 0));
 		float dis = bird_pos_.distance(world_pos);
 		if(dis < sphere_radius_)
-			sphere_collided_ = true;
+			sphere_collided_ = true;*/
 		ofPopMatrix();
 		
 		
@@ -157,15 +162,12 @@ namespace Jungle
 		bird_.setAnimation(0);        
 		bird_.setNormalizedTime(animation_time_);
 
-<<<<<<< HEAD
-		//bird_.setAnimation(1);
-		//bird_.setNormalizedTime(animation_time_);
-=======
+
 //		bird_.setAnimation(1);
 //		bird_.setNormalizedTime(animation_time_);
->>>>>>> particle
+
 		
-		if(rw_enabled_)
+		/*if(rw_enabled_)
 		{			
 			bird_.setRotation(1, -bird_rot_.z, 0, 0 ,1); 
 			bird_pos_ +=ofVec3f(-1* bird_rot_.z * 0.005,abs(5.5* bird_rot_.z * 0.005),0);
@@ -183,30 +185,32 @@ namespace Jungle
 
 					rw_enabled_ = false;
 				}
-		}
+		}*/
+		if(-0.01 <= bird_acc_.x && bird_acc_.x <= 0.01)
+			bird_acc_.x = 0;
+		if(-0.01 <= bird_acc_.y && bird_acc_.y <= 0.01)
+			bird_acc_.y = 0;
         if(bird_acc_.x > 0)
-            bird_acc_.x -= 0.1;
+            bird_acc_.x -= 0.01;
         else
         {
             if(bird_acc_.x < 0)
-                bird_acc_.x += 0.1;
+                bird_acc_.x += 0.01;
         }
         if(bird_acc_.y > 0)
-            bird_acc_.y -= 0.1;
+            bird_acc_.y -= 0.01;
         else
         {
             if(bird_acc_.y < 0)
-                bird_acc_.y += 0.1;
+                bird_acc_.y += 0.01;
         }
-        bird_pos_+=bird_acc_;
+		cout<<bird_acc_.x<<" "<<bird_acc_.y<<endl;
 		shadow_.setPosition(shadow_pos_.x, 0, shadow_pos_.z);
-<<<<<<< HEAD
-		bird_.setPosition(bird_pos_.x, bird_pos_.y, bird_pos_.z);    
-		bird_.setRotation(0, 150, 1, 0, 0);
-		sphere_.setRotation(1, -90+ tree_rotation_, 0, 1, 0);
 
-		gesture_timer_+=ofGetLastFrameTime();
-=======
+		bird_pos_.x = ofClamp(bird_pos_.x, -5, 5);
+		bird_pos_.y = ofClamp(bird_pos_.y,  0, 7);
+
+		bird_pos_+=bird_acc_;
 		bird_.setPosition(bird_pos_.x, bird_pos_.y, bird_pos_.z); 
         bird_.setRotation(0, 150+ bird_rotation_, 1, 0, 0); 
 		sphere_.setRotation(1, -90+ tree_rotation_, 0, 1, 0);
@@ -217,7 +221,27 @@ namespace Jungle
         screen_pos.set(bird_pos_ss_.x * w_/2 + (x_/2 + w_/2), h_ - (bird_pos_ss_.y * h_/2 + (y_/2 + h_/2)));
         
         bird_pos_ss_.set(screen_pos.x, screen_pos.y);
-        
+
+		if(bird_acc_.x ==0 && bird_acc_.y ==0 && emitter_.particleLifespan < 12)
+			emitter_.particleLifespan ++;
+		else
+		{
+			if(emitter_.particleLifespan > 8)
+				emitter_.particleLifespan--;
+		}
+
+		emitter_.sourcePosition.x = hand_pos_.x;
+		emitter_.sourcePosition.y = hand_pos_.y;
+		ofVec3f dir = ofVec3f(hand_pos_.x, hand_pos_.y, 0)- ofVec3f(pre_hand_pos_.x, pre_hand_pos_.y, 0);
+		dir.normalize();
+		dir.y = -dir.y;
+		//dir.x = -dir.x;
+		angle_ = dir.angle(ofVec3f(1,0,0));
+		if(dir.y >=  0) angle_+=180;
+		emitter_.angle = angle_;
+
+		if(ofVec3f(hand_pos_.x, hand_pos_.y, 0).distance(bird_pos_ss_) < 50)
+			bird_acc_+= dir/10;
 /*        
         cout<<mvp_mat_(0,0)<<"m "<<mvp_mat_(0, 1)<<" "<<mvp_mat_(0, 2)<<"\r";
         cout<<mvp_mat_(1,0)<<"m "<<mvp_mat_(1, 1)<<" "<<mvp_mat_(1, 2)<<"\r";
@@ -228,7 +252,7 @@ namespace Jungle
         cout<<bird_pos_ss_.x<<" "<<bird_pos_ss_.y<<"\r";
         cout<<bird_pos_.x<<" "<<bird_pos_.y<<"\r";
 */
->>>>>>> particle
+
 	}
 
 	void GamingScene4::Draw()
@@ -394,12 +418,13 @@ namespace Jungle
         ofVec3f dir = ofVec3f(x, y, 0)- ofVec3f(ofGetPreviousMouseX(), ofGetPreviousMouseY(), 0);
         dir.normalize();
         dir.y = -dir.y;
+		//dir.x = -dir.x;
         angle_ = dir.angle(ofVec3f(1,0,0));
         if(dir.y >=  0) angle_+=180;
         emitter_.angle = angle_;
         
         if(ofVec3f(x, y, 0).distance(bird_pos_ss_) < 50)
-            bird_acc_+= dir;
+            bird_acc_+= dir/10;
 	}
 
 	void GamingScene4::windowResized( int w, int h )

@@ -76,6 +76,9 @@ namespace Jungle
         ofMatrix4x4 mvp_mat_;
         
         ofxParticleEmitter		emitter_;
+		float particle_scale_;
+		ofPoint hand_pos_;
+		ofPoint pre_hand_pos_;
 
 		float gesture_timer_;
 		bool left_wind_start_;

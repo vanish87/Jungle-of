@@ -142,6 +142,15 @@
     <ClCompile Include="src\GamingScene4.cpp">
       <Filter>src</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxParticleEmitter\src\ofx3DParticleEmitter.cpp">
+      <Filter>addons\ofxParticleEmitter</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxParticleEmitter\src\ofxListParticleEmitter.cpp">
+      <Filter>addons\ofxParticleEmitter</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxParticleEmitter\src\ofxParticleEmitter.cpp">
+      <Filter>addons\ofxParticleEmitter</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\Animal.h">
@@ -699,6 +708,15 @@
     <ClInclude Include="..\..\..\addons\ofxKinectUsers\src\ofxKTools.h">
       <Filter>addons\ofxKinectUsers</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxParticleEmitter\src\ofx3DParticleEmitter.h">
+      <Filter>addons\ofxParticleEmitter</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxParticleEmitter\src\ofxListParticleEmitter.h">
+      <Filter>addons\ofxParticleEmitter</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxParticleEmitter\src\ofxParticleEmitter.h">
+      <Filter>addons\ofxParticleEmitter</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="src">
@@ -715,6 +733,9 @@
     </Filter>
     <Filter Include="addons\ofxOthers">
       <UniqueIdentifier>{e4ddccf9-9be5-4e81-8776-4461ea419732}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons\ofxParticleEmitter">
+      <UniqueIdentifier>{caa14eac-4872-48b1-b876-467106d29343}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
