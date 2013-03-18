@@ -2,7 +2,11 @@
 <COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
   <asset><contributor><author></author><authoring_tool>FBX COLLADA exporter</authoring_tool><comments></comments></contributor><created>2013-03-10T20:42:03Z</created><keywords></keywords><modified>2013-03-10T20:42:03Z</modified><revision></revision><subject></subject><title></title><unit meter="0.010000" name="centimeter"></unit><up_axis>Y_UP</up_axis></asset>
   <library_images>
+<<<<<<< HEAD
     <image id="BigWingsDiffuseTextu-image" name="BigWingsDiffuseTextu"><init_from>Textures/B2BigWingDiffuse.png</init_from></image>
+=======
+    <image id="BigWingsDiffuseTextu-image" name="BigWingsDiffuseTextu"><init_from>Textures/Flat_Red.png</init_from></image>
+>>>>>>> particle
   </library_images>
   <library_materials>
     <material id="Material_001__BigWingsDiffuseTextu" name="Material_001__BigWingsDiffuseTextu">

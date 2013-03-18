@@ -4,6 +4,7 @@
 #pragma once
 #include "State.h"
 #include "ofxAssimpModelLoader.h"
+#include "ofx3DParticleEmitter.h"
 
 namespace Jungle
 {
@@ -46,6 +47,8 @@ namespace Jungle
 		float sphere_radius_;
 		bool sphere_collided_;
 		int tree_rotation_;
+        
+        float bird_rotation_;
 
 		ofImage right_wind_;
 		ofVec3f rw_pos_;
@@ -54,7 +57,14 @@ namespace Jungle
 		ofxAssimpModelLoader bird_;
 		float animation_time_;
 		ofVec3f bird_pos_;
+        ofVec3f bird_pos_ss_;
 		ofVec3f bird_rot_;
+        
+        ofVec3f bird_acc_;
+        ofVec3f bird_vol_;
+        
+        float angle_;
+        
 		ofxAssimpModelLoader shadow_;
 		ofVec3f shadow_pos_;
 
@@ -63,6 +73,9 @@ namespace Jungle
 		ofNode virtual_looking_obj_;
 		//longitude(x), latitude(y) of orbit camera radius(z)
 		ofVec3f camera_orbit_para_;
+        ofMatrix4x4 mvp_mat_;
+        
+        ofxParticleEmitter		emitter_;
 
 		float gesture_timer_;
 		bool left_wind_start_;

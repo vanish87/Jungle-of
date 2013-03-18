@@ -47,10 +47,14 @@ namespace Jungle
 		bird_.loadModel("Yellow_Butterfly_1.dae");
 		bird_pos_ = ofVec3f(2,3.5,5);
 		bird_.setPosition(bird_pos_.x,bird_pos_.y,bird_pos_.z);
+<<<<<<< HEAD
 		bird_.setRotation(0, 150, 1, 0, 0);
+=======
+>>>>>>> particle
 		bird_.setScale(0.05,0.05,0.05);
 		bird_rot_.set(0, 0, 0);
 		animation_time_= 0;
+        bird_rotation_ = 0;
 
 		right_wind_.loadImage("Right_Medium_Wind.png");
 		right_wind_.rotate90(1);
@@ -67,6 +71,11 @@ namespace Jungle
 		main_camera_.lookAt(virtual_looking_obj_.getGlobalPosition());
 		camera_orbit_para_ = ofVec3f(0,0,15);
 		main_camera_.orbit(camera_orbit_para_.x,camera_orbit_para_.y, camera_orbit_para_.z,virtual_looking_obj_);
+        
+        if ( !emitter_.loadFromXml( "circles.pex" ) )
+        {
+            ofLog( OF_LOG_ERROR, "testApp::setup() - failed to load emitter config" );
+        }
 
 		gesture_timer_ = 0;
 
@@ -81,6 +90,7 @@ namespace Jungle
 
 	void GamingScene4::Update()
 	{
+        emitter_.update();
 		ofxUser* user = JungleApp::KinectInstance().users;
 		for(int i =0; i< MAX_USERS; ++i)
 		{
@@ -139,15 +149,21 @@ namespace Jungle
 		main_camera_.orbit(camera_orbit_para_.x,camera_orbit_para_.y, camera_orbit_para_.z,virtual_looking_obj_);
 
 
-		animation_time_ += ofGetLastFrameTime();
-		if( animation_time_ >= 1.0 ){
-			animation_time_ = 0.0;
+		animation_time_ += ofGetLastFrameTime()/24.0f;
+		if( animation_time_ > 14.0f/360.0f ){
+			animation_time_ = 0;
 		}
-		bird_.setAnimation(0);
+        //bird_.getDuration(0)/192.0f;
+		bird_.setAnimation(0);        
 		bird_.setNormalizedTime(animation_time_);
 
+<<<<<<< HEAD
 		//bird_.setAnimation(1);
 		//bird_.setNormalizedTime(animation_time_);
+=======
+//		bird_.setAnimation(1);
+//		bird_.setNormalizedTime(animation_time_);
+>>>>>>> particle
 		
 		if(rw_enabled_)
 		{			
@@ -168,13 +184,51 @@ namespace Jungle
 					rw_enabled_ = false;
 				}
 		}
-
+        if(bird_acc_.x > 0)
+            bird_acc_.x -= 0.1;
+        else
+        {
+            if(bird_acc_.x < 0)
+                bird_acc_.x += 0.1;
+        }
+        if(bird_acc_.y > 0)
+            bird_acc_.y -= 0.1;
+        else
+        {
+            if(bird_acc_.y < 0)
+                bird_acc_.y += 0.1;
+        }
+        bird_pos_+=bird_acc_;
 		shadow_.setPosition(shadow_pos_.x, 0, shadow_pos_.z);
+<<<<<<< HEAD
 		bird_.setPosition(bird_pos_.x, bird_pos_.y, bird_pos_.z);    
 		bird_.setRotation(0, 150, 1, 0, 0);
 		sphere_.setRotation(1, -90+ tree_rotation_, 0, 1, 0);
 
 		gesture_timer_+=ofGetLastFrameTime();
+=======
+		bird_.setPosition(bird_pos_.x, bird_pos_.y, bird_pos_.z); 
+        bird_.setRotation(0, 150+ bird_rotation_, 1, 0, 0); 
+		sphere_.setRotation(1, -90+ tree_rotation_, 0, 1, 0);
+        
+        mvp_mat_ = main_camera_.getModelViewProjectionMatrix();
+        bird_pos_ss_= bird_pos_ * mvp_mat_ ;
+        ofPoint screen_pos;
+        screen_pos.set(bird_pos_ss_.x * w_/2 + (x_/2 + w_/2), h_ - (bird_pos_ss_.y * h_/2 + (y_/2 + h_/2)));
+        
+        bird_pos_ss_.set(screen_pos.x, screen_pos.y);
+        
+/*        
+        cout<<mvp_mat_(0,0)<<"m "<<mvp_mat_(0, 1)<<" "<<mvp_mat_(0, 2)<<"\r";
+        cout<<mvp_mat_(1,0)<<"m "<<mvp_mat_(1, 1)<<" "<<mvp_mat_(1, 2)<<"\r";
+        cout<<mvp_mat_(2,0)<<"m "<<mvp_mat_(2, 1)<<" "<<mvp_mat_(2, 2)<<"\r";
+        cout<<mvp_mat_(3,0)<<"m "<<mvp_mat_(3, 1)<<" "<<mvp_mat_(3, 2)<<"\r";
+  
+        cout<<screen_pos.x<<"n "<<screen_pos.y<<"\r";
+        cout<<bird_pos_ss_.x<<" "<<bird_pos_ss_.y<<"\r";
+        cout<<bird_pos_.x<<" "<<bird_pos_.y<<"\r";
+*/
+>>>>>>> particle
 	}
 
 	void GamingScene4::Draw()
@@ -213,6 +267,9 @@ namespace Jungle
 		ofSetColor(255, 255, 255);	
 		if(rw_enabled_)
 			right_wind_.draw(rw_pos_.x, rw_pos_.y, 0 , 360,213);
+        
+        ofDisableAlphaBlending();
+        emitter_.draw( 0, 0 );
 	}
 
 	void GamingScene4::keyPressed( int key )
@@ -227,16 +284,18 @@ namespace Jungle
 			//                 main_camera_.setPosition(pos);                
 			//                 main_camera_.lookAt(look_at_);
 			//main_camera_.dolly(1);
-			if(camera_orbit_para_.y > -90)
-				camera_orbit_para_.y--;
+			//if(camera_orbit_para_.y > -90)
+			//	camera_orbit_para_.y--;
+                bird_rotation_+=3;
 			break;
 		case 'w':
 			//                 pos.z--;
 			//                 main_camera_.setPosition(pos);
 			//                 main_camera_.lookAt(look_at_);
 			//main_camera_.dolly(-1);
-			if(camera_orbit_para_.y < 90)
-				camera_orbit_para_.y++;
+			//if(camera_orbit_para_.y < 90)
+			//	camera_orbit_para_.y++;
+                bird_rotation_-=3;
 			break;	
 		case 'q':
 			pos.y++;
@@ -329,10 +388,24 @@ namespace Jungle
 
 	void GamingScene4::mouseMoved( int x, int y )
 	{
+        emitter_.sourcePosition.x = x;
+        emitter_.sourcePosition.y = y;
+        
+        ofVec3f dir = ofVec3f(x, y, 0)- ofVec3f(ofGetPreviousMouseX(), ofGetPreviousMouseY(), 0);
+        dir.normalize();
+        dir.y = -dir.y;
+        angle_ = dir.angle(ofVec3f(1,0,0));
+        if(dir.y >=  0) angle_+=180;
+        emitter_.angle = angle_;
+        
+        if(ofVec3f(x, y, 0).distance(bird_pos_ss_) < 50)
+            bird_acc_+= dir;
 	}
 
 	void GamingScene4::windowResized( int w, int h )
 	{
+        w_ = w;
+        h_ = h;
 	}
 
 	void GamingScene4::inPose( ofxUser & user )
