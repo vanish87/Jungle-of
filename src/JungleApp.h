@@ -12,7 +12,7 @@
 namespace Jungle
 {
 
-	static const bool KINECT_ENABLE = true;
+	static const bool KINECT_ENABLE = false;
 	class JungleApp : public ofBaseApp{
 	public:
 		void setup();

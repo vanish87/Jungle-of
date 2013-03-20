@@ -51,6 +51,7 @@ namespace Jungle
 		bird_rot_.set(0, 0, 0);
 		animation_time_= 0;
         bird_rotation_ = 0;
+        bird_.disableNormals();
 
 		right_wind_.loadImage("Right_Medium_Wind.png");
 		right_wind_.rotate90(1);
@@ -60,8 +61,13 @@ namespace Jungle
 		left_wind_start_ = false;
 		right_wind_start_ = false;
 
-		light_.enable();
-
+		light_.setAmbientColor(ofFloatColor(0.2,0.2,0.2));
+        light_.setDiffuseColor(ofFloatColor(0.3,0.3,0.3));
+        light_.setSpecularColor(ofFloatColor(0.3,0.3,0.3));
+        light_.setPosition(0, 100, 0);
+        ofSetSmoothLighting(true);
+        light_.enable();
+        
 		main_camera_.setPosition(ofVec3f(2, 3.5, 12));
 		virtual_looking_obj_.setGlobalPosition(ofVec3f(2,3.5,0));
 		main_camera_.lookAt(virtual_looking_obj_.getGlobalPosition());
@@ -80,7 +86,7 @@ namespace Jungle
 		ofBackground(0);
 		ofSetFrameRate(60);
 		ofSetVerticalSync(true);
-		glShadeModel(GL_SMOOTH);
+		//ofShadeModel(GL_SMOOTH);
 		ofEnableBlendMode(OF_BLENDMODE_ALPHA);
 
 		ofViewport(x_, y_, w_, h_, false);
@@ -230,7 +236,7 @@ namespace Jungle
 				emitter_.particleLifespan--;
 		}
 
-		emitter_.sourcePosition.x = hand_pos_.x;
+/*		emitter_.sourcePosition.x = hand_pos_.x;
 		emitter_.sourcePosition.y = hand_pos_.y;
 		ofVec3f dir = ofVec3f(hand_pos_.x, hand_pos_.y, 0)- ofVec3f(pre_hand_pos_.x, pre_hand_pos_.y, 0);
 		dir.normalize();
@@ -242,6 +248,8 @@ namespace Jungle
 
 		if(ofVec3f(hand_pos_.x, hand_pos_.y, 0).distance(bird_pos_ss_) < 50)
 			bird_acc_+= dir/10;
+ 
+ */
 /*        
         cout<<mvp_mat_(0,0)<<"m "<<mvp_mat_(0, 1)<<" "<<mvp_mat_(0, 2)<<"\r";
         cout<<mvp_mat_(1,0)<<"m "<<mvp_mat_(1, 1)<<" "<<mvp_mat_(1, 2)<<"\r";
