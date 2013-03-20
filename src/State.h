@@ -36,7 +36,6 @@ namespace Jungle
 
 	private:
 		State* parent_;
-		bool kinect_init;
 	};
 
 

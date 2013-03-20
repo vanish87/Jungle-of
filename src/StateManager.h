@@ -1,5 +1,5 @@
-#ifndef STATEMANAGER_H_
-#define STATEMANAGER_H_
+#ifndef STATE_MANAGER_H_
+#define STATE_MANAGER_H_
 
 #pragma once
 #include <vector>

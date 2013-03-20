@@ -7,9 +7,6 @@
     <ClCompile Include="src\GamingScene2.cpp">
       <Filter>src</Filter>
     </ClCompile>
-    <ClCompile Include="src\GamingScene_1.cpp">
-      <Filter>src</Filter>
-    </ClCompile>
     <ClCompile Include="src\JungleApp.cpp">
       <Filter>src</Filter>
     </ClCompile>
@@ -151,15 +148,24 @@
     <ClCompile Include="..\..\..\addons\ofxParticleEmitter\src\ofxParticleEmitter.cpp">
       <Filter>addons\ofxParticleEmitter</Filter>
     </ClCompile>
+    <ClCompile Include="src\ButterFly.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\SceneObject.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\SceneManager.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GamingScene1.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\Animal.h">
       <Filter>src</Filter>
     </ClInclude>
     <ClInclude Include="src\GamingScene2.h">
-      <Filter>src</Filter>
-    </ClInclude>
-    <ClInclude Include="src\GamingScene_1.h">
       <Filter>src</Filter>
     </ClInclude>
     <ClInclude Include="src\JungleApp.h">
@@ -716,6 +722,18 @@
     </ClInclude>
     <ClInclude Include="..\..\..\addons\ofxParticleEmitter\src\ofxParticleEmitter.h">
       <Filter>addons\ofxParticleEmitter</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ButterFly.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\SceneObject.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\SceneManager.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GamingScene1.h">
+      <Filter>src</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

@@ -130,6 +130,13 @@ namespace Jungle
 		return state_manager;
 	}
 
+	SceneManager& JungleApp::SceneManagerInstance()
+	{
+		static SceneManager scene_manager;
+		return scene_manager;
+	}
+
+
 	ofxKinectUsers& JungleApp::KinectInstance()
 	{
 		static ofxKinectUsers inter;

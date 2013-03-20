@@ -45,6 +45,7 @@ namespace Jungle
 		//shadow_.setRotation(0, 180, 0, 0, 1);
 
 		bird_.loadModel("Yellow_Butterfly_1.dae");
+		bird_.SetTexture();
 		bird_pos_ = ofVec3f(2,3.5,5);
 		bird_.setPosition(bird_pos_.x,bird_pos_.y,bird_pos_.z);
 		bird_.setScale(0.05,0.05,0.05);

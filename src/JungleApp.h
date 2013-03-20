@@ -1,10 +1,11 @@
-#ifndef JUNGLE_APP_
-#define JUNGLE_APP_
+#ifndef JUNGLE_APP_H_
+#define JUNGLE_APP_H_
 
 #pragma once
 #include "ofMain.h"
 #include "StateManager.h"
-#include "GamingScene_1.h"
+#include "SceneManager.h"
+#include "GamingScene1.h"
 #include "GamingScene2.h"
 #include "GamingScene3.h"
 #include "GamingScene4.h"
@@ -28,6 +29,7 @@ namespace Jungle
  		void windowResized(int w, int h);
 
 		static StateManager& StateManagerInstance();
+		static SceneManager& SceneManagerInstance();
 		static ofxKinectUsers& KinectInstance();
 
 	private:

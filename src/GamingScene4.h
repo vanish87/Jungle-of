@@ -1,10 +1,11 @@
-#ifndef GAMESCENE4_
-#define GAMESCENE4_
+#ifndef GAMESCENE4_H_
+#define GAMESCENE4_H_
 
 #pragma once
 #include "State.h"
 #include "ofxAssimpModelLoader.h"
 #include "ofx3DParticleEmitter.h"
+#include "ButterFly.h"
 
 namespace Jungle
 {
@@ -54,7 +55,7 @@ namespace Jungle
 		ofVec3f rw_pos_;
 		bool rw_enabled_;
 
-		ofxAssimpModelLoader bird_;
+		ButterFly bird_;
 		float animation_time_;
 		ofVec3f bird_pos_;
         ofVec3f bird_pos_ss_;

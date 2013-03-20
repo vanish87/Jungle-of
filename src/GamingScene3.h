@@ -1,5 +1,5 @@
-#ifndef GAMESCENE3_
-#define GAMESCENE3_
+#ifndef GAMESCENE3_H_
+#define GAMESCENE3_H_
 
 #pragma once
 #include "State.h"

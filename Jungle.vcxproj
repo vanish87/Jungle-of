@@ -161,12 +161,15 @@ if not exist "$(ProjectDir)\bin\data" mkdir  "$(ProjectDir)\bin\data"
     <ClCompile Include="..\..\..\addons\ofxXmlSettings\libs\tinyxmlparser.cpp" />
     <ClCompile Include="..\..\..\addons\ofxXmlSettings\src\ofxXmlSettings.cpp" />
     <ClCompile Include="src\Animal.cpp" />
+    <ClCompile Include="src\ButterFly.cpp" />
     <ClCompile Include="src\GamingScene4.cpp" />
     <ClCompile Include="src\GamingScene2.cpp" />
     <ClCompile Include="src\GamingScene3.cpp" />
-    <ClCompile Include="src\GamingScene_1.cpp" />
+    <ClCompile Include="src\GamingScene1.cpp" />
     <ClCompile Include="src\main.cpp" />
     <ClCompile Include="src\JungleApp.cpp" />
+    <ClCompile Include="src\SceneManager.cpp" />
+    <ClCompile Include="src\SceneObject.cpp" />
     <ClCompile Include="src\State.cpp" />
     <ClCompile Include="src\StateManager.cpp" />
   </ItemGroup>
@@ -351,12 +354,15 @@ if not exist "$(ProjectDir)\bin\data" mkdir  "$(ProjectDir)\bin\data"
     <ClInclude Include="..\..\..\addons\ofxXmlSettings\libs\tinyxml.h" />
     <ClInclude Include="..\..\..\addons\ofxXmlSettings\src\ofxXmlSettings.h" />
     <ClInclude Include="src\Animal.h" />
+    <ClInclude Include="src\ButterFly.h" />
     <ClInclude Include="src\GamingScene4.h" />
     <ClInclude Include="src\GamingScene2.h" />
     <ClInclude Include="src\GamingScene3.h" />
-    <ClInclude Include="src\GamingScene_1.h" />
+    <ClInclude Include="src\GamingScene1.h" />
     <ClInclude Include="src\JungleApp.h" />
     <ClInclude Include="src\PreDef.h" />
+    <ClInclude Include="src\SceneManager.h" />
+    <ClInclude Include="src\SceneObject.h" />
     <ClInclude Include="src\State.h" />
     <ClInclude Include="src\StateManager.h" />
   </ItemGroup>
