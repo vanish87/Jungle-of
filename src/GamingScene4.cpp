@@ -45,7 +45,6 @@ namespace Jungle
 		//shadow_.setRotation(0, 180, 0, 0, 1);
 
 		bird_.loadModel("Yellow_Butterfly_1.dae");
-		bird_.SetTexture();
 		bird_pos_ = ofVec3f(2,3.5,5);
 		bird_.setPosition(bird_pos_.x,bird_pos_.y,bird_pos_.z);
 		bird_.setScale(0.05,0.05,0.05);
@@ -414,6 +413,13 @@ namespace Jungle
 			vo_pos.y--;
 			virtual_looking_obj_.setGlobalPosition(vo_pos);
 			break;
+		case 't':     
+			bird_.SetTexture("Textures/B2BigWingDiffuse.png");
+			break;
+		case 'r':     
+			bird_.SetTexture("Textures/Abstract_Wings.png");
+			break;
+
 		default:
 			break;
 		}
