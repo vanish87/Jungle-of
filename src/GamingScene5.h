@@ -1,5 +1,5 @@
-#ifndef GAMESCENE4_H_
-#define GAMESCENE4_H_
+#ifndef GAMESCENE5_H_
+#define GAMESCENE5_H_
 
 #pragma once
 #include "State.h"
@@ -9,11 +9,11 @@
 
 namespace Jungle
 {
-	class GamingScene4 :public State
+	class GamingScene5 :public State
 	{
 	public:
-		GamingScene4(void);
-		~GamingScene4(void);
+		GamingScene5(void);
+		~GamingScene5(void);
 
 		virtual void Steup();
 
@@ -43,17 +43,10 @@ namespace Jungle
 
 		ofxAssimpModelLoader stage_;
 		ofxAssimpModelLoader background_;
-		ofxAssimpModelLoader sphere_;
 		ofVec3f sphere_pos_;
+		bool in_sphere_;
+		bool need_move_;
 		float sphere_radius_;
-		bool sphere_collided_;
-		int tree_rotation_;
-        
-        float bird_rotation_;
-
-		ofImage right_wind_;
-		ofVec3f rw_pos_;
-		bool rw_enabled_;
 
 		ButterFly bird_;
 		float animation_time_;
@@ -64,23 +57,14 @@ namespace Jungle
         ofVec3f bird_acc_;
         ofVec3f bird_vol_;
         
-        float angle_;
         
-		ofxAssimpModelLoader shadow_;
-		ofVec3f shadow_pos_;
 
 		ofCamera main_camera_;
 		ofVec3f camera_pos_;
-        ofMatrix4x4 mvp_mat_;
-        
-        ofxParticleEmitter		emitter_;
-		float particle_scale_;
+
 		ofPoint hand_pos_;
 		ofPoint pre_hand_pos_;
 
-		float gesture_timer_;
-		bool left_wind_start_;
-		bool right_wind_start_;
 
 		int w_;
 		int h_;

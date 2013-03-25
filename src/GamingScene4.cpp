@@ -68,11 +68,9 @@ namespace Jungle
         ofSetSmoothLighting(true);
         light_.enable();
         
-		main_camera_.setPosition(ofVec3f(2, 3.5, 12));
-		virtual_looking_obj_.setGlobalPosition(ofVec3f(2,3.5,0));
-		main_camera_.lookAt(virtual_looking_obj_.getGlobalPosition());
-		camera_orbit_para_ = ofVec3f(0,0,15);
-		main_camera_.orbit(camera_orbit_para_.x,camera_orbit_para_.y, camera_orbit_para_.z,virtual_looking_obj_);
+		camera_pos_ = ofVec3f(2, 3.5, 12);
+		main_camera_.setPosition(camera_pos_);
+		main_camera_.lookAt(bird_pos_);
         
         if ( !emitter_.loadFromXml( "circles.pex" ) )
         {
@@ -118,7 +116,6 @@ namespace Jungle
 		}
 				
 		//bird_pos_ = ofVec3f(shadow_pos_.x, bird_pos_.y, shadow_pos_.z);
-		ofVec3f vo_pos = virtual_looking_obj_.getGlobalPosition();
 		ofVec3f camera_pos = main_camera_.getPosition();
 
 /*
@@ -156,8 +153,7 @@ namespace Jungle
 			sphere_collided_ = true;*/
 		ofPopMatrix();
 		
-		
-		main_camera_.orbit(camera_orbit_para_.x,camera_orbit_para_.y, camera_orbit_para_.z,virtual_looking_obj_);
+
 
 
 		animation_time_ += ofGetLastFrameTime()/24.0f;
@@ -210,7 +206,7 @@ namespace Jungle
             if(bird_acc_.y < 0)
                 bird_acc_.y += 0.01;
         }
-		cout<<bird_acc_.x<<" "<<bird_acc_.y<<endl;
+		//cout<<bird_acc_.x<<" "<<bird_acc_.y<<endl;
 		shadow_.setPosition(shadow_pos_.x, 0, shadow_pos_.z);
 
 		bird_pos_.x = ofClamp(bird_pos_.x, -5, 5);
@@ -227,7 +223,6 @@ namespace Jungle
         screen_pos.set(bird_pos_ss_.x * w_/2 + (x_/2 + w_/2), h_ - (bird_pos_ss_.y * h_/2 + (y_/2 + h_/2)));
         
         bird_pos_ss_.set(screen_pos.x, screen_pos.y);
-
 		if(bird_acc_.x ==0 && bird_acc_.y ==0 && emitter_.particleLifespan < 12)
 			emitter_.particleLifespan ++;
 		else
@@ -235,7 +230,14 @@ namespace Jungle
 			if(emitter_.particleLifespan > 8)
 				emitter_.particleLifespan--;
 		}
+		ofVec3f delta = bird_pos_ - camera_pos_;
 
+		//if(abs(delta.x) < 2 || abs(delta.y) < 2)
+			main_camera_.lookAt(bird_pos_);
+		//else
+		{
+			//main_camera_.orbit(camera_orbit_para_.x,camera_orbit_para_.y, camera_orbit_para_.z,virtual_looking_obj_);
+		}
 /*		emitter_.sourcePosition.x = hand_pos_.x;
 		emitter_.sourcePosition.y = hand_pos_.y;
 		ofVec3f dir = ofVec3f(hand_pos_.x, hand_pos_.y, 0)- ofVec3f(pre_hand_pos_.x, pre_hand_pos_.y, 0);
@@ -285,6 +287,7 @@ namespace Jungle
 		bird_.drawFaces();
 		glPopMatrix();
 		glDisable(GL_DEPTH_TEST);
+
 		main_camera_.end();
 
 		if(Jungle::KINECT_ENABLE)
@@ -300,14 +303,12 @@ namespace Jungle
 		if(rw_enabled_)
 			right_wind_.draw(rw_pos_.x, rw_pos_.y, 0 , 360,213);
         
-        ofDisableAlphaBlending();
-        emitter_.draw( 0, 0 );
+       
 	}
 
 	void GamingScene4::keyPressed( int key )
 	{
 		ofVec3f pos = main_camera_.getPosition();
-		ofVec3f vo_pos = virtual_looking_obj_.getGlobalPosition();
 		shadow_pos_= shadow_.getPosition();
 		switch (key)
 		{
@@ -406,12 +407,8 @@ namespace Jungle
 			tree_rotation_--;
 			break;
 		case 'm':     
-			vo_pos.y++;
-			virtual_looking_obj_.setGlobalPosition(vo_pos);
 			break;
 		case 'n':     
-			vo_pos.y--;
-			virtual_looking_obj_.setGlobalPosition(vo_pos);
 			break;
 		case 't':     
 			bird_.SetTexture("Textures/B2BigWingDiffuse.png");
@@ -438,8 +435,13 @@ namespace Jungle
         if(dir.y >=  0) angle_+=180;
         emitter_.angle = angle_;
         
-        if(ofVec3f(x, y, 0).distance(bird_pos_ss_) < 50)
+        if(ofVec3f(x, y, 0).distance(bird_pos_ss_) < 70)
+		{
             bird_acc_+= dir/10;
+
+			cout<<bird_pos_ss_.x<<" "<<bird_pos_ss_.y<<endl;
+			cout<<" "<<x<<" "<<y<<endl;
+		}
 	}
 
 	void GamingScene4::windowResized( int w, int h )
@@ -486,19 +488,12 @@ namespace Jungle
         
         if(user.gesture == "UpWind")
         {
-            
-            ofVec3f vo_pos = virtual_looking_obj_.getGlobalPosition();
-            vo_pos.y--;
-			virtual_looking_obj_.setGlobalPosition(vo_pos);
 
 			gesture_timer_ = 0;
         }
          if(user.gesture == "DownWind")
          {
              
-             ofVec3f vo_pos = virtual_looking_obj_.getGlobalPosition();
-             vo_pos.y++;
-             virtual_looking_obj_.setGlobalPosition(vo_pos);
 
 			 gesture_timer_ = 0;
          }

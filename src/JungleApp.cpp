@@ -24,8 +24,12 @@ namespace Jungle
 		//game_3_->Steup();
 
 		game_4_ = new GamingScene4();
-		game_4_->Steup();
-		StateManagerInstance().ChangeState(game_4_, SOP_PUSH);
+		//game_4_->Steup();
+
+
+		game_5_ = new GamingScene5();
+		game_5_->Steup();
+		StateManagerInstance().ChangeState(game_5_, SOP_PUSH);
 		//ofEnableAlphaBlending();
 	}
 

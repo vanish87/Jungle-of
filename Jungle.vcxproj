@@ -166,12 +166,14 @@ if not exist "$(ProjectDir)\bin\data" mkdir  "$(ProjectDir)\bin\data"
     <ClCompile Include="src\GamingScene2.cpp" />
     <ClCompile Include="src\GamingScene3.cpp" />
     <ClCompile Include="src\GamingScene1.cpp" />
+    <ClCompile Include="src\GamingScene5.cpp" />
     <ClCompile Include="src\main.cpp" />
     <ClCompile Include="src\JungleApp.cpp" />
     <ClCompile Include="src\SceneManager.cpp" />
     <ClCompile Include="src\SceneObject.cpp" />
     <ClCompile Include="src\State.cpp" />
     <ClCompile Include="src\StateManager.cpp" />
+    <ClCompile Include="src\WindGenerator.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\..\addons\ofxAssimpModelLoader\src\ofx3DBaseLoader.h" />
@@ -359,12 +361,14 @@ if not exist "$(ProjectDir)\bin\data" mkdir  "$(ProjectDir)\bin\data"
     <ClInclude Include="src\GamingScene2.h" />
     <ClInclude Include="src\GamingScene3.h" />
     <ClInclude Include="src\GamingScene1.h" />
+    <ClInclude Include="src\GamingScene5.h" />
     <ClInclude Include="src\JungleApp.h" />
     <ClInclude Include="src\PreDef.h" />
     <ClInclude Include="src\SceneManager.h" />
     <ClInclude Include="src\SceneObject.h" />
     <ClInclude Include="src\State.h" />
     <ClInclude Include="src\StateManager.h" />
+    <ClInclude Include="src\WindGenerator.h" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\..\libs\openFrameworksCompiled\project\vs2010\openframeworksLib.vcxproj">

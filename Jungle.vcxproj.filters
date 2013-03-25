@@ -160,6 +160,12 @@
     <ClCompile Include="src\GamingScene1.cpp">
       <Filter>src</Filter>
     </ClCompile>
+    <ClCompile Include="src\WindGenerator.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GamingScene5.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\Animal.h">
@@ -733,6 +739,12 @@
       <Filter>src</Filter>
     </ClInclude>
     <ClInclude Include="src\GamingScene1.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\WindGenerator.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GamingScene5.h">
       <Filter>src</Filter>
     </ClInclude>
   </ItemGroup>
