@@ -18,11 +18,15 @@ namespace Jungle
 		h_ = ofGetWindowHeight();
 		x_ = ofGetWindowPositionX();
 		y_ = ofGetWindowPositionY();
-		stage_.loadModel("stage_04.dae");
-		stage_.setPosition(0, 0, 0);
+		stage_.loadModel("jungle_alpha_04.dae");
+        stage_.setPosition(0, -139, 0);        
+		stage_.setScale(0.5,0.5,0.5);
+		stage_.setRotation(0, 180, 0, 0, 1);
+		stage_.setRotation(1, -90, 0, 1, 0);
+		//stage_.setPosition(0, 0, 0);
 
-		stage_.setRotation(2, 180, 0, 0, 1);
-		stage_.setScale(0.1,0.1,0.1);
+		//stage_.setRotation(2, 180, 0, 0, 1);
+		//stage_.setScale(0.1,0.1,0.1);
 
 		shadow_.loadModel("shadow.dae");
 		shadow_.setPosition(0,1,0);

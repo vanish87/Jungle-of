@@ -3,6 +3,9 @@
 
 namespace Jungle
 {
+    static int NUM_PARTICLE = 250;
+    static const int MAX_PARTICLE = 300;
+    static const int MIN_PARTICLE = 200;
 	GamingScene5::GamingScene5(void)
 	{
 	}
@@ -36,7 +39,7 @@ namespace Jungle
 		bird_pos_ = ofVec3f(2,3.5,5);
 		bird_.setPosition(bird_pos_.x,bird_pos_.y,bird_pos_.z);
 		bird_.setRotation(0, 150, 1, 0, 0); 
-		bird_.setScale(0.05,0.05,0.05);
+		bird_.setScale(0.03,0.03,0.03);
 		bird_rot_.set(0, 0, 0);
 		animation_time_= 0;
 
@@ -55,6 +58,12 @@ namespace Jungle
 		camera_pos_ = ofVec3f(2, 3.5, 12);
 		main_camera_.setPosition(camera_pos_);
 		main_camera_.lookAt(bird_pos_);
+        
+        for (int i = 0; i < NUM_PARTICLE; ++i)
+        {
+            WindParticle particle;
+            wind_.push_back(particle);
+        }
         
 
 
@@ -138,13 +147,13 @@ namespace Jungle
 
 
 
-		bird_pos_+=bird_acc_;
+		bird_pos_+=bird_acc_/5;
 		bird_pos_.x = ofClamp(bird_pos_.x, -5, 5);
 		bird_pos_.y = ofClamp(bird_pos_.y,  0, 7);
 		bird_.setPosition(bird_pos_.x, bird_pos_.y, bird_pos_.z); 
 
 		ofVec3f delta = bird_pos_ - camera_pos_;
-		cout<<delta.x<<" "<<delta.y<<" "<<delta.z<<endl;
+		//cout<<delta.x<<" "<<delta.y<<" "<<delta.z<<endl;
 		main_camera_.lookAt(bird_pos_);
 
 		if(abs(delta.x) > 2 || abs(delta.y) > 2)
@@ -163,7 +172,30 @@ namespace Jungle
 			camera_pos_.y += delta.y/10;
 			main_camera_.setPosition(camera_pos_);
 		}
+        
+        ofVec3f hand_delta =  hand_pos_- pre_hand_pos_;
+        
+        //cout<<delta.x<<" "<<delta.y<<" "<<delta.z<<endl;
+        if(hand_delta.x == 0 && hand_delta.y == 0 && NUM_PARTICLE < MAX_PARTICLE)
+        {
+            NUM_PARTICLE++;
+            WindParticle particle(hand_pos_);
+            wind_.push_back(particle);
+        }
+        else
+        {
+            if(NUM_PARTICLE > MIN_PARTICLE && ofRandomf()*10 > 3)
+            {
+                NUM_PARTICLE --;
+                wind_.pop_back();
+            }
+        }
+        
+        for(int i = 0; i < NUM_PARTICLE; ++i)
+            wind_[i].SetOrg(hand_pos_);
+        
 
+        pre_hand_pos_ = hand_pos_;
 
 	}
 
@@ -188,8 +220,9 @@ namespace Jungle
 		ofSphere(sphere_radius_);
 		glPopMatrix();
 		glPopMatrix();
+        
 		glDisable(GL_DEPTH_TEST);
-
+        
 		main_camera_.end();
 
 		if(Jungle::KINECT_ENABLE)
@@ -199,8 +232,23 @@ namespace Jungle
 			ofScale(0.4, 0.4);
 			JungleApp::KinectInstance().debugDraw();
 			glPopMatrix();
-		}        
-       
+		}  
+        
+        //
+        ofSetColor(255, 226, 141, 20); //color particles //added alpha
+        ofPushMatrix();
+        for(int i = 0; i < NUM_PARTICLE; ++i)
+        {
+            //		ofSetColor(2.55*i,2.55*i,2.55*i,1);
+            wind_[i].Simulate(0);
+        }
+        // 	ofTranslate(sphere_pos_.x, sphere_pos_.y, sphere_pos_.z);
+        // 	ofSphere(20);
+        ofPopMatrix();
+        
+        ofSetColor(0,0,0,255);
+        ofDrawBitmapString("particle num "+ ofToString(NUM_PARTICLE), 20, 80);
+               
 	}
 
 	void GamingScene5::keyPressed( int key )

@@ -18,7 +18,7 @@ namespace Jungle
 		h_ = ofGetWindowHeight();
 		x_ = ofGetWindowPositionX();
 		y_ = ofGetWindowPositionY();
-		stage_.loadModel("Tree_Stage_Smooth.dae");
+		stage_.loadModel("jungle_alpha_01.dae");
         tree_rotation_ = 0;
 		stage_.setPosition(0, -139, 0);        
 		stage_.setScale(0.5,0.5,0.5);

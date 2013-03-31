@@ -6,6 +6,7 @@
 #include "ofxAssimpModelLoader.h"
 #include "ofx3DParticleEmitter.h"
 #include "ButterFly.h"
+#include "WindParticle.h"
 
 namespace Jungle
 {
@@ -47,6 +48,8 @@ namespace Jungle
 		bool in_sphere_;
 		bool need_move_;
 		float sphere_radius_;
+        
+        vector<WindParticle> wind_;
 
 		ButterFly bird_;
 		float animation_time_;
