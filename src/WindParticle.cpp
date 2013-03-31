@@ -73,8 +73,8 @@ void WindParticle::Simulate( float delta_time )
 
 
 	ofSetColor( 0, 74, 255 );
-//    (0+i*5, 74+i*5, 255-i*5);
-    
+    //   (0+i*5, 74+i*5, 255-i*5), (255-j*5, 226+j*5, 141+j*5) with i = 10 and j = 5
+
 	ofPushMatrix();
 	ofTranslate(pos_.x, pos_.y, 0.0f);
 	ofCircle(0, 0, 3); //size of particles
