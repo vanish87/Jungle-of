@@ -7,6 +7,7 @@
 #include "ofx3DParticleEmitter.h"
 #include "ButterFly.h"
 #include "WindParticle.h"
+#include "Flower.h"
 
 namespace Jungle
 {
@@ -46,6 +47,8 @@ namespace Jungle
         ofxAssimpModelLoader ground_;
         ofVec3f stage_pos_;
 		ofxAssimpModelLoader background_;
+        vector<Flower> flowers_;
+        
 		ofVec3f sphere_pos_;
 		bool in_sphere_;
 		bool need_move_;

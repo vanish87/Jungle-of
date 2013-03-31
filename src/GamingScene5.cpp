@@ -56,6 +56,15 @@ namespace Jungle
 		in_sphere_ = false;
 		need_move_= false;
         
+        for(int i = 0; i < 4; i++)
+        {
+            Flower flower;
+            flower.loadModel("sphere.dae");
+            flower.setScale(0.001, 0.001, 0.001);
+            flower.setPosition( i, 2 , 10);
+            flowers_.push_back(flower);            
+        }
+        
         //-32,-47,25
         light_.setDirectional();
         light_.setOrientation(ofVec3f(-32,-47,25));
@@ -179,7 +188,7 @@ namespace Jungle
 		//cout<<delta.x<<" "<<delta.y<<" "<<delta.z<<endl;
 		main_camera_.lookAt(bird_pos_);
 
-		if(abs(delta.x) > 2 || abs(delta.y) > 2)
+		if(abs(delta.x) > 1.4 || abs(delta.y) > 1.4)
 		{
 			need_move_ = true;
 		}
@@ -239,6 +248,10 @@ namespace Jungle
 
 		ofSetColor(255, 255, 255);	
 		bird_.drawFaces();
+        for(int i = 0; i < 4; i++)
+        {
+            flowers_[i].drawFaces();            
+        }
 		ofPushMatrix();
 		ofTranslate(sphere_pos_.x, sphere_pos_.y, sphere_pos_.z);
 		ofSphere(sphere_radius_);

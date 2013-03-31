@@ -62,7 +62,7 @@
 		BC15384B16F50DA800023C7D /* ofxListParticleEmitter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BC15384616F50DA800023C7D /* ofxListParticleEmitter.cpp */; };
 		BC15384C16F50DA800023C7D /* ofxParticleEmitter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BC15384816F50DA800023C7D /* ofxParticleEmitter.cpp */; };
 		BC42777316E4664B00FF4CFE /* GamingScene3.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BC42777116E4664B00FF4CFE /* GamingScene3.cpp */; };
-		BC48739B16DBFAD9009E7B19 /* Animal.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BC48739A16DBFAD9009E7B19 /* Animal.cpp */; };
+		BC48739B16DBFAD9009E7B19 /* Flower.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BC48739A16DBFAD9009E7B19 /* Flower.cpp */; };
 		BC4A099117089B0B00DA37DD /* GamingScene1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BC4A098F17089B0B00DA37DD /* GamingScene1.cpp */; };
 		BC4A099417089B1800DA37DD /* GamingScene5.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BC4A099217089B1800DA37DD /* GamingScene5.cpp */; };
 		BC4A099717089BBB00DA37DD /* ButterFly.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BC4A099517089BBB00DA37DD /* ButterFly.cpp */; };
@@ -396,8 +396,8 @@
 		BC15384916F50DA800023C7D /* ofxParticleEmitter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ofxParticleEmitter.h; path = ../../../addons/ofxParticleEmitter/src/ofxParticleEmitter.h; sourceTree = "<group>"; };
 		BC42777116E4664B00FF4CFE /* GamingScene3.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GamingScene3.cpp; sourceTree = "<group>"; };
 		BC42777216E4664B00FF4CFE /* GamingScene3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GamingScene3.h; sourceTree = "<group>"; };
-		BC48739916DBFACC009E7B19 /* Animal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Animal.h; sourceTree = "<group>"; };
-		BC48739A16DBFAD9009E7B19 /* Animal.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Animal.cpp; sourceTree = "<group>"; };
+		BC48739916DBFACC009E7B19 /* Flower.h */ = {isa = PBXFileReference; fileEncoding = 4; path = Flower.h; sourceTree = "<group>"; };
+		BC48739A16DBFAD9009E7B19 /* Flower.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Flower.cpp; sourceTree = "<group>"; };
 		BC4A098F17089B0B00DA37DD /* GamingScene1.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GamingScene1.cpp; sourceTree = "<group>"; };
 		BC4A099017089B0B00DA37DD /* GamingScene1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GamingScene1.h; sourceTree = "<group>"; };
 		BC4A099217089B1800DA37DD /* GamingScene5.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GamingScene5.cpp; sourceTree = "<group>"; };
@@ -1149,9 +1149,9 @@
 				BC67296416ECF672001F7C77 /* GamingScene4.cpp */,
 				BC67296516ECF672001F7C77 /* GamingScene4.h */,
 				BC42777116E4664B00FF4CFE /* GamingScene3.cpp */,
+				BC42777216E4664B00FF4CFE /* GamingScene3.h */,
 				BC4A09A31708A8E700DA37DD /* WindParticle.cpp */,
 				BC4A09A41708A8E700DA37DD /* WindParticle.h */,
-				BC42777216E4664B00FF4CFE /* GamingScene3.h */,
 				BCDA581216DFE70100EC5ED9 /* GamingScene2.cpp */,
 				BCDA581316DFE70100EC5ED9 /* GamingScene2.h */,
 				BCAF17D616DAA6630067261D /* JungleApp.cpp */,
@@ -1162,8 +1162,8 @@
 				BCAF17DB16DAA6630067261D /* StateManager.cpp */,
 				BCAF17DC16DAA6630067261D /* StateManager.h */,
 				BC0193A316D1837400867BBC /* config.xml */,
-				BC48739916DBFACC009E7B19 /* Animal.h */,
-				BC48739A16DBFAD9009E7B19 /* Animal.cpp */,
+				BC48739916DBFACC009E7B19 /* Flower.h */,
+				BC48739A16DBFAD9009E7B19 /* Flower.cpp */,
 			);
 			path = src;
 			sourceTree = SOURCE_ROOT;
@@ -1305,7 +1305,7 @@
 				BCAF17DF16DAA6630067261D /* main.cpp in Sources */,
 				BCAF17E016DAA6630067261D /* State.cpp in Sources */,
 				BCAF17E116DAA6630067261D /* StateManager.cpp in Sources */,
-				BC48739B16DBFAD9009E7B19 /* Animal.cpp in Sources */,
+				BC48739B16DBFAD9009E7B19 /* Flower.cpp in Sources */,
 				BCDA581416DFE70100EC5ED9 /* GamingScene2.cpp in Sources */,
 				BC42777316E4664B00FF4CFE /* GamingScene3.cpp in Sources */,
 				BC67296616ECF672001F7C77 /* GamingScene4.cpp in Sources */,

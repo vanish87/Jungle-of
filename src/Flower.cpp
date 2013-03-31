@@ -6,17 +6,16 @@
 //  Copyright 2013 nyu. All rights reserved.
 //
 
-#include "Animal.h"
+#include "Flower.h"
 
 namespace Jungle {
-    Animal::Animal(void)
-    {
-        
-    }
-    Animal::~Animal(void)
+    Flower::Flower(void)
     {
         
     };
+    Flower::~Flower(void)
+    {
+    }
     
     
 }
