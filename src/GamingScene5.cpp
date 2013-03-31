@@ -112,7 +112,7 @@ namespace Jungle
                 
 				pre_hand_pos_ = hand_pos_;
                 
-                if(hand_pos.length() < 50)
+                if(hand_pos.length() < 100)
                 {
                     hand_pos_.x = ofMap((l_hand_pos.x+ r_hand_pos.x)/2 , 0, 640, 0, w_, true);
                     hand_pos_.y = ofMap((l_hand_pos.y+ r_hand_pos.y)/2  , 0, 480, 0, h_, true);
@@ -137,7 +137,7 @@ namespace Jungle
 		bird_pos_ss_.set(screen_pos.x, screen_pos.y);
 		if(hand_pos_.distance(bird_pos_ss_) < sphere_radius_ && !in_sphere_)
 		{
-			ofVec3f dir = ofVec3f(hand_pos_.x, hand_pos_.y, 0)- ofVec3f(ofGetPreviousMouseX(), ofGetPreviousMouseY(), 0);
+			ofVec3f dir = hand_pos_-pre_hand_pos_;
 			dir.normalize();
 			dir.y = -dir.y;
 			bird_acc_+= dir/3;
