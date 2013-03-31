@@ -11,9 +11,12 @@ namespace Jungle {
         Flower(void);
         ~Flower(void);
         
+        void Draw();
+        
     public:
         float flower_radius_;
 		bool flower_collided_;
+        ofColor color_;
     };
 }
 

@@ -57,6 +57,8 @@ namespace Jungle
         vector<WindParticle> wind_;
 
 		ButterFly bird_;
+        ofVec3f target_pos_;
+        bool move_to_next_lev_;
 		float animation_time_;
 		ofVec3f bird_pos_;
         ofVec3f bird_pos_ss_;

@@ -45,6 +45,8 @@ namespace Jungle
 
 		bird_.loadModel("Yellow_Butterfly_1.dae");
 		bird_pos_ = ofVec3f(2,3.5, 10);
+        target_pos_.set(1, 9, 10);
+        move_to_next_lev_ = false;
 		bird_.setPosition(bird_pos_.x,bird_pos_.y,bird_pos_.z);
 		bird_.setRotation(0, 150, 1, 0, 0); 
 		bird_.setScale(0.005,0.005,0.005);
@@ -60,8 +62,8 @@ namespace Jungle
         {
             Flower flower;
             flower.loadModel("sphere.dae");
-            flower.setScale(0.001, 0.001, 0.001);
-            flower.setPosition( i, 2 , 10);
+            flower.setScale(0.0005, 0.0005, 0.0005);
+            flower.setPosition( i, 4 , 10);
             flowers_.push_back(flower);            
         }
         
@@ -182,7 +184,35 @@ namespace Jungle
 		bird_pos_+=bird_acc_/5;
 		//bird_pos_.x = ofClamp(bird_pos_.x, -5, 5);
 		//bird_pos_.y = ofClamp(bird_pos_.y,  0, 7);
+        for(int i =0; i < 4; i++)
+        {
+            if (!flowers_[i].flower_collided_) 
+            {
+                move_to_next_lev_ = false;
+                break;
+            }
+            move_to_next_lev_ = true;
+        }
+        
+        if(move_to_next_lev_)
+        {
+            ofVec3f delta = target_pos_ - bird_pos_;
+            if(abs(delta.x) < 0.01 && abs(delta.x) < 0.01)
+                move_to_next_lev_ = false;
+            else
+                bird_pos_+= delta/15;
+            
+        }
 		bird_.setPosition(bird_pos_.x, bird_pos_.y, bird_pos_.z); 
+        
+        for(int i =0; i < 4; i++)
+        {
+            if(flowers_[i].getPosition().distance(bird_pos_) < 0.3)
+            {
+                flowers_[i].color_.set(255, 0, 0);
+                flowers_[i].flower_collided_ = true;
+            }
+        }
 
 		ofVec3f delta = bird_pos_ - camera_pos_;
 		//cout<<delta.x<<" "<<delta.y<<" "<<delta.z<<endl;
@@ -250,7 +280,8 @@ namespace Jungle
 		bird_.drawFaces();
         for(int i = 0; i < 4; i++)
         {
-            flowers_[i].drawFaces();            
+            //if(flowers_[i].flower_collided_ )
+                flowers_[i].Draw();            
         }
 		ofPushMatrix();
 		ofTranslate(sphere_pos_.x, sphere_pos_.y, sphere_pos_.z);
