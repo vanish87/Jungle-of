@@ -21,11 +21,19 @@ namespace Jungle
 		h_ = ofGetWindowHeight();
 		x_ = ofGetWindowPositionX();
 		y_ = ofGetWindowPositionY();
-		stage_.loadModel("Tree_Stage_Smooth.dae");
-		stage_.setPosition(0, -139, 0);        
-		stage_.setScale(0.5,0.5,0.5);
+		stage_.loadModel("Jungle_alpha_2.obj");
+        stage_pos_.set(2,-42,9);
+		stage_.setPosition(stage_pos_.x,stage_pos_.y,stage_pos_.z);
+        //16,-42,-1
+        //0.09
+		stage_.setScale(0.04,0.04,0.04);
 		stage_.setRotation(0, 180, 0, 0, 1);
-		stage_.setRotation(1, -90, 0, 1, 0);
+        
+        ground_.loadModel("plane_2.obj");
+        ground_.setScale(0.04,0.04,0.04);
+        //ground_.setPosition(stage_pos_.x,stage_pos_.y,stage_pos_.z);
+        
+        
 		background_.loadModel("background.dae");
 		background_.setPosition(18, -70, -10);        
 		background_.setScale(1 , 0.3 ,0.5);
@@ -36,10 +44,10 @@ namespace Jungle
 
 
 		bird_.loadModel("Yellow_Butterfly_1.dae");
-		bird_pos_ = ofVec3f(2,3.5,5);
+		bird_pos_ = ofVec3f(2,3.5, 10);
 		bird_.setPosition(bird_pos_.x,bird_pos_.y,bird_pos_.z);
 		bird_.setRotation(0, 150, 1, 0, 0); 
-		bird_.setScale(0.03,0.03,0.03);
+		bird_.setScale(0.005,0.005,0.005);
 		bird_rot_.set(0, 0, 0);
 		animation_time_= 0;
 
@@ -47,15 +55,22 @@ namespace Jungle
 		sphere_radius_ = 70;
 		in_sphere_ = false;
 		need_move_= false;
-
-		light_.setAmbientColor(ofFloatColor(0.2,0.2,0.2));
-        light_.setDiffuseColor(ofFloatColor(0.3,0.3,0.3));
-        light_.setSpecularColor(ofFloatColor(0.3,0.3,0.3));
-        light_.setPosition(0, 100, 0);
+        
+        //-32,-47,25
+        light_.setDirectional();
+        light_.setOrientation(ofVec3f(-32,-47,25));
+        
+        
+		light_.setAmbientColor(ofFloatColor(0.5,0.5,0.5));
+        //light_.setDiffuseColor(ofFloatColor(0.3,0.3,0.3));
+        //light_.setSpecularColor(ofFloatColor(0.3,0.3,0.3));
+        //light_.setPosition(0, 100, 0);
         ofSetSmoothLighting(true);
         light_.enable();
         
 		camera_pos_ = ofVec3f(2, 3.5, 12);
+        main_camera_.setFarClip(10000);
+        main_camera_.setNearClip(0.1);
 		main_camera_.setPosition(camera_pos_);
 		main_camera_.lookAt(bird_pos_);
         
@@ -90,10 +105,18 @@ namespace Jungle
 					MIN_KINECT_AREA.z, MAX_KINECT_AREA.z, MIN_PLAY_AREA.z, MAX_PLAY_AREA.z, true);
 
 
-				ofVec3f hand_pos = bone.right_hand;
+                
+                ofVec3f l_hand_pos = bone.left_hand;
+				ofVec3f r_hand_pos = bone.right_hand;
+                ofVec3f hand_pos = l_hand_pos - r_hand_pos;
+                
 				pre_hand_pos_ = hand_pos_;
-				hand_pos_.x = ofMap(hand_pos.x , 0, 640, 0, w_, true);
-				hand_pos_.y = ofMap(hand_pos.y , 0, 480, 0, h_, true);
+                
+                if(hand_pos.length() < 50)
+                {
+                    hand_pos_.x = ofMap((l_hand_pos.x+ r_hand_pos.x)/2 , 0, 640, 0, w_, true);
+                    hand_pos_.y = ofMap((l_hand_pos.y+ r_hand_pos.y)/2  , 0, 480, 0, h_, true);
+                }
 				//cout<<shadow_pos_.x<<" "<<shadow_pos_.y<<" "<<shadow_pos_.z<<"\r";
 				
 			}
@@ -148,8 +171,8 @@ namespace Jungle
 
 
 		bird_pos_+=bird_acc_/5;
-		bird_pos_.x = ofClamp(bird_pos_.x, -5, 5);
-		bird_pos_.y = ofClamp(bird_pos_.y,  0, 7);
+		//bird_pos_.x = ofClamp(bird_pos_.x, -5, 5);
+		//bird_pos_.y = ofClamp(bird_pos_.y,  0, 7);
 		bird_.setPosition(bird_pos_.x, bird_pos_.y, bird_pos_.z); 
 
 		ofVec3f delta = bird_pos_ - camera_pos_;
@@ -162,7 +185,7 @@ namespace Jungle
 		}
 		else
 		{
-			if(delta.x == 0 && delta.y == 0)
+			if(abs(delta.x) < 0.01 && abs(delta.x) < 0.01)
 				need_move_ = false;
 		}
 
@@ -211,6 +234,7 @@ namespace Jungle
 
 		ofPushMatrix();
 		stage_.drawFaces();
+        //ground_.drawFaces();
 		ofPopMatrix();
 
 		ofSetColor(255, 255, 255);	
@@ -246,14 +270,19 @@ namespace Jungle
         // 	ofSphere(20);
         ofPopMatrix();
         
-        ofSetColor(0,0,0,255);
-        ofDrawBitmapString("particle num "+ ofToString(NUM_PARTICLE), 20, 80);
+        ofSetColor(255,255,255,255);
+        ofDrawBitmapString("particle num "+ ofToString(NUM_PARTICLE), 20, 20);
+        ofDrawBitmapString("birds pos "+ ofToString(bird_pos_.x) + " "+ ofToString(bird_pos_.y) + " "+ ofToString(bird_pos_.z), 20, 40);
+        //ofDrawBitmapString("particle num "+ ofToString(NUM_PARTICLE), 20, 80);
+        //ofDrawBitmapString("particle num "+ ofToString(NUM_PARTICLE), 20, 80);
                
 	}
 
 	void GamingScene5::keyPressed( int key )
 	{
 		ofVec3f pos = main_camera_.getPosition();
+        
+        ofVec3f scale = stage_.getScale();
 		switch (key)
 		{
 		case 's':
@@ -263,6 +292,8 @@ namespace Jungle
 			//main_camera_.dolly(1);
 			//if(camera_orbit_para_.y > -90)
 			//	camera_orbit_para_.y--;
+                stage_pos_.z++;
+            stage_.setPosition(stage_pos_.x,stage_pos_.y,stage_pos_.z);  
 			break;
 		case 'w':
 			//                 pos.z--;
@@ -271,18 +302,25 @@ namespace Jungle
 			//main_camera_.dolly(-1);
 			//if(camera_orbit_para_.y < 90)
 			//	camera_orbit_para_.y++;
+                stage_pos_.z--;    
+            stage_.setPosition(stage_pos_.x,stage_pos_.y,stage_pos_.z);  
 			break;	
 		case 'q':
-			pos.y++;
+			//pos.y++;
 			//look_at_.y++;
-			main_camera_.setPosition(pos);                
+			//main_camera_.setPosition(pos);                
 			//main_camera_.lookAt(look_at_);
+            scale+=0.01;
+            stage_.setScale(scale.x, scale.y, scale.z);
 			break;
 		case 'z':
-			pos.y--;
+			//pos.y--;
 			//look_at_.y--;
-			main_camera_.setPosition(pos);
+			//main_camera_.setPosition(pos);
 			//main_camera_.lookAt(look_at_);
+                
+                scale-=0.01;
+                stage_.setScale(scale.x, scale.y, scale.z);
 			break;
 		case 'a':
 			//                 pos.x--;
@@ -290,7 +328,9 @@ namespace Jungle
 			//                 main_camera_.lookAt(look_at_);
 			//main_camera_.truck(-1);
 			//camera_orbit_para_.x--;
-			bird_pos_.x++;
+			//bird_pos_.x++;
+                stage_pos_.x++;
+            stage_.setPosition(stage_pos_.x,stage_pos_.y,stage_pos_.z);  
 			break;
 		case 'd':
 			//                 pos.x++;
@@ -298,18 +338,24 @@ namespace Jungle
 			//                 main_camera_.lookAt(look_at_);
 			//main_camera_.truck(1);
 			//camera_orbit_para_.x++;
-			bird_pos_.x--;
+			//bird_pos_.x--;
+                stage_pos_.x--;
+            stage_.setPosition(stage_pos_.x,stage_pos_.y,stage_pos_.z);  
 			break;
 		case 'e':
 			//look_at_.y++;
-			main_camera_.setPosition(pos);                
+			//main_camera_.setPosition(pos);                
 			//main_camera_.lookAt(look_at_);
+                stage_pos_.y++;
+            stage_.setPosition(stage_pos_.x,stage_pos_.y,stage_pos_.z);  
 			break;
-		//case 'c':
+		case 'c':
 			// look_at_.y--;
 			//main_camera_.setPosition(pos);
 			//main_camera_.lookAt(look_at_);
-			//break;
+                stage_pos_.y--;
+            stage_.setPosition(stage_pos_.x,stage_pos_.y,stage_pos_.z); 
+			break;
 		case 'y':
 			//shadow_pos_ . z--;
 			//shadow_.setPosition(shadow_pos_.x, shadow_pos_.y, shadow_pos_.z);
@@ -331,17 +377,20 @@ namespace Jungle
 
 			//shadow_pos_ . x++;
 			//shadow_.setPosition(shadow_pos_.x, shadow_pos_.y, shadow_pos_.z);
-			break;
-		case 'v':     
-			//bird_pos_.y+=bird_speed_;
-			//rw_enabled_ = true;
-			//bird_rot_.z-=60;
-			break;
-		case 'c':     
-			//bird_pos_.y+=bird_speed_;
-			//rw_enabled_ = true;
-			//bird_rot_.z+=60;
-			break;
+                break;
+        case 'f':     
+                //bird_pos_.y+=bird_speed_;
+                //rw_enabled_ = true;
+                //bird_rot_.z-=60;
+                bird_pos_.z--;
+                break;		
+        case 'v':     
+                //bird_pos_.y+=bird_speed_;
+                //rw_enabled_ = true;
+                //bird_rot_.z-=60;
+                bird_pos_.z++;
+                break;
+
 		case 'o':     
 			//tree_rotation_++;
 			break;

@@ -43,6 +43,8 @@ namespace Jungle
 
 
 		ofxAssimpModelLoader stage_;
+        ofxAssimpModelLoader ground_;
+        ofVec3f stage_pos_;
 		ofxAssimpModelLoader background_;
 		ofVec3f sphere_pos_;
 		bool in_sphere_;

@@ -54,12 +54,12 @@ void WindParticle::Simulate( float delta_time )
 		force += frac;
 		//cout<<"frac"<<endl;
 	}
-	if(pos_.distance(ofVec3f(300,300,0))< 60)
+	if(pos_.distance(ofVec3f(1280/2,720/2,0))< 50)
 	{
-		ofVec3f dir = pos_ - ofVec3f(300,300,0);
+		ofVec3f dir = pos_ - ofVec3f(1280/2,720/2,0);
 		dir.normalize();
 
-		pos_ = dir*50 + ofVec3f(300,300,0);
+		pos_ = dir*50 + ofVec3f(1280/2,720/2,0);
 		force += dir*100;
 		//cout<<pos_.x<<" "<<pos_.y<<" "<<pos_.z<<endl;
 	}
@@ -72,6 +72,7 @@ void WindParticle::Simulate( float delta_time )
 	pos_.y = ofClamp(pos_.y, 50, 720-50);
 
 
+    ofDisableAlphaBlending();
 	ofSetColor( 0, 74, 255 );
     //   (0+i*5, 74+i*5, 255-i*5), (255-j*5, 226+j*5, 141+j*5) with i = 10 and j = 5
 
@@ -79,6 +80,7 @@ void WindParticle::Simulate( float delta_time )
 	ofTranslate(pos_.x, pos_.y, 0.0f);
 	ofCircle(0, 0, 3); //size of particles
 	ofPopMatrix();
+    ofSetColor(255, 255, 255);
 }
 
 void WindParticle::SetOrg( ofVec3f org_pos )

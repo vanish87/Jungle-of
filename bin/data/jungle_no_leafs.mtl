@@ -1,0 +1,43 @@
+# 
+# Wavefront material file
+# Created with Kaydara FBX
+# 
+
+newmtl lambert3
+Ka 0.000000 0.000000 0.000000
+Kd 0.247342 0.800000 0.000000
+illum 1
+Tr 1.000000
+
+newmtl Rocks
+Ka 0.000000 0.000000 0.000000
+Kd 0.360800 0.360800 0.360800
+illum 1
+Tr 1.000000
+
+newmtl Shrrom_Head
+map_Kd fungi1-cap.png
+Ka 0.000000 0.000000 0.000000
+Kd 0.800000 0.800000 0.800000
+illum 1
+Tr 1.000000
+
+newmtl Bush
+map_Kd jungle_leaf_2.png
+Ka 0.000000 0.000000 0.000000
+Kd 0.800000 0.800000 0.800000
+illum 1
+Tr 1.000000
+
+newmtl lambert2
+Ka 0.000000 0.000000 0.000000
+Kd 0.394937 0.287816 0.044993
+illum 1
+Tr 1.000000
+
+newmtl lambert9
+map_Kd SARF_Jungle_Background_by_MrCanavan.jpg
+Ka 0.000000 0.000000 0.000000
+Kd 0.800000 0.800000 0.800000
+illum 1
+Tr 1.000000
