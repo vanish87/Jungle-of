@@ -22,7 +22,7 @@ public:
 	ofVec3f pre_pos_;
 	bool moving_;
 	ofVec3f acc_;
-	ofVec3f vol_;
+	ofVec3f vel_;
 	ofVec3f force_;
 	float mass_;
 
