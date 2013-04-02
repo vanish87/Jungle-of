@@ -54,7 +54,7 @@ void WindParticle::Simulate( float delta_time )
 		force += frac;
 		//cout<<"frac"<<endl;
 	}
-	if(pos_.distance(ofVec3f(1280/2,720/2,0))< 80)
+	if(pos_.distance(ofVec3f(1280/2,720/2,0))< 50)
 	{
 		ofVec3f dir = pos_ - ofVec3f(1280/2,720/2,0);
 		dir.normalize();

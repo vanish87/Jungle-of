@@ -208,8 +208,8 @@ namespace Jungle
         if(move_to_next_lev_)
         {
             ofVec3f delta = target_pos_ - bird_pos_;
-            if(abs(delta.x) < 0.01 && abs(delta.x) < 0.01)
-                move_to_next_lev_ = false;
+            if(abs(delta.x) < 0.01 && abs(delta.x) < 0.01);
+               // move_to_next_lev_ = false;
             else
                 bird_pos_+= delta/15;
             
@@ -217,7 +217,7 @@ namespace Jungle
         if(!move_to_next_lev_)
         {
             bird_pos_.x = ofClamp(bird_pos_.x, -5, 5);
-            bird_pos_.y = ofClamp(bird_pos_.y,  0, 7);
+            bird_pos_.y = ofClamp(bird_pos_.y,  2.7, 5);
         }
 		bird_.setPosition(bird_pos_.x, bird_pos_.y, bird_pos_.z); 
         
