@@ -63,7 +63,8 @@ namespace Jungle
         for(int i = 0; i < 4; i++)
         {
             Flower flower;
-            flower.loadModel("sphere.dae");
+            flower.loadModel("pre-Geranium.obj");
+			flower.setRotation(0,90,1,0,0);
             flower.setScale(0.0005, 0.0005, 0.0005);
             flower.setPosition( i, 4 , 10);
             flowers_.push_back(flower);            
