@@ -74,6 +74,8 @@ namespace Jungle
 
 		ofPoint hand_pos_;
 		ofPoint pre_hand_pos_;
+        
+        bool two_hands_;
 
 
 		int w_;

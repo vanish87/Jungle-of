@@ -58,6 +58,8 @@ namespace Jungle
 		in_sphere_ = false;
 		need_move_= false;
         
+        two_hands_ = true;
+        
         for(int i = 0; i < 4; i++)
         {
             Flower flower;
@@ -123,10 +125,18 @@ namespace Jungle
                 
 				pre_hand_pos_ = hand_pos_;
                 
-                if(hand_pos.length() < 100)
+                if(two_hands_)
                 {
-                    hand_pos_.x = ofMap((l_hand_pos.x+ r_hand_pos.x)/2 , 0, 640, 0, w_, true);
-                    hand_pos_.y = ofMap((l_hand_pos.y+ r_hand_pos.y)/2  , 0, 480, 0, h_, true);
+                    if(hand_pos.length() < 100)
+                    {
+                        hand_pos_.x = ofMap((l_hand_pos.x+ r_hand_pos.x)/2 , 0, 640, 0, w_, true);
+                        hand_pos_.y = ofMap((l_hand_pos.y+ r_hand_pos.y)/2  , 0, 480, 0, h_, true);
+                    }
+                }
+                else
+                {
+                    hand_pos_.x = ofMap(r_hand_pos.x , 0, 640, 0, w_, true);
+                    hand_pos_.y = ofMap(r_hand_pos.y , 0, 480, 0, h_, true);
                 }
 				//cout<<shadow_pos_.x<<" "<<shadow_pos_.y<<" "<<shadow_pos_.z<<"\r";
 				
@@ -202,6 +212,11 @@ namespace Jungle
             else
                 bird_pos_+= delta/15;
             
+        }
+        if(!move_to_next_lev_)
+        {
+            bird_pos_.x = ofClamp(bird_pos_.x, -5, 5);
+            bird_pos_.y = ofClamp(bird_pos_.y,  0, 7);
         }
 		bird_.setPosition(bird_pos_.x, bird_pos_.y, bird_pos_.z); 
         
@@ -411,6 +426,7 @@ namespace Jungle
 			//shadow_.setPosition(shadow_pos_.x, shadow_pos_.y, shadow_pos_.z);
 			//vo_pos.y--;
 			//virtual_looking_obj_.setGlobalPosition(vo_pos);
+                two_hands_ = !two_hands_;
 			break;
 		case 'g':
 
