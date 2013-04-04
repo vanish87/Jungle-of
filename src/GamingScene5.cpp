@@ -25,7 +25,7 @@ namespace Jungle
         stage_pos_.set(2,-42,9);
 		stage_.setPosition(stage_pos_.x,stage_pos_.y,stage_pos_.z);
         //16,-42,-1
-        //0.09
+        //0.12
 		stage_.setScale(0.04,0.04,0.04);
 		stage_.setRotation(0, 180, 0, 0, 1);
         
@@ -52,9 +52,14 @@ namespace Jungle
 		bird_.setScale(0.005,0.005,0.005);
 		bird_rot_.set(0, 0, 0);
 		animation_time_= 0;
+        
+        mr_.loadModel("shroom_7.dae");
+        mr_.setScale(0.01, 0.01, 0.01);
+        mr_.setRotation(0, 180, 0, 0, 1);
+        //mr_.setPosition(2, 13.5, 0);
 
 		sphere_pos_.set(bird_pos_.x + 2, bird_pos_.y, bird_pos_.z);
-		sphere_radius_ = 70;
+		sphere_radius_ = 100;
 		in_sphere_ = false;
 		need_move_= false;
         
@@ -84,7 +89,7 @@ namespace Jungle
         
 		camera_pos_ = ofVec3f(2, 3.5, 12);
         main_camera_.setFarClip(10000);
-        main_camera_.setNearClip(0.1);
+        main_camera_.setNearClip(1);
 		main_camera_.setPosition(camera_pos_);
 		main_camera_.lookAt(bird_pos_);
         
@@ -145,11 +150,14 @@ namespace Jungle
 		}			
 		
 		animation_time_ += ofGetLastFrameTime()/24.0f;
-		if( animation_time_ > 14.0f/360.0f ){
+		if( animation_time_ > 1.0f ){
 			animation_time_ = 0;
 		}
 		bird_.setAnimation(0);        
 		bird_.setNormalizedTime(animation_time_);
+        
+        mr_.setAnimation(0);        
+		mr_.setNormalizedTime(animation_time_);
 		
 		ofMatrix4x4 mvp_mat_ = main_camera_.getModelViewProjectionMatrix();
 		bird_pos_ss_= bird_pos_ * mvp_mat_ ;
@@ -157,6 +165,8 @@ namespace Jungle
 		screen_pos.set(bird_pos_ss_.x * w_/2 + (x_/2 + w_/2), h_ - (bird_pos_ss_.y * h_/2 + (y_/2 + h_/2)));
 
 		bird_pos_ss_.set(screen_pos.x, screen_pos.y);
+        
+        
 		if(hand_pos_.distance(bird_pos_ss_) < sphere_radius_ && !in_sphere_)
 		{
 			ofVec3f dir = hand_pos_-pre_hand_pos_;
@@ -211,7 +221,7 @@ namespace Jungle
             if(abs(delta.x) < 0.01 && abs(delta.x) < 0.01);
                // move_to_next_lev_ = false;
             else
-                bird_pos_+= delta/15;
+                bird_pos_+= delta/70;
             
         }
         if(!move_to_next_lev_)
@@ -243,7 +253,7 @@ namespace Jungle
 			if(abs(delta.x) < 0.01 && abs(delta.x) < 0.01)
 				need_move_ = false;
 		}
-
+        need_move_=true;
 		if(need_move_)
 		{
 			camera_pos_.x += delta.x/10;
@@ -280,6 +290,7 @@ namespace Jungle
 	void GamingScene5::Draw()
 	{
 		ofEnableBlendMode(OF_BLENDMODE_ALPHA);
+        ofEnableAlphaBlending();
 		ofSetColor(255, 255, 255);		
 		main_camera_.begin();
 		glPushMatrix();
@@ -294,6 +305,7 @@ namespace Jungle
 
 		ofSetColor(255, 255, 255);	
 		bird_.drawFaces();
+        mr_.drawFaces();
         for(int i = 0; i < 4; i++)
         {
             //if(flowers_[i].flower_collided_ )
