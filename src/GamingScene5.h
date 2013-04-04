@@ -45,6 +45,7 @@ namespace Jungle
 
 		ofxAssimpModelLoader stage_;
         ofxAssimpModelLoader ground_;
+        ofxAssimpModelLoader mr_;
         ofVec3f stage_pos_;
 		ofxAssimpModelLoader background_;
         vector<Flower> flowers_;

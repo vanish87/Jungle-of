@@ -52,6 +52,11 @@ namespace Jungle
 		bird_.setScale(0.005,0.005,0.005);
 		bird_rot_.set(0, 0, 0);
 		animation_time_= 0;
+        
+        mr_.loadModel("shroom_7.dae");
+        mr_.setScale(0.01, 0.01, 0.01);
+        mr_.setRotation(0, 180, 0, 0, 1);
+        //mr_.setPosition(2, 13.5, 0);
 
 		sphere_pos_.set(bird_pos_.x + 2, bird_pos_.y, bird_pos_.z);
 		sphere_radius_ = 100;
@@ -145,11 +150,14 @@ namespace Jungle
 		}			
 		
 		animation_time_ += ofGetLastFrameTime()/24.0f;
-		if( animation_time_ > 14.0f/360.0f ){
+		if( animation_time_ > 1.0f ){
 			animation_time_ = 0;
 		}
 		bird_.setAnimation(0);        
 		bird_.setNormalizedTime(animation_time_);
+        
+        mr_.setAnimation(0);        
+		mr_.setNormalizedTime(animation_time_);
 		
 		ofMatrix4x4 mvp_mat_ = main_camera_.getModelViewProjectionMatrix();
 		bird_pos_ss_= bird_pos_ * mvp_mat_ ;
@@ -282,6 +290,7 @@ namespace Jungle
 	void GamingScene5::Draw()
 	{
 		ofEnableBlendMode(OF_BLENDMODE_ALPHA);
+        ofEnableAlphaBlending();
 		ofSetColor(255, 255, 255);		
 		main_camera_.begin();
 		glPushMatrix();
@@ -296,6 +305,7 @@ namespace Jungle
 
 		ofSetColor(255, 255, 255);	
 		bird_.drawFaces();
+        mr_.drawFaces();
         for(int i = 0; i < 4; i++)
         {
             //if(flowers_[i].flower_collided_ )
