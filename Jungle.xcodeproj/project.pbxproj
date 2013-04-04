@@ -70,6 +70,8 @@
 		BC4A099A17089BD500DA37DD /* SceneObject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BC4A099817089BD500DA37DD /* SceneObject.cpp */; };
 		BC4A09A51708A8E700DA37DD /* WindParticle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BC4A09A31708A8E700DA37DD /* WindParticle.cpp */; };
 		BC67296616ECF672001F7C77 /* GamingScene4.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BC67296416ECF672001F7C77 /* GamingScene4.cpp */; };
+		BC8D7985170E2D0400DB4716 /* Level1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BC8D7983170E2D0400DB4716 /* Level1.cpp */; };
+		BC8D7988170E2D1D00DB4716 /* JungleParticle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BC8D7986170E2D1D00DB4716 /* JungleParticle.cpp */; };
 		BCAF17D116DA0C790067261D /* ofxGifDecoder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BCAF17CB16DA0C790067261D /* ofxGifDecoder.cpp */; };
 		BCAF17D216DA0C790067261D /* ofxGifFile.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BCAF17CD16DA0C790067261D /* ofxGifFile.cpp */; };
 		BCAF17D316DA0C790067261D /* ofxGifFrame.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BCAF17CF16DA0C790067261D /* ofxGifFrame.cpp */; };
@@ -413,6 +415,10 @@
 		BC4A09A41708A8E700DA37DD /* WindParticle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WindParticle.h; sourceTree = "<group>"; };
 		BC67296416ECF672001F7C77 /* GamingScene4.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GamingScene4.cpp; sourceTree = "<group>"; };
 		BC67296516ECF672001F7C77 /* GamingScene4.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GamingScene4.h; sourceTree = "<group>"; };
+		BC8D7983170E2D0400DB4716 /* Level1.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Level1.cpp; sourceTree = "<group>"; };
+		BC8D7984170E2D0400DB4716 /* Level1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Level1.h; sourceTree = "<group>"; };
+		BC8D7986170E2D1D00DB4716 /* JungleParticle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = JungleParticle.cpp; sourceTree = "<group>"; };
+		BC8D7987170E2D1D00DB4716 /* JungleParticle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JungleParticle.h; sourceTree = "<group>"; };
 		BCAF17CB16DA0C790067261D /* ofxGifDecoder.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxGifDecoder.cpp; sourceTree = "<group>"; };
 		BCAF17CC16DA0C790067261D /* ofxGifDecoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxGifDecoder.h; sourceTree = "<group>"; };
 		BCAF17CD16DA0C790067261D /* ofxGifFile.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxGifFile.cpp; sourceTree = "<group>"; };
@@ -1141,6 +1147,10 @@
 		E4B69E1C0A3A1BDC003C02F2 /* src */ = {
 			isa = PBXGroup;
 			children = (
+				BC8D7986170E2D1D00DB4716 /* JungleParticle.cpp */,
+				BC8D7987170E2D1D00DB4716 /* JungleParticle.h */,
+				BC8D7983170E2D0400DB4716 /* Level1.cpp */,
+				BC8D7984170E2D0400DB4716 /* Level1.h */,
 				BC4A099517089BBB00DA37DD /* ButterFly.cpp */,
 				BC4A099617089BBB00DA37DD /* ButterFly.h */,
 				BC4A099217089B1800DA37DD /* GamingScene5.cpp */,
@@ -1323,6 +1333,8 @@
 				BC4A099A17089BD500DA37DD /* SceneObject.cpp in Sources */,
 				BC4A09A51708A8E700DA37DD /* WindParticle.cpp in Sources */,
 				BC0BFCAF170B7B87000EDBEE /* WindGenerator.cpp in Sources */,
+				BC8D7985170E2D0400DB4716 /* Level1.cpp in Sources */,
+				BC8D7988170E2D1D00DB4716 /* JungleParticle.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
