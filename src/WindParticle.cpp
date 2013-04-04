@@ -51,11 +51,7 @@ namespace Jungle
 
 	WindParticle::~WindParticle(void)
 	{
-<<<<<<< HEAD
-=======
-		force += frac;
-		//cout<<"frac"<<endl;
->>>>>>> 4fe477b2ae426fda1da6c577b5c76ca06c9e92aa
+
 	}
 
 	void WindParticle::Simulate( float delta_time )
@@ -117,31 +113,6 @@ namespace Jungle
 		force_ = org_pos - pos_;
 		pre_pos_ = org_pos;
 	}
-
-<<<<<<< HEAD
-=======
-	//acceleration
-	acc_ = force / mass_;
-	vel_ += acc_;
-	//update pos
-	pos_ += vel_;
-
-	//restrain in screen
-	pos_.x = ofClamp(pos_.x, 50, 1280-50);
-	pos_.y = ofClamp(pos_.y, 50, 720-50);
-
-
-     ofDisableAlphaBlending();
- 	ofSetColor( 0, 74, 255 );
-     //   (0+i*5, 74+i*5, 255-i*5), (255-j*5, 226+j*5, 141+j*5) with i = 10 and j = 5
- 
- 	ofPushMatrix();
- 	ofTranslate(pos_.x, pos_.y, 0.0f);
- 	ofCircle(0, 0, 3); //size of particles
- 	ofPopMatrix();
-    ofSetColor(255, 255, 255);
-}
->>>>>>> 4fe477b2ae426fda1da6c577b5c76ca06c9e92aa
 
 
 
