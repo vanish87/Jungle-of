@@ -10,6 +10,7 @@
 #include "GamingScene3.h"
 #include "GamingScene4.h"
 #include "GamingScene5.h"
+#include "Level1.h"
 
 namespace Jungle
 {
@@ -34,11 +35,12 @@ namespace Jungle
 		static ofxKinectUsers& KinectInstance();
 
 	private:
-		GamingScene_1* game_1_;
+		GamingScene1* game_1_;
 		GamingScene2* game_2_;
 		GamingScene3* game_3_;
 		GamingScene4* game_4_;
 		GamingScene5* game_5_;
+		Level1* level1_;
 
 
 		void	inPose(ofxUser & user);

@@ -166,8 +166,14 @@
     <ClCompile Include="src\Flower.cpp">
       <Filter>src</Filter>
     </ClCompile>
-    <ClCompile Include="src\WindParticle.cpp">
+    <ClCompile Include="src\Level1.cpp">
       <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\WindParticle.cpp">
+      <Filter>src\Particle</Filter>
+    </ClCompile>
+    <ClCompile Include="src\JungleParticle.cpp">
+      <Filter>src\Particle</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -750,8 +756,14 @@
     <ClInclude Include="src\Flower.h">
       <Filter>src</Filter>
     </ClInclude>
-    <ClInclude Include="src\WindParticle.h">
+    <ClInclude Include="src\Level1.h">
       <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\WindParticle.h">
+      <Filter>src\Particle</Filter>
+    </ClInclude>
+    <ClInclude Include="src\JungleParticle.h">
+      <Filter>src\Particle</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -772,6 +784,9 @@
     </Filter>
     <Filter Include="addons\ofxParticleEmitter">
       <UniqueIdentifier>{caa14eac-4872-48b1-b876-467106d29343}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Particle">
+      <UniqueIdentifier>{ed2305d2-e22d-4862-b223-a0fd1d2bb552}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>

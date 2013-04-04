@@ -11,12 +11,12 @@
 
 namespace Jungle
 {
-	class GamingScene_1 :
+	class GamingScene1 :
 		public State
 	{
 	public:
-		GamingScene_1(void);
-		~GamingScene_1(void);
+		GamingScene1(void);
+		~GamingScene1(void);
 
 		virtual void Steup();
 

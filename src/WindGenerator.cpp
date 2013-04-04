@@ -1,9 +1,34 @@
 #include "WindGenerator.h"
 
+#include "ofAppRunner.h"
+
 namespace Jungle
 {
-	WindGenerator::WindGenerator(void)
+	WindGenerator::WindGenerator(string file_name)
 	{
+		
+		x0_ = 60;
+		k_ = 0.3;
+		mass_ = 5;
+		frac_para_ = 50;
+
+		x0_vari_ = 1;
+		k_vari_ = 1;
+		mass_vari_ = 1;
+		frac_para_vari_ = 1;
+
+		effect_dis_ = 300;
+		floating_time_ = 3;
+
+		color_.set(255, 226, 141, 20);
+
+		//TODO: init max, min
+		num_particle_ = 200;
+
+		enabled_ = false;
+
+		butterfly_pos_ = ofVec3f(1280/2,720/2,0);
+		butterfly_force_.set(0.0f, 0.0f, 0.0f);
 	}
 
 
@@ -11,26 +36,88 @@ namespace Jungle
 	{
 	}
 
-	void WindGenerator::Update()
+	void WindGenerator::Init()
 	{
-		list<WindParticle>::iterator itr;
-		for( itr = wind_particles_.begin(); itr!= wind_particles_.end(); ++itr)
+		float x0 = 0;
+		float k = 0;
+		float mass = 0;
+		float frac_para = 0;
+		for(int i = 0; i < num_particle_; ++i)
 		{
-			itr->Simulate(0);
+			x0 = x0_ + ofRandom(-1, 1) * x0_vari_;
+			k = k_+ ofRandom(-1, 1) * k_vari_;
+			mass = mass_+ ofRandom(-1, 1) * mass_vari_;
+			frac_para = frac_para_+ ofRandom(-1, 1) * frac_para_vari_;
+			WindParticle particle(butterfly_pos_, x0, k, mass, frac_para, color_);
+			wind_particles_.push_back(particle);
 		}
+	}
+	void WindGenerator::Update(ofVec3f hand_pos)
+	{
+		if(enabled_)
+		{
+			list<WindParticle>::iterator itr;
+			for( itr = wind_particles_.begin(); itr!= wind_particles_.end();)
+			{
+				//lost dragging if it too far from hand
+				if(itr->pos_.distance(hand_pos) > effect_dis_)
+					itr->k_ = 0;
+				//delete it if it floating too long
+				if(itr->floating_time_ > floating_time_)
+				{
+					itr = wind_particles_.erase(itr);
+				}
+				else
+				{
+					++itr;
+				}
+			}
+			for( itr = wind_particles_.begin(); itr!= wind_particles_.end(); ++itr)
+			{
+				//update rest
+				itr->SetOrg(hand_pos);
+
+				itr->Simulate(ofGetLastFrameTime());
+				//butterfly bounce
+				if(itr->pos_.distance(ofVec3f(1280/2,720/2,0))< 50)
+				{
+					ofVec3f dir = itr->pos_ - ofVec3f(1280/2,720/2,0);
+					dir.normalize();
+
+					itr->pos_ = dir*50 + ofVec3f(1280/2,720/2,0);
+					itr->AddForce(dir*100);
+
+					ofVec3f f_dir = itr->vel_;
+					butterfly_force_ += f_dir.normalize();
+					butterfly_force_.x = ofClamp(butterfly_force_.x, -50, 50);
+					butterfly_force_.y = ofClamp(butterfly_force_.y, -50, 50);
+					//cout<<pos_.x<<" "<<pos_.y<<" "<<pos_.z<<endl;
+				}
+			}
+
+		}
+
+		
+
 	}
 
 	void WindGenerator::Draw()
 	{
-		list<WindParticle>::iterator itr;
-		for( itr = wind_particles_.begin(); itr!= wind_particles_.end(); ++itr)
+		if(enabled_)
 		{
-			ofSetColor(itr->color_);
-			ofPushMatrix();
-			ofTranslate(itr->pos_.x, itr->pos_.y, 0.0f);
-			ofCircle(0, 0, 3); //size of particles
-			ofPopMatrix();
-			ofSetColor(255, 255, 255);
+			ofEnableAlphaBlending();
+			list<WindParticle>::iterator itr;
+			for( itr = wind_particles_.begin(); itr!= wind_particles_.end(); ++itr)
+			{
+				ofSetColor(itr->color_.r , itr->color_.g, itr->color_.b, (1 - itr->floating_time_/floating_time_) * 255);
+				ofPushMatrix();
+				ofTranslate(itr->pos_.x, itr->pos_.y, 0.0f);
+				ofCircle(0, 0, 3); //size of particles
+				ofPopMatrix();
+				ofSetColor(255, 255, 255);
+			}
+
+			ofDisableAlphaBlending();
 		}
 	}
 
@@ -48,5 +135,20 @@ namespace Jungle
 	{
 		min_particle_ = num;
 	}
+
+	void WindGenerator::Enable( bool enable, ofVec3f hand_pos)
+	{
+		if(!enabled_ && enable)
+		{
+			list<WindParticle>::iterator itr;
+			for( itr = wind_particles_.begin(); itr!= wind_particles_.end(); ++itr)
+			{
+				itr->pos_ = hand_pos;
+			}
+		}
+		enabled_ = enable;
+	}
+
+
 
 }

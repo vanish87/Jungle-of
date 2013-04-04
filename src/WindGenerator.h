@@ -11,15 +11,21 @@ namespace Jungle
 	class WindGenerator
 	{
 	public:
-		WindGenerator(void);
+		WindGenerator(string file_name);
 		~WindGenerator(void);
 
-		void Update();
+		void Init();
+		void Update(ofVec3f hand_pos);
 		void Draw();
 
 		void SetParticleNum(int num);
 		void SetMaxPaticle(int num);
 		void SetMinPaticle(int num);
+
+		void Enable(bool enable, ofVec3f hand_pos);
+
+		ofVec3f butterfly_pos_;
+		ofVec3f butterfly_force_;
 
 	private:
 		list<WindParticle> wind_particles_;
@@ -31,16 +37,27 @@ namespace Jungle
 		float k_;
 		float frac_para_;
 
+		ofColor color_;
+
 		//variance para
+		//from 0 to 1
 		float mass_vari_;
 		float x0_vari_;
 		float k_vari_;
 		float frac_para_vari_;
 
+		//distance that start lose particle
+		float effect_dis_;
+		//time after lose dragging
+		float floating_time_;
+
 		//particle num
 		int num_particle_;
 		int max_particle_;
 		int min_particle_;
+
+		//status
+		bool enabled_;
 	};
 }
 

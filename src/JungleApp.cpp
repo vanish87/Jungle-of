@@ -28,8 +28,11 @@ namespace Jungle
 
 
 		game_5_ = new GamingScene5();
-		game_5_->Steup();
-		StateManagerInstance().ChangeState(game_5_, SOP_PUSH);
+		//game_5_->Steup();
+
+		level1_ = new Level1();
+		level1_->Steup();
+		StateManagerInstance().ChangeState(level1_, SOP_PUSH);
 		//ofEnableAlphaBlending();
 	}
 

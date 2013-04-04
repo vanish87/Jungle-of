@@ -2,16 +2,16 @@
 #include "JungleApp.h"
 namespace Jungle
 {
-	GamingScene_1::GamingScene_1(void)
+	GamingScene1::GamingScene1(void)
 	{
 	}
 
 
-	GamingScene_1::~GamingScene_1(void)
+	GamingScene1::~GamingScene1(void)
 	{
 	}
 
-	void GamingScene_1::Steup()
+	void GamingScene1::Steup()
 	{
 
 		w_ = ofGetWindowWidth();
@@ -41,7 +41,7 @@ namespace Jungle
 		frame_index_ = 0;
 	}
 
-	void GamingScene_1::Update()
+	void GamingScene1::Update()
 	{
 		if(bird_enabled_)
 		{
@@ -58,7 +58,7 @@ namespace Jungle
 		
 	}
 
-	void GamingScene_1::Draw()
+	void GamingScene1::Draw()
 	{
         ofSetColor(255, 255, 255);      
         background_.draw(0, 0);
@@ -94,7 +94,7 @@ namespace Jungle
 	}
 
 
-	void GamingScene_1::inPose( ofxUser & user )
+	void GamingScene1::inPose( ofxUser & user )
 	{
 		cout << "INPOSE : " ;
 		cout<<user.pose<<endl;
@@ -105,7 +105,7 @@ namespace Jungle
 		}
 	}
 
-	void GamingScene_1::inGesture( ofxUser & user )
+	void GamingScene1::inGesture( ofxUser & user )
 	{
 		cout << "INGESTURE : "; 
 		cout<<user.gesture<<endl;
@@ -116,30 +116,30 @@ namespace Jungle
 		}
 	}
 
-	void GamingScene_1::userIn( ofxUser & user )
+	void GamingScene1::userIn( ofxUser & user )
 	{
 		cout << "USERIN" << endl; 
 		cout << user.userId << endl;
 	}
 
-	void GamingScene_1::userMove( ofxUser & user )
+	void GamingScene1::userMove( ofxUser & user )
 	{
 	}
 
-	void GamingScene_1::userOut( ofxUser & user )
+	void GamingScene1::userOut( ofxUser & user )
 	{
 	}
 
-	void GamingScene_1::keyPressed( int key )
+	void GamingScene1::keyPressed( int key )
 	{
 
 	}
 
-	void GamingScene_1::mouseDragged( int x, int y, int button )
+	void GamingScene1::mouseDragged( int x, int y, int button )
 	{
 		JungleApp::KinectInstance().mouseDragged(x / 0.4, (y - h_ + 0.4*h_) / 0.4, button);
 	}
-    void GamingScene_1::windowResized(int w, int h)
+    void GamingScene1::windowResized(int w, int h)
     {
         w_ = w;
         h_ = h;
