@@ -4,31 +4,31 @@ namespace Jungle
 {
 	WindParticle::WindParticle(void)
 	{
-		moving_ = false;
-
-		pos_.set(300, 300, 0);
-		acc_.set(0, 0, 0);
-		vel_.set(0, 0, 0);
-
-		x0_ = 60 * ofRandom(0.5,1);
-		k_ = 0.3* ofRandom(0.3,1);;
-		mass_ = 5* ofRandom(0.6,1);;
-		frac_para_ = 50* ofRandom(0.5,1);
+// 		moving_ = false;
+// 
+// 		pos_.set(300, 300, 0);
+// 		acc_.set(0, 0, 0);
+// 		vel_.set(0, 0, 0);
+// 
+// 		x0_ = 60 * ofRandom(0.5,1);
+// 		k_ = 0.3* ofRandom(0.3,1);;
+// 		mass_ = 5* ofRandom(0.6,1);;
+// 		frac_para_ = 50* ofRandom(0.5,1);
 
 	}
 
 	WindParticle::WindParticle( ofVec3f pos )
 	{
-		moving_ = false;
-
-		pos_ = pos;
-		acc_.set(0, 0, 0);
-		vel_.set(ofRandomf(), ofRandomf(), 0);
-
-		x0_ = 10 * ofRandom(0.5,1);
-		k_ = 0.1* ofRandom(0.3,1);
-		mass_ = 10* ofRandom(0.6,1);
-		frac_para_ = 10* ofRandom(0.5,1);
+// 		moving_ = false;
+// 
+// 		pos_ = pos;
+// 		acc_.set(0, 0, 0);
+// 		vel_.set(ofRandomf(), ofRandomf(), 0);
+// 
+// 		x0_ = 10 * ofRandom(0.5,1);
+// 		k_ = 0.1* ofRandom(0.3,1);
+// 		mass_ = 10* ofRandom(0.6,1);
+// 		frac_para_ = 10* ofRandom(0.5,1);
 	}
 
 	WindParticle::WindParticle( ofVec3f pos, float x0, float k, float mass, float frac, ofColor color)

@@ -40,11 +40,33 @@ namespace Jungle
 
 	private:
 		ofLight light_;
+		ofxAssimpModelLoader stage_;
+		ofVec3f stage_pos_;
+
+		vector<Flower> flowers_;
+
+		ButterFly butterfly_;		
+		ofVec3f butterfly_pos_;
+		ofVec3f butterfly_pos_ss_;
+		ofVec3f butterfly_acc_;
+		ofVec3f butterfly_vol_;
+
+		float animation_time_;
+
+		ofCamera main_camera_;
+		ofVec3f camera_pos_;
 
 		WindGenerator wind_;
 		ofVec3f hand_pos_;
+		ofPoint pre_hand_pos_;
 
-		ofVec3f b_pos_;
+		bool two_hands_;
+
+
+		int w_;
+		int h_;
+		int x_;
+		int y_;
 	};
 }
 

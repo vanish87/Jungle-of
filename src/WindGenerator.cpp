@@ -88,7 +88,8 @@ namespace Jungle
 					itr->AddForce(dir*100);
 
 					ofVec3f f_dir = itr->vel_;
-					butterfly_force_ += f_dir.normalize();
+					f_dir.y= -f_dir.y;
+					butterfly_force_ += f_dir * 0.1;
 					butterfly_force_.x = ofClamp(butterfly_force_.x, -50, 50);
 					butterfly_force_.y = ofClamp(butterfly_force_.y, -50, 50);
 					//cout<<pos_.x<<" "<<pos_.y<<" "<<pos_.z<<endl;
