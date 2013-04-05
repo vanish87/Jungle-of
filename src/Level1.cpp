@@ -26,16 +26,49 @@ namespace Jungle
 		stage_.setPosition(stage_pos_.x,stage_pos_.y,stage_pos_.z);
 		//16,-42,-1
 		//0.12
-		stage_.setScale(0.04,0.04,0.04);
+		stage_.setScale(0.05,0.05,0.05);
 		stage_.setRotation(0, 180, 0, 0, 1);
 
 
 		butterfly_.loadModel("Yellow_Butterfly_1.dae");
-		butterfly_pos_ = ofVec3f(2,3.5, 10);
+		butterfly_pos_ = ofVec3f(2,3.5, 10.7);
+		butterfly_mass_ = 2500;
+		butterfly_acc_.set(0, 0, 0);
 
 		butterfly_.setPosition(butterfly_pos_.x,butterfly_pos_.y,butterfly_pos_.z);
 		butterfly_.setRotation(0, 150, 1, 0, 0); 
-		butterfly_.setScale(0.005,0.005,0.005);
+		butterfly_.setScale(0.002,0.002,0.002);
+
+
+		//2 ,2.7, 10.3
+		//
+		Flower mushroom;
+		mushroom.loadModel("shroom_6.dae");
+		mushroom.setRotation(0,180,1,0,0);
+		mushroom.setScale(0.000005, 0.000005, 0.000005);
+		mushroom.setPosition(0.7, 2.35, 10);
+		mushrooms_.push_back(mushroom);   
+
+		Flower mushroom1;
+		mushroom1.loadModel("shroom_6.dae");
+		mushroom1.setRotation(0,180,1,0,0);
+		mushroom1.setScale(0.000005, 0.000005, 0.000005);
+		mushroom1.setPosition( 1, 2.35, 10);
+		mushrooms_.push_back(mushroom1); 
+
+		Flower mushroom2;
+		mushroom2.loadModel("shroom_6.dae");
+		mushroom2.setRotation(0,180,1,0,0);
+		mushroom2.setScale(0.000005, 0.000005, 0.000005);
+		mushroom2.setPosition( 2, 2.25, 10.3);
+		mushrooms_.push_back(mushroom2);    
+
+		Flower mushroom3;
+		mushroom3.loadModel("shroom_6.dae");
+		mushroom3.setRotation(0,180,1,0,0);
+		mushroom3.setScale(0.000005, 0.000005, 0.000005);
+		mushroom3.setPosition( 1.9, 2.26, 10.5);
+		mushrooms_.push_back(mushroom3);    
 		
 		//TODO: move it to butterfly class
 		animation_time_ = 0;
@@ -48,9 +81,9 @@ namespace Jungle
 		light_.setAmbientColor(ofFloatColor(0.5,0.5,0.5));
 		light_.enable();
 
-		camera_pos_ = ofVec3f(2, 3.5, 12);
+		camera_pos_ = ofVec3f(2, 3.5, 11.5);
 		main_camera_.setFarClip(10000);
-		main_camera_.setNearClip(1);
+		main_camera_.setNearClip(0.1);
 		main_camera_.setPosition(camera_pos_);
 		main_camera_.lookAt(butterfly_pos_);
 
@@ -115,14 +148,8 @@ namespace Jungle
 		butterfly_.setAnimation(0);        
 		butterfly_.setNormalizedTime(animation_time_);
 
-		ofMatrix4x4 mvp_mat_ = main_camera_.getModelViewProjectionMatrix();
-		butterfly_pos_ss_= butterfly_pos_ * mvp_mat_ ;
-		ofPoint screen_pos;
-		screen_pos.set(butterfly_pos_ss_.x * w_/2 + (x_/2 + w_/2), h_ - (butterfly_pos_ss_.y * h_/2 + (y_/2 + h_/2)));
-
-		butterfly_pos_ss_.set(screen_pos.x, screen_pos.y);
-
- 		butterfly_pos_+= wind_.butterfly_force_ * 0.0001;
+		butterfly_acc_ = wind_.butterfly_force_ / butterfly_mass_;
+ 		butterfly_pos_+= butterfly_acc_;
 		butterfly_pos_.x = ofClamp(butterfly_pos_.x, -5, 5);
 		butterfly_pos_.y = ofClamp(butterfly_pos_.y,  2.7, 5);
 
@@ -133,6 +160,30 @@ namespace Jungle
 		camera_pos_.x += delta.x/10;
 		camera_pos_.y += delta.y/10;
 		main_camera_.setPosition(camera_pos_);
+
+		for(int i =0; i < 4; i++)
+		{
+			ofVec3f m_pos = mushrooms_[i].getPosition();
+			m_pos.z = 0;
+			ofVec3f b_pos = butterfly_pos_;
+			b_pos.z = 0;
+			if(m_pos.distance(b_pos) < 0.5)
+			{
+				//mushrooms_[i].color_.set(255, 0, 0);
+				mushrooms_[i].flower_collided_ = true;
+				//playing triggering sound here
+			}
+		}
+
+		ofVec3f hand_delta =  hand_pos_- pre_hand_pos_;
+
+		//cout<<delta.x<<" "<<delta.y<<" "<<delta.z<<endl;
+		if(hand_delta.x == 0 && hand_delta.y == 0)
+		{
+			wind_.AddParticle(hand_pos_);
+		}
+
+
 		pre_hand_pos_ = hand_pos_;
 	}
 
@@ -149,18 +200,19 @@ namespace Jungle
 		stage_.drawFaces();
 		ofPopMatrix();
 
-		ofSetColor(255, 255, 255);	
-		butterfly_.drawFaces();
 
-// 		for(int i = 0; i < 4; i++)
-// 		{
-// 			//if(flowers_[i].flower_collided_ )
-// 			flowers_[i].Draw();            
-// 		}
+
+		for(int i = 0; i < 4; i++)
+		{
+			if(mushrooms_[i].flower_collided_ )
+				mushrooms_[i].Draw();            
+		}
 // 		ofPushMatrix();
 // 		ofTranslate(sphere_pos_.x, sphere_pos_.y, sphere_pos_.z);
 // 		ofSphere(sphere_radius_);
 // 		glPopMatrix();
+		ofSetColor(255, 255, 255);	
+		butterfly_.drawFaces();
 		glPopMatrix();
 
 		glDisable(GL_DEPTH_TEST);
@@ -184,13 +236,27 @@ namespace Jungle
 
 		ofSetColor(255,255,255,255);
 		//ofDrawBitmapString("particle num "+ ofToString(NUM_PARTICLE), 20, 20);
-		//ofDrawBitmapString("birds pos "+ ofToString(bird_pos_.x) + " "+ ofToString(bird_pos_.y) + " "+ ofToString(bird_pos_.z), 20, 40);
+		ofDrawBitmapString("birds pos "+ ofToString(butterfly_pos_.x) + " "+ ofToString(butterfly_pos_.y) + " "+ ofToString(butterfly_pos_.z), 20, 40);
 
 	}
 
 	void Level1::keyPressed( int key )
 	{
-
+		ofVec3f pos = mushrooms_[2].getPosition();
+		switch (key)
+		{
+		case 'h':     
+			two_hands_ = !two_hands_;
+			break;
+		case 'w':
+			pos.y+=0.1;
+			mushrooms_[2].setPosition(pos.x, pos.y,pos.z);
+			break;
+		case 's':
+			pos.y-=0.1;
+			mushrooms_[2].setPosition(pos.x, pos.y,pos.z);
+			break;
+		}
 	}
 
 	void Level1::mouseMoved( int x, int y )

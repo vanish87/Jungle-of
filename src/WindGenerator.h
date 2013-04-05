@@ -23,7 +23,7 @@ namespace Jungle
 		void SetMinPaticle(int num);
 
 		void Enable(bool enable, ofVec3f hand_pos);
-
+		void AddParticle(ofVec3f hand_pos);
 		ofVec3f butterfly_pos_;
 		ofVec3f butterfly_force_;
 

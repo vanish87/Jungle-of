@@ -289,6 +289,7 @@ namespace Jungle
 
 	void GamingScene5::Draw()
 	{
+		ofEnableBlendMode(OF_BLENDMODE_ALPHA);
         ofEnableAlphaBlending();
 		ofSetColor(255, 255, 255);		
 		main_camera_.begin();

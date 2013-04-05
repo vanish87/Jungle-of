@@ -24,6 +24,8 @@ namespace Jungle
 
 		//TODO: init max, min
 		num_particle_ = 200;
+		max_particle_ = 300;
+		min_particle_ = 100;
 
 		enabled_ = false;
 
@@ -56,6 +58,7 @@ namespace Jungle
 	{
 		if(enabled_)
 		{
+			butterfly_force_.set(0,0,0);
 			list<WindParticle>::iterator itr;
 			for( itr = wind_particles_.begin(); itr!= wind_particles_.end();)
 			{
@@ -66,6 +69,7 @@ namespace Jungle
 				if(itr->floating_time_ > floating_time_)
 				{
 					itr = wind_particles_.erase(itr);
+					num_particle_--;
 				}
 				else
 				{
@@ -79,7 +83,7 @@ namespace Jungle
 
 				itr->Simulate(ofGetLastFrameTime());
 				//butterfly bounce
-				if(itr->pos_.distance(ofVec3f(1280/2,720/2,0))< 50)
+				if(itr->pos_.distance(ofVec3f(1280/2,720/2,0))< 30)
 				{
 					ofVec3f dir = itr->pos_ - ofVec3f(1280/2,720/2,0);
 					dir.normalize();
@@ -89,7 +93,7 @@ namespace Jungle
 
 					ofVec3f f_dir = itr->vel_;
 					f_dir.y= -f_dir.y;
-					butterfly_force_ += f_dir * 0.1;
+					butterfly_force_ += f_dir * 1;
 					butterfly_force_.x = ofClamp(butterfly_force_.x, -50, 50);
 					butterfly_force_.y = ofClamp(butterfly_force_.y, -50, 50);
 					//cout<<pos_.x<<" "<<pos_.y<<" "<<pos_.z<<endl;
@@ -148,6 +152,24 @@ namespace Jungle
 			}
 		}
 		enabled_ = enable;
+	}
+
+	void WindGenerator::AddParticle(ofVec3f hand_pos)
+	{
+		if(num_particle_ < max_particle_)
+		{
+			float x0 = 0;
+			float k = 0;
+			float mass = 0;
+			float frac_para = 0;
+			x0 = x0_ + ofRandom(-1, 1) * x0_vari_;
+			k = k_+ ofRandom(-1, 1) * k_vari_;
+			mass = mass_+ ofRandom(-1, 1) * mass_vari_;
+			frac_para = frac_para_+ ofRandom(-1, 1) * frac_para_vari_;
+			WindParticle particle(hand_pos, x0, k, mass, frac_para, color_);
+			wind_particles_.push_back(particle);
+			num_particle_++;
+		}
 	}
 
 

@@ -43,13 +43,13 @@ namespace Jungle
 		ofxAssimpModelLoader stage_;
 		ofVec3f stage_pos_;
 
-		vector<Flower> flowers_;
+		vector<Flower> mushrooms_;
 
 		ButterFly butterfly_;		
 		ofVec3f butterfly_pos_;
-		ofVec3f butterfly_pos_ss_;
 		ofVec3f butterfly_acc_;
 		ofVec3f butterfly_vol_;
+		float butterfly_mass_;
 
 		float animation_time_;
 
