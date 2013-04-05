@@ -20,7 +20,7 @@ namespace Jungle
 		effect_dis_ = 300;
 		floating_time_ = 3;
 
-		color_.set(255, 226, 141, 20);
+		ofSetColor(255, 226, 141, 20); 
 
 		//TODO: init max, min
 		num_particle_ = 200;
@@ -93,7 +93,7 @@ namespace Jungle
 
 					ofVec3f f_dir = itr->vel_;
 					f_dir.y= -f_dir.y;
-					butterfly_force_ += f_dir * 0.1;
+					butterfly_force_ += f_dir * 0.12;
 					butterfly_force_.x = ofClamp(butterfly_force_.x, -50, 50);
 					butterfly_force_.y = ofClamp(butterfly_force_.y, -50, 50);
 					//cout<<pos_.x<<" "<<pos_.y<<" "<<pos_.z<<endl;
@@ -114,7 +114,7 @@ namespace Jungle
 			list<WindParticle>::iterator itr;
 			for( itr = wind_particles_.begin(); itr!= wind_particles_.end(); ++itr)
 			{
-				ofSetColor(itr->color_.r , itr->color_.g, itr->color_.b, (1 - itr->floating_time_/floating_time_) * 255);
+				ofSetColor(itr->color_.r , itr->color_.g, itr->color_.b, (1 - itr->floating_time_/floating_time_) * color_.a);
 				ofPushMatrix();
 				ofTranslate(itr->pos_.x, itr->pos_.y, 0.0f);
 				ofCircle(0, 0, 3); //size of particles

@@ -32,7 +32,7 @@ namespace Jungle
 
 		butterfly_.loadModel("Yellow_Butterfly_1.dae");
 		butterfly_pos_ = ofVec3f(2,3.5, 10.7);
-		butterfly_mass_ = 10000;//2500
+		butterfly_mass_ = 12000;//2500
 		butterfly_acc_.set(0, 0, 0);
 
 		butterfly_.setPosition(butterfly_pos_.x,butterfly_pos_.y,butterfly_pos_.z);
