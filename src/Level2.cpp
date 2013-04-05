@@ -18,7 +18,7 @@ namespace Jungle
 	void Level2::Steup()
 	{
         
-        trigger.loadSound("trigger1.mp3");
+        trigger.loadSound("trigger2.mp3");
         
 		w_ = ofGetWindowWidth();
 		h_ = ofGetWindowHeight();
@@ -204,7 +204,7 @@ namespace Jungle
 				mushrooms_[i].flower_collided_ = true;
                 
 				//playing triggering sound here
-                if(!trigger.getIsPlaying())
+//                if(!trigger.getIsPlaying())
 					trigger.play();
 			}
 		}
