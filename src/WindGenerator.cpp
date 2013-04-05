@@ -7,10 +7,10 @@ namespace Jungle
 	WindGenerator::WindGenerator(string file_name)
 	{
 		
-		x0_ = 60;
-		k_ = 0.3;
+		x0_ = 50;
+		k_ = 0.1;
 		mass_ = 5;
-		frac_para_ = 50;
+		frac_para_ = 30;
 
 		x0_vari_ = 1;
 		k_vari_ = 1;
@@ -63,7 +63,7 @@ namespace Jungle
 			for( itr = wind_particles_.begin(); itr!= wind_particles_.end();)
 			{
 				//lost dragging if it too far from hand
-				if(itr->pos_.distance(hand_pos) > effect_dis_)
+				if(itr->pos_.distance(hand_pos) > effect_dis_ && num_particle_ > min_particle_)
 					itr->k_ = 0;
 				//delete it if it floating too long
 				if(itr->floating_time_ > floating_time_)
@@ -89,11 +89,11 @@ namespace Jungle
 					dir.normalize();
 
 					itr->pos_ = dir*50 + ofVec3f(1280/2,720/2,0);
-					itr->AddForce(dir*100);
+					//itr->AddForce(dir*100);
 
 					ofVec3f f_dir = itr->vel_;
 					f_dir.y= -f_dir.y;
-					butterfly_force_ += f_dir * 1;
+					butterfly_force_ += f_dir * 0.1;
 					butterfly_force_.x = ofClamp(butterfly_force_.x, -50, 50);
 					butterfly_force_.y = ofClamp(butterfly_force_.y, -50, 50);
 					//cout<<pos_.x<<" "<<pos_.y<<" "<<pos_.z<<endl;

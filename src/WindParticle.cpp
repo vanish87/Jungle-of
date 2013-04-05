@@ -71,6 +71,8 @@ namespace Jungle
 		v_dir.normalize();
 		//fraction dir = opposite to vel dir
 		ofVec3f frac = -frac_para_ * v_dir;
+// 		frac.x= ofClamp(frac.x,0, -vel_.x);
+// 		frac.y= ofClamp(frac.y,0, -vel_.y);
 		if(moving_)
 		{
 			force = force + frac;

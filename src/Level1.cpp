@@ -32,7 +32,7 @@ namespace Jungle
 
 		butterfly_.loadModel("Yellow_Butterfly_1.dae");
 		butterfly_pos_ = ofVec3f(2,3.5, 10.7);
-		butterfly_mass_ = 2500;
+		butterfly_mass_ = 10000;//2500
 		butterfly_acc_.set(0, 0, 0);
 
 		butterfly_.setPosition(butterfly_pos_.x,butterfly_pos_.y,butterfly_pos_.z);
@@ -119,19 +119,26 @@ namespace Jungle
 
 				pre_hand_pos_ = hand_pos_;
 
+
 				if(two_hands_)
 				{
 					if(hand_pos.length() < 100)
 					{
 						hand_pos_.x = ofMap((l_hand_pos.x+ r_hand_pos.x)/2 , 0, 640, 0, w_, true);
 						hand_pos_.y = ofMap((l_hand_pos.y+ r_hand_pos.y)/2  , 0, 480, 0, h_, true);
+
+						wind_.Enable(true, hand_pos_);	
 					}
 				}
 				else
 				{
 					hand_pos_.x = ofMap(r_hand_pos.x , 0, 640, 0, w_, true);
 					hand_pos_.y = ofMap(r_hand_pos.y , 0, 480, 0, h_, true);
+
+
+					wind_.Enable(true, hand_pos_);	
 				}
+
 				//cout<<shadow_pos_.x<<" "<<shadow_pos_.y<<" "<<shadow_pos_.z<<"\r";
 
 			}
@@ -148,7 +155,26 @@ namespace Jungle
 		butterfly_.setAnimation(0);        
 		butterfly_.setNormalizedTime(animation_time_);
 
-		butterfly_acc_ = wind_.butterfly_force_ / butterfly_mass_;
+		butterfly_acc_ += wind_.butterfly_force_ / butterfly_mass_;
+		if(-0.00001 <= butterfly_acc_.x && butterfly_acc_.x <= 0.00001)
+			butterfly_acc_.x = 0;
+		if(-0.00001 <= butterfly_acc_.y && butterfly_acc_.y <= 0.00001)
+			butterfly_acc_.y = 0;
+		if(butterfly_acc_.x > 0)
+			butterfly_acc_.x -= 0.001;
+		else
+		{
+			if(butterfly_acc_.x < 0)
+				butterfly_acc_.x += 0.001;
+		}
+		if(butterfly_acc_.y > 0)
+			butterfly_acc_.y -= 0.001;
+		else
+		{
+			if(butterfly_acc_.y < 0)
+				butterfly_acc_.y += 0.001;
+		}
+//		cout<<butterfly_acc_.x<<" "<<butterfly_acc_.y<<"\r";
  		butterfly_pos_+= butterfly_acc_;
 		butterfly_pos_.x = ofClamp(butterfly_pos_.x, -5, 5);
 		butterfly_pos_.y = ofClamp(butterfly_pos_.y,  2.7, 5);
@@ -236,7 +262,7 @@ namespace Jungle
 
 		ofSetColor(255,255,255,255);
 		//ofDrawBitmapString("particle num "+ ofToString(NUM_PARTICLE), 20, 20);
-		ofDrawBitmapString("birds pos "+ ofToString(butterfly_pos_.x) + " "+ ofToString(butterfly_pos_.y) + " "+ ofToString(butterfly_pos_.z), 20, 40);
+		ofDrawBitmapString("birds pos "+ ofToString(butterfly_acc_.x) + " "+ ofToString(butterfly_acc_.y) + " "+ ofToString(butterfly_pos_.z), 20, 40);
 
 	}
 

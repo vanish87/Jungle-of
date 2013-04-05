@@ -40,7 +40,7 @@ namespace Jungle
 		ofColor color_;
 
 		//variance para
-		//from 0 to 1
+		//from 0 to inf
 		float mass_vari_;
 		float x0_vari_;
 		float k_vari_;
