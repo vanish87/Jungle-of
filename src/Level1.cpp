@@ -51,28 +51,28 @@ namespace Jungle
 		mushroom.loadModel("shroom_6.dae");
 		mushroom.setRotation(0,180,1,0,0);
 		mushroom.setScale(0.000001, 0.000001, 0.000001);
-		mushroom.setPosition(0.7, 2.35, 10);
+		mushroom.setPosition(0.6, 2.35, 10);
 		mushrooms_.push_back(mushroom);   
 
 		Flower mushroom1;
 		mushroom1.loadModel("shroom_6.dae");
 		mushroom1.setRotation(0,180,1,0,0);
 		mushroom1.setScale(0.000001, 0.000001, 0.000001);
-		mushroom1.setPosition( 1, 2.35, 10);
+		mushroom1.setPosition( 1.2, 2.35, 10);
 		mushrooms_.push_back(mushroom1); 
 
 		Flower mushroom2;
 		mushroom2.loadModel("shroom_6.dae");
 		mushroom2.setRotation(0,180,1,0,0);
 		mushroom2.setScale(0.000001, 0.000001, 0.000001);
-		mushroom2.setPosition( 2, 2.25, 10.3);
+		mushroom2.setPosition( 2, 2.35, 10.3);
 		mushrooms_.push_back(mushroom2);    
 
 		Flower mushroom3;
 		mushroom3.loadModel("shroom_6.dae");
 		mushroom3.setRotation(0,180,1,0,0);
 		mushroom3.setScale(0.000001, 0.000001, 0.000001);
-		mushroom3.setPosition( 1.9, 2.26, 10.5);
+		mushroom3.setPosition( 1.6, 2.36, 10.5);
 		mushrooms_.push_back(mushroom3);    
 
 		Flower flower;
@@ -235,7 +235,9 @@ namespace Jungle
 			m_pos.z = 0;
 			ofVec3f b_pos = butterfly_pos_;
 			b_pos.z = 0;
-			if(m_pos.distance(b_pos) < 0.5 &&!mushrooms_[i].flower_collided_)
+            if(0 == i)
+                cout<<m_pos.distance(b_pos)<<"\r";
+			if(m_pos.distance(b_pos) < 0.4 &&!mushrooms_[i].flower_collided_)
 			{
 				//mushrooms_[i].color_.set(255, 0, 0);
 				mushrooms_[i].flower_collided_ = true;
@@ -250,8 +252,7 @@ namespace Jungle
 				f_pos.z = 0;
 				ofVec3f b_pos = butterfly_pos_;
 				b_pos.z = 0;
-				//if(0 == i)
-				//	cout<<f_pos.distance(b_pos)<<"\r";
+				
 				if(f_pos.distance(b_pos) < 0.1 &&!flowers_[i].flower_collided_)
 				{
 
@@ -288,7 +289,7 @@ namespace Jungle
 		{
 			level1_finished_ = true;
 			clampY_.y = 2.7 + level2_start_.y;
-			moving_time_ +=0.01;
+			moving_time_ +=0.001;
 			ofVec3f cur_pos;
 			//ofVec3f(2,3.5, 10.7);
 			cur_pos.x = ofLerp(2, level2_start_.x, moving_time_);
