@@ -17,6 +17,9 @@ namespace Jungle
 
 	void Level1::Steup()
 	{
+        
+        trigger.loadSound("trigger1.mp3");
+        
 		w_ = ofGetWindowWidth();
 		h_ = ofGetWindowHeight();
 		x_ = ofGetWindowPositionX();
@@ -197,7 +200,10 @@ namespace Jungle
 			{
 				//mushrooms_[i].color_.set(255, 0, 0);
 				mushrooms_[i].flower_collided_ = true;
+                
 				//playing triggering sound here
+               trigger.getIsPlaying();
+                trigger.play();
 			}
 		}
 
