@@ -241,7 +241,7 @@ namespace Jungle
                 
 				//playing triggering sound here
                // if(!trigger.getIsPlaying())
-					//trigger.play();
+					trigger.play();
 			}
 			if(level1_finished_)
 			{
