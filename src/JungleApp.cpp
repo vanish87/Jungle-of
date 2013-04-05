@@ -34,6 +34,10 @@ namespace Jungle
 		level1_->Steup();
 		StateManagerInstance().ChangeState(level1_, SOP_PUSH);
 		//ofEnableAlphaBlending();
+        
+        atmo.loadSound("jungle-atmos-mixed.mp3");
+        atmo.setLoop(true);
+        atmo.play();
 	}
 
 	//--------------------------------------------------------------
