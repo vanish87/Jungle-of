@@ -235,9 +235,9 @@ namespace Jungle
 			m_pos.z = 0;
 			ofVec3f b_pos = butterfly_pos_;
 			b_pos.z = 0;
-            if(0 == i)
-                cout<<m_pos.distance(b_pos)<<"\r";
-			if(m_pos.distance(b_pos) < 0.4 &&!mushrooms_[i].flower_collided_)
+//            if(0 == i)
+//                cout<<m_pos.distance(b_pos)<<"\r";
+			if(m_pos.distance(b_pos) < 0.42 &&!mushrooms_[i].flower_collided_)
 			{
 				//mushrooms_[i].color_.set(255, 0, 0);
 				mushrooms_[i].flower_collided_ = true;
@@ -253,7 +253,7 @@ namespace Jungle
 				ofVec3f b_pos = butterfly_pos_;
 				b_pos.z = 0;
 				
-				if(f_pos.distance(b_pos) < 0.1 &&!flowers_[i].flower_collided_)
+				if(f_pos.distance(b_pos) < 0.15 &&!flowers_[i].flower_collided_)
 				{
 
 					//mushrooms_[i].color_.set(255, 0, 0);
