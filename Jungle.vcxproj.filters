@@ -175,6 +175,9 @@
     <ClCompile Include="src\JungleParticle.cpp">
       <Filter>src\Particle</Filter>
     </ClCompile>
+    <ClCompile Include="src\Level2.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\GamingScene2.h">
@@ -764,6 +767,9 @@
     </ClInclude>
     <ClInclude Include="src\JungleParticle.h">
       <Filter>src\Particle</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Level2.h">
+      <Filter>src</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

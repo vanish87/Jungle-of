@@ -1,22 +1,21 @@
-#include "Level1.h"
 #include "Level2.h"
 #include "JungleApp.h"
 
 namespace Jungle
 {
-	Level1::Level1( void )
+	Level2::Level2( void )
 		//not use right now
 		:wind_("config.xml")
 	{
 		
 	}
 
-	Level1::~Level1( void )
+	Level2::~Level2( void )
 	{
 
 	}
 
-	void Level1::Steup()
+	void Level2::Steup()
 	{
         
         trigger.loadSound("trigger1.mp3");
@@ -47,60 +46,32 @@ namespace Jungle
 		//2 ,2.7, 10.3
 		//
 		Flower mushroom;
-		mushroom.loadModel("shroom_6.dae");
+		mushroom.loadModel("pre-Geranium.obj");
 		mushroom.setRotation(0,180,1,0,0);
 		mushroom.setScale(0.000001, 0.000001, 0.000001);
 		mushroom.setPosition(0.7, 2.35, 10);
 		mushrooms_.push_back(mushroom);   
 
 		Flower mushroom1;
-		mushroom1.loadModel("shroom_6.dae");
+		mushroom1.loadModel("pre-Geranium.obj");
 		mushroom1.setRotation(0,180,1,0,0);
 		mushroom1.setScale(0.000001, 0.000001, 0.000001);
 		mushroom1.setPosition( 1, 2.35, 10);
 		mushrooms_.push_back(mushroom1); 
 
 		Flower mushroom2;
-		mushroom2.loadModel("shroom_6.dae");
+		mushroom2.loadModel("pre-Geranium.obj");
 		mushroom2.setRotation(0,180,1,0,0);
 		mushroom2.setScale(0.000001, 0.000001, 0.000001);
 		mushroom2.setPosition( 2, 2.25, 10.3);
 		mushrooms_.push_back(mushroom2);    
 
 		Flower mushroom3;
-		mushroom3.loadModel("shroom_6.dae");
+		mushroom3.loadModel("pre-Geranium.obj");
 		mushroom3.setRotation(0,180,1,0,0);
 		mushroom3.setScale(0.000001, 0.000001, 0.000001);
 		mushroom3.setPosition( 1.9, 2.26, 10.5);
 		mushrooms_.push_back(mushroom3);    
-
-		Flower flower;
-		flower.loadModel("pre-Geranium.obj");
-		flower.setRotation(0,90,1,0,0);
-		flower.setScale(0.0005, 0.0005, 0.0005);
-		flower.setPosition(0.7, 9, 8.8);
-		flowers_.push_back(flower);   
-
-		Flower flower1;
-		flower1.loadModel("pre-Geranium.obj");
-		flower1.setRotation(0,90,1,0,0);
-		flower1.setScale(0.0005, 0.0005, 0.0005);
-		flower1.setPosition( 1, 9, 8.7);
-		flowers_.push_back(flower1); 
-
-		Flower flower2;
-		flower2.loadModel("pre-Geranium.obj");
-		flower2.setRotation(0,90,1,0,0);
-		flower2.setScale(0.0005, 0.0005, 0.0005);
-		flower2.setPosition( 0.62, 9, 8.7);
-		flowers_.push_back(flower2);    
-
-		Flower flower3;
-		flower3.loadModel("pre-Geranium.obj");
-		flower3.setRotation(0,90,1,0,0);
-		flower3.setScale(0.0005, 0.0005, 0.0005);
-		flower3.setPosition( 1.3, 9, 8.7);
-		flowers_.push_back(flower3);  
 		
 		//TODO: move it to butterfly class
 		animation_time_ = 0;
@@ -108,12 +79,7 @@ namespace Jungle
 		wind_.Init();
 		two_hands_ = true;
 		move_to_next_lev_ = false;
-		level1_finished_ = false;
-		level2_start_.set(1, 9, 10);
-		moving_time_ = 0;
-
-		clampX_.set(-5 , 5, 0);
-		clampY_.set(2.7, 5, 0);
+		target_pos_.set(1, 9, 10);
 
 		light_.setDirectional();
 		light_.setOrientation(ofVec3f(-32,-47,25));
@@ -136,7 +102,7 @@ namespace Jungle
 		//b_pos_.set(300,300,0);
 	}
 
-	void Level1::Update()
+	void Level2::Update()
 	{
 		ofxUser* user = JungleApp::KinectInstance().users;
 		for(int i =0; i< MAX_USERS; ++i)
@@ -215,10 +181,8 @@ namespace Jungle
 		}
 //		cout<<butterfly_acc_.x<<" "<<butterfly_acc_.y<<"\r";
  		butterfly_pos_+= butterfly_acc_;
-
-		butterfly_pos_.x = ofClamp(butterfly_pos_.x, clampX_.x, clampX_.y);
-		butterfly_pos_.y = ofClamp(butterfly_pos_.y, clampY_.x, clampY_.y);
-	
+		butterfly_pos_.x = ofClamp(butterfly_pos_.x, -5, 5);
+		butterfly_pos_.y = ofClamp(butterfly_pos_.y,  2.7, 5);
 
 		butterfly_.setPosition(butterfly_pos_.x, butterfly_pos_.y, butterfly_pos_.z); 
 		ofVec3f delta = butterfly_pos_ - camera_pos_;
@@ -240,27 +204,8 @@ namespace Jungle
 				mushrooms_[i].flower_collided_ = true;
                 
 				//playing triggering sound here
-               // if(!trigger.getIsPlaying())
-					//trigger.play();
-			}
-			if(level1_finished_)
-			{
-				ofVec3f f_pos = flowers_[i].getPosition();
-				f_pos.z = 0;
-				ofVec3f b_pos = butterfly_pos_;
-				b_pos.z = 0;
-				//if(0 == i)
-				//	cout<<f_pos.distance(b_pos)<<"\r";
-				if(f_pos.distance(b_pos) < 0.1 &&!flowers_[i].flower_collided_)
-				{
-
-					//mushrooms_[i].color_.set(255, 0, 0);
-					flowers_[i].flower_collided_ = true;
-
-					//playing triggering sound here
-					// if(!trigger.getIsPlaying())
-					//trigger.play();
-				}
+                if(!trigger.getIsPlaying())
+					trigger.play();
 			}
 		}
 
@@ -272,7 +217,6 @@ namespace Jungle
 			wind_.AddParticle(hand_pos_);
 		}
 
-		if(!level1_finished_)
 		for(int i =0; i < 4; i++)
 		{
 			if (!mushrooms_[i].flower_collided_) 
@@ -285,27 +229,15 @@ namespace Jungle
 
 		if(move_to_next_lev_)
 		{
-			level1_finished_ = true;
-			clampY_.y = 2.7 + level2_start_.y;
-			moving_time_ +=0.01;
-			ofVec3f cur_pos;
-			//ofVec3f(2,3.5, 10.7);
-			cur_pos.x = ofLerp(2, level2_start_.x, moving_time_);
-			cur_pos.y = ofLerp(3.5, level2_start_.y, moving_time_);
-			cur_pos.z = 10.7;
-			butterfly_pos_ = cur_pos;
-			if(moving_time_ > 1)
-				move_to_next_lev_ = false;
-			//TODO: use config class to store all general parameters
-			//Level2 level2;
-			//JungleApp::StateManagerInstance().ChangeState(&level2, SOP_PUSH);
+
+			//JungleApp::StateManagerInstance().ChangeState()
 		}
 
 
 		pre_hand_pos_ = hand_pos_;
 	}
 
-	void Level1::Draw()
+	void Level2::Draw()
 	{
 		ofEnableAlphaBlending();
 		ofEnableBlendMode(OF_BLENDMODE_ALPHA);
@@ -324,12 +256,6 @@ namespace Jungle
 		{
 			if(mushrooms_[i].flower_collided_ )
 				mushrooms_[i].Draw();            
-		}
-
-		for(int i = 0; i < 4; i++)
-		{
-			if(flowers_[i].flower_collided_ )
-				flowers_[i].Draw();            
 		}
 // 		ofPushMatrix();
 // 		ofTranslate(sphere_pos_.x, sphere_pos_.y, sphere_pos_.z);
@@ -360,67 +286,61 @@ namespace Jungle
 
 		ofSetColor(255,255,255,255);
 		//ofDrawBitmapString("particle num "+ ofToString(NUM_PARTICLE), 20, 20);
-		ofDrawBitmapString("birds pos "+ ofToString(butterfly_pos_.x) + " "+ ofToString(butterfly_pos_.y) + " "+ ofToString(butterfly_pos_.z), 20, 40);
+		ofDrawBitmapString("birds pos "+ ofToString(butterfly_acc_.x) + " "+ ofToString(butterfly_acc_.y) + " "+ ofToString(butterfly_pos_.z), 20, 40);
 
 	}
 
-	void Level1::keyPressed( int key )
+	void Level2::keyPressed( int key )
 	{
-		ofVec3f pos = flowers_[2].getPosition();
+		ofVec3f pos = mushrooms_[2].getPosition();
 		switch (key)
 		{
 		case 'h':     
 			two_hands_ = !two_hands_;
 			break;
 		case 'w':
-			pos.z+=0.1;
-			flowers_[2].setPosition(pos.x, pos.y,pos.z);
+			pos.y+=0.1;
+			mushrooms_[2].setPosition(pos.x, pos.y,pos.z);
 			break;
 		case 's':
-			pos.z-=0.1;
-			flowers_[2].setPosition(pos.x, pos.y,pos.z);
-			break;
-		case 'n':
-			for(int i =0; i < 4; i++)
-			{
-				mushrooms_[i].flower_collided_ = true;
-			}
+			pos.y-=0.1;
+			mushrooms_[2].setPosition(pos.x, pos.y,pos.z);
 			break;
 		}
 	}
 
-	void Level1::mouseMoved( int x, int y )
+	void Level2::mouseMoved( int x, int y )
 	{
 		hand_pos_.set(x,y,0);
 		wind_.Enable(true, hand_pos_);		
 	}
 
-	void Level1::windowResized( int w, int h )
+	void Level2::windowResized( int w, int h )
 	{
 
 	}
 
-	void Level1::inPose( ofxUser & user )
+	void Level2::inPose( ofxUser & user )
 	{
 
 	}
 
-	void Level1::inGesture( ofxUser & user )
+	void Level2::inGesture( ofxUser & user )
 	{
 
 	}
 
-	void Level1::userIn( ofxUser & user )
+	void Level2::userIn( ofxUser & user )
 	{
 
 	}
 
-	void Level1::userMove( ofxUser & user )
+	void Level2::userMove( ofxUser & user )
 	{
 
 	}
 
-	void Level1::userOut( ofxUser & user )
+	void Level2::userOut( ofxUser & user )
 	{
 
 	}

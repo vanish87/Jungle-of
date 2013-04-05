@@ -172,6 +172,11 @@ namespace Jungle
 		}
 	}
 
+	bool WindGenerator::Enabled()
+	{
+		return enabled_;
+	}
+
 
 
 }

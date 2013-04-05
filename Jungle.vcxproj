@@ -169,6 +169,7 @@ if not exist "$(ProjectDir)\bin\data" mkdir  "$(ProjectDir)\bin\data"
     <ClCompile Include="src\GamingScene5.cpp" />
     <ClCompile Include="src\JungleParticle.cpp" />
     <ClCompile Include="src\Level1.cpp" />
+    <ClCompile Include="src\Level2.cpp" />
     <ClCompile Include="src\main.cpp" />
     <ClCompile Include="src\JungleApp.cpp" />
     <ClCompile Include="src\SceneManager.cpp" />
@@ -368,6 +369,7 @@ if not exist "$(ProjectDir)\bin\data" mkdir  "$(ProjectDir)\bin\data"
     <ClInclude Include="src\JungleApp.h" />
     <ClInclude Include="src\JungleParticle.h" />
     <ClInclude Include="src\Level1.h" />
+    <ClInclude Include="src\Level2.h" />
     <ClInclude Include="src\PreDef.h" />
     <ClInclude Include="src\SceneManager.h" />
     <ClInclude Include="src\SceneObject.h" />

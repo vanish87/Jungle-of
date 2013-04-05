@@ -1,5 +1,5 @@
-#ifndef LEVEL1_H_
-#define LEVEL1_H_
+#ifndef LEVEL2_H_
+#define LEVEL2_H_
 
 #pragma once
 #include "State.h"
@@ -10,11 +10,11 @@
 
 namespace Jungle
 {
-	class Level1 :public State
+	class Level2 :public State
 	{
 	public:
-		Level1(void);
-		~Level1(void);
+		Level2(void);
+		~Level2(void);
 
 		virtual void Steup();
 
@@ -44,7 +44,6 @@ namespace Jungle
 		ofVec3f stage_pos_;
 
 		vector<Flower> mushrooms_;
-		vector<Flower> flowers_;
 
 		ButterFly butterfly_;		
 		ofVec3f butterfly_pos_;
@@ -63,13 +62,9 @@ namespace Jungle
 
 		bool two_hands_;
 
-		ofVec3f clampX_;
-		ofVec3f clampY_;
-
-		bool level1_finished_;
 		bool move_to_next_lev_;
-		ofVec3f level2_start_;
-		float moving_time_;
+		ofVec3f target_pos_;
+
 
 		int w_;
 		int h_;
