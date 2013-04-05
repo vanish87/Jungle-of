@@ -76,7 +76,8 @@ namespace Jungle
 		int x_;
 		int y_;
         
-        ofSoundPlayer trigger;
+        ofSoundPlayer trigger1;
+        ofSoundPlayer trigger2;
 	};
 }
 

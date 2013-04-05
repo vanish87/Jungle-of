@@ -19,7 +19,8 @@ namespace Jungle
 	void Level1::Steup()
 	{
         
-        trigger.loadSound("trigger1.mp3");
+        trigger1.loadSound("trigger1.mp3");
+        trigger2.loadSound("trigger2.mp3");
         
 		w_ = ofGetWindowWidth();
 		h_ = ofGetWindowHeight();
@@ -241,7 +242,7 @@ namespace Jungle
                 
 				//playing triggering sound here
                // if(!trigger.getIsPlaying())
-					trigger.play();
+					trigger1.play();
 			}
 			if(level1_finished_)
 			{
