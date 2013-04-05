@@ -20,7 +20,7 @@ namespace Jungle
 	{
         
         trigger1.loadSound("trigger1.mp3");
-        trigger2.loadSound("trigger2.mp3");
+//        trigger2.loadSound("trigger2.mp3");
         
 		w_ = ofGetWindowWidth();
 		h_ = ofGetWindowHeight();
