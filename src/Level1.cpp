@@ -79,28 +79,28 @@ namespace Jungle
 		flower.loadModel("pre-Geranium.obj");
 		flower.setRotation(0,90,1,0,0);
 		flower.setScale(0.0005, 0.0005, 0.0005);
-		flower.setPosition(0.7, 9, 8.8);
-		flowers_.push_back(flower);   
+		flower.setPosition(-0.6, 9.4, 7.6);
+		flowers_.push_back(flower);  
 
 		Flower flower1;
 		flower1.loadModel("pre-Geranium.obj");
 		flower1.setRotation(0,90,1,0,0);
 		flower1.setScale(0.0005, 0.0005, 0.0005);
-		flower1.setPosition( 1, 9, 8.7);
+		flower1.setPosition( 0.1, 9.3, 8.1);
 		flowers_.push_back(flower1); 
 
 		Flower flower2;
 		flower2.loadModel("pre-Geranium.obj");
 		flower2.setRotation(0,90,1,0,0);
 		flower2.setScale(0.0005, 0.0005, 0.0005);
-		flower2.setPosition( 0.62, 9, 8.7);
+		flower2.setPosition(2.0, 9.03, 9.4);
 		flowers_.push_back(flower2);    
 
 		Flower flower3;
 		flower3.loadModel("pre-Geranium.obj");
 		flower3.setRotation(0,90,1,0,0);
 		flower3.setScale(0.0005, 0.0005, 0.0005);
-		flower3.setPosition( 1.3, 9, 8.7);
+		flower3.setPosition( 1.5, 8.8, 9.3);
 		flowers_.push_back(flower3);  
 		
 		//TODO: move it to butterfly class
