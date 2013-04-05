@@ -23,9 +23,9 @@ namespace Jungle
 		ofSetColor(255, 226, 141, 20); 
 
 		//TODO: init max, min
-		num_particle_ = 200;
-		max_particle_ = 300;
-		min_particle_ = 100;
+		num_particle_ = 300;
+		max_particle_ = 400;
+		min_particle_ = 250;
 
 		enabled_ = false;
 
@@ -66,7 +66,7 @@ namespace Jungle
 				if(itr->pos_.distance(hand_pos) > effect_dis_ && num_particle_ > min_particle_)
 					itr->k_ = 0;
 				//delete it if it floating too long
-				if(itr->floating_time_ > floating_time_)
+				if(itr->floating_time_ > floating_time_ && num_particle_ > min_particle_)
 				{
 					itr = wind_particles_.erase(itr);
 					num_particle_--;
@@ -93,7 +93,7 @@ namespace Jungle
 
 					ofVec3f f_dir = itr->vel_;
 					f_dir.y= -f_dir.y;
-					butterfly_force_ += f_dir * 0.07;
+					butterfly_force_ += f_dir * 0.3;
 					butterfly_force_.x = ofClamp(butterfly_force_.x, -40, 40);
 					butterfly_force_.y = ofClamp(butterfly_force_.y, -40, 40);
 					//cout<<pos_.x<<" "<<pos_.y<<" "<<pos_.z<<endl;
@@ -156,6 +156,7 @@ namespace Jungle
 
 	void WindGenerator::AddParticle(ofVec3f hand_pos)
 	{
+        for(int i =0 ; i < 50 ; i++)
 		if(num_particle_ < max_particle_)
 		{
 			float x0 = 0;

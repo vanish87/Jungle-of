@@ -113,7 +113,7 @@ namespace Jungle
 		level2_start_.set(1, 9, 10);
 		moving_time_ = 0;
 
-		clampX_.set(-5 , 5, 0);
+		clampX_.set(-1 , 4, 0);
 		clampY_.set(2.7, 5, 0);
 
 		light_.setDirectional();
@@ -289,7 +289,7 @@ namespace Jungle
 		{
 			level1_finished_ = true;
 			clampY_.y = 2.7 + level2_start_.y;
-			moving_time_ +=0.001;
+			moving_time_ +=0.005;
 			ofVec3f cur_pos;
 			//ofVec3f(2,3.5, 10.7);
 			cur_pos.x = ofLerp(2, level2_start_.x, moving_time_);
@@ -393,8 +393,8 @@ namespace Jungle
 
 	void Level1::mouseMoved( int x, int y )
 	{
-		hand_pos_.set(x,y,0);
-		wind_.Enable(true, hand_pos_);		
+		//hand_pos_.set(x,y,0);
+		//wind_.Enable(true, hand_pos_);
 	}
 
 	void Level1::windowResized( int w, int h )
