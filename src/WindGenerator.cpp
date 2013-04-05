@@ -83,7 +83,7 @@ namespace Jungle
 
 				itr->Simulate(ofGetLastFrameTime());
 				//butterfly bounce
-				if(itr->pos_.distance(ofVec3f(1280/2,720/2,0))< 30)
+				if(itr->pos_.distance(ofVec3f(1280/2,720/2,0))< 50)
 				{
 					ofVec3f dir = itr->pos_ - ofVec3f(1280/2,720/2,0);
 					dir.normalize();
@@ -93,9 +93,9 @@ namespace Jungle
 
 					ofVec3f f_dir = itr->vel_;
 					f_dir.y= -f_dir.y;
-					butterfly_force_ += f_dir * 0.12;
-					butterfly_force_.x = ofClamp(butterfly_force_.x, -50, 50);
-					butterfly_force_.y = ofClamp(butterfly_force_.y, -50, 50);
+					butterfly_force_ += f_dir * 0.07;
+					butterfly_force_.x = ofClamp(butterfly_force_.x, -40, 40);
+					butterfly_force_.y = ofClamp(butterfly_force_.y, -40, 40);
 					//cout<<pos_.x<<" "<<pos_.y<<" "<<pos_.z<<endl;
 				}
 			}

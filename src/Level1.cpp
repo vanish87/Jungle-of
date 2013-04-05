@@ -32,12 +32,12 @@ namespace Jungle
 
 		butterfly_.loadModel("Yellow_Butterfly_1.dae");
 		butterfly_pos_ = ofVec3f(2,3.5, 10.7);
-		butterfly_mass_ = 12000;//2500
+		butterfly_mass_ = 18000;//2500
 		butterfly_acc_.set(0, 0, 0);
 
 		butterfly_.setPosition(butterfly_pos_.x,butterfly_pos_.y,butterfly_pos_.z);
 		butterfly_.setRotation(0, 150, 1, 0, 0); 
-		butterfly_.setScale(0.002,0.002,0.002);
+		butterfly_.setScale(0.003,0.003,0.003);
 
 
 		//2 ,2.7, 10.3
@@ -45,28 +45,28 @@ namespace Jungle
 		Flower mushroom;
 		mushroom.loadModel("shroom_6.dae");
 		mushroom.setRotation(0,180,1,0,0);
-		mushroom.setScale(0.000005, 0.000005, 0.000005);
+		mushroom.setScale(0.000001, 0.000001, 0.000001);
 		mushroom.setPosition(0.7, 2.35, 10);
 		mushrooms_.push_back(mushroom);   
 
 		Flower mushroom1;
 		mushroom1.loadModel("shroom_6.dae");
 		mushroom1.setRotation(0,180,1,0,0);
-		mushroom1.setScale(0.000005, 0.000005, 0.000005);
+		mushroom1.setScale(0.000001, 0.000001, 0.000001);
 		mushroom1.setPosition( 1, 2.35, 10);
 		mushrooms_.push_back(mushroom1); 
 
 		Flower mushroom2;
 		mushroom2.loadModel("shroom_6.dae");
 		mushroom2.setRotation(0,180,1,0,0);
-		mushroom2.setScale(0.000005, 0.000005, 0.000005);
+		mushroom2.setScale(0.000001, 0.000001, 0.000001);
 		mushroom2.setPosition( 2, 2.25, 10.3);
 		mushrooms_.push_back(mushroom2);    
 
 		Flower mushroom3;
 		mushroom3.loadModel("shroom_6.dae");
 		mushroom3.setRotation(0,180,1,0,0);
-		mushroom3.setScale(0.000005, 0.000005, 0.000005);
+		mushroom3.setScale(0.000001, 0.000001, 0.000001);
 		mushroom3.setPosition( 1.9, 2.26, 10.5);
 		mushrooms_.push_back(mushroom3);    
 		

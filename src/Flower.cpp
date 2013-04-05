@@ -20,6 +20,12 @@ namespace Jungle {
     
     void Flower::Draw()
     {
+		ofVec3f scale = getScale();
+		if(scale.x < 0.00001)
+		{
+			scale += 0.0000001;
+			setScale(scale.x, scale.y, scale.z);
+		}
         ofSetColor(color_.r, color_.g, color_.b);
         drawFaces();
     }
