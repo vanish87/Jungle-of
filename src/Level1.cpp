@@ -224,10 +224,10 @@ namespace Jungle
 		butterfly_.setPosition(butterfly_pos_.x, butterfly_pos_.y, butterfly_pos_.z); 
 		ofVec3f delta = butterfly_pos_ - camera_pos_;
 
-		main_camera_.lookAt(butterfly_pos_);
+		//main_camera_.lookAt(butterfly_pos_);
 		camera_pos_.x += delta.x/10;
 		camera_pos_.y += delta.y/10;
-		main_camera_.setPosition(camera_pos_);
+		main_camera_.setPosition(butterfly_pos_.x, butterfly_pos_.y,11.5);
 
 		for(int i =0; i < 4; i++)
 		{
