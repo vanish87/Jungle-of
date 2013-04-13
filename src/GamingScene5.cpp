@@ -21,7 +21,7 @@ namespace Jungle
 		h_ = ofGetWindowHeight();
 		x_ = ofGetWindowPositionX();
 		y_ = ofGetWindowPositionY();
-		stage_.loadModel("Jungle_alpha_2.obj");
+		stage_.loadModel("jungle_9.obj");
         stage_pos_.set(2,-42,9);
 		stage_.setPosition(stage_pos_.x,stage_pos_.y,stage_pos_.z);
         //16,-42,-1

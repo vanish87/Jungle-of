@@ -26,7 +26,7 @@ namespace Jungle
 		h_ = ofGetWindowHeight();
 		x_ = ofGetWindowPositionX();
 		y_ = ofGetWindowPositionY();
-		stage_.loadModel("Jungle_alpha_2.obj");
+		stage_.loadModel("jungle_9.obj");
 		stage_pos_.set(2,-42,9);
 		stage_.setPosition(stage_pos_.x,stage_pos_.y,stage_pos_.z);
 		//16,-42,-1
@@ -369,25 +369,97 @@ namespace Jungle
 	void Level1::keyPressed( int key )
 	{
 		ofVec3f pos = flowers_[2].getPosition();
+        ofVec3f scale = stage_.getScale();
 		switch (key)
 		{
 		case 'h':     
 			two_hands_ = !two_hands_;
 			break;
-		case 'w':
-			pos.z+=0.1;
-			flowers_[2].setPosition(pos.x, pos.y,pos.z);
-			break;
-		case 's':
-			pos.z-=0.1;
-			flowers_[2].setPosition(pos.x, pos.y,pos.z);
-			break;
+            case 'q':
+                //pos.y++;
+                //look_at_.y++;
+                //main_camera_.setPosition(pos);                
+                //main_camera_.lookAt(look_at_);
+                scale+=0.01;
+                stage_.setScale(scale.x, scale.y, scale.z);
+                break;
+            case 'z':
+                //pos.y--;
+                //look_at_.y--;
+                //main_camera_.setPosition(pos);
+                //main_camera_.lookAt(look_at_);
+                
+                scale-=0.01;
+                stage_.setScale(scale.x, scale.y, scale.z);
+                break;
+            case 's':
+                //                 pos.z++;
+                //                 main_camera_.setPosition(pos);                
+                //                 main_camera_.lookAt(look_at_);
+                //main_camera_.dolly(1);
+                //if(camera_orbit_para_.y > -90)
+                //	camera_orbit_para_.y--;
+                stage_pos_.y++;
+                stage_.setPosition(stage_pos_.x,stage_pos_.y,stage_pos_.z);  
+                break;
+            case 'w':
+                //                 pos.z--;
+                //                 main_camera_.setPosition(pos);
+                //                 main_camera_.lookAt(look_at_);
+                //main_camera_.dolly(-1);
+                //if(camera_orbit_para_.y < 90)
+                //	camera_orbit_para_.y++;
+                stage_pos_.y--;    
+                stage_.setPosition(stage_pos_.x,stage_pos_.y,stage_pos_.z);  
+                break;	
+            case 'a':
+                //                 pos.x--;
+                //                 main_camera_.setPosition(pos);                
+                //                 main_camera_.lookAt(look_at_);
+                //main_camera_.truck(-1);
+                //camera_orbit_para_.x--;
+                //bird_pos_.x++;
+                stage_pos_.x++;
+                stage_.setPosition(stage_pos_.x,stage_pos_.y,stage_pos_.z);  
+                break;
+            case 'd':
+                //                 pos.z--;
+                //                 main_camera_.setPosition(pos);
+                //                 main_camera_.lookAt(look_at_);
+                //main_camera_.dolly(-1);
+                //if(camera_orbit_para_.y < 90)
+                //	camera_orbit_para_.y++;
+                stage_pos_.x--;    
+                stage_.setPosition(stage_pos_.x,stage_pos_.y,stage_pos_.z);  
+                break;	
+            case 'e':
+                //                 pos.x--;
+                //                 main_camera_.setPosition(pos);                
+                //                 main_camera_.lookAt(look_at_);
+                //main_camera_.truck(-1);
+                //camera_orbit_para_.x--;
+                //bird_pos_.x++;
+                stage_pos_.z++;
+                stage_.setPosition(stage_pos_.x,stage_pos_.y,stage_pos_.z);  
+                break;
+            case 'c':
+                //                 pos.x++;
+                //                 main_camera_.setPosition(pos);
+                //                 main_camera_.lookAt(look_at_);
+                //main_camera_.truck(1);
+                //camera_orbit_para_.x++;
+                //bird_pos_.x--;
+                stage_pos_.z--;
+                stage_.setPosition(stage_pos_.x,stage_pos_.y,stage_pos_.z);  
+                break;
+
 		case 'n':
 			for(int i =0; i < 4; i++)
 			{
 				mushrooms_[i].flower_collided_ = true;
 			}
 			break;
+                
 		}
 	}
 
