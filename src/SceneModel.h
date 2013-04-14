@@ -6,16 +6,18 @@
 
 namespace Jungle
 {
-	class SceneObject : public ofxAssimpModelLoader
+	class SceneModel : public ofxAssimpModelLoader
 	{
 	public:
-		SceneObject(void);
-		~SceneObject(void);
+		SceneModel(void);
+		~SceneModel(void);
 
 		void AddToScene();
 
 		bool Enabled();
 		void Enable(bool enable);
+
+		virtual void Update(float frame_time);
 
 	protected:
 		bool enable_;

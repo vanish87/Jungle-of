@@ -148,9 +148,6 @@
     <ClCompile Include="src\ButterFly.cpp">
       <Filter>src</Filter>
     </ClCompile>
-    <ClCompile Include="src\SceneObject.cpp">
-      <Filter>src</Filter>
-    </ClCompile>
     <ClCompile Include="src\SceneManager.cpp">
       <Filter>src</Filter>
     </ClCompile>
@@ -176,6 +173,21 @@
       <Filter>src\Particle</Filter>
     </ClCompile>
     <ClCompile Include="src\Level2.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GamingScene6.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\StaticScene.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\SceneModel.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Player.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GamingScene.cpp">
       <Filter>src</Filter>
     </ClCompile>
   </ItemGroup>
@@ -741,9 +753,6 @@
     <ClInclude Include="src\ButterFly.h">
       <Filter>src</Filter>
     </ClInclude>
-    <ClInclude Include="src\SceneObject.h">
-      <Filter>src</Filter>
-    </ClInclude>
     <ClInclude Include="src\SceneManager.h">
       <Filter>src</Filter>
     </ClInclude>
@@ -769,6 +778,21 @@
       <Filter>src\Particle</Filter>
     </ClInclude>
     <ClInclude Include="src\Level2.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GamingScene6.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\StaticScene.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\SceneModel.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Player.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GamingScene.h">
       <Filter>src</Filter>
     </ClInclude>
   </ItemGroup>

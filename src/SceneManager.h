@@ -3,7 +3,7 @@
 
 
 #pragma once
-#include "SceneObject.h"
+#include "SceneModel.h"
 
 namespace Jungle
 {
@@ -16,10 +16,13 @@ namespace Jungle
 		void Update();
 		//draw model for main camera only
 		void Draw();
-		void AddToScene( SceneObject* scene_obj );
+		void AddToScene( SceneModel* scene_obj );
 	private:
-		vector<SceneObject> render_list_;
-		vector<SceneObject> scene_obj_list_;
+		vector<SceneModel*> render_list_;
+		vector<SceneModel*> scene_obj_list_;
+
+	private:
+		SceneManager(const SceneManager & rhs);
 	};
 
 }

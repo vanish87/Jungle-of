@@ -30,14 +30,22 @@ namespace Jungle
 		game_5_ = new GamingScene5();
 		//game_5_->Steup();
 
+		game_6_ = new GamingScene6();
+		//game_6_->Steup();
+
+		static_scene_ = new StaticScene();
+		static_scene_->Steup();
+
+		//setup all level here
 		level1_ = new Level1();
 		level1_->Steup();
+		StateManagerInstance().ChangeState(static_scene_, SOP_PUSH);
 		StateManagerInstance().ChangeState(level1_, SOP_PUSH);
 		//ofEnableAlphaBlending();
-        
-        atmo.loadSound("jungle-atmos-mixed.mp3");
-        atmo.setLoop(true);
-        atmo.play();
+//         
+//         atmo.loadSound("jungle-atmos-mixed.mp3");
+//         atmo.setLoop(true);
+//         atmo.play();
 	}
 
 	//--------------------------------------------------------------
@@ -145,6 +153,13 @@ namespace Jungle
 	{
 		static SceneManager scene_manager;
 		return scene_manager;
+	}
+
+	Player& JungleApp::PlayerInstance()
+	{
+		static Player player;
+		cout<<"instance "<<&player<<endl;
+		return player;
 	}
 
 

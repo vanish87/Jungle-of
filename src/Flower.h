@@ -2,10 +2,10 @@
 #define FLOWER_H_
 
 #pragma once
-#include "SceneObject.h"
+#include "SceneModel.h"
 
 namespace Jungle {
-    class Flower : public SceneObject
+    class Flower : public SceneModel
     {
     public:
         Flower(void);

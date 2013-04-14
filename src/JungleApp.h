@@ -5,11 +5,14 @@
 #include "ofMain.h"
 #include "StateManager.h"
 #include "SceneManager.h"
+#include "Player.h"
 #include "GamingScene1.h"
 #include "GamingScene2.h"
 #include "GamingScene3.h"
 #include "GamingScene4.h"
 #include "GamingScene5.h"
+#include "GamingScene6.h"
+#include "StaticScene.h"
 #include "Level1.h"
 
 namespace Jungle
@@ -32,6 +35,7 @@ namespace Jungle
 
 		static StateManager& StateManagerInstance();
 		static SceneManager& SceneManagerInstance();
+		static Player& PlayerInstance();
 		static ofxKinectUsers& KinectInstance();
 
 	private:
@@ -40,6 +44,8 @@ namespace Jungle
 		GamingScene3* game_3_;
 		GamingScene4* game_4_;
 		GamingScene5* game_5_;
+		GamingScene6* game_6_;
+		StaticScene* static_scene_;
 		Level1* level1_;
 
 
@@ -49,7 +55,7 @@ namespace Jungle
 		void	userMove(ofxUser & user);
 		void	userOut(ofxUser & user);
         
-        ofSoundPlayer atmo;
+        //ofSoundPlayer atmo;
         
 	};
 

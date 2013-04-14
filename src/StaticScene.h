@@ -1,18 +1,17 @@
-#ifndef LEVEL1_H_
-#define LEVEL1_H_
+#ifndef STATIC_SCENE_H_
+#define STATIC_SCENE_H_
 
 #pragma once
 #include "State.h"
-#include "ofVec3f.h"
-#include "ofSoundPlayer.h"
+#include "SceneModel.h"
 
 namespace Jungle
 {
-	class Level1 :public State
+	class StaticScene :public State
 	{
 	public:
-		Level1(void);
-		~Level1(void);
+		StaticScene(void);
+		~StaticScene(void);
 
 		virtual void Steup();
 
@@ -36,17 +35,15 @@ namespace Jungle
 
 		virtual void userOut( ofxUser & user );
 
-	private:	
-		ofVec3f start_pos_;
+	private:
+		SceneModel tree_;
 
 		int w_;
 		int h_;
 		int x_;
 		int y_;
-        
-        ofSoundPlayer trigger1;
-        ofSoundPlayer trigger2;
 	};
+
 }
 
 #endif

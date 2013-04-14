@@ -18,7 +18,7 @@ namespace Jungle
 
 		virtual void Steup() = 0;
 		virtual void Update() = 0;
-		virtual void Draw() = 0;
+		virtual void Draw(){};
 
 		virtual void keyPressed  (int key){};
 		virtual void keyReleased(int key){};
@@ -34,7 +34,7 @@ namespace Jungle
 		virtual void	userMove(ofxUser & user){};
 		virtual void	userOut(ofxUser & user){};
 
-	private:
+	protected:
 		State* parent_;
 	};
 

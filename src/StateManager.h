@@ -30,6 +30,8 @@ namespace Jungle
 		std::vector<State*> states_;
 		State* current_state_;
 
+	private:
+		StateManager(const StateManager & rhs);
 	};
 
 }
