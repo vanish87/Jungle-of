@@ -21,21 +21,31 @@ namespace Jungle
 		Player& player = JungleApp::PlayerInstance();
         //set up mushrooms
         //set up space limits
-        player.butterfly_->SetRange(ofVec3f(50, 50, 0), ofVec3f(-50, 10, 0));
+        player.butterfly_->SetRange(ofVec3f(50, 50, 0), ofVec3f(-50, 18, 0));
         
-        light_.setAmbientColor(ofFloatColor(0.3, 0.3, 0.3));
+        light_.setAmbientColor(ofFloatColor(1, 1, 1));
         light_.setDiffuseColor(ofFloatColor(1 ,1 ,1));
         light_.setDirectional();
         ofQuaternion q;
         q.makeRotate(-45, 1, 0, 0);
         light_.setOrientation(q);
+        
+        
+        ofEnableLighting();
         light_.enable();
-        ofBackground(0);
+        ofBackground(255);
         
         for(int i=0; i< 4; i++)
         {
-            sounds[i].loadSound("");
+            //sounds[i].loadSound("");
         }
+        
+        
+        
+		w_ = ofGetWindowWidth();
+		h_ = ofGetWindowHeight();
+		x_ = ofGetWindowPositionX();
+		y_ = ofGetWindowPositionY();
 	}
 
 	void Level1::Update()
@@ -49,8 +59,8 @@ namespace Jungle
 		//get butterfly's pos
 		//if collision
 		//triggering mushrooms
-        int index = ofRandom(0,4);
-        sounds[index].play();
+        //int index = ofRandom(0,4);
+        //sounds[index].play();
 		//if finished
 		//change to next level
 
@@ -109,6 +119,16 @@ namespace Jungle
 		ofSphere(0, 0, 0, 50);
 		ofPopMatrix();*/
 
+        ofSetColor(255, 255, 255);
+		if(Jungle::KINECT_ENABLE)
+		{
+			glPushMatrix();
+			ofTranslate(0, h_ - 0.3*h_);
+			ofScale(0.4, 0.4);
+			JungleApp::KinectInstance().debugDraw();
+			glPopMatrix();
+		}
+        
 		ofSetColor(255, 255, 255,255);
 		ofDrawBitmapString("moving_time_ "+ ofToString(player.moving_time_), 20, 20);
 		ofDrawBitmapString("v length "+ ofToString(player.vlength), 20, 40);
@@ -125,7 +145,7 @@ namespace Jungle
         ofVec3f pos = player.butterfly_->getPosition();
 		ofVec3f scale = player.butterfly_->getScale();
         
-        //this->GetParent()->keyPressed(key);
+        this->GetParent()->keyPressed(key);
 		switch (key)
 		{
             case 's':
@@ -148,11 +168,11 @@ namespace Jungle
                 break;
             case 'e':
                 scale+=0.1;
-                player.butterfly_->setScale(scale.x, scale.y,scale.z);
+                //player.butterfly_->setScale(scale.x, scale.y,scale.z);
                 break;
             case 'c':
                 scale-=0.1;
-                player.butterfly_->setScale(scale.x, scale.y,scale.z);
+                //player.butterfly_->setScale(scale.x, scale.y,scale.z);
                 break;
             case 'y':
                 break;
@@ -183,7 +203,7 @@ namespace Jungle
                 break;
 		}
         
-		player.butterfly_->setPosition(pos.x, pos.y, pos.z);
+		//player.butterfly_->setPosition(pos.x, pos.y, pos.z);
 	}
 
 	void Level1::mouseMoved( int x, int y )

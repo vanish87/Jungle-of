@@ -159,7 +159,7 @@ namespace Jungle
 	Player& JungleApp::PlayerInstance()
 	{
 		static Player player;
-		cout<<"instance "<<&player<<endl;
+		//cout<<"instance "<<&player<<endl;
 		return player;
 	}
 
