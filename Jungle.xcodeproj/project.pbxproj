@@ -59,6 +59,12 @@
 		BC0193A116D17D6600867BBC /* OscReceivedElements.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BC01939616D17D6600867BBC /* OscReceivedElements.cpp */; };
 		BC0193A216D17D6600867BBC /* OscTypes.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BC01939816D17D6600867BBC /* OscTypes.cpp */; };
 		BC0BFCAF170B7B87000EDBEE /* WindGenerator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BC0BFCAD170B7B87000EDBEE /* WindGenerator.cpp */; };
+		BC0ED3A2171B0F1D00FC92BD /* GamingScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BC0ED39A171B0F1D00FC92BD /* GamingScene.cpp */; };
+		BC0ED3A3171B0F1D00FC92BD /* Player.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BC0ED39C171B0F1D00FC92BD /* Player.cpp */; };
+		BC0ED3A4171B0F1D00FC92BD /* SceneModel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BC0ED39E171B0F1D00FC92BD /* SceneModel.cpp */; };
+		BC0ED3A5171B0F1D00FC92BD /* StaticScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BC0ED3A0171B0F1D00FC92BD /* StaticScene.cpp */; };
+		BC0ED3A8171B0F9300FC92BD /* SceneManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BC0ED3A6171B0F9300FC92BD /* SceneManager.cpp */; };
+		BC0ED3AB171B0FAE00FC92BD /* GamingScene6.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BC0ED3A9171B0FAE00FC92BD /* GamingScene6.cpp */; };
 		BC15384A16F50DA800023C7D /* ofx3DParticleEmitter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BC15384416F50DA800023C7D /* ofx3DParticleEmitter.cpp */; };
 		BC15384B16F50DA800023C7D /* ofxListParticleEmitter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BC15384616F50DA800023C7D /* ofxListParticleEmitter.cpp */; };
 		BC15384C16F50DA800023C7D /* ofxParticleEmitter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BC15384816F50DA800023C7D /* ofxParticleEmitter.cpp */; };
@@ -67,7 +73,6 @@
 		BC4A099117089B0B00DA37DD /* GamingScene1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BC4A098F17089B0B00DA37DD /* GamingScene1.cpp */; };
 		BC4A099417089B1800DA37DD /* GamingScene5.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BC4A099217089B1800DA37DD /* GamingScene5.cpp */; };
 		BC4A099717089BBB00DA37DD /* ButterFly.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BC4A099517089BBB00DA37DD /* ButterFly.cpp */; };
-		BC4A099A17089BD500DA37DD /* SceneObject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BC4A099817089BD500DA37DD /* SceneObject.cpp */; };
 		BC4A09A51708A8E700DA37DD /* WindParticle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BC4A09A31708A8E700DA37DD /* WindParticle.cpp */; };
 		BC67296616ECF672001F7C77 /* GamingScene4.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BC67296416ECF672001F7C77 /* GamingScene4.cpp */; };
 		BC8D7985170E2D0400DB4716 /* Level1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BC8D7983170E2D0400DB4716 /* Level1.cpp */; };
@@ -103,13 +108,6 @@
 			containerPortal = E4328143138ABC890047C5CB /* openFrameworksLib.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = E4B27C1510CBEB8E00536013;
-			remoteInfo = openFrameworks;
-		};
-		E4EEB9AB138B136A00A80321 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = E4328143138ABC890047C5CB /* openFrameworksLib.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = E4B27C1410CBEB8E00536013;
 			remoteInfo = openFrameworks;
 		};
 /* End PBXContainerItemProxy section */
@@ -394,6 +392,18 @@
 		BC0193A316D1837400867BBC /* config.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = config.xml; path = bin/data/config.xml; sourceTree = SOURCE_ROOT; };
 		BC0BFCAD170B7B87000EDBEE /* WindGenerator.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = WindGenerator.cpp; sourceTree = "<group>"; };
 		BC0BFCAE170B7B87000EDBEE /* WindGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WindGenerator.h; sourceTree = "<group>"; };
+		BC0ED39A171B0F1D00FC92BD /* GamingScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GamingScene.cpp; sourceTree = "<group>"; };
+		BC0ED39B171B0F1D00FC92BD /* GamingScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GamingScene.h; sourceTree = "<group>"; };
+		BC0ED39C171B0F1D00FC92BD /* Player.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Player.cpp; sourceTree = "<group>"; };
+		BC0ED39D171B0F1D00FC92BD /* Player.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Player.h; sourceTree = "<group>"; };
+		BC0ED39E171B0F1D00FC92BD /* SceneModel.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SceneModel.cpp; sourceTree = "<group>"; };
+		BC0ED39F171B0F1D00FC92BD /* SceneModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SceneModel.h; sourceTree = "<group>"; };
+		BC0ED3A0171B0F1D00FC92BD /* StaticScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = StaticScene.cpp; sourceTree = "<group>"; };
+		BC0ED3A1171B0F1D00FC92BD /* StaticScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StaticScene.h; sourceTree = "<group>"; };
+		BC0ED3A6171B0F9300FC92BD /* SceneManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SceneManager.cpp; sourceTree = "<group>"; };
+		BC0ED3A7171B0F9300FC92BD /* SceneManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SceneManager.h; sourceTree = "<group>"; };
+		BC0ED3A9171B0FAE00FC92BD /* GamingScene6.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GamingScene6.cpp; sourceTree = "<group>"; };
+		BC0ED3AA171B0FAE00FC92BD /* GamingScene6.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GamingScene6.h; sourceTree = "<group>"; };
 		BC15384416F50DA800023C7D /* ofx3DParticleEmitter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ofx3DParticleEmitter.cpp; path = ../../../addons/ofxParticleEmitter/src/ofx3DParticleEmitter.cpp; sourceTree = "<group>"; };
 		BC15384516F50DA800023C7D /* ofx3DParticleEmitter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ofx3DParticleEmitter.h; path = ../../../addons/ofxParticleEmitter/src/ofx3DParticleEmitter.h; sourceTree = "<group>"; };
 		BC15384616F50DA800023C7D /* ofxListParticleEmitter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ofxListParticleEmitter.cpp; path = ../../../addons/ofxParticleEmitter/src/ofxListParticleEmitter.cpp; sourceTree = "<group>"; };
@@ -410,8 +420,6 @@
 		BC4A099317089B1800DA37DD /* GamingScene5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GamingScene5.h; sourceTree = "<group>"; };
 		BC4A099517089BBB00DA37DD /* ButterFly.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ButterFly.cpp; sourceTree = "<group>"; };
 		BC4A099617089BBB00DA37DD /* ButterFly.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ButterFly.h; sourceTree = "<group>"; };
-		BC4A099817089BD500DA37DD /* SceneObject.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SceneObject.cpp; sourceTree = "<group>"; };
-		BC4A099917089BD500DA37DD /* SceneObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SceneObject.h; sourceTree = "<group>"; };
 		BC4A09A31708A8E700DA37DD /* WindParticle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = WindParticle.cpp; sourceTree = "<group>"; };
 		BC4A09A41708A8E700DA37DD /* WindParticle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WindParticle.h; sourceTree = "<group>"; };
 		BC67296416ECF672001F7C77 /* GamingScene4.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GamingScene4.cpp; sourceTree = "<group>"; };
@@ -1084,6 +1092,31 @@
 			path = osc;
 			sourceTree = "<group>";
 		};
+		BC0ED3B2171B144600FC92BD /* legacy code */ = {
+			isa = PBXGroup;
+			children = (
+				BC0ED3A9171B0FAE00FC92BD /* GamingScene6.cpp */,
+				BC0ED3AA171B0FAE00FC92BD /* GamingScene6.h */,
+				BC4A099217089B1800DA37DD /* GamingScene5.cpp */,
+				BC4A099317089B1800DA37DD /* GamingScene5.h */,
+				BC4A098F17089B0B00DA37DD /* GamingScene1.cpp */,
+				BC4A099017089B0B00DA37DD /* GamingScene1.h */,
+				BC67296416ECF672001F7C77 /* GamingScene4.cpp */,
+				BC67296516ECF672001F7C77 /* GamingScene4.h */,
+				BC42777116E4664B00FF4CFE /* GamingScene3.cpp */,
+				BC42777216E4664B00FF4CFE /* GamingScene3.h */,
+				BC0BFCAD170B7B87000EDBEE /* WindGenerator.cpp */,
+				BC0BFCAE170B7B87000EDBEE /* WindGenerator.h */,
+				BC4A09A31708A8E700DA37DD /* WindParticle.cpp */,
+				BC4A09A41708A8E700DA37DD /* WindParticle.h */,
+				BCDA581216DFE70100EC5ED9 /* GamingScene2.cpp */,
+				BCDA581316DFE70100EC5ED9 /* GamingScene2.h */,
+				BC0ED39A171B0F1D00FC92BD /* GamingScene.cpp */,
+				BC0ED39B171B0F1D00FC92BD /* GamingScene.h */,
+			);
+			name = "legacy code";
+			sourceTree = "<group>";
+		};
 		BC15384316F50D7400023C7D /* ofxParticleEmitter */ = {
 			isa = PBXGroup;
 			children = (
@@ -1150,35 +1183,28 @@
 		E4B69E1C0A3A1BDC003C02F2 /* src */ = {
 			isa = PBXGroup;
 			children = (
+				BC0ED3B2171B144600FC92BD /* legacy code */,
 				BC8D7986170E2D1D00DB4716 /* JungleParticle.cpp */,
 				BC8D7987170E2D1D00DB4716 /* JungleParticle.h */,
 				BC8D7983170E2D0400DB4716 /* Level1.cpp */,
 				BC8D7984170E2D0400DB4716 /* Level1.h */,
 				BC4A099517089BBB00DA37DD /* ButterFly.cpp */,
 				BC4A099617089BBB00DA37DD /* ButterFly.h */,
-				BC4A099217089B1800DA37DD /* GamingScene5.cpp */,
-				BC4A099317089B1800DA37DD /* GamingScene5.h */,
-				BC4A099817089BD500DA37DD /* SceneObject.cpp */,
 				BC8D7989170EB2EB00DB4716 /* Level2.cpp */,
 				BC8D798A170EB2EB00DB4716 /* Level2.h */,
-				BC4A099917089BD500DA37DD /* SceneObject.h */,
-				BC4A098F17089B0B00DA37DD /* GamingScene1.cpp */,
-				BC4A099017089B0B00DA37DD /* GamingScene1.h */,
-				BC67296416ECF672001F7C77 /* GamingScene4.cpp */,
-				BC67296516ECF672001F7C77 /* GamingScene4.h */,
-				BC42777116E4664B00FF4CFE /* GamingScene3.cpp */,
-				BC42777216E4664B00FF4CFE /* GamingScene3.h */,
-				BC0BFCAD170B7B87000EDBEE /* WindGenerator.cpp */,
-				BC0BFCAE170B7B87000EDBEE /* WindGenerator.h */,
-				BC4A09A31708A8E700DA37DD /* WindParticle.cpp */,
-				BC4A09A41708A8E700DA37DD /* WindParticle.h */,
-				BCDA581216DFE70100EC5ED9 /* GamingScene2.cpp */,
-				BCDA581316DFE70100EC5ED9 /* GamingScene2.h */,
+				BC0ED3A6171B0F9300FC92BD /* SceneManager.cpp */,
+				BC0ED3A7171B0F9300FC92BD /* SceneManager.h */,
 				BCAF17D616DAA6630067261D /* JungleApp.cpp */,
 				BCAF17D716DAA6630067261D /* JungleApp.h */,
 				BCAF17D816DAA6630067261D /* main.cpp */,
 				BCAF17D916DAA6630067261D /* State.cpp */,
 				BCAF17DA16DAA6630067261D /* State.h */,
+				BC0ED39C171B0F1D00FC92BD /* Player.cpp */,
+				BC0ED39D171B0F1D00FC92BD /* Player.h */,
+				BC0ED39E171B0F1D00FC92BD /* SceneModel.cpp */,
+				BC0ED39F171B0F1D00FC92BD /* SceneModel.h */,
+				BC0ED3A0171B0F1D00FC92BD /* StaticScene.cpp */,
+				BC0ED3A1171B0F1D00FC92BD /* StaticScene.h */,
 				BCAF17DB16DAA6630067261D /* StateManager.cpp */,
 				BCAF17DC16DAA6630067261D /* StateManager.h */,
 				BC0193A316D1837400867BBC /* config.xml */,
@@ -1214,7 +1240,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				E4EEB9AC138B136A00A80321 /* PBXTargetDependency */,
 			);
 			name = Jungle;
 			productName = myOFApp;
@@ -1335,24 +1360,21 @@
 				BC4A099117089B0B00DA37DD /* GamingScene1.cpp in Sources */,
 				BC4A099417089B1800DA37DD /* GamingScene5.cpp in Sources */,
 				BC4A099717089BBB00DA37DD /* ButterFly.cpp in Sources */,
-				BC4A099A17089BD500DA37DD /* SceneObject.cpp in Sources */,
 				BC4A09A51708A8E700DA37DD /* WindParticle.cpp in Sources */,
 				BC0BFCAF170B7B87000EDBEE /* WindGenerator.cpp in Sources */,
 				BC8D7985170E2D0400DB4716 /* Level1.cpp in Sources */,
 				BC8D7988170E2D1D00DB4716 /* JungleParticle.cpp in Sources */,
 				BC8D798B170EB2EB00DB4716 /* Level2.cpp in Sources */,
+				BC0ED3A2171B0F1D00FC92BD /* GamingScene.cpp in Sources */,
+				BC0ED3A3171B0F1D00FC92BD /* Player.cpp in Sources */,
+				BC0ED3A4171B0F1D00FC92BD /* SceneModel.cpp in Sources */,
+				BC0ED3A5171B0F1D00FC92BD /* StaticScene.cpp in Sources */,
+				BC0ED3A8171B0F9300FC92BD /* SceneManager.cpp in Sources */,
+				BC0ED3AB171B0FAE00FC92BD /* GamingScene6.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		E4EEB9AC138B136A00A80321 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = openFrameworks;
-			targetProxy = E4EEB9AB138B136A00A80321 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		E4B69B4E0A3A1720003C02F2 /* Debug */ = {
@@ -1521,6 +1543,7 @@
 				LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_9 = "\"$(SRCROOT)/bin/data/openni/lib\"";
 				PREBINDING = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)Debug";
+				SDKROOT = macosx10.7;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -1634,6 +1657,7 @@
 				LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_9 = "\"$(SRCROOT)/bin/data/openni/lib\"";
 				PREBINDING = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx10.7;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

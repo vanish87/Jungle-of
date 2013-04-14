@@ -4,6 +4,7 @@
 #pragma once
 #include "ofNode.h"
 #include "ofCamera.h"
+#include "ofx3DParticleEmitter.h"
 #include "ButterFly.h"
 
 namespace Jungle {
@@ -38,6 +39,9 @@ namespace Jungle {
 		bool track_moving_;
 		bool interval_;
 		float interval_time_;
+        
+        ofxParticleEmitter emitter_;
+        ofxParticleEmitter max_emitter_;
 
 	//private copy constructor to avoid inconsistent of Singleton Pattern
 	private:

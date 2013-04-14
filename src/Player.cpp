@@ -19,10 +19,20 @@ namespace Jungle
 		interval_ = false;
 		interval_time_ = 0;
 
-		player_camera_.setPosition(0,12,51);
-		player_camera_.lookAt(ofVec3f(0,0,0));
+		player_camera_.setPosition(0,20,50);
+		player_camera_.lookAt(ofVec3f(0,20,0));
 
 		butterfly_ = new ButterFly();
+        
+        if ( !emitter_.loadFromXml( "min.pex" ) )
+        {
+            ofLog( OF_LOG_ERROR, "testApp::setup() - failed to load emitter config" );
+        }
+        if ( !max_emitter_.loadFromXml( "max.pex" ) )
+        {
+            ofLog( OF_LOG_ERROR, "testApp::setup() - failed to load emitter config" );
+        }
+        
 
     };
     Player::~Player(void)
@@ -31,7 +41,13 @@ namespace Jungle
     
     void Player::Update()
     {
-
+        emitter_.sourcePosition.x = hand_pos_.x;
+        emitter_.sourcePosition.y = hand_pos_.y;
+        emitter_.update();
+        
+        max_emitter_.sourcePosition.x = hand_pos_.x;
+        max_emitter_.sourcePosition.y = hand_pos_.y;
+        max_emitter_.update();
 		ofxUser* user = JungleApp::KinectInstance().users;
 		for(int i =0; i< MAX_USERS; ++i)
 		{
@@ -55,7 +71,7 @@ namespace Jungle
 			}
 		}
 
-		if(pre_hand_pos_ - hand_pos_ == ofVec3f(0,0,0))
+		if(pre_hand_pos_ - hand_pos_ == ofVec3f(0,0,0) && !interval_)
 		{
 			hand_radius_ +=0.3;
 		}
@@ -92,19 +108,26 @@ namespace Jungle
 				moving_time_ = 0;
 				track_moving_ = false;
 				start_timing_= false;
+                hand_radius_ = 50;
 			}
 		}
 
 		if(interval_)
 		{
 			interval_time_+=ofGetLastFrameTime();
-			if(interval_time_ > 1)
+			if(interval_time_ > 1.5)
+            {
+                interval_time_ = 0;
+                
 				interval_ = false;
+            }
 		}
 
 		butterfly_->Update(ofGetLastFrameTime());
+        
+        player_camera_.setPosition(butterfly_->butterfly_pos_.x, butterfly_->butterfly_pos_.y, player_camera_.getPosition().z);
 
-		cout<<(pre_hand_pos_ - hand_pos_).x<< " "<<(pre_hand_pos_ - hand_pos_).y<<"\r";
+		//cout<<(pre_hand_pos_ - hand_pos_).x<< " "<<(pre_hand_pos_ - hand_pos_).y<<"\r";
 		pre_hand_pos_ = hand_pos_;
 		
     }

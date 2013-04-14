@@ -4,6 +4,7 @@
 #pragma once
 #include "State.h"
 #include "ofVec3f.h"
+#include "ofLight.h"
 #include "ofSoundPlayer.h"
 
 namespace Jungle
@@ -38,6 +39,8 @@ namespace Jungle
 
 	private:	
 		ofVec3f start_pos_;
+        
+        ofLight light_;
 
 		int w_;
 		int h_;
@@ -46,6 +49,7 @@ namespace Jungle
         
         ofSoundPlayer trigger1;
         ofSoundPlayer trigger2;
+        ofSoundPlayer sounds[4];
 	};
 }
 

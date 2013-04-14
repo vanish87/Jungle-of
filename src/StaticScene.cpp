@@ -38,13 +38,13 @@ namespace Jungle
 	{
         ofEnableAlphaBlending();
 		ofSetColor(255, 255, 255);		
-		glEnable(GL_DEPTH_TEST);
+		//glEnable(GL_DEPTH_TEST);
 
 		ofPushMatrix();				
 		JungleApp::SceneManagerInstance().Draw();
 		ofPopMatrix();
 
-		glDisable(GL_DEPTH_TEST);
+		//glDisable(GL_DEPTH_TEST);
 
 		ofSetColor(255, 255, 255);	
 		if(Jungle::KINECT_ENABLE)
