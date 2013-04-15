@@ -98,11 +98,6 @@ namespace Jungle
 				break;
 #endif
 #endif
-			case '2':
-				StateManagerInstance().ChangeState(game_2_,SOP_PUSH);
-				break;
-			case '3':
-				StateManagerInstance().ChangeState(game_2_,SOP_POP);
 			default:
 				break;
 		}

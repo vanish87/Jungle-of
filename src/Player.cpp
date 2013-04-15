@@ -4,6 +4,7 @@
 namespace Jungle 
 {
     Player::Player(void)
+		:wind_("")
 	{
 		hand_pos_.set(200,200,0);
 		pre_hand_pos_ = hand_pos_;
@@ -24,15 +25,8 @@ namespace Jungle
 
 		butterfly_ = new ButterFly();
         
-        if ( !emitter_.loadFromXml( "min.pex" ) )
-        {
-            ofLog( OF_LOG_ERROR, "testApp::setup() - failed to load emitter config" );
-        }
-        if ( !max_emitter_.loadFromXml( "max.pex" ) )
-        {
-            ofLog( OF_LOG_ERROR, "testApp::setup() - failed to load emitter config" );
-        }
-        
+		wind_.Init();
+		wind_.Enable(true,ofVec3f(200,200,0));
 
     };
     Player::~Player(void)
@@ -41,13 +35,8 @@ namespace Jungle
     
     void Player::Update()
     {
-        emitter_.sourcePosition.x = hand_pos_.x;
-        emitter_.sourcePosition.y = hand_pos_.y;
-        emitter_.update();
-        
-        max_emitter_.sourcePosition.x = hand_pos_.x;
-        max_emitter_.sourcePosition.y = hand_pos_.y;
-        max_emitter_.update();
+
+		wind_.Update(hand_radius_, 50, max_hand_radius_, hand_pos_);
 		ofxUser* user = JungleApp::KinectInstance().users;
 		for(int i =0; i< MAX_USERS; ++i)
 		{
@@ -71,7 +60,7 @@ namespace Jungle
 			}
 		}
 
-		if(pre_hand_pos_ - hand_pos_ == ofVec3f(0,0,0) && !interval_)
+		if((pre_hand_pos_ - hand_pos_).length() < 20 && !interval_)
 		{
 			hand_radius_ +=0.3;
 		}

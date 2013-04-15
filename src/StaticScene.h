@@ -42,6 +42,9 @@ namespace Jungle
         SceneModel bg_3_;
         SceneModel ground_;
 
+
+		SceneModel* model_ ;
+
 		int w_;
 		int h_;
 		int x_;

@@ -21,9 +21,9 @@ namespace Jungle
 		Player& player = JungleApp::PlayerInstance();
         //set up mushrooms
         //set up space limits
-        player.butterfly_->SetRange(ofVec3f(50, 50, 0), ofVec3f(-50, 18, 0));
+        player.butterfly_->SetRange(ofVec3f(50, 50, 0), ofVec3f(-50, 20, 0));
         
-        light_.setAmbientColor(ofFloatColor(1, 1, 1));
+        light_.setAmbientColor(ofFloatColor(0.3, 0.3, 0.3));
         light_.setDiffuseColor(ofFloatColor(1 ,1 ,1));
         light_.setDirectional();
         ofQuaternion q;
@@ -76,6 +76,7 @@ namespace Jungle
 
 		ofCamera camera = player.GetCamera();
 
+		ofEnableAlphaBlending();
 		camera.begin();
         light_.enable();
         glEnable(GL_DEPTH_TEST);
@@ -90,23 +91,24 @@ namespace Jungle
         glDisable(GL_DEPTH_TEST);
         light_.disable();
 		camera.end();
-
+		ofDisableAlphaBlending();
 
         
 		ofPushMatrix();
         ofVec3f hand_pos_ = player.GetHandPos();
         
+		player.wind_.Draw();
 		//ofTranslate(hand_pos_.x, hand_pos_.y, hand_pos_.z);
  		if (player.hand_radius_ == player.max_hand_radius_)
  		{
             ofPushMatrix();
-            player.max_emitter_.draw(0, 0);
+            //player.max_emitter_.draw(0, 0);
             ofPopMatrix();
  		}
         else
         {
             ofPushMatrix();
-            player.emitter_.draw(0, 0);
+            //
             ofPopMatrix();
         }
 		//ofSphere(0, 0, 0, player.hand_radius_);

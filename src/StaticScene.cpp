@@ -28,7 +28,7 @@ namespace Jungle
         
         bg_1_.loadModel("BG_1.obj");
 		//0,-46, 0
-		bg_1_.setPosition(0,-5,0);
+		bg_1_.setPosition(0,-10,-70);
 		bg_1_.setScale(1,1,1);
 		bg_1_.setRotation(0, 180, 0, 0, 1);
         bg_1_.setRotation(1, 180, 0, 1, 0);
@@ -36,7 +36,7 @@ namespace Jungle
         
         bg_2_.loadModel("BG_2.obj");
 		//0,-46, 0
-		bg_2_.setPosition(0,-5,0);
+		bg_2_.setPosition(0,-10,-135);
 		bg_2_.setScale(1,1,1);
 		bg_2_.setRotation(0, 180, 0, 0, 1);        
         bg_2_.setRotation(1, 180, 0, 1, 0);
@@ -44,7 +44,7 @@ namespace Jungle
         
         bg_3_.loadModel("BG_3.obj");
 		//0,-46, 0
-		bg_3_.setPosition(0,-10,0);
+		bg_3_.setPosition(0,-15,-215);
 		bg_3_.setScale(1,1,1);
 		bg_3_.setRotation(0, 180, 0, 0, 1);        
         bg_3_.setRotation(1, 180, 0, 1, 0);
@@ -52,12 +52,12 @@ namespace Jungle
         
         ground_.loadModel("ground.obj");
 		//0,-46, 0
-		ground_.setPosition(0,17,0);
+		ground_.setPosition(0,18,0);
 		ground_.setScale(1,1,1);
 		ground_.setRotation(0, 180, 0, 0, 1);
 		ground_.Enable(true);
         
-        
+        model_ = &tree_;
         
 		ground_.AddToScene();
 		bg_3_.AddToScene();
@@ -65,8 +65,6 @@ namespace Jungle
 		bg_1_.AddToScene();
 		tree_.AddToScene();
         
-        ofMaterial mat = bg_3_.getMaterialForMesh(0);
-        ofTexture tex = bg_3_.getTextureForMesh(0);
 
 	}
 
@@ -77,15 +75,14 @@ namespace Jungle
 
 	void StaticScene::Draw()
 	{
-        ofEnableAlphaBlending();
 		ofSetColor(255, 255, 255);		
-		//glEnable(GL_DEPTH_TEST);
+		glEnable(GL_DEPTH_TEST);
 
 		ofPushMatrix();				
 		JungleApp::SceneManagerInstance().Draw();
 		ofPopMatrix();
 
-		//glDisable(GL_DEPTH_TEST);
+		glDisable(GL_DEPTH_TEST);
 
 
                
@@ -93,7 +90,9 @@ namespace Jungle
 
 	void StaticScene::keyPressed( int key )
 	{        
-        ofVec3f pos = bg_1_.getPosition();
+       
+
+		ofVec3f pos = model_->getPosition();
 		ofVec3f scale = tree_.getScale();
 		switch (key)
 		{
@@ -131,13 +130,25 @@ namespace Jungle
 			break;
 		case 'j':
 			break;
-        case 'f':     
+        case '5':   
+			pos = ground_.getPosition();
+			model_ = &ground_;
 			break;		
-        case 'v':     
+        case '4':  
+			pos = tree_.getPosition();
+			model_ = &tree_;
 			break;
-		case 'o':     
+		case '3':     
+			pos = bg_3_.getPosition();
+			model_ = &bg_3_;
 			break;
-		case 'p':     
+		case '2':   
+			pos = bg_2_.getPosition();
+			model_ = &bg_2_;
+			break;
+		case '1':     
+			pos = bg_1_.getPosition();
+			model_ = &bg_1_;
 			break;
 		case 'm':     
 			break;
@@ -152,7 +163,10 @@ namespace Jungle
 			break;
 		}
 
-		bg_1_.setPosition(pos.x, pos.y, pos.z);
+		if(model_ !=0)
+		{
+			model_->setPosition(pos.x, pos.y, pos.z);
+		}
 	}
 
 	void StaticScene::mouseMoved( int x, int y )

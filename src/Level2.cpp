@@ -149,7 +149,7 @@ namespace Jungle
 		}		
 
 
-		wind_.Update(hand_pos_);
+		//wind_.Update(hand_pos_);
 
 		animation_time_ += ofGetLastFrameTime()/24.0f;
 		if( animation_time_ > 14.0f/360.0f )
@@ -159,7 +159,7 @@ namespace Jungle
 		butterfly_.setAnimation(0);        
 		butterfly_.setNormalizedTime(animation_time_);
 
-		butterfly_acc_ += wind_.butterfly_force_ / butterfly_mass_;
+//		butterfly_acc_ += wind_.butterfly_force_ / butterfly_mass_;
 		if(-0.00001 <= butterfly_acc_.x && butterfly_acc_.x <= 0.00001)
 			butterfly_acc_.x = 0;
 		if(-0.00001 <= butterfly_acc_.y && butterfly_acc_.y <= 0.00001)
@@ -213,7 +213,7 @@ namespace Jungle
 		//cout<<delta.x<<" "<<delta.y<<" "<<delta.z<<endl;
 		if(hand_delta.x == 0 && hand_delta.y == 0)
 		{
-			wind_.AddParticle(hand_pos_);
+			//wind_.AddParticle(hand_pos_);
 		}
 
 		for(int i =0; i < 4; i++)

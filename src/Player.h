@@ -4,8 +4,8 @@
 #pragma once
 #include "ofNode.h"
 #include "ofCamera.h"
-#include "ofx3DParticleEmitter.h"
 #include "ButterFly.h"
+#include "WindGenerator.h"
 
 namespace Jungle {
     class Player : public ofNode
@@ -40,8 +40,7 @@ namespace Jungle {
 		bool interval_;
 		float interval_time_;
         
-        ofxParticleEmitter emitter_;
-        ofxParticleEmitter max_emitter_;
+		WindGenerator wind_;
 
 	//private copy constructor to avoid inconsistent of Singleton Pattern
 	private:
