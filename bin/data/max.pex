@@ -17,11 +17,11 @@
 <speed value="30"></speed>
 <speedVariance value="2"></speedVariance>
 
-<startColor red="0.00" green="0.29" blue="1.00" alpha="0.70"></startColor>
-<startColorVariance red="0.39" green="0.68" blue="0.80" alpha="0.20"></startColorVariance>
+<startColor red="1.00" green="0.00" blue="0.00" alpha="0.70"></startColor>
+<startColorVariance red="0.01" green="0.01" blue="0.01" alpha="0.20"></startColorVariance>
 
-<finishColor red="0.00" green="0.29" blue="1.00" alpha="0.70"></finishColor>
-<finishColorVariance red="0.39" green="0.68" blue="0.80" alpha="0.20"></finishColorVariance>
+<finishColor red="1.00" green="0.00" blue="0.00" alpha="0.70"></finishColor>
+<finishColorVariance red="0.01" green="0.01" blue="0.01" alpha="0.20"></finishColorVariance>
 
 <maxParticles value="3000"></maxParticles>
 

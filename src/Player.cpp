@@ -79,7 +79,7 @@ namespace Jungle
 		butterfly_->butterfly_force_ = ofVec3f(0,0,0);
 		if (track_moving_)
 		{
-			if(pre_hand_pos_ - hand_pos_ != ofVec3f(0,0,0))
+			if((pre_hand_pos_ - hand_pos_).length() > 30)
 				start_timing_ = true;
 			if(start_timing_)
 				moving_time_ +=ofGetLastFrameTime();
@@ -88,7 +88,7 @@ namespace Jungle
 			{
 				hand_vel_ = hand_pos_ - start_pos_;
 				vlength =hand_vel_.length();
-				if( vlength > 150)
+				if( vlength > 120)
 				{
 					butterfly_->butterfly_force_ += hand_vel_.getNormalized() * 10;
 					cout<<"apply force"<<butterfly_->butterfly_force_.x<<" "<<butterfly_->butterfly_force_.y<<endl;
@@ -106,8 +106,7 @@ namespace Jungle
 			interval_time_+=ofGetLastFrameTime();
 			if(interval_time_ > 1.5)
             {
-                interval_time_ = 0;
-                
+                interval_time_ = 0;                
 				interval_ = false;
             }
 		}

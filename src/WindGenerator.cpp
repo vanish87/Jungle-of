@@ -39,6 +39,7 @@ namespace Jungle
 		if(enabled_)
 		{
 			emitter_.draw(0,0);
+            
 		}
 	}
 

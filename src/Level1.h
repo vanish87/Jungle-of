@@ -5,6 +5,7 @@
 #include "State.h"
 #include "ofVec3f.h"
 #include "ofLight.h"
+#include "Flower.h"
 #include "ofSoundPlayer.h"
 
 namespace Jungle
@@ -41,6 +42,8 @@ namespace Jungle
 		ofVec3f start_pos_;
         
         ofLight light_;
+        
+        vector<Flower> mushrooms_;
 
 		int w_;
 		int h_;

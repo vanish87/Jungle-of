@@ -23,7 +23,7 @@ namespace Jungle
         //set up space limits
         player.butterfly_->SetRange(ofVec3f(50, 50, 0), ofVec3f(-50, 20, 0));
         
-        light_.setAmbientColor(ofFloatColor(0.3, 0.3, 0.3));
+        light_.setAmbientColor(ofFloatColor(0.8, 0.8, 0.8));
         light_.setDiffuseColor(ofFloatColor(1 ,1 ,1));
         light_.setDirectional();
         ofQuaternion q;
@@ -97,20 +97,20 @@ namespace Jungle
 		ofPushMatrix();
         ofVec3f hand_pos_ = player.GetHandPos();
         
-		player.wind_.Draw();
+
 		//ofTranslate(hand_pos_.x, hand_pos_.y, hand_pos_.z);
  		if (player.hand_radius_ == player.max_hand_radius_)
  		{
-            ofPushMatrix();
-            //player.max_emitter_.draw(0, 0);
-            ofPopMatrix();
+            //ofSetColor(255, 0, 0);
  		}
         else
         {
-            ofPushMatrix();
-            //
-            ofPopMatrix();
+           // ofSetColor(255, 255, 255);
         }
+        ofDisableLighting();
+        ofEnableAlphaBlending();
+		player.wind_.Draw();
+        ofDisableAlphaBlending();
 		//ofSphere(0, 0, 0, player.hand_radius_);
 		ofPopMatrix();
 

@@ -1095,6 +1095,8 @@
 		BC0ED3B2171B144600FC92BD /* legacy code */ = {
 			isa = PBXGroup;
 			children = (
+				BC8D7986170E2D1D00DB4716 /* JungleParticle.cpp */,
+				BC8D7987170E2D1D00DB4716 /* JungleParticle.h */,
 				BC0ED3A9171B0FAE00FC92BD /* GamingScene6.cpp */,
 				BC0ED3AA171B0FAE00FC92BD /* GamingScene6.h */,
 				BC4A099217089B1800DA37DD /* GamingScene5.cpp */,
@@ -1105,8 +1107,6 @@
 				BC67296516ECF672001F7C77 /* GamingScene4.h */,
 				BC42777116E4664B00FF4CFE /* GamingScene3.cpp */,
 				BC42777216E4664B00FF4CFE /* GamingScene3.h */,
-				BC0BFCAD170B7B87000EDBEE /* WindGenerator.cpp */,
-				BC0BFCAE170B7B87000EDBEE /* WindGenerator.h */,
 				BC4A09A31708A8E700DA37DD /* WindParticle.cpp */,
 				BC4A09A41708A8E700DA37DD /* WindParticle.h */,
 				BCDA581216DFE70100EC5ED9 /* GamingScene2.cpp */,
@@ -1184,8 +1184,8 @@
 			isa = PBXGroup;
 			children = (
 				BC0ED3B2171B144600FC92BD /* legacy code */,
-				BC8D7986170E2D1D00DB4716 /* JungleParticle.cpp */,
-				BC8D7987170E2D1D00DB4716 /* JungleParticle.h */,
+				BC0BFCAD170B7B87000EDBEE /* WindGenerator.cpp */,
+				BC0BFCAE170B7B87000EDBEE /* WindGenerator.h */,
 				BC8D7983170E2D0400DB4716 /* Level1.cpp */,
 				BC8D7984170E2D0400DB4716 /* Level1.h */,
 				BC4A099517089BBB00DA37DD /* ButterFly.cpp */,
