@@ -21,7 +21,7 @@ namespace Jungle
 		Player& player = JungleApp::PlayerInstance();
         //set up mushrooms
         //set up space limits
-        player.butterfly_->SetRange(ofVec3f(50, 50, 0), ofVec3f(-50, 20, 0));
+        player.butterfly_->SetRange(ofVec3f(70, 1000, 0), ofVec3f(-70, 20, 0));
         
         light_.setAmbientColor(ofFloatColor(0.8, 0.8, 0.8));
         light_.setDiffuseColor(ofFloatColor(1 ,1 ,1));

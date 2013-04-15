@@ -79,7 +79,7 @@ namespace Jungle
 		butterfly_->butterfly_force_ = ofVec3f(0,0,0);
 		if (track_moving_)
 		{
-			if((pre_hand_pos_ - hand_pos_).length() > 30)
+			if((pre_hand_pos_ - hand_pos_).length() > 20)
 				start_timing_ = true;
 			if(start_timing_)
 				moving_time_ +=ofGetLastFrameTime();
