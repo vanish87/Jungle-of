@@ -88,7 +88,7 @@ namespace Jungle
 			{
 				hand_vel_ = hand_pos_ - start_pos_;
 				vlength =hand_vel_.length();
-				if( vlength > 120)
+				if( vlength > 40) //minimum required distance moved for the particles to have an impact on butterfly, measured in pixels
 				{
 					butterfly_->butterfly_force_ += hand_vel_.getNormalized() * 10;
 					cout<<"apply force"<<butterfly_->butterfly_force_.x<<" "<<butterfly_->butterfly_force_.y<<endl;
