@@ -41,6 +41,9 @@ namespace Jungle
             //sounds[i].loadSound("");
         }
         
+        Flower mush;
+        mush.loadModel("shroom.obj");
+        mushrooms_.push_back(mush);
         
         
 		w_ = ofGetWindowWidth();
@@ -84,7 +87,7 @@ namespace Jungle
 		//draw static scene
 		this->GetParent()->Draw();
 		//draw mushrooms
-
+        mushrooms_[0].drawFaces();
 		//draw butterfly
 		butterfly.drawFaces();
         
@@ -156,10 +159,10 @@ namespace Jungle
 	void Level1::keyPressed( int key )
 	{
         Player& player = JungleApp::PlayerInstance();
-        ofVec3f pos = player.butterfly_->getPosition();
-		ofVec3f scale = player.butterfly_->getScale();
+        ofVec3f pos = mushrooms_[0].getPosition();//player.butterfly_->getPosition();
+		ofVec3f scale = mushrooms_[0].getScale();//player.butterfly_->getScale();
         
-        this->GetParent()->keyPressed(key);
+        //this->GetParent()->keyPressed(key);
 		switch (key)
 		{
             case 's':
@@ -217,7 +220,7 @@ namespace Jungle
                 break;
 		}
         
-		//player.butterfly_->setPosition(pos.x, pos.y, pos.z);
+		mushrooms_[0].setPosition(pos.x, pos.y, pos.z);
 	}
 
 	void Level1::mouseMoved( int x, int y )
