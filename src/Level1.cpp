@@ -21,7 +21,7 @@ namespace Jungle
 		Player& player = JungleApp::PlayerInstance();
         //set up mushrooms
         //set up space limits
-        player.butterfly_->SetRange(ofVec3f(70, 1000, 0), ofVec3f(-70, 20, 0));
+        player.butterfly_->SetRange(ofVec3f(50, 50, 0), ofVec3f(-50, 20, 0));
         
         light_.setAmbientColor(ofFloatColor(0.8, 0.8, 0.8));
         light_.setDiffuseColor(ofFloatColor(1 ,1 ,1));
@@ -114,6 +114,14 @@ namespace Jungle
 		//ofSphere(0, 0, 0, player.hand_radius_);
 		ofPopMatrix();
 
+		ofPushMatrix();
+		ofSetColor(255,0,0);
+		if(player.path_.size() > 1)
+		for(vector<ofVec3f>::iterator it = player.path_.begin(); it!= player.path_.end()- 1; ++it)
+			ofLine(ofPoint(it->x, it->y), ofPoint((it+1)->x, (it+1)->y));
+
+		ofPopMatrix();
+
 		/*ofVec3f butter_pos = butterfly.getPosition();
 		ofPushMatrix();
 		ofTranslate(butter_pos.x, butter_pos.y, butter_pos.z);
@@ -138,6 +146,9 @@ namespace Jungle
 		
 		ofDrawBitmapString("pre "+ ofToString(player.pre_hand_pos_.x) + " "+ ofToString(player.pre_hand_pos_.y), 20, 80);
 		ofDrawBitmapString("hand "+ ofToString(hand_pos_.x) + " "+ ofToString(hand_pos_.x), 20, 100);
+
+		ofDrawBitmapString("path size  "+ ofToString(player.path_.size()), 20, 120);
+		ofDrawBitmapString("but pos "+ ofToString(player.butterfly_->getPosition().x) + " "+ ofToString(player.butterfly_->getPosition().y)+ " "+ ofToString(player.butterfly_->getPosition().z), 20, 140);
 
 	}
 

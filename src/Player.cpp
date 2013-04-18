@@ -3,6 +3,8 @@
 
 namespace Jungle 
 {
+
+	const unsigned int MAX_PATH_LENGTH = 50;
     Player::Player(void)
 		:wind_("")
 	{
@@ -20,6 +22,7 @@ namespace Jungle
 		interval_ = false;
 		interval_time_ = 0;
 
+		player_camera_.setupPerspective(false, 60.0f, 1, 1000);
 		player_camera_.setPosition(0,20,50);
 		player_camera_.lookAt(ofVec3f(0,20,0));
 
@@ -27,6 +30,7 @@ namespace Jungle
         
 		wind_.Init();
 		wind_.Enable(true,ofVec3f(200,200,0));
+
 
     };
     Player::~Player(void)
@@ -37,6 +41,12 @@ namespace Jungle
     {
 
 		wind_.Update(hand_radius_, 50, max_hand_radius_, hand_pos_);
+
+		if((hand_pos_-pre_hand_pos_).length() < 5)
+		{
+			if(!path_.empty())
+				path_.erase(path_.begin());
+		}
 		ofxUser* user = JungleApp::KinectInstance().users;
 		for(int i =0; i< MAX_USERS; ++i)
 		{
@@ -60,7 +70,7 @@ namespace Jungle
 			}
 		}
 
-		if((pre_hand_pos_ - hand_pos_).length() < 20 && !interval_)
+		if((pre_hand_pos_ - hand_pos_).length() < 3 && !interval_)
 		{
 			hand_radius_ +=0.3;
 		}
@@ -112,8 +122,45 @@ namespace Jungle
 		}
 
 		butterfly_->Update(ofGetLastFrameTime());
+
+		int x_ = ofGetWindowPositionX();
+		int y_ = ofGetWindowPositionY();
+
+		int w_ = ofGetWindowWidth();
+		int h_ = ofGetWindowHeight();
+
+		ofVec4f bird_pos_(0,20,28,1);
+		ofMatrix4x4 mat_ = player_camera_.getModelViewMatrix();
+
+		ofVec4f bird_pos_ss_= bird_pos_ * mat_ ;
+		mat_ = player_camera_.getProjectionMatrix();
+		ofVec4f ss = bird_pos_ss_ * mat_;
+		ofPoint screen_pos;
+		screen_pos.set(ss.x * w_/2 + (x_/2 + w_/2), h_ - (ss.y * h_/2 + (y_/2 + h_/2)));
+
+		//bird_pos_ss_.set(screen_pos.x, screen_pos.y);
+
+		ofVec4f vs_d = ofVec4f(0,0,22,0);
+		ofVec4f prj_d = vs_d * player_camera_.getProjectionMatrix();
+		float ndc_d = prj_d.z/prj_d.w;
+
+		float Zv = 22;
+		if(!path_.empty())
+		{
+			ofVec4f ndc = ofVec4f((path_.front().x - (x_/2 + w_/2)) * 2.0f/w_, (h_- path_.front().y - (y_/2 + h_/2)) * 2.0f/h_, 1,1);
+			ofVec4f pproj = ndc * Zv;
+			ofMatrix4x4 mat;
+			mat.makeInvertOf(player_camera_.getProjectionMatrix());
+			ofVec4f vs_pos = pproj * mat;
+			//vs_pos = vs_pos/vs_pos.w;
+			vs_pos.w= 1;
+			//vs_pos.z = 22;
+			mat.makeInvertOf(player_camera_.getModelViewMatrix());
+			ofVec3f ws_pos = vs_pos * mat;
+			butterfly_->setPosition(ws_pos.x, ws_pos.y, ws_pos.z);
+		}
         
-        player_camera_.setPosition(butterfly_->butterfly_pos_.x, butterfly_->butterfly_pos_.y, player_camera_.getPosition().z);
+        //player_camera_.setPosition(butterfly_->butterfly_pos_.x, butterfly_->butterfly_pos_.y, player_camera_.getPosition().z);
 
 		//cout<<(pre_hand_pos_ - hand_pos_).x<< " "<<(pre_hand_pos_ - hand_pos_).y<<"\r";
 		pre_hand_pos_ = hand_pos_;
@@ -127,7 +174,12 @@ namespace Jungle
 
 	void Player::SetHandPos( ofVec3f pos )
 	{
-		hand_pos_ = pos;
+		hand_pos_ = pos;		
+		if(!path_.empty() && (hand_pos_-path_.back()).length() < 5) return;
+
+		if(path_.size() > MAX_PATH_LENGTH )
+			path_.erase(path_.begin());
+		path_.push_back(pos);
 	}
 
 	ButterFly& Player::GetButterfly()

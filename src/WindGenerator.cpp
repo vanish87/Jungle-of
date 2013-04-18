@@ -210,8 +210,8 @@ namespace Jungle
 		emitter.sourcePositionVariance.y = config.sourcePositionVariance.y;
 		emitter.sourcePositionVariance.z = config.sourcePositionVariance.z;
 
-		//emitter.angle = config.angle;
-		//emitter.angleVariance = config.angleVariance;								
+		emitter.angle = config.angle;
+		emitter.angleVariance = config.angleVariance;								
 		emitter.speed = config.speed;
 		emitter.speedVariance =config.speedVariance;	
 		emitter.radialAcceleration = config.radialAcceleration;

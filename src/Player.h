@@ -2,12 +2,15 @@
 #define PLAYER_H_
 
 #pragma once
+#include <array>
+
 #include "ofNode.h"
 #include "ofCamera.h"
 #include "ButterFly.h"
 #include "WindGenerator.h"
 
 namespace Jungle {
+	
     class Player : public ofNode
     {
     public:
@@ -45,6 +48,10 @@ namespace Jungle {
 	//private copy constructor to avoid inconsistent of Singleton Pattern
 	private:
 		Player(const Player& rhs);
+
+
+	public:
+		vector<ofVec3f> path_;
     };
 }
 

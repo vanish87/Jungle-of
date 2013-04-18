@@ -48,7 +48,7 @@ namespace Jungle
 		butterfly_pos_.x = ofClamp(butterfly_pos_.x, min_range_.x, max_range_.x);
 		butterfly_pos_.y = ofClamp(butterfly_pos_.y, min_range_.y, max_range_.y);
 
-		setPosition(butterfly_pos_.x, butterfly_pos_.y, butterfly_pos_.z);
+		//setPosition(butterfly_pos_.x, butterfly_pos_.y, butterfly_pos_.z);
         
         //update animation
         animation_time_ += ofGetLastFrameTime()/24.0f;
