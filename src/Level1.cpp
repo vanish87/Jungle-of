@@ -25,7 +25,8 @@ namespace Jungle
         
         light_.setAmbientColor(ofFloatColor(0.8, 0.8, 0.8));
         light_.setDiffuseColor(ofFloatColor(1 ,1 ,1));
-        light_.setDirectional();
+        light_.setPointLight();
+        light_.setPosition(20, 100, 40);
         ofQuaternion q;
         q.makeRotate(-45, 1, 0, 0);
         light_.setOrientation(q);
