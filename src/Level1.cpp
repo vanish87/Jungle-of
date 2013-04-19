@@ -41,7 +41,6 @@ namespace Jungle
             //sounds[i].loadSound("");
         }
         
-<<<<<<< HEAD
 		Flower mushroom;
 		mushroom.loadModel("shroom.obj");
 		mushroom.setPosition(-4, 12, 15);
@@ -49,12 +48,6 @@ namespace Jungle
 		mushroom.setRotation(0,180,1,0,0);
 		mushroom.Enable(false);
 		mushrooms_.push_back(mushroom);  
-=======
-        Flower mush;
-        mush.loadModel("shroom.obj");
-        mushrooms_.push_back(mush);
-        
->>>>>>> 9753f15073f8452673a0a18bef179671f04ad629
         
 		w_ = ofGetWindowWidth();
 		h_ = ofGetWindowHeight();
@@ -102,14 +95,11 @@ namespace Jungle
 		this->GetParent()->Draw();
 		glEnable(GL_DEPTH_TEST);
 		//draw mushrooms
-<<<<<<< HEAD
+
 		ofPushMatrix();
 		if(mushrooms_[0].Enabled())
 			mushrooms_[0].Draw();
 		ofPopMatrix();
-=======
-        mushrooms_[0].drawFaces();
->>>>>>> 9753f15073f8452673a0a18bef179671f04ad629
 		//draw butterfly
 		butterfly.drawFaces();
         
@@ -197,13 +187,10 @@ namespace Jungle
 	void Level1::keyPressed( int key )
 	{
         Player& player = JungleApp::PlayerInstance();
-<<<<<<< HEAD
+
         ofVec3f pos = mushrooms_[0].getPosition();
 		ofVec3f scale = mushrooms_[0].getScale();
-=======
-        ofVec3f pos = mushrooms_[0].getPosition();//player.butterfly_->getPosition();
-		ofVec3f scale = mushrooms_[0].getScale();//player.butterfly_->getScale();
->>>>>>> 9753f15073f8452673a0a18bef179671f04ad629
+
         
         //this->GetParent()->keyPressed(key);
 		switch (key)
