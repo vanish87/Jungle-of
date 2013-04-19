@@ -55,7 +55,7 @@ namespace Jungle {
 		Player(const Player& rhs);
 
 	public:
-		vector<pair<ofVec3f, float>> path_;
+		vector<pair<ofVec3f,float> > path_;
 		vector<ofVec3f> test_;
 		CRSpline crspline_;
     };

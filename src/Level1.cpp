@@ -133,7 +133,7 @@ namespace Jungle
 		ofPushMatrix();
 		ofSetColor(255,0,0);
 		if(player.path_.size() > 1)
-		for(vector<pair<ofVec3f,float>>::iterator it = player.path_.begin(); it!= player.path_.end()- 1; ++it)
+		for(vector<pair<ofVec3f,float> >::iterator it = player.path_.begin(); it!= player.path_.end()- 1; ++it)
 		{
 			ofLine(ofPoint(it->first.x, it->first.y), ofPoint((it+1)->first.x, (it+1)->first.y));
 		}

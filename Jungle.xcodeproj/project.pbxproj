@@ -75,6 +75,7 @@
 		BC4A099717089BBB00DA37DD /* ButterFly.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BC4A099517089BBB00DA37DD /* ButterFly.cpp */; };
 		BC4A09A51708A8E700DA37DD /* WindParticle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BC4A09A31708A8E700DA37DD /* WindParticle.cpp */; };
 		BC67296616ECF672001F7C77 /* GamingScene4.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BC67296416ECF672001F7C77 /* GamingScene4.cpp */; };
+		BC72959C1721C0CF0072FB4A /* CRSpline.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BC72959A1721C0CF0072FB4A /* CRSpline.cpp */; };
 		BC8D7985170E2D0400DB4716 /* Level1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BC8D7983170E2D0400DB4716 /* Level1.cpp */; };
 		BC8D7988170E2D1D00DB4716 /* JungleParticle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BC8D7986170E2D1D00DB4716 /* JungleParticle.cpp */; };
 		BC8D798B170EB2EB00DB4716 /* Level2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BC8D7989170EB2EB00DB4716 /* Level2.cpp */; };
@@ -424,6 +425,8 @@
 		BC4A09A41708A8E700DA37DD /* WindParticle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WindParticle.h; sourceTree = "<group>"; };
 		BC67296416ECF672001F7C77 /* GamingScene4.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GamingScene4.cpp; sourceTree = "<group>"; };
 		BC67296516ECF672001F7C77 /* GamingScene4.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GamingScene4.h; sourceTree = "<group>"; };
+		BC72959A1721C0CF0072FB4A /* CRSpline.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CRSpline.cpp; sourceTree = "<group>"; };
+		BC72959B1721C0CF0072FB4A /* CRSpline.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRSpline.h; sourceTree = "<group>"; };
 		BC8D7983170E2D0400DB4716 /* Level1.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Level1.cpp; sourceTree = "<group>"; };
 		BC8D7984170E2D0400DB4716 /* Level1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Level1.h; sourceTree = "<group>"; };
 		BC8D7986170E2D1D00DB4716 /* JungleParticle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = JungleParticle.cpp; sourceTree = "<group>"; };
@@ -1192,6 +1195,8 @@
 				BC4A099617089BBB00DA37DD /* ButterFly.h */,
 				BC8D7989170EB2EB00DB4716 /* Level2.cpp */,
 				BC8D798A170EB2EB00DB4716 /* Level2.h */,
+				BC72959A1721C0CF0072FB4A /* CRSpline.cpp */,
+				BC72959B1721C0CF0072FB4A /* CRSpline.h */,
 				BC0ED3A6171B0F9300FC92BD /* SceneManager.cpp */,
 				BC0ED3A7171B0F9300FC92BD /* SceneManager.h */,
 				BCAF17D616DAA6630067261D /* JungleApp.cpp */,
@@ -1371,6 +1376,7 @@
 				BC0ED3A5171B0F1D00FC92BD /* StaticScene.cpp in Sources */,
 				BC0ED3A8171B0F9300FC92BD /* SceneManager.cpp in Sources */,
 				BC0ED3AB171B0FAE00FC92BD /* GamingScene6.cpp in Sources */,
+				BC72959C1721C0CF0072FB4A /* CRSpline.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
