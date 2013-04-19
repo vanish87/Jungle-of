@@ -36,10 +36,12 @@ namespace Jungle
         light_.enable();
         ofBackground(255);
         
-        for(int i=0; i< 4; i++)
-        {
-            //sounds[i].loadSound("");
-        }
+        
+        sounds[0].loadSound("audio/trigger1.mp3");
+		sounds[1].loadSound("audio/trigger2.mp3");
+		sounds[2].loadSound("audio/trigger3.mp3");
+		sounds[3].loadSound("audio/trigger4.mp3");
+        
         
 		Flower mushroom;
 		mushroom.loadModel("shroom.obj");
@@ -68,10 +70,12 @@ namespace Jungle
 		ofVec3f bt_pos = ofVec3f(butterfly.butterfly_pos_.x, butterfly.butterfly_pos_.y,0);
 		ofVec3f mh_pos = ofVec3f(mushrooms_[0].getPosition().x, mushrooms_[0].getPosition().y, 0);
 		if((bt_pos - mh_pos).length() < 8.2)
-			mushrooms_[0].Enable(true);
 		//triggering mushrooms
-        //int index = ofRandom(0,4);
-        //sounds[index].play();
+		{
+			mushrooms_[0].Enable(true);
+			int index = ofRandom(0,4);
+			sounds[index].play();
+		}
 		//if finished
 		//change to next level
 
