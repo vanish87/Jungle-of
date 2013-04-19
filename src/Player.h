@@ -45,6 +45,8 @@ namespace Jungle {
 		bool interval_;
 		float interval_time_;
         
+        bool detected_;
+        
 		WindGenerator wind_;
 		float inter_time_;
 

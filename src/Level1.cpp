@@ -59,6 +59,7 @@ namespace Jungle
 		mushroom2.Enable(false);
 		mushrooms_.push_back(mushroom2);
         
+<<<<<<< HEAD
         Flower mushroom3;
 		mushroom3.loadModel("shroom.obj");
 		mushroom3.setPosition(17, 12, 29);
@@ -74,6 +75,10 @@ namespace Jungle
 		mushroom4.setRotation(0,180,1,0,0);
 		mushroom4.Enable(false);
 		mushrooms_.push_back(mushroom4);
+=======
+        title_.loadImage("title-screen-3.png");
+        
+>>>>>>> tile screen added
         
         Flower mushroom5;
 		mushroom5.loadModel("shroom.obj");
@@ -283,6 +288,9 @@ namespace Jungle
         ofDisableLighting();
         ofEnableAlphaBlending();
 		player.wind_.Draw();
+        ofSetColor(255, 255, 255);
+        if(!player.detected_)
+            title_.draw(ofPoint(0,0), w_, h_);
         ofDisableAlphaBlending();
 		//ofSphere(0, 0, 0, player.hand_radius_);
 		ofPopMatrix();
@@ -315,12 +323,12 @@ namespace Jungle
 		ofPopMatrix();*/
 
         ofSetColor(255, 255, 255);
-		if(Jungle::KINECT_ENABLE)
+		if(Jungle::KINECT_ENABLE && !player.detected_)
 		{
 			glPushMatrix();
 			ofTranslate(0, h_ - 0.3*h_);
 			ofScale(0.4, 0.4);
-			JungleApp::KinectInstance().debugDraw();
+			//JungleApp::KinectInstance().debugDraw();
 			glPopMatrix();
 		}
 
@@ -446,7 +454,12 @@ namespace Jungle
 
 	void Level1::userOut( ofxUser & user )
 	{
-
+        Player& player = JungleApp::PlayerInstance();
+        player.detected_ = false;
+        player.path_.clear();
+        player.path_.push_back(make_pair(ofVec3f(w_/2, h_/2, 0), 0));
+        player.path_.push_back(make_pair(ofVec3f(w_/2, h_/2, 0), 0));
+        player.path_.push_back(make_pair(ofVec3f(w_/2, h_/2, 0), 0));
 	}
 
 }

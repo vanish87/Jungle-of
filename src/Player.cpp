@@ -35,6 +35,8 @@ namespace Jungle
 		test_.push_back(ofVec3f(300, 200, 0));
 		test_.push_back(ofVec3f(300, 300, 0));
 		test_.push_back(ofVec3f(200, 300, 0));
+        
+        detected_ = true;
 
 
     };
@@ -44,27 +46,24 @@ namespace Jungle
     
     void Player::Update()
     {
-
-		wind_.Update(hand_radius_, 50, max_hand_radius_, hand_pos_);
-
-
-		ofxUser* user = JungleApp::KinectInstance().users;
+        ofxUser* user = JungleApp::KinectInstance().users;
 		for(int i =0; i< MAX_USERS; ++i)
 		{
 			if(user[i].isActive&& user[i].bones)
 			{
+                detected_ = true;
 				Bones bone = user[i].bonesPoints;
 				ofVec3f torsor_pos = bone.torso;
-				torsor_pos.x = ofMap(torsor_pos.x , 
-					MIN_KINECT_AREA.x, MAX_KINECT_AREA.x, MIN_PLAY_AREA.x, MAX_PLAY_AREA.x, true);
+				torsor_pos.x = ofMap(torsor_pos.x ,
+                                     MIN_KINECT_AREA.x, MAX_KINECT_AREA.x, MIN_PLAY_AREA.x, MAX_PLAY_AREA.x, true);
 				torsor_pos.z = ofMap(torsor_pos.z ,
-					MIN_KINECT_AREA.z, MAX_KINECT_AREA.z, MIN_PLAY_AREA.z, MAX_PLAY_AREA.z, true);
-
-
+                                     MIN_KINECT_AREA.z, MAX_KINECT_AREA.z, MIN_PLAY_AREA.z, MAX_PLAY_AREA.z, true);
+                
+                
 				ofVec3f l_hand_pos = bone.left_hand;
 				ofVec3f r_hand_pos = bone.right_hand;
 				ofVec3f hand_pos = l_hand_pos - r_hand_pos;
-
+                
 				pre_hand_pos_ = hand_pos_;
 				ofVec3f p;
 				p.x = ofMap(r_hand_pos.x , 0, 640, 0, ofGetWindowWidth(), true);
@@ -72,6 +71,15 @@ namespace Jungle
 				SetHandPos(p);
 			}
 		}
+        if(!detected_)
+        {
+            butterfly_->Update(ofGetLastFrameTime());
+            return;
+        }
+		wind_.Update(hand_radius_, 50, max_hand_radius_, hand_pos_);
+
+
+		
 
 		if((pre_hand_pos_ - hand_pos_).length() < 3 && !interval_)
 		{
