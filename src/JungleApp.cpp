@@ -41,6 +41,8 @@ namespace Jungle
 		level1_->Steup();
 		StateManagerInstance().ChangeState(static_scene_, SOP_PUSH);
 		StateManagerInstance().ChangeState(level1_, SOP_PUSH);
+        
+        ofSetFrameRate(60);
 		//ofEnableAlphaBlending();
 //         
          atmo.loadSound("audio/jungle-atmos-2.mp3");

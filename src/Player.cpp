@@ -220,7 +220,7 @@ namespace Jungle
 
 
 		butterfly_->Update(ofGetLastFrameTime());
-		cout<<camera_pos_.x<< " "<<camera_pos_.y<<"\r";
+		//cout<<camera_pos_.x<< " "<<camera_pos_.y<<"\r";
 		pre_hand_pos_ = hand_pos_;
 		
     }
