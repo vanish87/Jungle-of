@@ -2,7 +2,6 @@
 #define PLAYER_H_
 
 #pragma once
-#include <array>
 
 #include "ofNode.h"
 #include "ofCamera.h"
