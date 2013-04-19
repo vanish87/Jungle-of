@@ -68,15 +68,26 @@ namespace Jungle
         
 		//get butterfly's pos
 		//if collision
-		ofVec3f bt_pos = ofVec3f(butterfly.butterfly_pos_.x, butterfly.butterfly_pos_.y,0);
-		ofVec3f mh_pos = ofVec3f(mushrooms_[0].getPosition().x, mushrooms_[0].getPosition().y, 0);
-		if((bt_pos - mh_pos).length() < 8.2)
-		//triggering mushrooms
-		{
-			mushrooms_[0].Enable(true);
-			int index = ofRandom(0,4);
-			sounds[index].play();
-		}
+        for(int i =0; i < mushrooms_.size(); ++i)
+        {
+            ofVec3f bt_pos = ofVec3f(butterfly.butterfly_pos_.x, butterfly.butterfly_pos_.y,0);
+            ofVec3f mh_pos = ofVec3f(mushrooms_[i].getPosition().x, mushrooms_[i].getPosition().y, 0);
+            if((bt_pos - mh_pos).length() < 8.2)
+                //triggering mushrooms
+            {
+                if(!mushrooms_[i].Enabled())
+                {
+                
+                    mushrooms_[i].Enable(true);
+                    int index = ofRandom(0,4);
+                    //cout<<index<<endl;
+                    if (!sounds[index].getIsPlaying())
+                    {
+                        sounds[index].play();
+                    }
+                }
+            }
+        }
 		//if finished
 		//change to next level
 
