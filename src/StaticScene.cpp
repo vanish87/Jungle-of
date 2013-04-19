@@ -70,12 +70,15 @@ namespace Jungle
         
 		atmo.play();
         
+        
 
 	}
 
 	void StaticScene::Update()
 	{
 		JungleApp::SceneManagerInstance().Update();
+        
+        
 	}
 
 	void StaticScene::Draw()

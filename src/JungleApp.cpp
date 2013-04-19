@@ -89,11 +89,11 @@ namespace Jungle
 #ifdef HARDWARE
 			//adjust kinect camera
 			case 357: // up key
-				KinectInstance().CameraMoveUp();
+				//KinectInstance().CameraMoveUp();
 				break;
 			//adjust kinect camera
 			case 359: // down key
-				KinectInstance().CameraMoveDown();
+				//KinectInstance().CameraMoveDown();
 				break;
 #endif
 #endif

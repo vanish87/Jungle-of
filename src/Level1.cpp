@@ -49,7 +49,8 @@ namespace Jungle
 		mushroom.setScale(0,0, 0);
 		mushroom.setRotation(0,180,1,0,0);
 		mushroom.Enable(false);
-		mushrooms_.push_back(mushroom);  
+		mushrooms_.push_back(mushroom);
+        
         
 		w_ = ofGetWindowWidth();
 		h_ = ofGetWindowHeight();
