@@ -219,6 +219,7 @@ namespace Jungle
 		bool enabled_;
 
 		ofx3DParticleEmitter emitter_;
+        ofx3DParticleEmitter emitter2_;
 
 		ParticleConfig config_;
 		ParticleConfig min_;
