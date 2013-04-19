@@ -10,7 +10,7 @@
 
 namespace Jungle {
     Flower::Flower(void)
-    : flower_radius_(0.5), flower_collided_(false), color_(255,255,255)
+    : flower_radius_(3), flower_collided_(false), color_(255,255,255)
     {
         
     };
@@ -21,9 +21,9 @@ namespace Jungle {
     void Flower::Draw()
     {
 		ofVec3f scale = getScale();
-		if(scale.x < 0.00001)
+		if(scale.x < 0.008)
 		{
-			scale += 0.0000001;
+			scale += 0.0001;
 			setScale(scale.x, scale.y, scale.z);
 		}
         ofSetColor(color_.r, color_.g, color_.b);

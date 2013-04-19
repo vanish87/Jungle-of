@@ -161,6 +161,7 @@ if not exist "$(ProjectDir)\bin\data" mkdir  "$(ProjectDir)\bin\data"
     <ClCompile Include="..\..\..\addons\ofxXmlSettings\libs\tinyxmlparser.cpp" />
     <ClCompile Include="..\..\..\addons\ofxXmlSettings\src\ofxXmlSettings.cpp" />
     <ClCompile Include="src\ButterFly.cpp" />
+    <ClCompile Include="src\CRSpline.cpp" />
     <ClCompile Include="src\Flower.cpp" />
     <ClCompile Include="src\GamingScene.cpp" />
     <ClCompile Include="src\GamingScene4.cpp" />
@@ -364,6 +365,7 @@ if not exist "$(ProjectDir)\bin\data" mkdir  "$(ProjectDir)\bin\data"
     <ClInclude Include="..\..\..\addons\ofxXmlSettings\libs\tinyxml.h" />
     <ClInclude Include="..\..\..\addons\ofxXmlSettings\src\ofxXmlSettings.h" />
     <ClInclude Include="src\ButterFly.h" />
+    <ClInclude Include="src\CRSpline.h" />
     <ClInclude Include="src\Flower.h" />
     <ClInclude Include="src\GamingScene.h" />
     <ClInclude Include="src\GamingScene4.h" />

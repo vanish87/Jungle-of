@@ -20,7 +20,7 @@ namespace Jungle
         
         void SetRange(ofVec3f max, ofVec3f min);
 
-	private:
+	public:
 		ofVec3f butterfly_pos_;
 		ofVec3f butterfly_vel_;
 		ofVec3f butterfly_force_;

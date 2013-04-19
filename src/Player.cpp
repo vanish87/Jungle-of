@@ -31,6 +31,11 @@ namespace Jungle
 		wind_.Init();
 		wind_.Enable(true,ofVec3f(200,200,0));
 
+		test_.push_back(ofVec3f(400, 100, 0));
+		test_.push_back(ofVec3f(300, 200, 0));
+		test_.push_back(ofVec3f(300, 300, 0));
+		test_.push_back(ofVec3f(200, 300, 0));
+
 
     };
     Player::~Player(void)
@@ -42,11 +47,7 @@ namespace Jungle
 
 		wind_.Update(hand_radius_, 50, max_hand_radius_, hand_pos_);
 
-		if((hand_pos_-pre_hand_pos_).length() < 5)
-		{
-			if(!path_.empty())
-				path_.erase(path_.begin());
-		}
+
 		ofxUser* user = JungleApp::KinectInstance().users;
 		for(int i =0; i< MAX_USERS; ++i)
 		{
@@ -65,8 +66,10 @@ namespace Jungle
 				ofVec3f hand_pos = l_hand_pos - r_hand_pos;
 
 				pre_hand_pos_ = hand_pos_;
-				hand_pos_.x = ofMap(r_hand_pos.x , 0, 640, 0, ofGetWindowWidth(), true);
-				hand_pos_.y = ofMap(r_hand_pos.y , 0, 480, 0, ofGetWindowHeight(), true);
+				ofVec3f p;
+				p.x = ofMap(r_hand_pos.x , 0, 640, 0, ofGetWindowWidth(), true);
+				p.y = ofMap(r_hand_pos.y , 0, 480, 0, ofGetWindowHeight(), true);
+				SetHandPos(p);
 			}
 		}
 
@@ -121,7 +124,6 @@ namespace Jungle
             }
 		}
 
-		butterfly_->Update(ofGetLastFrameTime());
 
 		int x_ = ofGetWindowPositionX();
 		int y_ = ofGetWindowPositionY();
@@ -147,7 +149,51 @@ namespace Jungle
 		float Zv = 22;
 		if(!path_.empty())
 		{
-			ofVec4f ndc = ofVec4f((path_.front().x - (x_/2 + w_/2)) * 2.0f/w_, (h_- path_.front().y - (y_/2 + h_/2)) * 2.0f/h_, 1,1);
+			ofVec3f path_pos;// = path_.front().first;
+
+			inter_time_ += 0.1;
+			float t = inter_time_ / 1.0f;
+			if(path_.size() > 3)
+			{
+
+				ofVec3f inter_pos = crspline_.GetPos(path_[0].first, path_[1].first, path_[2].first, path_[3].first, t);
+				path_pos = inter_pos;
+
+			}
+			else
+			{
+				if(path_.size() == 3)
+				{
+					ofVec3f inter_pos = crspline_.GetPos(path_[0].first, path_[1].first, path_[2].first, path_[2].first, t);
+					path_pos = inter_pos;
+				}
+				else
+				{
+					if(path_.size() == 2)
+					{
+						//path_pos.x = ofLerp(path_[0].first .x, path_[1].first.x, inter_time_);
+						//path_pos.y = ofLerp(path_[0].first .y, path_[1].first.y, inter_time_);
+						ofVec3f inter_pos = crspline_.GetPos(path_[0].first, path_[1].first, path_[1].first, path_[1].first, t);
+						path_pos = inter_pos;//path_.back().first;
+					}
+					else
+					{
+						path_pos.x = ofLerp(butterfly_pos_ss_.x, path_[0].first.x, inter_time_);
+						path_pos.y = ofLerp(butterfly_pos_ss_.y, path_[0].first.y, inter_time_);
+					}
+				}
+			}
+			if (inter_time_ > 1.0f) 
+			{
+
+				inter_time_ = 0;
+				//if(path_.size() == 2) inter_time_ = 1.0f;
+				if(path_.size() > 2)
+					path_.erase(path_.begin());
+			}
+
+			butterfly_pos_ss_ = path_pos;
+			ofVec4f ndc = ofVec4f((path_pos.x - (x_/2 + w_/2)) * 2.0f/w_, (h_- path_pos.y - (y_/2 + h_/2)) * 2.0f/h_, 1,1);
 			ofVec4f pproj = ndc * Zv;
 			ofMatrix4x4 mat;
 			mat.makeInvertOf(player_camera_.getProjectionMatrix());
@@ -157,12 +203,24 @@ namespace Jungle
 			//vs_pos.z = 22;
 			mat.makeInvertOf(player_camera_.getModelViewMatrix());
 			ofVec3f ws_pos = vs_pos * mat;
-			butterfly_->setPosition(ws_pos.x, ws_pos.y, ws_pos.z);
+
+			butterfly_->butterfly_pos_ = ws_pos;
 		}
         
-        //player_camera_.setPosition(butterfly_->butterfly_pos_.x, butterfly_->butterfly_pos_.y, player_camera_.getPosition().z);
+		camera_pos_ = ofVec3f(butterfly_->getPosition().x, butterfly_->getPosition().y, 0);
+		ofVec3f old_pos = player_camera_.getPosition();
+		old_pos.z = 0;
+		ofVec3f delta = camera_pos_ - old_pos;
+		if(delta.length() > 10)
+		{
+			old_pos += delta / 30;
+			player_camera_.setPosition(old_pos.x, old_pos.y,player_camera_.getPosition().z);
+		}
 
-		//cout<<(pre_hand_pos_ - hand_pos_).x<< " "<<(pre_hand_pos_ - hand_pos_).y<<"\r";
+
+
+		butterfly_->Update(ofGetLastFrameTime());
+		cout<<camera_pos_.x<< " "<<camera_pos_.y<<"\r";
 		pre_hand_pos_ = hand_pos_;
 		
     }
@@ -175,11 +233,15 @@ namespace Jungle
 	void Player::SetHandPos( ofVec3f pos )
 	{
 		hand_pos_ = pos;		
-		if(!path_.empty() && (hand_pos_-path_.back()).length() < 5) return;
+		if(!path_.empty())
+		{
+			ofVec3f back_pos = path_.back().first;
+			if ((hand_pos_-back_pos).length() < 50) return;
+		}
 
 		if(path_.size() > MAX_PATH_LENGTH )
 			path_.erase(path_.begin());
-		path_.push_back(pos);
+		path_.push_back(make_pair(pos, ofGetElapsedTimef()));
 	}
 
 	ButterFly& Player::GetButterfly()
@@ -191,7 +253,9 @@ namespace Jungle
 	{
 		return hand_pos_;
 	}
-	
+
+
+
 
 
     

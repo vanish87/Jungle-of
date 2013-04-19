@@ -190,6 +190,9 @@
     <ClCompile Include="src\GamingScene.cpp">
       <Filter>src</Filter>
     </ClCompile>
+    <ClCompile Include="src\CRSpline.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\GamingScene2.h">
@@ -793,6 +796,9 @@
       <Filter>src</Filter>
     </ClInclude>
     <ClInclude Include="src\GamingScene.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\CRSpline.h">
       <Filter>src</Filter>
     </ClInclude>
   </ItemGroup>

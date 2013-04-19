@@ -21,7 +21,7 @@ namespace Jungle
 		Player& player = JungleApp::PlayerInstance();
         //set up mushrooms
         //set up space limits
-        player.butterfly_->SetRange(ofVec3f(50, 50, 0), ofVec3f(-50, 20, 0));
+        player.butterfly_->SetRange(ofVec3f(300, 500, 0), ofVec3f(-300, 20, 0));
         
         light_.setAmbientColor(ofFloatColor(0.8, 0.8, 0.8));
         light_.setDiffuseColor(ofFloatColor(1 ,1 ,1));
@@ -40,7 +40,13 @@ namespace Jungle
             //sounds[i].loadSound("");
         }
         
-        
+		Flower mushroom;
+		mushroom.loadModel("shroom.obj");
+		mushroom.setPosition(-4, 12, 15);
+		mushroom.setScale(0,0, 0);
+		mushroom.setRotation(0,180,1,0,0);
+		mushroom.Enable(false);
+		mushrooms_.push_back(mushroom);  
         
 		w_ = ofGetWindowWidth();
 		h_ = ofGetWindowHeight();
@@ -58,6 +64,10 @@ namespace Jungle
         
 		//get butterfly's pos
 		//if collision
+		ofVec3f bt_pos = ofVec3f(butterfly.butterfly_pos_.x, butterfly.butterfly_pos_.y,0);
+		ofVec3f mh_pos = ofVec3f(mushrooms_[0].getPosition().x, mushrooms_[0].getPosition().y, 0);
+		if((bt_pos - mh_pos).length() < 8.2)
+			mushrooms_[0].Enable(true);
 		//triggering mushrooms
         //int index = ofRandom(0,4);
         //sounds[index].play();
@@ -79,11 +89,15 @@ namespace Jungle
 		ofEnableAlphaBlending();
 		camera.begin();
         light_.enable();
-        glEnable(GL_DEPTH_TEST);
+        
 		//draw static scene
 		this->GetParent()->Draw();
+		glEnable(GL_DEPTH_TEST);
 		//draw mushrooms
-
+		ofPushMatrix();
+		if(mushrooms_[0].Enabled())
+			mushrooms_[0].Draw();
+		ofPopMatrix();
 		//draw butterfly
 		butterfly.drawFaces();
         
@@ -117,8 +131,20 @@ namespace Jungle
 		ofPushMatrix();
 		ofSetColor(255,0,0);
 		if(player.path_.size() > 1)
-		for(vector<ofVec3f>::iterator it = player.path_.begin(); it!= player.path_.end()- 1; ++it)
-			ofLine(ofPoint(it->x, it->y), ofPoint((it+1)->x, (it+1)->y));
+		for(vector<pair<ofVec3f,float>>::iterator it = player.path_.begin(); it!= player.path_.end()- 1; ++it)
+		{
+			ofLine(ofPoint(it->first.x, it->first.y), ofPoint((it+1)->first.x, (it+1)->first.y));
+		}
+
+// 		ofPoint p;
+// 		ofPoint pp;
+// 		for(int i=0; i < 50; ++i)
+// 		{
+// 			float t = i/50.0f;
+// 			p = player.crspline_.GetPos(player.test_[2], player.test_[2], player.test_[3], player.test_[3], t);
+// 			ofLine(pp, p);
+// 			pp = p;
+// 		}
 
 		ofPopMatrix();
 
@@ -138,27 +164,31 @@ namespace Jungle
 			JungleApp::KinectInstance().debugDraw();
 			glPopMatrix();
 		}
+
+		ofVec3f bt_pos = ofVec3f(butterfly.butterfly_pos_.x, butterfly.butterfly_pos_.y,0);
+		ofVec3f mh_pos = ofVec3f(mushrooms_[0].getPosition().x, mushrooms_[0].getPosition().y, 0);
         
 		ofSetColor(255, 255, 255,255);
 		ofDrawBitmapString("moving_time_ "+ ofToString(player.moving_time_), 20, 20);
-		ofDrawBitmapString("v length "+ ofToString(player.vlength), 20, 40);
-		ofDrawBitmapString("hand_radius_ "+ ofToString(player.hand_radius_), 20, 60);
+		ofDrawBitmapString("v length "+ ofToString((bt_pos - mh_pos).length()), 20, 40);
+		ofDrawBitmapString("scale "+ ofToString(mushrooms_[0].getScale().x), 20, 60);
 		
 		ofDrawBitmapString("pre "+ ofToString(player.pre_hand_pos_.x) + " "+ ofToString(player.pre_hand_pos_.y), 20, 80);
 		ofDrawBitmapString("hand "+ ofToString(hand_pos_.x) + " "+ ofToString(hand_pos_.x), 20, 100);
 
 		ofDrawBitmapString("path size  "+ ofToString(player.path_.size()), 20, 120);
 		ofDrawBitmapString("but pos "+ ofToString(player.butterfly_->getPosition().x) + " "+ ofToString(player.butterfly_->getPosition().y)+ " "+ ofToString(player.butterfly_->getPosition().z), 20, 140);
+		ofDrawBitmapString("mush pos "+ ofToString(mushrooms_[0].getPosition().x) + " "+ ofToString(mushrooms_[0].getPosition().y)+ " "+ ofToString(mushrooms_[0].getPosition().z), 20, 160);
 
 	}
 
 	void Level1::keyPressed( int key )
 	{
         Player& player = JungleApp::PlayerInstance();
-        ofVec3f pos = player.butterfly_->getPosition();
-		ofVec3f scale = player.butterfly_->getScale();
+        ofVec3f pos = mushrooms_[0].getPosition();
+		ofVec3f scale = mushrooms_[0].getScale();
         
-        this->GetParent()->keyPressed(key);
+        //this->GetParent()->keyPressed(key);
 		switch (key)
 		{
             case 's':
@@ -180,12 +210,12 @@ namespace Jungle
                 pos.x+=1;
                 break;
             case 'e':
-                scale+=0.1;
-                //player.butterfly_->setScale(scale.x, scale.y,scale.z);
+                scale+=0.001;
+                mushrooms_[0].setScale(scale.x, scale.y,scale.z);
                 break;
             case 'c':
-                scale-=0.1;
-                //player.butterfly_->setScale(scale.x, scale.y,scale.z);
+                scale-=0.001;
+                mushrooms_[0].setScale(scale.x, scale.y,scale.z);
                 break;
             case 'y':
                 break;
@@ -216,7 +246,7 @@ namespace Jungle
                 break;
 		}
         
-		//player.butterfly_->setPosition(pos.x, pos.y, pos.z);
+		mushrooms_[0].setPosition(pos.x, pos.y, pos.z);
 	}
 
 	void Level1::mouseMoved( int x, int y )
