@@ -51,6 +51,14 @@ namespace Jungle
 		mushroom.Enable(false);
 		mushrooms_.push_back(mushroom);
         
+        Flower mushroom2;
+		mushroom2.loadModel("shroom.obj");
+		mushroom2.setPosition(-4, 12, 15);
+		mushroom2.setScale(0,0, 0);
+		mushroom2.setRotation(0,180,1,0,0);
+		mushroom2.Enable(false);
+		mushrooms_.push_back(mushroom2);
+        
         
 		w_ = ofGetWindowWidth();
 		h_ = ofGetWindowHeight();
@@ -113,8 +121,11 @@ namespace Jungle
 		//draw mushrooms
 
 		ofPushMatrix();
-		if(mushrooms_[0].Enabled())
-			mushrooms_[0].Draw();
+        for(int i =0; i < mushrooms_.size(); ++i)
+        {
+            if(mushrooms_[i].Enabled())
+                mushrooms_[i].Draw();
+        }
 		ofPopMatrix();
 		//draw butterfly
 		butterfly.drawFaces();
@@ -203,9 +214,10 @@ namespace Jungle
 	void Level1::keyPressed( int key )
 	{
         Player& player = JungleApp::PlayerInstance();
-
-        ofVec3f pos = mushrooms_[0].getPosition();
-		ofVec3f scale = mushrooms_[0].getScale();
+        
+        int index = 1;
+        ofVec3f pos = mushrooms_[index].getPosition();
+		ofVec3f scale = mushrooms_[index].getScale();
 
         
         //this->GetParent()->keyPressed(key);
@@ -231,11 +243,11 @@ namespace Jungle
                 break;
             case 'e':
                 scale+=0.001;
-                mushrooms_[0].setScale(scale.x, scale.y,scale.z);
+                mushrooms_[index].setScale(scale.x, scale.y,scale.z);
                 break;
             case 'c':
                 scale-=0.001;
-                mushrooms_[0].setScale(scale.x, scale.y,scale.z);
+                mushrooms_[index].setScale(scale.x, scale.y,scale.z);
                 break;
             case 'y':
                 break;
@@ -266,7 +278,7 @@ namespace Jungle
                 break;
 		}
         
-		mushrooms_[0].setPosition(pos.x, pos.y, pos.z);
+		mushrooms_[index].setPosition(pos.x, pos.y, pos.z);
 	}
 
 	void Level1::mouseMoved( int x, int y )
