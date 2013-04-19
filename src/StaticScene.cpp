@@ -64,6 +64,11 @@ namespace Jungle
 		bg_2_.AddToScene();
 		bg_1_.AddToScene();
 		tree_.AddToScene();
+		
+		atmo.loadSound("audio/jungle-atmos-2.mp3");
+		atmo.setLoop(true);
+        
+		atmo.play();
         
 
 	}

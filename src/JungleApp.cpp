@@ -45,10 +45,7 @@ namespace Jungle
         ofSetFrameRate(60);
 		//ofEnableAlphaBlending();
 //         
-         atmo.loadSound("audio/jungle-atmos-2.mp3");
-         atmo.setLoop(true);
-        
-         atmo.play();
+         
 	}
 
 	//--------------------------------------------------------------
