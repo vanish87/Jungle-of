@@ -18,6 +18,7 @@ namespace Jungle
 		max_ = GetConfig("max.pex");
 
 		emitter_.loadFromXml("min.pex");
+        emitter2_.loadFromXml("max.pex");
 	}
 
 	void WindGenerator::Update( float t, float min, float max , ofVec3f hand_pos)
@@ -31,6 +32,10 @@ namespace Jungle
 			emitter_.sourcePosition.x = hand_pos.x;
 			emitter_.sourcePosition.y = hand_pos.y;
 			emitter_.update();
+            
+            emitter2_.sourcePosition.x = hand_pos.x;
+			emitter2_.sourcePosition.y = hand_pos.y;
+			emitter2_.update();
 		}
 	}
 
@@ -39,6 +44,7 @@ namespace Jungle
 		if(enabled_)
 		{
 			emitter_.draw(0,0);
+            emitter2_.draw(0, 0);
             
 		}
 	}
