@@ -55,7 +55,7 @@ namespace Jungle
 		void	userMove(ofxUser & user);
 		void	userOut(ofxUser & user);
         
-        //ofSoundPlayer atmo;
+        ofSoundPlayer atmo;
         
 	};
 

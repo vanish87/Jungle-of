@@ -43,10 +43,10 @@ namespace Jungle
 		StateManagerInstance().ChangeState(level1_, SOP_PUSH);
 		//ofEnableAlphaBlending();
 //         
-//         atmo.loadSound("jungle-atmos-mixed.mp3");
-//         atmo.setLoop(true);
+         atmo.loadSound("audio/jungle-atmos-2.mp3");
+         atmo.setLoop(true);
         
-//         atmo.play();
+         atmo.play();
 	}
 
 	//--------------------------------------------------------------
