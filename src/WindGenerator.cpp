@@ -14,8 +14,8 @@ namespace Jungle
 
 	void WindGenerator::Init()
 	{
-		min_ = GetConfig("min.pex");
-		max_ = GetConfig("max.pex");
+		//min_ = GetConfig("min.pex");
+		//max_ = GetConfig("max.pex");
 
 		emitter_.loadFromXml("min.pex");
         emitter2_.loadFromXml("max.pex");
@@ -25,10 +25,10 @@ namespace Jungle
 	{
 		if(enabled_)
 		{			
-			config_ = LerpConfig(t, min, max, min_, max_);
-			config_.sourcePosition.x = hand_pos.x;
-			config_.sourcePosition.y = hand_pos.y;
-			SetConfig(emitter_, config_);
+			//config_ = LerpConfig(t, min, max, min_, max_);
+			//config_.sourcePosition.x = hand_pos.x;
+			//config_.sourcePosition.y = hand_pos.y;
+			//SetConfig(emitter_, config_);
 			emitter_.sourcePosition.x = hand_pos.x;
 			emitter_.sourcePosition.y = hand_pos.y;
 			emitter_.update();
@@ -44,7 +44,7 @@ namespace Jungle
 		if(enabled_)
 		{
 			emitter_.draw(0,0);
-            emitter2_.draw(0, 0);
+            emitter2_.draw(0,0);
             
 		}
 	}
