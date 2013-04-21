@@ -59,7 +59,6 @@ namespace Jungle
 		mushroom2.Enable(false);
 		mushrooms_.push_back(mushroom2);
         
-<<<<<<< HEAD
         Flower mushroom3;
 		mushroom3.loadModel("shroom.obj");
 		mushroom3.setPosition(17, 12, 29);
@@ -75,10 +74,8 @@ namespace Jungle
 		mushroom4.setRotation(0,180,1,0,0);
 		mushroom4.Enable(false);
 		mushrooms_.push_back(mushroom4);
-=======
+
         title_.loadImage("title-screen-3.png");
-        
->>>>>>> tile screen added
         
         Flower mushroom5;
 		mushroom5.loadModel("shroom.obj");
