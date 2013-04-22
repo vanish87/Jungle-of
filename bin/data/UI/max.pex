@@ -23,13 +23,13 @@
 <finishColor red="0.00" green="0.29" blue="1.00" alpha="0.80"></finishColor>
 <finishColorVariance red="0.19" green="0.19" blue="0.19" alpha="0.20"></finishColorVariance>
 
-<maxParticles value="300"></maxParticles>
+<maxParticles value="100"></maxParticles>
 
 <startParticleSize value="5.00"></startParticleSize>
 <startParticleSizeVariance value="2.00"></startParticleSizeVariance>
 
-<finishParticleSize value="10.00"></finishParticleSize>
-<FinishParticleSizeVariance value="3.00"></FinishParticleSizeVariance>
+<finishParticleSize value="7.00"></finishParticleSize>
+<FinishParticleSizeVariance value="1.00"></FinishParticleSizeVariance>
 
 <duration value="-1.00"></duration>
 <emitterType value="0"></emitterType>

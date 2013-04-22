@@ -20,7 +20,7 @@ namespace Jungle
 		Player& player = JungleApp::PlayerInstance();
         //set up mushrooms
         //set up space limits
-        player.butterfly_->SetRange(ofVec3f(300, 500, 0), ofVec3f(-300, 20, 0));
+        player.butterfly_->SetRange(ofVec3f(300, 240, 0), ofVec3f(-300, 20, 0));
         
         light_.setAmbientColor(ofFloatColor(0.5, 0.5, 0.5));
         light_.setDiffuseColor(ofFloatColor(1 ,1 ,1));
@@ -290,13 +290,15 @@ namespace Jungle
 		ofPopMatrix();
 
 		ofPushMatrix();
-		ofSetColor(255,0,0);
+        ofEnableAlphaBlending();
+		ofSetColor(255, 226, 141, 50);
 		if(player.path_.size() > 1)
 		for(vector<pair<ofVec3f,float> >::iterator it = player.path_.begin(); it!= player.path_.end()- 1; ++it)
 		{
 			ofLine(ofPoint(it->first.x, it->first.y), ofPoint((it+1)->first.x, (it+1)->first.y));
 		}
-
+        ofDisableAlphaBlending();
+        
 // 		ofPoint p;
 // 		ofPoint pp;
 // 		for(int i=0; i < 50; ++i)
@@ -351,9 +353,9 @@ namespace Jungle
         ofVec3f pos = mushrooms_[index].getPosition();
 		ofVec3f scale = mushrooms_[index].getScale();
 
-        
-       // this->GetParent()->keyPressed(key);
-       // return;
+        //static scene
+        this->GetParent()->keyPressed(key);
+        return;
 		switch (key)
 		{
             case 's':

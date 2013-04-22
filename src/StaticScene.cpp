@@ -28,7 +28,7 @@ namespace Jungle
         
         bg_1_.loadModel("Environment/BG_1.obj");
 		//0,-46, 0
-		bg_1_.setPosition(0,-45,-70);
+		bg_1_.setPosition(-10,-45,-70);
 		bg_1_.setScale(1,1,1);
 		bg_1_.setRotation(0, 180, 0, 0, 1);
         bg_1_.setRotation(1, 180, 0, 1, 0);
@@ -36,7 +36,7 @@ namespace Jungle
         
         bg_2_.loadModel("Environment/BG_2.obj");
 		//0,-46, 0
-		bg_2_.setPosition(0,-10,-135);
+		bg_2_.setPosition(-10,-10,-135);
 		bg_2_.setScale(1,1,1);
 		bg_2_.setRotation(0, 180, 0, 0, 1);        
         bg_2_.setRotation(1, 180, 0, 1, 0);
@@ -44,7 +44,7 @@ namespace Jungle
         
         bg_3_.loadModel("Environment/BG_3.obj");
 		//0,-46, 0
-		bg_3_.setPosition(0,-15,-415);
+		bg_3_.setPosition(-10,-15,-415);
 		bg_3_.setScale(2,2,2);
 		bg_3_.setRotation(0, 180, 0, 0, 1);        
         bg_3_.setRotation(1, 180, 0, 1, 0);
@@ -52,7 +52,7 @@ namespace Jungle
         
         ground_.loadModel("Environment/Ground_N_Rocks.obj");
 		//0,-46, 0
-		ground_.setPosition(0,18,0);
+		ground_.setPosition(-10,18,0);
 		ground_.setScale(1,1,1);
 		ground_.setRotation(0, 180, 0, 0, 1);
 		ground_.Enable(true);
