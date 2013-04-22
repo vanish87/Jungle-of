@@ -155,7 +155,7 @@ namespace Jungle
 		ofVec3f old_pos = player_camera_.getPosition();
 		old_pos.z = 0;
 		ofVec3f delta = camera_pos_ - old_pos;
-		if(delta.length() > 5)
+		if(delta.length() > 2)
 		{
 			old_pos += delta / 30;
 			player_camera_.setPosition(old_pos.x, old_pos.y,player_camera_.getPosition().z);
@@ -176,7 +176,10 @@ namespace Jungle
 
 	void Player::SetHandPos( ofVec3f pos )
 	{
-		hand_pos_ = pos;		
+		hand_pos_ = pos;
+        pos.x = ofClamp(pos.x, 300, 1280-300);
+        pos.y = ofClamp(pos.y, 200, 720-200);
+        
 		if(!path_.empty())
 		{
 			ofVec3f back_pos = path_.back().first;
