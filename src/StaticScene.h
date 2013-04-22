@@ -42,7 +42,7 @@ namespace Jungle
         SceneModel bg_3_;        
         SceneModel bg_4_;
         SceneModel ground_;
-
+        SceneModel rocks_;
 
 		SceneModel* model_ ;
 

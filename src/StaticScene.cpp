@@ -19,7 +19,7 @@ namespace Jungle
 		x_ = ofGetWindowPositionX();
 		y_ = ofGetWindowPositionY();
 		
-		tree_.loadModel("Environment/TREE_LEAVES_BUSH_2.obj");
+		tree_.loadModel("Environment/tree_bush_leaves_3.obj");
 		//0,-46, 0
 		tree_.setPosition(10,-56,0);
 		tree_.setScale(1,1,1);
@@ -50,17 +50,24 @@ namespace Jungle
         bg_3_.setRotation(1, 180, 0, 1, 0);
 		bg_3_.Enable(true);
         
-        ground_.loadModel("Environment/Ground_N_Rocks.obj");
+        ground_.loadModel("Environment/ground_4.obj");
 		//0,-46, 0
 		ground_.setPosition(-10,18,0);
 		ground_.setScale(1,1,1);
 		ground_.setRotation(0, 180, 0, 0, 1);
 		ground_.Enable(true);
         
+        rocks_.loadModel("Environment/rocks_only.obj");
+		//0,-46, 0
+		rocks_.setPosition(-10,18,0);
+		rocks_.setScale(1,1,1);
+		rocks_.setRotation(0, 180, 0, 0, 1);
+		rocks_.Enable(true);
+        
         model_ = &tree_;
         
 		ground_.AddToScene();
-        
+        rocks_.AddToScene();
 		bg_3_.AddToScene();
 		bg_2_.AddToScene();
 		bg_1_.AddToScene();
