@@ -21,7 +21,7 @@ namespace Jungle
 		
 		tree_.loadModel("Environment/tree_Bush_Combined_2.obj");
 		//0,-46, 0
-		tree_.setPosition(10,-56,0);
+		tree_.setPosition(10,-56,-2);
 		tree_.setScale(1,1,1);
 		tree_.setRotation(0, 180, 0, 0, 1);
 		tree_.Enable(true);
@@ -59,7 +59,7 @@ namespace Jungle
         
         rocks_.loadModel("Environment/rocks_only.obj");
 		//0,-46, 0
-		rocks_.setPosition(-10,18,0);
+		rocks_.setPosition(-10,18,-10);
 		rocks_.setScale(1,1,1);
 		rocks_.setRotation(0, 180, 0, 0, 1);
 		rocks_.Enable(true);
