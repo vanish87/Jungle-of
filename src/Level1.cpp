@@ -50,7 +50,7 @@ namespace Jungle
         //if not called, default value is 0.008
 		mushroom.SetMaxScale(0.008);
 		mushroom.setRotation(0,180,1,0,0);
-		mushroom.setRotation(1,180,0,1,0);
+		mushroom.setRotation(1,90,0,1,0);
 		mushroom.Enable(false);
 		mushrooms_.push_back(mushroom);
         
