@@ -49,7 +49,7 @@ namespace Jungle
 		mushroom2.loadModel("Environment/shroom_alpha.obj");
 		mushroom2.setPosition(20, 12, 25);
 		mushroom2.setRotation(0,180,1,0,0);
-		mushroom2.Enable(false);
+		mushroom2.Enable(true);
 		mushrooms_.push_back(mushroom2);
         
         Flower mushroom3;
@@ -184,9 +184,15 @@ namespace Jungle
         
         //// Flower Placing
         
+        //17
         Flower mushroom;
 		mushroom.loadModel("Environment/flower_alpha.obj");
+<<<<<<< HEAD
 		mushroom.setPosition(103, 120, 0);
+=======
+        //112 110 -5
+		mushroom.setPosition(112, 119, -5);
+>>>>>>> flower position
         //default value of max scaling
         //call this fun to set different size of mushroom
         //if not called, default value is 0.008
@@ -198,7 +204,12 @@ namespace Jungle
         
         Flower mushroom19;
 		mushroom19.loadModel("Environment/flower_alpha.obj");
+<<<<<<< HEAD
 		mushroom19.setPosition(53, 172, 0);
+=======
+        //55 167 0
+		mushroom19.setPosition(55, 176, 0);
+>>>>>>> flower position
         //default value of max scaling
         //call this fun to set different size of mushroom
         //if not called, default value is 0.008
@@ -210,7 +221,12 @@ namespace Jungle
         
         Flower mushroom20;
 		mushroom20.loadModel("Environment/flower_alpha.obj");
+<<<<<<< HEAD
 		mushroom20.setPosition(84, 191, 0);
+=======
+        //92 189 -3
+		mushroom20.setPosition(92, 198, -3);
+>>>>>>> flower position
         //default value of max scaling
         //call this fun to set different size of mushroom
         //if not called, default value is 0.008
@@ -222,11 +238,17 @@ namespace Jungle
         
         Flower mushroom21;
 		mushroom21.loadModel("Environment/flower_alpha.obj");
+<<<<<<< HEAD
 		mushroom21.setPosition(121, 203, 0);
+=======
+        //130 191 1
+        //0.02
+		mushroom21.setPosition(130, 203, -2);
+>>>>>>> flower position
         //default value of max scaling
         //call this fun to set different size of mushroom
         //if not called, default value is 0.008
-		mushroom21.SetMaxScale(0.008);
+		mushroom21.SetMaxScale(0.02);
 		mushroom21.setRotation(0,180,1,0,0);
 		mushroom21.setRotation(1,90,0,1,0);
 		mushroom21.Enable(false);
@@ -234,7 +256,12 @@ namespace Jungle
         
         Flower mushroom22;
 		mushroom22.loadModel("Environment/flower_alpha.obj");
+<<<<<<< HEAD
 		mushroom22.setPosition(161, 197, 0);
+=======
+        //174 186 -4
+		mushroom22.setPosition(174, 195, -4);
+>>>>>>> flower position
         //default value of max scaling
         //call this fun to set different size of mushroom
         //if not called, default value is 0.008
@@ -246,7 +273,12 @@ namespace Jungle
         
         Flower mushroom23;
 		mushroom23.loadModel("Environment/flower_alpha.obj");
+<<<<<<< HEAD
 		mushroom23.setPosition(-208, 137, 0);
+=======
+        //-203 126 7
+		mushroom23.setPosition(-203, 135, 7);
+>>>>>>> flower position
         //default value of max scaling
         //call this fun to set different size of mushroom
         //if not called, default value is 0.008
@@ -258,7 +290,12 @@ namespace Jungle
         
         Flower mushroom24;
 		mushroom24.loadModel("Environment/flower_alpha.obj");
+<<<<<<< HEAD
 		mushroom24.setPosition(-102, 138, 3);
+=======
+        //-98 130 3
+		mushroom24.setPosition(-98, 139, 3);
+>>>>>>> flower position
         //default value of max scaling
         //call this fun to set different size of mushroom
         //if not called, default value is 0.008
@@ -270,11 +307,17 @@ namespace Jungle
         
         Flower mushroom25;
 		mushroom25.loadModel("Environment/flower_alpha.obj");
+<<<<<<< HEAD
 		mushroom25.setPosition(-170, 195, 3);
+=======
+        //-168 185 -5
+        //0.022
+		mushroom25.setPosition(-168, 194, -5);
+>>>>>>> flower position
         //default value of max scaling
         //call this fun to set different size of mushroom
         //if not called, default value is 0.008
-		mushroom25.SetMaxScale(0.008);
+		mushroom25.SetMaxScale(0.022);
 		mushroom25.setRotation(0,180,1,0,0);
 		mushroom25.setRotation(1,90,0,1,0);
 		mushroom25.Enable(false);
@@ -282,7 +325,12 @@ namespace Jungle
         
         Flower mushroom26;
 		mushroom26.loadModel("Environment/flower_alpha.obj");
+<<<<<<< HEAD
 		mushroom26.setPosition(-94, 206, 0);
+=======
+        //-98 201 -6
+		mushroom26.setPosition(-98, 210, -6);
+>>>>>>> flower position
         //default value of max scaling
         //call this fun to set different size of mushroom
         //if not called, default value is 0.008
@@ -294,7 +342,12 @@ namespace Jungle
         
         Flower mushroom27;
 		mushroom27.loadModel("Environment/flower_alpha.obj");
+<<<<<<< HEAD
 		mushroom27.setPosition(-60, 211, -4);
+=======
+        //
+		mushroom27.setPosition(-48, 214, -4);
+>>>>>>> flower position
         //default value of max scaling
         //call this fun to set different size of mushroom
         //if not called, default value is 0.008
@@ -316,7 +369,21 @@ namespace Jungle
 		mushroom28.Enable(false);
 		mushrooms_.push_back(mushroom28);
         
+<<<<<<< HEAD
         
+=======
+        Flower mushroom29;
+		mushroom29.loadModel("Environment/flower_alpha.obj");
+		mushroom29.setPosition(-62, 211, 6);
+        //default value of max scaling
+        //call this fun to set different size of mushroom
+        //if not called, default value is 0.008
+		mushroom29.SetMaxScale(0.008);
+		mushroom29.setRotation(0,180,1,0,0);
+		mushroom29.setRotation(1,90,0,1,0);
+		mushroom29.Enable(false);
+		//mushrooms_.push_back(mushroom29);
+>>>>>>> flower position
         
 		w_ = ofGetWindowWidth();
 		h_ = ofGetWindowHeight();
@@ -391,15 +458,16 @@ namespace Jungle
         //ofDrawAxis(100);
         glDisable(GL_DEPTH_TEST);
         light_.disable();
+
+
+		camera.end();
+		ofDisableAlphaBlending();
+
         
         
         ofDisableLighting();
         ofEnableAlphaBlending();
 		player.wind_.Draw();
-
-		camera.end();
-		ofDisableAlphaBlending();
-
         
 		ofPushMatrix();
         ofVec3f hand_pos_ = player.GetHandPos();
@@ -484,7 +552,7 @@ namespace Jungle
 	{
         Player& player = JungleApp::PlayerInstance();
         
-        int index = 0;
+        int index = 20;
         ofVec3f pos = mushrooms_[index].getPosition();
 		ofVec3f scale = mushrooms_[index].getScale();
 
