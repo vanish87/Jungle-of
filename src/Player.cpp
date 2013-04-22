@@ -155,10 +155,10 @@ namespace Jungle
 		ofVec3f old_pos = player_camera_.getPosition();
 		old_pos.z = 0;
 		ofVec3f delta = camera_pos_ - old_pos;
-		if(delta.length() > 5 )
+		if(delta.length() > 7 )
 		{
            // camera_moving_ = true;
-			old_pos += delta / 3;
+			old_pos += delta / 30;
 			player_camera_.setPosition(old_pos.x, old_pos.y,player_camera_.getPosition().z);
 		}
         if(delta.length() < 0.1)
@@ -167,7 +167,7 @@ namespace Jungle
         }
 
         
-        cout<<delta.length()<<endl;
+        //cout<<delta.length()<<endl;
 
 		butterfly_->Update(ofGetLastFrameTime());
 		//cout<<camera_pos_.x<< " "<<camera_pos_.y<<"\r";
