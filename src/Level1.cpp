@@ -58,7 +58,7 @@ namespace Jungle
 		mushroom2.loadModel("Environment/shroom_alpha.obj");
 		mushroom2.setPosition(20, 20, 28);
 		mushroom2.setRotation(0,180,1,0,0);
-		mushroom2.Enable(true);
+		mushroom2.Enable(false);
 		mushrooms_.push_back(mushroom2);
         
         Flower mushroom3;
@@ -66,14 +66,14 @@ namespace Jungle
 		mushroom3.setPosition(17, 20, 28);
 		mushroom3.SetMaxScale(0.01);
 		mushroom3.setRotation(0,180,1,0,0);
-		mushroom3.Enable(true);
+		mushroom3.Enable(false);
 		mushrooms_.push_back(mushroom3);
        
         Flower mushroom4;
 		mushroom4.loadModel("Environment/shroom_alpha.obj");
 		mushroom4.setPosition(26, 12, 32);
 		mushroom4.setRotation(0,180,1,0,0);
-		mushroom4.Enable(true);
+		mushroom4.Enable(false);
 		mushrooms_.push_back(mushroom4);
 
         title_.loadImage("/UI/title-screen-3.png");
@@ -83,7 +83,7 @@ namespace Jungle
 		mushroom5.setPosition(27, 12, 28);
         mushroom3.SetMaxScale(0.01);
 		mushroom5.setRotation(0,180,1,0,0);
-		mushroom5.Enable(true);
+		mushroom5.Enable(false);
 		mushrooms_.push_back(mushroom5);
        
         Flower mushroom6;
@@ -91,7 +91,7 @@ namespace Jungle
 		mushroom6.setPosition(-79, 12, 27);
         mushroom3.SetMaxScale(0.01);
 		mushroom6.setRotation(0,180,1,0,0);
-		mushroom6.Enable(true);
+		mushroom6.Enable(false);
 		mushrooms_.push_back(mushroom6);
         
         Flower mushroom7;
@@ -106,7 +106,7 @@ namespace Jungle
 		mushroom8.setPosition(-79, 12, 25);
         mushroom8.SetMaxScale(0.01);
 		mushroom8.setRotation(0,180,1,0,0);
-		mushroom8.Enable(true);
+		mushroom8.Enable(false);
 		mushrooms_.push_back(mushroom8);
         
         Flower mushroom9;
@@ -114,7 +114,7 @@ namespace Jungle
 		mushroom9.setPosition(-144, 12, 29);
         mushroom9.SetMaxScale(0.01);
 		mushroom9.setRotation(0,180,1,0,0);
-		mushroom9.Enable(true);
+		mushroom9.Enable(false);
 		mushrooms_.push_back(mushroom9);
         
         Flower mushroom10;
@@ -130,7 +130,7 @@ namespace Jungle
 		mushroom11.setPosition(82, 12, 29);
         mushroom11.SetMaxScale(0.01);
 		mushroom11.setRotation(0,180,1,0,0);
-		mushroom11.Enable(true);
+		mushroom11.Enable(false);
 		mushrooms_.push_back(mushroom11);
         
         Flower mushroom12;
@@ -138,7 +138,7 @@ namespace Jungle
 		mushroom12.setPosition(92, 12, 29);
         mushroom12.SetMaxScale(0.01);
 		mushroom12.setRotation(0,180,1,0,0);
-		mushroom12.Enable(true);
+		mushroom12.Enable(false);
 		mushrooms_.push_back(mushroom12);
         
         
@@ -165,7 +165,7 @@ namespace Jungle
 		mushroom15.setPosition(217, 12, 29);
         mushroom15.SetMaxScale(0.01);
 		mushroom15.setRotation(0,180,1,0,0);
-		mushroom15.Enable(false);
+		mushroom15.Enable(true);
 		mushrooms_.push_back(mushroom15);
         
         Flower mushroom16;
