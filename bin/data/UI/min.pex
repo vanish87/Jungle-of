@@ -14,7 +14,7 @@
 <radialAccelVariance value="0.00"></radialAccelVariance>
 <tangentialAcceleration value="0.00"></tangentialAcceleration>
 <tangentialAccelVariance value="0.00"></tangentialAccelVariance>
-<speed value="100"></speed>
+<speed value="50"></speed>
 <speedVariance value="10"></speedVariance>
 
 <startColor red="1.00" green="0.88" blue="0.55" alpha="0.60"></startColor>
