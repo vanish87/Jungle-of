@@ -17,25 +17,25 @@
 <speed value="20"></speed>
 <speedVariance value="2"></speedVariance>
 
-<startColor red="0.00" green="0.29" blue="1.00" alpha="0.80"></startColor>
-<startColorVariance red="0.19" green="0.19" blue="0.19" alpha="0.20"></startColorVariance>
+<startColor red="0.00" green="0.29" blue="1.00" alpha="0.60"></startColor>
+<startColorVariance red="0.29" green="0.29" blue="0.29" alpha="0.10"></startColorVariance>
 
-<finishColor red="0.00" green="0.29" blue="1.00" alpha="0.80"></finishColor>
-<finishColorVariance red="0.19" green="0.19" blue="0.19" alpha="0.20"></finishColorVariance>
+<finishColor red="0.00" green="0.29" blue="1.00" alpha="0.30"></finishColor>
+<finishColorVariance red="0.29" green="0.29" blue="0.29" alpha="0.10"></finishColorVariance>
 
 <maxParticles value="100"></maxParticles>
 
 <startParticleSize value="5.00"></startParticleSize>
-<startParticleSizeVariance value="2.00"></startParticleSizeVariance>
+<startParticleSizeVariance value="5.00"></startParticleSizeVariance>
 
 <finishParticleSize value="7.00"></finishParticleSize>
-<FinishParticleSizeVariance value="1.00"></FinishParticleSizeVariance>
+<FinishParticleSizeVariance value="6.00"></FinishParticleSizeVariance>
 
 <duration value="-1.00"></duration>
-<emitterType value="0"></emitterType>
+<emitterType value="1"></emitterType>
 
-<maxRadius value="30.00"></maxRadius>
-<maxRadiusVariance value="10.00"></maxRadiusVariance>
+<maxRadius value="25.00"></maxRadius>
+<maxRadiusVariance value="5.00"></maxRadiusVariance>
 <minRadius value="0.00"></minRadius>
 
 <rotatePerSecond value="7.00"></rotatePerSecond>
