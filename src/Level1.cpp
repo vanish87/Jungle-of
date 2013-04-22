@@ -262,6 +262,12 @@ namespace Jungle
         //ofDrawAxis(100);
         glDisable(GL_DEPTH_TEST);
         light_.disable();
+        
+        
+        ofDisableLighting();
+        ofEnableAlphaBlending();
+		player.wind_.Draw();
+
 		camera.end();
 		ofDisableAlphaBlending();
 
