@@ -53,7 +53,7 @@ namespace Jungle
         ground_.loadModel("Environment/ground_4.obj");
 		//0,-46, 0
 		ground_.setPosition(-10,18,0);
-		ground_.setScale(1,1,1);
+		ground_.setScale(1.5,1,1);
 		ground_.setRotation(0, 180, 0, 0, 1);
 		ground_.Enable(true);
         
