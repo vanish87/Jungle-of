@@ -45,8 +45,7 @@ namespace Jungle
                 
                 if(dir.y > 0)
                 {
-                    emitter_.angle += 180;
-                    if(dir.x < 0) emitter_.angle -= 180;
+                    emitter_.angle = 360 - emitter_.angle;
                     
                 }
             }

@@ -51,6 +51,8 @@ namespace Jungle {
 		float inter_time_;
 
 		ofVec3f butterfly_pos_ss_;
+        
+        bool camera_moving_;
 
 	//private copy constructor to avoid inconsistent of Singleton Pattern
 	private:

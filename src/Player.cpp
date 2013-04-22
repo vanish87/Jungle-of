@@ -37,7 +37,7 @@ namespace Jungle
 		test_.push_back(ofVec3f(200, 300, 0));
         
         detected_ = true;
-
+        camera_moving_ =false;
 
     };
     Player::~Player(void)
@@ -150,18 +150,24 @@ namespace Jungle
 
 			butterfly_->butterfly_pos_ = ws_pos;
 		}
-        
-		camera_pos_ = ofVec3f(butterfly_->getPosition().x, butterfly_->getPosition().y, 0);
+       // if(!camera_moving_)
+            camera_pos_ = ofVec3f(butterfly_->getPosition().x, butterfly_->getPosition().y, 0);
 		ofVec3f old_pos = player_camera_.getPosition();
 		old_pos.z = 0;
 		ofVec3f delta = camera_pos_ - old_pos;
-		if(delta.length() > 2)
+		if(delta.length() > 5 )
 		{
-			old_pos += delta / 30;
+           // camera_moving_ = true;
+			old_pos += delta / 3;
 			player_camera_.setPosition(old_pos.x, old_pos.y,player_camera_.getPosition().z);
 		}
+        if(delta.length() < 0.1)
+        {
+            ;//camera_moving_ = false;
+        }
 
-
+        
+        cout<<delta.length()<<endl;
 
 		butterfly_->Update(ofGetLastFrameTime());
 		//cout<<camera_pos_.x<< " "<<camera_pos_.y<<"\r";
@@ -177,8 +183,8 @@ namespace Jungle
 	void Player::SetHandPos( ofVec3f pos )
 	{
 		hand_pos_ = pos;
-       // pos.x = ofClamp(pos.x, 300, 1280-300);
-       // pos.y = ofClamp(pos.y, 200, 720-200);
+        //pos.x = ofClamp(pos.x, 300, 1280-300);
+        //pos.y = ofClamp(pos.y, 200, 720-200);
         
 		if(!path_.empty())
 		{
@@ -187,7 +193,14 @@ namespace Jungle
 		}
 
 		if(path_.size() > MAX_PATH_LENGTH )
-			path_.erase(path_.begin());
+        {
+            if((path_[0].first - path_.back().first).length() > 50)
+            {
+                for(int i=0;i < 10 ;++i)                    
+                    ;//      path_.erase(path_.begin());
+            }
+                path_.erase(path_.begin());
+        }
 		path_.push_back(make_pair(pos, ofGetElapsedTimef()));
 	}
 
