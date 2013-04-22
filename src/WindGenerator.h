@@ -214,7 +214,7 @@ namespace Jungle
 		ParticleConfig LerpConfig(float t, float min, float max, ParticleConfig& min_config, ParticleConfig& max_config);
 		void SetConfig(ofx3DParticleEmitter& emitter, ParticleConfig& config);
 
-	private:
+	public:
 		//status
 		bool enabled_;
 

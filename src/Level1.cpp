@@ -338,7 +338,7 @@ namespace Jungle
 		ofVec3f mh_pos = ofVec3f(mushrooms_[0].getPosition().x, mushrooms_[0].getPosition().y, 0);
         
 		ofSetColor(255, 255, 255,255);
-		ofDrawBitmapString("moving_time_ "+ ofToString(player.moving_time_), 20, 20);
+		ofDrawBitmapString("angle "+ ofToString(player.wind_.emitter_.angle), 20, 20);
 		ofDrawBitmapString("v length "+ ofToString((bt_pos - mh_pos).length()), 20, 40);
 		ofDrawBitmapString("scale "+ ofToString(mushrooms_[0].getScale().x), 20, 60);
 		

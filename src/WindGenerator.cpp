@@ -37,7 +37,20 @@ namespace Jungle
 			emitter2_.sourcePosition.y = hand_pos.y;
 			emitter2_.update();
             
-            emitter_.angle = ofVec3f(1,0,0).dot( hand_pos-pre_hand_pos_);
+            if((hand_pos-pre_hand_pos_) != ofVec3f(0, 0, 0))
+            {
+                ofVec3f dir = (hand_pos-pre_hand_pos_).normalize();
+                dir.x = -dir.x;
+                emitter_.angle = acos(ofVec3f(1,0,0).dot(dir)) * 180/3.14;
+                
+                if(dir.y > 0)
+                {
+                    emitter_.angle += 180;
+                    if(dir.x < 0) emitter_.angle -= 180;
+                    
+                }
+            }
+            
             
             pre_hand_pos_ = hand_pos;
 		}

@@ -177,8 +177,8 @@ namespace Jungle
 	void Player::SetHandPos( ofVec3f pos )
 	{
 		hand_pos_ = pos;
-        pos.x = ofClamp(pos.x, 300, 1280-300);
-        pos.y = ofClamp(pos.y, 200, 720-200);
+       // pos.x = ofClamp(pos.x, 300, 1280-300);
+       // pos.y = ofClamp(pos.y, 200, 720-200);
         
 		if(!path_.empty())
 		{
