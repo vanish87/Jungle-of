@@ -186,7 +186,7 @@ namespace Jungle
         
         Flower mushroom;
 		mushroom.loadModel("Environment/flower_alpha.obj");
-		mushroom.setPosition(103, 120, 5);
+		mushroom.setPosition(103, 120, 0);
         //default value of max scaling
         //call this fun to set different size of mushroom
         //if not called, default value is 0.008
@@ -198,7 +198,7 @@ namespace Jungle
         
         Flower mushroom19;
 		mushroom19.loadModel("Environment/flower_alpha.obj");
-		mushroom19.setPosition(53, 172, 5);
+		mushroom19.setPosition(53, 172, 0);
         //default value of max scaling
         //call this fun to set different size of mushroom
         //if not called, default value is 0.008
@@ -210,7 +210,7 @@ namespace Jungle
         
         Flower mushroom20;
 		mushroom20.loadModel("Environment/flower_alpha.obj");
-		mushroom20.setPosition(84, 191, 5);
+		mushroom20.setPosition(84, 191, 0);
         //default value of max scaling
         //call this fun to set different size of mushroom
         //if not called, default value is 0.008
@@ -222,7 +222,7 @@ namespace Jungle
         
         Flower mushroom21;
 		mushroom21.loadModel("Environment/flower_alpha.obj");
-		mushroom21.setPosition(121, 203, 5);
+		mushroom21.setPosition(121, 203, 0);
         //default value of max scaling
         //call this fun to set different size of mushroom
         //if not called, default value is 0.008
@@ -234,7 +234,7 @@ namespace Jungle
         
         Flower mushroom22;
 		mushroom22.loadModel("Environment/flower_alpha.obj");
-		mushroom22.setPosition(161, 197, 5);
+		mushroom22.setPosition(161, 197, 0);
         //default value of max scaling
         //call this fun to set different size of mushroom
         //if not called, default value is 0.008
@@ -246,7 +246,7 @@ namespace Jungle
         
         Flower mushroom23;
 		mushroom23.loadModel("Environment/flower_alpha.obj");
-		mushroom23.setPosition(-208, 137, 5);
+		mushroom23.setPosition(-208, 137, 0);
         //default value of max scaling
         //call this fun to set different size of mushroom
         //if not called, default value is 0.008
@@ -258,7 +258,7 @@ namespace Jungle
         
         Flower mushroom24;
 		mushroom24.loadModel("Environment/flower_alpha.obj");
-		mushroom24.setPosition(-102, 138, 5);
+		mushroom24.setPosition(-102, 138, 3);
         //default value of max scaling
         //call this fun to set different size of mushroom
         //if not called, default value is 0.008
@@ -270,7 +270,7 @@ namespace Jungle
         
         Flower mushroom25;
 		mushroom25.loadModel("Environment/flower_alpha.obj");
-		mushroom25.setPosition(-170, 195, 6);
+		mushroom25.setPosition(-170, 195, 3);
         //default value of max scaling
         //call this fun to set different size of mushroom
         //if not called, default value is 0.008
@@ -282,7 +282,7 @@ namespace Jungle
         
         Flower mushroom26;
 		mushroom26.loadModel("Environment/flower_alpha.obj");
-		mushroom26.setPosition(-109, 206, 6);
+		mushroom26.setPosition(-94, 206, 0);
         //default value of max scaling
         //call this fun to set different size of mushroom
         //if not called, default value is 0.008
@@ -294,7 +294,7 @@ namespace Jungle
         
         Flower mushroom27;
 		mushroom27.loadModel("Environment/flower_alpha.obj");
-		mushroom27.setPosition(-60, 211, 6);
+		mushroom27.setPosition(-60, 211, -4);
         //default value of max scaling
         //call this fun to set different size of mushroom
         //if not called, default value is 0.008
@@ -306,7 +306,7 @@ namespace Jungle
     
         Flower mushroom28;
 		mushroom28.loadModel("Environment/flower_alpha.obj");
-		mushroom28.setPosition(-199, 143, 6);
+		mushroom28.setPosition(-199, 143, 3);
         //default value of max scaling
         //call this fun to set different size of mushroom
         //if not called, default value is 0.008
@@ -316,17 +316,7 @@ namespace Jungle
 		mushroom28.Enable(false);
 		mushrooms_.push_back(mushroom28);
         
-        Flower mushroom29;
-		mushroom29.loadModel("Environment/flower_alpha.obj");
-		mushroom29.setPosition(-62, 211, 6);
-        //default value of max scaling
-        //call this fun to set different size of mushroom
-        //if not called, default value is 0.008
-		mushroom29.SetMaxScale(0.008);
-		mushroom29.setRotation(0,180,1,0,0);
-		mushroom29.setRotation(1,90,0,1,0);
-		mushroom29.Enable(false);
-		mushrooms_.push_back(mushroom29);
+        
         
 		w_ = ofGetWindowWidth();
 		h_ = ofGetWindowHeight();
