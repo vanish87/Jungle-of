@@ -19,7 +19,7 @@ namespace Jungle
 		x_ = ofGetWindowPositionX();
 		y_ = ofGetWindowPositionY();
 		
-		tree_.loadModel("Environment/tree_bush_leaves_3.obj");
+		tree_.loadModel("Environment/tree_Bush_Combined_2.obj");
 		//0,-46, 0
 		tree_.setPosition(10,-56,0);
 		tree_.setScale(1,1,1);

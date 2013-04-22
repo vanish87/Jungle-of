@@ -1,0 +1,32 @@
+# 
+# Wavefront material file
+# Created with Kaydara FBX
+# 
+
+newmtl Bush
+map_Kd jungle_leaf_2.png
+Ka 0.000000 0.000000 0.000000
+Kd 0.800000 0.800000 0.800000
+illum 1
+Tr 1.000000
+
+newmtl Tree_Leafs_1
+map_Kd aqua-sq-600-50.png
+Ka 0.000000 0.000000 0.000000
+Kd 0.800000 0.800000 0.800000
+illum 1
+Tr 1.000000
+
+newmtl Tree_Leafs_4
+map_Kd mint-600-70.png
+Ka 0.000000 0.000000 0.000000
+Kd 0.800000 0.800000 0.800000
+illum 1
+Tr 1.000000
+
+newmtl Tree_Leafs_3
+map_Kd lime-600-70.png
+Ka 0.000000 0.000000 0.000000
+Kd 0.800000 0.800000 0.800000
+illum 1
+Tr 1.000000
