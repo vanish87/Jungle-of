@@ -24,7 +24,7 @@ namespace Jungle {
 		if(scale.x < max_scale_)
 		{
 			scale += 0.0001;
-			setScale(scale.x, scale.y, scale.z);
+			//setScale(scale.x, scale.y, scale.z);
 		}
         ofSetColor(color_.r, color_.g, color_.b);
         drawFaces();

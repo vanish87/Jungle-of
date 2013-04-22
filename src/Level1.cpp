@@ -360,8 +360,8 @@ namespace Jungle
 		ofVec3f scale = mushrooms_[index].getScale();
 
         //static scene
-        this->GetParent()->keyPressed(key);
-        return;
+        //this->GetParent()->keyPressed(key);
+        //return;
 		switch (key)
 		{
             case 's':

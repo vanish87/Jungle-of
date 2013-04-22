@@ -36,6 +36,10 @@ namespace Jungle
             emitter2_.sourcePosition.x = hand_pos.x;
 			emitter2_.sourcePosition.y = hand_pos.y;
 			emitter2_.update();
+            
+            emitter_.angle = ofVec3f(1,0,0).dot( hand_pos-pre_hand_pos_);
+            
+            pre_hand_pos_ = hand_pos;
 		}
 	}
 

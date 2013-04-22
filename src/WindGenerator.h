@@ -220,6 +220,8 @@ namespace Jungle
 
 		ofx3DParticleEmitter emitter_;
         ofx3DParticleEmitter emitter2_;
+        
+        ofVec3f pre_hand_pos_;
 
 		ParticleConfig config_;
 		ParticleConfig min_;
