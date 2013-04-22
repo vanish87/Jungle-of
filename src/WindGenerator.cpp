@@ -17,8 +17,8 @@ namespace Jungle
 		//min_ = GetConfig("min.pex");
 		//max_ = GetConfig("max.pex");
 
-		emitter_.loadFromXml("min.pex");
-        emitter2_.loadFromXml("max.pex");
+		emitter_.loadFromXml("UI/min.pex");
+        emitter2_.loadFromXml("UI/max.pex");
 	}
 
 	void WindGenerator::Update( float t, float min, float max , ofVec3f hand_pos)

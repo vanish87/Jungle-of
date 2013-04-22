@@ -17,20 +17,20 @@ namespace Jungle
         }
 
 		game_1_ = 0;
-		game_2_ = new GamingScene2();
+		//game_2_ = new GamingScene2();
 		//game_2_->Steup();
 		
-		game_3_ = new GamingScene3();
+		//game_3_ = new GamingScene3();
 		//game_3_->Steup();
 
-		game_4_ = new GamingScene4();
+		//game_4_ = new GamingScene4();
 		//game_4_->Steup();
 
 
-		game_5_ = new GamingScene5();
+		//game_5_ = new GamingScene5();
 		//game_5_->Steup();
 
-		game_6_ = new GamingScene6();
+		//game_6_ = new GamingScene6();
 		//game_6_->Steup();
 
 		static_scene_ = new StaticScene();

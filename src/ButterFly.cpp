@@ -11,7 +11,7 @@ namespace Jungle
         
         animation_time_ = 0;
         
-        loadModel("Yellow_Butterfly_1.dae");
+        loadModel("Environment/Yellow_Butterfly_1.dae");
         setPosition(butterfly_pos_.x,butterfly_pos_.y,butterfly_pos_.z);
 		setRotation(0, 150, 1, 0, 0);
         setScale(0.1, 0.1, 0.1);

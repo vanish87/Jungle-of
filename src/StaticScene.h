@@ -39,7 +39,8 @@ namespace Jungle
 		SceneModel tree_;
         SceneModel bg_1_;
         SceneModel bg_2_;
-        SceneModel bg_3_;
+        SceneModel bg_3_;        
+        SceneModel bg_4_;
         SceneModel ground_;
 
 

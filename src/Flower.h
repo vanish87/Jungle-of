@@ -12,11 +12,14 @@ namespace Jungle {
         ~Flower(void);
         
         void Draw();
+        void SetMaxScale(float scale);
         
     public:
         float flower_radius_;
 		bool flower_collided_;
         ofColor color_;
+        
+        float max_scale_;
     };
 }
 

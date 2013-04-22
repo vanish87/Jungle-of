@@ -1098,6 +1098,8 @@
 		BC0ED3B2171B144600FC92BD /* legacy code */ = {
 			isa = PBXGroup;
 			children = (
+				BC8D7989170EB2EB00DB4716 /* Level2.cpp */,
+				BC8D798A170EB2EB00DB4716 /* Level2.h */,
 				BC8D7986170E2D1D00DB4716 /* JungleParticle.cpp */,
 				BC8D7987170E2D1D00DB4716 /* JungleParticle.h */,
 				BC0ED3A9171B0FAE00FC92BD /* GamingScene6.cpp */,
@@ -1193,8 +1195,6 @@
 				BC8D7984170E2D0400DB4716 /* Level1.h */,
 				BC4A099517089BBB00DA37DD /* ButterFly.cpp */,
 				BC4A099617089BBB00DA37DD /* ButterFly.h */,
-				BC8D7989170EB2EB00DB4716 /* Level2.cpp */,
-				BC8D798A170EB2EB00DB4716 /* Level2.h */,
 				BC72959A1721C0CF0072FB4A /* CRSpline.cpp */,
 				BC72959B1721C0CF0072FB4A /* CRSpline.h */,
 				BC0ED3A6171B0F9300FC92BD /* SceneManager.cpp */,

@@ -79,76 +79,12 @@ namespace Jungle
 		wind_.Update(hand_radius_, 50, max_hand_radius_, hand_pos_);
 
 
-		
-
-		if((pre_hand_pos_ - hand_pos_).length() < 3 && !interval_)
-		{
-			hand_radius_ +=0.3;
-		}
-		else
-		{
-			hand_radius_ -= 1;
-		}
-
-		hand_radius_ = ofClamp(hand_radius_, 50, max_hand_radius_);
-		if (hand_radius_ == max_hand_radius_ && !interval_)
-		{
-			track_moving_ = true;
-			start_pos_ = hand_pos_;
-		}
-
-		butterfly_->butterfly_force_ = ofVec3f(0,0,0);
-		if (track_moving_)
-		{
-			if((pre_hand_pos_ - hand_pos_).length() > 20)
-				start_timing_ = true;
-			if(start_timing_)
-				moving_time_ +=ofGetLastFrameTime();
-
-			if(moving_time_ > 0.5)
-			{
-				hand_vel_ = hand_pos_ - start_pos_;
-				vlength =hand_vel_.length();
-				if( vlength > 40) //minimum required distance moved for the particles to have an impact on butterfly, measured in pixels
-				{
-					butterfly_->butterfly_force_ += hand_vel_.getNormalized() * 10;
-					cout<<"apply force"<<butterfly_->butterfly_force_.x<<" "<<butterfly_->butterfly_force_.y<<endl;
-					interval_ = true;
-				}
-				moving_time_ = 0;
-				track_moving_ = false;
-				start_timing_= false;
-                hand_radius_ = 50;
-			}
-		}
-
-		if(interval_)
-		{
-			interval_time_+=ofGetLastFrameTime();
-			if(interval_time_ > 1.5)
-            {
-                interval_time_ = 0;                
-				interval_ = false;
-            }
-		}
-
 
 		int x_ = ofGetWindowPositionX();
 		int y_ = ofGetWindowPositionY();
 
 		int w_ = ofGetWindowWidth();
 		int h_ = ofGetWindowHeight();
-
-		ofVec4f bird_pos_(0,20,28,1);
-		ofMatrix4x4 mat_ = player_camera_.getModelViewMatrix();
-
-		ofVec4f bird_pos_ss_= bird_pos_ * mat_ ;
-		mat_ = player_camera_.getProjectionMatrix();
-		ofVec4f ss = bird_pos_ss_ * mat_;
-		ofPoint screen_pos;
-		screen_pos.set(ss.x * w_/2 + (x_/2 + w_/2), h_ - (ss.y * h_/2 + (y_/2 + h_/2)));
-
-		//bird_pos_ss_.set(screen_pos.x, screen_pos.y);
 
 		ofVec4f vs_d = ofVec4f(0,0,22,0);
 		ofVec4f prj_d = vs_d * player_camera_.getProjectionMatrix();
@@ -219,7 +155,7 @@ namespace Jungle
 		ofVec3f old_pos = player_camera_.getPosition();
 		old_pos.z = 0;
 		ofVec3f delta = camera_pos_ - old_pos;
-		if(delta.length() > 10)
+		if(delta.length() > 4)
 		{
 			old_pos += delta / 30;
 			player_camera_.setPosition(old_pos.x, old_pos.y,player_camera_.getPosition().z);

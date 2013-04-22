@@ -19,22 +19,22 @@ namespace Jungle
 		x_ = ofGetWindowPositionX();
 		y_ = ofGetWindowPositionY();
 		
-		tree_.loadModel("Enviro_Beta_3.obj");
+		tree_.loadModel("Environment/TREE_LEAVES_BUSH_2.obj");
 		//0,-46, 0
-		tree_.setPosition(0,-46,0);
+		tree_.setPosition(10,-56,0);
 		tree_.setScale(1,1,1);
 		tree_.setRotation(0, 180, 0, 0, 1);
 		tree_.Enable(true);
         
-        bg_1_.loadModel("BG_1.obj");
+        bg_1_.loadModel("Environment/BG_1.obj");
 		//0,-46, 0
-		bg_1_.setPosition(0,-10,-70);
+		bg_1_.setPosition(0,-45,-70);
 		bg_1_.setScale(1,1,1);
 		bg_1_.setRotation(0, 180, 0, 0, 1);
         bg_1_.setRotation(1, 180, 0, 1, 0);
 		bg_1_.Enable(true);
         
-        bg_2_.loadModel("BG_2.obj");
+        bg_2_.loadModel("Environment/BG_2.obj");
 		//0,-46, 0
 		bg_2_.setPosition(0,-10,-135);
 		bg_2_.setScale(1,1,1);
@@ -42,15 +42,15 @@ namespace Jungle
         bg_2_.setRotation(1, 180, 0, 1, 0);
 		bg_2_.Enable(true);
         
-        bg_3_.loadModel("BG_3.obj");
+        bg_3_.loadModel("Environment/BG_3.obj");
 		//0,-46, 0
-		bg_3_.setPosition(0,-15,-215);
-		bg_3_.setScale(1,1,1);
+		bg_3_.setPosition(0,-15,-415);
+		bg_3_.setScale(2,2,2);
 		bg_3_.setRotation(0, 180, 0, 0, 1);        
         bg_3_.setRotation(1, 180, 0, 1, 0);
 		bg_3_.Enable(true);
         
-        ground_.loadModel("ground.obj");
+        ground_.loadModel("Environment/Ground_N_Rocks.obj");
 		//0,-46, 0
 		ground_.setPosition(0,18,0);
 		ground_.setScale(1,1,1);
@@ -60,12 +60,13 @@ namespace Jungle
         model_ = &tree_;
         
 		ground_.AddToScene();
+        
 		bg_3_.AddToScene();
 		bg_2_.AddToScene();
 		bg_1_.AddToScene();
 		tree_.AddToScene();
 		
-		atmo.loadSound("audio/jungle-atmos-2.mp3");
+		atmo.loadSound("Audio/jungle-atmos-2.mp3");
 		atmo.setLoop(true);
         
 		atmo.play();
@@ -83,7 +84,9 @@ namespace Jungle
 
 	void StaticScene::Draw()
 	{
-		ofSetColor(255, 255, 255);		
+		ofSetColor(255, 255, 255);
+        //set background here
+        ofBackground(0, 208, 246);
 		glEnable(GL_DEPTH_TEST);
 
 		ofPushMatrix();				
@@ -101,7 +104,7 @@ namespace Jungle
        
 
 		ofVec3f pos = model_->getPosition();
-		ofVec3f scale = tree_.getScale();
+		ofVec3f scale = model_->getScale();
 		switch (key)
 		{
 		case 's':
@@ -124,11 +127,11 @@ namespace Jungle
 			break;
 		case 'e':  
 			scale+=0.1;
-			tree_.setScale(scale.x, scale.y,scale.z);
+			model_->setScale(scale.x, scale.y,scale.z);
 			break;
 		case 'c':
 			scale-=0.1;
-			tree_.setScale(scale.x, scale.y,scale.z);
+			model_->setScale(scale.x, scale.y,scale.z);
 			break;
 		case 'y':
 			break;
@@ -138,11 +141,15 @@ namespace Jungle
 			break;
 		case 'j':
 			break;
+        case '4':
+            pos = ground_.getPosition();
+            model_ = &bg_4_;
+            break;
         case '5':   
 			pos = ground_.getPosition();
 			model_ = &ground_;
 			break;		
-        case '4':  
+        case '6':  
 			pos = tree_.getPosition();
 			model_ = &tree_;
 			break;
