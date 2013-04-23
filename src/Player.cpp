@@ -36,7 +36,11 @@ namespace Jungle
 		test_.push_back(ofVec3f(300, 300, 0));
 		test_.push_back(ofVec3f(200, 300, 0));
         
-        detected_ = true;
+        if(Jungle::KINECT_ENABLE)
+            detected_ = false;
+        else
+            detected_ = true;
+        
         camera_moving_ =false;
 
     };
