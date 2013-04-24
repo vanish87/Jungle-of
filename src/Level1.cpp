@@ -20,7 +20,7 @@ namespace Jungle
 		Player& player = JungleApp::PlayerInstance();
         //set up mushrooms
         //set up space limits
-        player.butterfly_->SetRange(ofVec3f(300, 240, 0), ofVec3f(-300, 20, 0));
+       // player.butterfly_->SetRange(ofVec3f(300, 240, 0), ofVec3f(-300, 20, 0));
         
         light_.setAmbientColor(ofFloatColor(0.5, 0.5, 0.5));
         light_.setDiffuseColor(ofFloatColor(1 ,1 ,1));
@@ -47,138 +47,138 @@ namespace Jungle
         
         Flower mushroom2;
 		mushroom2.loadModel("Environment/shroom_alpha.obj");
-		mushroom2.setPosition(20, 12, 25);
+		mushroom2.setPosition(20, -100, -140);
 		mushroom2.setRotation(0,180,1,0,0);
-		mushroom2.Enable(false);
+		mushroom2.Enable(true);
 		mushrooms_.push_back(mushroom2);
         
         Flower mushroom3;
 		mushroom3.loadModel("Environment/shroom_alpha.obj");
-		mushroom3.setPosition(17, 12, 25);
+		mushroom3.setPosition(17, -100, -150);
 		mushroom3.SetMaxScale(0.01);
 		mushroom3.setRotation(0,180,1,0,0);
-		mushroom3.Enable(false);
+		mushroom3.Enable(true);
 		mushrooms_.push_back(mushroom3);
        
         Flower mushroom4;
 		mushroom4.loadModel("Environment/shroom_alpha.obj");
-		mushroom4.setPosition(26, 12, 25);
+		mushroom4.setPosition(26, -110, -160);
 		mushroom4.setRotation(0,180,1,0,0);
-		mushroom4.Enable(false);
+		mushroom4.Enable(true);
 		mushrooms_.push_back(mushroom4);
 
         title_.loadImage("/UI/title-screen-3.png");
         
         Flower mushroom5;
 		mushroom5.loadModel("Environment/shroom_alpha.obj");
-		mushroom5.setPosition(27, 12, 25);
+		mushroom5.setPosition(27, -105, -150);
         mushroom3.SetMaxScale(0.01);
 		mushroom5.setRotation(0,180,1,0,0);
-		mushroom5.Enable(false);
+		mushroom5.Enable(true);
 		mushrooms_.push_back(mushroom5);
        
         Flower mushroom6;
 		mushroom6.loadModel("Environment/shroom_alpha.obj");
-		mushroom6.setPosition(-79, 12, 25);
+		mushroom6.setPosition(-79, -105, -150);
         mushroom3.SetMaxScale(0.01);
 		mushroom6.setRotation(0,180,1,0,0);
-		mushroom6.Enable(false);
+		mushroom6.Enable(true);
 		mushrooms_.push_back(mushroom6);
         
         Flower mushroom7;
 		mushroom7.loadModel("Environment/shroom_alpha.obj");
-		mushroom7.setPosition(-81, 12, 25);
+		mushroom7.setPosition(-81, -105, -150);
 		mushroom7.setRotation(0,180,1,0,0);
-		mushroom7.Enable(false);
+		mushroom7.Enable(true);
 		mushrooms_.push_back(mushroom7);
         
         Flower mushroom8;
 		mushroom8.loadModel("Environment/shroom_alpha.obj");
-		mushroom8.setPosition(-79, 12, 25);
+		mushroom8.setPosition(-79, -105, -150);
         mushroom8.SetMaxScale(0.01);
 		mushroom8.setRotation(0,180,1,0,0);
-		mushroom8.Enable(false);
+		mushroom8.Enable(true);
 		mushrooms_.push_back(mushroom8);
         
         Flower mushroom9;
 		mushroom9.loadModel("Environment/shroom_alpha.obj");
-		mushroom9.setPosition(-144, 12, 25);
+		mushroom9.setPosition(-144, -105, -150);
         mushroom9.SetMaxScale(0.01);
 		mushroom9.setRotation(0,180,1,0,0);
-		mushroom9.Enable(false);
+		mushroom9.Enable(true);
 		mushrooms_.push_back(mushroom9);
         
         Flower mushroom10;
 		mushroom10.loadModel("Environment/shroom_alpha.obj");
-		mushroom10.setPosition(-140, 12, 25);
+		mushroom10.setPosition(-140, -105, -140);
         mushroom10.SetMaxScale(0.01);
 		mushroom10.setRotation(0,180,1,0,0);
-		mushroom10.Enable(false);
+		mushroom10.Enable(true);
 		mushrooms_.push_back(mushroom10);
         
         Flower mushroom11;
 		mushroom11.loadModel("Environment/shroom_alpha.obj");
-		mushroom11.setPosition(82, 12, 25);
+		mushroom11.setPosition(82, -105, -140);
         mushroom11.SetMaxScale(0.01);
 		mushroom11.setRotation(0,180,1,0,0);
-		mushroom11.Enable(false);
+		mushroom11.Enable(true);
 		mushrooms_.push_back(mushroom11);
         
         Flower mushroom12;
 		mushroom12.loadModel("Environment/shroom_alpha.obj");
-		mushroom12.setPosition(92, 12, 25);
+		mushroom12.setPosition(92, -105, -140);
         mushroom12.SetMaxScale(0.01);
 		mushroom12.setRotation(0,180,1,0,0);
-		mushroom12.Enable(false);
+		mushroom12.Enable(true);
 		mushrooms_.push_back(mushroom12);
         
         
         Flower mushroom13;
 		mushroom13.loadModel("Environment/shroom_alpha.obj");
-		mushroom13.setPosition(115, 12, 25);
+		mushroom13.setPosition(115, -105, -130);
         mushroom13.SetMaxScale(0.01);
 		mushroom13.setRotation(0,180,1,0,0);
-		mushroom13.Enable(false);
+		mushroom13.Enable(true);
 		mushrooms_.push_back(mushroom13);
         
         
         Flower mushroom14;
 		mushroom14.loadModel("Environment/shroom_alpha.obj");
-		mushroom14.setPosition(120, 12, 25);
+		mushroom14.setPosition(120, -105, -130);
         mushroom14.SetMaxScale(0.01);
 		mushroom14.setRotation(0,180,1,0,0);
-		mushroom14.Enable(false);
+		mushroom14.Enable(true);
 		mushrooms_.push_back(mushroom14);
         
         
         Flower mushroom15;
 		mushroom15.loadModel("Environment/shroom_alpha.obj");
-		mushroom15.setPosition(217, 12, 25);
+		mushroom15.setPosition(-127, -105, -140);
         mushroom15.SetMaxScale(0.01);
 		mushroom15.setRotation(0,180,1,0,0);
-		mushroom15.Enable(false);
+		mushroom15.Enable(true);
 		mushrooms_.push_back(mushroom15);
         
         Flower mushroom16;
 		mushroom16.loadModel("Environment/shroom_alpha.obj");
-		mushroom16.setPosition(200, 12, 25);
+		mushroom16.setPosition(-100, -105, -140);
 		mushroom16.setRotation(0,180,1,0,0);
-		mushroom16.Enable(false);
+		mushroom16.Enable(true);
 		mushrooms_.push_back(mushroom16);
         
         Flower mushroom17;
 		mushroom17.loadModel("Environment/shroom_alpha.obj");
-		mushroom17.setPosition(204, 12, 25);
+		mushroom17.setPosition(-98, -105, -135);
         mushroom17.SetMaxScale(0.01);
 		mushroom17.setRotation(0,180,1,0,0);
-		mushroom17.Enable(false);
+		mushroom17.Enable(true);
 		mushrooms_.push_back(mushroom17);
         
         Flower mushroom18;
 		mushroom18.loadModel("Environment/shroom_alpha.obj");
-		mushroom18.setPosition(161, 12, 25);
+		mushroom18.setPosition(-80, -105, -130);
 		mushroom18.setRotation(0,180,1,0,0);
-		mushroom18.Enable(false);
+		mushroom18.Enable(true);
 		mushrooms_.push_back(mushroom18);
         
         
