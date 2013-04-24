@@ -19,47 +19,47 @@ namespace Jungle
 		x_ = ofGetWindowPositionX();
 		y_ = ofGetWindowPositionY();
 		
-		tree_.loadModel("Environment/tree_Bush_Combined_2.obj");
+		tree_.loadModel("Environment/Trees_Leves_New_1.obj");
 		//0,-46, 0
-		tree_.setPosition(10,-56,0);
+		tree_.setPosition(90,-180, -190);
 		tree_.setScale(1,1,1);
 		tree_.setRotation(0, 180, 0, 0, 1);
 		tree_.Enable(true);
         
         bg_1_.loadModel("Environment/BG_1.obj");
 		//0,-46, 0
-		bg_1_.setPosition(-10,-45,-70);
-		bg_1_.setScale(1,1,1);
+		bg_1_.setPosition(0,-180,-220);
+		bg_1_.setScale(1,0.5,0.5);
 		bg_1_.setRotation(0, 180, 0, 0, 1);
         bg_1_.setRotation(1, 180, 0, 1, 0);
 		bg_1_.Enable(true);
         
         bg_2_.loadModel("Environment/BG_2.obj");
 		//0,-46, 0
-		bg_2_.setPosition(-10,-10,-135);
-		bg_2_.setScale(1,1,1);
+		bg_2_.setPosition(0,-180,-240);
+		bg_2_.setScale(1,0.5,0.5);
 		bg_2_.setRotation(0, 180, 0, 0, 1);        
         bg_2_.setRotation(1, 180, 0, 1, 0);
 		bg_2_.Enable(true);
         
         bg_3_.loadModel("Environment/BG_3.obj");
 		//0,-46, 0
-		bg_3_.setPosition(-10,-15,-415);
+		bg_3_.setPosition(100,65,90);
 		bg_3_.setScale(2,2,2);
 		bg_3_.setRotation(0, 180, 0, 0, 1);        
         bg_3_.setRotation(1, 180, 0, 1, 0);
 		bg_3_.Enable(true);
         
-        ground_.loadModel("Environment/ground_4.obj");
+        ground_.loadModel("Environment/ground_new_1.obj");
 		//0,-46, 0
-		ground_.setPosition(-10,18,0);
-		ground_.setScale(1,1,1);
+		ground_.setPosition(90,-100, -100);
+		ground_.setScale(1.5,1,1);
 		ground_.setRotation(0, 180, 0, 0, 1);
 		ground_.Enable(true);
         
-        rocks_.loadModel("Environment/rocks_only.obj");
+        rocks_.loadModel("Environment/Rocks_new_1.obj");
 		//0,-46, 0
-		rocks_.setPosition(-10,18,0);
+		rocks_.setPosition(140,-100,-220);
 		rocks_.setScale(1,1,1);
 		rocks_.setRotation(0, 180, 0, 0, 1);
 		rocks_.Enable(true);
