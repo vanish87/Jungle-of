@@ -2,7 +2,7 @@
 
 namespace Jungle
 {
-
+	const bool KINECT_ENABLE = false;
 	//--------------------------------------------------------------
 	void JungleApp::setup(){
         ofSetLogLevel(OF_LOG_VERBOSE);
