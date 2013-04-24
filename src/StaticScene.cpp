@@ -19,9 +19,9 @@ namespace Jungle
 		x_ = ofGetWindowPositionX();
 		y_ = ofGetWindowPositionY();
 		
-		tree_.loadModel("Environment/Trees_Leves_New_1.obj");
+		tree_.loadModel("Environment/Trees_Leaves_New_2.obj");
 		//0,-46, 0
-		tree_.setPosition(90,-180, -190);
+		tree_.setPosition(-30,-220, -190);
 		tree_.setScale(1,1,1);
 		tree_.setRotation(0, 180, 0, 0, 1);
 		tree_.Enable(true);
