@@ -203,7 +203,7 @@ namespace Jungle
 		~WindGenerator(void);
 
 		void Init();
-		void Update(float t, float min, float max, ofVec3f hand_pos);
+		void Update(float t, float min, float max, ofVec3f l_hand_pos, ofVec3f r_hand_pos);
 		void Draw();		
 
 		void Enable(bool enable, ofVec3f hand_pos);
@@ -221,7 +221,8 @@ namespace Jungle
 		ofx3DParticleEmitter emitter_;
         ofx3DParticleEmitter emitter2_;
         
-        ofVec3f pre_hand_pos_;
+        ofVec3f l_pre_hand_pos_;
+        ofVec3f r_pre_hand_pos_;
 
 		ParticleConfig config_;
 		ParticleConfig min_;

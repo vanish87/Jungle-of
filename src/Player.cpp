@@ -51,6 +51,8 @@ namespace Jungle
     void Player::Update()
     {
         ofxUser* user = JungleApp::KinectInstance().users;
+        ofVec3f l_hand_pos;
+        ofVec3f r_hand_pos;
 		for(int i =0; i< MAX_USERS; ++i)
 		{
 			if(user[i].isActive&& user[i].bones)
@@ -75,12 +77,16 @@ namespace Jungle
 				SetHandPos(p);
 			}
 		}
+        
         if(!detected_)
         {
             butterfly_->Update(ofGetLastFrameTime());
             return;
         }
-		wind_.Update(hand_radius_, 50, max_hand_radius_, hand_pos_);
+        if(Jungle::KINECT_ENABLE)
+            wind_.Update(hand_radius_, 50, max_hand_radius_, l_hand_pos,r_hand_pos);
+        else
+            wind_.Update(hand_radius_, 50, max_hand_radius_, hand_pos_, ofVec3f(0,0,0));
 
 
 

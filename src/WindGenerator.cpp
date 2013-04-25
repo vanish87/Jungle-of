@@ -18,10 +18,10 @@ namespace Jungle
 		//max_ = GetConfig("max.pex");
 
 		emitter_.loadFromXml("UI/min.pex");
-        emitter2_.loadFromXml("UI/max.pex");
+        emitter2_.loadFromXml("UI/min.pex");
 	}
 
-	void WindGenerator::Update( float t, float min, float max , ofVec3f hand_pos)
+	void WindGenerator::Update( float t, float min, float max , ofVec3f l_hand_pos, ofVec3f r_hand_pos)
 	{
 		if(enabled_)
 		{			
@@ -29,17 +29,17 @@ namespace Jungle
 			//config_.sourcePosition.x = hand_pos.x;
 			//config_.sourcePosition.y = hand_pos.y;
 			//SetConfig(emitter_, config_);
-			emitter_.sourcePosition.x = hand_pos.x;
-			emitter_.sourcePosition.y = hand_pos.y;
+			emitter_.sourcePosition.x = l_hand_pos.x;
+			emitter_.sourcePosition.y = l_hand_pos.y;
 			emitter_.update();
             
-            emitter2_.sourcePosition.x = hand_pos.x;
-			emitter2_.sourcePosition.y = hand_pos.y;
+            emitter2_.sourcePosition.x = r_hand_pos.x;
+			emitter2_.sourcePosition.y = r_hand_pos.y;
 			emitter2_.update();
             
-            if((hand_pos-pre_hand_pos_) != ofVec3f(0, 0, 0))
+            if((l_hand_pos-l_pre_hand_pos_) != ofVec3f(0, 0, 0))
             {
-                ofVec3f dir = (hand_pos-pre_hand_pos_).normalize();
+                ofVec3f dir = (l_hand_pos-r_pre_hand_pos_).normalize();
                 dir.x = -dir.x;
                 emitter_.angle = acos(ofVec3f(1,0,0).dot(dir)) * 180/3.14;
                 
@@ -51,7 +51,22 @@ namespace Jungle
             }
             
             
-            pre_hand_pos_ = hand_pos;
+            if((r_hand_pos-r_pre_hand_pos_) != ofVec3f(0, 0, 0))
+            {
+                ofVec3f dir = (r_hand_pos-r_pre_hand_pos_).normalize();
+                dir.x = -dir.x;
+                emitter2_.angle = acos(ofVec3f(1,0,0).dot(dir)) * 180/3.14;
+                
+                if(dir.y > 0)
+                {
+                    emitter2_.angle = 360 - emitter2_.angle;
+                    
+                }
+            }
+            
+            
+            l_pre_hand_pos_ = l_hand_pos;
+            r_pre_hand_pos_ = r_hand_pos;
 		}
 	}
 
