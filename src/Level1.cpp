@@ -391,14 +391,14 @@ namespace Jungle
 		//draw mushrooms
 
 		ofPushMatrix();
-        for(int i =0; i < mushrooms_.size(); ++i)
+       // for(int i =0; i < mushrooms_.size(); ++i)
         {
-            if(mushrooms_[i].Enabled())
-                mushrooms_[i].Draw();
+            if(mushrooms_[0].Enabled())
+                mushrooms_[0].Draw();
         }
 		ofPopMatrix();
 		//draw butterfly
-		butterfly.drawFaces();
+		//butterfly.drawFaces();
         
         //ofDrawAxis(100);
         glDisable(GL_DEPTH_TEST);
@@ -408,7 +408,10 @@ namespace Jungle
 		camera.end();
 		ofDisableAlphaBlending();
 
-        
+		ofVec3f pos = mushrooms_[0].getPosition();
+		ofVec3f ss_pos = mushrooms_[0].GetScreenPos(pos, player.GetCamera());
+
+		ofSphere(ss_pos.x, ss_pos.y, ss_pos.z, 30);
         
         ofDisableLighting();
         ofEnableAlphaBlending();
@@ -497,7 +500,7 @@ namespace Jungle
 	{
         Player& player = JungleApp::PlayerInstance();
         
-        int index = 20;
+        int index = 0;
         ofVec3f pos = mushrooms_[index].getPosition();
 		ofVec3f scale = mushrooms_[index].getScale();
 

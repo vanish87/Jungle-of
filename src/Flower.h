@@ -13,6 +13,7 @@ namespace Jungle {
         
         void Draw();
         void SetMaxScale(float scale);
+		ofVec3f GetScreenPos(ofVec3f world_pos, ofCamera& camera);
         
     public:
         float flower_radius_;
@@ -20,6 +21,8 @@ namespace Jungle {
         ofColor color_;
         
         float max_scale_;
+
+		ofVec3f triggering_circle_;
     };
 }
 
