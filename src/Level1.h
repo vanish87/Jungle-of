@@ -47,6 +47,8 @@ namespace Jungle
         
         ofImage title_;
         bool show_title;
+        
+        ofImage circle_;
 
 		int w_;
 		int h_;

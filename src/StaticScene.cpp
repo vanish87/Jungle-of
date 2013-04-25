@@ -21,7 +21,7 @@ namespace Jungle
 		
 		tree_.loadModel("Environment/Tree_Leaves_New_3.obj");
 		//0,-46, 0
-		tree_.setPosition(-30,-220, -190);
+		tree_.setPosition(0 , 0, -190);
 		tree_.setScale(1,1,1);
 		tree_.setRotation(0, 180, 0, 0, 1);
 		tree_.Enable(true);
@@ -54,7 +54,8 @@ namespace Jungle
 		//0,-46, 0
 		ground_.setPosition(90,-90, -100);
 		ground_.setScale(1.5,1,1);
-		ground_.setRotation(0, 180, 0, 0, 1);
+		ground_.setRotation(0, 180, 0, 0, 1);        
+		ground_.setRotation(0, 5, 1, 0, 0);
 		ground_.Enable(true);
         
         rocks_.loadModel("Environment/Rocks_new_1.obj");
@@ -102,7 +103,7 @@ namespace Jungle
 	{
 		ofSetColor(255, 255, 255);
         //set background here
-        ofBackground(0, 208, 246);
+        ofBackground(14, 28, 54);
 		glEnable(GL_DEPTH_TEST);
 
 		ofPushMatrix();				

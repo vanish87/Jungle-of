@@ -329,6 +329,10 @@ namespace Jungle
 		mushroom28.Enable(false);
 		mushrooms_.push_back(mushroom28);
         
+        circle_.loadImage("Environment/glowing-circle-2.png");
+        
+        
+        
         
 		w_ = ofGetWindowWidth();
 		h_ = ofGetWindowHeight();
@@ -380,8 +384,10 @@ namespace Jungle
 		ButterFly& butterfly = player.GetButterfly();
 
 		ofCamera camera = player.GetCamera();
+        
 
-		ofEnableAlphaBlending();
+		camera.enableOrtho();
+        ofEnableAlphaBlending();
 		camera.begin();
         light_.enable();
         
@@ -408,13 +414,16 @@ namespace Jungle
 		camera.end();
 		ofDisableAlphaBlending();
 
-		ofVec3f pos = mushrooms_[0].getPosition();
-		ofVec3f ss_pos = mushrooms_[0].GetScreenPos(pos, player.GetCamera());
-
-		ofSphere(ss_pos.x, ss_pos.y, ss_pos.z, 30);
         
         ofDisableLighting();
         ofEnableAlphaBlending();
+        
+        
+		ofVec3f pos = mushrooms_[0].getPosition();
+		ofVec3f ss_pos = mushrooms_[0].GetScreenPos(pos, player.GetCamera());
+        
+		circle_.draw(ss_pos, 20, 20);
+        
 		player.wind_.Draw();
         
 		ofPushMatrix();
@@ -505,8 +514,8 @@ namespace Jungle
 		ofVec3f scale = mushrooms_[index].getScale();
 
         //static scene
-        //this->GetParent()->keyPressed(key);
-        //return;
+        this->GetParent()->keyPressed(key);
+        return;
 		switch (key)
 		{
             case 's':

@@ -22,9 +22,10 @@ namespace Jungle
 		interval_ = false;
 		interval_time_ = 0;
 
-		player_camera_.setupPerspective(false, 60.0f, 1, 1000);
-		player_camera_.setPosition(0,20,50);
-		player_camera_.lookAt(ofVec3f(0,20,0));
+		//player_camera_.setupPerspective(false, 60.0f, 1, 1000);
+        player_camera_.enableOrtho();
+		player_camera_.setPosition(0,0,50);
+		player_camera_.lookAt(ofVec3f(0,0,0));
 
 		butterfly_ = new ButterFly();
         
