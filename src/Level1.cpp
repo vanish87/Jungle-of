@@ -424,7 +424,7 @@ namespace Jungle
 		ofVec3f pos = mushrooms_[0].getPosition();
 		ofVec3f ss_pos = mushrooms_[0].GetScreenPos(pos, player.GetCamera());
         
-		circle_.draw(ss_pos, 20, 20);
+		circle_.draw(ss_pos, 80, 80);
         
 		player.wind_.Draw();
         
@@ -514,10 +514,12 @@ namespace Jungle
         int index = 0;
         ofVec3f pos = mushrooms_[index].getPosition();
 		ofVec3f scale = mushrooms_[index].getScale();
+        
+        ofVec3f cam_pos=player.player_camera_.getPosition();
 
         //static scene
-        this->GetParent()->keyPressed(key);
-        return;
+        //this->GetParent()->keyPressed(key);
+        //return;
 		switch (key)
 		{
             case 's':
@@ -553,8 +555,22 @@ namespace Jungle
             case 'g':
                 break;
             case 'j':
+                cam_pos.x--;
                 break;
-            case 'f':     
+                
+            case 'i':
+                cam_pos.y++;
+                break;
+                
+            case 'k':
+                cam_pos.y--;
+                break;
+                
+            case 'l':
+                cam_pos.x++;
+                break;
+                
+            case 'f':
                 break;		
             case 'v':     
                 break;
@@ -575,6 +591,7 @@ namespace Jungle
                 break;
 		}
         
+        player.player_camera_.setPosition(cam_pos);
 		mushrooms_[index].setPosition(pos.x, pos.y, pos.z);
 	}
 

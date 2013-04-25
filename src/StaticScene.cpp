@@ -21,7 +21,7 @@ namespace Jungle
 		
 		tree_.loadModel("Environment/Tree_Leaves_New_3.obj");
 		//0,-46, 0
-		tree_.setPosition(0 , 0, -190);
+		tree_.setPosition(0 , 0, 0);
 		tree_.setScale(1,1,1);
 		tree_.setRotation(0, 180, 0, 0, 1);
 		tree_.Enable(true);
@@ -44,7 +44,7 @@ namespace Jungle
         
         bg_3_.loadModel("Environment/BG_3.obj");
 		//0,-46, 0
-		bg_3_.setPosition(100,65,90);
+		bg_3_.setPosition(0,0,0);
 		bg_3_.setScale(2,2,2);
 		bg_3_.setRotation(0, 180, 0, 0, 1);        
         bg_3_.setRotation(1, 180, 0, 1, 0);
@@ -75,13 +75,13 @@ namespace Jungle
         
         model_ = &tree_;
         
-		ground_.AddToScene();
-        rocks_.AddToScene();
-		bg_3_.AddToScene();
-		bg_2_.AddToScene();
-		bg_1_.AddToScene();
+		//ground_.AddToScene();
+        //rocks_.AddToScene();
+		//bg_3_.AddToScene();
+		//bg_2_.AddToScene();
+		//bg_1_.AddToScene();
 		tree_.AddToScene();
-		bush_.AddToScene();
+		//bush_.AddToScene();
         
 		atmo.loadSound("Audio/jungle-atmos-2.mp3");
 		atmo.setLoop(true);
@@ -104,6 +104,8 @@ namespace Jungle
 		ofSetColor(255, 255, 255);
         //set background here
         ofBackground(14, 28, 54);
+        
+        ofBackgroundGradient(ofColor(0,0,0),ofColor(255,255,255), OF_GRADIENT_LINEAR);
 		glEnable(GL_DEPTH_TEST);
 
 		ofPushMatrix();				
