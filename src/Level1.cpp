@@ -389,6 +389,8 @@ namespace Jungle
 		camera.enableOrtho();
         ofEnableAlphaBlending();
 		camera.begin();
+        
+        ofDisableLighting();
         light_.enable();
         
 		//draw static scene
