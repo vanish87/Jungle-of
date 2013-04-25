@@ -105,7 +105,11 @@ namespace Jungle
         //set background here
         ofBackground(14, 28, 54);
         
+<<<<<<< HEAD
         ofBackgroundGradient(ofColor(105,119,120),ofColor(14,28,54), OF_GRADIENT_LINEAR);
+=======
+        //ofBackgroundGradient(ofColor(0,0,0),ofColor(255,255,255), OF_GRADIENT_LINEAR);
+>>>>>>> camera
 		glEnable(GL_DEPTH_TEST);
 
 		ofPushMatrix();				

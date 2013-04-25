@@ -170,7 +170,7 @@ namespace Jungle
 		{
            // camera_moving_ = true;
 			old_pos += delta / 30;
-			player_camera_.setPosition(old_pos.x, old_pos.y,player_camera_.getPosition().z);
+			//player_camera_.setPosition(old_pos.x, old_pos.y,player_camera_.getPosition().z);
 		}
         if(delta.length() < 0.1)
         {

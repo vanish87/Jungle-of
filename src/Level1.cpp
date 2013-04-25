@@ -393,6 +393,9 @@ namespace Jungle
         ofDisableLighting();
         light_.enable();
         
+        ofSetColor(255,0,0);
+        ofSphere(0,0,0,50);
+        
 		//draw static scene
 		this->GetParent()->Draw();
 		glEnable(GL_DEPTH_TEST);
