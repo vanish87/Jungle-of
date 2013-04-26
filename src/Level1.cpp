@@ -46,8 +46,12 @@ namespace Jungle
         
         Flower mushroom2;
 		mushroom2.loadModel("Environment/shroom_alpha.obj");
+<<<<<<< HEAD
 		mushroom2.setPosition(400,0,11);
         mushroom2.SetMaxScale(0.05);
+=======
+		mushroom2.setPosition(200, 200, 60);
+>>>>>>> unfinished codes
 		mushroom2.setRotation(0,180,1,0,0);
 		mushroom2.Enable(true);
 		mushrooms_.push_back(mushroom2);
@@ -320,17 +324,18 @@ namespace Jungle
         ofEnableAlphaBlending();
 		camera.begin();
         
-        ofDisableLighting();
+        ofEnableLighting();
         light_.enable();
         
-        ofSetColor(255,0,0);
-        ofSphere(0,0,0,50);
+
         
 		//draw static scene
 		this->GetParent()->Draw();
 		glEnable(GL_DEPTH_TEST);
 		//draw mushrooms
-
+        
+        ofSetColor(255,0,0);
+        ofSphere(1280,720,0,50);
 		ofPushMatrix();
        // for(int i =0; i < mushrooms_.size(); ++i)
         {
@@ -341,7 +346,7 @@ namespace Jungle
 		//draw butterfly
 		//butterfly.drawFaces();
         
-        //ofDrawAxis(100);
+        ofDrawAxis(100);
         glDisable(GL_DEPTH_TEST);
         light_.disable();
 
@@ -357,7 +362,7 @@ namespace Jungle
 		ofVec3f pos = mushrooms_[0].getPosition();
 		ofVec3f ss_pos = mushrooms_[0].GetScreenPos(pos, player.GetCamera());
         
-		circle_.draw(ss_pos, 80, 80);
+		circle_.draw(pos.x,720-pos.y, 200, 200);
         
 		player.wind_.Draw();
         

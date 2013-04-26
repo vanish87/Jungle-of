@@ -44,7 +44,7 @@ namespace Jungle
         
         bg_3_.loadModel("Environment/BG_3.obj");
 		//0,-46, 0
-		bg_3_.setPosition(0,0,0);
+		bg_3_.setPosition(500,500,50);
 		bg_3_.setScale(2,2,2);
 		bg_3_.setRotation(0, 180, 0, 0, 1);        
         bg_3_.setRotation(1, 180, 0, 1, 0);
@@ -60,7 +60,7 @@ namespace Jungle
         
         rocks_.loadModel("Environment/Rocks_new_1.obj");
 		//0,-46, 0
-		rocks_.setPosition(160,-88,-200);
+		rocks_.setPosition(500,500,0);
 		rocks_.setScale(1,1,1);
 		rocks_.setRotation(0, 180, 0, 0, 1);
 		rocks_.Enable(true);
@@ -76,8 +76,8 @@ namespace Jungle
         model_ = &tree_;
         
 		//ground_.AddToScene();
-        //rocks_.AddToScene();
-		//bg_3_.AddToScene();
+        rocks_.AddToScene();
+		bg_3_.AddToScene();
 		//bg_2_.AddToScene();
 		//bg_1_.AddToScene();
 		tree_.AddToScene();
@@ -186,6 +186,11 @@ namespace Jungle
 			pos = bg_1_.getPosition();
 			model_ = &bg_1_;
 			break;
+        case '7':
+            pos = rocks_.getPosition();
+            model_ = &rocks_;
+            break;
+
 		case 'm':     
 			break;
 		case 'n':     
