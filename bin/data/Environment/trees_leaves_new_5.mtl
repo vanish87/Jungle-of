@@ -1,0 +1,39 @@
+# 
+# Wavefront material file
+# Created with Kaydara FBX
+# 
+
+newmtl Tree
+map_Kd Tree_Base_Color.png
+Ka 0.000000 0.000000 0.000000
+Kd 0.800000 0.800000 0.800000
+illum 1
+Tr 1.000000
+
+newmtl Leaf1
+map_Kd leaves-01.png
+Ka 0.000000 0.000000 0.000000
+Kd 0.800000 0.800000 0.800000
+illum 1
+Tr 1.000000
+
+newmtl Leaf4
+map_Kd leaves-04.png
+Ka 0.000000 0.000000 0.000000
+Kd 0.800000 0.800000 0.800000
+illum 1
+Tr 1.000000
+
+newmtl Leaf2
+map_Kd leaves-02.png
+Ka 0.000000 0.000000 0.000000
+Kd 0.800000 0.800000 0.800000
+illum 1
+Tr 1.000000
+
+newmtl Leaf3
+map_Kd leaves-03.png
+Ka 0.000000 0.000000 0.000000
+Kd 0.800000 0.800000 0.800000
+illum 1
+Tr 1.000000

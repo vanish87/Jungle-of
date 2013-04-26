@@ -35,66 +35,65 @@ namespace Jungle
         light_.enable();
         ofBackground(255);
         
-        
         sounds[0].loadSound("Audio/trigger1.mp3");
 		sounds[1].loadSound("Audio/trigger2.mp3");
 		sounds[2].loadSound("Audio/trigger3.mp3");
 		sounds[3].loadSound("Audio/trigger4.mp3");
-        
-        
+
 		// Mushroom Placement
         
+        title_.loadImage("/UI/title-screen-3.png");
         
         Flower mushroom2;
 		mushroom2.loadModel("Environment/shroom_alpha.obj");
-		mushroom2.setPosition(20, -90, -140);
+		mushroom2.setPosition(400,0,11);
+        mushroom2.SetMaxScale(0.05);
 		mushroom2.setRotation(0,180,1,0,0);
 		mushroom2.Enable(true);
 		mushrooms_.push_back(mushroom2);
         
         Flower mushroom3;
 		mushroom3.loadModel("Environment/shroom_alpha.obj");
-		mushroom3.setPosition(17, -90, -150);
-		mushroom3.SetMaxScale(0.01);
+		mushroom3.setPosition(430,0,11);
+		mushroom3.SetMaxScale(0.05);
 		mushroom3.setRotation(0,180,1,0,0);
 		mushroom3.Enable(true);
 		mushrooms_.push_back(mushroom3);
        
         Flower mushroom4;
 		mushroom4.loadModel("Environment/shroom_alpha.obj");
-		mushroom4.setPosition(26, -90, -160);
-		mushroom4.setRotation(0,180,1,0,0);
+		mushroom4.setPosition(500,0,11);
+		mushroom4.SetMaxScale(0.05);
+        mushroom4.setRotation(0,180,1,0,0);
 		mushroom4.Enable(true);
 		mushrooms_.push_back(mushroom4);
-
-        title_.loadImage("/UI/title-screen-3.png");
         
         Flower mushroom5;
 		mushroom5.loadModel("Environment/shroom_alpha.obj");
-		mushroom5.setPosition(27, -90, -150);
-        mushroom3.SetMaxScale(0.01);
+		mushroom5.setPosition(550,0,11);
+        mushroom3.SetMaxScale(0.05);
 		mushroom5.setRotation(0,180,1,0,0);
 		mushroom5.Enable(true);
 		mushrooms_.push_back(mushroom5);
        
         Flower mushroom6;
 		mushroom6.loadModel("Environment/shroom_alpha.obj");
-		mushroom6.setPosition(-79, -90, -150);
-        mushroom3.SetMaxScale(0.01);
+		mushroom6.setPosition(600,0,11);
+        mushroom3.SetMaxScale(0.05);
 		mushroom6.setRotation(0,180,1,0,0);
 		mushroom6.Enable(true);
 		mushrooms_.push_back(mushroom6);
         
         Flower mushroom7;
 		mushroom7.loadModel("Environment/shroom_alpha.obj");
-		mushroom7.setPosition(-81, -90, -150);
+		mushroom7.setPosition(700,0,11);
 		mushroom7.setRotation(0,180,1,0,0);
 		mushroom7.Enable(true);
 		mushrooms_.push_back(mushroom7);
         
         Flower mushroom8;
 		mushroom8.loadModel("Environment/shroom_alpha.obj");
-		mushroom8.setPosition(-79, -90, -150);
+		mushroom8.setPosition(750,0,11);
         mushroom8.SetMaxScale(0.01);
 		mushroom8.setRotation(0,180,1,0,0);
 		mushroom8.Enable(true);
@@ -102,7 +101,7 @@ namespace Jungle
         
         Flower mushroom9;
 		mushroom9.loadModel("Environment/shroom_alpha.obj");
-		mushroom9.setPosition(-144, -90, -150);
+		mushroom9.setPosition(800,0,11);
         mushroom9.SetMaxScale(0.01);
 		mushroom9.setRotation(0,180,1,0,0);
 		mushroom9.Enable(true);
@@ -110,77 +109,11 @@ namespace Jungle
         
         Flower mushroom10;
 		mushroom10.loadModel("Environment/shroom_alpha.obj");
-		mushroom10.setPosition(-140, -90, -140);
+		mushroom10.setPosition(830,0,11);
         mushroom10.SetMaxScale(0.01);
 		mushroom10.setRotation(0,180,1,0,0);
 		mushroom10.Enable(true);
 		mushrooms_.push_back(mushroom10);
-        
-        Flower mushroom11;
-		mushroom11.loadModel("Environment/shroom_alpha.obj");
-		mushroom11.setPosition(82, -90, -140);
-        mushroom11.SetMaxScale(0.01);
-		mushroom11.setRotation(0,180,1,0,0);
-		mushroom11.Enable(true);
-		mushrooms_.push_back(mushroom11);
-        
-        Flower mushroom12;
-		mushroom12.loadModel("Environment/shroom_alpha.obj");
-		mushroom12.setPosition(92, -90, -140);
-        mushroom12.SetMaxScale(0.01);
-		mushroom12.setRotation(0,180,1,0,0);
-		mushroom12.Enable(true);
-		mushrooms_.push_back(mushroom12);
-        
-        
-        Flower mushroom13;
-		mushroom13.loadModel("Environment/shroom_alpha.obj");
-		mushroom13.setPosition(115, -90, -130);
-        mushroom13.SetMaxScale(0.01);
-		mushroom13.setRotation(0,180,1,0,0);
-		mushroom13.Enable(true);
-		mushrooms_.push_back(mushroom13);
-        
-        
-        Flower mushroom14;
-		mushroom14.loadModel("Environment/shroom_alpha.obj");
-		mushroom14.setPosition(120, -90, -130);
-        mushroom14.SetMaxScale(0.01);
-		mushroom14.setRotation(0,180,1,0,0);
-		mushroom14.Enable(true);
-		mushrooms_.push_back(mushroom14);
-        
-        
-        Flower mushroom15;
-		mushroom15.loadModel("Environment/shroom_alpha.obj");
-		mushroom15.setPosition(-127, -90, -140);
-        mushroom15.SetMaxScale(0.01);
-		mushroom15.setRotation(0,180,1,0,0);
-		mushroom15.Enable(true);
-		mushrooms_.push_back(mushroom15);
-        
-        Flower mushroom16;
-		mushroom16.loadModel("Environment/shroom_alpha.obj");
-		mushroom16.setPosition(-100, -90, -140);
-		mushroom16.setRotation(0,180,1,0,0);
-		mushroom16.Enable(true);
-		mushrooms_.push_back(mushroom16);
-        
-        Flower mushroom17;
-		mushroom17.loadModel("Environment/shroom_alpha.obj");
-		mushroom17.setPosition(-98, -90, -135);
-        mushroom17.SetMaxScale(0.01);
-		mushroom17.setRotation(0,180,1,0,0);
-		mushroom17.Enable(true);
-		mushrooms_.push_back(mushroom17);
-        
-        Flower mushroom18;
-		mushroom18.loadModel("Environment/shroom_alpha.obj");
-		mushroom18.setPosition(-80, -90, -130);
-		mushroom18.setRotation(0,180,1,0,0);
-		mushroom18.Enable(true);
-		mushrooms_.push_back(mushroom18);
-        
         
         //// Flower Placing
         
@@ -330,9 +263,6 @@ namespace Jungle
 		mushrooms_.push_back(mushroom28);
         
         circle_.loadImage("Environment/glowing-circle-2.png");
-        
-        
-        
         
 		w_ = ofGetWindowWidth();
 		h_ = ofGetWindowHeight();

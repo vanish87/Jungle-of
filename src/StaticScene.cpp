@@ -19,20 +19,20 @@ namespace Jungle
 		x_ = ofGetWindowPositionX();
 		y_ = ofGetWindowPositionY();
 		
-		tree_.loadModel("Environment/Tree_Leaves_New_3.obj");
+		tree_.loadModel("Environment/Trees_Leaves_New_5.obj");
 		//0,-46, 0
-		tree_.setPosition(0 , 0, 0);
-		tree_.setScale(1,1,1);
+		tree_.setPosition(600 , -100, 0);
+		tree_.setScale(2,2,2);
 		tree_.setRotation(0, 180, 0, 0, 1);
 		tree_.Enable(true);
         
         bg_1_.loadModel("Environment/BG_1.obj");
 		//0,-46, 0
-		bg_1_.setPosition(0,-180,-220);
-		bg_1_.setScale(1,0.5,0.5);
+		bg_1_.setPosition(300,300,0);
+		bg_1_.setScale(2,2,2);
 		bg_1_.setRotation(0, 180, 0, 0, 1);
         bg_1_.setRotation(1, 180, 0, 1, 0);
-		bg_1_.Enable(false);
+		bg_1_.Enable(true);
         
         bg_2_.loadModel("Environment/BG_2.obj");
 		//0,-46, 0

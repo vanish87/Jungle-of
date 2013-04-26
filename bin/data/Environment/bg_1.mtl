@@ -3,9 +3,9 @@
 # Created with Kaydara FBX
 # 
 
-newmtl BG_1
-map_Kd first_Layer.png
+newmtl BG_3
+map_Kd for.png
 Ka 0.000000 0.000000 0.000000
-Kd 0.656566 0.656566 0.656566
+Kd 0.800000 0.800000 0.800000
 illum 1
 Tr 1.000000
