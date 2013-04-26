@@ -13,6 +13,8 @@ namespace Jungle {
         
         void Draw();
         void SetMaxScale(float scale);
+		void SetScaleSpeed(float speed);
+		void SetCircleSize(float size);
 		ofVec3f GetScreenPos(ofVec3f world_pos, ofCamera& camera);
         
     public:
@@ -21,8 +23,10 @@ namespace Jungle {
         ofColor color_;
         
         float max_scale_;
+		float scale_speed_;
 
-		ofVec3f triggering_circle_;
+		ofImage triggering_circle_;
+		ofVec4f circle_size_;
     };
 }
 

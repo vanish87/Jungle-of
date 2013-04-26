@@ -203,7 +203,7 @@ namespace Jungle
 		~WindGenerator(void);
 
 		void Init();
-		void Update(float t, float min, float max, ofVec3f l_hand_pos, ofVec3f r_hand_pos);
+		void Update(ofVec3f l_hand_pos, ofVec3f r_hand_pos);
 		void Draw();		
 
 		void Enable(bool enable, ofVec3f hand_pos);

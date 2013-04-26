@@ -21,7 +21,7 @@ namespace Jungle
         emitter2_.loadFromXml("UI/min.pex");
 	}
 
-	void WindGenerator::Update( float t, float min, float max , ofVec3f l_hand_pos, ofVec3f r_hand_pos)
+	void WindGenerator::Update(ofVec3f l_hand_pos, ofVec3f r_hand_pos)
 	{
 		if(enabled_)
 		{			

@@ -11,10 +11,11 @@
 
 namespace Jungle {
     Flower::Flower(void)
-    : flower_radius_(3), flower_collided_(false), color_(255,255,255), max_scale_(0.008)
+    : flower_radius_(3), flower_collided_(false), color_(255,255,255), max_scale_(0.008), scale_speed_(0.001)
     {
         setScale(0, 0, 0);
-		//triggering_circle_.loadImage("");
+		triggering_circle_.loadImage("Environment/glowing-circle-2.png");
+		SetCircleSize(200);
     };
     Flower::~Flower(void)
     {
@@ -23,15 +24,23 @@ namespace Jungle {
     void Flower::Draw()
     {
 
-
-		ofVec3f scale = getScale();
+		ofSetColor(color_.r, color_.g, color_.b);
+		if(enable_)
+		{
+			ofVec3f scale = getScale();
 		if(scale.x < max_scale_)
 		{
-			scale += 0.0001;
+			scale += scale_speed_;
 			setScale(scale.x, scale.y, scale.z);
 		}
-        ofSetColor(color_.r, color_.g, color_.b);
-        drawFaces();
+		drawFaces();
+		}
+		else
+		{
+			triggering_circle_.draw(pos.x-circle_size_.x, pos.y-circle_size_.y, circle_size_.z, circle_size_.w);
+		}
+
+		
     }
     
     
@@ -52,6 +61,18 @@ namespace Jungle {
 		ofPoint screen_pos;
 		screen_pos.set(pos_ss.x * w/2 + (x/2 + w/2), h - (pos_ss.y * h/2 + (y/2 + h/2)));
 		return screen_pos;
+	}
+
+	void Flower::SetCircleSize( float size )
+	{
+		circle_size_.z= circle_size_.w = size;
+		circle_size_.x = size/2;
+		circle_size_.y = 3*circle_size_.x/4;
+	}
+
+	void Flower::SetScaleSpeed( float speed )
+	{
+		scale_speed_ = speed;
 	}
 
 
