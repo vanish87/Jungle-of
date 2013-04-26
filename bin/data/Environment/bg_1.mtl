@@ -3,7 +3,7 @@
 # Created with Kaydara FBX
 # 
 
-newmtl BG_3
+newmtl Grass_1
 map_Kd for.png
 Ka 0.000000 0.000000 0.000000
 Kd 0.800000 0.800000 0.800000

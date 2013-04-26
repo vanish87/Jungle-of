@@ -29,7 +29,7 @@ namespace Jungle
         
  /*       bg_1_.loadModel("Environment/BG_1.obj");
 		//0,-46, 0
-		bg_1_.setPosition(300,300,0);
+		bg_1_.setPosition(600,0,0);
 		bg_1_.setScale(2,2,2);
 		bg_1_.setRotation(0, 180, 0, 0, 1);
         bg_1_.setRotation(1, 180, 0, 1, 0);
