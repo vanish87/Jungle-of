@@ -49,8 +49,8 @@ namespace Jungle
 		//				 |				         |
 		//			    tree			     camera pos
 
-		//left bottom corner is X:0, Y:0
-		//right up cornor is X: 1280, Y:720
+		//left bottom corner is X:0,     Y:0
+		//right up cornor is    X: 1280, Y:720
         Flower mushroom2;
 		mushroom2.loadModel("Environment/shroom_alpha.obj");
 		mushroom2.setPosition(200,200,0);
@@ -58,6 +58,8 @@ namespace Jungle
         mushroom2.SetMaxScale(0.05);
 		mushroom2.SetScaleSpeed(0.001);
 		//depend on MaxScale
+		//eventually we will use particles to replace single image
+		//do not worry it does not fit mushroom and flower perfectly
 		mushroom2.SetCircleSize(200);
 		mushroom2.Enable(false);
 		mushrooms_.push_back(mushroom2);
