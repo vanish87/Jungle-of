@@ -46,13 +46,9 @@ namespace Jungle
         
         Flower mushroom2;
 		mushroom2.loadModel("Environment/shroom_alpha.obj");
-<<<<<<< HEAD
 		mushroom2.setPosition(400,0,11);
         mushroom2.SetMaxScale(0.05);
-=======
 		mushroom2.setPosition(200, 200, 60);
->>>>>>> unfinished codes
-		mushroom2.setRotation(0,180,1,0,0);
 		mushroom2.Enable(true);
 		mushrooms_.push_back(mushroom2);
         
