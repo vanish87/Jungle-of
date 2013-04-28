@@ -1,0 +1,11 @@
+# 
+# Wavefront material file
+# Created with Kaydara FBX
+# 
+
+newmtl mountain
+map_Kd background-jungle-04-layer-03.png
+Ka 0.000000 0.000000 0.000000
+Kd 0.800000 0.800000 0.800000
+illum 1
+Tr 1.000000

@@ -27,21 +27,21 @@ namespace Jungle
 		tree_.setRotation(0, 180, 0, 0, 1);
 		tree_.Enable(true);
         
-        bg_1_.loadModel("Environment/gound_1.obj");
+        bg_1_.loadModel("Environment/mountain2.obj");
 		//0,-46, 0
-		bg_1_.setPosition(400,0,0);
+		bg_1_.setPosition(600,-115,-270);
 		bg_1_.setScale(2,2,2);
 		bg_1_.setRotation(0, 180, 0, 0, 1);
         bg_1_.setRotation(1, 180, 0, 1, 0);
 		bg_1_.Enable(true);
-        
+         
         bg_2_.loadModel("Environment/ground_2.obj");
 		//0,-46, 0
-		bg_2_.setPosition(400,0,0);
+		bg_2_.setPosition(400,-20,0);
 		bg_2_.setScale(1,0.5,0.5);
 		bg_2_.setRotation(0, 180, 0, 0, 1);        
         bg_2_.setRotation(1, 180, 0, 1, 0);
-		bg_2_.Enable(false);
+		bg_2_.Enable(true);
         
         bg_3_.loadModel("Environment/ground_3.obj");
 		//0,-46, 0
@@ -78,10 +78,11 @@ namespace Jungle
         
 		//ground_.AddToScene();
         //rocks_.AddToScene();
-		bg_3_.AddToScene();
-		//bg_2_.AddToScene();
-		//bg_1_.AddToScene();
+		
+		bg_2_.AddToScene();
+        bg_3_.AddToScene();  
 		tree_.AddToScene();
+		bg_1_.AddToScene();
 		//bush_.AddToScene();
         
 		atmo.loadSound("Audio/jungle-atmos-2.mp3");
