@@ -16,9 +16,25 @@ namespace Jungle {
         setScale(0, 0, 0);
 		triggering_circle_.loadImage("Environment/glowing-circle-2.png");
 		SetCircleSize(200);
+        flower_state_ = GROWING;
     };
     Flower::~Flower(void)
     {
+    }
+    
+    void Flower::Update(float frame_time)
+    {
+        if(enable_)
+        {            
+            time_ +=frame_time;
+        }
+        if (time_ > 5)
+        {
+            flower_state_ = DISAPPEARING;
+            time_ = 0;
+        }
+        
+
     }
     
     void Flower::Draw()
@@ -28,12 +44,28 @@ namespace Jungle {
 		if(enable_)
 		{
 			ofVec3f scale = getScale();
-		if(scale.x < max_scale_)
-		{
-			scale += scale_speed_;
-			setScale(scale.x, scale.y, scale.z);
-		}
-		drawFaces();
+            switch (flower_state_)
+            {
+                case GROWING:
+                    if(scale.x < max_scale_)
+                    {
+                        scale += scale_speed_;
+                    }
+                    break;
+                case DISAPPEARING:
+                    if(scale.x > scale_speed_)
+                        scale -= scale_speed_;
+                    else
+                    {
+                        flower_state_ = GROWING;
+                        enable_ = false;
+                    }
+                    break;
+                default:
+                    break;
+            }            
+            setScale(scale.x, scale.y, scale.z);
+            drawFaces();
 		}
 		else
 		{

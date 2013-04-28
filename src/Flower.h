@@ -7,10 +7,16 @@
 namespace Jungle {
     class Flower : public SceneModel
     {
+        enum State
+        {
+            GROWING,
+            DISAPPEARING
+        };
     public:
         Flower(void);
         ~Flower(void);
         
+        virtual void Update(float frame_time);
         void Draw();
         void SetMaxScale(float scale);
 		void SetScaleSpeed(float speed);
@@ -27,6 +33,9 @@ namespace Jungle {
 
 		ofImage triggering_circle_;
 		ofVec4f circle_size_;
+        
+        float time_;
+        State flower_state_;
     };
 }
 

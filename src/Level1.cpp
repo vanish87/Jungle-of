@@ -310,6 +310,7 @@ namespace Jungle
                     }
                 }
             }
+            mushrooms_[i].Update(ofGetLastFrameTime());
         }
 		//if finished
 		//change to next level
