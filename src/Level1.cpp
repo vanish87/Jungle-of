@@ -67,10 +67,12 @@ namespace Jungle
         
         Flower mushroom3;
 		mushroom3.loadModel("Environment/shroom_alpha.obj");
-		mushroom3.setPosition(450,-10,0);
+		mushroom3.setPosition(250,-10,0);
 		mushroom3.setRotation(0,180,1,0,0);
         mushroom3.SetMaxScale(0.05);
 		mushroom3.SetScaleSpeed(0.001);
+        mushroom3.staying_time_ = 8;
+        mushroom3.holding_time_ = 1;
 		//depend on MaxScale
 		//eventually we will use particles to replace single image
 		//do not worry it does not fit mushroom and flower perfectly
@@ -78,52 +80,74 @@ namespace Jungle
 		mushroom3.Enable(false);
 		mushrooms_.push_back(mushroom3);
         
-        Flower leaf;
-		leaf.loadModel("Environment/Leaf.obj");
-		leaf.setPosition(450,100,0);
-		leaf.setRotation(0,180,1,0,0);
-        leaf.SetMaxScale(0.2);
-		leaf.SetScaleSpeed(0.01);
-		//depend on MaxScale
-		//eventually we will use particles to replace single image
-		//do not worry it does not fit mushroom and flower perfectly
-		leaf.SetCircleSize(200);
-        leaf.SetCircleColor(ofColor(255,0,0,255));
-		leaf.Enable(false);
-		mushrooms_.push_back(leaf);
-  /*
-        Flower mushroom4;
-		mushroom4.loadModel("Environment/shroom_alpha.obj");
-		mushroom4.setPosition(500,0,11);
-		mushroom4.SetMaxScale(0.05);
-        mushroom4.setRotation(0,180,1,0,0);
-		mushroom4.Enable(true);
-		mushrooms_.push_back(mushroom4);
+        Flower leaf1;
+		leaf1.loadModel("Environment/Leaf.obj");
+		leaf1.setPosition(1,202,06);
+		leaf1.setRotation(0,180,1,0,0);
+        leaf1.SetMaxScale(0.2);
+		leaf1.SetScaleSpeed(0.01);
+		leaf1.SetCircleSize(200);
+        leaf1.SetCircleColor(ofColor(255,0,0,255));
+		leaf1.Enable(false);
+		mushrooms_.push_back(leaf1);
+ 
+        Flower leaf2;
+		leaf2.loadModel("Environment/Leaf.obj");
+		leaf2.setPosition(103,402,40);
+		leaf2.setRotation(0,180,1,0,0);
+        leaf2.SetMaxScale(0.2);
+		leaf2.SetScaleSpeed(0.01);
+		leaf2.SetCircleSize(200);
+        leaf2.SetCircleColor(ofColor(255,0,0,255));
+		leaf2.Enable(false);
+		mushrooms_.push_back(leaf2);
         
-        Flower mushroom5;
-		mushroom5.loadModel("Environment/shroom_alpha.obj");
-		mushroom5.setPosition(550,0,11);
-        mushroom3.SetMaxScale(0.05);
-		mushroom5.setRotation(0,180,1,0,0);
-		mushroom5.Enable(true);
-		mushrooms_.push_back(mushroom5);
+        Flower leaf3;
+		leaf3.loadModel("Environment/Leaf.obj");
+		leaf3.setPosition(155,474,4);
+		leaf3.setRotation(0,180,1,0,0);
+        leaf3.SetMaxScale(0.2);
+		leaf3.SetScaleSpeed(0.01);
+		leaf3.SetCircleSize(200);
+        leaf3.SetCircleColor(ofColor(255,0,0,255));
+		leaf3.Enable(false);
+		mushrooms_.push_back(leaf3);
        
-        Flower mushroom6;
-		mushroom6.loadModel("Environment/shroom_alpha.obj");
-		mushroom6.setPosition(600,0,11);
-        mushroom3.SetMaxScale(0.05);
-		mushroom6.setRotation(0,180,1,0,0);
-		mushroom6.Enable(true);
-		mushrooms_.push_back(mushroom6);
+        Flower leaf4;
+		leaf4.loadModel("Environment/Leaf.obj");
+		leaf4.setPosition(279,369,19);
+		leaf4.setRotation(0,180,1,0,0);
+        leaf4.SetMaxScale(0.2);
+		leaf4.SetScaleSpeed(0.01);
+		leaf4.SetCircleSize(200);
+        leaf4.SetCircleColor(ofColor(255,0,0,255));
+		leaf4.Enable(false);
+		mushrooms_.push_back(leaf4);
         
-        Flower mushroom7;
-		mushroom7.loadModel("Environment/shroom_alpha.obj");
-		mushroom7.setPosition(700,0,11);
-		mushroom7.setRotation(0,180,1,0,0);
-		mushroom7.Enable(true);
-		mushrooms_.push_back(mushroom7);
+        Flower leaf5;
+		leaf5.loadModel("Environment/Leaf.obj");
+		leaf5.setPosition(306,289,5);
+		leaf5.setRotation(0,180,1,0,0);
+        leaf5.SetMaxScale(0.2);
+		leaf5.SetScaleSpeed(0.01);
+		leaf5.SetCircleSize(200);
+        leaf5.SetCircleColor(ofColor(255,0,0,255));
+		leaf5.Enable(false);
+		mushrooms_.push_back(leaf5);
         
-        Flower mushroom8;
+        Flower leaf6;
+		leaf6.loadModel("Environment/Leaf.obj");
+		leaf6.setPosition(17,316,-20);
+		leaf6.setRotation(0,180,1,0,0);
+        leaf6.SetMaxScale(0.2);
+		leaf6.SetScaleSpeed(0.01);
+		leaf6.SetCircleSize(200);
+        leaf6.SetCircleColor(ofColor(255,0,0,255));
+		leaf6.Enable(false);
+		mushrooms_.push_back(leaf6);
+        
+        
+  /*      Flower mushroom8;
 		mushroom8.loadModel("Environment/shroom_alpha.obj");
 		mushroom8.setPosition(750,0,11);
         mushroom8.SetMaxScale(0.01);

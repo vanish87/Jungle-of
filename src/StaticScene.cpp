@@ -84,7 +84,7 @@ namespace Jungle
         
         
         bg_1_.AddToScene();
-        bg_3_.AddToScene();
+        //bg_3_.AddToScene();
 		tree_.AddToScene();
 		//bush_.AddToScene();
         
