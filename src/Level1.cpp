@@ -61,7 +61,7 @@ namespace Jungle
 		//depend on MaxScale
 		//eventually we will use particles to replace single image
 		//do not worry it does not fit mushroom and flower perfectly
-		mushroom2.SetCircleSize(50);
+		mushroom2.SetCircleSize(100);
 		mushroom2.Enable(false);
 		mushrooms_.push_back(mushroom2);
         

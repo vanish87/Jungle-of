@@ -14,7 +14,7 @@ namespace Jungle {
     : flower_radius_(3), flower_collided_(false), color_(255,255,255), max_scale_(0.008), scale_speed_(0.001)
     {
         setScale(0, 0, 0);
-		triggering_circle_.loadImage("Environment/glowing-circle-2.png");
+		triggering_circle_.loadImage("Environment/trigger-circle.png");
 		SetCircleSize(200);
         flower_state_ = HOLDING;
     };
@@ -82,13 +82,18 @@ namespace Jungle {
                     }
                     break;
                 case HOLDING:
-                    for(int i = 0; i < 5; ++i)
+                    //for(int i = 0; i < 5; ++i)
                     {
-                        ofSetColor(color_.r, color_.g, color_.b, color_.a * 0.1 * (5-i));
-                        float scale = 1 / (time_ + 0.01);
+                        //ofSetColor(color_.r, color_.g, color_.b, color_.a * 0.1 * (5-i));
+                        float scale = (5 - time_)/5;
                         if(time_ <= 0.1)
                             scale = 1;
-                        ofCircle(pos.x, pos.y, (circle_size_.z - 50 + i * 10) * scale);
+                        ofPushMatrix();
+                        ofTranslate(pos.x, pos.y);
+                        triggering_circle_.draw(-circle_size_.x * scale, -circle_size_.y * scale,
+                                                circle_size_.z * scale, circle_size_.w * scale);
+                        ofPopMatrix();
+                        //ofCircle(pos.x, pos.y, (circle_size_.z - 50 + i * 10) * scale);
                     }
                     break;
                 default:
