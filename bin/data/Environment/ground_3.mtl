@@ -3,15 +3,8 @@
 # Created with Kaydara FBX
 # 
 
-newmtl Rocks
-map_Kd grass-1.png
-Ka 0.000000 0.000000 0.000000
-Kd 0.800000 0.800000 0.800000
-illum 1
-Tr 1.000000
-
-newmtl ground
-map_Kd jungle-floor-01.png
+newmtl BG_3
+map_Kd ground-layer-2.png
 Ka 0.000000 0.000000 0.000000
 Kd 0.800000 0.800000 0.800000
 illum 1
