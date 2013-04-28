@@ -82,8 +82,8 @@ namespace Jungle
 		leaf.loadModel("Environment/Leaf.obj");
 		leaf.setPosition(450,100,0);
 		leaf.setRotation(0,180,1,0,0);
-        leaf.SetMaxScale(0.05);
-		leaf.SetScaleSpeed(0.001);
+        leaf.SetMaxScale(0.2);
+		leaf.SetScaleSpeed(0.01);
 		//depend on MaxScale
 		//eventually we will use particles to replace single image
 		//do not worry it does not fit mushroom and flower perfectly

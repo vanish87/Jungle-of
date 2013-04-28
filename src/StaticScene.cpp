@@ -78,11 +78,12 @@ namespace Jungle
         
 		//ground_.AddToScene();
         //rocks_.AddToScene();
+    
 		
-		bg_2_.AddToScene();
         bg_3_.AddToScene();  
 		tree_.AddToScene();
-		bg_1_.AddToScene();
+		bg_2_.AddToScene();
+        bg_1_.AddToScene();
 		//bush_.AddToScene();
         
 		atmo.loadSound("Audio/jungle-atmos-2.mp3");
