@@ -77,6 +77,19 @@ namespace Jungle
 		mushroom3.SetCircleSize(200);
 		mushroom3.Enable(false);
 		mushrooms_.push_back(mushroom3);
+        
+        Flower leaf;
+		leaf.loadModel("Environment/shroom_alpha.obj");
+		leaf.setPosition(450,100,0);
+		leaf.setRotation(0,180,1,0,0);
+        leaf.SetMaxScale(0.05);
+		leaf.SetScaleSpeed(0.001);
+		//depend on MaxScale
+		//eventually we will use particles to replace single image
+		//do not worry it does not fit mushroom and flower perfectly
+		leaf.SetCircleSize(200);
+		leaf.Enable(false);
+		mushrooms_.push_back(mushroom3);
   /*
         Flower mushroom4;
 		mushroom4.loadModel("Environment/shroom_alpha.obj");
