@@ -39,6 +39,8 @@ namespace Jungle {
 		ofVec4f circle_size_;
         
         float time_;
+        float holding_time_;
+        float staying_time_;
         State flower_state_;
     };
 }

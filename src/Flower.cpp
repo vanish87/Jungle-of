@@ -17,6 +17,10 @@ namespace Jungle {
 		triggering_circle_.loadImage("Environment/trigger-circle.png");
 		SetCircleSize(200);
         flower_state_ = HOLDING;
+        
+        //in seconds
+        holding_time_ = 3;
+        staying_time_ = 5;
     };
     Flower::~Flower(void)
     {
@@ -25,14 +29,19 @@ namespace Jungle {
     void Flower::Enable(bool enable)
     {
         if(flower_state_ == HOLDING)
-        {    
+        {
+            
             enable_ = enable;
-            time_ = 0;
+            if(enable != true)
+            {
+                time_ = 0;
+            }
         }
+        else
         if(flower_state_ == DISAPPEARING || flower_state_ == GROWING )
         {
-            if(enable != false)
-                enable_ = enable;
+            if(enable_ == enable && time_ > 0)
+                time_ = 0;
         }
     }
     
@@ -42,17 +51,28 @@ namespace Jungle {
         {            
             time_ +=frame_time;
         }
-        if (time_ > 5)
+
+        if(flower_state_ == HOLDING)
         {
-            if(flower_state_ == GROWING)
-                flower_state_ = DISAPPEARING;
-            else
-                if(flower_state_ == HOLDING)
+                if (time_ > holding_time_)
                 {
                     flower_state_ = GROWING;
+                    
+                    time_ = 0;
                 }
-            time_ = 0;
+            
         }
+               
+        
+        
+            
+        if(flower_state_ == GROWING)
+            if(time_ > staying_time_)
+            {
+                flower_state_ = DISAPPEARING;
+                time_ = 0;
+            }
+        
         
 
     }
@@ -85,7 +105,7 @@ namespace Jungle {
                     //for(int i = 0; i < 5; ++i)
                     {
                         //ofSetColor(color_.r, color_.g, color_.b, color_.a * 0.1 * (5-i));
-                        float scale = (5 - time_)/5;
+                        float scale = (holding_time_ - time_)/holding_time_;
                         if(time_ <= 0.1)
                             scale = 1;
                         ofPushMatrix();

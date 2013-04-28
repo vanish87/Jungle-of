@@ -308,14 +308,15 @@ namespace Jungle
                 {
                     
                     
-                    mushrooms_[i].Enable(true);
+                    
                     int index = ofRandom(0,4);
                     //cout<<index<<endl;
                     if (!sounds[index].getIsPlaying())
                     {
                         sounds[index].play();
                     }
-                }          
+                }
+                mushrooms_[i].Enable(true);
             }
             else
             {
