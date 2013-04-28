@@ -408,12 +408,12 @@ namespace Jungle
 		ofSetColor(255, 255, 255,255);
 		ofDrawBitmapString("angle "+ ofToString(player.wind_.emitter_.angle), 20, 20);
 		ofDrawBitmapString("v length "+ ofToString((bt_pos - mh_pos).length()), 20, 40);
-		ofDrawBitmapString("scale "+ ofToString(mushrooms_[0].getScale().x), 20, 60);
+		ofDrawBitmapString("scale "+ ofToString(mushrooms_[index_].getScale().x), 20, 60);
 		
 		ofDrawBitmapString("pre "+ ofToString(player.pre_hand_pos_.x) + " "+ ofToString(player.pre_hand_pos_.y), 20, 80);
 		ofDrawBitmapString("hand "+ ofToString(bt_pos.x) + " "+ ofToString(bt_pos.y), 20, 100);
 
-		ofDrawBitmapString("mush pos "+ ofToString(mushrooms_[0].getPosition().x) + " "+ ofToString(mushrooms_[0].getPosition().y)+ " "+ ofToString(mushrooms_[0].getPosition().z), 20, 160);
+		ofDrawBitmapString("mush pos "+ ofToString(mushrooms_[index_].getPosition().x) + " "+ ofToString(mushrooms_[index_].getPosition().y)+ " "+ ofToString(mushrooms_[index_].getPosition().z), 20, 160);
 
 	}
 
@@ -422,14 +422,15 @@ namespace Jungle
         Player& player = JungleApp::PlayerInstance();
         
         int index = 2;
+        index_ = index;
         ofVec3f pos = mushrooms_[index].getPosition();
 		ofVec3f scale = mushrooms_[index].getScale();
         
         ofVec3f cam_pos=player.player_camera_.getPosition();
 
         //static scene
-        this->GetParent()->keyPressed(key);
-        return;
+        //this->GetParent()->keyPressed(key);
+        //return;
 		switch (key)
 		{
             case 's':
