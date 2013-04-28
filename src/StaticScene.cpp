@@ -21,37 +21,37 @@ namespace Jungle
 
 		//no need background 
 		//background is Gradient color now
-		tree_.loadModel("Environment/Tree_Leaves_New_6.obj");
-		tree_.setPosition(650 , -200, 0);
+		tree_.loadModel("Environment/Tree_Leaves_New_8.obj");
+		tree_.setPosition(690 , -200, 0);
 		tree_.setScale(2,2,2);
 		tree_.setRotation(0, 180, 0, 0, 1);
 		tree_.Enable(true);
         
- /*       bg_1_.loadModel("Environment/BG_1.obj");
+        bg_1_.loadModel("Environment/gound_1.obj");
 		//0,-46, 0
-		bg_1_.setPosition(600,0,0);
+		bg_1_.setPosition(400,0,0);
 		bg_1_.setScale(2,2,2);
 		bg_1_.setRotation(0, 180, 0, 0, 1);
         bg_1_.setRotation(1, 180, 0, 1, 0);
 		bg_1_.Enable(true);
         
-        bg_2_.loadModel("Environment/BG_2.obj");
+        bg_2_.loadModel("Environment/ground_2.obj");
 		//0,-46, 0
-		bg_2_.setPosition(0,-180,-240);
+		bg_2_.setPosition(400,0,0);
 		bg_2_.setScale(1,0.5,0.5);
 		bg_2_.setRotation(0, 180, 0, 0, 1);        
         bg_2_.setRotation(1, 180, 0, 1, 0);
 		bg_2_.Enable(false);
         
-        bg_3_.loadModel("Environment/BG_3.obj");
+        bg_3_.loadModel("Environment/ground_3.obj");
 		//0,-46, 0
-		bg_3_.setPosition(500,500,50);
+		bg_3_.setPosition(550,-20,0);
 		bg_3_.setScale(2,2,2);
 		bg_3_.setRotation(0, 180, 0, 0, 1);        
         bg_3_.setRotation(1, 180, 0, 1, 0);
 		bg_3_.Enable(true);
         
-        ground_.loadModel("Environment/ground_new_1.obj");
+  /*      ground_.loadModel("Environment/ground_new_1.obj");
 		//0,-46, 0
 		ground_.setPosition(90,-90, -100);
 		ground_.setScale(1.5,1,1);
@@ -78,7 +78,7 @@ namespace Jungle
         
 		//ground_.AddToScene();
         //rocks_.AddToScene();
-		//bg_3_.AddToScene();
+		bg_3_.AddToScene();
 		//bg_2_.AddToScene();
 		//bg_1_.AddToScene();
 		tree_.AddToScene();

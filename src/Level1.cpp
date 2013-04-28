@@ -53,10 +53,11 @@ namespace Jungle
 		//right up cornor is    X: 1280, Y:720
         Flower mushroom2;
 		mushroom2.loadModel("Environment/shroom_alpha.obj");
-		mushroom2.setPosition(200,200,0);
+		mushroom2.setPosition(200,-10,0);
 		mushroom2.setRotation(0,180,1,0,0);
         mushroom2.SetMaxScale(0.05);
 		mushroom2.SetScaleSpeed(0.001);
+        
 		//depend on MaxScale
 		//eventually we will use particles to replace single image
 		//do not worry it does not fit mushroom and flower perfectly
@@ -64,14 +65,19 @@ namespace Jungle
 		mushroom2.Enable(false);
 		mushrooms_.push_back(mushroom2);
         
-  /*      Flower mushroom3;
+        Flower mushroom3;
 		mushroom3.loadModel("Environment/shroom_alpha.obj");
-		mushroom3.setPosition(430,0,11);
-		mushroom3.SetMaxScale(0.05);
+		mushroom3.setPosition(450,-10,0);
 		mushroom3.setRotation(0,180,1,0,0);
-		mushroom3.Enable(true);
+        mushroom3.SetMaxScale(0.05);
+		mushroom3.SetScaleSpeed(0.001);
+		//depend on MaxScale
+		//eventually we will use particles to replace single image
+		//do not worry it does not fit mushroom and flower perfectly
+		mushroom3.SetCircleSize(200);
+		mushroom3.Enable(false);
 		mushrooms_.push_back(mushroom3);
-       
+  /*
         Flower mushroom4;
 		mushroom4.loadModel("Environment/shroom_alpha.obj");
 		mushroom4.setPosition(500,0,11);
@@ -407,8 +413,8 @@ namespace Jungle
         ofVec3f cam_pos=player.player_camera_.getPosition();
 
         //static scene
-        //this->GetParent()->keyPressed(key);
-        //return;
+        this->GetParent()->keyPressed(key);
+        return;
 		switch (key)
 		{
             case 's':
