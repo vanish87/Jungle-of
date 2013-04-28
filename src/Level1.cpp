@@ -88,7 +88,7 @@ namespace Jungle
 		//eventually we will use particles to replace single image
 		//do not worry it does not fit mushroom and flower perfectly
 		leaf.SetCircleSize(200);
-        leaf.SetCircleColor(ofColor(255,0,0,0));
+        leaf.SetCircleColor(ofColor(255,0,0,255));
 		leaf.Enable(false);
 		mushrooms_.push_back(leaf);
   /*
