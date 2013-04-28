@@ -10,11 +10,15 @@ namespace Jungle {
         enum State
         {
             GROWING,
-            DISAPPEARING
+            DISAPPEARING,
+            HOLDING,
+            
         };
     public:
         Flower(void);
         ~Flower(void);
+        
+        virtual void Enable(bool enable);
         
         virtual void Update(float frame_time);
         void Draw();

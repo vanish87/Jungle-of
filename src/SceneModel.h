@@ -15,7 +15,7 @@ namespace Jungle
 		void AddToScene();
 
 		bool Enabled();
-		void Enable(bool enable);
+		virtual void Enable(bool enable);
 
 		virtual void Update(float frame_time);
 

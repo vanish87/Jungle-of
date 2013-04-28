@@ -60,7 +60,7 @@ namespace Jungle
 		//depend on MaxScale
 		//eventually we will use particles to replace single image
 		//do not worry it does not fit mushroom and flower perfectly
-		mushroom2.SetCircleSize(200);
+		mushroom2.SetCircleSize(50);
 		mushroom2.Enable(false);
 		mushrooms_.push_back(mushroom2);
         
@@ -300,7 +300,8 @@ namespace Jungle
             {
                 if(!mushrooms_[i].Enabled())
                 {
-                
+                    
+                    
                     mushrooms_[i].Enable(true);
                     int index = ofRandom(0,4);
                     //cout<<index<<endl;
@@ -308,7 +309,11 @@ namespace Jungle
                     {
                         sounds[index].play();
                     }
-                }
+                }          
+            }
+            else
+            {
+                mushrooms_[i].Enable(false);
             }
             mushrooms_[i].Update(ofGetLastFrameTime());
         }

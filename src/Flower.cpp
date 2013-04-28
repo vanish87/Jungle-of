@@ -16,10 +16,24 @@ namespace Jungle {
         setScale(0, 0, 0);
 		triggering_circle_.loadImage("Environment/glowing-circle-2.png");
 		SetCircleSize(200);
-        flower_state_ = GROWING;
+        flower_state_ = HOLDING;
     };
     Flower::~Flower(void)
     {
+    }
+    
+    void Flower::Enable(bool enable)
+    {
+        if(flower_state_ == HOLDING)
+        {    
+            enable_ = enable;
+            time_ = 0;
+        }
+        if(flower_state_ == DISAPPEARING || flower_state_ == GROWING )
+        {
+            if(enable != false)
+                enable_ = enable;
+        }
     }
     
     void Flower::Update(float frame_time)
@@ -30,7 +44,13 @@ namespace Jungle {
         }
         if (time_ > 5)
         {
-            flower_state_ = DISAPPEARING;
+            if(flower_state_ == GROWING)
+                flower_state_ = DISAPPEARING;
+            else
+                if(flower_state_ == HOLDING)
+                {
+                    flower_state_ = GROWING;
+                }
             time_ = 0;
         }
         
@@ -57,8 +77,18 @@ namespace Jungle {
                         scale -= scale_speed_;
                     else
                     {
-                        flower_state_ = GROWING;
+                        flower_state_ = HOLDING;
                         enable_ = false;
+                    }
+                    break;
+                case HOLDING:
+                    for(int i = 0; i < 5; ++i)
+                    {
+                        ofSetColor(color_.r, color_.g, color_.b, color_.a * 0.1 * (5-i));
+                        float scale = 1 / (time_ + 0.01);
+                        if(time_ <= 0.1)
+                            scale = 1;
+                        ofCircle(pos.x, pos.y, (circle_size_.z - 50 + i * 10) * scale);
                     }
                     break;
                 default:
@@ -69,7 +99,12 @@ namespace Jungle {
 		}
 		else
 		{
-			triggering_circle_.draw(pos.x-circle_size_.x, pos.y-circle_size_.y, circle_size_.z, circle_size_.w);
+			//triggering_circle_.draw(pos.x-circle_size_.x, pos.y-circle_size_.y, circle_size_.z, circle_size_.w);
+            for(int i = 1; i < 5; ++i)
+            {
+               // ofSetColor(color_.r, color_.g, color_.b, color_.a * 0.1 * (5-i));
+               // ofCircle(pos.x, pos.y, circle_size_.z - 50 + i * 10);
+            }
 		}
 
 		
