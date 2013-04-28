@@ -25,12 +25,14 @@ namespace Jungle {
         void SetMaxScale(float scale);
 		void SetScaleSpeed(float speed);
 		void SetCircleSize(float size);
+        void SetCircleColor(ofColor color);
 		ofVec3f GetScreenPos(ofVec3f world_pos, ofCamera& camera);
         
     public:
         float flower_radius_;
 		bool flower_collided_;
         ofColor color_;
+        ofColor circle_color_;
         
         float max_scale_;
 		float scale_speed_;

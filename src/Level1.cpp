@@ -88,6 +88,7 @@ namespace Jungle
 		//eventually we will use particles to replace single image
 		//do not worry it does not fit mushroom and flower perfectly
 		leaf.SetCircleSize(200);
+        leaf.SetCircleColor(ofColor(255,0,0,0));
 		leaf.Enable(false);
 		mushrooms_.push_back(leaf);
   /*
@@ -420,7 +421,7 @@ namespace Jungle
 	{
         Player& player = JungleApp::PlayerInstance();
         
-        int index = 0;
+        int index = 2;
         ofVec3f pos = mushrooms_[index].getPosition();
 		ofVec3f scale = mushrooms_[index].getScale();
         

@@ -18,12 +18,19 @@ namespace Jungle {
 		SetCircleSize(200);
         flower_state_ = HOLDING;
         
+        circle_color_ = ofColor(255,255,255,255);
+        
         //in seconds
         holding_time_ = 3;
         staying_time_ = 5;
     };
     Flower::~Flower(void)
     {
+    }
+    
+    void Flower::SetCircleColor(ofColor color)
+    {
+        circle_color_ = color;
     }
     
     void Flower::Enable(bool enable)
@@ -104,7 +111,7 @@ namespace Jungle {
                 case HOLDING:
                     //for(int i = 0; i < 5; ++i)
                     {
-                        //ofSetColor(color_.r, color_.g, color_.b, color_.a * 0.1 * (5-i));
+                        ofSetColor(circle_color_);
                         float scale = (holding_time_ - time_)/holding_time_;
                         if(time_ <= 0.1)
                             scale = 1;
