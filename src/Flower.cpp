@@ -24,10 +24,10 @@ namespace Jungle {
         holding_time_ = 3;
         staying_time_ = 5;
         
-        sounds[0].loadSound("Audio/trigger1.mp3");
-		sounds[1].loadSound("Audio/trigger2.mp3");
-		sounds[2].loadSound("Audio/trigger3.mp3");
-		sounds[3].loadSound("Audio/trigger4.mp3");
+        sounds_[0].loadSound("Audio/trigger1.mp3");
+		sounds_[1].loadSound("Audio/trigger2.mp3");
+		sounds_[2].loadSound("Audio/trigger3.mp3");
+		sounds_[3].loadSound("Audio/trigger4.mp3");
     };
     Flower::~Flower(void)
     {
@@ -72,9 +72,9 @@ namespace Jungle {
                     
                     int index = ofRandom(0,4);
                     //cout<<index<<endl;
-                    if (!sounds[index].getIsPlaying())
+                    if (!sounds_[index].getIsPlaying())
                     {
-                        sounds[index].play();
+                        sounds_[index].play();
                     }
                     
                     time_ = 0;

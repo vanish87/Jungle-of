@@ -46,7 +46,7 @@ namespace Jungle {
         State flower_state_;
         
         
-        ofSoundPlayer sounds[4];
+        ofSoundPlayer sounds_[4];
         
     };
 }
