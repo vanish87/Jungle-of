@@ -31,14 +31,12 @@ namespace Jungle
         light_.enable();
         ofBackground(255);
         
-        sounds[0].loadSound("Audio/trigger1.mp3");
-		sounds[1].loadSound("Audio/trigger2.mp3");
-		sounds[2].loadSound("Audio/trigger3.mp3");
-		sounds[3].loadSound("Audio/trigger4.mp3");
+
 
 		// Mushroom Placement        
-        title_.loadImage("/UI/title-screen-3.png");
+        title_.loadImage("UI/title-screen-3.png");
         
+        index_=0;
 		//
 		//z axis
 		//              all glowing circle
@@ -409,31 +407,29 @@ namespace Jungle
 		//if collision
         for(int i =0; i < mushrooms_.size(); ++i)
         {
-            ofVec3f bt_pos = player.hand_pos_;
+            ofVec3f bt_pos = player.l_hand_pos_;
 			bt_pos.y = h_-bt_pos.y;
             ofVec3f mh_pos = ofVec3f(mushrooms_[i].getPosition().x, mushrooms_[i].getPosition().y, 0);
-            if((bt_pos - mh_pos).length() < 70)
+            
+            ofVec3f bt_pos1;
+            if(Jungle::KINECT_ENABLE)
+                bt_pos1 = player.hand_pos_;
+            else
+                bt_pos1 = player.hand_pos_;
+			bt_pos1.y = h_-bt_pos1.y;
+            if((bt_pos1 - mh_pos).length() < 70 || (bt_pos - mh_pos).length() < 70)
                 //triggering mushrooms
             {
-                if(!mushrooms_[i].Enabled())
-                {
-                    
-                    
-                    
-                    int index = ofRandom(0,4);
-                    //cout<<index<<endl;
-                    if (!sounds[index].getIsPlaying())
-                    {
-                        sounds[index].play();
-                    }
-                }
+                
                 mushrooms_[i].Enable(true);
             }
             else
             {
                 mushrooms_[i].Enable(false);
             }
-            mushrooms_[i].Update(ofGetLastFrameTime());
+            
+             mushrooms_[i].Update(ofGetLastFrameTime());
+            
         }
 		//if finished
 		//change to next level

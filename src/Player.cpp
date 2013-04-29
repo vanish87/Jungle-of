@@ -31,8 +31,6 @@ namespace Jungle
     void Player::Update()
     {
         ofxUser* user = JungleApp::KinectInstance().users;
-        ofVec3f l_hand_pos;
-        ofVec3f r_hand_pos;
 		for(int i =0; i< MAX_USERS; ++i)
 		{
 			if(user[i].isActive&& user[i].bones)
@@ -46,14 +44,23 @@ namespace Jungle
                                      MIN_KINECT_AREA.z, MAX_KINECT_AREA.z, MIN_PLAY_AREA.z, MAX_PLAY_AREA.z, true);
                 
                 
-				ofVec3f l_hand_pos = bone.left_hand;
-				ofVec3f r_hand_pos = bone.right_hand;
-				ofVec3f hand_pos = l_hand_pos - r_hand_pos;
+				//ofVec3f l_hand_pos;
+                l_hand_pos_.set(bone.left_hand.x, bone.left_hand.y, 0);
+                r_hand_pos_.set(bone.right_hand.x,bone.right_hand.y,0);
+				//ofVec3f hand_pos = l_hand_pos - r_hand_pos;
                 
 				pre_hand_pos_ = hand_pos_;
 				ofVec3f p;
-				p.x = ofMap(r_hand_pos.x , 0, 640, 0, ofGetWindowWidth(), true);
-				p.y = ofMap(r_hand_pos.y , 0, 480, 0, ofGetWindowHeight(), true);
+				p.x = ofMap(l_hand_pos_.x , 0, 640, 0, ofGetWindowWidth(), true);
+				p.y = ofMap(l_hand_pos_.y , 0, 480, 0, ofGetWindowHeight(), true);
+                l_hand_pos_.x = p.x;
+                l_hand_pos_.y = p.y;
+                
+				p.x = ofMap(r_hand_pos_.x , 0, 640, 0, ofGetWindowWidth(), true);
+				p.y = ofMap(r_hand_pos_.y , 0, 480, 0, ofGetWindowHeight(), true);
+                r_hand_pos_.x = p.x;
+                r_hand_pos_.y = p.y;
+                
 				SetHandPos(p);
 			}
 		}
@@ -63,7 +70,7 @@ namespace Jungle
             return;
         }
         if(Jungle::KINECT_ENABLE)
-            wind_.Update(l_hand_pos,r_hand_pos);
+            wind_.Update(l_hand_pos_,r_hand_pos_);
         else
             wind_.Update(hand_pos_, ofVec3f(0,0,0));
 		

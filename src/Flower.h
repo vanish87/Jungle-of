@@ -44,6 +44,10 @@ namespace Jungle {
         float holding_time_;
         float staying_time_;
         State flower_state_;
+        
+        
+        ofSoundPlayer sounds[4];
+        
     };
 }
 

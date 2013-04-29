@@ -59,7 +59,6 @@ namespace Jungle
         
 //        ofSoundPlayer trigger1;
 //        ofSoundPlayer trigger2;
-        ofSoundPlayer sounds[4];
 	};
 }
 
