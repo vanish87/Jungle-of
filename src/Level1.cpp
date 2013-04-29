@@ -221,11 +221,12 @@ namespace Jungle
 		mushroom14.Enable(false);
 		mushrooms_.push_back(mushroom14);
         
-        ///LEAFS
+        ///LEAves
         
         //// FIRST TREE FROM LEFT 
         
-        Leaf_Time = 15;
+        Leaf_Time = 15; // how long the leaves are visible before disappearing again
+        //create variable for hovering time aka holding_time
         
         Flower leaf1;
 		leaf1.loadModel("Environment/Leaf.obj");
