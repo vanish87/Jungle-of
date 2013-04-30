@@ -55,7 +55,7 @@ namespace Jungle
 		int h_;
 		int x_;
 		int y_;
-        int Leaf_Time;
+       
         
 //        ofSoundPlayer trigger1;
 //        ofSoundPlayer trigger2;

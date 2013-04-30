@@ -12,13 +12,11 @@ namespace Jungle {
             GROWING,
             DISAPPEARING,
             HOLDING,
-            
+            WAITING,
         };
     public:
         Flower(void);
         ~Flower(void);
-        
-        virtual void Enable(bool enable);
         
         virtual void Update(float frame_time);
         void Draw();
@@ -26,11 +24,17 @@ namespace Jungle {
 		void SetScaleSpeed(float speed);
 		void SetCircleSize(float size);
         void SetCircleColor(ofColor color);
+		void SetCollideSize(float size);
 		ofVec3f GetScreenPos(ofVec3f world_pos, ofCamera& camera);
-        
-    public:
-        float flower_radius_;
-		bool flower_collided_;
+
+		virtual bool Collided(ofVec3f pos);
+
+		bool IsGrowing();
+		void SetGrowing();
+
+		void Triggering(bool trigger);
+		void SetDisapp();
+	public:
         ofColor color_;
         ofColor circle_color_;
         
@@ -45,7 +49,7 @@ namespace Jungle {
         float staying_time_;
         State flower_state_;
         
-        
+        float collide_size_;
         ofSoundPlayer sounds_[4];
         
     };

@@ -33,4 +33,10 @@ namespace Jungle
 
 	}
 
+	bool SceneModel::Collided( ofVec3f pos )
+	{
+		return false;
+	}
+
+
 }

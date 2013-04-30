@@ -168,11 +168,10 @@ if not exist "$(ProjectDir)\bin\data" mkdir  "$(ProjectDir)\bin\data"
     <ClCompile Include="src\GamingScene2.cpp" />
     <ClCompile Include="src\GamingScene3.cpp" />
     <ClCompile Include="src\GamingScene1.cpp" />
-    <ClCompile Include="src\GamingScene5.cpp" />
     <ClCompile Include="src\GamingScene6.cpp" />
+    <ClCompile Include="src\Group.cpp" />
     <ClCompile Include="src\JungleParticle.cpp" />
     <ClCompile Include="src\Level1.cpp" />
-    <ClCompile Include="src\Level2.cpp" />
     <ClCompile Include="src\main.cpp" />
     <ClCompile Include="src\JungleApp.cpp" />
     <ClCompile Include="src\Player.cpp" />
@@ -372,12 +371,11 @@ if not exist "$(ProjectDir)\bin\data" mkdir  "$(ProjectDir)\bin\data"
     <ClInclude Include="src\GamingScene2.h" />
     <ClInclude Include="src\GamingScene3.h" />
     <ClInclude Include="src\GamingScene1.h" />
-    <ClInclude Include="src\GamingScene5.h" />
     <ClInclude Include="src\GamingScene6.h" />
+    <ClInclude Include="src\Group.h" />
     <ClInclude Include="src\JungleApp.h" />
     <ClInclude Include="src\JungleParticle.h" />
     <ClInclude Include="src\Level1.h" />
-    <ClInclude Include="src\Level2.h" />
     <ClInclude Include="src\Player.h" />
     <ClInclude Include="src\PreDef.h" />
     <ClInclude Include="src\SceneManager.h" />
@@ -398,6 +396,7 @@ if not exist "$(ProjectDir)\bin\data" mkdir  "$(ProjectDir)\bin\data"
     <None Include="bin\data\config.xml">
       <SubType>Designer</SubType>
     </None>
+    <None Include="bin\data\SceneConfig.xml" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

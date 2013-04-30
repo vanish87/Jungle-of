@@ -15,14 +15,16 @@ namespace Jungle
 		void AddToScene();
 
 		bool Enabled();
+
 		virtual void Enable(bool enable);
 
 		virtual void Update(float frame_time);
 
+		virtual bool Collided(ofVec3f pos);
+
 	protected:
 		bool enable_;
 	};
-
 }
 
 #endif

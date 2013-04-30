@@ -10,7 +10,6 @@
 #include "GamingScene2.h"
 #include "GamingScene3.h"
 #include "GamingScene4.h"
-#include "GamingScene5.h"
 #include "GamingScene6.h"
 #include "StaticScene.h"
 #include "Level1.h"
@@ -18,6 +17,7 @@
 namespace Jungle
 {
 	extern const bool KINECT_ENABLE;
+	extern const bool JUNGLE_DEBUG;
 	class JungleApp : public ofBaseApp{
 	public:
 		void setup();
@@ -42,7 +42,6 @@ namespace Jungle
 		GamingScene2* game_2_;
 		GamingScene3* game_3_;
 		GamingScene4* game_4_;
-		GamingScene5* game_5_;
 		GamingScene6* game_6_;
 		StaticScene* static_scene_;
 		Level1* level1_;

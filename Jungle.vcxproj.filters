@@ -157,9 +157,6 @@
     <ClCompile Include="src\WindGenerator.cpp">
       <Filter>src</Filter>
     </ClCompile>
-    <ClCompile Include="src\GamingScene5.cpp">
-      <Filter>src</Filter>
-    </ClCompile>
     <ClCompile Include="src\Flower.cpp">
       <Filter>src</Filter>
     </ClCompile>
@@ -171,9 +168,6 @@
     </ClCompile>
     <ClCompile Include="src\JungleParticle.cpp">
       <Filter>src\Particle</Filter>
-    </ClCompile>
-    <ClCompile Include="src\Level2.cpp">
-      <Filter>src</Filter>
     </ClCompile>
     <ClCompile Include="src\GamingScene6.cpp">
       <Filter>src</Filter>
@@ -191,6 +185,9 @@
       <Filter>src</Filter>
     </ClCompile>
     <ClCompile Include="src\CRSpline.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Group.cpp">
       <Filter>src</Filter>
     </ClCompile>
   </ItemGroup>
@@ -765,9 +762,6 @@
     <ClInclude Include="src\WindGenerator.h">
       <Filter>src</Filter>
     </ClInclude>
-    <ClInclude Include="src\GamingScene5.h">
-      <Filter>src</Filter>
-    </ClInclude>
     <ClInclude Include="src\Flower.h">
       <Filter>src</Filter>
     </ClInclude>
@@ -779,9 +773,6 @@
     </ClInclude>
     <ClInclude Include="src\JungleParticle.h">
       <Filter>src\Particle</Filter>
-    </ClInclude>
-    <ClInclude Include="src\Level2.h">
-      <Filter>src</Filter>
     </ClInclude>
     <ClInclude Include="src\GamingScene6.h">
       <Filter>src</Filter>
@@ -799,6 +790,9 @@
       <Filter>src</Filter>
     </ClInclude>
     <ClInclude Include="src\CRSpline.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Group.h">
       <Filter>src</Filter>
     </ClInclude>
   </ItemGroup>
@@ -827,6 +821,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="bin\data\config.xml">
+      <Filter>src</Filter>
+    </None>
+    <None Include="bin\data\SceneConfig.xml">
       <Filter>src</Filter>
     </None>
   </ItemGroup>

@@ -11,12 +11,12 @@
 
 namespace Jungle {
     Flower::Flower(void)
-    : flower_radius_(3), flower_collided_(false), color_(255,255,255), max_scale_(0.008), scale_speed_(0.001)
+    : color_(255,255,255), max_scale_(0.008), scale_speed_(0.001), collide_size_(70)
     {
         setScale(0, 0, 0);
 		triggering_circle_.loadImage("Environment/trigger-circle.png");
 		SetCircleSize(200);
-        flower_state_ = HOLDING;
+        flower_state_ = WAITING;
         
         circle_color_ = ofColor(255,255,255,255);
         
@@ -37,41 +37,44 @@ namespace Jungle {
     {
         circle_color_ = color;
     }
-    
-    void Flower::Enable(bool enable)
-    {
-        if(flower_state_ == HOLDING)
-        {
-            
-            enable_ = enable;
-            if(enable != true)
-            {
-                time_ = 0;
-            }
-        }
-        else
-        if(flower_state_ == DISAPPEARING || flower_state_ == GROWING )
-        {
-            if(enable_ == enable && time_ > 0)
-                time_ = 0;
-        }
-    }
+
     
     void Flower::Update(float frame_time)
     {
-        if(enable_)
+        if(enable_ && flower_state_ != WAITING)
         {            
             time_ +=frame_time;
         }
-
-        if(flower_state_ == HOLDING)
-        {
-                if (time_ > holding_time_)
+		ofVec3f scale = getScale();
+		switch (flower_state_)
+		{
+		case GROWING:
+			if(scale.x < max_scale_)
+			{
+				scale += scale_speed_;
+			}
+			if(time_ > staying_time_)
+			{
+				flower_state_ = DISAPPEARING;
+				time_ = 0;
+			}
+			break;
+		case DISAPPEARING:
+			if(scale.x > scale_speed_)
+				scale -= scale_speed_;
+			else
+			{
+				flower_state_ = WAITING;
+				time_ = 0;
+			}
+			break;
+		case HOLDING:
+			{				
+				if (time_ > holding_time_)
                 {
                     flower_state_ = GROWING;
                     
                     int index = ofRandom(0,4);
-                    //cout<<index<<endl;
                     if (!sounds_[index].getIsPlaying())
                     {
                         sounds_[index].play();
@@ -79,19 +82,12 @@ namespace Jungle {
                     
                     time_ = 0;
                 }
-            
-        }
-               
-        
-        
-            
-        if(flower_state_ == GROWING)
-            if(time_ > staying_time_)
-            {
-                flower_state_ = DISAPPEARING;
-                time_ = 0;
-            }
-        
+			}
+			break;
+		default:
+			break;
+		}            
+		setScale(scale.x, scale.y, scale.z);       
         
 
     }
@@ -102,53 +98,26 @@ namespace Jungle {
 		ofSetColor(color_.r, color_.g, color_.b);
 		if(enable_)
 		{
-			ofVec3f scale = getScale();
-            switch (flower_state_)
-            {
-                case GROWING:
-                    if(scale.x < max_scale_)
-                    {
-                        scale += scale_speed_;
-                    }
-                    break;
-                case DISAPPEARING:
-                    if(scale.x > scale_speed_)
-                        scale -= scale_speed_;
-                    else
-                    {
-                        flower_state_ = HOLDING;
-                        enable_ = false;
-                    }
-                    break;
-                case HOLDING:
-                    //for(int i = 0; i < 5; ++i)
-                    {
-                        ofSetColor(circle_color_);
-                        float scale = (holding_time_ - time_)/holding_time_;
-                        if(time_ <= 0.1)
-                            scale = 1;
-                        ofPushMatrix();
-                        ofTranslate(pos.x, pos.y);
-                        triggering_circle_.draw(-circle_size_.x * scale, -circle_size_.y * scale,
-                                                circle_size_.z * scale, circle_size_.w * scale);
-                        ofPopMatrix();
-                        //ofCircle(pos.x, pos.y, (circle_size_.z - 50 + i * 10) * scale);
-                    }
-                    break;
-                default:
-                    break;
-            }            
-            setScale(scale.x, scale.y, scale.z);
-            drawFaces();
-		}
-		else
-		{
-			//triggering_circle_.draw(pos.x-circle_size_.x, pos.y-circle_size_.y, circle_size_.z, circle_size_.w);
-            for(int i = 1; i < 5; ++i)
-            {
-               // ofSetColor(color_.r, color_.g, color_.b, color_.a * 0.1 * (5-i));
-               // ofCircle(pos.x, pos.y, circle_size_.z - 50 + i * 10);
-            }
+			switch (flower_state_)
+			{
+			case GROWING:
+			case DISAPPEARING:
+				 drawFaces();
+				 break;
+			case HOLDING:
+				{
+					ofSetColor(circle_color_);
+					float scale = (holding_time_ - time_)/holding_time_;
+					if(time_ <= 0.1)
+						scale = 1;
+					ofPushMatrix();
+					ofTranslate(pos.x, pos.y);
+					triggering_circle_.draw(-circle_size_.x * scale, -circle_size_.y * scale,
+						circle_size_.z * scale, circle_size_.w * scale);
+					ofPopMatrix();
+				}
+				break;
+			}
 		}
 
 		
@@ -185,6 +154,79 @@ namespace Jungle {
 	{
 		scale_speed_ = speed;
 	}
+
+	bool Flower::Collided( ofVec3f pos )
+	{
+		int h_ = ofGetWindowHeight();
+		ofVec3f bt_pos = pos;
+		bt_pos.z = 0;
+		bt_pos.y = h_-bt_pos.y;
+		ofVec3f mh_pos = ofVec3f(getPosition().x, getPosition().y, 0);
+		if( (bt_pos - mh_pos).length() < collide_size_)
+			return true;
+		else
+		{
+			return false;
+		}
+	}
+
+	void Flower::SetCollideSize( float size )
+	{
+		collide_size_ = size;
+	}
+
+
+	bool Flower::IsGrowing()
+	{
+		return flower_state_ == GROWING;
+	}
+
+	void Flower::SetGrowing()
+	{
+		if(flower_state_ != GROWING)
+		{
+			flower_state_ = GROWING;
+		}
+	}
+
+	void Flower::Triggering( bool trigger )
+	{
+		if(!enable_) enable_ = true;
+		if(trigger)
+		{
+			if(flower_state_ == WAITING)
+			{
+				flower_state_ = HOLDING;
+				time_ = 0;
+			}
+			else
+			if (flower_state_ == DISAPPEARING)
+			{
+				flower_state_ = GROWING;
+				time_ = 0;
+			}
+			else
+			if(flower_state_ == GROWING)
+				time_ = 0;
+		}
+		else
+		{
+			if(flower_state_ == HOLDING)
+			{
+				flower_state_ = WAITING;
+				time_ = 0;
+			}
+		}
+	}
+
+	void Flower::SetDisapp()
+	{
+		if(flower_state_ == GROWING)
+		{
+			flower_state_ = DISAPPEARING;
+		}
+	}
+
 
 
     

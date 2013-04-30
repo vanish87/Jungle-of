@@ -1,4 +1,6 @@
 #include "SceneManager.h"
+#include "Flower.h"
+#include "Group.h"
 
 namespace Jungle
 {
@@ -35,6 +37,100 @@ namespace Jungle
 	void SceneManager::AddToScene( SceneModel* scene_obj )
 	{
 		scene_obj_list_.push_back(scene_obj);
+	}
+
+	bool SceneManager::LoadScene( string file_name )
+	{
+		cout<<"=========Loading Scene Config================"<<endl;
+		ofxXmlSettings file;
+		if(!file.loadFile(file_name))
+		{
+			cout<<"Cannot load "<<file_name<<endl;
+			return false;
+		}
+		if(!file.tagExists("LevelIndex"))
+		{
+			cout<<"Cannot find LevelIndex"<<endl;
+			return false;
+		}
+
+		file.pushTag("LevelIndex");
+			vector<string> group_name;
+			for(size_t i =0; i < file.getNumTags("Group"); ++i)
+			{
+				file.pushTag("Group",i);
+				string name = file.getValue("Name","NONE");
+				group_name.push_back(name);
+				file.popTag();
+			}
+		file.popTag();
+
+		SceneType scene;
+
+		for(size_t i =0; i < file.getNumTags("Group"); ++i)
+		{
+			file.pushTag("Group",i);
+			string name = file.getValue("Name","NONE");
+			if(name == group_name[i])
+			{
+				vector<Flower> group_model;
+				if(file.tagExists("GroupObj"))
+				{
+					file.pushTag("GroupObj");
+					for(size_t j =0; j < file.getNumTags("Model"); ++j)
+					{
+						file.pushTag("Model",j);
+						string url = file.getValue("ObjURL", "NA");
+						ofVec3f pos;
+						file.pushTag("Position");
+						pos.set(file.getValue("X",0), file.getValue("Y",0), file.getValue("Z",0));
+						file.popTag();
+						float rotation = file.getValue("Rotation",0);
+						float max_scale = file.getValue("MaxScale",0.1);
+						float scale_speed = file.getValue("ScaleSpeed", 0.01);
+						float staying_time = file.getValue("StayingTime", 1);
+						float holding_time = file.getValue("HoldingTime", 1);
+						float circle_size = file.getValue("CircleSize", 200);
+						file.pushTag("CircleColor");
+						ofColor color;
+						color.set(file.getValue("R",255), file.getValue("G",255), file.getValue("B",255), file.getValue("A",255));
+						file.popTag();
+						Flower flower;
+						flower.loadModel(url);
+						flower.setPosition(pos.x,pos.y,pos.z);
+						flower.setRotation(0,180,1,0,0);
+						flower.setRotation(1,rotation,0,0,1);
+						flower.SetMaxScale(max_scale);
+						flower.SetScaleSpeed(scale_speed);
+						flower.staying_time_ = staying_time;
+						flower.holding_time_ = holding_time;
+						flower.SetCircleSize(circle_size);
+						flower.SetCircleColor(color);
+						flower.Enable(false);
+						group_model.push_back(flower);
+						file.popTag();
+					}
+					file.popTag();
+
+					float group_staying_time= file.getValue("StayingTime",1);
+
+					Group flower_group(name, group_staying_time, group_model);
+					scene.push_back(flower_group);
+				}
+
+			}
+			file.popTag();
+
+			
+		}
+
+		dynamic_objects_ =  scene;
+		return true;
+	}
+
+	Jungle::SceneType &SceneManager::GetDynamicObj()
+	{
+		return dynamic_objects_;
 	}
 
 }
