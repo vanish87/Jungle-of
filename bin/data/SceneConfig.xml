@@ -296,10 +296,6 @@
 			<CircleSize>800</CircleSize>
 			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
 		</Model>
-<<<<<<< HEAD
-=======
-
->>>>>>> clean code
 	</GroupObj>
 	<StayingTime>4</StayingTime>
 </Group>
