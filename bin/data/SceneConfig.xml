@@ -1,10 +1,10 @@
 <Group>
-	<Name>Mushrooms</Name>
+	<Name>flower</Name>
 	<GroupObj>
 		<Model>
 			<ObjURL>Environment/shroom_alpha.obj</ObjURL>
 			<Position><X>30</X> <Y>-10</Y> <Z>0</Z></Position>
-			<Rotation>30</Rotation>
+			<Rotation>0</Rotation>
 			<MaxScale>0.1</MaxScale>
 			<ScaleSpeed>0.01</ScaleSpeed>
 			<StayingTime>6</StayingTime>
@@ -16,7 +16,7 @@
 		<Model>
 			<ObjURL>Environment/shroom_alpha.obj</ObjURL>
 			<Position><X>250</X> <Y>-10</Y> <Z>0</Z></Position>
-			<Rotation>30</Rotation>
+			<Rotation>0</Rotation>
 			<MaxScale>0.04</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>6</StayingTime>
@@ -28,7 +28,7 @@
 		<Model>
 			<ObjURL>Environment/shroom_alpha.obj</ObjURL>
 			<Position><X>350</X> <Y>-10</Y> <Z>0</Z></Position>
-			<Rotation>30</Rotation>
+			<Rotation>0</Rotation>
 			<MaxScale>0.04</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>6</StayingTime>
@@ -40,7 +40,7 @@
 		<Model>
 			<ObjURL>Environment/shroom_alpha.obj</ObjURL>
 			<Position><X>300</X> <Y>-10</Y> <Z>0</Z></Position>
-			<Rotation>30</Rotation>
+			<Rotation>0</Rotation>
 			<MaxScale>0.04</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>6</StayingTime>
@@ -52,7 +52,7 @@
 		<Model>
 			<ObjURL>Environment/shroom_alpha.obj</ObjURL>
 			<Position><X>250</X> <Y>-10</Y> <Z>0</Z></Position>
-			<Rotation>30</Rotation>
+			<Rotation>0</Rotation>
 			<MaxScale>0.04</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>6</StayingTime>
@@ -64,7 +64,7 @@
 		<Model>
 			<ObjURL>Environment/shroom_alpha.obj</ObjURL>
 			<Position><X>430</X> <Y>-10</Y> <Z>0</Z></Position>
-			<Rotation>30</Rotation>
+			<Rotation>0</Rotation>
 			<MaxScale>0.04</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>6</StayingTime>
@@ -76,7 +76,7 @@
 		<Model>
 			<ObjURL>Environment/shroom_alpha.obj</ObjURL>
 			<Position><X>450</X> <Y>-10</Y> <Z>0</Z></Position>
-			<Rotation>30</Rotation>
+			<Rotation>0</Rotation>
 			<MaxScale>0.04</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>6</StayingTime>
@@ -88,7 +88,7 @@
 		<Model>
 			<ObjURL>Environment/shroom_alpha.obj</ObjURL>
 			<Position><X>650</X> <Y>-10</Y> <Z>0</Z></Position>
-			<Rotation>30</Rotation>
+			<Rotation>0</Rotation>
 			<MaxScale>0.04</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>6</StayingTime>
@@ -100,7 +100,7 @@
 		<Model>
 			<ObjURL>Environment/shroom_alpha.obj</ObjURL>
 			<Position><X>850</X> <Y>-10</Y> <Z>0</Z></Position>
-			<Rotation>30</Rotation>
+			<Rotation>0</Rotation>
 			<MaxScale>0.04</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>6</StayingTime>
@@ -112,7 +112,7 @@
 		<Model>
 			<ObjURL>Environment/shroom_alpha.obj</ObjURL>
 			<Position><X>1000</X> <Y>-10</Y> <Z>0</Z></Position>
-			<Rotation>30</Rotation>
+			<Rotation>0</Rotation>
 			<MaxScale>0.04</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>6</StayingTime>
@@ -124,7 +124,7 @@
 		<Model>
 			<ObjURL>Environment/shroom_alpha.obj</ObjURL>
 			<Position><X>1100</X> <Y>-10</Y> <Z>0</Z></Position>
-			<Rotation>30</Rotation>
+			<Rotation>0</Rotation>
 			<MaxScale>0.04</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>6</StayingTime>
@@ -136,7 +136,7 @@
 		<Model>
 			<ObjURL>Environment/shroom_alpha.obj</ObjURL>
 			<Position><X>1200</X> <Y>-10</Y> <Z>0</Z></Position>
-			<Rotation>30</Rotation>
+			<Rotation>0</Rotation>
 			<MaxScale>0.04</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>6</StayingTime>
@@ -149,13 +149,12 @@
 	</GroupObj>
 	<StayingTime>4</StayingTime>
 </Group>
-
 <Group>
-	<Name>Tree1</Name>
+	<Name>flower1</Name>
 	<GroupObj>
 		<Model>
 			<ObjURL>Environment/Leaf.obj</ObjURL>
-			<Position><X>1</X> <Y>202</Y> <Z>06</Z></Position>
+			<Position><X>1</X> <Y>202</Y> <Z>0</Z></Position>
 			<Rotation>30</Rotation>
 			<MaxScale>0.04</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
@@ -167,7 +166,7 @@
 		</Model>
 		<Model>
 			<ObjURL>Environment/Leaf.obj</ObjURL>
-			<Position><X>103</X> <Y>402</Y> <Z>40</Z></Position>
+			<Position><X>103</X> <Y>402</Y> <Z>0</Z></Position>
 			<Rotation>30</Rotation>
 			<MaxScale>0.04</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
@@ -179,7 +178,7 @@
 		</Model>
 		<Model>
 			<ObjURL>Environment/Leaf.obj</ObjURL>
-			<Position><X>155</X> <Y>474</Y> <Z>4</Z></Position>
+			<Position><X>155</X> <Y>474</Y> <Z>0</Z></Position>
 			<Rotation>30</Rotation>
 			<MaxScale>0.04</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
@@ -191,7 +190,7 @@
 		</Model>
 		<Model>
 			<ObjURL>Environment/Leaf.obj</ObjURL>
-			<Position><X>279</X> <Y>380</Y> <Z>19</Z></Position>
+			<Position><X>279</X> <Y>380</Y> <Z>0</Z></Position>
 			<Rotation>30</Rotation>
 			<MaxScale>0.04</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
@@ -203,7 +202,7 @@
 		</Model>
 		<Model>
 			<ObjURL>Environment/Leaf.obj</ObjURL>
-			<Position><X>48</X> <Y>193</Y> <Z>5</Z></Position>
+			<Position><X>48</X> <Y>193</Y> <Z>0</Z></Position>
 			<Rotation>30</Rotation>
 			<MaxScale>0.04</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
@@ -215,7 +214,7 @@
 		</Model>
 		<Model>
 			<ObjURL>Environment/Leaf.obj</ObjURL>
-			<Position><X>220</X> <Y>240</Y> <Z>-8</Z></Position>
+			<Position><X>220</X> <Y>240</Y> <Z>0</Z></Position>
 			<Rotation>30</Rotation>
 			<MaxScale>0.04</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
@@ -227,7 +226,7 @@
 		</Model>
 		<Model>
 			<ObjURL>Environment/Leaf.obj</ObjURL>
-			<Position><X>312</X> <Y>275</Y> <Z>-1</Z></Position>
+			<Position><X>312</X> <Y>275</Y> <Z>0</Z></Position>
 			<Rotation>30</Rotation>
 			<MaxScale>0.04</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
@@ -239,7 +238,7 @@
 		</Model>
 		<Model>
 			<ObjURL>Environment/Leaf.obj</ObjURL>
-			<Position><X>9</X> <Y>295</Y> <Z>-25</Z></Position>
+			<Position><X>9</X> <Y>295</Y> <Z>0</Z></Position>
 			<Rotation>30</Rotation>
 			<MaxScale>0.04</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
@@ -251,7 +250,7 @@
 		</Model>
 		<Model>
 			<ObjURL>Environment/Leaf.obj</ObjURL>
-			<Position><X>80</X> <Y>270</Y> <Z>-20</Z></Position>
+			<Position><X>80</X> <Y>270</Y> <Z>0</Z></Position>
 			<Rotation>30</Rotation>
 			<MaxScale>0.04</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
@@ -263,7 +262,7 @@
 		</Model>
 		<Model>
 			<ObjURL>Environment/Leaf.obj</ObjURL>
-			<Position><X>158</X> <Y>233</Y> <Z>-20</Z></Position>
+			<Position><X>158</X> <Y>233</Y> <Z>0</Z></Position>
 			<Rotation>30</Rotation>
 			<MaxScale>0.04</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
@@ -275,7 +274,7 @@
 		</Model>
 		<Model>
 			<ObjURL>Environment/Leaf.obj</ObjURL>
-			<Position><X>121</X> <Y>150</Y> <Z>9</Z></Position>
+			<Position><X>121</X> <Y>150</Y> <Z>0</Z></Position>
 			<Rotation>30</Rotation>
 			<MaxScale>0.04</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
@@ -287,7 +286,7 @@
 		</Model>
 		<Model>
 			<ObjURL>Environment/Leaf.obj</ObjURL>
-			<Position><X>157</X> <Y>320</Y> <Z>-15</Z></Position>
+			<Position><X>157</X> <Y>320</Y> <Z>0</Z></Position>
 			<Rotation>30</Rotation>
 			<MaxScale>0.04</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
@@ -296,8 +295,7 @@
 			<CollideSize>70</CollideSize>
 			<CircleSize>800</CircleSize>
 			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
-		</Model
-
+		</Model>
 	</GroupObj>
 	<StayingTime>4</StayingTime>
 </Group>

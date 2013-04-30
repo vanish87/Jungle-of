@@ -48,18 +48,12 @@ namespace Jungle
 
 		//left bottom corner is X:0,     Y:0
 		//right up cornor is    X: 1280, Y:720
-        
-        // MUSHROOMS PLACEMENT 
+ 
         
         if(!JungleApp::SceneManagerInstance().LoadScene("SceneConfig.xml"))
             cout<<"Cannot Load Scene"<<endl;
 			//throw exception("Cannot Load Scene");;
        
-        // SECOND TREE FROM LEFT
-        
-        
-        
-        ///
         
         
 		//circle_.loadImage("Environment/glowing-circle-2.png");
