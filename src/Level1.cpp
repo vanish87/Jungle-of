@@ -128,7 +128,7 @@ namespace Jungle
 		ofPopMatrix();
 
         ofSetColor(255, 255, 255);
-		if(Jungle::KINECT_ENABLE && !player.detected_ && JUNGLE_DEBUG)
+		if(Jungle::KINECT_ENABLE && JUNGLE_DEBUG)
 		{
 			glPushMatrix();
 			ofTranslate(0, h_ - 0.3*h_);
