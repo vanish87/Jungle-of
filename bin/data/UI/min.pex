@@ -4,42 +4,42 @@
 <sourcePositionVariance x="32" y="0"></sourcePositionVariance>
 
 <particleLifeSpan value="2"></particleLifeSpan>
-<particleLifespanVariance value="2.0"></particleLifespanVariance>
+<particleLifespanVariance value="1.0"></particleLifespanVariance>
 
 <angle value="0.00"></angle>
-<angleVariance value="0.00"></angleVariance>
+<angleVariance value="360.00"></angleVariance>
 
 <gravity x="0.00" y="0.00"></gravity>
 <radialAcceleration value="0.00"></radialAcceleration>
 <radialAccelVariance value="0.00"></radialAccelVariance>
 <tangentialAcceleration value="0.00"></tangentialAcceleration>
 <tangentialAccelVariance value="0.00"></tangentialAccelVariance>
-<speed value="50"></speed>
+<speed value="13"></speed>
 <speedVariance value="10"></speedVariance>
 
-<startColor red="1.00" green="0.88" blue="0.55" alpha="0.60"></startColor>
-<startColorVariance red="0.29" green="0.28" blue="0.29" alpha="0.20"></startColorVariance>
+<startColor red="0.54" green="0.80" blue="0.39" alpha="0.60"></startColor>
+<startColorVariance red="0.00" green="0.29" blue="0.29" alpha="0.40"></startColorVariance>
 
-<finishColor red="1.00" green="0.88" blue="0.55" alpha="0.60"></finishColor>
-<finishColorVariance red="0.29" green="0.28" blue="0.29" alpha="0.20"></finishColorVariance>
+<finishColor red="0.54" green="0.80" blue="0.39" alpha="0.60"></finishColor>
+<finishColorVariance red="0.00" green="0.29" blue="0.29" alpha="0.40"></finishColorVariance>
 
-<maxParticles value="500"></maxParticles>
+<maxParticles value="30"></maxParticles>
 
-<startParticleSize value="15.00"></startParticleSize>
-<startParticleSizeVariance value="5.00"></startParticleSizeVariance>
+<startParticleSize value="20.00"></startParticleSize>
+<startParticleSizeVariance value="10.00"></startParticleSizeVariance>
 
-<finishParticleSize value="2.00"></finishParticleSize>
-<FinishParticleSizeVariance value="1.00"></FinishParticleSizeVariance>
+<finishParticleSize value="18.00"></finishParticleSize>
+<FinishParticleSizeVariance value="10.00"></FinishParticleSizeVariance>
 
 <duration value="-1.00"></duration>
 <emitterType value="0"></emitterType>
 
-<maxRadius value="20.00"></maxRadius>
+<maxRadius value="30.00"></maxRadius>
 <maxRadiusVariance value="5.00"></maxRadiusVariance>
-<minRadius value="2.00"></minRadius>
+<minRadius value="5.00"></minRadius>
 
-<rotatePerSecond value="1.00"></rotatePerSecond>
-<rotatePerSecondVariance value="1.00"></rotatePerSecondVariance>
+<rotatePerSecond value="5.00"></rotatePerSecond>
+<rotatePerSecondVariance value="2.00"></rotatePerSecondVariance>
 
 <blendFuncSource value="770"></blendFuncSource>
 <blendFuncDestination value="772"></blendFuncDestination>

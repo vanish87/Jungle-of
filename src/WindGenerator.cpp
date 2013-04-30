@@ -43,11 +43,11 @@ namespace Jungle
                 dir.x = -dir.x;
                 emitter_.angle = acos(ofVec3f(1,0,0).dot(dir)) * 180/3.14;
                 
-                if(dir.y > 0)
-                {
-                    emitter_.angle = 360 - emitter_.angle;
-                    
-                }
+//                if(dir.y > 0)
+//                {
+//                    emitter_.angle = 360 - emitter_.angle;
+//                    
+//                }
             }
             
             
@@ -57,11 +57,11 @@ namespace Jungle
                 dir.x = -dir.x;
                 emitter2_.angle = acos(ofVec3f(1,0,0).dot(dir)) * 180/3.14;
                 
-                if(dir.y > 0)
-                {
-                    emitter2_.angle = 360 - emitter2_.angle;
-                    
-                }
+//                if(dir.y > 0)
+//                {
+//                    emitter2_.angle = 360 - emitter2_.angle;
+//                    
+//                }
             }
             
             
