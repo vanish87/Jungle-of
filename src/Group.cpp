@@ -51,7 +51,7 @@ namespace Jungle
 			}
 		}
 
-		cout<<name_<<" "<<time_<<endl;
+		//cout<<name_<<" "<<time_<<endl;
 	}
 
 	void Group::Update( ofVec3f lhand_pos, ofVec3f rhand_pos /*= ofVec3f(0,0,0)*/ )
