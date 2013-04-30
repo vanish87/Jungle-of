@@ -24,11 +24,7 @@ namespace Jungle {
 
 	public:
 		ofCamera player_camera_;
-		ofVec3f camera_pos_;
-
-		ofVec3f hand_pos_;
-		ofVec3f pre_hand_pos_;
-        
+		ofVec3f camera_pos_;        
         
         ofVec3f l_hand_pos_;
         ofVec3f r_hand_pos_;
