@@ -2,7 +2,7 @@
 	<Name>flower</Name>
 	<GroupObj>
 		<Model>
-			<ObjURL>Environment/shroom_alpha.obj</ObjURL>
+			<ObjURL>Environment/shroom_1.obj</ObjURL>
 			<Position><X>30</X> <Y>-10</Y> <Z>0</Z></Position>
 			<Rotation>0</Rotation>
 			<MaxScale>0.1</MaxScale>
@@ -14,7 +14,7 @@
 			<CircleColor><R>255</R> <G>0</G> <B>0</B> <A>255</A></CircleColor>
 		</Model>
 		<Model>
-			<ObjURL>Environment/shroom_alpha.obj</ObjURL>
+			<ObjURL>Environment/shroom_2.obj</ObjURL>
 			<Position><X>250</X> <Y>-10</Y> <Z>0</Z></Position>
 			<Rotation>0</Rotation>
 			<MaxScale>0.04</MaxScale>
@@ -26,7 +26,7 @@
 			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
 		</Model>
 		<Model>
-			<ObjURL>Environment/shroom_alpha.obj</ObjURL>
+			<ObjURL>Environment/shroom_3.obj</ObjURL>
 			<Position><X>350</X> <Y>-10</Y> <Z>0</Z></Position>
 			<Rotation>0</Rotation>
 			<MaxScale>0.04</MaxScale>
@@ -38,7 +38,7 @@
 			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
 		</Model>
 		<Model>
-			<ObjURL>Environment/shroom_alpha.obj</ObjURL>
+			<ObjURL>Environment/shroom_1.obj</ObjURL>
 			<Position><X>300</X> <Y>-10</Y> <Z>0</Z></Position>
 			<Rotation>0</Rotation>
 			<MaxScale>0.04</MaxScale>
@@ -50,7 +50,7 @@
 			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
 		</Model>
 		<Model>
-			<ObjURL>Environment/shroom_alpha.obj</ObjURL>
+			<ObjURL>Environment/shroom_2.obj</ObjURL>
 			<Position><X>250</X> <Y>-10</Y> <Z>0</Z></Position>
 			<Rotation>0</Rotation>
 			<MaxScale>0.04</MaxScale>
@@ -62,7 +62,7 @@
 			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
 		</Model>
 		<Model>
-			<ObjURL>Environment/shroom_alpha.obj</ObjURL>
+			<ObjURL>Environment/shroom_1.obj</ObjURL>
 			<Position><X>430</X> <Y>-10</Y> <Z>0</Z></Position>
 			<Rotation>0</Rotation>
 			<MaxScale>0.04</MaxScale>
@@ -74,7 +74,7 @@
 			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
 		</Model>
 		<Model>
-			<ObjURL>Environment/shroom_alpha.obj</ObjURL>
+			<ObjURL>Environment/shroom_3.obj</ObjURL>
 			<Position><X>450</X> <Y>-10</Y> <Z>0</Z></Position>
 			<Rotation>0</Rotation>
 			<MaxScale>0.04</MaxScale>
@@ -86,7 +86,7 @@
 			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
 		</Model>
 		<Model>
-			<ObjURL>Environment/shroom_alpha.obj</ObjURL>
+			<ObjURL>Environment/shroom_2.obj</ObjURL>
 			<Position><X>650</X> <Y>-10</Y> <Z>0</Z></Position>
 			<Rotation>0</Rotation>
 			<MaxScale>0.04</MaxScale>
@@ -98,7 +98,7 @@
 			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
 		</Model>
 		<Model>
-			<ObjURL>Environment/shroom_alpha.obj</ObjURL>
+			<ObjURL>Environment/shroom_1.obj</ObjURL>
 			<Position><X>850</X> <Y>-10</Y> <Z>0</Z></Position>
 			<Rotation>0</Rotation>
 			<MaxScale>0.04</MaxScale>
@@ -110,7 +110,7 @@
 			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
 		</Model>
 		<Model>
-			<ObjURL>Environment/shroom_alpha.obj</ObjURL>
+			<ObjURL>Environment/shroom_2.obj</ObjURL>
 			<Position><X>1000</X> <Y>-10</Y> <Z>0</Z></Position>
 			<Rotation>0</Rotation>
 			<MaxScale>0.04</MaxScale>
@@ -122,7 +122,7 @@
 			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
 		</Model>
 		<Model>
-			<ObjURL>Environment/shroom_alpha.obj</ObjURL>
+			<ObjURL>Environment/shroom_1.obj</ObjURL>
 			<Position><X>1100</X> <Y>-10</Y> <Z>0</Z></Position>
 			<Rotation>0</Rotation>
 			<MaxScale>0.04</MaxScale>
@@ -134,7 +134,7 @@
 			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
 		</Model>
 		<Model>
-			<ObjURL>Environment/shroom_alpha.obj</ObjURL>
+			<ObjURL>Environment/shroom_3.obj</ObjURL>
 			<Position><X>1200</X> <Y>-10</Y> <Z>0</Z></Position>
 			<Rotation>0</Rotation>
 			<MaxScale>0.04</MaxScale>
