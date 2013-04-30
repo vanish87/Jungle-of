@@ -15,7 +15,7 @@ namespace Jungle
 
 	void Group::Enable( bool enable )
 	{
-		throw std::exception("The method or operation is not implemented.");
+		enable_ = enable;
 	}
 
 	void Group::Update( float frame_time )

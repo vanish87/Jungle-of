@@ -52,7 +52,8 @@ namespace Jungle
         // MUSHROOMS PLACEMENT 
         
         if(!JungleApp::SceneManagerInstance().LoadScene("SceneConfig.xml"))
-			throw std::exception("Cannot Load Scene");;
+            cout<<"Cannot Load Scene"<<endl;
+			//throw exception("Cannot Load Scene");;
        
         // SECOND TREE FROM LEFT
         
