@@ -28,65 +28,43 @@ namespace Jungle
 		tree_.Enable(true);
         
         bg_1_.loadModel("Environment/mountain2.obj");
-		//0,-46, 0
 		bg_1_.setPosition(600,-115,-270);
 		bg_1_.setScale(2,2,2);
 		bg_1_.setRotation(0, 180, 0, 0, 1);
         bg_1_.setRotation(1, 180, 0, 1, 0);
 		bg_1_.Enable(true);
-         
-        bg_2_.loadModel("Environment/ground_2.obj");
-		//0,-46, 0
-		bg_2_.setPosition(400,-20,0);
-		bg_2_.setScale(1,0.5,0.5);
-		bg_2_.setRotation(0, 180, 0, 0, 1);        
-        bg_2_.setRotation(1, 180, 0, 1, 0);
-		bg_2_.Enable(true);
         
-        bg_3_.loadModel("Environment/ground_3.obj");
-		//0,-46, 0
-		bg_3_.setPosition(550,-20,0);
-		bg_3_.setScale(2,2,2);
-		bg_3_.setRotation(0, 180, 0, 0, 1);        
-        bg_3_.setRotation(1, 180, 0, 1, 0);
-		bg_3_.Enable(true);
+        ground_1_.loadModel("Environment/ground_1.obj");
+		ground_1_.setPosition(300,-20,0);
+		ground_1_.setScale(0.3,0.3,0.3);
+		ground_1_.setRotation(0, 180, 0, 0, 1);
+        ground_1_.setRotation(1, 180, 0, 1, 0);
+		ground_1_.Enable(true);
         
-  /*      ground_.loadModel("Environment/ground_new_1.obj");
-		//0,-46, 0
-		ground_.setPosition(90,-90, -100);
-		ground_.setScale(1.5,1,1);
-		ground_.setRotation(0, 180, 0, 0, 1);        
-		ground_.setRotation(0, 5, 1, 0, 0);
-		ground_.Enable(true);
+        ground_2_.loadModel("Environment/ground_2.obj");
+		ground_2_.setPosition(700,-20,0);
+		ground_2_.setScale(0.3,0.3,0.3);
+		ground_2_.setRotation(0, 180, 0, 0, 1);
+        ground_2_.setRotation(1, 180, 0, 1, 0);
+		ground_2_.Enable(true);
         
-        rocks_.loadModel("Environment/Rocks_new_1.obj");
-		//0,-46, 0
-		rocks_.setPosition(500,500,0);
-		rocks_.setScale(1,1,1);
-		rocks_.setRotation(0, 180, 0, 0, 1);
-		rocks_.Enable(true);
+        ground_3_.loadModel("Environment/ground_3.obj");
+		ground_3_.setPosition(1000,-20,0);
+		ground_3_.setScale(0.3,0.3,0.3);
+		ground_3_.setRotation(0, 180, 0, 0, 1);
+        ground_3_.setRotation(1, 180, 0, 1, 0);
+		ground_3_.Enable(true);
         
-        bush_.loadModel("Environment/Bushes_New_1.obj");
-		//0,-46, 0
-		bush_.setPosition(160,-110,-195);
-		bush_.setScale(1,1,1);
-		bush_.setRotation(0, 180, 0, 0, 1);
-		bush_.Enable(true);
-        */
         
         model_ = &tree_;
         
-		//ground_.AddToScene();
-        //rocks_.AddToScene();
-    
-		
-       
-        
-        
+        ground_1_.AddToScene();
+        ground_2_.AddToScene();
+        ground_3_.AddToScene();
+
         bg_1_.AddToScene();
-        //bg_3_.AddToScene();
 		tree_.AddToScene();
-		//bush_.AddToScene();
+
         
 		atmo.loadSound("Audio/jungle-atmos-2.mp3");
 		atmo.setLoop(true);
