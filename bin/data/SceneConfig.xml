@@ -1368,9 +1368,153 @@
 			<CircleSize>800</CircleSize>
 			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
 		</Model>
+		<Model>
+			<ObjURL>Environment/Leaf4.obj</ObjURL>
+			<Position><X>745</X> <Y>315</Y> <Z>0</Z></Position>
+			<Rotation>0</Rotation>
+			<MaxScale>0.1</MaxScale>
+			<ScaleSpeed>0.05</ScaleSpeed>
+			<StayingTime>1</StayingTime>
+			<HoldingTime>1</HoldingTime>
+			<CollideSize>70</CollideSize>
+			<CircleSize>800</CircleSize>
+			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
+		</Model>
+		<Model>
+			<ObjURL>Environment/Leaf4.obj</ObjURL>
+			<Position><X>724</X> <Y>358</Y> <Z>0</Z></Position>
+			<Rotation>0</Rotation>
+			<MaxScale>0.1</MaxScale>
+			<ScaleSpeed>0.05</ScaleSpeed>
+			<StayingTime>1</StayingTime>
+			<HoldingTime>1</HoldingTime>
+			<CollideSize>70</CollideSize>
+			<CircleSize>800</CircleSize>
+			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
+		</Model>
+		<Model>
+			<ObjURL>Environment/Leaf4.obj</ObjURL>
+			<Position><X>714</X> <Y>177</Y> <Z>0</Z></Position>
+			<Rotation>0</Rotation>
+			<MaxScale>0.1</MaxScale>
+			<ScaleSpeed>0.05</ScaleSpeed>
+			<StayingTime>1</StayingTime>
+			<HoldingTime>1</HoldingTime>
+			<CollideSize>70</CollideSize>
+			<CircleSize>800</CircleSize>
+			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
+		</Model>
+		<Model>
+			<ObjURL>Environment/Leaf4.obj</ObjURL>
+			<Position><X>765</X> <Y>188</Y> <Z>0</Z></Position>
+			<Rotation>0</Rotation>
+			<MaxScale>0.1</MaxScale>
+			<ScaleSpeed>0.05</ScaleSpeed>
+			<StayingTime>1</StayingTime>
+			<HoldingTime>1</HoldingTime>
+			<CollideSize>70</CollideSize>
+			<CircleSize>800</CircleSize>
+			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
+		</Model>
+		<Model>
+			<ObjURL>Environment/Leaf4.obj</ObjURL>
+			<Position><X>633</X> <Y>318</Y> <Z>0</Z></Position>
+			<Rotation>0</Rotation>
+			<MaxScale>0.1</MaxScale>
+			<ScaleSpeed>0.05</ScaleSpeed>
+			<StayingTime>1</StayingTime>
+			<HoldingTime>1</HoldingTime>
+			<CollideSize>70</CollideSize>
+			<CircleSize>800</CircleSize>
+			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
+		</Model>
+		<Model>
+			<ObjURL>Environment/Leaf4.obj</ObjURL>
+			<Position><X>614</X> <Y>303</Y> <Z>0</Z></Position>
+			<Rotation>0</Rotation>
+			<MaxScale>0.1</MaxScale>
+			<ScaleSpeed>0.05</ScaleSpeed>
+			<StayingTime>1</StayingTime>
+			<HoldingTime>1</HoldingTime>
+			<CollideSize>70</CollideSize>
+			<CircleSize>800</CircleSize>
+			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
+		</Model>
+		<Model>
+			<ObjURL>Environment/Leaf4.obj</ObjURL>
+			<Position><X>615</X> <Y>342</Y> <Z>0</Z></Position>
+			<Rotation>0</Rotation>
+			<MaxScale>0.1</MaxScale>
+			<ScaleSpeed>0.05</ScaleSpeed>
+			<StayingTime>1</StayingTime>
+			<HoldingTime>1</HoldingTime>
+			<CollideSize>70</CollideSize>
+			<CircleSize>800</CircleSize>
+			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
+		</Model>
+		<Model>
+			<ObjURL>Environment/Leaf4.obj</ObjURL>
+			<Position><X>578</X> <Y>333</Y> <Z>0</Z></Position>
+			<Rotation>0</Rotation>
+			<MaxScale>0.1</MaxScale>
+			<ScaleSpeed>0.05</ScaleSpeed>
+			<StayingTime>1</StayingTime>
+			<HoldingTime>1</HoldingTime>
+			<CollideSize>70</CollideSize>
+			<CircleSize>800</CircleSize>
+			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
+		</Model>
 <Model>
 			<ObjURL>Environment/Leaf4.obj</ObjURL>
-			<Position><X>673</X> <Y>555</Y> <Z>0</Z></Position>
+			<Position><X>644</X> <Y>508</Y> <Z>0</Z></Position>
+			<Rotation>0</Rotation>
+			<MaxScale>0.1</MaxScale>
+			<ScaleSpeed>0.05</ScaleSpeed>
+			<StayingTime>1</StayingTime>
+			<HoldingTime>1</HoldingTime>
+			<CollideSize>70</CollideSize>
+			<CircleSize>800</CircleSize>
+			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
+		</Model>
+<Model>
+			<ObjURL>Environment/Leaf4.obj</ObjURL>
+			<Position><X>627</X> <Y>438</Y> <Z>0</Z></Position>
+			<Rotation>0</Rotation>
+			<MaxScale>0.1</MaxScale>
+			<ScaleSpeed>0.05</ScaleSpeed>
+			<StayingTime>1</StayingTime>
+			<HoldingTime>1</HoldingTime>
+			<CollideSize>70</CollideSize>
+			<CircleSize>800</CircleSize>
+			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
+		</Model>
+<Model>
+			<ObjURL>Environment/Leaf4.obj</ObjURL>
+			<Position><X>742</X> <Y>129</Y> <Z>0</Z></Position>
+			<Rotation>0</Rotation>
+			<MaxScale>0.1</MaxScale>
+			<ScaleSpeed>0.05</ScaleSpeed>
+			<StayingTime>1</StayingTime>
+			<HoldingTime>1</HoldingTime>
+			<CollideSize>70</CollideSize>
+			<CircleSize>800</CircleSize>
+			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
+		</Model>
+<Model>
+			<ObjURL>Environment/Leaf4.obj</ObjURL>
+			<Position><X>607</X> <Y>427</Y> <Z>0</Z></Position>
+			<Rotation>0</Rotation>
+			<MaxScale>0.1</MaxScale>
+			<ScaleSpeed>0.05</ScaleSpeed>
+			<StayingTime>1</StayingTime>
+			<HoldingTime>1</HoldingTime>
+			<CollideSize>70</CollideSize>
+			<CircleSize>800</CircleSize>
+			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
+		</Model>
+<Model>
+			<ObjURL>Environment/Leaf4.obj</ObjURL>
+			<Position><X>778</X> <Y>450</Y> <Z>0</Z></Position>
 			<Rotation>0</Rotation>
 			<MaxScale>0.1</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
@@ -1665,7 +1809,7 @@
 			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
 		</Model>
 
-<Model>
+		<Model>
 			<ObjURL>Environment/Leaf5.obj</ObjURL>
 			<Position><X>866</X> <Y>540</Y> <Z>0</Z></Position>
 			<Rotation> 110 </Rotation>
@@ -1677,7 +1821,7 @@
 			<CircleSize>800</CircleSize>
 			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
 		</Model>
-<Model>
+		<Model>
 			<ObjURL>Environment/Leaf4.obj</ObjURL>
 			<Position><X>842</X> <Y>481</Y> <Z>0</Z></Position>
 			<Rotation> 110 </Rotation>
@@ -1689,7 +1833,7 @@
 			<CircleSize>800</CircleSize>
 			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
 		</Model>
-<Model>
+		<Model>
 			<ObjURL>Environment/Leaf3.obj</ObjURL>
 			<Position><X>897</X> <Y>458</Y> <Z>0</Z></Position>
 			<Rotation> 110 </Rotation>
@@ -1701,7 +1845,7 @@
 			<CircleSize>800</CircleSize>
 			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
 		</Model>
-<Model>
+		<Model>
 			<ObjURL>Environment/Leaf2.obj</ObjURL>
 			<Position><X>987</X> <Y>543</Y> <Z>0</Z></Position>
 			<Rotation> 110 </Rotation>
@@ -1713,7 +1857,7 @@
 			<CircleSize>800</CircleSize>
 			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
 		</Model>
-<Model>
+		<Model>
 			<ObjURL>Environment/Leaf1.obj</ObjURL>
 			<Position><X>1045</X> <Y>518</Y> <Z>0</Z></Position>
 			<Rotation> 110 </Rotation>
@@ -1725,7 +1869,7 @@
 			<CircleSize>800</CircleSize>
 			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
 		</Model>
-<Model>
+		<Model>
 			<ObjURL>Environment/Leaf5.obj</ObjURL>
 			<Position><X>830</X> <Y>357</Y> <Z>0</Z></Position>
 			<Rotation> 110 </Rotation>
@@ -1737,7 +1881,7 @@
 			<CircleSize>800</CircleSize>
 			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
 		</Model>
-<Model>
+		<Model>
 			<ObjURL>Environment/Leaf4.obj</ObjURL>
 			<Position><X>893</X> <Y>333</Y> <Z>0</Z></Position>
 			<Rotation> 110 </Rotation>
@@ -1749,7 +1893,7 @@
 			<CircleSize>800</CircleSize>
 			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
 		</Model>
-<Model>
+		<Model>
 			<ObjURL>Environment/Leaf5.obj</ObjURL>
 			<Position><X>942</X> <Y>349</Y> <Z>0</Z></Position>
 			<Rotation> 110 </Rotation>
@@ -1761,7 +1905,7 @@
 			<CircleSize>800</CircleSize>
 			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
 		</Model>
-<Model>
+		<Model>
 			<ObjURL>Environment/Leaf3.obj</ObjURL>
 			<Position><X>1005</X> <Y>391</Y> <Z>0</Z></Position>
 			<Rotation> 110 </Rotation>
@@ -1773,7 +1917,7 @@
 			<CircleSize>800</CircleSize>
 			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
 		</Model>
-<Model>
+		<Model>
 			<ObjURL>Environment/Leaf2.obj</ObjURL>
 			<Position><X>1106</X> <Y>487</Y> <Z>0</Z></Position>
 			<Rotation> 110 </Rotation>
@@ -1785,7 +1929,7 @@
 			<CircleSize>800</CircleSize>
 			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
 		</Model>
-<Model>
+		<Model>
 			<ObjURL>Environment/Leaf1.obj</ObjURL>
 			<Position><X>1041</X> <Y>618</Y> <Z>0</Z></Position>
 			<Rotation> 110 </Rotation>
@@ -1797,7 +1941,7 @@
 			<CircleSize>800</CircleSize>
 			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
 		</Model>
-<Model>
+		<Model>
 			<ObjURL>Environment/Leaf2.obj</ObjURL>
 			<Position><X>1125</X> <Y>414</Y> <Z>0</Z></Position>
 			<Rotation> 110 </Rotation>
@@ -1809,7 +1953,7 @@
 			<CircleSize>800</CircleSize>
 			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
 		</Model>
-<Model>
+		<Model>
 			<ObjURL>Environment/Leaf4.obj</ObjURL>
 			<Position><X>1024</X> <Y>272</Y> <Z>0</Z></Position>
 			<Rotation> 110 </Rotation>
@@ -1821,7 +1965,7 @@
 			<CircleSize>800</CircleSize>
 			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
 		</Model>
-<Model>
+		<Model>
 			<ObjURL>Environment/Leaf3.obj</ObjURL>
 			<Position><X>1072</X> <Y>308</Y> <Z>0</Z></Position>
 			<Rotation> 110 </Rotation>
@@ -1833,7 +1977,7 @@
 			<CircleSize>800</CircleSize>
 			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
 		</Model>
-<Model>
+		<Model>
 			<ObjURL>Environment/Leaf2.obj</ObjURL>
 			<Position><X>706</X> <Y>316</Y> <Z>0</Z></Position>
 			<Rotation> 110 </Rotation>
@@ -1845,7 +1989,7 @@
 			<CircleSize>800</CircleSize>
 			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
 		</Model>
-<Model>
+		<Model>
 			<ObjURL>Environment/Leaf4.obj</ObjURL>
 			<Position><X>770</X> <Y>306</Y> <Z>0</Z></Position>
 			<Rotation> 110 </Rotation>
@@ -1857,7 +2001,7 @@
 			<CircleSize>800</CircleSize>
 			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
 		</Model>
-<Model>
+		<Model>
 			<ObjURL>Environment/Leaf3.obj</ObjURL>
 			<Position><X>736</X> <Y>336</Y> <Z>0</Z></Position>
 			<Rotation> 110 </Rotation>
@@ -1875,6 +2019,260 @@
 	<StayingTime>4</StayingTime>
 </Group>
 
+<Group>
+
+
+<Name>Tree6</Name>
+	<GroupObj>
+		<Model>
+			<ObjURL>Environment/Leaf3.obj</ObjURL>
+			<Position><X>1115</X> <Y>415</Y> <Z>30</Z></Position>
+			<Rotation> 110 </Rotation>
+			<MaxScale>0.15</MaxScale>
+			<ScaleSpeed>0.05</ScaleSpeed>
+			<StayingTime>1</StayingTime>
+			<HoldingTime>1</HoldingTime>
+			<CollideSize>70</CollideSize>
+			<CircleSize>800</CircleSize>
+			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
+		</Model>
+
+		<Model>
+			<ObjURL>Environment/Leaf3.obj</ObjURL>
+			<Position><X>1088</X> <Y>388</Y> <Z>30</Z></Position>
+			<Rotation> 110 </Rotation>
+			<MaxScale>0.15</MaxScale>
+			<ScaleSpeed>0.05</ScaleSpeed>
+			<StayingTime>1</StayingTime>
+			<HoldingTime>1</HoldingTime>
+			<CollideSize>70</CollideSize>
+			<CircleSize>800</CircleSize>
+			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
+		</Model>
+
+		<Model>
+			<ObjURL>Environment/Leaf3.obj</ObjURL>
+			<Position><X>1048</X> <Y>345</Y> <Z>30</Z></Position>
+			<Rotation> 110 </Rotation>
+			<MaxScale>0.15</MaxScale>
+			<ScaleSpeed>0.05</ScaleSpeed>
+			<StayingTime>1</StayingTime>
+			<HoldingTime>1</HoldingTime>
+			<CollideSize>70</CollideSize>
+			<CircleSize>800</CircleSize>
+			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
+		</Model>
+		<Model>
+			<ObjURL>Environment/Leaf3.obj</ObjURL>
+			<Position><X>1025</X> <Y>299</Y> <Z>30</Z></Position>
+			<Rotation> 110 </Rotation>
+			<MaxScale>0.15</MaxScale>
+			<ScaleSpeed>0.05</ScaleSpeed>
+			<StayingTime>1</StayingTime>
+			<HoldingTime>1</HoldingTime>
+			<CollideSize>70</CollideSize>
+			<CircleSize>800</CircleSize>
+			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
+		</Model>
+		<Model>
+			<ObjURL>Environment/Leaf3.obj</ObjURL>
+			<Position><X>1001</X> <Y>262</Y> <Z>30</Z></Position>
+			<Rotation> 110 </Rotation>
+			<MaxScale>0.15</MaxScale>
+			<ScaleSpeed>0.05</ScaleSpeed>
+			<StayingTime>1</StayingTime>
+			<HoldingTime>1</HoldingTime>
+			<CollideSize>70</CollideSize>
+			<CircleSize>800</CircleSize>
+			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
+		</Model>
+		<Model>
+			<ObjURL>Environment/Leaf3.obj</ObjURL>
+			<Position><X>979</X> <Y>206</Y> <Z>30</Z></Position>
+			<Rotation> 110 </Rotation>
+			<MaxScale>0.15</MaxScale>
+			<ScaleSpeed>0.05</ScaleSpeed>
+			<StayingTime>1</StayingTime>
+			<HoldingTime>1</HoldingTime>
+			<CollideSize>70</CollideSize>
+			<CircleSize>800</CircleSize>
+			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
+		</Model>
+		<Model>
+			<ObjURL>Environment/Leaf3.obj</ObjURL>
+			<Position><X>1037</X> <Y>151</Y> <Z>30</Z></Position>
+			<Rotation> 110 </Rotation>
+			<MaxScale>0.15</MaxScale>
+			<ScaleSpeed>0.05</ScaleSpeed>
+			<StayingTime>1</StayingTime>
+			<HoldingTime>1</HoldingTime>
+			<CollideSize>70</CollideSize>
+			<CircleSize>800</CircleSize>
+			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
+		</Model>
+		<Model>
+			<ObjURL>Environment/Leaf3.obj</ObjURL>
+			<Position><X>1105</X> <Y>145</Y> <Z>30</Z></Position>
+			<Rotation> 110 </Rotation>
+			<MaxScale>0.15</MaxScale>
+			<ScaleSpeed>0.05</ScaleSpeed>
+			<StayingTime>1</StayingTime>
+			<HoldingTime>1</HoldingTime>
+			<CollideSize>70</CollideSize>
+			<CircleSize>800</CircleSize>
+			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
+		</Model>
+		<Model>
+			<ObjURL>Environment/Leaf3.obj</ObjURL>
+			<Position><X>1176</X> <Y>176</Y> <Z>30</Z></Position>
+			<Rotation> 110 </Rotation>
+			<MaxScale>0.15</MaxScale>
+			<ScaleSpeed>0.05</ScaleSpeed>
+			<StayingTime>1</StayingTime>
+			<HoldingTime>1</HoldingTime>
+			<CollideSize>70</CollideSize>
+			<CircleSize>800</CircleSize>
+			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
+		</Model>
+		<Model>
+			<ObjURL>Environment/Leaf3.obj</ObjURL>
+			<Position><X>12014</X> <Y>223</Y> <Z>30</Z></Position>
+			<Rotation> 110 </Rotation>
+			<MaxScale>0.15</MaxScale>
+			<ScaleSpeed>0.05</ScaleSpeed>
+			<StayingTime>1</StayingTime>
+			<HoldingTime>1</HoldingTime>
+			<CollideSize>70</CollideSize>
+			<CircleSize>800</CircleSize>
+			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
+		</Model>
+		<Model>
+			<ObjURL>Environment/Leaf3.obj</ObjURL>
+			<Position><X>1221</X> <Y>271</Y> <Z>30</Z></Position>
+			<Rotation> 110 </Rotation>
+			<MaxScale>0.15</MaxScale>
+			<ScaleSpeed>0.05</ScaleSpeed>
+			<StayingTime>1</StayingTime>
+			<HoldingTime>1</HoldingTime>
+			<CollideSize>70</CollideSize>
+			<CircleSize>800</CircleSize>
+			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
+		</Model>
+		<Model>
+			<ObjURL>Environment/Leaf3.obj</ObjURL>
+			<Position><X>1152</X> <Y>247</Y> <Z>30</Z></Position>
+			<Rotation> 110 </Rotation>
+			<MaxScale>0.15</MaxScale>
+			<ScaleSpeed>0.05</ScaleSpeed>
+			<StayingTime>1</StayingTime>
+			<HoldingTime>1</HoldingTime>
+			<CollideSize>70</CollideSize>
+			<CircleSize>800</CircleSize>
+			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
+		</Model>
+		<Model>
+			<ObjURL>Environment/Leaf3.obj</ObjURL>
+			<Position><X>1164</X> <Y>228</Y> <Z>30</Z></Position>
+			<Rotation> 110 </Rotation>
+			<MaxScale>0.15</MaxScale>
+			<ScaleSpeed>0.05</ScaleSpeed>
+			<StayingTime>1</StayingTime>
+			<HoldingTime>1</HoldingTime>
+			<CollideSize>70</CollideSize>
+			<CircleSize>800</CircleSize>
+			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
+		</Model>
+		<Model>
+			<ObjURL>Environment/Leaf3.obj</ObjURL>
+			<Position><X>1140</X> <Y>320</Y> <Z>30</Z></Position>
+			<Rotation> 110 </Rotation>
+			<MaxScale>0.15</MaxScale>
+			<ScaleSpeed>0.05</ScaleSpeed>
+			<StayingTime>1</StayingTime>
+			<HoldingTime>1</HoldingTime>
+			<CollideSize>70</CollideSize>
+			<CircleSize>800</CircleSize>
+			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
+		</Model>
+		<Model>
+			<ObjURL>Environment/Leaf3.obj</ObjURL>
+			<Position><X>1119</X> <Y>268</Y> <Z>30</Z></Position>
+			<Rotation> 110 </Rotation>
+			<MaxScale>0.15</MaxScale>
+			<ScaleSpeed>0.05</ScaleSpeed>
+			<StayingTime>1</StayingTime>
+			<HoldingTime>1</HoldingTime>
+			<CollideSize>70</CollideSize>
+			<CircleSize>800</CircleSize>
+			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
+		</Model>
+		<Model>
+			<ObjURL>Environment/Leaf3.obj</ObjURL>
+			<Position><X>1114</X> <Y>197</Y> <Z>30</Z></Position>
+			<Rotation> 110 </Rotation>
+			<MaxScale>0.15</MaxScale>
+			<ScaleSpeed>0.05</ScaleSpeed>
+			<StayingTime>1</StayingTime>
+			<HoldingTime>1</HoldingTime>
+			<CollideSize>70</CollideSize>
+			<CircleSize>800</CircleSize>
+			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
+		</Model>
+
+<Model>
+			<ObjURL>Environment/Leaf3.obj</ObjURL>
+			<Position><X>1058</X> <Y>240</Y> <Z>30</Z></Position>
+			<Rotation> 110 </Rotation>
+			<MaxScale>0.15</MaxScale>
+			<ScaleSpeed>0.05</ScaleSpeed>
+			<StayingTime>1</StayingTime>
+			<HoldingTime>1</HoldingTime>
+			<CollideSize>70</CollideSize>
+			<CircleSize>800</CircleSize>
+			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
+		</Model>
+<Model>
+			<ObjURL>Environment/Leaf3.obj</ObjURL>
+			<Position><X>1086</X> <Y>216</Y> <Z>30</Z></Position>
+			<Rotation> 110 </Rotation>
+			<MaxScale>0.15</MaxScale>
+			<ScaleSpeed>0.05</ScaleSpeed>
+			<StayingTime>1</StayingTime>
+			<HoldingTime>1</HoldingTime>
+			<CollideSize>70</CollideSize>
+			<CircleSize>800</CircleSize>
+			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
+		</Model>
+<Model>
+			<ObjURL>Environment/Leaf3.obj</ObjURL>
+			<Position><X>1185</X> <Y>340</Y> <Z>30</Z></Position>
+			<Rotation> 110 </Rotation>
+			<MaxScale>0.15</MaxScale>
+			<ScaleSpeed>0.05</ScaleSpeed>
+			<StayingTime>1</StayingTime>
+			<HoldingTime>1</HoldingTime>
+			<CollideSize>70</CollideSize>
+			<CircleSize>800</CircleSize>
+			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
+		</Model>
+
+<Model>
+			<ObjURL>Environment/Leaf3.obj</ObjURL>
+			<Position><X>1129</X> <Y>346</Y> <Z>30</Z></Position>
+			<Rotation> 110 </Rotation>
+			<MaxScale>0.15</MaxScale>
+			<ScaleSpeed>0.05</ScaleSpeed>
+			<StayingTime>1</StayingTime>
+			<HoldingTime>1</HoldingTime>
+			<CollideSize>70</CollideSize>
+			<CircleSize>800</CircleSize>
+			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
+		</Model>
+	</GroupObj>
+	<StayingTime>4</StayingTime>
+</Group>
+
+
 
 <LevelIndex>
 	<Group>
@@ -1891,6 +2289,9 @@
 	</Group>
 	<Group>
 		<Name>Tree5</Name>
+	</Group>
+	<Group>
+		<Name>Tree6</Name>
 	</Group>
 </LevelIndex>
 
