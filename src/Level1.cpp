@@ -48,18 +48,12 @@ namespace Jungle
 
 		//left bottom corner is X:0,     Y:0
 		//right up cornor is    X: 1280, Y:720
-        
-        // MUSHROOMS PLACEMENT 
+ 
         
         if(!JungleApp::SceneManagerInstance().LoadScene("SceneConfig.xml"))
             cout<<"Cannot Load Scene"<<endl;
 			//throw exception("Cannot Load Scene");;
        
-        // SECOND TREE FROM LEFT
-        
-        
-        
-        ///
         
         
 		//circle_.loadImage("Environment/glowing-circle-2.png");
@@ -80,7 +74,7 @@ namespace Jungle
 			if(Jungle::KINECT_ENABLE)
 				it->Update(player.l_hand_pos_,player.r_hand_pos_);
 			else
-				it->Update(player.hand_pos_, ofVec3f(0,0,0));
+				it->Update(player.r_hand_pos_, ofVec3f(0,0,0));
 
 			it->Update(ofGetLastFrameTime());
 		}
@@ -120,12 +114,9 @@ namespace Jungle
 
         
         ofDisableLighting();
-        ofEnableAlphaBlending();              
-		player.wind_.Draw();
+        ofEnableAlphaBlending();   
         
 		ofPushMatrix();
-        ofVec3f hand_pos_ = player.GetHandPos();
-
         ofDisableLighting();
         ofEnableAlphaBlending();
 		player.wind_.Draw();
@@ -137,27 +128,25 @@ namespace Jungle
 		ofPopMatrix();
 
         ofSetColor(255, 255, 255);
-		if(Jungle::KINECT_ENABLE && !player.detected_)
+		if(Jungle::KINECT_ENABLE && JUNGLE_DEBUG)
 		{
 			glPushMatrix();
 			ofTranslate(0, h_ - 0.3*h_);
 			ofScale(0.4, 0.4);
-			//JungleApp::KinectInstance().debugDraw();
+			JungleApp::KinectInstance().debugDraw();
 			glPopMatrix();
 		}
 
-		ofVec3f bt_pos = player.hand_pos_;
-		bt_pos.y = h_- bt_pos.y;
 		//ofVec3f mh_pos = ofVec3f(mushrooms_[0].getPosition().x, mushrooms_[0].getPosition().y, 0);
         
 		if(JUNGLE_DEBUG)
 		{
 			ofSetColor(255, 255, 255,255);
-			//ofDrawBitmapString("angle "+ ofToString(player.wind_.emitter_.angle), 20, 20);
+			ofDrawBitmapString("angle "+ ofToString(player.wind_.emitter_.angle), 20, 20);
 			//ofDrawBitmapString("v length "+ ofToString((bt_pos - mh_pos).length()), 20, 40);
 			//ofDrawBitmapString("scale "+ ofToString(mushrooms_[index_].getScale().x), 20, 60);
 			
-			ofDrawBitmapString("Mouse pos " + ofToString(ofGetMouseX())+ " " +ofToString(h_ - ofGetMouseY()), 20, 20);
+			ofDrawBitmapString("Mouse pos " + ofToString(ofGetMouseX())+ " " +ofToString(h_ - ofGetMouseY()), 20, 40);
 			//ofDrawBitmapString("pre "+ ofToString(player.pre_hand_pos_.x) + " "+ ofToString(player.pre_hand_pos_.y), 20, 80);
 			//ofDrawBitmapString("hand "+ ofToString(bt_pos.x) + " "+ ofToString(bt_pos.y), 20, 100);
 		}

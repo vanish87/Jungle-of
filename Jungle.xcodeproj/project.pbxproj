@@ -430,6 +430,7 @@
 		BC8D7987170E2D1D00DB4716 /* JungleParticle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JungleParticle.h; sourceTree = "<group>"; };
 		BC99CBBA172FA2910054DC2C /* Group.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Group.cpp; sourceTree = "<group>"; };
 		BC99CBBB172FA2910054DC2C /* Group.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Group.h; sourceTree = "<group>"; };
+		BC99CBBE173051F80054DC2C /* SceneConfig.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = SceneConfig.xml; path = bin/data/SceneConfig.xml; sourceTree = SOURCE_ROOT; };
 		BCAF17CB16DA0C790067261D /* ofxGifDecoder.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxGifDecoder.cpp; sourceTree = "<group>"; };
 		BCAF17CC16DA0C790067261D /* ofxGifDecoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxGifDecoder.h; sourceTree = "<group>"; };
 		BCAF17CD16DA0C790067261D /* ofxGifFile.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxGifFile.cpp; sourceTree = "<group>"; };
@@ -1197,10 +1198,11 @@
 				BCAF17D816DAA6630067261D /* main.cpp */,
 				BCAF17D916DAA6630067261D /* State.cpp */,
 				BCAF17DA16DAA6630067261D /* State.h */,
+				BC99CBBE173051F80054DC2C /* SceneConfig.xml */,
 				BC0ED39C171B0F1D00FC92BD /* Player.cpp */,
+				BC0ED39D171B0F1D00FC92BD /* Player.h */,
 				BC99CBBA172FA2910054DC2C /* Group.cpp */,
 				BC99CBBB172FA2910054DC2C /* Group.h */,
-				BC0ED39D171B0F1D00FC92BD /* Player.h */,
 				BC0ED39E171B0F1D00FC92BD /* SceneModel.cpp */,
 				BC0ED39F171B0F1D00FC92BD /* SceneModel.h */,
 				BC0ED3A0171B0F1D00FC92BD /* StaticScene.cpp */,
