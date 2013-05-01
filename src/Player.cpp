@@ -8,14 +8,14 @@ namespace Jungle
     Player::Player(void)
 		:wind_("")
 	{
-		r_hand_pos_.set(200,200,0);
+		r_hand_pos_.set(0,0,0);
 
         player_camera_.enableOrtho();
 		player_camera_.setPosition(0,0,500);
 		player_camera_.lookAt(ofVec3f(0,0,0));
         
 		wind_.Init();
-		wind_.Enable(true,ofVec3f(200,200,0));
+		wind_.Enable(true);
         
         if(Jungle::KINECT_ENABLE)
             detected_ = false;
@@ -51,6 +51,7 @@ namespace Jungle
 				p.y = ofMap(l_hand_pos_.y , 0, 480, 0, ofGetWindowHeight(), true); 
                 l_hand_pos_.x = p.x;
                 l_hand_pos_.y = p.y;
+
                 
 				p.x = ofMap(r_hand_pos_.x , 0, 640, 0, ofGetWindowWidth(), true);
 				p.y = ofMap(r_hand_pos_.y , 0, 480, 0, ofGetWindowHeight(), true);

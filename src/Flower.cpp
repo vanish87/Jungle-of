@@ -62,10 +62,11 @@ namespace Jungle {
 			}
 			break;
 		case DISAPPEARING:
-			if(scale.x > scale_speed_)
+			if(scale.x > 0)
 				scale -= scale_speed_;
 			else
 			{
+				scale = ofVec3f(0, 0, 0);
 				pos = org_pos_;
 				flower_state_ = WAITING;
 				time_ = 0;
@@ -112,6 +113,7 @@ namespace Jungle {
 			case GROWING:
 			case DISAPPEARING:
 			case FALLING:
+			case WAITING:
 				 drawFaces();
 				 break;
 			case HOLDING:
@@ -238,6 +240,7 @@ namespace Jungle {
 		{
 			flower_state_ = FALLING;
 			org_pos_ = pos;
+			time_ = 0;
 		}
 	}
 

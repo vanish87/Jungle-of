@@ -5,6 +5,8 @@ namespace Jungle
 	WindGenerator::WindGenerator(string file_name)
 	{
 		enabled_ = false;
+		ltime_ = 0;
+		rtime_ = 0;
 	}
 
 
@@ -37,36 +39,39 @@ namespace Jungle
 			emitter2_.sourcePosition.y = r_hand_pos.y;
 			emitter2_.update();
             
-            if((l_hand_pos-l_pre_hand_pos_) != ofVec3f(0, 0, 0))
+            if((l_hand_pos-pl_hand_pos_).length() < 10)
             {
-                ofVec3f dir = (l_hand_pos-r_pre_hand_pos_).normalize();
-                dir.x = -dir.x;
-                emitter_.angle = acos(ofVec3f(1,0,0).dot(dir)) * 180/3.14;
-                
-//                if(dir.y > 0)
-//                {
-//                    emitter_.angle = 360 - emitter_.angle;
-//                    
-//                }
+				ltime_+=ofGetLastFrameTime();
+				if(ltime_ > 3)
+				{
+					lenable_ = false;
+					ltime_ = 0;
+				}
             }
+			else
+			{
+				lenable_ = true;
+			}
             
             
-            if((r_hand_pos-r_pre_hand_pos_) != ofVec3f(0, 0, 0))
-            {
-                ofVec3f dir = (r_hand_pos-r_pre_hand_pos_).normalize();
-                dir.x = -dir.x;
-                emitter2_.angle = acos(ofVec3f(1,0,0).dot(dir)) * 180/3.14;
-                
-//                if(dir.y > 0)
-//                {
-//                    emitter2_.angle = 360 - emitter2_.angle;
-//                    
-//                }
-            }
+            if((r_hand_pos-pr_hand_pos_).length() < 10)
+			{
+
+				rtime_+=ofGetLastFrameTime();
+				if(rtime_ > 3)
+				{
+					lenable_ = false;
+					rtime_ = 0;
+				}
+			}
+			else
+			{
+				renable_ = true;
+			}
             
             
-            l_pre_hand_pos_ = l_hand_pos;
-            r_pre_hand_pos_ = r_hand_pos;
+            pl_hand_pos_ = l_hand_pos;
+            pr_hand_pos_ = r_hand_pos;
 		}
 	}
 
@@ -74,15 +79,17 @@ namespace Jungle
 	{
 		if(enabled_)
 		{
-			emitter_.draw(0,0);
-            emitter2_.draw(0,0);
+			if(lenable_)
+				emitter_.draw(0,0);
+			if(renable_)
+				emitter2_.draw(0,0);
             
 		}
 	}
 
 	
 
-	void WindGenerator::Enable( bool enable, ofVec3f hand_pos)
+	void WindGenerator::Enable( bool enable)
 	{
 		enabled_ = enable;
 	}

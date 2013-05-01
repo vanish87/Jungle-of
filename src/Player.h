@@ -28,6 +28,7 @@ namespace Jungle {
         
         ofVec3f l_hand_pos_;
         ofVec3f r_hand_pos_;
+
 		        
         bool detected_;
         
