@@ -14,7 +14,8 @@ namespace Jungle {
     : color_(255,255,255), max_scale_(0.008), scale_speed_(0.001), collide_size_(70)
     {
         setScale(0, 0, 0);
-		triggering_circle_.loadImage("Environment/trigger-circle.png");
+		triggering_circle_.loadModel("UI/Trigger.obj");
+		triggering_circle_.setRotation(0, 90, 0, 1, 0);
 		SetCircleSize(200);
         flower_state_ = WAITING;
         
@@ -55,7 +56,8 @@ namespace Jungle {
 			}
 			if(time_ > staying_time_)
 			{
-				flower_state_ = DISAPPEARING;
+				flower_state_ = FALLING;
+				org_pos_ = pos;
 				time_ = 0;
 			}
 			break;
@@ -64,24 +66,31 @@ namespace Jungle {
 				scale -= scale_speed_;
 			else
 			{
+				pos = org_pos_;
 				flower_state_ = WAITING;
 				time_ = 0;
 			}
 			break;
-		case HOLDING:
-			{				
-				if (time_ > holding_time_)
-                {
-                    flower_state_ = GROWING;
-                    
-                    int index = ofRandom(0,4);
-                    if (!sounds_[index].getIsPlaying())
-                    {
-                        sounds_[index].play();
-                    }
-                    
-                    time_ = 0;
-                }
+		case HOLDING:		
+			if (time_ > holding_time_)
+            {
+				flower_state_ = GROWING;
+				
+				int index = ofRandom(0,4);
+				if (!sounds_[index].getIsPlaying())
+				{
+					sounds_[index].play();
+				}
+				time_ = 0;
+			}			
+			break;
+		case FALLING:
+			if(pos.y > 0)
+				pos.y--;
+			else
+			{
+				flower_state_ = DISAPPEARING;
+				time_ = 0;
 			}
 			break;
 		default:
@@ -102,6 +111,7 @@ namespace Jungle {
 			{
 			case GROWING:
 			case DISAPPEARING:
+			case FALLING:
 				 drawFaces();
 				 break;
 			case HOLDING:
@@ -112,8 +122,10 @@ namespace Jungle {
 						scale = 1;
 					ofPushMatrix();
 					ofTranslate(pos.x, pos.y);
-					triggering_circle_.draw(-circle_size_.x * scale, -circle_size_.y * scale,
-						circle_size_.z * scale, circle_size_.w * scale);
+					triggering_circle_.setScale(circle_size_.x * scale, circle_size_.x* scale, circle_size_.x* scale);
+					triggering_circle_.drawFaces();
+// 					triggering_circle_.draw(-circle_size_.x * scale, -circle_size_.y * scale,
+// 						circle_size_.z * scale, circle_size_.w * scale);
 					ofPopMatrix();
 				}
 				break;
@@ -146,8 +158,9 @@ namespace Jungle {
 	void Flower::SetCircleSize( float size )
 	{
 		circle_size_.z= circle_size_.w = size;
-		circle_size_.x = size/2;
+		circle_size_.x = size/320;
 		circle_size_.y = 3*circle_size_.x/4;
+
 	}
 
 	void Flower::SetScaleSpeed( float speed )
@@ -183,7 +196,7 @@ namespace Jungle {
 
 	void Flower::SetGrowing()
 	{
-		if(flower_state_ != GROWING)
+		if(flower_state_ == WAITING )
 		{
 			flower_state_ = GROWING;
 		}
@@ -223,7 +236,8 @@ namespace Jungle {
 	{
 		if(flower_state_ == GROWING)
 		{
-			flower_state_ = DISAPPEARING;
+			flower_state_ = FALLING;
+			org_pos_ = pos;
 		}
 	}
 

@@ -9,9 +9,10 @@ namespace Jungle {
     {
         enum State
         {
+			HOLDING,
             GROWING,
+			FALLING,
             DISAPPEARING,
-            HOLDING,
             WAITING,
         };
     public:
@@ -41,13 +42,15 @@ namespace Jungle {
         float max_scale_;
 		float scale_speed_;
 
-		ofImage triggering_circle_;
+		ofxAssimpModelLoader triggering_circle_;
 		ofVec4f circle_size_;
         
         float time_;
         float holding_time_;
         float staying_time_;
         State flower_state_;
+
+		ofVec3f org_pos_;
         
         float collide_size_;
         ofSoundPlayer sounds_[4];
