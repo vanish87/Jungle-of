@@ -11,11 +11,11 @@
 
 namespace Jungle {
     Flower::Flower(void)
-    : color_(255,255,255), max_scale_(0.008), scale_speed_(0.001), collide_size_(70)
+    : color_(255,255,255,100), max_scale_(0.008), scale_speed_(0.001), collide_size_(70)
     {
         setScale(0, 0, 0);
-		triggering_circle_.loadModel("UI/Trigger.obj");
-		triggering_circle_.setRotation(0, 90, 0, 1, 0);
+		//triggering_circle_.loadModel("UI/Trigger.obj");
+		//triggering_circle_.setRotation(0, 90, 0, 1, 0);
 		SetCircleSize(200);
         flower_state_ = WAITING;
         
@@ -32,6 +32,11 @@ namespace Jungle {
     };
     Flower::~Flower(void)
     {
+    }
+    
+    void Flower::SetColor(ofColor color)
+    {
+        color_ = color;
     }
     
     void Flower::SetCircleColor(ofColor color)
@@ -105,7 +110,7 @@ namespace Jungle {
     void Flower::Draw()
     {
 
-		ofSetColor(color_.r, color_.g, color_.b);
+		ofSetColor(color_.r, color_.g, color_.b,color_.a);
 		if(enable_)
 		{
 			switch (flower_state_)
@@ -125,7 +130,7 @@ namespace Jungle {
 					ofPushMatrix();
 					ofTranslate(pos.x, pos.y);
 					triggering_circle_.setScale(circle_size_.x * scale, circle_size_.x* scale, circle_size_.x* scale);
-					triggering_circle_.drawFaces();
+					//triggering_circle_.drawFaces();
 // 					triggering_circle_.draw(-circle_size_.x * scale, -circle_size_.y * scale,
 // 						circle_size_.z * scale, circle_size_.w * scale);
 					ofPopMatrix();

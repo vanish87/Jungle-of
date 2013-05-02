@@ -26,6 +26,8 @@ namespace Jungle {
 		void SetCircleSize(float size);
         void SetCircleColor(ofColor color);
 		void SetCollideSize(float size);
+        
+        void SetColor(ofColor color);
 		ofVec3f GetScreenPos(ofVec3f world_pos, ofCamera& camera);
 
 		virtual bool Collided(ofVec3f pos);

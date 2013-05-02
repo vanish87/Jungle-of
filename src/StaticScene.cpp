@@ -92,9 +92,9 @@ namespace Jungle
         
         model_ = &tree_;
         
-        ground_1_.AddToScene();
-        ground_2_.AddToScene();
-        ground_3_.AddToScene();
+        //ground_1_.AddToScene();
+        //ground_2_.AddToScene();
+        //ground_3_.AddToScene();
 
         bg_1_.AddToScene();
 		//tree_.AddToScene();

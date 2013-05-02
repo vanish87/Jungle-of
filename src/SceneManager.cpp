@@ -95,6 +95,12 @@ namespace Jungle
 						ofColor color;
 						color.set(file.getValue("R",255), file.getValue("G",255), file.getValue("B",255), file.getValue("A",255));
 						file.popTag();
+                        file.pushTag("ModelColor");
+						ofColor mcolor;
+						mcolor.set(file.getValue("R",255), file.getValue("G",255), file.getValue("B",255), file.getValue("A",255));
+						file.popTag();
+                        
+                        
 						Flower flower;
 						flower.loadModel(url);
 						flower.setPosition(pos.x,pos.y,pos.z);
@@ -102,10 +108,11 @@ namespace Jungle
 						flower.setRotation(1,rotation,0,0,1);
 						flower.SetMaxScale(max_scale);
 						flower.SetScaleSpeed(scale_speed);
-						flower.staying_time_ = staying_time;
+						flower.staying_time_ = staying_time + ofRandom(-3, 3);
 						flower.holding_time_ = holding_time;
 						flower.SetCircleSize(circle_size);
 						flower.SetCircleColor(color);
+                        flower.SetColor(mcolor);
 						flower.Enable(false);
 						group_model.push_back(flower);
 						file.popTag();
