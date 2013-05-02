@@ -44,6 +44,7 @@ namespace Jungle
 		StateManagerInstance().ChangeState(level1_, SOP_PUSH);
         
         ofSetFrameRate(60);
+        ofEnableSmoothing();
 		//ofEnableAlphaBlending();
 //         
          
