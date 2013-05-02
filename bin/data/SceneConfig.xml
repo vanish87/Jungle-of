@@ -8,7 +8,7 @@
 			<MaxScale>0.04</MaxScale>
 			<ScaleSpeed>0.004</ScaleSpeed>
 			<StayingTime>6</StayingTime>
-			<HoldingTime>0.1</HoldingTime>
+			<HoldingTime>1</HoldingTime>
 			<CollideSize>70</CollideSize>
 			<CircleSize>200</CircleSize>
 			<CircleColor><R>255</R> <G>0</G> <B>0</B> <A>255</A></CircleColor>
@@ -20,9 +20,9 @@
 			<MaxScale>0.004</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>6</StayingTime>
-			<HoldingTime>0.1</HoldingTime>
+			<HoldingTime>1</HoldingTime>
 			<CollideSize>70</CollideSize>
-			<CircleSize>70</CircleSize>
+			<CircleSize>800</CircleSize>
 			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
 		</Model>
 		<Model>
@@ -32,9 +32,9 @@
 			<MaxScale>0.004</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>6</StayingTime>
-			<HoldingTime>0.1</HoldingTime>
+			<HoldingTime>1</HoldingTime>
 			<CollideSize>70</CollideSize>
-			<CircleSize>70</CircleSize>
+			<CircleSize>800</CircleSize>
 			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
 		</Model>
 		<Model>
@@ -44,9 +44,9 @@
 			<MaxScale>0.04</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>6</StayingTime>
-			<HoldingTime>0.1</HoldingTime>
+			<HoldingTime>1</HoldingTime>
 			<CollideSize>70</CollideSize>
-			<CircleSize>70</CircleSize>
+			<CircleSize>800</CircleSize>
 			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
 		</Model>
 		<Model>
@@ -56,9 +56,9 @@
 			<MaxScale>0.004</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>6</StayingTime>
-			<HoldingTime>0.1</HoldingTime>
+			<HoldingTime>1</HoldingTime>
 			<CollideSize>70</CollideSize>
-			<CircleSize>70</CircleSize>
+			<CircleSize>800</CircleSize>
 			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
 		</Model>
 		<Model>
@@ -70,7 +70,7 @@
 			<StayingTime>6</StayingTime>
 			<HoldingTime>7</HoldingTime>			
 			<CollideSize>70</CollideSize>
-			<CircleSize>70</CircleSize>
+			<CircleSize>800</CircleSize>
 			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
 		</Model>
 		<Model>
@@ -80,9 +80,9 @@
 			<MaxScale>0.04</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>6</StayingTime>
-			<HoldingTime>0.1</HoldingTime>
+			<HoldingTime>1</HoldingTime>
 			<CollideSize>70</CollideSize>
-			<CircleSize>70</CircleSize>
+			<CircleSize>800</CircleSize>
 			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
 		</Model>
 		<Model>
@@ -92,9 +92,9 @@
 			<MaxScale>0.04</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>6</StayingTime>
-			<HoldingTime>0.1</HoldingTime>
+			<HoldingTime>1</HoldingTime>
 			<CollideSize>70</CollideSize>
-			<CircleSize>70</CircleSize>
+			<CircleSize>800</CircleSize>
 			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
 		</Model>
 		<Model>
@@ -104,9 +104,9 @@
 			<MaxScale>0.04</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>6</StayingTime>
-			<HoldingTime>0.1</HoldingTime>
+			<HoldingTime>1</HoldingTime>
 			<CollideSize>70</CollideSize>
-			<CircleSize>70</CircleSize>
+			<CircleSize>800</CircleSize>
 			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
 		</Model>
 		<Model>
@@ -116,9 +116,9 @@
 			<MaxScale>0.04</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>6</StayingTime>
-			<HoldingTime>0.1</HoldingTime>
+			<HoldingTime>1</HoldingTime>
 			<CollideSize>70</CollideSize>
-			<CircleSize>70</CircleSize>
+			<CircleSize>800</CircleSize>
 			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
 		</Model>
 		<Model>
@@ -128,9 +128,9 @@
 			<MaxScale>0.04</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>6</StayingTime>
-			<HoldingTime>0.1</HoldingTime>
+			<HoldingTime>1</HoldingTime>
 			<CollideSize>70</CollideSize>
-			<CircleSize>70</CircleSize>
+			<CircleSize>800</CircleSize>
 			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
 		</Model>
 		<Model>
@@ -140,28 +140,30 @@
 			<MaxScale>0.04</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>6</StayingTime>
-			<HoldingTime>0.1</HoldingTime>
+			<HoldingTime>1</HoldingTime>
 			<CollideSize>70</CollideSize>
-			<CircleSize>70</CircleSize>
+			<CircleSize>800</CircleSize>
 			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
 		</Model>
 
 	</GroupObj>
 	<StayingTime>4</StayingTime>
 </Group>
+
+
 <Group>
 	<Name>Tree1</Name>
 	<GroupObj>
-		<Model>
+			<Model>
 			<ObjURL>Environment/Leaf_1.obj</ObjURL>
 			<Position><X>1</X> <Y>202</Y> <Z>0</Z></Position>
 			<Rotation>30</Rotation>
 			<MaxScale>0.1</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>5</StayingTime>
-			<HoldingTime>0.1</HoldingTime>	
+			<HoldingTime>1</HoldingTime>	
 			<CollideSize>70</CollideSize>
-			<CircleSize>70</CircleSize>
+			<CircleSize>800</CircleSize>
 			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
 		</Model>
 		<Model>
@@ -171,9 +173,9 @@
 			<MaxScale>0.1</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>5</StayingTime>
-			<HoldingTime>0.1</HoldingTime>	
+			<HoldingTime>1</HoldingTime>	
 			<CollideSize>70</CollideSize>
-			<CircleSize>70</CircleSize>
+			<CircleSize>800</CircleSize>
 			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
 		</Model>
 		<Model>
@@ -183,9 +185,9 @@
 			<MaxScale>0.1</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
-			<HoldingTime>0.1</HoldingTime>
+			<HoldingTime>1</HoldingTime>
 			<CollideSize>70</CollideSize>
-			<CircleSize>70</CircleSize>
+			<CircleSize>800</CircleSize>
 			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
 		</Model>
 		<Model>
@@ -195,9 +197,9 @@
 			<MaxScale>0.1</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
-			<HoldingTime>0.1</HoldingTime>
+			<HoldingTime>1</HoldingTime>
 			<CollideSize>70</CollideSize>
-			<CircleSize>70</CircleSize>
+			<CircleSize>800</CircleSize>
 			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
 		</Model>
 		<Model>
@@ -207,9 +209,9 @@
 			<MaxScale>0.1</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
-			<HoldingTime>0.1</HoldingTime>
+			<HoldingTime>1</HoldingTime>
 			<CollideSize>70</CollideSize>
-			<CircleSize>70</CircleSize>
+			<CircleSize>800</CircleSize>
 			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
 		</Model>
 		<Model>
@@ -219,9 +221,9 @@
 			<MaxScale>0.1</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
-			<HoldingTime>0.1</HoldingTime>
+			<HoldingTime>1</HoldingTime>
 			<CollideSize>70</CollideSize>
-			<CircleSize>70</CircleSize>
+			<CircleSize>800</CircleSize>
 			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
 		</Model>
 		<Model>
@@ -231,9 +233,9 @@
 			<MaxScale>0.1</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
-			<HoldingTime>0.1</HoldingTime>
+			<HoldingTime>1</HoldingTime>
 			<CollideSize>70</CollideSize>
-			<CircleSize>70</CircleSize>
+			<CircleSize>800</CircleSize>
 			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
 		</Model>
 		<Model>
@@ -243,9 +245,9 @@
 			<MaxScale>0.1</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
-			<HoldingTime>0.1</HoldingTime>
+			<HoldingTime>1</HoldingTime>
 			<CollideSize>70</CollideSize>
-			<CircleSize>70</CircleSize>
+			<CircleSize>800</CircleSize>
 			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
 		</Model>
 		<Model>
@@ -255,9 +257,9 @@
 			<MaxScale>0.1</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
-			<HoldingTime>0.1</HoldingTime>
+			<HoldingTime>1</HoldingTime>
 			<CollideSize>70</CollideSize>
-			<CircleSize>70</CircleSize>
+			<CircleSize>800</CircleSize>
 			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
 		</Model>
 		<Model>
@@ -267,9 +269,9 @@
 			<MaxScale>0.1</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
-			<HoldingTime>0.1</HoldingTime>
+			<HoldingTime>1</HoldingTime>
 			<CollideSize>70</CollideSize>
-			<CircleSize>70</CircleSize>
+			<CircleSize>800</CircleSize>
 			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
 		</Model>
 		<Model>
@@ -279,9 +281,9 @@
 			<MaxScale>0.1</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
-			<HoldingTime>0.1</HoldingTime>
+			<HoldingTime>1</HoldingTime>
 			<CollideSize>70</CollideSize>
-			<CircleSize>70</CircleSize>
+			<CircleSize>800</CircleSize>
 			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
 		</Model>
 		<Model>
@@ -291,9 +293,9 @@
 			<MaxScale>0.1</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
-			<HoldingTime>0.1</HoldingTime>
+			<HoldingTime>1</HoldingTime>
 			<CollideSize>70</CollideSize>
-			<CircleSize>70</CircleSize>
+			<CircleSize>800</CircleSize>
 			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
 		</Model>
 		<Model>
@@ -303,9 +305,9 @@
 			<MaxScale>0.1</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
-			<HoldingTime>0.1</HoldingTime>
+			<HoldingTime>1</HoldingTime>
 			<CollideSize>70</CollideSize>
-			<CircleSize>70</CircleSize>
+			<CircleSize>800</CircleSize>
 			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
 		</Model>
 		<Model>
@@ -315,9 +317,9 @@
 			<MaxScale>0.1</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
-			<HoldingTime>0.1</HoldingTime>
+			<HoldingTime>1</HoldingTime>
 			<CollideSize>70</CollideSize>
-			<CircleSize>70</CircleSize>
+			<CircleSize>800</CircleSize>
 			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
 		</Model>
 		<Model>
@@ -327,9 +329,9 @@
 			<MaxScale>0.1</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
-			<HoldingTime>0.1</HoldingTime>
+			<HoldingTime>1</HoldingTime>
 			<CollideSize>70</CollideSize>
-			<CircleSize>70</CircleSize>
+			<CircleSize>800</CircleSize>
 			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
 		</Model>
 		<Model>
@@ -339,9 +341,9 @@
 			<MaxScale>0.1</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
-			<HoldingTime>0.1</HoldingTime>
+			<HoldingTime>1</HoldingTime>
 			<CollideSize>70</CollideSize>
-			<CircleSize>70</CircleSize>
+			<CircleSize>800</CircleSize>
 			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
 		</Model>
 		<Model>
@@ -351,9 +353,9 @@
 			<MaxScale>0.1</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
-			<HoldingTime>0.1</HoldingTime>
+			<HoldingTime>1</HoldingTime>
 			<CollideSize>70</CollideSize>
-			<CircleSize>70</CircleSize>
+			<CircleSize>800</CircleSize>
 			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
 		</Model>
 		<Model>
@@ -363,9 +365,9 @@
 			<MaxScale>0.1</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
-			<HoldingTime>0.1</HoldingTime>
+			<HoldingTime>1</HoldingTime>
 			<CollideSize>70</CollideSize>
-			<CircleSize>70</CircleSize>
+			<CircleSize>800</CircleSize>
 			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
 		</Model>
 		<Model>
@@ -375,9 +377,9 @@
 			<MaxScale>0.1</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
-			<HoldingTime>0.1</HoldingTime>
+			<HoldingTime>1</HoldingTime>
 			<CollideSize>70</CollideSize>
-			<CircleSize>70</CircleSize>
+			<CircleSize>800</CircleSize>
 			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
 		</Model>
 		<Model>
@@ -387,9 +389,9 @@
 			<MaxScale>0.1</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
-			<HoldingTime>0.1</HoldingTime>
+			<HoldingTime>1</HoldingTime>
 			<CollideSize>70</CollideSize>
-			<CircleSize>70</CircleSize>
+			<CircleSize>800</CircleSize>
 			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
 		</Model>
 		<Model>
@@ -399,9 +401,9 @@
 			<MaxScale>0.1</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
-			<HoldingTime>0.1</HoldingTime>
+			<HoldingTime>1</HoldingTime>
 			<CollideSize>70</CollideSize>
-			<CircleSize>70</CircleSize>
+			<CircleSize>800</CircleSize>
 			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
 		</Model>
 		<Model>
@@ -411,9 +413,9 @@
 			<MaxScale>0.1</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
-			<HoldingTime>0.1</HoldingTime>
+			<HoldingTime>1</HoldingTime>
 			<CollideSize>70</CollideSize>
-			<CircleSize>70</CircleSize>
+			<CircleSize>800</CircleSize>
 			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
 		</Model>
 		<Model>
@@ -423,9 +425,9 @@
 			<MaxScale>0.1</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
-			<HoldingTime>0.1</HoldingTime>
+			<HoldingTime>1</HoldingTime>
 			<CollideSize>70</CollideSize>
-			<CircleSize>70</CircleSize>
+			<CircleSize>800</CircleSize>
 			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
 		</Model>
 		<Model>
@@ -435,9 +437,9 @@
 			<MaxScale>0.1</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
-			<HoldingTime>0.1</HoldingTime>
+			<HoldingTime>1</HoldingTime>
 			<CollideSize>70</CollideSize>
-			<CircleSize>70</CircleSize>
+			<CircleSize>800</CircleSize>
 			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
 		</Model>
 		<Model>
@@ -447,9 +449,9 @@
 			<MaxScale>0.1</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
-			<HoldingTime>0.1</HoldingTime>
+			<HoldingTime>1</HoldingTime>
 			<CollideSize>70</CollideSize>
-			<CircleSize>70</CircleSize>
+			<CircleSize>800</CircleSize>
 			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
 		</Model>
 		<Model>
@@ -459,9 +461,9 @@
 			<MaxScale>0.1</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
-			<HoldingTime>0.1</HoldingTime>
+			<HoldingTime>1</HoldingTime>
 			<CollideSize>70</CollideSize>
-			<CircleSize>70</CircleSize>
+			<CircleSize>800</CircleSize>
 			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
 		</Model>
 		<Model>
@@ -471,9 +473,9 @@
 			<MaxScale>0.1</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
-			<HoldingTime>0.1</HoldingTime>
+			<HoldingTime>1</HoldingTime>
 			<CollideSize>70</CollideSize>
-			<CircleSize>70</CircleSize>
+			<CircleSize>800</CircleSize>
 			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
 		</Model>
 		<Model>
@@ -483,9 +485,9 @@
 			<MaxScale>0.1</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
-			<HoldingTime>0.1</HoldingTime>
+			<HoldingTime>1</HoldingTime>
 			<CollideSize>70</CollideSize>
-			<CircleSize>70</CircleSize>
+			<CircleSize>800</CircleSize>
 			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
 		</Model>
 		<Model>
@@ -495,9 +497,9 @@
 			<MaxScale>0.1</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
-			<HoldingTime>0.1</HoldingTime>
+			<HoldingTime>1</HoldingTime>
 			<CollideSize>70</CollideSize>
-			<CircleSize>70</CircleSize>
+			<CircleSize>800</CircleSize>
 			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
 		</Model>
 		<Model>
@@ -507,17 +509,22 @@
 			<MaxScale>0.1</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
-			<HoldingTime>0.1</HoldingTime>
+			<HoldingTime>1</HoldingTime>
 			<CollideSize>70</CollideSize>
-			<CircleSize>70</CircleSize>
+			<CircleSize>800</CircleSize>
 			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
 		</Model>
+	
+
 	</GroupObj>
 	<StayingTime>4</StayingTime>
 </Group>
+
+
 <Group>
 <Name>Tree3</Name>
 	<GroupObj>
+
 		<Model>
 			<ObjURL>Environment/Leaf_1.obj</ObjURL>
 			<Position><X>450</X> <Y>680</Y> <Z>0</Z></Position>
@@ -525,9 +532,9 @@
 			<MaxScale>0.15</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>5</StayingTime>
-			<HoldingTime>0.1</HoldingTime>	
+			<HoldingTime>1</HoldingTime>	
 			<CollideSize>70</CollideSize>
-			<CircleSize>70</CircleSize>
+			<CircleSize>800</CircleSize>
 			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
 		</Model>
 		<Model>
@@ -537,9 +544,9 @@
 		<MaxScale>0.15</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>5</StayingTime>
-			<HoldingTime>0.1</HoldingTime>	
+			<HoldingTime>1</HoldingTime>	
 			<CollideSize>70</CollideSize>
-			<CircleSize>70</CircleSize>
+			<CircleSize>800</CircleSize>
 			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
 		</Model>
 		<Model>
@@ -549,9 +556,9 @@
 		<MaxScale>0.15</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
-			<HoldingTime>0.1</HoldingTime>
+			<HoldingTime>1</HoldingTime>
 			<CollideSize>70</CollideSize>
-			<CircleSize>70</CircleSize>
+			<CircleSize>800</CircleSize>
 			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
 		</Model>
 		<Model>
@@ -561,9 +568,9 @@
 		<MaxScale>0.15</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
-			<HoldingTime>0.1</HoldingTime>
+			<HoldingTime>1</HoldingTime>
 			<CollideSize>70</CollideSize>
-			<CircleSize>70</CircleSize>
+			<CircleSize>800</CircleSize>
 			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
 		</Model>
 		<Model>
@@ -573,9 +580,9 @@
 			<MaxScale>0.15</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
-			<HoldingTime>0.1</HoldingTime>
+			<HoldingTime>1</HoldingTime>
 			<CollideSize>70</CollideSize>
-			<CircleSize>70</CircleSize>
+			<CircleSize>800</CircleSize>
 			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
 		</Model>
 		<Model>
@@ -585,9 +592,9 @@
 			<MaxScale>0.15</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
-			<HoldingTime>0.1</HoldingTime>
+			<HoldingTime>1</HoldingTime>
 			<CollideSize>70</CollideSize>
-			<CircleSize>70</CircleSize>
+			<CircleSize>800</CircleSize>
 			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
 		</Model>
 		<Model>
@@ -597,9 +604,9 @@
 		<MaxScale>0.15</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
-			<HoldingTime>0.1</HoldingTime>
+			<HoldingTime>1</HoldingTime>
 			<CollideSize>70</CollideSize>
-			<CircleSize>70</CircleSize>
+			<CircleSize>800</CircleSize>
 			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
 		</Model>
 		<Model>
@@ -609,9 +616,9 @@
 		<MaxScale>0.15</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
-			<HoldingTime>0.1</HoldingTime>
+			<HoldingTime>1</HoldingTime>
 			<CollideSize>70</CollideSize>
-			<CircleSize>70</CircleSize>
+			<CircleSize>800</CircleSize>
 			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
 		</Model>
 		<Model>
@@ -621,9 +628,9 @@
 			<MaxScale>0.15</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
-			<HoldingTime>0.1</HoldingTime>
+			<HoldingTime>1</HoldingTime>
 			<CollideSize>70</CollideSize>
-			<CircleSize>70</CircleSize>
+			<CircleSize>800</CircleSize>
 			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
 		</Model>
 		<Model>
@@ -633,9 +640,9 @@
 		<MaxScale>0.15</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
-			<HoldingTime>0.1</HoldingTime>
+			<HoldingTime>1</HoldingTime>
 			<CollideSize>70</CollideSize>
-			<CircleSize>70</CircleSize>
+			<CircleSize>800</CircleSize>
 			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
 		</Model>
 		<Model>
@@ -645,9 +652,9 @@
 			<MaxScale>0.15</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
-			<HoldingTime>0.1</HoldingTime>
+			<HoldingTime>1</HoldingTime>
 			<CollideSize>70</CollideSize>
-			<CircleSize>70</CircleSize>
+			<CircleSize>800</CircleSize>
 			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
 		</Model>
 		<Model>
@@ -657,9 +664,9 @@
 			<MaxScale>0.15</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
-			<HoldingTime>0.1</HoldingTime>
+			<HoldingTime>1</HoldingTime>
 			<CollideSize>70</CollideSize>
-			<CircleSize>70</CircleSize>
+			<CircleSize>800</CircleSize>
 			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
 		</Model>
 		<Model>
@@ -669,9 +676,9 @@
 		<MaxScale>0.15</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
-			<HoldingTime>0.1</HoldingTime>
+			<HoldingTime>1</HoldingTime>
 			<CollideSize>70</CollideSize>
-			<CircleSize>70</CircleSize>
+			<CircleSize>800</CircleSize>
 			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
 		</Model>
 		<Model>
@@ -681,9 +688,9 @@
 			<MaxScale>0.15</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
-			<HoldingTime>0.1</HoldingTime>
+			<HoldingTime>1</HoldingTime>
 			<CollideSize>70</CollideSize>
-			<CircleSize>70</CircleSize>
+			<CircleSize>800</CircleSize>
 			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
 		</Model>
 		<Model>
@@ -693,9 +700,9 @@
 		<MaxScale>0.15</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
-			<HoldingTime>0.1</HoldingTime>
+			<HoldingTime>1</HoldingTime>
 			<CollideSize>70</CollideSize>
-			<CircleSize>70</CircleSize>
+			<CircleSize>800</CircleSize>
 			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
 		</Model>
 		<Model>
@@ -705,9 +712,9 @@
 			<MaxScale>0.15</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
-			<HoldingTime>0.1</HoldingTime>
+			<HoldingTime>1</HoldingTime>
 			<CollideSize>70</CollideSize>
-			<CircleSize>70</CircleSize>
+			<CircleSize>800</CircleSize>
 			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
 		</Model>
 		<Model>
@@ -717,9 +724,9 @@
 			<MaxScale>0.15</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
-			<HoldingTime>0.1</HoldingTime>
+			<HoldingTime>1</HoldingTime>
 			<CollideSize>70</CollideSize>
-			<CircleSize>70</CircleSize>
+			<CircleSize>800</CircleSize>
 			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
 		</Model>
 		<Model>
@@ -729,9 +736,9 @@
 			<MaxScale>0.15</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
-			<HoldingTime>0.1</HoldingTime>
+			<HoldingTime>1</HoldingTime>
 			<CollideSize>70</CollideSize>
-			<CircleSize>70</CircleSize>
+			<CircleSize>800</CircleSize>
 			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
 		</Model>
 		<Model>
@@ -741,9 +748,9 @@
 			<MaxScale>0.15</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
-			<HoldingTime>0.1</HoldingTime>
+			<HoldingTime>1</HoldingTime>
 			<CollideSize>70</CollideSize>
-			<CircleSize>70</CircleSize>
+			<CircleSize>800</CircleSize>
 			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
 		</Model>
 		<Model>
@@ -753,9 +760,9 @@
 		<MaxScale>0.15</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
-			<HoldingTime>0.1</HoldingTime>
+			<HoldingTime>1</HoldingTime>
 			<CollideSize>70</CollideSize>
-			<CircleSize>70</CircleSize>
+			<CircleSize>800</CircleSize>
 			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
 		</Model>
 		<Model>
@@ -765,9 +772,9 @@
 			<MaxScale>0.15</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
-			<HoldingTime>0.1</HoldingTime>
+			<HoldingTime>1</HoldingTime>
 			<CollideSize>70</CollideSize>
-			<CircleSize>70</CircleSize>
+			<CircleSize>800</CircleSize>
 			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
 		</Model>
 		<Model>
@@ -777,9 +784,9 @@
 			<MaxScale>0.15</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
-			<HoldingTime>0.1</HoldingTime>
+			<HoldingTime>1</HoldingTime>
 			<CollideSize>70</CollideSize>
-			<CircleSize>70</CircleSize>
+			<CircleSize>800</CircleSize>
 			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
 		</Model>
 		<Model>
@@ -789,202 +796,202 @@
 			<MaxScale>0.15</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
-			<HoldingTime>0.1</HoldingTime>
+			<HoldingTime>1</HoldingTime>
 			<CollideSize>70</CollideSize>
-			<CircleSize>70</CircleSize>
+			<CircleSize>800</CircleSize>
 			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
 		</Model>
 
-<Model>
+		<Model>
 			<ObjURL>Environment/Leaf_3.obj</ObjURL>
 			<Position><X>381</X> <Y>540</Y> <Z>0</Z></Position>
 			<Rotation>30</Rotation>
 			<MaxScale>0.15</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
-			<HoldingTime>0.1</HoldingTime>
+			<HoldingTime>1</HoldingTime>
 			<CollideSize>70</CollideSize>
-			<CircleSize>70</CircleSize>
+			<CircleSize>800</CircleSize>
 			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
 		</Model>
-<Model>
+		<Model>
 			<ObjURL>Environment/Leaf_5.obj</ObjURL>
 			<Position><X>357</X> <Y>481</Y> <Z>0</Z></Position>
 			<Rotation>30</Rotation>
 			<MaxScale>0.15</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
-			<HoldingTime>0.1</HoldingTime>
+			<HoldingTime>1</HoldingTime>
 			<CollideSize>70</CollideSize>
-			<CircleSize>70</CircleSize>
+			<CircleSize>800</CircleSize>
 			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
 		</Model>
-<Model>
+		<Model>
 			<ObjURL>Environment/Leaf_4.obj</ObjURL>
 			<Position><X>412</X> <Y>458</Y> <Z>0</Z></Position>
 			<Rotation>30</Rotation>
 			<MaxScale>0.15</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
-			<HoldingTime>0.1</HoldingTime>
+			<HoldingTime>1</HoldingTime>
 			<CollideSize>70</CollideSize>
-			<CircleSize>70</CircleSize>
+			<CircleSize>800</CircleSize>
 			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
 		</Model>
-<Model>
+		<Model>
 			<ObjURL>Environment/Leaf_1.obj</ObjURL>
 			<Position><X>502</X> <Y>543</Y> <Z>0</Z></Position>
 			<Rotation>30</Rotation>
 			<MaxScale>0.15</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
-			<HoldingTime>0.1</HoldingTime>
+			<HoldingTime>1</HoldingTime>
 			<CollideSize>70</CollideSize>
-			<CircleSize>70</CircleSize>
+			<CircleSize>800</CircleSize>
 			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
 		</Model>
-<Model>
+		<Model>
 			<ObjURL>Environment/Leaf_3.obj</ObjURL>
 			<Position><X>560</X> <Y>518</Y> <Z>0</Z></Position>
 			<Rotation>30</Rotation>
 		<MaxScale>0.15</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
-			<HoldingTime>0.1</HoldingTime>
+			<HoldingTime>1</HoldingTime>
 			<CollideSize>70</CollideSize>
-			<CircleSize>70</CircleSize>
+			<CircleSize>800</CircleSize>
 			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
 		</Model>
-<Model>
+		<Model>
 			<ObjURL>Environment/Leaf_5.obj</ObjURL>
 			<Position><X>345</X> <Y>357</Y> <Z>0</Z></Position>
 			<Rotation>30</Rotation>
 			<MaxScale>0.15</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
-			<HoldingTime>0.1</HoldingTime>
+			<HoldingTime>1</HoldingTime>
 			<CollideSize>70</CollideSize>
-			<CircleSize>70</CircleSize>
+			<CircleSize>800</CircleSize>
 			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
 		</Model>
-<Model>
+		<Model>
 			<ObjURL>Environment/Leaf_4.obj</ObjURL>
 			<Position><X>408</X> <Y>333</Y> <Z>0</Z></Position>
 			<Rotation>30</Rotation>
 			<MaxScale>0.15</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
-			<HoldingTime>0.1</HoldingTime>
+			<HoldingTime>1</HoldingTime>
 			<CollideSize>70</CollideSize>
-			<CircleSize>70</CircleSize>
+			<CircleSize>800</CircleSize>
 			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
 		</Model>
-<Model>
+		<Model>
 			<ObjURL>Environment/Leaf_1.obj</ObjURL>
 			<Position><X>457</X> <Y>349</Y> <Z>0</Z></Position>
 			<Rotation>30</Rotation>
 			<MaxScale>0.15</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
-			<HoldingTime>0.1</HoldingTime>
+			<HoldingTime>1</HoldingTime>
 			<CollideSize>70</CollideSize>
-			<CircleSize>70</CircleSize>
+			<CircleSize>800</CircleSize>
 			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
 		</Model>
-<Model>
+		<Model>
 			<ObjURL>Environment/Leaf_3.obj</ObjURL>
 			<Position><X>520</X> <Y>391</Y> <Z>0</Z></Position>
 			<Rotation>30</Rotation>
 			<MaxScale>0.1</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
-			<HoldingTime>0.1</HoldingTime>
+			<HoldingTime>1</HoldingTime>
 			<CollideSize>70</CollideSize>
-			<CircleSize>70</CircleSize>
+			<CircleSize>800</CircleSize>
 			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
 		</Model>
-<Model>
+		<Model>
 			<ObjURL>Environment/Leaf_5.obj</ObjURL>
 			<Position><X>621</X> <Y>487</Y> <Z>0</Z></Position>
 			<Rotation>30</Rotation>
 			<MaxScale>0.15</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
-			<HoldingTime>0.1</HoldingTime>
+			<HoldingTime>1</HoldingTime>
 			<CollideSize>70</CollideSize>
-			<CircleSize>70</CircleSize>
+			<CircleSize>800</CircleSize>
 			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
 		</Model>
-<Model>
+		<Model>
 			<ObjURL>Environment/Leaf_4.obj</ObjURL>
 			<Position><X>556</X> <Y>618</Y> <Z>0</Z></Position>
 			<Rotation>30</Rotation>
 			<MaxScale>0.15</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
-			<HoldingTime>0.1</HoldingTime>
+			<HoldingTime>1</HoldingTime>
 			<CollideSize>70</CollideSize>
-			<CircleSize>70</CircleSize>
+			<CircleSize>800</CircleSize>
 			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
 		</Model>
-<Model>
+		<Model>
 			<ObjURL>Environment/Leaf_1.obj</ObjURL>
 			<Position><X>640</X> <Y>414</Y> <Z>0</Z></Position>
 			<Rotation>30</Rotation>
 			<MaxScale>0.1</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
-			<HoldingTime>0.1</HoldingTime>
+			<HoldingTime>1</HoldingTime>
 			<CollideSize>70</CollideSize>
-			<CircleSize>70</CircleSize>
+			<CircleSize>800</CircleSize>
 			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
 		</Model>
-<Model>
+		<Model>
 			<ObjURL>Environment/Leaf_3.obj</ObjURL>
 			<Position><X>539</X> <Y>272</Y> <Z>0</Z></Position>
 			<Rotation>30</Rotation>
 			<MaxScale>0.15</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
-			<HoldingTime>0.1</HoldingTime>
+			<HoldingTime>1</HoldingTime>
 			<CollideSize>70</CollideSize>
-			<CircleSize>70</CircleSize>
+			<CircleSize>800</CircleSize>
 			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
 		</Model>
-<Model>
+		<Model>
 			<ObjURL>Environment/Leaf_5.obj</ObjURL>
 			<Position><X>587</X> <Y>308</Y> <Z>0</Z></Position>
 			<Rotation>30</Rotation>
 			<MaxScale>0.15</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
-			<HoldingTime>0.1</HoldingTime>
+			<HoldingTime>1</HoldingTime>
 			<CollideSize>70</CollideSize>
-			<CircleSize>70</CircleSize>
+			<CircleSize>800</CircleSize>
 			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
 		</Model>
-<Model>
+		<Model>
 			<ObjURL>Environment/Leaf_4.obj</ObjURL>
 			<Position><X>640</X> <Y>414</Y> <Z>0</Z></Position>
 			<Rotation>30</Rotation>
 			<MaxScale>0.1</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
-			<HoldingTime>0.1</HoldingTime>
+			<HoldingTime>1</HoldingTime>
 			<CollideSize>70</CollideSize>
-			<CircleSize>70</CircleSize>
+			<CircleSize>800</CircleSize>
 			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
 		</Model>
-<Model>
+		<Model>
 			<ObjURL>Environment/Leaf_5.obj</ObjURL>
 			<Position><X>539</X> <Y>272</Y> <Z>0</Z></Position>
 			<Rotation>30</Rotation>
 			<MaxScale>0.15</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
-			<HoldingTime>0.1</HoldingTime>
+			<HoldingTime>1</HoldingTime>
 			<CollideSize>70</CollideSize>
-			<CircleSize>70</CircleSize>
+			<CircleSize>800</CircleSize>
 			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
 		</Model>
 		<Model>
@@ -994,21 +1001,72 @@
 			<MaxScale>0.15</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
-			<HoldingTime>0.1</HoldingTime>
+			<HoldingTime>1</HoldingTime>
 			<CollideSize>70</CollideSize>
-			<CircleSize>70</CircleSize>
+			<CircleSize>800</CircleSize>
 			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
 		</Model>
 
-
+		<Model>
+			<ObjURL>Environment/SP_Leaf.obj</ObjURL>
+			<Position><X>387</X> <Y>534</Y> <Z>10</Z></Position>
+			<Rotation>0</Rotation>
+			<MaxScale>0.01</MaxScale>
+			<ScaleSpeed>0.05</ScaleSpeed>
+			<StayingTime>5</StayingTime>
+			<HoldingTime>1</HoldingTime>	
+			<CollideSize>70</CollideSize>
+			<CircleSize>800</CircleSize>
+			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
+		</Model>
+		<Model>
+			<ObjURL>Environment/SP_Leaf.obj</ObjURL>
+			<Position><X>542</X> <Y>479</Y> <Z>10</Z></Position>
+			<Rotation>0</Rotation>
+			<MaxScale>0.01</MaxScale>
+			<ScaleSpeed>0.05</ScaleSpeed>
+			<StayingTime>5</StayingTime>
+			<HoldingTime>1</HoldingTime>	
+			<CollideSize>70</CollideSize>
+			<CircleSize>800</CircleSize>
+			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
+		</Model>
+		<Model>
+			<ObjURL>Environment/SP_Leaf.obj</ObjURL>
+			<Position><X>346</X> <Y>397</Y> <Z>10</Z></Position>
+			<Rotation>0</Rotation>
+			<MaxScale>0.01</MaxScale>
+			<ScaleSpeed>0.05</ScaleSpeed>
+			<StayingTime>1</StayingTime>
+			<HoldingTime>1</HoldingTime>
+			<CollideSize>70</CollideSize>
+			<CircleSize>800</CircleSize>
+			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
+		</Model>
+		<Model>
+			<ObjURL>Environment/SP_Leaf.obj</ObjURL>
+			<Position><X>496</X> <Y>373</Y> <Z>10</Z></Position>
+			<Rotation>0</Rotation>
+			<MaxScale>0.01</MaxScale>
+			<ScaleSpeed>0.05</ScaleSpeed>
+			<StayingTime>1</StayingTime>
+			<HoldingTime>1</HoldingTime>
+			<CollideSize>70</CollideSize>
+			<CircleSize>800</CircleSize>
+			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
+		</Model>
 			</GroupObj>
 	<StayingTime>4</StayingTime>
 </Group>
 
+
+
+
+
 <Group>
 <Name>Tree4</Name>
 	<GroupObj>
-
+			
 		<Model>
 			<ObjURL>Environment/Leaf_4.obj</ObjURL>
 			<Position><X>695</X> <Y>60</Y> <Z>0</Z></Position>
@@ -1016,9 +1074,9 @@
 			<MaxScale>0.1</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
-			<HoldingTime>0.1</HoldingTime>
+			<HoldingTime>1</HoldingTime>
 			<CollideSize>70</CollideSize>
-			<CircleSize>70</CircleSize>
+			<CircleSize>800</CircleSize>
 			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
 		</Model>
 		<Model>
@@ -1028,9 +1086,9 @@
 			<MaxScale>0.1</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
-			<HoldingTime>0.1</HoldingTime>
+			<HoldingTime>1</HoldingTime>
 			<CollideSize>70</CollideSize>
-			<CircleSize>70</CircleSize>
+			<CircleSize>800</CircleSize>
 			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
 		</Model>
 
@@ -1041,9 +1099,9 @@
 			<MaxScale>0.1</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
-			<HoldingTime>0.1</HoldingTime>
+			<HoldingTime>1</HoldingTime>
 			<CollideSize>70</CollideSize>
-			<CircleSize>70</CircleSize>
+			<CircleSize>800</CircleSize>
 			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
 		</Model>
 
@@ -1054,9 +1112,9 @@
 			<MaxScale>0.1</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
-			<HoldingTime>0.1</HoldingTime>
+			<HoldingTime>1</HoldingTime>
 			<CollideSize>70</CollideSize>
-			<CircleSize>70</CircleSize>
+			<CircleSize>800</CircleSize>
 			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
 		</Model>
 
@@ -1067,9 +1125,9 @@
 			<MaxScale>0.1</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
-			<HoldingTime>0.1</HoldingTime>
+			<HoldingTime>1</HoldingTime>
 			<CollideSize>70</CollideSize>
-			<CircleSize>70</CircleSize>
+			<CircleSize>800</CircleSize>
 			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
 		</Model>
 
@@ -1080,9 +1138,9 @@
 			<MaxScale>0.1</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
-			<HoldingTime>0.1</HoldingTime>
+			<HoldingTime>1</HoldingTime>
 			<CollideSize>70</CollideSize>
-			<CircleSize>70</CircleSize>
+			<CircleSize>800</CircleSize>
 			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
 		</Model>
 
@@ -1093,9 +1151,9 @@
 			<MaxScale>0.1</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
-			<HoldingTime>0.1</HoldingTime>
+			<HoldingTime>1</HoldingTime>
 			<CollideSize>70</CollideSize>
-			<CircleSize>70</CircleSize>
+			<CircleSize>800</CircleSize>
 			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
 		</Model>
 
@@ -1106,9 +1164,9 @@
 			<MaxScale>0.1</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
-			<HoldingTime>0.1</HoldingTime>
+			<HoldingTime>1</HoldingTime>
 			<CollideSize>70</CollideSize>
-			<CircleSize>70</CircleSize>
+			<CircleSize>800</CircleSize>
 			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
 		</Model>
 
@@ -1119,9 +1177,9 @@
 			<MaxScale>0.1</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
-			<HoldingTime>0.1</HoldingTime>
+			<HoldingTime>1</HoldingTime>
 			<CollideSize>70</CollideSize>
-			<CircleSize>70</CircleSize>
+			<CircleSize>800</CircleSize>
 			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
 		</Model>
 
@@ -1132,9 +1190,9 @@
 			<MaxScale>0.1</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
-			<HoldingTime>0.1</HoldingTime>
+			<HoldingTime>1</HoldingTime>
 			<CollideSize>70</CollideSize>
-			<CircleSize>70</CircleSize>
+			<CircleSize>800</CircleSize>
 			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
 		</Model>
 
@@ -1145,9 +1203,9 @@
 			<MaxScale>0.1</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
-			<HoldingTime>0.1</HoldingTime>
+			<HoldingTime>1</HoldingTime>
 			<CollideSize>70</CollideSize>
-			<CircleSize>70</CircleSize>
+			<CircleSize>800</CircleSize>
 			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
 		</Model>
 
@@ -1158,9 +1216,9 @@
 			<MaxScale>0.1</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
-			<HoldingTime>0.1</HoldingTime>
+			<HoldingTime>1</HoldingTime>
 			<CollideSize>70</CollideSize>
-			<CircleSize>70</CircleSize>
+			<CircleSize>800</CircleSize>
 			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
 		</Model>
 
@@ -1171,9 +1229,9 @@
 			<MaxScale>0.1</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
-			<HoldingTime>0.1</HoldingTime>
+			<HoldingTime>1</HoldingTime>
 			<CollideSize>70</CollideSize>
-			<CircleSize>70</CircleSize>
+			<CircleSize>800</CircleSize>
 			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
 		</Model>
 
@@ -1184,9 +1242,9 @@
 			<MaxScale>0.1</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
-			<HoldingTime>0.1</HoldingTime>
+			<HoldingTime>1</HoldingTime>
 			<CollideSize>70</CollideSize>
-			<CircleSize>70</CircleSize>
+			<CircleSize>800</CircleSize>
 			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
 		</Model>
 
@@ -1197,9 +1255,9 @@
 			<MaxScale>0.1</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
-			<HoldingTime>0.1</HoldingTime>
+			<HoldingTime>1</HoldingTime>
 			<CollideSize>70</CollideSize>
-			<CircleSize>70</CircleSize>
+			<CircleSize>800</CircleSize>
 			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
 		</Model>
 
@@ -1210,9 +1268,9 @@
 			<MaxScale>0.1</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
-			<HoldingTime>0.1</HoldingTime>
+			<HoldingTime>1</HoldingTime>
 			<CollideSize>70</CollideSize>
-			<CircleSize>70</CircleSize>
+			<CircleSize>800</CircleSize>
 			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
 		</Model>
 
@@ -1223,9 +1281,9 @@
 			<MaxScale>0.1</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
-			<HoldingTime>0.1</HoldingTime>
+			<HoldingTime>1</HoldingTime>
 			<CollideSize>70</CollideSize>
-			<CircleSize>70</CircleSize>
+			<CircleSize>800</CircleSize>
 			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
 		</Model>
 
@@ -1236,9 +1294,9 @@
 			<MaxScale>0.1</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
-			<HoldingTime>0.1</HoldingTime>
+			<HoldingTime>1</HoldingTime>
 			<CollideSize>70</CollideSize>
-			<CircleSize>70</CircleSize>
+			<CircleSize>800</CircleSize>
 			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
 		</Model>
 
@@ -1249,9 +1307,9 @@
 			<MaxScale>0.1</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
-			<HoldingTime>0.1</HoldingTime>
+			<HoldingTime>1</HoldingTime>
 			<CollideSize>70</CollideSize>
-			<CircleSize>70</CircleSize>
+			<CircleSize>800</CircleSize>
 			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
 		</Model>
 
@@ -1262,14 +1320,11 @@
 			<MaxScale>0.1</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
-			<HoldingTime>0.1</HoldingTime>
+			<HoldingTime>1</HoldingTime>
 			<CollideSize>70</CollideSize>
-			<CircleSize>70</CircleSize>
+			<CircleSize>800</CircleSize>
 			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
 		</Model>
-
-////
-
 <Model>
 			<ObjURL>Environment/Leaf_1.obj</ObjURL>
 			<Position><X>685</X> <Y>311</Y> <Z>0</Z></Position>
@@ -1277,9 +1332,9 @@
 			<MaxScale>0.1</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
-			<HoldingTime>0.1</HoldingTime>
+			<HoldingTime>1</HoldingTime>
 			<CollideSize>70</CollideSize>
-			<CircleSize>70</CircleSize>
+			<CircleSize>800</CircleSize>
 			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
 		</Model>
 <Model>
@@ -1289,9 +1344,9 @@
 			<MaxScale>0.1</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
-			<HoldingTime>0.1</HoldingTime>
+			<HoldingTime>1</HoldingTime>
 			<CollideSize>70</CollideSize>
-			<CircleSize>70</CircleSize>
+			<CircleSize>800</CircleSize>
 			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
 		</Model>
 <Model>
@@ -1301,9 +1356,9 @@
 			<MaxScale>0.1</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
-			<HoldingTime>0.1</HoldingTime>
+			<HoldingTime>1</HoldingTime>
 			<CollideSize>70</CollideSize>
-			<CircleSize>70</CircleSize>
+			<CircleSize>800</CircleSize>
 			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
 		</Model>
 <Model>
@@ -1313,9 +1368,9 @@
 			<MaxScale>0.1</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
-			<HoldingTime>0.1</HoldingTime>
+			<HoldingTime>1</HoldingTime>
 			<CollideSize>70</CollideSize>
-			<CircleSize>70</CircleSize>
+			<CircleSize>800</CircleSize>
 			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
 		</Model>
 <Model>
@@ -1325,9 +1380,9 @@
 			<MaxScale>0.1</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
-			<HoldingTime>0.1</HoldingTime>
+			<HoldingTime>1</HoldingTime>
 			<CollideSize>70</CollideSize>
-			<CircleSize>70</CircleSize>
+			<CircleSize>800</CircleSize>
 			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
 		</Model>
 <Model>
@@ -1337,9 +1392,9 @@
 			<MaxScale>0.1</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
-			<HoldingTime>0.1</HoldingTime>
+			<HoldingTime>1</HoldingTime>
 			<CollideSize>70</CollideSize>
-			<CircleSize>70</CircleSize>
+			<CircleSize>800</CircleSize>
 			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
 		</Model>
 <Model>
@@ -1349,9 +1404,9 @@
 			<MaxScale>0.1</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
-			<HoldingTime>0.1</HoldingTime>
+			<HoldingTime>1</HoldingTime>
 			<CollideSize>70</CollideSize>
-			<CircleSize>70</CircleSize>
+			<CircleSize>800</CircleSize>
 			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
 		</Model>
 <Model>
@@ -1361,9 +1416,9 @@
 			<MaxScale>0.1</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
-			<HoldingTime>0.1</HoldingTime>
+			<HoldingTime>1</HoldingTime>
 			<CollideSize>70</CollideSize>
-			<CircleSize>70</CircleSize>
+			<CircleSize>800</CircleSize>
 			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
 		</Model>
 		<Model>
@@ -1373,9 +1428,9 @@
 			<MaxScale>0.1</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
-			<HoldingTime>0.1</HoldingTime>
+			<HoldingTime>1</HoldingTime>
 			<CollideSize>70</CollideSize>
-			<CircleSize>70</CircleSize>
+			<CircleSize>800</CircleSize>
 			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
 		</Model>
 		<Model>
@@ -1385,9 +1440,9 @@
 			<MaxScale>0.1</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
-			<HoldingTime>0.1</HoldingTime>
+			<HoldingTime>1</HoldingTime>
 			<CollideSize>70</CollideSize>
-			<CircleSize>70</CircleSize>
+			<CircleSize>800</CircleSize>
 			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
 		</Model>
 		<Model>
@@ -1397,9 +1452,9 @@
 			<MaxScale>0.1</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
-			<HoldingTime>0.1</HoldingTime>
+			<HoldingTime>1</HoldingTime>
 			<CollideSize>70</CollideSize>
-			<CircleSize>70</CircleSize>
+			<CircleSize>800</CircleSize>
 			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
 		</Model>
 		<Model>
@@ -1409,9 +1464,9 @@
 			<MaxScale>0.1</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
-			<HoldingTime>0.1</HoldingTime>
+			<HoldingTime>1</HoldingTime>
 			<CollideSize>70</CollideSize>
-			<CircleSize>70</CircleSize>
+			<CircleSize>800</CircleSize>
 			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
 		</Model>
 		<Model>
@@ -1421,9 +1476,9 @@
 			<MaxScale>0.1</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
-			<HoldingTime>0.1</HoldingTime>
+			<HoldingTime>1</HoldingTime>
 			<CollideSize>70</CollideSize>
-			<CircleSize>70</CircleSize>
+			<CircleSize>800</CircleSize>
 			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
 		</Model>
 		<Model>
@@ -1433,9 +1488,9 @@
 			<MaxScale>0.1</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
-			<HoldingTime>0.1</HoldingTime>
+			<HoldingTime>1</HoldingTime>
 			<CollideSize>70</CollideSize>
-			<CircleSize>70</CircleSize>
+			<CircleSize>800</CircleSize>
 			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
 		</Model>
 		<Model>
@@ -1445,9 +1500,9 @@
 			<MaxScale>0.1</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
-			<HoldingTime>0.1</HoldingTime>
+			<HoldingTime>1</HoldingTime>
 			<CollideSize>70</CollideSize>
-			<CircleSize>70</CircleSize>
+			<CircleSize>800</CircleSize>
 			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
 		</Model>
 		<Model>
@@ -1457,9 +1512,9 @@
 			<MaxScale>0.1</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
-			<HoldingTime>0.1</HoldingTime>
+			<HoldingTime>1</HoldingTime>
 			<CollideSize>70</CollideSize>
-			<CircleSize>70</CircleSize>
+			<CircleSize>800</CircleSize>
 			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
 		</Model>
 <Model>
@@ -1469,9 +1524,9 @@
 			<MaxScale>0.1</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
-			<HoldingTime>0.1</HoldingTime>
+			<HoldingTime>1</HoldingTime>
 			<CollideSize>70</CollideSize>
-			<CircleSize>70</CircleSize>
+			<CircleSize>800</CircleSize>
 			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
 		</Model>
 <Model>
@@ -1481,9 +1536,9 @@
 			<MaxScale>0.1</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
-			<HoldingTime>0.1</HoldingTime>
+			<HoldingTime>1</HoldingTime>
 			<CollideSize>70</CollideSize>
-			<CircleSize>70</CircleSize>
+			<CircleSize>800</CircleSize>
 			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
 		</Model>
 <Model>
@@ -1493,9 +1548,9 @@
 			<MaxScale>0.1</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
-			<HoldingTime>0.1</HoldingTime>
+			<HoldingTime>1</HoldingTime>
 			<CollideSize>70</CollideSize>
-			<CircleSize>70</CircleSize>
+			<CircleSize>800</CircleSize>
 			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
 		</Model>
 <Model>
@@ -1505,9 +1560,9 @@
 			<MaxScale>0.1</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
-			<HoldingTime>0.1</HoldingTime>
+			<HoldingTime>1</HoldingTime>
 			<CollideSize>70</CollideSize>
-			<CircleSize>70</CircleSize>
+			<CircleSize>800</CircleSize>
 			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
 		</Model>
 <Model>
@@ -1517,11 +1572,60 @@
 			<MaxScale>0.1</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
-			<HoldingTime>0.1</HoldingTime>
+			<HoldingTime>1</HoldingTime>
 			<CollideSize>70</CollideSize>
-			<CircleSize>70</CircleSize>
+			<CircleSize>800</CircleSize>
 			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
 		</Model>
+<Model>
+			<ObjURL>Environment/SP_Leaf.obj</ObjURL>
+			<Position><X>689</X> <Y>473</Y> <Z>10</Z></Position>
+			<Rotation>0</Rotation>
+			<MaxScale>0.01</MaxScale>
+			<ScaleSpeed>0.05</ScaleSpeed>
+			<StayingTime>5</StayingTime>
+			<HoldingTime>1</HoldingTime>	
+			<CollideSize>70</CollideSize>
+			<CircleSize>800</CircleSize>
+			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
+		</Model>
+		<Model>
+			<ObjURL>Environment/SP_Leaf.obj</ObjURL>
+			<Position><X>749</X> <Y>391</Y> <Z>10</Z></Position>
+			<Rotation>0</Rotation>
+			<MaxScale>0.01</MaxScale>
+			<ScaleSpeed>0.05</ScaleSpeed>
+			<StayingTime>5</StayingTime>
+			<HoldingTime>1</HoldingTime>	
+			<CollideSize>70</CollideSize>
+			<CircleSize>800</CircleSize>
+			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
+		</Model>
+		<Model>
+			<ObjURL>Environment/SP_Leaf.obj</ObjURL>
+			<Position><X>637</X> <Y>312</Y> <Z>10</Z></Position>
+			<Rotation>0</Rotation>
+			<MaxScale>0.01</MaxScale>
+			<ScaleSpeed>0.05</ScaleSpeed>
+			<StayingTime>1</StayingTime>
+			<HoldingTime>1</HoldingTime>
+			<CollideSize>70</CollideSize>
+			<CircleSize>800</CircleSize>
+			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
+		</Model>
+		<Model>
+			<ObjURL>Environment/SP_Leaf.obj</ObjURL>
+			<Position><X>750</X> <Y>214</Y> <Z>10</Z></Position>
+			<Rotation>0</Rotation>
+			<MaxScale>0.01</MaxScale>
+			<ScaleSpeed>0.05</ScaleSpeed>
+			<StayingTime>1</StayingTime>
+			<HoldingTime>1</HoldingTime>
+			<CollideSize>70</CollideSize>
+			<CircleSize>800</CircleSize>
+			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
+		</Model>
+
 	</GroupObj>
 	<StayingTime>4</StayingTime>
 </Group>
@@ -1530,6 +1634,7 @@
 <Group>
 <Name>Tree5</Name>
 	<GroupObj>
+
 		<Model>
 			<ObjURL>Environment/Leaf_1.obj</ObjURL>
 			<Position><X>935</X> <Y>680</Y> <Z>0</Z></Position>
@@ -1537,9 +1642,9 @@
 			<MaxScale>0.15</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>5</StayingTime>
-			<HoldingTime>0.1</HoldingTime>	
+			<HoldingTime>1</HoldingTime>	
 			<CollideSize>70</CollideSize>
-			<CircleSize>70</CircleSize>
+			<CircleSize>800</CircleSize>
 			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
 		</Model>
 		<Model>
@@ -1549,9 +1654,9 @@
 		<MaxScale>0.15</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>5</StayingTime>
-			<HoldingTime>0.1</HoldingTime>	
+			<HoldingTime>1</HoldingTime>	
 			<CollideSize>70</CollideSize>
-			<CircleSize>70</CircleSize>
+			<CircleSize>800</CircleSize>
 			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
 		</Model>
 		<Model>
@@ -1561,9 +1666,9 @@
 		<MaxScale>0.15</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
-			<HoldingTime>0.1</HoldingTime>
+			<HoldingTime>1</HoldingTime>
 			<CollideSize>70</CollideSize>
-			<CircleSize>70</CircleSize>
+			<CircleSize>800</CircleSize>
 			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
 		</Model>
 		<Model>
@@ -1573,9 +1678,9 @@
 		<MaxScale>0.15</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
-			<HoldingTime>0.1</HoldingTime>
+			<HoldingTime>1</HoldingTime>
 			<CollideSize>70</CollideSize>
-			<CircleSize>70</CircleSize>
+			<CircleSize>800</CircleSize>
 			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
 		</Model>
 		<Model>
@@ -1585,9 +1690,9 @@
 			<MaxScale>0.15</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
-			<HoldingTime>0.1</HoldingTime>
+			<HoldingTime>1</HoldingTime>
 			<CollideSize>70</CollideSize>
-			<CircleSize>70</CircleSize>
+			<CircleSize>800</CircleSize>
 			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
 		</Model>
 		<Model>
@@ -1597,9 +1702,9 @@
 			<MaxScale>0.15</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
-			<HoldingTime>0.1</HoldingTime>
+			<HoldingTime>1</HoldingTime>
 			<CollideSize>70</CollideSize>
-			<CircleSize>70</CircleSize>
+			<CircleSize>800</CircleSize>
 			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
 		</Model>
 		<Model>
@@ -1609,9 +1714,9 @@
 		<MaxScale>0.15</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
-			<HoldingTime>0.1</HoldingTime>
+			<HoldingTime>1</HoldingTime>
 			<CollideSize>70</CollideSize>
-			<CircleSize>70</CircleSize>
+			<CircleSize>800</CircleSize>
 			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
 		</Model>
 		<Model>
@@ -1621,9 +1726,9 @@
 		<MaxScale>0.15</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
-			<HoldingTime>0.1</HoldingTime>
+			<HoldingTime>1</HoldingTime>
 			<CollideSize>70</CollideSize>
-			<CircleSize>70</CircleSize>
+			<CircleSize>800</CircleSize>
 			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
 		</Model>
 		<Model>
@@ -1633,9 +1738,9 @@
 			<MaxScale>0.15</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
-			<HoldingTime>0.1</HoldingTime>
+			<HoldingTime>1</HoldingTime>
 			<CollideSize>70</CollideSize>
-			<CircleSize>70</CircleSize>
+			<CircleSize>800</CircleSize>
 			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
 		</Model>
 		<Model>
@@ -1645,9 +1750,9 @@
 		<MaxScale>0.15</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
-			<HoldingTime>0.1</HoldingTime>
+			<HoldingTime>1</HoldingTime>
 			<CollideSize>70</CollideSize>
-			<CircleSize>70</CircleSize>
+			<CircleSize>800</CircleSize>
 			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
 		</Model>
 		<Model>
@@ -1657,9 +1762,9 @@
 			<MaxScale>0.15</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
-			<HoldingTime>0.1</HoldingTime>
+			<HoldingTime>1</HoldingTime>
 			<CollideSize>70</CollideSize>
-			<CircleSize>70</CircleSize>
+			<CircleSize>800</CircleSize>
 			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
 		</Model>
 		<Model>
@@ -1669,9 +1774,9 @@
 			<MaxScale>0.15</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
-			<HoldingTime>0.1</HoldingTime>
+			<HoldingTime>1</HoldingTime>
 			<CollideSize>70</CollideSize>
-			<CircleSize>70</CircleSize>
+			<CircleSize>800</CircleSize>
 			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
 		</Model>
 		<Model>
@@ -1681,9 +1786,9 @@
 		<MaxScale>0.15</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
-			<HoldingTime>0.1</HoldingTime>
+			<HoldingTime>1</HoldingTime>
 			<CollideSize>70</CollideSize>
-			<CircleSize>70</CircleSize>
+			<CircleSize>800</CircleSize>
 			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
 		</Model>
 		<Model>
@@ -1693,9 +1798,9 @@
 			<MaxScale>0.15</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
-			<HoldingTime>0.1</HoldingTime>
+			<HoldingTime>1</HoldingTime>
 			<CollideSize>70</CollideSize>
-			<CircleSize>70</CircleSize>
+			<CircleSize>800</CircleSize>
 			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
 		</Model>
 		<Model>
@@ -1705,9 +1810,9 @@
 		<MaxScale>0.15</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
-			<HoldingTime>0.1</HoldingTime>
+			<HoldingTime>1</HoldingTime>
 			<CollideSize>70</CollideSize>
-			<CircleSize>70</CircleSize>
+			<CircleSize>800</CircleSize>
 			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
 		</Model>
 		<Model>
@@ -1717,9 +1822,9 @@
 			<MaxScale>0.15</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
-			<HoldingTime>0.1</HoldingTime>
+			<HoldingTime>1</HoldingTime>
 			<CollideSize>70</CollideSize>
-			<CircleSize>70</CircleSize>
+			<CircleSize>800</CircleSize>
 			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
 		</Model>
 		<Model>
@@ -1729,9 +1834,9 @@
 			<MaxScale>0.15</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
-			<HoldingTime>0.1</HoldingTime>
+			<HoldingTime>1</HoldingTime>
 			<CollideSize>70</CollideSize>
-			<CircleSize>70</CircleSize>
+			<CircleSize>800</CircleSize>
 			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
 		</Model>
 		<Model>
@@ -1741,9 +1846,9 @@
 			<MaxScale>0.15</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
-			<HoldingTime>0.1</HoldingTime>
+			<HoldingTime>1</HoldingTime>
 			<CollideSize>70</CollideSize>
-			<CircleSize>70</CircleSize>
+			<CircleSize>800</CircleSize>
 			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
 		</Model>
 		<Model>
@@ -1753,9 +1858,9 @@
 			<MaxScale>0.15</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
-			<HoldingTime>0.1</HoldingTime>
+			<HoldingTime>1</HoldingTime>
 			<CollideSize>70</CollideSize>
-			<CircleSize>70</CircleSize>
+			<CircleSize>800</CircleSize>
 			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
 		</Model>
 		<Model>
@@ -1765,9 +1870,9 @@
 		<MaxScale>0.15</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
-			<HoldingTime>0.1</HoldingTime>
+			<HoldingTime>1</HoldingTime>
 			<CollideSize>70</CollideSize>
-			<CircleSize>70</CircleSize>
+			<CircleSize>800</CircleSize>
 			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
 		</Model>
 		<Model>
@@ -1777,9 +1882,9 @@
 			<MaxScale>0.15</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
-			<HoldingTime>0.1</HoldingTime>
+			<HoldingTime>1</HoldingTime>
 			<CollideSize>70</CollideSize>
-			<CircleSize>70</CircleSize>
+			<CircleSize>800</CircleSize>
 			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
 		</Model>
 		<Model>
@@ -1789,9 +1894,9 @@
 			<MaxScale>0.15</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
-			<HoldingTime>0.1</HoldingTime>
+			<HoldingTime>1</HoldingTime>
 			<CollideSize>70</CollideSize>
-			<CircleSize>70</CircleSize>
+			<CircleSize>800</CircleSize>
 			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
 		</Model>
 		<Model>
@@ -1801,9 +1906,9 @@
 			<MaxScale>0.15</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
-			<HoldingTime>0.1</HoldingTime>
+			<HoldingTime>1</HoldingTime>
 			<CollideSize>70</CollideSize>
-			<CircleSize>70</CircleSize>
+			<CircleSize>800</CircleSize>
 			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
 		</Model>
 
@@ -1814,9 +1919,9 @@
 			<MaxScale>0.15</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
-			<HoldingTime>0.1</HoldingTime>
+			<HoldingTime>1</HoldingTime>
 			<CollideSize>70</CollideSize>
-			<CircleSize>70</CircleSize>
+			<CircleSize>800</CircleSize>
 			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
 		</Model>
 		<Model>
@@ -1826,9 +1931,9 @@
 			<MaxScale>0.15</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
-			<HoldingTime>0.1</HoldingTime>
+			<HoldingTime>1</HoldingTime>
 			<CollideSize>70</CollideSize>
-			<CircleSize>70</CircleSize>
+			<CircleSize>800</CircleSize>
 			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
 		</Model>
 		<Model>
@@ -1838,9 +1943,9 @@
 			<MaxScale>0.15</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
-			<HoldingTime>0.1</HoldingTime>
+			<HoldingTime>1</HoldingTime>
 			<CollideSize>70</CollideSize>
-			<CircleSize>70</CircleSize>
+			<CircleSize>800</CircleSize>
 			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
 		</Model>
 		<Model>
@@ -1850,21 +1955,21 @@
 			<MaxScale>0.15</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
-			<HoldingTime>0.1</HoldingTime>
+			<HoldingTime>1</HoldingTime>
 			<CollideSize>70</CollideSize>
-			<CircleSize>70</CircleSize>
+			<CircleSize>800</CircleSize>
 			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
 		</Model>
 		<Model>
 			<ObjURL>Environment/Leaf_1.obj</ObjURL>
 			<Position><X>1045</X> <Y>518</Y> <Z>0</Z></Position>
 			<Rotation> 110 </Rotation>
-		<MaxScale>0.15</MaxScale>
+			<MaxScale>0.15</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
-			<HoldingTime>0.1</HoldingTime>
+			<HoldingTime>1</HoldingTime>
 			<CollideSize>70</CollideSize>
-			<CircleSize>70</CircleSize>
+			<CircleSize>800</CircleSize>
 			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
 		</Model>
 		<Model>
@@ -1874,9 +1979,9 @@
 			<MaxScale>0.15</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
-			<HoldingTime>0.1</HoldingTime>
+			<HoldingTime>1</HoldingTime>
 			<CollideSize>70</CollideSize>
-			<CircleSize>70</CircleSize>
+			<CircleSize>800</CircleSize>
 			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
 		</Model>
 		<Model>
@@ -1886,9 +1991,9 @@
 			<MaxScale>0.15</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
-			<HoldingTime>0.1</HoldingTime>
+			<HoldingTime>1</HoldingTime>
 			<CollideSize>70</CollideSize>
-			<CircleSize>70</CircleSize>
+			<CircleSize>800</CircleSize>
 			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
 		</Model>
 		<Model>
@@ -1898,9 +2003,9 @@
 			<MaxScale>0.15</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
-			<HoldingTime>0.1</HoldingTime>
+			<HoldingTime>1</HoldingTime>
 			<CollideSize>70</CollideSize>
-			<CircleSize>70</CircleSize>
+			<CircleSize>800</CircleSize>
 			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
 		</Model>
 		<Model>
@@ -1910,9 +2015,9 @@
 			<MaxScale>0.1</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
-			<HoldingTime>0.1</HoldingTime>
+			<HoldingTime>1</HoldingTime>
 			<CollideSize>70</CollideSize>
-			<CircleSize>70</CircleSize>
+			<CircleSize>800</CircleSize>
 			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
 		</Model>
 		<Model>
@@ -1922,9 +2027,9 @@
 			<MaxScale>0.15</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
-			<HoldingTime>0.1</HoldingTime>
+			<HoldingTime>1</HoldingTime>
 			<CollideSize>70</CollideSize>
-			<CircleSize>70</CircleSize>
+			<CircleSize>800</CircleSize>
 			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
 		</Model>
 		<Model>
@@ -1934,9 +2039,9 @@
 			<MaxScale>0.15</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
-			<HoldingTime>0.1</HoldingTime>
+			<HoldingTime>1</HoldingTime>
 			<CollideSize>70</CollideSize>
-			<CircleSize>70</CircleSize>
+			<CircleSize>800</CircleSize>
 			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
 		</Model>
 		<Model>
@@ -1946,9 +2051,9 @@
 			<MaxScale>0.1</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
-			<HoldingTime>0.1</HoldingTime>
+			<HoldingTime>1</HoldingTime>
 			<CollideSize>70</CollideSize>
-			<CircleSize>70</CircleSize>
+			<CircleSize>800</CircleSize>
 			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
 		</Model>
 		<Model>
@@ -1958,9 +2063,9 @@
 			<MaxScale>0.15</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
-			<HoldingTime>0.1</HoldingTime>
+			<HoldingTime>1</HoldingTime>
 			<CollideSize>70</CollideSize>
-			<CircleSize>70</CircleSize>
+			<CircleSize>800</CircleSize>
 			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
 		</Model>
 		<Model>
@@ -1970,9 +2075,9 @@
 			<MaxScale>0.15</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
-			<HoldingTime>0.1</HoldingTime>
+			<HoldingTime>1</HoldingTime>
 			<CollideSize>70</CollideSize>
-			<CircleSize>70</CircleSize>
+			<CircleSize>800</CircleSize>
 			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
 		</Model>
 		<Model>
@@ -1982,9 +2087,9 @@
 			<MaxScale>0.1</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
-			<HoldingTime>0.1</HoldingTime>
+			<HoldingTime>1</HoldingTime>
 			<CollideSize>70</CollideSize>
-			<CircleSize>70</CircleSize>
+			<CircleSize>800</CircleSize>
 			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
 		</Model>
 		<Model>
@@ -1994,9 +2099,9 @@
 			<MaxScale>0.15</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
-			<HoldingTime>0.1</HoldingTime>
+			<HoldingTime>1</HoldingTime>
 			<CollideSize>70</CollideSize>
-			<CircleSize>70</CircleSize>
+			<CircleSize>800</CircleSize>
 			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
 		</Model>
 		<Model>
@@ -2006,13 +2111,59 @@
 			<MaxScale>0.15</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
-			<HoldingTime>0.1</HoldingTime>
+			<HoldingTime>1</HoldingTime>
 			<CollideSize>70</CollideSize>
-			<CircleSize>70</CircleSize>
+			<CircleSize>800</CircleSize>
 			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
 		</Model>
-
-
+<Model>
+			<ObjURL>Environment/SP_Leaf.obj</ObjURL>
+			<Position><X>868</X> <Y>534</Y> <Z>10</Z></Position>
+			<Rotation>30</Rotation>
+			<MaxScale>0.01</MaxScale>
+			<ScaleSpeed>0.05</ScaleSpeed>
+			<StayingTime>5</StayingTime>
+			<HoldingTime>1</HoldingTime>	
+			<CollideSize>70</CollideSize>
+			<CircleSize>800</CircleSize>
+			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
+		</Model>
+		<Model>
+			<ObjURL>Environment/SP_Leaf.obj</ObjURL>
+			<Position><X>1005</X> <Y>462</Y> <Z>10</Z></Position>
+			<Rotation>0</Rotation>
+			<MaxScale>0.01</MaxScale>
+			<ScaleSpeed>0.05</ScaleSpeed>
+			<StayingTime>5</StayingTime>
+			<HoldingTime>1</HoldingTime>	
+			<CollideSize>70</CollideSize>
+			<CircleSize>800</CircleSize>
+			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
+		</Model>
+		<Model>
+			<ObjURL>Environment/SP_Leaf.obj</ObjURL>
+			<Position><X>893</X> <Y>343</Y> <Z>10</Z></Position>
+			<Rotation>0</Rotation>
+			<MaxScale>0.01</MaxScale>
+			<ScaleSpeed>0.05</ScaleSpeed>
+			<StayingTime>1</StayingTime>
+			<HoldingTime>1</HoldingTime>
+			<CollideSize>70</CollideSize>
+			<CircleSize>800</CircleSize>
+			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
+		</Model>
+		<Model>
+			<ObjURL>Environment/SP_Leaf.obj</ObjURL>
+			<Position><X>1007</X> <Y>299</Y> <Z>10</Z></Position>
+			<Rotation>0</Rotation>
+			<MaxScale>0.01</MaxScale>
+			<ScaleSpeed>0.05</ScaleSpeed>
+			<StayingTime>1</StayingTime>
+			<HoldingTime>1</HoldingTime>
+			<CollideSize>70</CollideSize>
+			<CircleSize>800</CircleSize>
+			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
+		</Model>
 			</GroupObj>
 	<StayingTime>4</StayingTime>
 </Group>
@@ -2029,9 +2180,9 @@
 			<MaxScale>0.15</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
-			<HoldingTime>0.1</HoldingTime>
+			<HoldingTime>1</HoldingTime>
 			<CollideSize>70</CollideSize>
-			<CircleSize>70</CircleSize>
+			<CircleSize>800</CircleSize>
 			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
 		</Model>
 
@@ -2042,9 +2193,9 @@
 			<MaxScale>0.15</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
-			<HoldingTime>0.1</HoldingTime>
+			<HoldingTime>1</HoldingTime>
 			<CollideSize>70</CollideSize>
-			<CircleSize>70</CircleSize>
+			<CircleSize>800</CircleSize>
 			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
 		</Model>
 
@@ -2055,9 +2206,9 @@
 			<MaxScale>0.15</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
-			<HoldingTime>0.1</HoldingTime>
+			<HoldingTime>1</HoldingTime>
 			<CollideSize>70</CollideSize>
-			<CircleSize>70</CircleSize>
+			<CircleSize>800</CircleSize>
 			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
 		</Model>
 		<Model>
@@ -2067,9 +2218,9 @@
 			<MaxScale>0.15</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
-			<HoldingTime>0.1</HoldingTime>
+			<HoldingTime>1</HoldingTime>
 			<CollideSize>70</CollideSize>
-			<CircleSize>70</CircleSize>
+			<CircleSize>800</CircleSize>
 			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
 		</Model>
 		<Model>
@@ -2079,9 +2230,9 @@
 			<MaxScale>0.15</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
-			<HoldingTime>0.1</HoldingTime>
+			<HoldingTime>1</HoldingTime>
 			<CollideSize>70</CollideSize>
-			<CircleSize>70</CircleSize>
+			<CircleSize>800</CircleSize>
 			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
 		</Model>
 		<Model>
@@ -2091,9 +2242,9 @@
 			<MaxScale>0.15</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
-			<HoldingTime>0.1</HoldingTime>
+			<HoldingTime>1</HoldingTime>
 			<CollideSize>70</CollideSize>
-			<CircleSize>70</CircleSize>
+			<CircleSize>800</CircleSize>
 			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
 		</Model>
 		<Model>
@@ -2103,9 +2254,9 @@
 			<MaxScale>0.15</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
-			<HoldingTime>0.1</HoldingTime>
+			<HoldingTime>1</HoldingTime>
 			<CollideSize>70</CollideSize>
-			<CircleSize>70</CircleSize>
+			<CircleSize>800</CircleSize>
 			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
 		</Model>
 		<Model>
@@ -2115,9 +2266,9 @@
 			<MaxScale>0.15</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
-			<HoldingTime>0.1</HoldingTime>
+			<HoldingTime>1</HoldingTime>
 			<CollideSize>70</CollideSize>
-			<CircleSize>70</CircleSize>
+			<CircleSize>800</CircleSize>
 			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
 		</Model>
 		<Model>
@@ -2127,9 +2278,9 @@
 			<MaxScale>0.15</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
-			<HoldingTime>0.1</HoldingTime>
+			<HoldingTime>1</HoldingTime>
 			<CollideSize>70</CollideSize>
-			<CircleSize>70</CircleSize>
+			<CircleSize>800</CircleSize>
 			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
 		</Model>
 		<Model>
@@ -2139,9 +2290,9 @@
 			<MaxScale>0.15</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
-			<HoldingTime>0.1</HoldingTime>
+			<HoldingTime>1</HoldingTime>
 			<CollideSize>70</CollideSize>
-			<CircleSize>70</CircleSize>
+			<CircleSize>800</CircleSize>
 			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
 		</Model>
 		<Model>
@@ -2151,9 +2302,9 @@
 			<MaxScale>0.15</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
-			<HoldingTime>0.1</HoldingTime>
+			<HoldingTime>1</HoldingTime>
 			<CollideSize>70</CollideSize>
-			<CircleSize>70</CircleSize>
+			<CircleSize>800</CircleSize>
 			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
 		</Model>
 		<Model>
@@ -2163,9 +2314,9 @@
 			<MaxScale>0.15</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
-			<HoldingTime>0.1</HoldingTime>
+			<HoldingTime>1</HoldingTime>
 			<CollideSize>70</CollideSize>
-			<CircleSize>70</CircleSize>
+			<CircleSize>800</CircleSize>
 			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
 		</Model>
 		<Model>
@@ -2175,9 +2326,9 @@
 			<MaxScale>0.15</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
-			<HoldingTime>0.1</HoldingTime>
+			<HoldingTime>1</HoldingTime>
 			<CollideSize>70</CollideSize>
-			<CircleSize>70</CircleSize>
+			<CircleSize>800</CircleSize>
 			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
 		</Model>
 		<Model>
@@ -2187,9 +2338,9 @@
 			<MaxScale>0.15</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
-			<HoldingTime>0.1</HoldingTime>
+			<HoldingTime>1</HoldingTime>
 			<CollideSize>70</CollideSize>
-			<CircleSize>70</CircleSize>
+			<CircleSize>800</CircleSize>
 			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
 		</Model>
 		<Model>
@@ -2199,9 +2350,9 @@
 			<MaxScale>0.15</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
-			<HoldingTime>0.1</HoldingTime>
+			<HoldingTime>1</HoldingTime>
 			<CollideSize>70</CollideSize>
-			<CircleSize>70</CircleSize>
+			<CircleSize>800</CircleSize>
 			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
 		</Model>
 		<Model>
@@ -2211,61 +2362,62 @@
 			<MaxScale>0.15</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
-			<HoldingTime>0.1</HoldingTime>
+			<HoldingTime>1</HoldingTime>
 			<CollideSize>70</CollideSize>
-			<CircleSize>70</CircleSize>
+			<CircleSize>800</CircleSize>
 			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
 		</Model>
 
-<Model>
+		<Model>
 			<ObjURL>Environment/Leaf_3.obj</ObjURL>
 			<Position><X>1058</X> <Y>240</Y> <Z>30</Z></Position>
 			<Rotation> 110 </Rotation>
 			<MaxScale>0.15</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
-			<HoldingTime>0.1</HoldingTime>
+			<HoldingTime>1</HoldingTime>
 			<CollideSize>70</CollideSize>
-			<CircleSize>70</CircleSize>
+			<CircleSize>800</CircleSize>
 			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
 		</Model>
-<Model>
+		<Model>
 			<ObjURL>Environment/Leaf_3.obj</ObjURL>
 			<Position><X>1086</X> <Y>216</Y> <Z>30</Z></Position>
 			<Rotation> 110 </Rotation>
 			<MaxScale>0.15</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
-			<HoldingTime>0.1</HoldingTime>
+			<HoldingTime>1</HoldingTime>
 			<CollideSize>70</CollideSize>
-			<CircleSize>70</CircleSize>
+			<CircleSize>800</CircleSize>
 			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
 		</Model>
-<Model>
+		<Model>
 			<ObjURL>Environment/Leaf_3.obj</ObjURL>
 			<Position><X>1185</X> <Y>340</Y> <Z>30</Z></Position>
 			<Rotation> 110 </Rotation>
 			<MaxScale>0.15</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
-			<HoldingTime>0.1</HoldingTime>
+			<HoldingTime>1</HoldingTime>
 			<CollideSize>70</CollideSize>
-			<CircleSize>70</CircleSize>
+			<CircleSize>800</CircleSize>
 			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
 		</Model>
 
-<Model>
+		<Model>
 			<ObjURL>Environment/Leaf_3.obj</ObjURL>
 			<Position><X>1129</X> <Y>346</Y> <Z>30</Z></Position>
 			<Rotation> 110 </Rotation>
 			<MaxScale>0.15</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
-			<HoldingTime>0.1</HoldingTime>
+			<HoldingTime>1</HoldingTime>
 			<CollideSize>70</CollideSize>
-			<CircleSize>70</CircleSize>
+			<CircleSize>800</CircleSize>
 			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
 		</Model>
+	
 	</GroupObj>
 	<StayingTime>4</StayingTime>
 </Group>
