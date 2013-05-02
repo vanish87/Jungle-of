@@ -26,11 +26,11 @@ namespace Jungle
 			it->Update(frame_time);
  			if(it->IsGrowing())
  			{
-				enable_ = true; 
+				//enable_ = true;
  			}
 		}
 
-		if(time_ > staying_time_)
+		/*if(time_ > staying_time_)
 		{
 			time_ = 0;
 			enable_ = false;
@@ -49,7 +49,7 @@ namespace Jungle
 			{
 				it->SetDisapp();
 			}
-		}
+		}*/
 
 		//cout<<name_<<" "<<time_<<endl;
 	}

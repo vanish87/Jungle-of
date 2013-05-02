@@ -91,8 +91,8 @@ namespace Jungle {
 			}			
 			break;
 		case FALLING:
-			if(pos.y > 0)
-				pos.y--;
+			if(pos.y > -10)
+				pos.y-=3;
 			else
 			{
 				flower_state_ = DISAPPEARING;
@@ -222,8 +222,8 @@ namespace Jungle {
 			else
 			if (flower_state_ == DISAPPEARING)
 			{
-				flower_state_ = GROWING;
-				time_ = 0;
+				//flower_state_ = GROWING;
+				//time_ = 0;
 			}
 			else
 			if(flower_state_ == GROWING)
