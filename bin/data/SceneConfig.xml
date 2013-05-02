@@ -1175,7 +1175,7 @@
 			<ObjURL>Environment/SP_Leaf.obj</ObjURL>
 			<Position><X>387</X> <Y>534</Y> <Z>10</Z></Position>
 			<Rotation>0</Rotation>
-			<MaxScale>0.01</MaxScale>
+			<MaxScale>0.1</MaxScale>
 			<ScaleSpeed>0.005</ScaleSpeed>
 			<StayingTime>5</StayingTime>
 			<HoldingTime>0.1</HoldingTime>	
@@ -1183,13 +1183,13 @@
 			<CircleSize>70</CircleSize>
 			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor> 
             <ModelColor><R>255</R> <G>255</G> <B>255</B> <A>100</A></ModelColor>            
-            <FallingEnable>0</FallingEnable>
+            <FallingEnable>1</FallingEnable>
 		</Model>
 		<Model>
 			<ObjURL>Environment/SP_Leaf.obj</ObjURL>
 			<Position><X>542</X> <Y>479</Y> <Z>10</Z></Position>
 			<Rotation>0</Rotation>
-			<MaxScale>0.01</MaxScale>
+			<MaxScale>0.1</MaxScale>
 			<ScaleSpeed>0.005</ScaleSpeed>
 			<StayingTime>5</StayingTime>
 			<HoldingTime>0.1</HoldingTime>	
@@ -1197,13 +1197,13 @@
 			<CircleSize>70</CircleSize>
 			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor> 
             <ModelColor><R>255</R> <G>255</G> <B>255</B> <A>100</A></ModelColor>            
-            <FallingEnable>0</FallingEnable>
+            <FallingEnable>1</FallingEnable>
 		</Model>
 		<Model>
 			<ObjURL>Environment/SP_Leaf.obj</ObjURL>
 			<Position><X>346</X> <Y>397</Y> <Z>10</Z></Position>
 			<Rotation>0</Rotation>
-			<MaxScale>0.01</MaxScale>
+			<MaxScale>0.1</MaxScale>
 			<ScaleSpeed>0.005</ScaleSpeed>
 			<StayingTime>1</StayingTime>
 			<HoldingTime>0.1</HoldingTime>
@@ -1211,13 +1211,13 @@
 			<CircleSize>70</CircleSize>
 			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor> 
             <ModelColor><R>255</R> <G>255</G> <B>255</B> <A>100</A></ModelColor>            
-            <FallingEnable>0</FallingEnable>
+            <FallingEnable>1</FallingEnable>
 		</Model>
 		<Model>
 			<ObjURL>Environment/SP_Leaf.obj</ObjURL>
 			<Position><X>496</X> <Y>373</Y> <Z>10</Z></Position>
 			<Rotation>0</Rotation>
-			<MaxScale>0.01</MaxScale>
+			<MaxScale>0.1</MaxScale>
 			<ScaleSpeed>0.005</ScaleSpeed>
 			<StayingTime>1</StayingTime>
 			<HoldingTime>0.1</HoldingTime>
@@ -1225,7 +1225,7 @@
 			<CircleSize>70</CircleSize>
 			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor> 
             <ModelColor><R>255</R> <G>255</G> <B>255</B> <A>100</A></ModelColor>            
-            <FallingEnable>0</FallingEnable>
+            <FallingEnable>1</FallingEnable>
 		</Model>
 			</GroupObj>
 	<StayingTime>4</StayingTime>
@@ -1835,7 +1835,7 @@
 			<ObjURL>Environment/SP_Leaf.obj</ObjURL>
 			<Position><X>689</X> <Y>473</Y> <Z>10</Z></Position>
 			<Rotation>0</Rotation>
-			<MaxScale>0.01</MaxScale>
+			<MaxScale>0.1</MaxScale>
 			<ScaleSpeed>0.005</ScaleSpeed>
 			<StayingTime>5</StayingTime>
 			<HoldingTime>0.1</HoldingTime>	
@@ -1843,13 +1843,13 @@
 			<CircleSize>70</CircleSize>
 			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor> 
             <ModelColor><R>255</R> <G>255</G> <B>255</B> <A>100</A></ModelColor>            
-            <FallingEnable>0</FallingEnable>
+            <FallingEnable>1</FallingEnable>
 		</Model>
 		<Model>
 			<ObjURL>Environment/SP_Leaf.obj</ObjURL>
 			<Position><X>749</X> <Y>391</Y> <Z>10</Z></Position>
 			<Rotation>0</Rotation>
-			<MaxScale>0.01</MaxScale>
+			<MaxScale>0.1</MaxScale>
 			<ScaleSpeed>0.005</ScaleSpeed>
 			<StayingTime>5</StayingTime>
 			<HoldingTime>0.1</HoldingTime>	
@@ -1857,13 +1857,13 @@
 			<CircleSize>70</CircleSize>
 			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor> 
             <ModelColor><R>255</R> <G>255</G> <B>255</B> <A>100</A></ModelColor>            
-            <FallingEnable>0</FallingEnable>
+            <FallingEnable>1</FallingEnable>
 		</Model>
 		<Model>
 			<ObjURL>Environment/SP_Leaf.obj</ObjURL>
 			<Position><X>637</X> <Y>312</Y> <Z>10</Z></Position>
 			<Rotation>0</Rotation>
-			<MaxScale>0.01</MaxScale>
+			<MaxScale>0.1</MaxScale>
 			<ScaleSpeed>0.005</ScaleSpeed>
 			<StayingTime>1</StayingTime>
 			<HoldingTime>0.1</HoldingTime>
@@ -1871,13 +1871,13 @@
 			<CircleSize>70</CircleSize>
 			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor> 
             <ModelColor><R>255</R> <G>255</G> <B>255</B> <A>100</A></ModelColor>            
-            <FallingEnable>0</FallingEnable>
+            <FallingEnable>1</FallingEnable>
 		</Model>
 		<Model>
 			<ObjURL>Environment/SP_Leaf.obj</ObjURL>
 			<Position><X>750</X> <Y>214</Y> <Z>10</Z></Position>
 			<Rotation>0</Rotation>
-			<MaxScale>0.01</MaxScale>
+			<MaxScale>0.1</MaxScale>
 			<ScaleSpeed>0.005</ScaleSpeed>
 			<StayingTime>1</StayingTime>
 			<HoldingTime>0.1</HoldingTime>
@@ -1885,7 +1885,7 @@
 			<CircleSize>70</CircleSize>
 			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor> 
             <ModelColor><R>255</R> <G>255</G> <B>255</B> <A>100</A></ModelColor>            
-            <FallingEnable>0</FallingEnable>
+            <FallingEnable>1</FallingEnable>
 		</Model>
 
 	</GroupObj>
@@ -2462,7 +2462,7 @@
 			<ObjURL>Environment/SP_Leaf.obj</ObjURL>
 			<Position><X>868</X> <Y>534</Y> <Z>10</Z></Position>
 			<Rotation>0</Rotation>
-			<MaxScale>0.01</MaxScale>
+			<MaxScale>0.1</MaxScale>
 			<ScaleSpeed>0.005</ScaleSpeed>
 			<StayingTime>5</StayingTime>
 			<HoldingTime>0.1</HoldingTime>	
@@ -2470,13 +2470,13 @@
 			<CircleSize>70</CircleSize>
 			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor> 
             <ModelColor><R>255</R> <G>255</G> <B>255</B> <A>100</A></ModelColor>            
-            <FallingEnable>0</FallingEnable>
+            <FallingEnable>1</FallingEnable>
 		</Model>
 		<Model>
 			<ObjURL>Environment/SP_Leaf.obj</ObjURL>
 			<Position><X>1005</X> <Y>462</Y> <Z>10</Z></Position>
 			<Rotation>0</Rotation>
-			<MaxScale>0.01</MaxScale>
+			<MaxScale>0.1</MaxScale>
 			<ScaleSpeed>0.005</ScaleSpeed>
 			<StayingTime>5</StayingTime>
 			<HoldingTime>0.1</HoldingTime>	
@@ -2484,13 +2484,13 @@
 			<CircleSize>70</CircleSize>
 			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor> 
             <ModelColor><R>255</R> <G>255</G> <B>255</B> <A>100</A></ModelColor>            
-            <FallingEnable>0</FallingEnable>
+            <FallingEnable>1</FallingEnable>
 		</Model>
 		<Model>
 			<ObjURL>Environment/SP_Leaf.obj</ObjURL>
 			<Position><X>893</X> <Y>343</Y> <Z>10</Z></Position>
 			<Rotation>0</Rotation>
-			<MaxScale>0.01</MaxScale>
+			<MaxScale>0.1</MaxScale>
 			<ScaleSpeed>0.005</ScaleSpeed>
 			<StayingTime>1</StayingTime>
 			<HoldingTime>0.1</HoldingTime>
@@ -2498,13 +2498,13 @@
 			<CircleSize>70</CircleSize>
 			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor> 
             <ModelColor><R>255</R> <G>255</G> <B>255</B> <A>100</A></ModelColor>            
-            <FallingEnable>0</FallingEnable>
+            <FallingEnable>1</FallingEnable>
 		</Model>
 		<Model>
 			<ObjURL>Environment/SP_Leaf.obj</ObjURL>
 			<Position><X>1007</X> <Y>299</Y> <Z>10</Z></Position>
 			<Rotation>0</Rotation>
-			<MaxScale>0.01</MaxScale>
+			<MaxScale>0.1</MaxScale>
 			<ScaleSpeed>0.005</ScaleSpeed>
 			<StayingTime>1</StayingTime>
 			<HoldingTime>0.1</HoldingTime>
@@ -2512,7 +2512,7 @@
 			<CircleSize>70</CircleSize>
 			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor> 
             <ModelColor><R>255</R> <G>255</G> <B>255</B> <A>100</A></ModelColor>            
-            <FallingEnable>0</FallingEnable>
+            <FallingEnable>1</FallingEnable>
 		</Model>
 			</GroupObj>
 	<StayingTime>4</StayingTime>
