@@ -60,7 +60,7 @@ namespace Jungle
 				rtime_+=ofGetLastFrameTime();
 				if(rtime_ > 3)
 				{
-					lenable_ = false;
+					renable_ = false;
 					rtime_ = 0;
 				}
 			}
