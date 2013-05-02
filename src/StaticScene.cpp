@@ -21,7 +21,7 @@ namespace Jungle
 
 		//no need background 
 		//background is Gradient color now
-		tree_.loadModel("Environment/Tree_Leaves_New_8.obj");
+		tree_.loadModel("Environment/Tree_Last.obj");
 		tree_.setPosition(690 , -200, 0);
 		tree_.setScale(2,2,2);
 		tree_.setRotation(0, 180, 0, 0, 1);
