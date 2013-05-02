@@ -7,7 +7,8 @@
 			<Rotation>0</Rotation>
 			<MaxScale>0.15</MaxScale>
 			<ScaleSpeed>0.001</ScaleSpeed>
-			<StayingTime>6</StayingTime>
+			<StayingTime>6</StayingTime> 
+            <FallingEnable>0</FallingEnable>            
 			<HoldingTime>0.2</HoldingTime>
 			<CollideSize>70</CollideSize>
 			<CircleSize>200</CircleSize>
@@ -20,7 +21,8 @@
 			<Rotation>0</Rotation>
 			<MaxScale>0.16</MaxScale>
 			<ScaleSpeed>0.001</ScaleSpeed>
-			<StayingTime>6</StayingTime>
+			<StayingTime>6</StayingTime> 
+            <FallingEnable>0</FallingEnable> 
 			<HoldingTime>0.2</HoldingTime>
 			<CollideSize>70</CollideSize>
 			<CircleSize>70</CircleSize>
@@ -33,7 +35,8 @@
 			<Rotation>0</Rotation>
 			<MaxScale>0.1</MaxScale>
 			<ScaleSpeed>0.002</ScaleSpeed>
-			<StayingTime>6</StayingTime>
+			<StayingTime>6</StayingTime> 
+            <FallingEnable>0</FallingEnable> 
 			<HoldingTime>0.2</HoldingTime>
 			<CollideSize>70</CollideSize>
 			<CircleSize>70</CircleSize>
@@ -46,7 +49,8 @@
 			<Rotation>0</Rotation>
 			<MaxScale>0.13</MaxScale>
 			<ScaleSpeed>0.001</ScaleSpeed>
-			<StayingTime>6</StayingTime>
+			<StayingTime>6</StayingTime> 
+            <FallingEnable>0</FallingEnable> 
 			<HoldingTime>0.2</HoldingTime>
 			<CollideSize>70</CollideSize>
 			<CircleSize>70</CircleSize>
@@ -59,7 +63,8 @@
 			<Rotation>0</Rotation>
 			<MaxScale>0.11</MaxScale>
 			<ScaleSpeed>0.001</ScaleSpeed>
-			<StayingTime>6</StayingTime>
+			<StayingTime>6</StayingTime> 
+            <FallingEnable>0</FallingEnable> 
 			<HoldingTime>0.2</HoldingTime>
 			<CollideSize>70</CollideSize>
 			<CircleSize>70</CircleSize>
@@ -72,7 +77,8 @@
 			<Rotation>0</Rotation>
 			<MaxScale>0.1</MaxScale>
 			<ScaleSpeed>0.002</ScaleSpeed>
-			<StayingTime>6</StayingTime>
+			<StayingTime>6</StayingTime> 
+            <FallingEnable>0</FallingEnable> 
 			<HoldingTime>0.2</HoldingTime>
 			<CollideSize>70</CollideSize>
 			<CircleSize>70</CircleSize>
@@ -85,7 +91,8 @@
 			<Rotation>0</Rotation>
 			<MaxScale>0.17</MaxScale>
 			<ScaleSpeed>0.001</ScaleSpeed>
-			<StayingTime>6</StayingTime>
+			<StayingTime>6</StayingTime> 
+            <FallingEnable>0</FallingEnable>
 			<HoldingTime>0.2</HoldingTime>
 			<CollideSize>70</CollideSize>
 			<CircleSize>70</CircleSize>
@@ -98,7 +105,8 @@
 			<Rotation>0</Rotation>
 			<MaxScale>0.1</MaxScale>
 			<ScaleSpeed>0.003</ScaleSpeed>
-			<StayingTime>6</StayingTime>
+			<StayingTime>6</StayingTime> 
+            <FallingEnable>0</FallingEnable>
 			<HoldingTime>0.2</HoldingTime>
 			<CollideSize>70</CollideSize>
 			<CircleSize>70</CircleSize>
@@ -111,7 +119,8 @@
 			<Rotation>0</Rotation>
 			<MaxScale>0.16</MaxScale>
 			<ScaleSpeed>0.001</ScaleSpeed>
-			<StayingTime>6</StayingTime>
+			<StayingTime>6</StayingTime> 
+            <FallingEnable>0</FallingEnable>
 			<HoldingTime>0.2</HoldingTime>
 			<CollideSize>70</CollideSize>
 			<CircleSize>70</CircleSize>
@@ -124,7 +133,8 @@
 			<Rotation>0</Rotation>
 			<MaxScale>0.1</MaxScale>
 			<ScaleSpeed>0.005</ScaleSpeed>
-			<StayingTime>6</StayingTime>
+			<StayingTime>6</StayingTime> 
+            <FallingEnable>0</FallingEnable>
 			<HoldingTime>0.2</HoldingTime>
 			<CollideSize>70</CollideSize>
 			<CircleSize>70</CircleSize>
@@ -137,7 +147,8 @@
 			<Rotation>0</Rotation>
             <MaxScale>0.12</MaxScale>
 			<ScaleSpeed>0.001</ScaleSpeed>
-			<StayingTime>6</StayingTime>
+			<StayingTime>6</StayingTime> 
+            <FallingEnable>0</FallingEnable>
 			<HoldingTime>0.2</HoldingTime>
 			<CollideSize>70</CollideSize>
 			<CircleSize>70</CircleSize>
@@ -150,7 +161,8 @@
 			<Rotation>0</Rotation>
 			<MaxScale>0.13</MaxScale>
 			<ScaleSpeed>0.003</ScaleSpeed>
-			<StayingTime>6</StayingTime>
+			<StayingTime>6</StayingTime> 
+            <FallingEnable>0</FallingEnable>
 			<HoldingTime>0.2</HoldingTime>
 			<CollideSize>70</CollideSize>
 			<CircleSize>70</CircleSize>
@@ -159,7 +171,8 @@
 		</Model>
 
 	</GroupObj>
-	<StayingTime>4</StayingTime>
+	<StayingTime>4</StayingTime> 
+            <FallingEnable>0</FallingEnable>
 </Group>
 
 
@@ -171,8 +184,14 @@
 			<Position><X>1</X> <Y>202</Y> <Z>0</Z></Position>
 			<Rotation>0</Rotation>
 			<MaxScale>0.1</MaxScale>
+<<<<<<< HEAD
 			<ScaleSpeed>0.005</ScaleSpeed>
 			<StayingTime>5</StayingTime>
+=======
+			<ScaleSpeed>0.05</ScaleSpeed>
+			<StayingTime>5</StayingTime> 
+            <FallingEnable>0</FallingEnable>
+>>>>>>> falling added
 			<HoldingTime>0.1</HoldingTime>	
 			<CollideSize>70</CollideSize>
 			<CircleSize>70</CircleSize>
@@ -184,8 +203,14 @@
 			<Position><X>103</X> <Y>402</Y> <Z>0</Z></Position>
 			<Rotation>0</Rotation>
 			<MaxScale>0.1</MaxScale>
+<<<<<<< HEAD
 			<ScaleSpeed>0.005</ScaleSpeed>
 			<StayingTime>5</StayingTime>
+=======
+			<ScaleSpeed>0.05</ScaleSpeed>
+			<StayingTime>5</StayingTime> 
+            <FallingEnable>0</FallingEnable>
+>>>>>>> falling added
 			<HoldingTime>0.1</HoldingTime>	
 			<CollideSize>70</CollideSize>
 			<CircleSize>70</CircleSize>
@@ -197,8 +222,14 @@
 			<Position><X>155</X> <Y>474</Y> <Z>0</Z></Position>
 			<Rotation>0</Rotation>
 			<MaxScale>0.1</MaxScale>
+<<<<<<< HEAD
 			<ScaleSpeed>0.005</ScaleSpeed>
 			<StayingTime>1</StayingTime>
+=======
+			<ScaleSpeed>0.05</ScaleSpeed>
+			<StayingTime>1</StayingTime> 
+            <FallingEnable>0</FallingEnable>
+>>>>>>> falling added
 			<HoldingTime>0.1</HoldingTime>
 			<CollideSize>70</CollideSize>
 			<CircleSize>70</CircleSize>
@@ -210,8 +241,14 @@
 			<Position><X>279</X> <Y>380</Y> <Z>0</Z></Position>
 			<Rotation>0</Rotation>
 			<MaxScale>0.1</MaxScale>
+<<<<<<< HEAD
 			<ScaleSpeed>0.005</ScaleSpeed>
 			<StayingTime>1</StayingTime>
+=======
+			<ScaleSpeed>0.05</ScaleSpeed>
+			<StayingTime>1</StayingTime> 
+            <FallingEnable>0</FallingEnable>
+>>>>>>> falling added
 			<HoldingTime>0.1</HoldingTime>
 			<CollideSize>70</CollideSize>
 			<CircleSize>70</CircleSize>
@@ -223,8 +260,14 @@
 			<Position><X>48</X> <Y>193</Y> <Z>0</Z></Position>
 			<Rotation>0</Rotation>
 			<MaxScale>0.1</MaxScale>
+<<<<<<< HEAD
 			<ScaleSpeed>0.005</ScaleSpeed>
 			<StayingTime>1</StayingTime>
+=======
+			<ScaleSpeed>0.05</ScaleSpeed>
+			<StayingTime>1</StayingTime> 
+            <FallingEnable>0</FallingEnable>
+>>>>>>> falling added
 			<HoldingTime>0.1</HoldingTime>
 			<CollideSize>70</CollideSize>
 			<CircleSize>70</CircleSize>
@@ -236,8 +279,14 @@
 			<Position><X>220</X> <Y>240</Y> <Z>0</Z></Position>
 			<Rotation>0</Rotation>
 			<MaxScale>0.1</MaxScale>
+<<<<<<< HEAD
 			<ScaleSpeed>0.005</ScaleSpeed>
 			<StayingTime>1</StayingTime>
+=======
+			<ScaleSpeed>0.05</ScaleSpeed>
+			<StayingTime>1</StayingTime> 
+            <FallingEnable>0</FallingEnable>
+>>>>>>> falling added
 			<HoldingTime>0.1</HoldingTime>
 			<CollideSize>70</CollideSize>
 			<CircleSize>70</CircleSize>
@@ -249,8 +298,14 @@
 			<Position><X>312</X> <Y>275</Y> <Z>0</Z></Position>
 			<Rotation>0</Rotation>
 			<MaxScale>0.1</MaxScale>
+<<<<<<< HEAD
 			<ScaleSpeed>0.005</ScaleSpeed>
 			<StayingTime>1</StayingTime>
+=======
+			<ScaleSpeed>0.05</ScaleSpeed>
+			<StayingTime>1</StayingTime> 
+            <FallingEnable>0</FallingEnable>
+>>>>>>> falling added
 			<HoldingTime>0.1</HoldingTime>
 			<CollideSize>70</CollideSize>
 			<CircleSize>70</CircleSize>
@@ -262,8 +317,14 @@
 			<Position><X>9</X> <Y>295</Y> <Z>0</Z></Position>
 			<Rotation>0</Rotation>
 			<MaxScale>0.1</MaxScale>
+<<<<<<< HEAD
 			<ScaleSpeed>0.005</ScaleSpeed>
 			<StayingTime>1</StayingTime>
+=======
+			<ScaleSpeed>0.05</ScaleSpeed>
+			<StayingTime>1</StayingTime> 
+            <FallingEnable>0</FallingEnable>
+>>>>>>> falling added
 			<HoldingTime>0.1</HoldingTime>
 			<CollideSize>70</CollideSize>
 			<CircleSize>70</CircleSize>
@@ -275,8 +336,14 @@
 			<Position><X>80</X> <Y>270</Y> <Z>0</Z></Position>
 			<Rotation>0</Rotation>
 			<MaxScale>0.1</MaxScale>
+<<<<<<< HEAD
 			<ScaleSpeed>0.005</ScaleSpeed>
 			<StayingTime>1</StayingTime>
+=======
+			<ScaleSpeed>0.05</ScaleSpeed>
+			<StayingTime>1</StayingTime> 
+            <FallingEnable>0</FallingEnable>
+>>>>>>> falling added
 			<HoldingTime>0.1</HoldingTime>
 			<CollideSize>70</CollideSize>
 			<CircleSize>70</CircleSize>
@@ -288,8 +355,14 @@
 			<Position><X>158</X> <Y>233</Y> <Z>0</Z></Position>
 			<Rotation>0</Rotation>
 			<MaxScale>0.1</MaxScale>
+<<<<<<< HEAD
 			<ScaleSpeed>0.005</ScaleSpeed>
 			<StayingTime>1</StayingTime>
+=======
+			<ScaleSpeed>0.05</ScaleSpeed>
+			<StayingTime>1</StayingTime> 
+            <FallingEnable>0</FallingEnable>
+>>>>>>> falling added
 			<HoldingTime>0.1</HoldingTime>
 			<CollideSize>70</CollideSize>
 			<CircleSize>70</CircleSize>
@@ -301,8 +374,14 @@
 			<Position><X>121</X> <Y>150</Y> <Z>0</Z></Position>
 			<Rotation>0</Rotation>
 			<MaxScale>0.1</MaxScale>
+<<<<<<< HEAD
 			<ScaleSpeed>0.005</ScaleSpeed>
 			<StayingTime>1</StayingTime>
+=======
+			<ScaleSpeed>0.05</ScaleSpeed>
+			<StayingTime>1</StayingTime> 
+            <FallingEnable>0</FallingEnable>
+>>>>>>> falling added
 			<HoldingTime>0.1</HoldingTime>
 			<CollideSize>70</CollideSize>
 			<CircleSize>70</CircleSize>
@@ -314,8 +393,14 @@
 			<Position><X>157</X> <Y>320</Y> <Z>0</Z></Position>
 			<Rotation>0</Rotation>
 			<MaxScale>0.1</MaxScale>
+<<<<<<< HEAD
 			<ScaleSpeed>0.005</ScaleSpeed>
 			<StayingTime>1</StayingTime>
+=======
+			<ScaleSpeed>0.05</ScaleSpeed>
+			<StayingTime>1</StayingTime> 
+            <FallingEnable>0</FallingEnable>
+>>>>>>> falling added
 			<HoldingTime>0.1</HoldingTime>
 			<CollideSize>70</CollideSize>
 			<CircleSize>70</CircleSize>
@@ -327,8 +412,14 @@
 			<Position><X>155</X> <Y>157</Y> <Z>0</Z></Position>
 			<Rotation>0</Rotation>
 			<MaxScale>0.1</MaxScale>
+<<<<<<< HEAD
 			<ScaleSpeed>0.005</ScaleSpeed>
 			<StayingTime>1</StayingTime>
+=======
+			<ScaleSpeed>0.05</ScaleSpeed>
+			<StayingTime>1</StayingTime> 
+            <FallingEnable>0</FallingEnable>
+>>>>>>> falling added
 			<HoldingTime>0.1</HoldingTime>
 			<CollideSize>70</CollideSize>
 			<CircleSize>70</CircleSize>
@@ -340,8 +431,14 @@
 			<Position><X>157</X> <Y>396</Y> <Z>0</Z></Position>
 			<Rotation>0</Rotation>
 			<MaxScale>0.1</MaxScale>
+<<<<<<< HEAD
 			<ScaleSpeed>0.005</ScaleSpeed>
 			<StayingTime>1</StayingTime>
+=======
+			<ScaleSpeed>0.05</ScaleSpeed>
+			<StayingTime>1</StayingTime> 
+            <FallingEnable>0</FallingEnable>
+>>>>>>> falling added
 			<HoldingTime>0.1</HoldingTime>
 			<CollideSize>70</CollideSize>
 			<CircleSize>70</CircleSize>
@@ -353,8 +450,14 @@
 			<Position><X>206</X> <Y>446</Y> <Z>0</Z></Position>
 			<Rotation>0</Rotation>
 			<MaxScale>0.1</MaxScale>
+<<<<<<< HEAD
 			<ScaleSpeed>0.005</ScaleSpeed>
 			<StayingTime>1</StayingTime>
+=======
+			<ScaleSpeed>0.05</ScaleSpeed>
+			<StayingTime>1</StayingTime> 
+            <FallingEnable>0</FallingEnable>
+>>>>>>> falling added
 			<HoldingTime>0.1</HoldingTime>
 			<CollideSize>70</CollideSize>
 			<CircleSize>70</CircleSize>
@@ -366,8 +469,14 @@
 			<Position><X>222</X> <Y>401</Y> <Z>0</Z></Position>
 			<Rotation>0</Rotation>
 			<MaxScale>0.1</MaxScale>
+<<<<<<< HEAD
 			<ScaleSpeed>0.005</ScaleSpeed>
 			<StayingTime>1</StayingTime>
+=======
+			<ScaleSpeed>0.05</ScaleSpeed>
+			<StayingTime>1</StayingTime> 
+            <FallingEnable>0</FallingEnable>
+>>>>>>> falling added
 			<HoldingTime>0.1</HoldingTime>
 			<CollideSize>70</CollideSize>
 			<CircleSize>70</CircleSize>
@@ -379,8 +488,14 @@
 			<Position><X>211</X> <Y>350</Y> <Z>0</Z></Position>
 			<Rotation>0</Rotation>
 			<MaxScale>0.1</MaxScale>
+<<<<<<< HEAD
 			<ScaleSpeed>0.005</ScaleSpeed>
 			<StayingTime>1</StayingTime>
+=======
+			<ScaleSpeed>0.05</ScaleSpeed>
+			<StayingTime>1</StayingTime> 
+            <FallingEnable>0</FallingEnable>
+>>>>>>> falling added
 			<HoldingTime>0.1</HoldingTime>
 			<CollideSize>70</CollideSize>
 			<CircleSize>70</CircleSize>
@@ -392,8 +507,14 @@
 			<Position><X>205</X> <Y>313</Y> <Z>0</Z></Position>
 			<Rotation>0</Rotation>
 			<MaxScale>0.1</MaxScale>
+<<<<<<< HEAD
 			<ScaleSpeed>0.005</ScaleSpeed>
 			<StayingTime>1</StayingTime>
+=======
+			<ScaleSpeed>0.05</ScaleSpeed>
+			<StayingTime>1</StayingTime> 
+            <FallingEnable>0</FallingEnable>
+>>>>>>> falling added
 			<HoldingTime>0.1</HoldingTime>
 			<CollideSize>70</CollideSize>
 			<CircleSize>70</CircleSize>
@@ -405,8 +526,14 @@
 			<Position><X>274</X> <Y>324</Y> <Z>0</Z></Position>
 			<Rotation>0</Rotation>
 			<MaxScale>0.1</MaxScale>
+<<<<<<< HEAD
 			<ScaleSpeed>0.005</ScaleSpeed>
 			<StayingTime>1</StayingTime>
+=======
+			<ScaleSpeed>0.05</ScaleSpeed>
+			<StayingTime>1</StayingTime> 
+            <FallingEnable>0</FallingEnable>
+>>>>>>> falling added
 			<HoldingTime>0.1</HoldingTime>
 			<CollideSize>70</CollideSize>
 			<CircleSize>70</CircleSize>
@@ -418,8 +545,14 @@
 			<Position><X>185</X> <Y>199</Y> <Z>0</Z></Position>
 			<Rotation>0</Rotation>
 			<MaxScale>0.1</MaxScale>
+<<<<<<< HEAD
 			<ScaleSpeed>0.005</ScaleSpeed>
 			<StayingTime>1</StayingTime>
+=======
+			<ScaleSpeed>0.05</ScaleSpeed>
+			<StayingTime>1</StayingTime> 
+            <FallingEnable>0</FallingEnable>
+>>>>>>> falling added
 			<HoldingTime>0.1</HoldingTime>
 			<CollideSize>70</CollideSize>
 			<CircleSize>70</CircleSize>
@@ -431,8 +564,14 @@
 			<Position><X>112</X> <Y>224</Y> <Z>0</Z></Position>
 			<Rotation>0</Rotation>
 			<MaxScale>0.1</MaxScale>
+<<<<<<< HEAD
 			<ScaleSpeed>0.005</ScaleSpeed>
 			<StayingTime>1</StayingTime>
+=======
+			<ScaleSpeed>0.05</ScaleSpeed>
+			<StayingTime>1</StayingTime> 
+            <FallingEnable>0</FallingEnable>
+>>>>>>> falling added
 			<HoldingTime>0.1</HoldingTime>
 			<CollideSize>70</CollideSize>
 			<CircleSize>70</CircleSize>
@@ -444,8 +583,14 @@
 			<Position><X>45</X> <Y>348</Y> <Z>0</Z></Position>
 			<Rotation>0</Rotation>
 			<MaxScale>0.1</MaxScale>
+<<<<<<< HEAD
 			<ScaleSpeed>0.005</ScaleSpeed>
 			<StayingTime>1</StayingTime>
+=======
+			<ScaleSpeed>0.05</ScaleSpeed>
+			<StayingTime>1</StayingTime> 
+            <FallingEnable>0</FallingEnable>
+>>>>>>> falling added
 			<HoldingTime>0.1</HoldingTime>
 			<CollideSize>70</CollideSize>
 			<CircleSize>70</CircleSize>
@@ -457,8 +602,14 @@
 			<Position><X>108</X> <Y>362</Y> <Z>0</Z></Position>
 			<Rotation>0</Rotation>
 			<MaxScale>0.1</MaxScale>
+<<<<<<< HEAD
 			<ScaleSpeed>0.005</ScaleSpeed>
 			<StayingTime>1</StayingTime>
+=======
+			<ScaleSpeed>0.05</ScaleSpeed>
+			<StayingTime>1</StayingTime> 
+            <FallingEnable>0</FallingEnable>
+>>>>>>> falling added
 			<HoldingTime>0.1</HoldingTime>
 			<CollideSize>70</CollideSize>
 			<CircleSize>70</CircleSize>
@@ -470,8 +621,14 @@
 			<Position><X>76</X> <Y>322</Y> <Z>0</Z></Position>
 			<Rotation>0</Rotation>
 			<MaxScale>0.1</MaxScale>
+<<<<<<< HEAD
 			<ScaleSpeed>0.005</ScaleSpeed>
 			<StayingTime>1</StayingTime>
+=======
+			<ScaleSpeed>0.05</ScaleSpeed>
+			<StayingTime>1</StayingTime> 
+            <FallingEnable>0</FallingEnable>
+>>>>>>> falling added
 			<HoldingTime>0.1</HoldingTime>
 			<CollideSize>70</CollideSize>
 			<CircleSize>70</CircleSize>
@@ -483,8 +640,14 @@
 			<Position><X>243</X> <Y>208</Y> <Z>0</Z></Position>
 			<Rotation>0</Rotation>
 			<MaxScale>0.1</MaxScale>
+<<<<<<< HEAD
 			<ScaleSpeed>0.005</ScaleSpeed>
 			<StayingTime>1</StayingTime>
+=======
+			<ScaleSpeed>0.05</ScaleSpeed>
+			<StayingTime>1</StayingTime> 
+            <FallingEnable>0</FallingEnable>
+>>>>>>> falling added
 			<HoldingTime>0.1</HoldingTime>
 			<CollideSize>70</CollideSize>
 			<CircleSize>70</CircleSize>
@@ -496,8 +659,14 @@
 			<Position><X>289</X> <Y>239</Y> <Z>0</Z></Position>
 			<Rotation>0</Rotation>
 			<MaxScale>0.1</MaxScale>
+<<<<<<< HEAD
 			<ScaleSpeed>0.005</ScaleSpeed>
 			<StayingTime>1</StayingTime>
+=======
+			<ScaleSpeed>0.05</ScaleSpeed>
+			<StayingTime>1</StayingTime> 
+            <FallingEnable>0</FallingEnable>
+>>>>>>> falling added
 			<HoldingTime>0.1</HoldingTime>
 			<CollideSize>70</CollideSize>
 			<CircleSize>70</CircleSize>
@@ -509,8 +678,14 @@
 			<Position><X>28</X> <Y>253</Y> <Z>0</Z></Position>
 			<Rotation>0</Rotation>
 			<MaxScale>0.1</MaxScale>
+<<<<<<< HEAD
 			<ScaleSpeed>0.005</ScaleSpeed>
 			<StayingTime>1</StayingTime>
+=======
+			<ScaleSpeed>0.05</ScaleSpeed>
+			<StayingTime>1</StayingTime> 
+            <FallingEnable>0</FallingEnable>
+>>>>>>> falling added
 			<HoldingTime>0.1</HoldingTime>
 			<CollideSize>70</CollideSize>
 			<CircleSize>70</CircleSize>
@@ -522,8 +697,14 @@
 			<Position><X>95</X> <Y>197</Y> <Z>0</Z></Position>
 			<Rotation>0</Rotation>
 			<MaxScale>0.1</MaxScale>
+<<<<<<< HEAD
 			<ScaleSpeed>0.005</ScaleSpeed>
 			<StayingTime>1</StayingTime>
+=======
+			<ScaleSpeed>0.05</ScaleSpeed>
+			<StayingTime>1</StayingTime> 
+            <FallingEnable>0</FallingEnable>
+>>>>>>> falling added
 			<HoldingTime>0.1</HoldingTime>
 			<CollideSize>70</CollideSize>
 			<CircleSize>70</CircleSize>
@@ -535,8 +716,14 @@
 			<Position><X>130</X> <Y>290</Y> <Z>0</Z></Position>
 			<Rotation>0</Rotation>
 			<MaxScale>0.1</MaxScale>
+<<<<<<< HEAD
 			<ScaleSpeed>0.005</ScaleSpeed>
 			<StayingTime>1</StayingTime>
+=======
+			<ScaleSpeed>0.05</ScaleSpeed>
+			<StayingTime>1</StayingTime> 
+            <FallingEnable>0</FallingEnable>
+>>>>>>> falling added
 			<HoldingTime>0.1</HoldingTime>
 			<CollideSize>70</CollideSize>
 			<CircleSize>70</CircleSize>
@@ -548,8 +735,14 @@
 			<Position><X>157</X> <Y>440</Y> <Z>0</Z></Position>
 			<Rotation>0</Rotation>
 			<MaxScale>0.1</MaxScale>
+<<<<<<< HEAD
 			<ScaleSpeed>0.005</ScaleSpeed>
 			<StayingTime>1</StayingTime>
+=======
+			<ScaleSpeed>0.05</ScaleSpeed>
+			<StayingTime>1</StayingTime> 
+            <FallingEnable>0</FallingEnable>
+>>>>>>> falling added
 			<HoldingTime>0.1</HoldingTime>
 			<CollideSize>70</CollideSize>
 			<CircleSize>70</CircleSize>
@@ -559,7 +752,8 @@
 	
 
 	</GroupObj>
-	<StayingTime>4</StayingTime>
+	<StayingTime>4</StayingTime> 
+            <FallingEnable>0</FallingEnable>
 </Group>
 
 
@@ -572,8 +766,14 @@
 			<Position><X>450</X> <Y>680</Y> <Z>0</Z></Position>
 			<Rotation>0</Rotation>
 			<MaxScale>0.15</MaxScale>
+<<<<<<< HEAD
 			<ScaleSpeed>0.005</ScaleSpeed>
 			<StayingTime>5</StayingTime>
+=======
+			<ScaleSpeed>0.05</ScaleSpeed>
+			<StayingTime>5</StayingTime> 
+            <FallingEnable>0</FallingEnable>
+>>>>>>> falling added
 			<HoldingTime>0.1</HoldingTime>	
 			<CollideSize>70</CollideSize>
 			<CircleSize>70</CircleSize>
@@ -585,8 +785,14 @@
 			<Position><X>429</X> <Y>645</Y> <Z>0</Z></Position>
 			<Rotation>0</Rotation>
 		<MaxScale>0.15</MaxScale>
+<<<<<<< HEAD
 			<ScaleSpeed>0.005</ScaleSpeed>
 			<StayingTime>5</StayingTime>
+=======
+			<ScaleSpeed>0.05</ScaleSpeed>
+			<StayingTime>5</StayingTime> 
+            <FallingEnable>0</FallingEnable>
+>>>>>>> falling added
 			<HoldingTime>0.1</HoldingTime>	
 			<CollideSize>70</CollideSize>
 			<CircleSize>70</CircleSize>
@@ -598,8 +804,14 @@
 			<Position><X>476</X> <Y>639</Y> <Z>0</Z></Position>
 			<Rotation>0</Rotation>
 		<MaxScale>0.15</MaxScale>
+<<<<<<< HEAD
 			<ScaleSpeed>0.005</ScaleSpeed>
 			<StayingTime>1</StayingTime>
+=======
+			<ScaleSpeed>0.05</ScaleSpeed>
+			<StayingTime>1</StayingTime> 
+            <FallingEnable>0</FallingEnable>
+>>>>>>> falling added
 			<HoldingTime>0.1</HoldingTime>
 			<CollideSize>70</CollideSize>
 			<CircleSize>70</CircleSize>
@@ -611,8 +823,14 @@
 			<Position><X>366</X> <Y>593</Y> <Z>0</Z></Position>
 			<Rotation>0</Rotation>
 		<MaxScale>0.15</MaxScale>
+<<<<<<< HEAD
 			<ScaleSpeed>0.005</ScaleSpeed>
 			<StayingTime>1</StayingTime>
+=======
+			<ScaleSpeed>0.05</ScaleSpeed>
+			<StayingTime>1</StayingTime> 
+            <FallingEnable>0</FallingEnable>
+>>>>>>> falling added
 			<HoldingTime>0.1</HoldingTime>
 			<CollideSize>70</CollideSize>
 			<CircleSize>70</CircleSize>
@@ -624,8 +842,14 @@
 			<Position><X>428</X> <Y>585</Y> <Z>0</Z></Position>
 			<Rotation>0</Rotation>
 			<MaxScale>0.15</MaxScale>
+<<<<<<< HEAD
 			<ScaleSpeed>0.005</ScaleSpeed>
 			<StayingTime>1</StayingTime>
+=======
+			<ScaleSpeed>0.05</ScaleSpeed>
+			<StayingTime>1</StayingTime> 
+            <FallingEnable>0</FallingEnable>
+>>>>>>> falling added
 			<HoldingTime>0.1</HoldingTime>
 			<CollideSize>70</CollideSize>
 			<CircleSize>70</CircleSize>
@@ -637,8 +861,14 @@
 			<Position><X>494</X> <Y>588</Y> <Z>0</Z></Position>
 			<Rotation>0</Rotation>
 			<MaxScale>0.15</MaxScale>
+<<<<<<< HEAD
 			<ScaleSpeed>0.005</ScaleSpeed>
 			<StayingTime>1</StayingTime>
+=======
+			<ScaleSpeed>0.05</ScaleSpeed>
+			<StayingTime>1</StayingTime> 
+            <FallingEnable>0</FallingEnable>
+>>>>>>> falling added
 			<HoldingTime>0.1</HoldingTime>
 			<CollideSize>70</CollideSize>
 			<CircleSize>70</CircleSize>
@@ -650,8 +880,14 @@
 			<Position><X>623</X> <Y>543</Y> <Z>0</Z></Position>
 			<Rotation>0</Rotation>
 		<MaxScale>0.15</MaxScale>
+<<<<<<< HEAD
 			<ScaleSpeed>0.005</ScaleSpeed>
 			<StayingTime>1</StayingTime>
+=======
+			<ScaleSpeed>0.05</ScaleSpeed>
+			<StayingTime>1</StayingTime> 
+            <FallingEnable>0</FallingEnable>
+>>>>>>> falling added
 			<HoldingTime>0.1</HoldingTime>
 			<CollideSize>70</CollideSize>
 			<CircleSize>70</CircleSize>
@@ -663,8 +899,14 @@
 			<Position><X>518</X> <Y>456</Y> <Z>0</Z></Position>
 			<Rotation>0</Rotation>
 		<MaxScale>0.15</MaxScale>
+<<<<<<< HEAD
 			<ScaleSpeed>0.005</ScaleSpeed>
 			<StayingTime>1</StayingTime>
+=======
+			<ScaleSpeed>0.05</ScaleSpeed>
+			<StayingTime>1</StayingTime> 
+            <FallingEnable>0</FallingEnable>
+>>>>>>> falling added
 			<HoldingTime>0.1</HoldingTime>
 			<CollideSize>70</CollideSize>
 			<CircleSize>70</CircleSize>
@@ -676,8 +918,14 @@
 			<Position><X>569</X> <Y>439</Y> <Z>0</Z></Position>
 			<Rotation>0</Rotation>
 			<MaxScale>0.15</MaxScale>
+<<<<<<< HEAD
 			<ScaleSpeed>0.005</ScaleSpeed>
 			<StayingTime>1</StayingTime>
+=======
+			<ScaleSpeed>0.05</ScaleSpeed>
+			<StayingTime>1</StayingTime> 
+            <FallingEnable>0</FallingEnable>
+>>>>>>> falling added
 			<HoldingTime>0.1</HoldingTime>
 			<CollideSize>70</CollideSize>
 			<CircleSize>70</CircleSize>
@@ -689,8 +937,14 @@
 			<Position><X>458</X> <Y>422</Y> <Z>0</Z></Position>
 			<Rotation>0</Rotation>
 		<MaxScale>0.15</MaxScale>
+<<<<<<< HEAD
 			<ScaleSpeed>0.005</ScaleSpeed>
 			<StayingTime>1</StayingTime>
+=======
+			<ScaleSpeed>0.05</ScaleSpeed>
+			<StayingTime>1</StayingTime> 
+            <FallingEnable>0</FallingEnable>
+>>>>>>> falling added
 			<HoldingTime>0.1</HoldingTime>
 			<CollideSize>70</CollideSize>
 			<CircleSize>70</CircleSize>
@@ -702,8 +956,14 @@
 			<Position><X>409</X> <Y>390</Y> <Z>0</Z></Position>
 			<Rotation>0</Rotation>
 			<MaxScale>0.15</MaxScale>
+<<<<<<< HEAD
 			<ScaleSpeed>0.005</ScaleSpeed>
 			<StayingTime>1</StayingTime>
+=======
+			<ScaleSpeed>0.05</ScaleSpeed>
+			<StayingTime>1</StayingTime> 
+            <FallingEnable>0</FallingEnable>
+>>>>>>> falling added
 			<HoldingTime>0.1</HoldingTime>
 			<CollideSize>70</CollideSize>
 			<CircleSize>70</CircleSize>
@@ -715,8 +975,14 @@
 			<Position><X>339</X> <Y>417</Y> <Z>0</Z></Position>
 			<Rotation>0</Rotation>
 			<MaxScale>0.15</MaxScale>
+<<<<<<< HEAD
 			<ScaleSpeed>0.005</ScaleSpeed>
 			<StayingTime>1</StayingTime>
+=======
+			<ScaleSpeed>0.05</ScaleSpeed>
+			<StayingTime>1</StayingTime> 
+            <FallingEnable>0</FallingEnable>
+>>>>>>> falling added
 			<HoldingTime>0.1</HoldingTime>
 			<CollideSize>70</CollideSize>
 			<CircleSize>70</CircleSize>
@@ -728,8 +994,14 @@
 			<Position><X>281</X> <Y>444</Y> <Z>0</Z></Position>
 			<Rotation>0</Rotation>
 		<MaxScale>0.15</MaxScale>
+<<<<<<< HEAD
 			<ScaleSpeed>0.005</ScaleSpeed>
 			<StayingTime>1</StayingTime>
+=======
+			<ScaleSpeed>0.05</ScaleSpeed>
+			<StayingTime>1</StayingTime> 
+            <FallingEnable>0</FallingEnable>
+>>>>>>> falling added
 			<HoldingTime>0.1</HoldingTime>
 			<CollideSize>70</CollideSize>
 			<CircleSize>70</CircleSize>
@@ -741,8 +1013,14 @@
 			<Position><X>315</X> <Y>513</Y> <Z>0</Z></Position>
 			<Rotation>0</Rotation>
 			<MaxScale>0.15</MaxScale>
+<<<<<<< HEAD
 			<ScaleSpeed>0.005</ScaleSpeed>
 			<StayingTime>1</StayingTime>
+=======
+			<ScaleSpeed>0.05</ScaleSpeed>
+			<StayingTime>1</StayingTime> 
+            <FallingEnable>0</FallingEnable>
+>>>>>>> falling added
 			<HoldingTime>0.1</HoldingTime>
 			<CollideSize>70</CollideSize>
 			<CircleSize>70</CircleSize>
@@ -754,8 +1032,14 @@
 			<Position><X>354</X> <Y>569</Y> <Z>0</Z></Position>
 			<Rotation>0</Rotation>
 		<MaxScale>0.15</MaxScale>
+<<<<<<< HEAD
 			<ScaleSpeed>0.005</ScaleSpeed>
 			<StayingTime>1</StayingTime>
+=======
+			<ScaleSpeed>0.05</ScaleSpeed>
+			<StayingTime>1</StayingTime> 
+            <FallingEnable>0</FallingEnable>
+>>>>>>> falling added
 			<HoldingTime>0.1</HoldingTime>
 			<CollideSize>70</CollideSize>
 			<CircleSize>70</CircleSize>
@@ -767,8 +1051,14 @@
 			<Position><X>442</X> <Y>508</Y> <Z>0</Z></Position>
 			<Rotation>0</Rotation>
 			<MaxScale>0.15</MaxScale>
+<<<<<<< HEAD
 			<ScaleSpeed>0.005</ScaleSpeed>
 			<StayingTime>1</StayingTime>
+=======
+			<ScaleSpeed>0.05</ScaleSpeed>
+			<StayingTime>1</StayingTime> 
+            <FallingEnable>0</FallingEnable>
+>>>>>>> falling added
 			<HoldingTime>0.1</HoldingTime>
 			<CollideSize>70</CollideSize>
 			<CircleSize>70</CircleSize>
@@ -780,8 +1070,14 @@
 			<Position><X>446</X> <Y>409</Y> <Z>0</Z></Position>
 			<Rotation>0</Rotation>
 			<MaxScale>0.15</MaxScale>
+<<<<<<< HEAD
 			<ScaleSpeed>0.005</ScaleSpeed>
 			<StayingTime>1</StayingTime>
+=======
+			<ScaleSpeed>0.05</ScaleSpeed>
+			<StayingTime>1</StayingTime> 
+            <FallingEnable>0</FallingEnable>
+>>>>>>> falling added
 			<HoldingTime>0.1</HoldingTime>
 			<CollideSize>70</CollideSize>
 			<CircleSize>70</CircleSize>
@@ -793,8 +1089,14 @@
 			<Position><X>420</X> <Y>250</Y> <Z>0</Z></Position>
 			<Rotation>0</Rotation>
 			<MaxScale>0.15</MaxScale>
+<<<<<<< HEAD
 			<ScaleSpeed>0.005</ScaleSpeed>
 			<StayingTime>1</StayingTime>
+=======
+			<ScaleSpeed>0.05</ScaleSpeed>
+			<StayingTime>1</StayingTime> 
+            <FallingEnable>0</FallingEnable>
+>>>>>>> falling added
 			<HoldingTime>0.1</HoldingTime>
 			<CollideSize>70</CollideSize>
 			<CircleSize>70</CircleSize>
@@ -806,8 +1108,14 @@
 			<Position><X>513</X> <Y>309</Y> <Z>0</Z></Position>
 			<Rotation>0</Rotation>
 			<MaxScale>0.15</MaxScale>
+<<<<<<< HEAD
 			<ScaleSpeed>0.005</ScaleSpeed>
 			<StayingTime>1</StayingTime>
+=======
+			<ScaleSpeed>0.05</ScaleSpeed>
+			<StayingTime>1</StayingTime> 
+            <FallingEnable>0</FallingEnable>
+>>>>>>> falling added
 			<HoldingTime>0.1</HoldingTime>
 			<CollideSize>70</CollideSize>
 			<CircleSize>70</CircleSize>
@@ -819,8 +1127,14 @@
 			<Position><X>576</X> <Y>362</Y> <Z>0</Z></Position>
 			<Rotation>0</Rotation>
 		<MaxScale>0.15</MaxScale>
+<<<<<<< HEAD
 			<ScaleSpeed>0.005</ScaleSpeed>
 			<StayingTime>1</StayingTime>
+=======
+			<ScaleSpeed>0.05</ScaleSpeed>
+			<StayingTime>1</StayingTime> 
+            <FallingEnable>0</FallingEnable>
+>>>>>>> falling added
 			<HoldingTime>0.1</HoldingTime>
 			<CollideSize>70</CollideSize>
 			<CircleSize>70</CircleSize>
@@ -832,8 +1146,14 @@
 			<Position><X>591</X> <Y>417</Y> <Z>0</Z></Position>
 			<Rotation>0</Rotation>
 			<MaxScale>0.15</MaxScale>
+<<<<<<< HEAD
 			<ScaleSpeed>0.005</ScaleSpeed>
 			<StayingTime>1</StayingTime>
+=======
+			<ScaleSpeed>0.05</ScaleSpeed>
+			<StayingTime>1</StayingTime> 
+            <FallingEnable>0</FallingEnable>
+>>>>>>> falling added
 			<HoldingTime>0.1</HoldingTime>
 			<CollideSize>70</CollideSize>
 			<CircleSize>70</CircleSize>
@@ -845,8 +1165,14 @@
 			<Position><X>359</X> <Y>283</Y> <Z>0</Z></Position>
 			<Rotation>0</Rotation>
 			<MaxScale>0.15</MaxScale>
+<<<<<<< HEAD
 			<ScaleSpeed>0.005</ScaleSpeed>
 			<StayingTime>1</StayingTime>
+=======
+			<ScaleSpeed>0.05</ScaleSpeed>
+			<StayingTime>1</StayingTime> 
+            <FallingEnable>0</FallingEnable>
+>>>>>>> falling added
 			<HoldingTime>0.1</HoldingTime>
 			<CollideSize>70</CollideSize>
 			<CircleSize>70</CircleSize>
@@ -858,8 +1184,14 @@
 			<Position><X>457</X> <Y>227</Y> <Z>0</Z></Position>
 			<Rotation>0</Rotation>
 			<MaxScale>0.15</MaxScale>
+<<<<<<< HEAD
 			<ScaleSpeed>0.005</ScaleSpeed>
 			<StayingTime>1</StayingTime>
+=======
+			<ScaleSpeed>0.05</ScaleSpeed>
+			<StayingTime>1</StayingTime> 
+            <FallingEnable>0</FallingEnable>
+>>>>>>> falling added
 			<HoldingTime>0.1</HoldingTime>
 			<CollideSize>70</CollideSize>
 			<CircleSize>70</CircleSize>
@@ -872,8 +1204,14 @@
 			<Position><X>381</X> <Y>540</Y> <Z>0</Z></Position>
 			<Rotation>0</Rotation>
 			<MaxScale>0.15</MaxScale>
+<<<<<<< HEAD
 			<ScaleSpeed>0.005</ScaleSpeed>
 			<StayingTime>1</StayingTime>
+=======
+			<ScaleSpeed>0.05</ScaleSpeed>
+			<StayingTime>1</StayingTime> 
+            <FallingEnable>0</FallingEnable>
+>>>>>>> falling added
 			<HoldingTime>0.1</HoldingTime>
 			<CollideSize>70</CollideSize>
 			<CircleSize>70</CircleSize>
@@ -885,8 +1223,14 @@
 			<Position><X>357</X> <Y>481</Y> <Z>0</Z></Position>
 			<Rotation>0</Rotation>
 			<MaxScale>0.15</MaxScale>
+<<<<<<< HEAD
 			<ScaleSpeed>0.005</ScaleSpeed>
 			<StayingTime>1</StayingTime>
+=======
+			<ScaleSpeed>0.05</ScaleSpeed>
+			<StayingTime>1</StayingTime> 
+            <FallingEnable>0</FallingEnable>
+>>>>>>> falling added
 			<HoldingTime>0.1</HoldingTime>
 			<CollideSize>70</CollideSize>
 			<CircleSize>70</CircleSize>
@@ -898,8 +1242,14 @@
 			<Position><X>412</X> <Y>458</Y> <Z>0</Z></Position>
 			<Rotation>0</Rotation>
 			<MaxScale>0.15</MaxScale>
+<<<<<<< HEAD
 			<ScaleSpeed>0.005</ScaleSpeed>
 			<StayingTime>1</StayingTime>
+=======
+			<ScaleSpeed>0.05</ScaleSpeed>
+			<StayingTime>1</StayingTime> 
+            <FallingEnable>0</FallingEnable>
+>>>>>>> falling added
 			<HoldingTime>0.1</HoldingTime>
 			<CollideSize>70</CollideSize>
 			<CircleSize>70</CircleSize>
@@ -911,8 +1261,14 @@
 			<Position><X>502</X> <Y>543</Y> <Z>0</Z></Position>
 			<Rotation>0</Rotation>
 			<MaxScale>0.15</MaxScale>
+<<<<<<< HEAD
 			<ScaleSpeed>0.005</ScaleSpeed>
 			<StayingTime>1</StayingTime>
+=======
+			<ScaleSpeed>0.05</ScaleSpeed>
+			<StayingTime>1</StayingTime> 
+            <FallingEnable>0</FallingEnable>
+>>>>>>> falling added
 			<HoldingTime>0.1</HoldingTime>
 			<CollideSize>70</CollideSize>
 			<CircleSize>70</CircleSize>
@@ -924,8 +1280,14 @@
 			<Position><X>560</X> <Y>518</Y> <Z>0</Z></Position>
 			<Rotation>0</Rotation>
 		<MaxScale>0.15</MaxScale>
+<<<<<<< HEAD
 			<ScaleSpeed>0.005</ScaleSpeed>
 			<StayingTime>1</StayingTime>
+=======
+			<ScaleSpeed>0.05</ScaleSpeed>
+			<StayingTime>1</StayingTime> 
+            <FallingEnable>0</FallingEnable>
+>>>>>>> falling added
 			<HoldingTime>0.1</HoldingTime>
 			<CollideSize>70</CollideSize>
 			<CircleSize>70</CircleSize>
@@ -937,8 +1299,14 @@
 			<Position><X>345</X> <Y>357</Y> <Z>0</Z></Position>
 			<Rotation>0</Rotation>
 			<MaxScale>0.15</MaxScale>
+<<<<<<< HEAD
 			<ScaleSpeed>0.005</ScaleSpeed>
 			<StayingTime>1</StayingTime>
+=======
+			<ScaleSpeed>0.05</ScaleSpeed>
+			<StayingTime>1</StayingTime> 
+            <FallingEnable>0</FallingEnable>
+>>>>>>> falling added
 			<HoldingTime>0.1</HoldingTime>
 			<CollideSize>70</CollideSize>
 			<CircleSize>70</CircleSize>
@@ -950,8 +1318,14 @@
 			<Position><X>408</X> <Y>333</Y> <Z>0</Z></Position>
 			<Rotation>0</Rotation>
 			<MaxScale>0.15</MaxScale>
+<<<<<<< HEAD
 			<ScaleSpeed>0.005</ScaleSpeed>
 			<StayingTime>1</StayingTime>
+=======
+			<ScaleSpeed>0.05</ScaleSpeed>
+			<StayingTime>1</StayingTime> 
+            <FallingEnable>0</FallingEnable>
+>>>>>>> falling added
 			<HoldingTime>0.1</HoldingTime>
 			<CollideSize>70</CollideSize>
 			<CircleSize>70</CircleSize>
@@ -963,8 +1337,14 @@
 			<Position><X>457</X> <Y>349</Y> <Z>0</Z></Position>
 			<Rotation>0</Rotation>
 			<MaxScale>0.15</MaxScale>
+<<<<<<< HEAD
 			<ScaleSpeed>0.005</ScaleSpeed>
 			<StayingTime>1</StayingTime>
+=======
+			<ScaleSpeed>0.05</ScaleSpeed>
+			<StayingTime>1</StayingTime> 
+            <FallingEnable>0</FallingEnable>
+>>>>>>> falling added
 			<HoldingTime>0.1</HoldingTime>
 			<CollideSize>70</CollideSize>
 			<CircleSize>70</CircleSize>
@@ -976,8 +1356,14 @@
 			<Position><X>520</X> <Y>391</Y> <Z>0</Z></Position>
 			<Rotation>0</Rotation>
 			<MaxScale>0.1</MaxScale>
+<<<<<<< HEAD
 			<ScaleSpeed>0.005</ScaleSpeed>
 			<StayingTime>1</StayingTime>
+=======
+			<ScaleSpeed>0.05</ScaleSpeed>
+			<StayingTime>1</StayingTime> 
+            <FallingEnable>0</FallingEnable>
+>>>>>>> falling added
 			<HoldingTime>0.1</HoldingTime>
 			<CollideSize>70</CollideSize>
 			<CircleSize>70</CircleSize>
@@ -989,8 +1375,14 @@
 			<Position><X>621</X> <Y>487</Y> <Z>0</Z></Position>
 			<Rotation>0</Rotation>
 			<MaxScale>0.15</MaxScale>
+<<<<<<< HEAD
 			<ScaleSpeed>0.005</ScaleSpeed>
 			<StayingTime>1</StayingTime>
+=======
+			<ScaleSpeed>0.05</ScaleSpeed>
+			<StayingTime>1</StayingTime> 
+            <FallingEnable>0</FallingEnable>
+>>>>>>> falling added
 			<HoldingTime>0.1</HoldingTime>
 			<CollideSize>70</CollideSize>
 			<CircleSize>70</CircleSize>
@@ -1002,8 +1394,14 @@
 			<Position><X>556</X> <Y>618</Y> <Z>0</Z></Position>
 			<Rotation>0</Rotation>
 			<MaxScale>0.15</MaxScale>
+<<<<<<< HEAD
 			<ScaleSpeed>0.005</ScaleSpeed>
 			<StayingTime>1</StayingTime>
+=======
+			<ScaleSpeed>0.05</ScaleSpeed>
+			<StayingTime>1</StayingTime> 
+            <FallingEnable>0</FallingEnable>
+>>>>>>> falling added
 			<HoldingTime>0.1</HoldingTime>
 			<CollideSize>70</CollideSize>
 			<CircleSize>70</CircleSize>
@@ -1015,8 +1413,14 @@
 			<Position><X>640</X> <Y>414</Y> <Z>0</Z></Position>
 			<Rotation>0</Rotation>
 			<MaxScale>0.1</MaxScale>
+<<<<<<< HEAD
 			<ScaleSpeed>0.005</ScaleSpeed>
 			<StayingTime>1</StayingTime>
+=======
+			<ScaleSpeed>0.05</ScaleSpeed>
+			<StayingTime>1</StayingTime> 
+            <FallingEnable>0</FallingEnable>
+>>>>>>> falling added
 			<HoldingTime>0.1</HoldingTime>
 			<CollideSize>70</CollideSize>
 			<CircleSize>70</CircleSize>
@@ -1028,8 +1432,14 @@
 			<Position><X>539</X> <Y>272</Y> <Z>0</Z></Position>
 			<Rotation>0</Rotation>
 			<MaxScale>0.15</MaxScale>
+<<<<<<< HEAD
 			<ScaleSpeed>0.005</ScaleSpeed>
 			<StayingTime>1</StayingTime>
+=======
+			<ScaleSpeed>0.05</ScaleSpeed>
+			<StayingTime>1</StayingTime> 
+            <FallingEnable>0</FallingEnable>
+>>>>>>> falling added
 			<HoldingTime>0.1</HoldingTime>
 			<CollideSize>70</CollideSize>
 			<CircleSize>70</CircleSize>
@@ -1041,8 +1451,14 @@
 			<Position><X>587</X> <Y>308</Y> <Z>0</Z></Position>
 			<Rotation>0</Rotation>
 			<MaxScale>0.15</MaxScale>
+<<<<<<< HEAD
 			<ScaleSpeed>0.005</ScaleSpeed>
 			<StayingTime>1</StayingTime>
+=======
+			<ScaleSpeed>0.05</ScaleSpeed>
+			<StayingTime>1</StayingTime> 
+            <FallingEnable>0</FallingEnable>
+>>>>>>> falling added
 			<HoldingTime>0.1</HoldingTime>
 			<CollideSize>70</CollideSize>
 			<CircleSize>70</CircleSize>
@@ -1054,8 +1470,14 @@
 			<Position><X>640</X> <Y>414</Y> <Z>0</Z></Position>
 			<Rotation>0</Rotation>
 			<MaxScale>0.1</MaxScale>
+<<<<<<< HEAD
 			<ScaleSpeed>0.005</ScaleSpeed>
 			<StayingTime>1</StayingTime>
+=======
+			<ScaleSpeed>0.05</ScaleSpeed>
+			<StayingTime>1</StayingTime> 
+            <FallingEnable>0</FallingEnable>
+>>>>>>> falling added
 			<HoldingTime>0.1</HoldingTime>
 			<CollideSize>70</CollideSize>
 			<CircleSize>70</CircleSize>
@@ -1067,8 +1489,14 @@
 			<Position><X>539</X> <Y>272</Y> <Z>0</Z></Position>
 			<Rotation>0</Rotation>
 			<MaxScale>0.15</MaxScale>
+<<<<<<< HEAD
 			<ScaleSpeed>0.005</ScaleSpeed>
 			<StayingTime>1</StayingTime>
+=======
+			<ScaleSpeed>0.05</ScaleSpeed>
+			<StayingTime>1</StayingTime> 
+            <FallingEnable>0</FallingEnable>
+>>>>>>> falling added
 			<HoldingTime>0.1</HoldingTime>
 			<CollideSize>70</CollideSize>
 			<CircleSize>70</CircleSize>
@@ -1080,8 +1508,14 @@
 			<Position><X>587</X> <Y>308</Y> <Z>0</Z></Position>
 			<Rotation>0</Rotation>
 			<MaxScale>0.15</MaxScale>
+<<<<<<< HEAD
 			<ScaleSpeed>0.005</ScaleSpeed>
 			<StayingTime>1</StayingTime>
+=======
+			<ScaleSpeed>0.05</ScaleSpeed>
+			<StayingTime>1</StayingTime> 
+            <FallingEnable>0</FallingEnable>
+>>>>>>> falling added
 			<HoldingTime>0.1</HoldingTime>
 			<CollideSize>70</CollideSize>
 			<CircleSize>70</CircleSize>
@@ -1094,8 +1528,14 @@
 			<Position><X>387</X> <Y>534</Y> <Z>10</Z></Position>
 			<Rotation>0</Rotation>
 			<MaxScale>0.01</MaxScale>
+<<<<<<< HEAD
 			<ScaleSpeed>0.005</ScaleSpeed>
 			<StayingTime>5</StayingTime>
+=======
+			<ScaleSpeed>0.05</ScaleSpeed>
+			<StayingTime>5</StayingTime> 
+            <FallingEnable>0</FallingEnable>
+>>>>>>> falling added
 			<HoldingTime>0.1</HoldingTime>	
 			<CollideSize>70</CollideSize>
 			<CircleSize>70</CircleSize>
@@ -1107,8 +1547,14 @@
 			<Position><X>542</X> <Y>479</Y> <Z>10</Z></Position>
 			<Rotation>0</Rotation>
 			<MaxScale>0.01</MaxScale>
+<<<<<<< HEAD
 			<ScaleSpeed>0.005</ScaleSpeed>
 			<StayingTime>5</StayingTime>
+=======
+			<ScaleSpeed>0.05</ScaleSpeed>
+			<StayingTime>5</StayingTime> 
+            <FallingEnable>0</FallingEnable>
+>>>>>>> falling added
 			<HoldingTime>0.1</HoldingTime>	
 			<CollideSize>70</CollideSize>
 			<CircleSize>70</CircleSize>
@@ -1120,8 +1566,14 @@
 			<Position><X>346</X> <Y>397</Y> <Z>10</Z></Position>
 			<Rotation>0</Rotation>
 			<MaxScale>0.01</MaxScale>
+<<<<<<< HEAD
 			<ScaleSpeed>0.005</ScaleSpeed>
 			<StayingTime>1</StayingTime>
+=======
+			<ScaleSpeed>0.05</ScaleSpeed>
+			<StayingTime>1</StayingTime> 
+            <FallingEnable>0</FallingEnable>
+>>>>>>> falling added
 			<HoldingTime>0.1</HoldingTime>
 			<CollideSize>70</CollideSize>
 			<CircleSize>70</CircleSize>
@@ -1133,8 +1585,14 @@
 			<Position><X>496</X> <Y>373</Y> <Z>10</Z></Position>
 			<Rotation>0</Rotation>
 			<MaxScale>0.01</MaxScale>
+<<<<<<< HEAD
 			<ScaleSpeed>0.005</ScaleSpeed>
 			<StayingTime>1</StayingTime>
+=======
+			<ScaleSpeed>0.05</ScaleSpeed>
+			<StayingTime>1</StayingTime> 
+            <FallingEnable>0</FallingEnable>
+>>>>>>> falling added
 			<HoldingTime>0.1</HoldingTime>
 			<CollideSize>70</CollideSize>
 			<CircleSize>70</CircleSize>
@@ -1142,7 +1600,8 @@
             <ModelColor><R>255</R> <G>255</G> <B>255</B> <A>100</A></ModelColor>
 		</Model>
 			</GroupObj>
-	<StayingTime>4</StayingTime>
+	<StayingTime>4</StayingTime> 
+            <FallingEnable>0</FallingEnable>
 </Group>
 
 
@@ -1158,8 +1617,14 @@
 			<Position><X>695</X> <Y>60</Y> <Z>0</Z></Position>
 			<Rotation>0</Rotation>
 			<MaxScale>0.1</MaxScale>
+<<<<<<< HEAD
 			<ScaleSpeed>0.005</ScaleSpeed>
 			<StayingTime>1</StayingTime>
+=======
+			<ScaleSpeed>0.05</ScaleSpeed>
+			<StayingTime>1</StayingTime> 
+            <FallingEnable>0</FallingEnable>
+>>>>>>> falling added
 			<HoldingTime>0.1</HoldingTime>
 			<CollideSize>70</CollideSize>
 			<CircleSize>70</CircleSize>
@@ -1171,8 +1636,14 @@
 			<Position><X>671</X> <Y>515</Y> <Z>0</Z></Position>
 			<Rotation>0</Rotation>
 			<MaxScale>0.1</MaxScale>
+<<<<<<< HEAD
 			<ScaleSpeed>0.005</ScaleSpeed>
 			<StayingTime>1</StayingTime>
+=======
+			<ScaleSpeed>0.05</ScaleSpeed>
+			<StayingTime>1</StayingTime> 
+            <FallingEnable>0</FallingEnable>
+>>>>>>> falling added
 			<HoldingTime>0.1</HoldingTime>
 			<CollideSize>70</CollideSize>
 			<CircleSize>70</CircleSize>
@@ -1185,8 +1656,14 @@
 			<Position><X>681</X> <Y>457</Y> <Z>0</Z></Position>
 			<Rotation>0</Rotation>
 			<MaxScale>0.1</MaxScale>
+<<<<<<< HEAD
 			<ScaleSpeed>0.005</ScaleSpeed>
 			<StayingTime>1</StayingTime>
+=======
+			<ScaleSpeed>0.05</ScaleSpeed>
+			<StayingTime>1</StayingTime> 
+            <FallingEnable>0</FallingEnable>
+>>>>>>> falling added
 			<HoldingTime>0.1</HoldingTime>
 			<CollideSize>70</CollideSize>
 			<CircleSize>70</CircleSize>
@@ -1199,8 +1676,14 @@
 			<Position><X>726</X> <Y>462</Y> <Z>0</Z></Position>
 			<Rotation>0</Rotation>
 			<MaxScale>0.1</MaxScale>
+<<<<<<< HEAD
 			<ScaleSpeed>0.005</ScaleSpeed>
 			<StayingTime>1</StayingTime>
+=======
+			<ScaleSpeed>0.05</ScaleSpeed>
+			<StayingTime>1</StayingTime> 
+            <FallingEnable>0</FallingEnable>
+>>>>>>> falling added
 			<HoldingTime>0.1</HoldingTime>
 			<CollideSize>70</CollideSize>
 			<CircleSize>70</CircleSize>
@@ -1213,8 +1696,14 @@
 			<Position><X>746</X> <Y>409</Y> <Z>0</Z></Position>
 			<Rotation>0</Rotation>
 			<MaxScale>0.1</MaxScale>
+<<<<<<< HEAD
 			<ScaleSpeed>0.005</ScaleSpeed>
 			<StayingTime>1</StayingTime>
+=======
+			<ScaleSpeed>0.05</ScaleSpeed>
+			<StayingTime>1</StayingTime> 
+            <FallingEnable>0</FallingEnable>
+>>>>>>> falling added
 			<HoldingTime>0.1</HoldingTime>
 			<CollideSize>70</CollideSize>
 			<CircleSize>70</CircleSize>
@@ -1227,8 +1716,14 @@
 			<Position><X>779</X> <Y>339</Y> <Z>0</Z></Position>
 			<Rotation>0</Rotation>
 			<MaxScale>0.1</MaxScale>
+<<<<<<< HEAD
 			<ScaleSpeed>0.005</ScaleSpeed>
 			<StayingTime>1</StayingTime>
+=======
+			<ScaleSpeed>0.05</ScaleSpeed>
+			<StayingTime>1</StayingTime> 
+            <FallingEnable>0</FallingEnable>
+>>>>>>> falling added
 			<HoldingTime>0.1</HoldingTime>
 			<CollideSize>70</CollideSize>
 			<CircleSize>70</CircleSize>
@@ -1241,8 +1736,14 @@
 			<Position><X>721</X> <Y>265</Y> <Z>0</Z></Position>
 			<Rotation>0</Rotation>
 			<MaxScale>0.1</MaxScale>
+<<<<<<< HEAD
 			<ScaleSpeed>0.005</ScaleSpeed>
 			<StayingTime>1</StayingTime>
+=======
+			<ScaleSpeed>0.05</ScaleSpeed>
+			<StayingTime>1</StayingTime> 
+            <FallingEnable>0</FallingEnable>
+>>>>>>> falling added
 			<HoldingTime>0.1</HoldingTime>
 			<CollideSize>70</CollideSize>
 			<CircleSize>70</CircleSize>
@@ -1255,8 +1756,14 @@
 			<Position><X>625</X> <Y>250</Y> <Z>0</Z></Position>
 			<Rotation>0</Rotation>
 			<MaxScale>0.1</MaxScale>
+<<<<<<< HEAD
 			<ScaleSpeed>0.005</ScaleSpeed>
 			<StayingTime>1</StayingTime>
+=======
+			<ScaleSpeed>0.05</ScaleSpeed>
+			<StayingTime>1</StayingTime> 
+            <FallingEnable>0</FallingEnable>
+>>>>>>> falling added
 			<HoldingTime>0.1</HoldingTime>
 			<CollideSize>70</CollideSize>
 			<CircleSize>70</CircleSize>
@@ -1269,8 +1776,14 @@
 			<Position><X>664</X> <Y>221</Y> <Z>0</Z></Position>
 			<Rotation>0</Rotation>
 			<MaxScale>0.1</MaxScale>
+<<<<<<< HEAD
 			<ScaleSpeed>0.005</ScaleSpeed>
 			<StayingTime>1</StayingTime>
+=======
+			<ScaleSpeed>0.05</ScaleSpeed>
+			<StayingTime>1</StayingTime> 
+            <FallingEnable>0</FallingEnable>
+>>>>>>> falling added
 			<HoldingTime>0.1</HoldingTime>
 			<CollideSize>70</CollideSize>
 			<CircleSize>70</CircleSize>
@@ -1283,8 +1796,14 @@
 			<Position><X>711</X> <Y>249</Y> <Z>0</Z></Position>
 			<Rotation>0</Rotation>
 			<MaxScale>0.1</MaxScale>
+<<<<<<< HEAD
 			<ScaleSpeed>0.005</ScaleSpeed>
 			<StayingTime>1</StayingTime>
+=======
+			<ScaleSpeed>0.05</ScaleSpeed>
+			<StayingTime>1</StayingTime> 
+            <FallingEnable>0</FallingEnable>
+>>>>>>> falling added
 			<HoldingTime>0.1</HoldingTime>
 			<CollideSize>70</CollideSize>
 			<CircleSize>70</CircleSize>
@@ -1297,8 +1816,14 @@
 			<Position><X>583</X> <Y>196</Y> <Z>0</Z></Position>
 			<Rotation>0</Rotation>
 			<MaxScale>0.1</MaxScale>
+<<<<<<< HEAD
 			<ScaleSpeed>0.005</ScaleSpeed>
 			<StayingTime>1</StayingTime>
+=======
+			<ScaleSpeed>0.05</ScaleSpeed>
+			<StayingTime>1</StayingTime> 
+            <FallingEnable>0</FallingEnable>
+>>>>>>> falling added
 			<HoldingTime>0.1</HoldingTime>
 			<CollideSize>70</CollideSize>
 			<CircleSize>70</CircleSize>
@@ -1311,8 +1836,14 @@
 			<Position><X>619</X> <Y>178</Y> <Z>0</Z></Position>
 			<Rotation>0</Rotation>
 			<MaxScale>0.1</MaxScale>
+<<<<<<< HEAD
 			<ScaleSpeed>0.005</ScaleSpeed>
 			<StayingTime>1</StayingTime>
+=======
+			<ScaleSpeed>0.05</ScaleSpeed>
+			<StayingTime>1</StayingTime> 
+            <FallingEnable>0</FallingEnable>
+>>>>>>> falling added
 			<HoldingTime>0.1</HoldingTime>
 			<CollideSize>70</CollideSize>
 			<CircleSize>70</CircleSize>
@@ -1325,8 +1856,14 @@
 			<Position><X>664</X> <Y>221</Y> <Z>0</Z></Position>
 			<Rotation>0</Rotation>
 			<MaxScale>0.1</MaxScale>
+<<<<<<< HEAD
 			<ScaleSpeed>0.005</ScaleSpeed>
 			<StayingTime>1</StayingTime>
+=======
+			<ScaleSpeed>0.05</ScaleSpeed>
+			<StayingTime>1</StayingTime> 
+            <FallingEnable>0</FallingEnable>
+>>>>>>> falling added
 			<HoldingTime>0.1</HoldingTime>
 			<CollideSize>70</CollideSize>
 			<CircleSize>70</CircleSize>
@@ -1339,8 +1876,14 @@
 			<Position><X>664</X> <Y>156</Y> <Z>0</Z></Position>
 			<Rotation>0</Rotation>
 			<MaxScale>0.1</MaxScale>
+<<<<<<< HEAD
 			<ScaleSpeed>0.005</ScaleSpeed>
 			<StayingTime>1</StayingTime>
+=======
+			<ScaleSpeed>0.05</ScaleSpeed>
+			<StayingTime>1</StayingTime> 
+            <FallingEnable>0</FallingEnable>
+>>>>>>> falling added
 			<HoldingTime>0.1</HoldingTime>
 			<CollideSize>70</CollideSize>
 			<CircleSize>70</CircleSize>
@@ -1353,8 +1896,14 @@
 			<Position><X>686</X> <Y>118</Y> <Z>0</Z></Position>
 			<Rotation>0</Rotation>
 			<MaxScale>0.1</MaxScale>
+<<<<<<< HEAD
 			<ScaleSpeed>0.005</ScaleSpeed>
 			<StayingTime>1</StayingTime>
+=======
+			<ScaleSpeed>0.05</ScaleSpeed>
+			<StayingTime>1</StayingTime> 
+            <FallingEnable>0</FallingEnable>
+>>>>>>> falling added
 			<HoldingTime>0.1</HoldingTime>
 			<CollideSize>70</CollideSize>
 			<CircleSize>70</CircleSize>
@@ -1367,8 +1916,14 @@
 			<Position><X>682</X> <Y>72</Y> <Z>0</Z></Position>
 			<Rotation>0</Rotation>
 			<MaxScale>0.1</MaxScale>
+<<<<<<< HEAD
 			<ScaleSpeed>0.005</ScaleSpeed>
 			<StayingTime>1</StayingTime>
+=======
+			<ScaleSpeed>0.05</ScaleSpeed>
+			<StayingTime>1</StayingTime> 
+            <FallingEnable>0</FallingEnable>
+>>>>>>> falling added
 			<HoldingTime>0.1</HoldingTime>
 			<CollideSize>70</CollideSize>
 			<CircleSize>70</CircleSize>
@@ -1381,8 +1936,14 @@
 			<Position><X>631</X> <Y>99</Y> <Z>0</Z></Position>
 			<Rotation>0</Rotation>
 			<MaxScale>0.1</MaxScale>
+<<<<<<< HEAD
 			<ScaleSpeed>0.005</ScaleSpeed>
 			<StayingTime>1</StayingTime>
+=======
+			<ScaleSpeed>0.05</ScaleSpeed>
+			<StayingTime>1</StayingTime> 
+            <FallingEnable>0</FallingEnable>
+>>>>>>> falling added
 			<HoldingTime>0.1</HoldingTime>
 			<CollideSize>70</CollideSize>
 			<CircleSize>70</CircleSize>
@@ -1395,8 +1956,14 @@
 			<Position><X>569</X> <Y>132</Y> <Z>0</Z></Position>
 			<Rotation>0</Rotation>
 			<MaxScale>0.1</MaxScale>
+<<<<<<< HEAD
 			<ScaleSpeed>0.005</ScaleSpeed>
 			<StayingTime>1</StayingTime>
+=======
+			<ScaleSpeed>0.05</ScaleSpeed>
+			<StayingTime>1</StayingTime> 
+            <FallingEnable>0</FallingEnable>
+>>>>>>> falling added
 			<HoldingTime>0.1</HoldingTime>
 			<CollideSize>70</CollideSize>
 			<CircleSize>70</CircleSize>
@@ -1409,8 +1976,14 @@
 			<Position><X>747</X> <Y>222</Y> <Z>0</Z></Position>
 			<Rotation>0</Rotation>
 			<MaxScale>0.1</MaxScale>
+<<<<<<< HEAD
 			<ScaleSpeed>0.005</ScaleSpeed>
 			<StayingTime>1</StayingTime>
+=======
+			<ScaleSpeed>0.05</ScaleSpeed>
+			<StayingTime>1</StayingTime> 
+            <FallingEnable>0</FallingEnable>
+>>>>>>> falling added
 			<HoldingTime>0.1</HoldingTime>
 			<CollideSize>70</CollideSize>
 			<CircleSize>70</CircleSize>
@@ -1423,8 +1996,14 @@
 			<Position><X>769</X> <Y>263</Y> <Z>0</Z></Position>
 			<Rotation>0</Rotation>
 			<MaxScale>0.1</MaxScale>
+<<<<<<< HEAD
 			<ScaleSpeed>0.005</ScaleSpeed>
 			<StayingTime>1</StayingTime>
+=======
+			<ScaleSpeed>0.05</ScaleSpeed>
+			<StayingTime>1</StayingTime> 
+            <FallingEnable>0</FallingEnable>
+>>>>>>> falling added
 			<HoldingTime>0.1</HoldingTime>
 			<CollideSize>70</CollideSize>
 			<CircleSize>70</CircleSize>
@@ -1436,8 +2015,14 @@
 			<Position><X>685</X> <Y>311</Y> <Z>0</Z></Position>
 			<Rotation>0</Rotation>
 			<MaxScale>0.1</MaxScale>
+<<<<<<< HEAD
 			<ScaleSpeed>0.005</ScaleSpeed>
 			<StayingTime>1</StayingTime>
+=======
+			<ScaleSpeed>0.05</ScaleSpeed>
+			<StayingTime>1</StayingTime> 
+            <FallingEnable>0</FallingEnable>
+>>>>>>> falling added
 			<HoldingTime>0.1</HoldingTime>
 			<CollideSize>70</CollideSize>
 			<CircleSize>70</CircleSize>
@@ -1449,8 +2034,14 @@
 			<Position><X>658</X> <Y>351</Y> <Z>0</Z></Position>
 			<Rotation>0</Rotation>
 			<MaxScale>0.1</MaxScale>
+<<<<<<< HEAD
 			<ScaleSpeed>0.005</ScaleSpeed>
 			<StayingTime>1</StayingTime>
+=======
+			<ScaleSpeed>0.05</ScaleSpeed>
+			<StayingTime>1</StayingTime> 
+            <FallingEnable>0</FallingEnable>
+>>>>>>> falling added
 			<HoldingTime>0.1</HoldingTime>
 			<CollideSize>70</CollideSize>
 			<CircleSize>70</CircleSize>
@@ -1462,8 +2053,14 @@
 			<Position><X>630</X> <Y>375</Y> <Z>0</Z></Position>
 			<Rotation>0</Rotation>
 			<MaxScale>0.1</MaxScale>
+<<<<<<< HEAD
 			<ScaleSpeed>0.005</ScaleSpeed>
 			<StayingTime>1</StayingTime>
+=======
+			<ScaleSpeed>0.05</ScaleSpeed>
+			<StayingTime>1</StayingTime> 
+            <FallingEnable>0</FallingEnable>
+>>>>>>> falling added
 			<HoldingTime>0.1</HoldingTime>
 			<CollideSize>70</CollideSize>
 			<CircleSize>70</CircleSize>
@@ -1475,8 +2072,14 @@
 			<Position><X>689</X> <Y>410</Y> <Z>0</Z></Position>
 			<Rotation>0</Rotation>
 			<MaxScale>0.1</MaxScale>
+<<<<<<< HEAD
 			<ScaleSpeed>0.005</ScaleSpeed>
 			<StayingTime>1</StayingTime>
+=======
+			<ScaleSpeed>0.05</ScaleSpeed>
+			<StayingTime>1</StayingTime> 
+            <FallingEnable>0</FallingEnable>
+>>>>>>> falling added
 			<HoldingTime>0.1</HoldingTime>
 			<CollideSize>70</CollideSize>
 			<CircleSize>70</CircleSize>
@@ -1488,8 +2091,14 @@
 			<Position><X>695</X> <Y>601</Y> <Z>0</Z></Position>
 			<Rotation>0</Rotation>
 			<MaxScale>0.1</MaxScale>
+<<<<<<< HEAD
 			<ScaleSpeed>0.005</ScaleSpeed>
 			<StayingTime>1</StayingTime>
+=======
+			<ScaleSpeed>0.05</ScaleSpeed>
+			<StayingTime>1</StayingTime> 
+            <FallingEnable>0</FallingEnable>
+>>>>>>> falling added
 			<HoldingTime>0.1</HoldingTime>
 			<CollideSize>70</CollideSize>
 			<CircleSize>70</CircleSize>
@@ -1501,8 +2110,14 @@
 			<Position><X>721</X> <Y>584</Y> <Z>0</Z></Position>
 			<Rotation>0</Rotation>
 			<MaxScale>0.1</MaxScale>
+<<<<<<< HEAD
 			<ScaleSpeed>0.005</ScaleSpeed>
 			<StayingTime>1</StayingTime>
+=======
+			<ScaleSpeed>0.05</ScaleSpeed>
+			<StayingTime>1</StayingTime> 
+            <FallingEnable>0</FallingEnable>
+>>>>>>> falling added
 			<HoldingTime>0.1</HoldingTime>
 			<CollideSize>70</CollideSize>
 			<CircleSize>70</CircleSize>
@@ -1514,8 +2129,14 @@
 			<Position><X>668</X> <Y>283</Y> <Z>0</Z></Position>
 			<Rotation>0</Rotation>
 			<MaxScale>0.1</MaxScale>
+<<<<<<< HEAD
 			<ScaleSpeed>0.005</ScaleSpeed>
 			<StayingTime>1</StayingTime>
+=======
+			<ScaleSpeed>0.05</ScaleSpeed>
+			<StayingTime>1</StayingTime> 
+            <FallingEnable>0</FallingEnable>
+>>>>>>> falling added
 			<HoldingTime>0.1</HoldingTime>
 			<CollideSize>70</CollideSize>
 			<CircleSize>70</CircleSize>
@@ -1527,8 +2148,14 @@
 			<Position><X>726</X> <Y>513</Y> <Z>0</Z></Position>
 			<Rotation>0</Rotation>
 			<MaxScale>0.1</MaxScale>
+<<<<<<< HEAD
 			<ScaleSpeed>0.005</ScaleSpeed>
 			<StayingTime>1</StayingTime>
+=======
+			<ScaleSpeed>0.05</ScaleSpeed>
+			<StayingTime>1</StayingTime> 
+            <FallingEnable>0</FallingEnable>
+>>>>>>> falling added
 			<HoldingTime>0.1</HoldingTime>
 			<CollideSize>70</CollideSize>
 			<CircleSize>70</CircleSize>
@@ -1540,8 +2167,14 @@
 			<Position><X>745</X> <Y>315</Y> <Z>0</Z></Position>
 			<Rotation>0</Rotation>
 			<MaxScale>0.1</MaxScale>
+<<<<<<< HEAD
 			<ScaleSpeed>0.005</ScaleSpeed>
 			<StayingTime>1</StayingTime>
+=======
+			<ScaleSpeed>0.05</ScaleSpeed>
+			<StayingTime>1</StayingTime> 
+            <FallingEnable>0</FallingEnable>
+>>>>>>> falling added
 			<HoldingTime>0.1</HoldingTime>
 			<CollideSize>70</CollideSize>
 			<CircleSize>70</CircleSize>
@@ -1553,8 +2186,14 @@
 			<Position><X>724</X> <Y>358</Y> <Z>0</Z></Position>
 			<Rotation>0</Rotation>
 			<MaxScale>0.1</MaxScale>
+<<<<<<< HEAD
 			<ScaleSpeed>0.005</ScaleSpeed>
 			<StayingTime>1</StayingTime>
+=======
+			<ScaleSpeed>0.05</ScaleSpeed>
+			<StayingTime>1</StayingTime> 
+            <FallingEnable>0</FallingEnable>
+>>>>>>> falling added
 			<HoldingTime>0.1</HoldingTime>
 			<CollideSize>70</CollideSize>
 			<CircleSize>70</CircleSize>
@@ -1566,8 +2205,14 @@
 			<Position><X>714</X> <Y>177</Y> <Z>0</Z></Position>
 			<Rotation>0</Rotation>
 			<MaxScale>0.1</MaxScale>
+<<<<<<< HEAD
 			<ScaleSpeed>0.005</ScaleSpeed>
 			<StayingTime>1</StayingTime>
+=======
+			<ScaleSpeed>0.05</ScaleSpeed>
+			<StayingTime>1</StayingTime> 
+            <FallingEnable>0</FallingEnable>
+>>>>>>> falling added
 			<HoldingTime>0.1</HoldingTime>
 			<CollideSize>70</CollideSize>
 			<CircleSize>70</CircleSize>
@@ -1579,8 +2224,14 @@
 			<Position><X>765</X> <Y>188</Y> <Z>0</Z></Position>
 			<Rotation>0</Rotation>
 			<MaxScale>0.1</MaxScale>
+<<<<<<< HEAD
 			<ScaleSpeed>0.005</ScaleSpeed>
 			<StayingTime>1</StayingTime>
+=======
+			<ScaleSpeed>0.05</ScaleSpeed>
+			<StayingTime>1</StayingTime> 
+            <FallingEnable>0</FallingEnable>
+>>>>>>> falling added
 			<HoldingTime>0.1</HoldingTime>
 			<CollideSize>70</CollideSize>
 			<CircleSize>70</CircleSize>
@@ -1592,8 +2243,14 @@
 			<Position><X>633</X> <Y>318</Y> <Z>0</Z></Position>
 			<Rotation>0</Rotation>
 			<MaxScale>0.1</MaxScale>
+<<<<<<< HEAD
 			<ScaleSpeed>0.005</ScaleSpeed>
 			<StayingTime>1</StayingTime>
+=======
+			<ScaleSpeed>0.05</ScaleSpeed>
+			<StayingTime>1</StayingTime> 
+            <FallingEnable>0</FallingEnable>
+>>>>>>> falling added
 			<HoldingTime>0.1</HoldingTime>
 			<CollideSize>70</CollideSize>
 			<CircleSize>70</CircleSize>
@@ -1605,8 +2262,14 @@
 			<Position><X>614</X> <Y>303</Y> <Z>0</Z></Position>
 			<Rotation>0</Rotation>
 			<MaxScale>0.1</MaxScale>
+<<<<<<< HEAD
 			<ScaleSpeed>0.005</ScaleSpeed>
 			<StayingTime>1</StayingTime>
+=======
+			<ScaleSpeed>0.05</ScaleSpeed>
+			<StayingTime>1</StayingTime> 
+            <FallingEnable>0</FallingEnable>
+>>>>>>> falling added
 			<HoldingTime>0.1</HoldingTime>
 			<CollideSize>70</CollideSize>
 			<CircleSize>70</CircleSize>
@@ -1618,8 +2281,14 @@
 			<Position><X>615</X> <Y>342</Y> <Z>0</Z></Position>
 			<Rotation>0</Rotation>
 			<MaxScale>0.1</MaxScale>
+<<<<<<< HEAD
 			<ScaleSpeed>0.005</ScaleSpeed>
 			<StayingTime>1</StayingTime>
+=======
+			<ScaleSpeed>0.05</ScaleSpeed>
+			<StayingTime>1</StayingTime> 
+            <FallingEnable>0</FallingEnable>
+>>>>>>> falling added
 			<HoldingTime>0.1</HoldingTime>
 			<CollideSize>70</CollideSize>
 			<CircleSize>70</CircleSize>
@@ -1631,8 +2300,14 @@
 			<Position><X>578</X> <Y>333</Y> <Z>0</Z></Position>
 			<Rotation>0</Rotation>
 			<MaxScale>0.1</MaxScale>
+<<<<<<< HEAD
 			<ScaleSpeed>0.005</ScaleSpeed>
 			<StayingTime>1</StayingTime>
+=======
+			<ScaleSpeed>0.05</ScaleSpeed>
+			<StayingTime>1</StayingTime> 
+            <FallingEnable>0</FallingEnable>
+>>>>>>> falling added
 			<HoldingTime>0.1</HoldingTime>
 			<CollideSize>70</CollideSize>
 			<CircleSize>70</CircleSize>
@@ -1644,8 +2319,14 @@
 			<Position><X>644</X> <Y>508</Y> <Z>0</Z></Position>
 			<Rotation>0</Rotation>
 			<MaxScale>0.1</MaxScale>
+<<<<<<< HEAD
 			<ScaleSpeed>0.005</ScaleSpeed>
 			<StayingTime>1</StayingTime>
+=======
+			<ScaleSpeed>0.05</ScaleSpeed>
+			<StayingTime>1</StayingTime> 
+            <FallingEnable>0</FallingEnable>
+>>>>>>> falling added
 			<HoldingTime>0.1</HoldingTime>
 			<CollideSize>70</CollideSize>
 			<CircleSize>70</CircleSize>
@@ -1657,8 +2338,14 @@
 			<Position><X>627</X> <Y>438</Y> <Z>0</Z></Position>
 			<Rotation>0</Rotation>
 			<MaxScale>0.1</MaxScale>
+<<<<<<< HEAD
 			<ScaleSpeed>0.005</ScaleSpeed>
 			<StayingTime>1</StayingTime>
+=======
+			<ScaleSpeed>0.05</ScaleSpeed>
+			<StayingTime>1</StayingTime> 
+            <FallingEnable>0</FallingEnable>
+>>>>>>> falling added
 			<HoldingTime>0.1</HoldingTime>
 			<CollideSize>70</CollideSize>
 			<CircleSize>70</CircleSize>
@@ -1670,8 +2357,14 @@
 			<Position><X>742</X> <Y>129</Y> <Z>0</Z></Position>
 			<Rotation>0</Rotation>
 			<MaxScale>0.1</MaxScale>
+<<<<<<< HEAD
 			<ScaleSpeed>0.005</ScaleSpeed>
 			<StayingTime>1</StayingTime>
+=======
+			<ScaleSpeed>0.05</ScaleSpeed>
+			<StayingTime>1</StayingTime> 
+            <FallingEnable>0</FallingEnable>
+>>>>>>> falling added
 			<HoldingTime>0.1</HoldingTime>
 			<CollideSize>70</CollideSize>
 			<CircleSize>70</CircleSize>
@@ -1683,8 +2376,14 @@
 			<Position><X>607</X> <Y>427</Y> <Z>0</Z></Position>
 			<Rotation>0</Rotation>
 			<MaxScale>0.1</MaxScale>
+<<<<<<< HEAD
 			<ScaleSpeed>0.005</ScaleSpeed>
 			<StayingTime>1</StayingTime>
+=======
+			<ScaleSpeed>0.05</ScaleSpeed>
+			<StayingTime>1</StayingTime> 
+            <FallingEnable>0</FallingEnable>
+>>>>>>> falling added
 			<HoldingTime>0.1</HoldingTime>
 			<CollideSize>70</CollideSize>
 			<CircleSize>70</CircleSize>
@@ -1696,8 +2395,14 @@
 			<Position><X>778</X> <Y>450</Y> <Z>0</Z></Position>
 			<Rotation>0</Rotation>
 			<MaxScale>0.1</MaxScale>
+<<<<<<< HEAD
 			<ScaleSpeed>0.005</ScaleSpeed>
 			<StayingTime>1</StayingTime>
+=======
+			<ScaleSpeed>0.05</ScaleSpeed>
+			<StayingTime>1</StayingTime> 
+            <FallingEnable>0</FallingEnable>
+>>>>>>> falling added
 			<HoldingTime>0.1</HoldingTime>
 			<CollideSize>70</CollideSize>
 			<CircleSize>70</CircleSize>
@@ -1709,8 +2414,14 @@
 			<Position><X>689</X> <Y>473</Y> <Z>10</Z></Position>
 			<Rotation>0</Rotation>
 			<MaxScale>0.01</MaxScale>
+<<<<<<< HEAD
 			<ScaleSpeed>0.005</ScaleSpeed>
 			<StayingTime>5</StayingTime>
+=======
+			<ScaleSpeed>0.05</ScaleSpeed>
+			<StayingTime>5</StayingTime> 
+            <FallingEnable>0</FallingEnable>
+>>>>>>> falling added
 			<HoldingTime>0.1</HoldingTime>	
 			<CollideSize>70</CollideSize>
 			<CircleSize>70</CircleSize>
@@ -1722,8 +2433,14 @@
 			<Position><X>749</X> <Y>391</Y> <Z>10</Z></Position>
 			<Rotation>0</Rotation>
 			<MaxScale>0.01</MaxScale>
+<<<<<<< HEAD
 			<ScaleSpeed>0.005</ScaleSpeed>
 			<StayingTime>5</StayingTime>
+=======
+			<ScaleSpeed>0.05</ScaleSpeed>
+			<StayingTime>5</StayingTime> 
+            <FallingEnable>0</FallingEnable>
+>>>>>>> falling added
 			<HoldingTime>0.1</HoldingTime>	
 			<CollideSize>70</CollideSize>
 			<CircleSize>70</CircleSize>
@@ -1735,8 +2452,14 @@
 			<Position><X>637</X> <Y>312</Y> <Z>10</Z></Position>
 			<Rotation>0</Rotation>
 			<MaxScale>0.01</MaxScale>
+<<<<<<< HEAD
 			<ScaleSpeed>0.005</ScaleSpeed>
 			<StayingTime>1</StayingTime>
+=======
+			<ScaleSpeed>0.05</ScaleSpeed>
+			<StayingTime>1</StayingTime> 
+            <FallingEnable>0</FallingEnable>
+>>>>>>> falling added
 			<HoldingTime>0.1</HoldingTime>
 			<CollideSize>70</CollideSize>
 			<CircleSize>70</CircleSize>
@@ -1748,8 +2471,14 @@
 			<Position><X>750</X> <Y>214</Y> <Z>10</Z></Position>
 			<Rotation>0</Rotation>
 			<MaxScale>0.01</MaxScale>
+<<<<<<< HEAD
 			<ScaleSpeed>0.005</ScaleSpeed>
 			<StayingTime>1</StayingTime>
+=======
+			<ScaleSpeed>0.05</ScaleSpeed>
+			<StayingTime>1</StayingTime> 
+            <FallingEnable>0</FallingEnable>
+>>>>>>> falling added
 			<HoldingTime>0.1</HoldingTime>
 			<CollideSize>70</CollideSize>
 			<CircleSize>70</CircleSize>
@@ -1758,7 +2487,8 @@
 		</Model>
 
 	</GroupObj>
-	<StayingTime>4</StayingTime>
+	<StayingTime>4</StayingTime> 
+            <FallingEnable>0</FallingEnable>
 </Group>
 
 
@@ -1771,8 +2501,14 @@
 			<Position><X>935</X> <Y>680</Y> <Z>0</Z></Position>
 			<Rotation>0</Rotation>
 			<MaxScale>0.15</MaxScale>
+<<<<<<< HEAD
 			<ScaleSpeed>0.005</ScaleSpeed>
 			<StayingTime>5</StayingTime>
+=======
+			<ScaleSpeed>0.05</ScaleSpeed>
+			<StayingTime>5</StayingTime> 
+            <FallingEnable>0</FallingEnable>
+>>>>>>> falling added
 			<HoldingTime>0.1</HoldingTime>	
 			<CollideSize>70</CollideSize>
 			<CircleSize>70</CircleSize>
@@ -1784,8 +2520,14 @@
 			<Position><X>914</X> <Y>645</Y> <Z>0</Z></Position>
 			<Rotation>0</Rotation>
 		<MaxScale>0.15</MaxScale>
+<<<<<<< HEAD
 			<ScaleSpeed>0.005</ScaleSpeed>
 			<StayingTime>5</StayingTime>
+=======
+			<ScaleSpeed>0.05</ScaleSpeed>
+			<StayingTime>5</StayingTime> 
+            <FallingEnable>0</FallingEnable>
+>>>>>>> falling added
 			<HoldingTime>0.1</HoldingTime>	
 			<CollideSize>70</CollideSize>
 			<CircleSize>70</CircleSize>
@@ -1797,8 +2539,14 @@
 			<Position><X>961</X> <Y>639</Y> <Z>0</Z></Position>
 			<Rotation>0</Rotation>
 		<MaxScale>0.15</MaxScale>
+<<<<<<< HEAD
 			<ScaleSpeed>0.005</ScaleSpeed>
 			<StayingTime>1</StayingTime>
+=======
+			<ScaleSpeed>0.05</ScaleSpeed>
+			<StayingTime>1</StayingTime> 
+            <FallingEnable>0</FallingEnable>
+>>>>>>> falling added
 			<HoldingTime>0.1</HoldingTime>
 			<CollideSize>70</CollideSize>
 			<CircleSize>70</CircleSize>
@@ -1810,8 +2558,14 @@
 			<Position><X>851</X> <Y>593</Y> <Z>0</Z></Position>
 			<Rotation>0</Rotation>
 		<MaxScale>0.15</MaxScale>
+<<<<<<< HEAD
 			<ScaleSpeed>0.005</ScaleSpeed>
 			<StayingTime>1</StayingTime>
+=======
+			<ScaleSpeed>0.05</ScaleSpeed>
+			<StayingTime>1</StayingTime> 
+            <FallingEnable>0</FallingEnable>
+>>>>>>> falling added
 			<HoldingTime>0.1</HoldingTime>
 			<CollideSize>70</CollideSize>
 			<CircleSize>70</CircleSize>
@@ -1823,8 +2577,14 @@
 			<Position><X>913</X> <Y>585</Y> <Z>0</Z></Position>
 			<Rotation>0</Rotation>
 			<MaxScale>0.15</MaxScale>
+<<<<<<< HEAD
 			<ScaleSpeed>0.005</ScaleSpeed>
 			<StayingTime>1</StayingTime>
+=======
+			<ScaleSpeed>0.05</ScaleSpeed>
+			<StayingTime>1</StayingTime> 
+            <FallingEnable>0</FallingEnable>
+>>>>>>> falling added
 			<HoldingTime>0.1</HoldingTime>
 			<CollideSize>70</CollideSize>
 			<CircleSize>70</CircleSize>
@@ -1836,8 +2596,14 @@
 			<Position><X>979</X> <Y>588</Y> <Z>0</Z></Position>
 			<Rotation>0</Rotation>
 			<MaxScale>0.15</MaxScale>
+<<<<<<< HEAD
 			<ScaleSpeed>0.005</ScaleSpeed>
 			<StayingTime>1</StayingTime>
+=======
+			<ScaleSpeed>0.05</ScaleSpeed>
+			<StayingTime>1</StayingTime> 
+            <FallingEnable>0</FallingEnable>
+>>>>>>> falling added
 			<HoldingTime>0.1</HoldingTime>
 			<CollideSize>70</CollideSize>
 			<CircleSize>70</CircleSize>
@@ -1849,8 +2615,14 @@
 			<Position><X>1108</X> <Y>543</Y> <Z>0</Z></Position>
 			<Rotation>0</Rotation>
 		<MaxScale>0.15</MaxScale>
+<<<<<<< HEAD
 			<ScaleSpeed>0.005</ScaleSpeed>
 			<StayingTime>1</StayingTime>
+=======
+			<ScaleSpeed>0.05</ScaleSpeed>
+			<StayingTime>1</StayingTime> 
+            <FallingEnable>0</FallingEnable>
+>>>>>>> falling added
 			<HoldingTime>0.1</HoldingTime>
 			<CollideSize>70</CollideSize>
 			<CircleSize>70</CircleSize>
@@ -1862,8 +2634,14 @@
 			<Position><X>1003</X> <Y>456</Y> <Z>0</Z></Position>
 			<Rotation>0</Rotation>
 		<MaxScale>0.15</MaxScale>
+<<<<<<< HEAD
 			<ScaleSpeed>0.005</ScaleSpeed>
 			<StayingTime>1</StayingTime>
+=======
+			<ScaleSpeed>0.05</ScaleSpeed>
+			<StayingTime>1</StayingTime> 
+            <FallingEnable>0</FallingEnable>
+>>>>>>> falling added
 			<HoldingTime>0.1</HoldingTime>
 			<CollideSize>70</CollideSize>
 			<CircleSize>70</CircleSize>
@@ -1875,8 +2653,14 @@
 			<Position><X>1054</X> <Y>439</Y> <Z>0</Z></Position>
 			<Rotation>0</Rotation>
 			<MaxScale>0.15</MaxScale>
+<<<<<<< HEAD
 			<ScaleSpeed>0.005</ScaleSpeed>
 			<StayingTime>1</StayingTime>
+=======
+			<ScaleSpeed>0.05</ScaleSpeed>
+			<StayingTime>1</StayingTime> 
+            <FallingEnable>0</FallingEnable>
+>>>>>>> falling added
 			<HoldingTime>0.1</HoldingTime>
 			<CollideSize>70</CollideSize>
 			<CircleSize>70</CircleSize>
@@ -1888,8 +2672,14 @@
 			<Position><X>943</X> <Y>422</Y> <Z>0</Z></Position>
 			<Rotation>0</Rotation>
 		<MaxScale>0.15</MaxScale>
+<<<<<<< HEAD
 			<ScaleSpeed>0.005</ScaleSpeed>
 			<StayingTime>1</StayingTime>
+=======
+			<ScaleSpeed>0.05</ScaleSpeed>
+			<StayingTime>1</StayingTime> 
+            <FallingEnable>0</FallingEnable>
+>>>>>>> falling added
 			<HoldingTime>0.1</HoldingTime>
 			<CollideSize>70</CollideSize>
 			<CircleSize>70</CircleSize>
@@ -1901,8 +2691,14 @@
 			<Position><X>894</X> <Y>390</Y> <Z>0</Z></Position>
 			<Rotation>0</Rotation>
 			<MaxScale>0.15</MaxScale>
+<<<<<<< HEAD
 			<ScaleSpeed>0.005</ScaleSpeed>
 			<StayingTime>1</StayingTime>
+=======
+			<ScaleSpeed>0.05</ScaleSpeed>
+			<StayingTime>1</StayingTime> 
+            <FallingEnable>0</FallingEnable>
+>>>>>>> falling added
 			<HoldingTime>0.1</HoldingTime>
 			<CollideSize>70</CollideSize>
 			<CircleSize>70</CircleSize>
@@ -1914,8 +2710,14 @@
 			<Position><X>824</X> <Y>417</Y> <Z>0</Z></Position>
 			<Rotation>0</Rotation>
 			<MaxScale>0.15</MaxScale>
+<<<<<<< HEAD
 			<ScaleSpeed>0.005</ScaleSpeed>
 			<StayingTime>1</StayingTime>
+=======
+			<ScaleSpeed>0.05</ScaleSpeed>
+			<StayingTime>1</StayingTime> 
+            <FallingEnable>0</FallingEnable>
+>>>>>>> falling added
 			<HoldingTime>0.1</HoldingTime>
 			<CollideSize>70</CollideSize>
 			<CircleSize>70</CircleSize>
@@ -1927,8 +2729,14 @@
 			<Position><X>766</X> <Y>444</Y> <Z>0</Z></Position>
 			<Rotation>0</Rotation>
 		<MaxScale>0.15</MaxScale>
+<<<<<<< HEAD
 			<ScaleSpeed>0.005</ScaleSpeed>
 			<StayingTime>1</StayingTime>
+=======
+			<ScaleSpeed>0.05</ScaleSpeed>
+			<StayingTime>1</StayingTime> 
+            <FallingEnable>0</FallingEnable>
+>>>>>>> falling added
 			<HoldingTime>0.1</HoldingTime>
 			<CollideSize>70</CollideSize>
 			<CircleSize>70</CircleSize>
@@ -1940,8 +2748,14 @@
 			<Position><X>800</X> <Y>513</Y> <Z>0</Z></Position>
 			<Rotation>0</Rotation>
 			<MaxScale>0.15</MaxScale>
+<<<<<<< HEAD
 			<ScaleSpeed>0.005</ScaleSpeed>
 			<StayingTime>1</StayingTime>
+=======
+			<ScaleSpeed>0.05</ScaleSpeed>
+			<StayingTime>1</StayingTime> 
+            <FallingEnable>0</FallingEnable>
+>>>>>>> falling added
 			<HoldingTime>0.1</HoldingTime>
 			<CollideSize>70</CollideSize>
 			<CircleSize>70</CircleSize>
@@ -1953,8 +2767,14 @@
 			<Position><X>839</X> <Y>569</Y> <Z>0</Z></Position>
 			<Rotation>0</Rotation>
 		<MaxScale>0.15</MaxScale>
+<<<<<<< HEAD
 			<ScaleSpeed>0.005</ScaleSpeed>
 			<StayingTime>1</StayingTime>
+=======
+			<ScaleSpeed>0.05</ScaleSpeed>
+			<StayingTime>1</StayingTime> 
+            <FallingEnable>0</FallingEnable>
+>>>>>>> falling added
 			<HoldingTime>0.1</HoldingTime>
 			<CollideSize>70</CollideSize>
 			<CircleSize>70</CircleSize>
@@ -1966,8 +2786,14 @@
 			<Position><X>927</X> <Y>508</Y> <Z>0</Z></Position>
 			<Rotation>0</Rotation>
 			<MaxScale>0.15</MaxScale>
+<<<<<<< HEAD
 			<ScaleSpeed>0.005</ScaleSpeed>
 			<StayingTime>1</StayingTime>
+=======
+			<ScaleSpeed>0.05</ScaleSpeed>
+			<StayingTime>1</StayingTime> 
+            <FallingEnable>0</FallingEnable>
+>>>>>>> falling added
 			<HoldingTime>0.1</HoldingTime>
 			<CollideSize>70</CollideSize>
 			<CircleSize>70</CircleSize>
@@ -1979,8 +2805,14 @@
 			<Position><X>931</X> <Y>409</Y> <Z>0</Z></Position>
 			<Rotation>0</Rotation>
 			<MaxScale>0.15</MaxScale>
+<<<<<<< HEAD
 			<ScaleSpeed>0.005</ScaleSpeed>
 			<StayingTime>1</StayingTime>
+=======
+			<ScaleSpeed>0.05</ScaleSpeed>
+			<StayingTime>1</StayingTime> 
+            <FallingEnable>0</FallingEnable>
+>>>>>>> falling added
 			<HoldingTime>0.1</HoldingTime>
 			<CollideSize>70</CollideSize>
 			<CircleSize>70</CircleSize>
@@ -1992,8 +2824,14 @@
 			<Position><X>905</X> <Y>250</Y> <Z>0</Z></Position>
 			<Rotation>0</Rotation>
 			<MaxScale>0.15</MaxScale>
+<<<<<<< HEAD
 			<ScaleSpeed>0.005</ScaleSpeed>
 			<StayingTime>1</StayingTime>
+=======
+			<ScaleSpeed>0.05</ScaleSpeed>
+			<StayingTime>1</StayingTime> 
+            <FallingEnable>0</FallingEnable>
+>>>>>>> falling added
 			<HoldingTime>0.1</HoldingTime>
 			<CollideSize>70</CollideSize>
 			<CircleSize>70</CircleSize>
@@ -2005,8 +2843,14 @@
 			<Position><X>998</X> <Y>309</Y> <Z>0</Z></Position>
 			<Rotation>0</Rotation>
 			<MaxScale>0.15</MaxScale>
+<<<<<<< HEAD
 			<ScaleSpeed>0.005</ScaleSpeed>
 			<StayingTime>1</StayingTime>
+=======
+			<ScaleSpeed>0.05</ScaleSpeed>
+			<StayingTime>1</StayingTime> 
+            <FallingEnable>0</FallingEnable>
+>>>>>>> falling added
 			<HoldingTime>0.1</HoldingTime>
 			<CollideSize>70</CollideSize>
 			<CircleSize>70</CircleSize>
@@ -2018,8 +2862,14 @@
 			<Position><X>1061</X> <Y>362</Y> <Z>0</Z></Position>
 			<Rotation>0</Rotation>
 		<MaxScale>0.15</MaxScale>
+<<<<<<< HEAD
 			<ScaleSpeed>0.005</ScaleSpeed>
 			<StayingTime>1</StayingTime>
+=======
+			<ScaleSpeed>0.05</ScaleSpeed>
+			<StayingTime>1</StayingTime> 
+            <FallingEnable>0</FallingEnable>
+>>>>>>> falling added
 			<HoldingTime>0.1</HoldingTime>
 			<CollideSize>70</CollideSize>
 			<CircleSize>70</CircleSize>
@@ -2031,8 +2881,14 @@
 			<Position><X>1076</X> <Y>417</Y> <Z>0</Z></Position>
 			<Rotation>0</Rotation>
 			<MaxScale>0.15</MaxScale>
+<<<<<<< HEAD
 			<ScaleSpeed>0.005</ScaleSpeed>
 			<StayingTime>1</StayingTime>
+=======
+			<ScaleSpeed>0.05</ScaleSpeed>
+			<StayingTime>1</StayingTime> 
+            <FallingEnable>0</FallingEnable>
+>>>>>>> falling added
 			<HoldingTime>0.1</HoldingTime>
 			<CollideSize>70</CollideSize>
 			<CircleSize>70</CircleSize>
@@ -2044,8 +2900,14 @@
 			<Position><X>844</X> <Y>283</Y> <Z>0</Z></Position>
 			<Rotation>0</Rotation>
 			<MaxScale>0.15</MaxScale>
+<<<<<<< HEAD
 			<ScaleSpeed>0.005</ScaleSpeed>
 			<StayingTime>1</StayingTime>
+=======
+			<ScaleSpeed>0.05</ScaleSpeed>
+			<StayingTime>1</StayingTime> 
+            <FallingEnable>0</FallingEnable>
+>>>>>>> falling added
 			<HoldingTime>0.1</HoldingTime>
 			<CollideSize>70</CollideSize>
 			<CircleSize>70</CircleSize>
@@ -2057,8 +2919,14 @@
 			<Position><X>942</X> <Y>227</Y> <Z>0</Z></Position>
 			<Rotation>0</Rotation>
 			<MaxScale>0.15</MaxScale>
+<<<<<<< HEAD
 			<ScaleSpeed>0.005</ScaleSpeed>
 			<StayingTime>1</StayingTime>
+=======
+			<ScaleSpeed>0.05</ScaleSpeed>
+			<StayingTime>1</StayingTime> 
+            <FallingEnable>0</FallingEnable>
+>>>>>>> falling added
 			<HoldingTime>0.1</HoldingTime>
 			<CollideSize>70</CollideSize>
 			<CircleSize>70</CircleSize>
@@ -2071,8 +2939,14 @@
 			<Position><X>866</X> <Y>540</Y> <Z>0</Z></Position>
 			<Rotation>0</Rotation>
 			<MaxScale>0.15</MaxScale>
+<<<<<<< HEAD
 			<ScaleSpeed>0.005</ScaleSpeed>
 			<StayingTime>1</StayingTime>
+=======
+			<ScaleSpeed>0.05</ScaleSpeed>
+			<StayingTime>1</StayingTime> 
+            <FallingEnable>0</FallingEnable>
+>>>>>>> falling added
 			<HoldingTime>0.1</HoldingTime>
 			<CollideSize>70</CollideSize>
 			<CircleSize>70</CircleSize>
@@ -2084,8 +2958,14 @@
 			<Position><X>842</X> <Y>481</Y> <Z>0</Z></Position>
 			<Rotation>0</Rotation>
 			<MaxScale>0.15</MaxScale>
+<<<<<<< HEAD
 			<ScaleSpeed>0.005</ScaleSpeed>
 			<StayingTime>1</StayingTime>
+=======
+			<ScaleSpeed>0.05</ScaleSpeed>
+			<StayingTime>1</StayingTime> 
+            <FallingEnable>0</FallingEnable>
+>>>>>>> falling added
 			<HoldingTime>0.1</HoldingTime>
 			<CollideSize>70</CollideSize>
 			<CircleSize>70</CircleSize>
@@ -2097,8 +2977,14 @@
 			<Position><X>897</X> <Y>458</Y> <Z>0</Z></Position>
 			<Rotation>0</Rotation>
 			<MaxScale>0.15</MaxScale>
+<<<<<<< HEAD
 			<ScaleSpeed>0.005</ScaleSpeed>
 			<StayingTime>1</StayingTime>
+=======
+			<ScaleSpeed>0.05</ScaleSpeed>
+			<StayingTime>1</StayingTime> 
+            <FallingEnable>0</FallingEnable>
+>>>>>>> falling added
 			<HoldingTime>0.1</HoldingTime>
 			<CollideSize>70</CollideSize>
 			<CircleSize>70</CircleSize>
@@ -2110,8 +2996,14 @@
 			<Position><X>987</X> <Y>543</Y> <Z>0</Z></Position>
 			<Rotation>0</Rotation>
 			<MaxScale>0.15</MaxScale>
+<<<<<<< HEAD
 			<ScaleSpeed>0.005</ScaleSpeed>
 			<StayingTime>1</StayingTime>
+=======
+			<ScaleSpeed>0.05</ScaleSpeed>
+			<StayingTime>1</StayingTime> 
+            <FallingEnable>0</FallingEnable>
+>>>>>>> falling added
 			<HoldingTime>0.1</HoldingTime>
 			<CollideSize>70</CollideSize>
 			<CircleSize>70</CircleSize>
@@ -2123,8 +3015,14 @@
 			<Position><X>1045</X> <Y>518</Y> <Z>0</Z></Position>
 			<Rotation>0</Rotation>
 			<MaxScale>0.15</MaxScale>
+<<<<<<< HEAD
 			<ScaleSpeed>0.005</ScaleSpeed>
 			<StayingTime>1</StayingTime>
+=======
+			<ScaleSpeed>0.05</ScaleSpeed>
+			<StayingTime>1</StayingTime> 
+            <FallingEnable>0</FallingEnable>
+>>>>>>> falling added
 			<HoldingTime>0.1</HoldingTime>
 			<CollideSize>70</CollideSize>
 			<CircleSize>70</CircleSize>
@@ -2136,8 +3034,14 @@
 			<Position><X>830</X> <Y>357</Y> <Z>0</Z></Position>
 			<Rotation>0</Rotation>
 			<MaxScale>0.15</MaxScale>
+<<<<<<< HEAD
 			<ScaleSpeed>0.005</ScaleSpeed>
 			<StayingTime>1</StayingTime>
+=======
+			<ScaleSpeed>0.05</ScaleSpeed>
+			<StayingTime>1</StayingTime> 
+            <FallingEnable>0</FallingEnable>
+>>>>>>> falling added
 			<HoldingTime>0.1</HoldingTime>
 			<CollideSize>70</CollideSize>
 			<CircleSize>70</CircleSize>
@@ -2149,8 +3053,14 @@
 			<Position><X>893</X> <Y>333</Y> <Z>0</Z></Position>
 			<Rotation>0</Rotation>
 			<MaxScale>0.15</MaxScale>
+<<<<<<< HEAD
 			<ScaleSpeed>0.005</ScaleSpeed>
 			<StayingTime>1</StayingTime>
+=======
+			<ScaleSpeed>0.05</ScaleSpeed>
+			<StayingTime>1</StayingTime> 
+            <FallingEnable>0</FallingEnable>
+>>>>>>> falling added
 			<HoldingTime>0.1</HoldingTime>
 			<CollideSize>70</CollideSize>
 			<CircleSize>70</CircleSize>
@@ -2162,8 +3072,14 @@
 			<Position><X>942</X> <Y>349</Y> <Z>0</Z></Position>
 			<Rotation>0</Rotation>
 			<MaxScale>0.15</MaxScale>
+<<<<<<< HEAD
 			<ScaleSpeed>0.005</ScaleSpeed>
 			<StayingTime>1</StayingTime>
+=======
+			<ScaleSpeed>0.05</ScaleSpeed>
+			<StayingTime>1</StayingTime> 
+            <FallingEnable>0</FallingEnable>
+>>>>>>> falling added
 			<HoldingTime>0.1</HoldingTime>
 			<CollideSize>70</CollideSize>
 			<CircleSize>70</CircleSize>
@@ -2175,8 +3091,14 @@
 			<Position><X>1005</X> <Y>391</Y> <Z>0</Z></Position>
 			<Rotation>0</Rotation>
 			<MaxScale>0.1</MaxScale>
+<<<<<<< HEAD
 			<ScaleSpeed>0.005</ScaleSpeed>
 			<StayingTime>1</StayingTime>
+=======
+			<ScaleSpeed>0.05</ScaleSpeed>
+			<StayingTime>1</StayingTime> 
+            <FallingEnable>0</FallingEnable>
+>>>>>>> falling added
 			<HoldingTime>0.1</HoldingTime>
 			<CollideSize>70</CollideSize>
 			<CircleSize>70</CircleSize>
@@ -2188,8 +3110,14 @@
 			<Position><X>1106</X> <Y>487</Y> <Z>0</Z></Position>
 			<Rotation>0</Rotation>
 			<MaxScale>0.15</MaxScale>
+<<<<<<< HEAD
 			<ScaleSpeed>0.005</ScaleSpeed>
 			<StayingTime>1</StayingTime>
+=======
+			<ScaleSpeed>0.05</ScaleSpeed>
+			<StayingTime>1</StayingTime> 
+            <FallingEnable>0</FallingEnable>
+>>>>>>> falling added
 			<HoldingTime>0.1</HoldingTime>
 			<CollideSize>70</CollideSize>
 			<CircleSize>70</CircleSize>
@@ -2201,8 +3129,14 @@
 			<Position><X>1041</X> <Y>618</Y> <Z>0</Z></Position>
 			<Rotation>0</Rotation>
 			<MaxScale>0.15</MaxScale>
+<<<<<<< HEAD
 			<ScaleSpeed>0.005</ScaleSpeed>
 			<StayingTime>1</StayingTime>
+=======
+			<ScaleSpeed>0.05</ScaleSpeed>
+			<StayingTime>1</StayingTime> 
+            <FallingEnable>0</FallingEnable>
+>>>>>>> falling added
 			<HoldingTime>0.1</HoldingTime>
 			<CollideSize>70</CollideSize>
 			<CircleSize>70</CircleSize>
@@ -2214,8 +3148,14 @@
 			<Position><X>1125</X> <Y>414</Y> <Z>0</Z></Position>
 			<Rotation>0</Rotation>
 			<MaxScale>0.1</MaxScale>
+<<<<<<< HEAD
 			<ScaleSpeed>0.005</ScaleSpeed>
 			<StayingTime>1</StayingTime>
+=======
+			<ScaleSpeed>0.05</ScaleSpeed>
+			<StayingTime>1</StayingTime> 
+            <FallingEnable>0</FallingEnable>
+>>>>>>> falling added
 			<HoldingTime>0.1</HoldingTime>
 			<CollideSize>70</CollideSize>
 			<CircleSize>70</CircleSize>
@@ -2227,8 +3167,14 @@
 			<Position><X>1024</X> <Y>272</Y> <Z>0</Z></Position>
 			<Rotation>0</Rotation>
 			<MaxScale>0.15</MaxScale>
+<<<<<<< HEAD
 			<ScaleSpeed>0.005</ScaleSpeed>
 			<StayingTime>1</StayingTime>
+=======
+			<ScaleSpeed>0.05</ScaleSpeed>
+			<StayingTime>1</StayingTime> 
+            <FallingEnable>0</FallingEnable>
+>>>>>>> falling added
 			<HoldingTime>0.1</HoldingTime>
 			<CollideSize>70</CollideSize>
 			<CircleSize>70</CircleSize>
@@ -2240,8 +3186,14 @@
 			<Position><X>1072</X> <Y>308</Y> <Z>0</Z></Position>
 			<Rotation>0</Rotation>
 			<MaxScale>0.15</MaxScale>
+<<<<<<< HEAD
 			<ScaleSpeed>0.005</ScaleSpeed>
 			<StayingTime>1</StayingTime>
+=======
+			<ScaleSpeed>0.05</ScaleSpeed>
+			<StayingTime>1</StayingTime> 
+            <FallingEnable>0</FallingEnable>
+>>>>>>> falling added
 			<HoldingTime>0.1</HoldingTime>
 			<CollideSize>70</CollideSize>
 			<CircleSize>70</CircleSize>
@@ -2253,8 +3205,14 @@
 			<Position><X>706</X> <Y>316</Y> <Z>0</Z></Position>
 			<Rotation>0</Rotation>
 			<MaxScale>0.1</MaxScale>
+<<<<<<< HEAD
 			<ScaleSpeed>0.005</ScaleSpeed>
 			<StayingTime>1</StayingTime>
+=======
+			<ScaleSpeed>0.05</ScaleSpeed>
+			<StayingTime>1</StayingTime> 
+            <FallingEnable>0</FallingEnable>
+>>>>>>> falling added
 			<HoldingTime>0.1</HoldingTime>
 			<CollideSize>70</CollideSize>
 			<CircleSize>70</CircleSize>
@@ -2266,8 +3224,14 @@
 			<Position><X>770</X> <Y>306</Y> <Z>0</Z></Position>
 			<Rotation>0</Rotation>
 			<MaxScale>0.15</MaxScale>
+<<<<<<< HEAD
 			<ScaleSpeed>0.005</ScaleSpeed>
 			<StayingTime>1</StayingTime>
+=======
+			<ScaleSpeed>0.05</ScaleSpeed>
+			<StayingTime>1</StayingTime> 
+            <FallingEnable>0</FallingEnable>
+>>>>>>> falling added
 			<HoldingTime>0.1</HoldingTime>
 			<CollideSize>70</CollideSize>
 			<CircleSize>70</CircleSize>
@@ -2279,8 +3243,14 @@
 			<Position><X>736</X> <Y>336</Y> <Z>0</Z></Position>
 			<Rotation>0</Rotation>
 			<MaxScale>0.15</MaxScale>
+<<<<<<< HEAD
 			<ScaleSpeed>0.005</ScaleSpeed>
 			<StayingTime>1</StayingTime>
+=======
+			<ScaleSpeed>0.05</ScaleSpeed>
+			<StayingTime>1</StayingTime> 
+            <FallingEnable>0</FallingEnable>
+>>>>>>> falling added
 			<HoldingTime>0.1</HoldingTime>
 			<CollideSize>70</CollideSize>
 			<CircleSize>70</CircleSize>
@@ -2292,8 +3262,14 @@
 			<Position><X>868</X> <Y>534</Y> <Z>10</Z></Position>
 			<Rotation>0</Rotation>
 			<MaxScale>0.01</MaxScale>
+<<<<<<< HEAD
 			<ScaleSpeed>0.005</ScaleSpeed>
 			<StayingTime>5</StayingTime>
+=======
+			<ScaleSpeed>0.05</ScaleSpeed>
+			<StayingTime>5</StayingTime> 
+            <FallingEnable>0</FallingEnable>
+>>>>>>> falling added
 			<HoldingTime>0.1</HoldingTime>	
 			<CollideSize>70</CollideSize>
 			<CircleSize>70</CircleSize>
@@ -2305,8 +3281,14 @@
 			<Position><X>1005</X> <Y>462</Y> <Z>10</Z></Position>
 			<Rotation>0</Rotation>
 			<MaxScale>0.01</MaxScale>
+<<<<<<< HEAD
 			<ScaleSpeed>0.005</ScaleSpeed>
 			<StayingTime>5</StayingTime>
+=======
+			<ScaleSpeed>0.05</ScaleSpeed>
+			<StayingTime>5</StayingTime> 
+            <FallingEnable>0</FallingEnable>
+>>>>>>> falling added
 			<HoldingTime>0.1</HoldingTime>	
 			<CollideSize>70</CollideSize>
 			<CircleSize>70</CircleSize>
@@ -2318,8 +3300,14 @@
 			<Position><X>893</X> <Y>343</Y> <Z>10</Z></Position>
 			<Rotation>0</Rotation>
 			<MaxScale>0.01</MaxScale>
+<<<<<<< HEAD
 			<ScaleSpeed>0.005</ScaleSpeed>
 			<StayingTime>1</StayingTime>
+=======
+			<ScaleSpeed>0.05</ScaleSpeed>
+			<StayingTime>1</StayingTime> 
+            <FallingEnable>0</FallingEnable>
+>>>>>>> falling added
 			<HoldingTime>0.1</HoldingTime>
 			<CollideSize>70</CollideSize>
 			<CircleSize>70</CircleSize>
@@ -2331,8 +3319,14 @@
 			<Position><X>1007</X> <Y>299</Y> <Z>10</Z></Position>
 			<Rotation>0</Rotation>
 			<MaxScale>0.01</MaxScale>
+<<<<<<< HEAD
 			<ScaleSpeed>0.005</ScaleSpeed>
 			<StayingTime>1</StayingTime>
+=======
+			<ScaleSpeed>0.05</ScaleSpeed>
+			<StayingTime>1</StayingTime> 
+            <FallingEnable>0</FallingEnable>
+>>>>>>> falling added
 			<HoldingTime>0.1</HoldingTime>
 			<CollideSize>70</CollideSize>
 			<CircleSize>70</CircleSize>
@@ -2340,7 +3334,8 @@
             <ModelColor><R>255</R> <G>255</G> <B>255</B> <A>100</A></ModelColor>
 		</Model>
 			</GroupObj>
-	<StayingTime>4</StayingTime>
+	<StayingTime>4</StayingTime> 
+            <FallingEnable>0</FallingEnable>
 </Group>
 
 <Group>
@@ -2351,8 +3346,14 @@
 			<Position><X>1115</X> <Y>415</Y> <Z>30</Z></Position>
 			<Rotation>0</Rotation>
 			<MaxScale>0.15</MaxScale>
+<<<<<<< HEAD
 			<ScaleSpeed>0.005</ScaleSpeed>
 			<StayingTime>1</StayingTime>
+=======
+			<ScaleSpeed>0.05</ScaleSpeed>
+			<StayingTime>1</StayingTime> 
+            <FallingEnable>0</FallingEnable>
+>>>>>>> falling added
 			<HoldingTime>0.1</HoldingTime>
 			<CollideSize>70</CollideSize>
 			<CircleSize>70</CircleSize>
@@ -2365,8 +3366,14 @@
 			<Position><X>1088</X> <Y>388</Y> <Z>30</Z></Position>
 			<Rotation>0</Rotation>
 			<MaxScale>0.15</MaxScale>
+<<<<<<< HEAD
 			<ScaleSpeed>0.005</ScaleSpeed>
 			<StayingTime>1</StayingTime>
+=======
+			<ScaleSpeed>0.05</ScaleSpeed>
+			<StayingTime>1</StayingTime> 
+            <FallingEnable>0</FallingEnable>
+>>>>>>> falling added
 			<HoldingTime>0.1</HoldingTime>
 			<CollideSize>70</CollideSize>
 			<CircleSize>70</CircleSize>
@@ -2379,8 +3386,14 @@
 			<Position><X>1048</X> <Y>345</Y> <Z>30</Z></Position>
 			<Rotation>0</Rotation>
 			<MaxScale>0.15</MaxScale>
+<<<<<<< HEAD
 			<ScaleSpeed>0.005</ScaleSpeed>
 			<StayingTime>1</StayingTime>
+=======
+			<ScaleSpeed>0.05</ScaleSpeed>
+			<StayingTime>1</StayingTime> 
+            <FallingEnable>0</FallingEnable>
+>>>>>>> falling added
 			<HoldingTime>0.1</HoldingTime>
 			<CollideSize>70</CollideSize>
 			<CircleSize>70</CircleSize>
@@ -2392,8 +3405,14 @@
 			<Position><X>1025</X> <Y>299</Y> <Z>30</Z></Position>
 			<Rotation>0</Rotation>
 			<MaxScale>0.15</MaxScale>
+<<<<<<< HEAD
 			<ScaleSpeed>0.005</ScaleSpeed>
 			<StayingTime>1</StayingTime>
+=======
+			<ScaleSpeed>0.05</ScaleSpeed>
+			<StayingTime>1</StayingTime> 
+            <FallingEnable>0</FallingEnable>
+>>>>>>> falling added
 			<HoldingTime>0.1</HoldingTime>
 			<CollideSize>70</CollideSize>
 			<CircleSize>70</CircleSize>
@@ -2405,8 +3424,14 @@
 			<Position><X>1001</X> <Y>262</Y> <Z>30</Z></Position>
 			<Rotation>0</Rotation>
 			<MaxScale>0.15</MaxScale>
+<<<<<<< HEAD
 			<ScaleSpeed>0.005</ScaleSpeed>
 			<StayingTime>1</StayingTime>
+=======
+			<ScaleSpeed>0.05</ScaleSpeed>
+			<StayingTime>1</StayingTime> 
+            <FallingEnable>0</FallingEnable>
+>>>>>>> falling added
 			<HoldingTime>0.1</HoldingTime>
 			<CollideSize>70</CollideSize>
 			<CircleSize>70</CircleSize>
@@ -2418,8 +3443,14 @@
 			<Position><X>979</X> <Y>206</Y> <Z>30</Z></Position>
 			<Rotation>0</Rotation>
 			<MaxScale>0.15</MaxScale>
+<<<<<<< HEAD
 			<ScaleSpeed>0.005</ScaleSpeed>
 			<StayingTime>1</StayingTime>
+=======
+			<ScaleSpeed>0.05</ScaleSpeed>
+			<StayingTime>1</StayingTime> 
+            <FallingEnable>0</FallingEnable>
+>>>>>>> falling added
 			<HoldingTime>0.1</HoldingTime>
 			<CollideSize>70</CollideSize>
 			<CircleSize>70</CircleSize>
@@ -2431,8 +3462,14 @@
 			<Position><X>1037</X> <Y>151</Y> <Z>30</Z></Position>
 			<Rotation>0</Rotation>
 			<MaxScale>0.15</MaxScale>
+<<<<<<< HEAD
 			<ScaleSpeed>0.005</ScaleSpeed>
 			<StayingTime>1</StayingTime>
+=======
+			<ScaleSpeed>0.05</ScaleSpeed>
+			<StayingTime>1</StayingTime> 
+            <FallingEnable>0</FallingEnable>
+>>>>>>> falling added
 			<HoldingTime>0.1</HoldingTime>
 			<CollideSize>70</CollideSize>
 			<CircleSize>70</CircleSize>
@@ -2444,8 +3481,14 @@
 			<Position><X>1105</X> <Y>145</Y> <Z>30</Z></Position>
 			<Rotation>0</Rotation>
 			<MaxScale>0.15</MaxScale>
+<<<<<<< HEAD
 			<ScaleSpeed>0.005</ScaleSpeed>
 			<StayingTime>1</StayingTime>
+=======
+			<ScaleSpeed>0.05</ScaleSpeed>
+			<StayingTime>1</StayingTime> 
+            <FallingEnable>0</FallingEnable>
+>>>>>>> falling added
 			<HoldingTime>0.1</HoldingTime>
 			<CollideSize>70</CollideSize>
 			<CircleSize>70</CircleSize>
@@ -2457,8 +3500,14 @@
 			<Position><X>1176</X> <Y>176</Y> <Z>30</Z></Position>
 			<Rotation>0</Rotation>
 			<MaxScale>0.15</MaxScale>
+<<<<<<< HEAD
 			<ScaleSpeed>0.005</ScaleSpeed>
 			<StayingTime>1</StayingTime>
+=======
+			<ScaleSpeed>0.05</ScaleSpeed>
+			<StayingTime>1</StayingTime> 
+            <FallingEnable>0</FallingEnable>
+>>>>>>> falling added
 			<HoldingTime>0.1</HoldingTime>
 			<CollideSize>70</CollideSize>
 			<CircleSize>70</CircleSize>
@@ -2470,8 +3519,14 @@
 			<Position><X>12014</X> <Y>223</Y> <Z>30</Z></Position>
 			<Rotation>0</Rotation>
 			<MaxScale>0.15</MaxScale>
+<<<<<<< HEAD
 			<ScaleSpeed>0.005</ScaleSpeed>
 			<StayingTime>1</StayingTime>
+=======
+			<ScaleSpeed>0.05</ScaleSpeed>
+			<StayingTime>1</StayingTime> 
+            <FallingEnable>0</FallingEnable>
+>>>>>>> falling added
 			<HoldingTime>0.1</HoldingTime>
 			<CollideSize>70</CollideSize>
 			<CircleSize>70</CircleSize>
@@ -2483,8 +3538,14 @@
 			<Position><X>1221</X> <Y>271</Y> <Z>30</Z></Position>
 			<Rotation>0</Rotation>
 			<MaxScale>0.15</MaxScale>
+<<<<<<< HEAD
 			<ScaleSpeed>0.005</ScaleSpeed>
 			<StayingTime>1</StayingTime>
+=======
+			<ScaleSpeed>0.05</ScaleSpeed>
+			<StayingTime>1</StayingTime> 
+            <FallingEnable>0</FallingEnable>
+>>>>>>> falling added
 			<HoldingTime>0.1</HoldingTime>
 			<CollideSize>70</CollideSize>
 			<CircleSize>70</CircleSize>
@@ -2496,8 +3557,14 @@
 			<Position><X>1152</X> <Y>247</Y> <Z>30</Z></Position>
 			<Rotation>0</Rotation>
 			<MaxScale>0.15</MaxScale>
+<<<<<<< HEAD
 			<ScaleSpeed>0.005</ScaleSpeed>
 			<StayingTime>1</StayingTime>
+=======
+			<ScaleSpeed>0.05</ScaleSpeed>
+			<StayingTime>1</StayingTime> 
+            <FallingEnable>0</FallingEnable>
+>>>>>>> falling added
 			<HoldingTime>0.1</HoldingTime>
 			<CollideSize>70</CollideSize>
 			<CircleSize>70</CircleSize>
@@ -2509,8 +3576,14 @@
 			<Position><X>1164</X> <Y>228</Y> <Z>30</Z></Position>
 			<Rotation>0</Rotation>
 			<MaxScale>0.15</MaxScale>
+<<<<<<< HEAD
 			<ScaleSpeed>0.005</ScaleSpeed>
 			<StayingTime>1</StayingTime>
+=======
+			<ScaleSpeed>0.05</ScaleSpeed>
+			<StayingTime>1</StayingTime> 
+            <FallingEnable>0</FallingEnable>
+>>>>>>> falling added
 			<HoldingTime>0.1</HoldingTime>
 			<CollideSize>70</CollideSize>
 			<CircleSize>70</CircleSize>
@@ -2522,8 +3595,14 @@
 			<Position><X>1140</X> <Y>320</Y> <Z>30</Z></Position>
 			<Rotation>0</Rotation>
 			<MaxScale>0.15</MaxScale>
+<<<<<<< HEAD
 			<ScaleSpeed>0.005</ScaleSpeed>
 			<StayingTime>1</StayingTime>
+=======
+			<ScaleSpeed>0.05</ScaleSpeed>
+			<StayingTime>1</StayingTime> 
+            <FallingEnable>0</FallingEnable>
+>>>>>>> falling added
 			<HoldingTime>0.1</HoldingTime>
 			<CollideSize>70</CollideSize>
 			<CircleSize>70</CircleSize>
@@ -2535,8 +3614,14 @@
 			<Position><X>1119</X> <Y>268</Y> <Z>30</Z></Position>
 			<Rotation>0</Rotation>
 			<MaxScale>0.15</MaxScale>
+<<<<<<< HEAD
 			<ScaleSpeed>0.005</ScaleSpeed>
 			<StayingTime>1</StayingTime>
+=======
+			<ScaleSpeed>0.05</ScaleSpeed>
+			<StayingTime>1</StayingTime> 
+            <FallingEnable>0</FallingEnable>
+>>>>>>> falling added
 			<HoldingTime>0.1</HoldingTime>
 			<CollideSize>70</CollideSize>
 			<CircleSize>70</CircleSize>
@@ -2548,8 +3633,14 @@
 			<Position><X>1114</X> <Y>197</Y> <Z>30</Z></Position>
 			<Rotation>0</Rotation>
 			<MaxScale>0.15</MaxScale>
+<<<<<<< HEAD
 			<ScaleSpeed>0.005</ScaleSpeed>
 			<StayingTime>1</StayingTime>
+=======
+			<ScaleSpeed>0.05</ScaleSpeed>
+			<StayingTime>1</StayingTime> 
+            <FallingEnable>0</FallingEnable>
+>>>>>>> falling added
 			<HoldingTime>0.1</HoldingTime>
 			<CollideSize>70</CollideSize>
 			<CircleSize>70</CircleSize>
@@ -2562,8 +3653,14 @@
 			<Position><X>1058</X> <Y>240</Y> <Z>30</Z></Position>
 			<Rotation>0</Rotation>
 			<MaxScale>0.15</MaxScale>
+<<<<<<< HEAD
 			<ScaleSpeed>0.005</ScaleSpeed>
 			<StayingTime>1</StayingTime>
+=======
+			<ScaleSpeed>0.05</ScaleSpeed>
+			<StayingTime>1</StayingTime> 
+            <FallingEnable>0</FallingEnable>
+>>>>>>> falling added
 			<HoldingTime>0.1</HoldingTime>
 			<CollideSize>70</CollideSize>
 			<CircleSize>70</CircleSize>
@@ -2575,8 +3672,14 @@
 			<Position><X>1086</X> <Y>216</Y> <Z>30</Z></Position>
 			<Rotation>0</Rotation>
 			<MaxScale>0.15</MaxScale>
+<<<<<<< HEAD
 			<ScaleSpeed>0.005</ScaleSpeed>
 			<StayingTime>1</StayingTime>
+=======
+			<ScaleSpeed>0.05</ScaleSpeed>
+			<StayingTime>1</StayingTime> 
+            <FallingEnable>0</FallingEnable>
+>>>>>>> falling added
 			<HoldingTime>0.1</HoldingTime>
 			<CollideSize>70</CollideSize>
 			<CircleSize>70</CircleSize>
@@ -2588,8 +3691,14 @@
 			<Position><X>1185</X> <Y>340</Y> <Z>30</Z></Position>
 			<Rotation>0</Rotation>
 			<MaxScale>0.15</MaxScale>
+<<<<<<< HEAD
 			<ScaleSpeed>0.005</ScaleSpeed>
 			<StayingTime>1</StayingTime>
+=======
+			<ScaleSpeed>0.05</ScaleSpeed>
+			<StayingTime>1</StayingTime> 
+            <FallingEnable>0</FallingEnable>
+>>>>>>> falling added
 			<HoldingTime>0.1</HoldingTime>
 			<CollideSize>70</CollideSize>
 			<CircleSize>70</CircleSize>
@@ -2602,8 +3711,14 @@
 			<Position><X>1129</X> <Y>346</Y> <Z>30</Z></Position>
 			<Rotation>0</Rotation>
 			<MaxScale>0.15</MaxScale>
+<<<<<<< HEAD
 			<ScaleSpeed>0.005</ScaleSpeed>
 			<StayingTime>1</StayingTime>
+=======
+			<ScaleSpeed>0.05</ScaleSpeed>
+			<StayingTime>1</StayingTime> 
+            <FallingEnable>0</FallingEnable>
+>>>>>>> falling added
 			<HoldingTime>0.1</HoldingTime>
 			<CollideSize>70</CollideSize>
 			<CircleSize>70</CircleSize>
@@ -2612,7 +3727,8 @@
 		</Model>
 	
 	</GroupObj>
-	<StayingTime>4</StayingTime>
+	<StayingTime>4</StayingTime> 
+            <FallingEnable>0</FallingEnable>
 </Group>
 
 

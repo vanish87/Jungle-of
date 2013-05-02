@@ -101,6 +101,8 @@ namespace Jungle
 						file.popTag();
                         
                         
+                        bool falling = file.getValue("FallingEnable", false);
+                        
 						Flower flower;
 						flower.loadModel(url);
 						flower.setPosition(pos.x,pos.y,pos.z);
@@ -113,6 +115,7 @@ namespace Jungle
 						flower.SetCircleSize(circle_size);
 						flower.SetCircleColor(color);
                         flower.SetColor(mcolor);
+                        flower.SetFalling(falling);
 						flower.Enable(false);
 						group_model.push_back(flower);
 						file.popTag();

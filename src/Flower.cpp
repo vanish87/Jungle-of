@@ -43,7 +43,10 @@ namespace Jungle {
     {
         circle_color_ = color;
     }
-
+    void Flower::SetFalling(bool falling)
+    {
+        falling_ = falling;
+    }
     
     void Flower::Update(float frame_time)
     {
@@ -61,9 +64,18 @@ namespace Jungle {
 			}
 			if(time_ > staying_time_)
 			{
-				flower_state_ = FALLING;
-				org_pos_ = pos;
-				time_ = 0;
+                if(falling_)
+                {
+                    flower_state_ = FALLING;
+                    org_pos_ = pos;
+                    time_ = 0;
+                }
+                else
+                {
+                    flower_state_ = DISAPPEARING;
+                    org_pos_ = pos;
+                    time_=0;
+                }
 			}
 			break;
 		case DISAPPEARING:
@@ -92,7 +104,10 @@ namespace Jungle {
 			break;
 		case FALLING:
 			if(pos.y > -10)
+            {
+                //pos.x += sin(ofGetElapsedTimef())* ofRandom(-10,10);
 				pos.y-=3;
+            }
 			else
 			{
 				flower_state_ = DISAPPEARING;
