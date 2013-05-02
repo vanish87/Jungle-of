@@ -3,7 +3,7 @@
 	<GroupObj>
 		<Model>
 			<ObjURL>Environment/shroom_1.obj</ObjURL>
-			<Position><X>150</X> <Y>-10</Y> <Z>0</Z></Position>
+			<Position><X>346</X> <Y>-10</Y> <Z>0</Z></Position>
 			<Rotation>0</Rotation>
 			<MaxScale>0.04</MaxScale>
 			<ScaleSpeed>0.004</ScaleSpeed>
@@ -15,7 +15,7 @@
 		</Model>
 		<Model>
 			<ObjURL>Environment/shroom_2.obj</ObjURL>
-			<Position><X>250</X> <Y>-10</Y> <Z>0</Z></Position>
+			<Position><X>387</X> <Y>-10</Y> <Z>0</Z></Position>
 			<Rotation>0</Rotation>
 			<MaxScale>0.004</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
@@ -27,7 +27,7 @@
 		</Model>
 		<Model>
 			<ObjURL>Environment/shroom_3.obj</ObjURL>
-			<Position><X>350</X> <Y>-10</Y> <Z>0</Z></Position>
+			<Position><X>496</X> <Y>-10</Y> <Z>0</Z></Position>
 			<Rotation>0</Rotation>
 			<MaxScale>0.004</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
@@ -39,7 +39,7 @@
 		</Model>
 		<Model>
 			<ObjURL>Environment/shroom_1.obj</ObjURL>
-			<Position><X>300</X> <Y>-10</Y> <Z>0</Z></Position>
+			<Position><X>542</X> <Y>-10</Y> <Z>0</Z></Position>
 			<Rotation>0</Rotation>
 			<MaxScale>0.04</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
@@ -51,7 +51,7 @@
 		</Model>
 		<Model>
 			<ObjURL>Environment/shroom_2.obj</ObjURL>
-			<Position><X>250</X> <Y>-10</Y> <Z>0</Z></Position>
+			<Position><X>637</X> <Y>-10</Y> <Z>0</Z></Position>
 			<Rotation>0</Rotation>
 			<MaxScale>0.004</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
@@ -63,7 +63,7 @@
 		</Model>
 		<Model>
 			<ObjURL>Environment/shroom_1.obj</ObjURL>
-			<Position><X>400</X> <Y>-10</Y> <Z>0</Z></Position>
+			<Position><X>689</X> <Y>-10</Y> <Z>0</Z></Position>
 			<Rotation>0</Rotation>
 			<MaxScale>0.004</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
@@ -75,7 +75,7 @@
 		</Model>
 		<Model>
 			<ObjURL>Environment/shroom_3.obj</ObjURL>
-			<Position><X>450</X> <Y>-10</Y> <Z>0</Z></Position>
+			<Position><X>749</X> <Y>-10</Y> <Z>0</Z></Position>
 			<Rotation>0</Rotation>
 			<MaxScale>0.04</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
@@ -87,7 +87,7 @@
 		</Model>
 		<Model>
 			<ObjURL>Environment/shroom_2.obj</ObjURL>
-			<Position><X>650</X> <Y>-10</Y> <Z>0</Z></Position>
+			<Position><X>750</X> <Y>-10</Y> <Z>0</Z></Position>
 			<Rotation>0</Rotation>
 			<MaxScale>0.04</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
@@ -99,7 +99,7 @@
 		</Model>
 		<Model>
 			<ObjURL>Environment/shroom_1.obj</ObjURL>
-			<Position><X>850</X> <Y>-10</Y> <Z>0</Z></Position>
+			<Position><X>868</X> <Y>-10</Y> <Z>0</Z></Position>
 			<Rotation>0</Rotation>
 			<MaxScale>0.04</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
@@ -111,7 +111,7 @@
 		</Model>
 		<Model>
 			<ObjURL>Environment/shroom_2.obj</ObjURL>
-			<Position><X>1000</X> <Y>-10</Y> <Z>0</Z></Position>
+			<Position><X>893</X> <Y>-10</Y> <Z>0</Z></Position>
 			<Rotation>0</Rotation>
 			<MaxScale>0.04</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
@@ -123,7 +123,7 @@
 		</Model>
 		<Model>
 			<ObjURL>Environment/shroom_1.obj</ObjURL>
-			<Position><X>1100</X> <Y>-10</Y> <Z>0</Z></Position>
+			<Position><X>1005</X> <Y>-10</Y> <Z>0</Z></Position>
 			<Rotation>0</Rotation>
 			<MaxScale>0.04</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
@@ -135,7 +135,7 @@
 		</Model>
 		<Model>
 			<ObjURL>Environment/shroom_3.obj</ObjURL>
-			<Position><X>1150</X> <Y>-10</Y> <Z>0</Z></Position>
+			<Position><X>1007</X> <Y>-10</Y> <Z>0</Z></Position>
 			<Rotation>0</Rotation>
 			<MaxScale>0.04</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
@@ -522,7 +522,7 @@
 
 
 <Group>
-<Name>Tree3</Name>
+<Name>Tree2</Name>
 	<GroupObj>
 
 		<Model>
@@ -1064,7 +1064,7 @@
 
 
 <Group>
-<Name>Tree4</Name>
+<Name>Tree3</Name>
 	<GroupObj>
 			
 		<Model>
@@ -1632,7 +1632,7 @@
 
 
 <Group>
-<Name>Tree5</Name>
+<Name>Tree4</Name>
 	<GroupObj>
 
 		<Model>
@@ -2169,9 +2169,7 @@
 </Group>
 
 <Group>
-
-
-<Name>Tree6</Name>
+<Name>Tree5</Name>
 	<GroupObj>
 		<Model>
 			<ObjURL>Environment/Leaf_3.obj</ObjURL>
@@ -2432,16 +2430,16 @@
 		<Name>Tree1</Name>
 	</Group>
 	<Group>
-		<Name>Tree3</Name>
+		<Name>Tree2</Name>
 	</Group>
 		<Group>
+		<Name>Tree3</Name>
+	</Group>
+	<Group>
 		<Name>Tree4</Name>
 	</Group>
 	<Group>
 		<Name>Tree5</Name>
-	</Group>
-	<Group>
-		<Name>Tree6</Name>
 	</Group>
 </LevelIndex>
 

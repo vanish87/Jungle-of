@@ -37,6 +37,11 @@ namespace Jungle
 
 	private:
 		SceneModel tree_;
+        SceneModel tree1_;
+        SceneModel tree2_;
+        SceneModel tree3_;
+        SceneModel tree4_;
+        SceneModel tree5_;
         SceneModel bg_1_;
         SceneModel bg_2_;
         SceneModel bg_3_;        
