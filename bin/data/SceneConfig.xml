@@ -157,7 +157,7 @@
 			<Model>
 			<ObjURL>Environment/Leaf_1.obj</ObjURL>
 			<Position><X>1</X> <Y>202</Y> <Z>0</Z></Position>
-			<Rotation>30</Rotation>
+			<Rotation>0</Rotation>
 			<MaxScale>0.1</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>5</StayingTime>
@@ -169,7 +169,7 @@
 		<Model>
 			<ObjURL>Environment/Leaf_3.obj</ObjURL>
 			<Position><X>103</X> <Y>402</Y> <Z>0</Z></Position>
-			<Rotation>30</Rotation>
+			<Rotation>0</Rotation>
 			<MaxScale>0.1</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>5</StayingTime>
@@ -181,7 +181,7 @@
 		<Model>
 			<ObjURL>Environment/Leaf_5.obj</ObjURL>
 			<Position><X>155</X> <Y>474</Y> <Z>0</Z></Position>
-			<Rotation>30</Rotation>
+			<Rotation>0</Rotation>
 			<MaxScale>0.1</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
@@ -193,7 +193,7 @@
 		<Model>
 			<ObjURL>Environment/Leaf_4.obj</ObjURL>
 			<Position><X>279</X> <Y>380</Y> <Z>0</Z></Position>
-			<Rotation>30</Rotation>
+			<Rotation>0</Rotation>
 			<MaxScale>0.1</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
@@ -205,7 +205,7 @@
 		<Model>
 			<ObjURL>Environment/Leaf_1.obj</ObjURL>
 			<Position><X>48</X> <Y>193</Y> <Z>0</Z></Position>
-			<Rotation>30</Rotation>
+			<Rotation>0</Rotation>
 			<MaxScale>0.1</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
@@ -217,7 +217,7 @@
 		<Model>
 			<ObjURL>Environment/Leaf_3.obj</ObjURL>
 			<Position><X>220</X> <Y>240</Y> <Z>0</Z></Position>
-			<Rotation>30</Rotation>
+			<Rotation>0</Rotation>
 			<MaxScale>0.1</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
@@ -229,7 +229,7 @@
 		<Model>
 			<ObjURL>Environment/Leaf_4.obj</ObjURL>
 			<Position><X>312</X> <Y>275</Y> <Z>0</Z></Position>
-			<Rotation>30</Rotation>
+			<Rotation>0</Rotation>
 			<MaxScale>0.1</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
@@ -241,7 +241,7 @@
 		<Model>
 			<ObjURL>Environment/Leaf_5.obj</ObjURL>
 			<Position><X>9</X> <Y>295</Y> <Z>0</Z></Position>
-			<Rotation>30</Rotation>
+			<Rotation>0</Rotation>
 			<MaxScale>0.1</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
@@ -253,7 +253,7 @@
 		<Model>
 			<ObjURL>Environment/Leaf_1.obj</ObjURL>
 			<Position><X>80</X> <Y>270</Y> <Z>0</Z></Position>
-			<Rotation>30</Rotation>
+			<Rotation>0</Rotation>
 			<MaxScale>0.1</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
@@ -265,7 +265,7 @@
 		<Model>
 			<ObjURL>Environment/Leaf_3.obj</ObjURL>
 			<Position><X>158</X> <Y>233</Y> <Z>0</Z></Position>
-			<Rotation>30</Rotation>
+			<Rotation>0</Rotation>
 			<MaxScale>0.1</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
@@ -277,7 +277,7 @@
 		<Model>
 			<ObjURL>Environment/Leaf_4.obj</ObjURL>
 			<Position><X>121</X> <Y>150</Y> <Z>0</Z></Position>
-			<Rotation>30</Rotation>
+			<Rotation>0</Rotation>
 			<MaxScale>0.1</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
@@ -289,7 +289,7 @@
 		<Model>
 			<ObjURL>Environment/Leaf_1.obj</ObjURL>
 			<Position><X>157</X> <Y>320</Y> <Z>0</Z></Position>
-			<Rotation>30</Rotation>
+			<Rotation>0</Rotation>
 			<MaxScale>0.1</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
@@ -301,7 +301,7 @@
 		<Model>
 			<ObjURL>Environment/Leaf_3.obj</ObjURL>
 			<Position><X>155</X> <Y>157</Y> <Z>0</Z></Position>
-			<Rotation>30</Rotation>
+			<Rotation>0</Rotation>
 			<MaxScale>0.1</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
@@ -313,7 +313,7 @@
 		<Model>
 			<ObjURL>Environment/Leaf_4.obj</ObjURL>
 			<Position><X>157</X> <Y>396</Y> <Z>0</Z></Position>
-			<Rotation>30</Rotation>
+			<Rotation>0</Rotation>
 			<MaxScale>0.1</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
@@ -325,7 +325,7 @@
 		<Model>
 			<ObjURL>Environment/Leaf_5.obj</ObjURL>
 			<Position><X>206</X> <Y>446</Y> <Z>0</Z></Position>
-			<Rotation>30</Rotation>
+			<Rotation>0</Rotation>
 			<MaxScale>0.1</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
@@ -337,7 +337,7 @@
 		<Model>
 			<ObjURL>Environment/Leaf_1.obj</ObjURL>
 			<Position><X>222</X> <Y>401</Y> <Z>0</Z></Position>
-			<Rotation>30</Rotation>
+			<Rotation>0</Rotation>
 			<MaxScale>0.1</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
@@ -349,7 +349,7 @@
 		<Model>
 			<ObjURL>Environment/Leaf_3.obj</ObjURL>
 			<Position><X>211</X> <Y>350</Y> <Z>0</Z></Position>
-			<Rotation>30</Rotation>
+			<Rotation>0</Rotation>
 			<MaxScale>0.1</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
@@ -361,7 +361,7 @@
 		<Model>
 			<ObjURL>Environment/Leaf_4.obj</ObjURL>
 			<Position><X>205</X> <Y>313</Y> <Z>0</Z></Position>
-			<Rotation>30</Rotation>
+			<Rotation>0</Rotation>
 			<MaxScale>0.1</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
@@ -373,7 +373,7 @@
 		<Model>
 			<ObjURL>Environment/Leaf_5.obj</ObjURL>
 			<Position><X>274</X> <Y>324</Y> <Z>0</Z></Position>
-			<Rotation>30</Rotation>
+			<Rotation>0</Rotation>
 			<MaxScale>0.1</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
@@ -385,7 +385,7 @@
 		<Model>
 			<ObjURL>Environment/Leaf_1.obj</ObjURL>
 			<Position><X>185</X> <Y>199</Y> <Z>0</Z></Position>
-			<Rotation>30</Rotation>
+			<Rotation>0</Rotation>
 			<MaxScale>0.1</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
@@ -397,7 +397,7 @@
 		<Model>
 			<ObjURL>Environment/Leaf_3.obj</ObjURL>
 			<Position><X>112</X> <Y>224</Y> <Z>0</Z></Position>
-			<Rotation>30</Rotation>
+			<Rotation>0</Rotation>
 			<MaxScale>0.1</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
@@ -409,7 +409,7 @@
 		<Model>
 			<ObjURL>Environment/Leaf_4.obj</ObjURL>
 			<Position><X>45</X> <Y>348</Y> <Z>0</Z></Position>
-			<Rotation>30</Rotation>
+			<Rotation>0</Rotation>
 			<MaxScale>0.1</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
@@ -421,7 +421,7 @@
 		<Model>
 			<ObjURL>Environment/Leaf_5.obj</ObjURL>
 			<Position><X>108</X> <Y>362</Y> <Z>0</Z></Position>
-			<Rotation>30</Rotation>
+			<Rotation>0</Rotation>
 			<MaxScale>0.1</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
@@ -433,7 +433,7 @@
 		<Model>
 			<ObjURL>Environment/Leaf_1.obj</ObjURL>
 			<Position><X>76</X> <Y>322</Y> <Z>0</Z></Position>
-			<Rotation>30</Rotation>
+			<Rotation>0</Rotation>
 			<MaxScale>0.1</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
@@ -445,7 +445,7 @@
 		<Model>
 			<ObjURL>Environment/Leaf_3.obj</ObjURL>
 			<Position><X>243</X> <Y>208</Y> <Z>0</Z></Position>
-			<Rotation>30</Rotation>
+			<Rotation>0</Rotation>
 			<MaxScale>0.1</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
@@ -457,7 +457,7 @@
 		<Model>
 			<ObjURL>Environment/Leaf_4.obj</ObjURL>
 			<Position><X>289</X> <Y>239</Y> <Z>0</Z></Position>
-			<Rotation>30</Rotation>
+			<Rotation>0</Rotation>
 			<MaxScale>0.1</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
@@ -469,7 +469,7 @@
 		<Model>
 			<ObjURL>Environment/Leaf_5.obj</ObjURL>
 			<Position><X>28</X> <Y>253</Y> <Z>0</Z></Position>
-			<Rotation>30</Rotation>
+			<Rotation>0</Rotation>
 			<MaxScale>0.1</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
@@ -481,7 +481,7 @@
 		<Model>
 			<ObjURL>Environment/Leaf_5.obj</ObjURL>
 			<Position><X>95</X> <Y>197</Y> <Z>0</Z></Position>
-			<Rotation>30</Rotation>
+			<Rotation>0</Rotation>
 			<MaxScale>0.1</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
@@ -493,7 +493,7 @@
 		<Model>
 			<ObjURL>Environment/Leaf_5.obj</ObjURL>
 			<Position><X>130</X> <Y>290</Y> <Z>0</Z></Position>
-			<Rotation>30</Rotation>
+			<Rotation>0</Rotation>
 			<MaxScale>0.1</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
@@ -505,7 +505,7 @@
 		<Model>
 			<ObjURL>Environment/Leaf_5.obj</ObjURL>
 			<Position><X>157</X> <Y>440</Y> <Z>0</Z></Position>
-			<Rotation>30</Rotation>
+			<Rotation>0</Rotation>
 			<MaxScale>0.1</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
@@ -528,7 +528,7 @@
 		<Model>
 			<ObjURL>Environment/Leaf_1.obj</ObjURL>
 			<Position><X>450</X> <Y>680</Y> <Z>0</Z></Position>
-			<Rotation>30</Rotation>
+			<Rotation>0</Rotation>
 			<MaxScale>0.15</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>5</StayingTime>
@@ -540,7 +540,7 @@
 		<Model>
 			<ObjURL>Environment/Leaf_3.obj</ObjURL>
 			<Position><X>429</X> <Y>645</Y> <Z>0</Z></Position>
-			<Rotation>30</Rotation>
+			<Rotation>0</Rotation>
 		<MaxScale>0.15</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>5</StayingTime>
@@ -552,7 +552,7 @@
 		<Model>
 			<ObjURL>Environment/Leaf_5.obj</ObjURL>
 			<Position><X>476</X> <Y>639</Y> <Z>0</Z></Position>
-			<Rotation>30</Rotation>
+			<Rotation>0</Rotation>
 		<MaxScale>0.15</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
@@ -564,7 +564,7 @@
 		<Model>
 			<ObjURL>Environment/Leaf_4.obj</ObjURL>
 			<Position><X>366</X> <Y>593</Y> <Z>0</Z></Position>
-			<Rotation>30</Rotation>
+			<Rotation>0</Rotation>
 		<MaxScale>0.15</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
@@ -576,7 +576,7 @@
 		<Model>
 			<ObjURL>Environment/Leaf_1.obj</ObjURL>
 			<Position><X>428</X> <Y>585</Y> <Z>0</Z></Position>
-			<Rotation>30</Rotation>
+			<Rotation>0</Rotation>
 			<MaxScale>0.15</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
@@ -588,7 +588,7 @@
 		<Model>
 			<ObjURL>Environment/Leaf_3.obj</ObjURL>
 			<Position><X>494</X> <Y>588</Y> <Z>0</Z></Position>
-			<Rotation>30</Rotation>
+			<Rotation>0</Rotation>
 			<MaxScale>0.15</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
@@ -600,7 +600,7 @@
 		<Model>
 			<ObjURL>Environment/Leaf_4.obj</ObjURL>
 			<Position><X>623</X> <Y>543</Y> <Z>0</Z></Position>
-			<Rotation>30</Rotation>
+			<Rotation>0</Rotation>
 		<MaxScale>0.15</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
@@ -612,7 +612,7 @@
 		<Model>
 			<ObjURL>Environment/Leaf_5.obj</ObjURL>
 			<Position><X>518</X> <Y>456</Y> <Z>0</Z></Position>
-			<Rotation>30</Rotation>
+			<Rotation>0</Rotation>
 		<MaxScale>0.15</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
@@ -624,7 +624,7 @@
 		<Model>
 			<ObjURL>Environment/Leaf_1.obj</ObjURL>
 			<Position><X>569</X> <Y>439</Y> <Z>0</Z></Position>
-			<Rotation>30</Rotation>
+			<Rotation>0</Rotation>
 			<MaxScale>0.15</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
@@ -636,7 +636,7 @@
 		<Model>
 			<ObjURL>Environment/Leaf_3.obj</ObjURL>
 			<Position><X>458</X> <Y>422</Y> <Z>0</Z></Position>
-			<Rotation>30</Rotation>
+			<Rotation>0</Rotation>
 		<MaxScale>0.15</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
@@ -648,7 +648,7 @@
 		<Model>
 			<ObjURL>Environment/Leaf_4.obj</ObjURL>
 			<Position><X>409</X> <Y>390</Y> <Z>0</Z></Position>
-			<Rotation>30</Rotation>
+			<Rotation>0</Rotation>
 			<MaxScale>0.15</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
@@ -660,7 +660,7 @@
 		<Model>
 			<ObjURL>Environment/Leaf_1.obj</ObjURL>
 			<Position><X>339</X> <Y>417</Y> <Z>0</Z></Position>
-			<Rotation>30</Rotation>
+			<Rotation>0</Rotation>
 			<MaxScale>0.15</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
@@ -672,7 +672,7 @@
 		<Model>
 			<ObjURL>Environment/Leaf_3.obj</ObjURL>
 			<Position><X>281</X> <Y>444</Y> <Z>0</Z></Position>
-			<Rotation>30</Rotation>
+			<Rotation>0</Rotation>
 		<MaxScale>0.15</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
@@ -684,7 +684,7 @@
 		<Model>
 			<ObjURL>Environment/Leaf_4.obj</ObjURL>
 			<Position><X>315</X> <Y>513</Y> <Z>0</Z></Position>
-			<Rotation>30</Rotation>
+			<Rotation>0</Rotation>
 			<MaxScale>0.15</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
@@ -696,7 +696,7 @@
 		<Model>
 			<ObjURL>Environment/Leaf_5.obj</ObjURL>
 			<Position><X>354</X> <Y>569</Y> <Z>0</Z></Position>
-			<Rotation>30</Rotation>
+			<Rotation>0</Rotation>
 		<MaxScale>0.15</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
@@ -708,7 +708,7 @@
 		<Model>
 			<ObjURL>Environment/Leaf_1.obj</ObjURL>
 			<Position><X>442</X> <Y>508</Y> <Z>0</Z></Position>
-			<Rotation>30</Rotation>
+			<Rotation>0</Rotation>
 			<MaxScale>0.15</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
@@ -720,7 +720,7 @@
 		<Model>
 			<ObjURL>Environment/Leaf_3.obj</ObjURL>
 			<Position><X>446</X> <Y>409</Y> <Z>0</Z></Position>
-			<Rotation>30</Rotation>
+			<Rotation>0</Rotation>
 			<MaxScale>0.15</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
@@ -732,7 +732,7 @@
 		<Model>
 			<ObjURL>Environment/Leaf_4.obj</ObjURL>
 			<Position><X>420</X> <Y>250</Y> <Z>0</Z></Position>
-			<Rotation>30</Rotation>
+			<Rotation>0</Rotation>
 			<MaxScale>0.15</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
@@ -744,7 +744,7 @@
 		<Model>
 			<ObjURL>Environment/Leaf_5.obj</ObjURL>
 			<Position><X>513</X> <Y>309</Y> <Z>0</Z></Position>
-			<Rotation>30</Rotation>
+			<Rotation>0</Rotation>
 			<MaxScale>0.15</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
@@ -756,7 +756,7 @@
 		<Model>
 			<ObjURL>Environment/Leaf_1.obj</ObjURL>
 			<Position><X>576</X> <Y>362</Y> <Z>0</Z></Position>
-			<Rotation>30</Rotation>
+			<Rotation>0</Rotation>
 		<MaxScale>0.15</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
@@ -768,7 +768,7 @@
 		<Model>
 			<ObjURL>Environment/Leaf_3.obj</ObjURL>
 			<Position><X>591</X> <Y>417</Y> <Z>0</Z></Position>
-			<Rotation>30</Rotation>
+			<Rotation>0</Rotation>
 			<MaxScale>0.15</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
@@ -780,7 +780,7 @@
 		<Model>
 			<ObjURL>Environment/Leaf_4.obj</ObjURL>
 			<Position><X>359</X> <Y>283</Y> <Z>0</Z></Position>
-			<Rotation>30</Rotation>
+			<Rotation>0</Rotation>
 			<MaxScale>0.15</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
@@ -792,7 +792,7 @@
 		<Model>
 			<ObjURL>Environment/Leaf_5.obj</ObjURL>
 			<Position><X>457</X> <Y>227</Y> <Z>0</Z></Position>
-			<Rotation>30</Rotation>
+			<Rotation>0</Rotation>
 			<MaxScale>0.15</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
@@ -805,7 +805,7 @@
 		<Model>
 			<ObjURL>Environment/Leaf_3.obj</ObjURL>
 			<Position><X>381</X> <Y>540</Y> <Z>0</Z></Position>
-			<Rotation>30</Rotation>
+			<Rotation>0</Rotation>
 			<MaxScale>0.15</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
@@ -817,7 +817,7 @@
 		<Model>
 			<ObjURL>Environment/Leaf_5.obj</ObjURL>
 			<Position><X>357</X> <Y>481</Y> <Z>0</Z></Position>
-			<Rotation>30</Rotation>
+			<Rotation>0</Rotation>
 			<MaxScale>0.15</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
@@ -829,7 +829,7 @@
 		<Model>
 			<ObjURL>Environment/Leaf_4.obj</ObjURL>
 			<Position><X>412</X> <Y>458</Y> <Z>0</Z></Position>
-			<Rotation>30</Rotation>
+			<Rotation>0</Rotation>
 			<MaxScale>0.15</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
@@ -841,7 +841,7 @@
 		<Model>
 			<ObjURL>Environment/Leaf_1.obj</ObjURL>
 			<Position><X>502</X> <Y>543</Y> <Z>0</Z></Position>
-			<Rotation>30</Rotation>
+			<Rotation>0</Rotation>
 			<MaxScale>0.15</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
@@ -853,7 +853,7 @@
 		<Model>
 			<ObjURL>Environment/Leaf_3.obj</ObjURL>
 			<Position><X>560</X> <Y>518</Y> <Z>0</Z></Position>
-			<Rotation>30</Rotation>
+			<Rotation>0</Rotation>
 		<MaxScale>0.15</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
@@ -865,7 +865,7 @@
 		<Model>
 			<ObjURL>Environment/Leaf_5.obj</ObjURL>
 			<Position><X>345</X> <Y>357</Y> <Z>0</Z></Position>
-			<Rotation>30</Rotation>
+			<Rotation>0</Rotation>
 			<MaxScale>0.15</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
@@ -877,7 +877,7 @@
 		<Model>
 			<ObjURL>Environment/Leaf_4.obj</ObjURL>
 			<Position><X>408</X> <Y>333</Y> <Z>0</Z></Position>
-			<Rotation>30</Rotation>
+			<Rotation>0</Rotation>
 			<MaxScale>0.15</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
@@ -889,7 +889,7 @@
 		<Model>
 			<ObjURL>Environment/Leaf_1.obj</ObjURL>
 			<Position><X>457</X> <Y>349</Y> <Z>0</Z></Position>
-			<Rotation>30</Rotation>
+			<Rotation>0</Rotation>
 			<MaxScale>0.15</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
@@ -901,7 +901,7 @@
 		<Model>
 			<ObjURL>Environment/Leaf_3.obj</ObjURL>
 			<Position><X>520</X> <Y>391</Y> <Z>0</Z></Position>
-			<Rotation>30</Rotation>
+			<Rotation>0</Rotation>
 			<MaxScale>0.1</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
@@ -913,7 +913,7 @@
 		<Model>
 			<ObjURL>Environment/Leaf_5.obj</ObjURL>
 			<Position><X>621</X> <Y>487</Y> <Z>0</Z></Position>
-			<Rotation>30</Rotation>
+			<Rotation>0</Rotation>
 			<MaxScale>0.15</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
@@ -925,7 +925,7 @@
 		<Model>
 			<ObjURL>Environment/Leaf_4.obj</ObjURL>
 			<Position><X>556</X> <Y>618</Y> <Z>0</Z></Position>
-			<Rotation>30</Rotation>
+			<Rotation>0</Rotation>
 			<MaxScale>0.15</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
@@ -937,7 +937,7 @@
 		<Model>
 			<ObjURL>Environment/Leaf_1.obj</ObjURL>
 			<Position><X>640</X> <Y>414</Y> <Z>0</Z></Position>
-			<Rotation>30</Rotation>
+			<Rotation>0</Rotation>
 			<MaxScale>0.1</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
@@ -949,7 +949,7 @@
 		<Model>
 			<ObjURL>Environment/Leaf_3.obj</ObjURL>
 			<Position><X>539</X> <Y>272</Y> <Z>0</Z></Position>
-			<Rotation>30</Rotation>
+			<Rotation>0</Rotation>
 			<MaxScale>0.15</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
@@ -961,7 +961,7 @@
 		<Model>
 			<ObjURL>Environment/Leaf_5.obj</ObjURL>
 			<Position><X>587</X> <Y>308</Y> <Z>0</Z></Position>
-			<Rotation>30</Rotation>
+			<Rotation>0</Rotation>
 			<MaxScale>0.15</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
@@ -973,7 +973,7 @@
 		<Model>
 			<ObjURL>Environment/Leaf_4.obj</ObjURL>
 			<Position><X>640</X> <Y>414</Y> <Z>0</Z></Position>
-			<Rotation>30</Rotation>
+			<Rotation>0</Rotation>
 			<MaxScale>0.1</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
@@ -985,7 +985,7 @@
 		<Model>
 			<ObjURL>Environment/Leaf_5.obj</ObjURL>
 			<Position><X>539</X> <Y>272</Y> <Z>0</Z></Position>
-			<Rotation>30</Rotation>
+			<Rotation>0</Rotation>
 			<MaxScale>0.15</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
@@ -997,7 +997,7 @@
 		<Model>
 			<ObjURL>Environment/Leaf_4.obj</ObjURL>
 			<Position><X>587</X> <Y>308</Y> <Z>0</Z></Position>
-			<Rotation>30</Rotation>
+			<Rotation>0</Rotation>
 			<MaxScale>0.15</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
@@ -1638,7 +1638,7 @@
 		<Model>
 			<ObjURL>Environment/Leaf_1.obj</ObjURL>
 			<Position><X>935</X> <Y>680</Y> <Z>0</Z></Position>
-			<Rotation>110</Rotation>
+			<Rotation>0</Rotation>
 			<MaxScale>0.15</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>5</StayingTime>
@@ -1650,7 +1650,7 @@
 		<Model>
 			<ObjURL>Environment/Leaf_3.obj</ObjURL>
 			<Position><X>914</X> <Y>645</Y> <Z>0</Z></Position>
-			<Rotation> 110 </Rotation>
+			<Rotation>0</Rotation>
 		<MaxScale>0.15</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>5</StayingTime>
@@ -1662,7 +1662,7 @@
 		<Model>
 			<ObjURL>Environment/Leaf_5.obj</ObjURL>
 			<Position><X>961</X> <Y>639</Y> <Z>0</Z></Position>
-			<Rotation> 110 </Rotation>
+			<Rotation>0</Rotation>
 		<MaxScale>0.15</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
@@ -1674,7 +1674,7 @@
 		<Model>
 			<ObjURL>Environment/Leaf_4.obj</ObjURL>
 			<Position><X>851</X> <Y>593</Y> <Z>0</Z></Position>
-			<Rotation> 110 </Rotation>
+			<Rotation>0</Rotation>
 		<MaxScale>0.15</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
@@ -1686,7 +1686,7 @@
 		<Model>
 			<ObjURL>Environment/Leaf_1.obj</ObjURL>
 			<Position><X>913</X> <Y>585</Y> <Z>0</Z></Position>
-			<Rotation> 110 </Rotation>
+			<Rotation>0</Rotation>
 			<MaxScale>0.15</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
@@ -1698,7 +1698,7 @@
 		<Model>
 			<ObjURL>Environment/Leaf_3.obj</ObjURL>
 			<Position><X>979</X> <Y>588</Y> <Z>0</Z></Position>
-			<Rotation> 110 </Rotation>
+			<Rotation>0</Rotation>
 			<MaxScale>0.15</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
@@ -1710,7 +1710,7 @@
 		<Model>
 			<ObjURL>Environment/Leaf_4.obj</ObjURL>
 			<Position><X>1108</X> <Y>543</Y> <Z>0</Z></Position>
-			<Rotation> 110 </Rotation>
+			<Rotation>0</Rotation>
 		<MaxScale>0.15</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
@@ -1722,7 +1722,7 @@
 		<Model>
 			<ObjURL>Environment/Leaf_5.obj</ObjURL>
 			<Position><X>1003</X> <Y>456</Y> <Z>0</Z></Position>
-			<Rotation> 110 </Rotation>
+			<Rotation>0</Rotation>
 		<MaxScale>0.15</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
@@ -1734,7 +1734,7 @@
 		<Model>
 			<ObjURL>Environment/Leaf_1.obj</ObjURL>
 			<Position><X>1054</X> <Y>439</Y> <Z>0</Z></Position>
-			<Rotation> 110 </Rotation>
+			<Rotation>0</Rotation>
 			<MaxScale>0.15</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
@@ -1746,7 +1746,7 @@
 		<Model>
 			<ObjURL>Environment/Leaf_3.obj</ObjURL>
 			<Position><X>943</X> <Y>422</Y> <Z>0</Z></Position>
-			<Rotation> 110 </Rotation>
+			<Rotation>0</Rotation>
 		<MaxScale>0.15</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
@@ -1758,7 +1758,7 @@
 		<Model>
 			<ObjURL>Environment/Leaf_4.obj</ObjURL>
 			<Position><X>894</X> <Y>390</Y> <Z>0</Z></Position>
-			<Rotation> 110 </Rotation>
+			<Rotation>0</Rotation>
 			<MaxScale>0.15</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
@@ -1770,7 +1770,7 @@
 		<Model>
 			<ObjURL>Environment/Leaf_1.obj</ObjURL>
 			<Position><X>824</X> <Y>417</Y> <Z>0</Z></Position>
-			<Rotation> 110 </Rotation>
+			<Rotation>0</Rotation>
 			<MaxScale>0.15</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
@@ -1782,7 +1782,7 @@
 		<Model>
 			<ObjURL>Environment/Leaf_3.obj</ObjURL>
 			<Position><X>766</X> <Y>444</Y> <Z>0</Z></Position>
-			<Rotation> 110 </Rotation>
+			<Rotation>0</Rotation>
 		<MaxScale>0.15</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
@@ -1794,7 +1794,7 @@
 		<Model>
 			<ObjURL>Environment/Leaf_4.obj</ObjURL>
 			<Position><X>800</X> <Y>513</Y> <Z>0</Z></Position>
-			<Rotation> 110 </Rotation>
+			<Rotation>0</Rotation>
 			<MaxScale>0.15</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
@@ -1806,7 +1806,7 @@
 		<Model>
 			<ObjURL>Environment/Leaf_5.obj</ObjURL>
 			<Position><X>839</X> <Y>569</Y> <Z>0</Z></Position>
-			<Rotation> 110 </Rotation>
+			<Rotation>0</Rotation>
 		<MaxScale>0.15</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
@@ -1818,7 +1818,7 @@
 		<Model>
 			<ObjURL>Environment/Leaf_1.obj</ObjURL>
 			<Position><X>927</X> <Y>508</Y> <Z>0</Z></Position>
-			<Rotation> 110 </Rotation>
+			<Rotation>0</Rotation>
 			<MaxScale>0.15</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
@@ -1830,7 +1830,7 @@
 		<Model>
 			<ObjURL>Environment/Leaf_3.obj</ObjURL>
 			<Position><X>931</X> <Y>409</Y> <Z>0</Z></Position>
-			<Rotation> 110 </Rotation>
+			<Rotation>0</Rotation>
 			<MaxScale>0.15</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
@@ -1842,7 +1842,7 @@
 		<Model>
 			<ObjURL>Environment/Leaf_4.obj</ObjURL>
 			<Position><X>905</X> <Y>250</Y> <Z>0</Z></Position>
-			<Rotation> 110 </Rotation>
+			<Rotation>0</Rotation>
 			<MaxScale>0.15</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
@@ -1854,7 +1854,7 @@
 		<Model>
 			<ObjURL>Environment/Leaf_5.obj</ObjURL>
 			<Position><X>998</X> <Y>309</Y> <Z>0</Z></Position>
-			<Rotation> 110 </Rotation>
+			<Rotation>0</Rotation>
 			<MaxScale>0.15</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
@@ -1866,7 +1866,7 @@
 		<Model>
 			<ObjURL>Environment/Leaf_1.obj</ObjURL>
 			<Position><X>1061</X> <Y>362</Y> <Z>0</Z></Position>
-			<Rotation> 110 </Rotation>
+			<Rotation>0</Rotation>
 		<MaxScale>0.15</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
@@ -1878,7 +1878,7 @@
 		<Model>
 			<ObjURL>Environment/Leaf_3.obj</ObjURL>
 			<Position><X>1076</X> <Y>417</Y> <Z>0</Z></Position>
-			<Rotation> 110 </Rotation>
+			<Rotation>0</Rotation>
 			<MaxScale>0.15</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
@@ -1890,7 +1890,7 @@
 		<Model>
 			<ObjURL>Environment/Leaf_4.obj</ObjURL>
 			<Position><X>844</X> <Y>283</Y> <Z>0</Z></Position>
-			<Rotation> 110 </Rotation>
+			<Rotation>0</Rotation>
 			<MaxScale>0.15</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
@@ -1902,7 +1902,7 @@
 		<Model>
 			<ObjURL>Environment/Leaf_5.obj</ObjURL>
 			<Position><X>942</X> <Y>227</Y> <Z>0</Z></Position>
-			<Rotation> 110 </Rotation>
+			<Rotation>0</Rotation>
 			<MaxScale>0.15</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
@@ -1915,7 +1915,7 @@
 		<Model>
 			<ObjURL>Environment/Leaf_5.obj</ObjURL>
 			<Position><X>866</X> <Y>540</Y> <Z>0</Z></Position>
-			<Rotation> 110 </Rotation>
+			<Rotation>0</Rotation>
 			<MaxScale>0.15</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
@@ -1927,7 +1927,7 @@
 		<Model>
 			<ObjURL>Environment/Leaf_4.obj</ObjURL>
 			<Position><X>842</X> <Y>481</Y> <Z>0</Z></Position>
-			<Rotation> 110 </Rotation>
+			<Rotation>0</Rotation>
 			<MaxScale>0.15</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
@@ -1939,7 +1939,7 @@
 		<Model>
 			<ObjURL>Environment/Leaf_3.obj</ObjURL>
 			<Position><X>897</X> <Y>458</Y> <Z>0</Z></Position>
-			<Rotation> 110 </Rotation>
+			<Rotation>0</Rotation>
 			<MaxScale>0.15</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
@@ -1951,7 +1951,7 @@
 		<Model>
 			<ObjURL>Environment/Leaf2.obj</ObjURL>
 			<Position><X>987</X> <Y>543</Y> <Z>0</Z></Position>
-			<Rotation> 110 </Rotation>
+			<Rotation>0</Rotation>
 			<MaxScale>0.15</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
@@ -1963,7 +1963,7 @@
 		<Model>
 			<ObjURL>Environment/Leaf_1.obj</ObjURL>
 			<Position><X>1045</X> <Y>518</Y> <Z>0</Z></Position>
-			<Rotation> 110 </Rotation>
+			<Rotation>0</Rotation>
 			<MaxScale>0.15</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
@@ -1975,7 +1975,7 @@
 		<Model>
 			<ObjURL>Environment/Leaf_5.obj</ObjURL>
 			<Position><X>830</X> <Y>357</Y> <Z>0</Z></Position>
-			<Rotation> 110 </Rotation>
+			<Rotation>0</Rotation>
 			<MaxScale>0.15</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
@@ -1987,7 +1987,7 @@
 		<Model>
 			<ObjURL>Environment/Leaf_4.obj</ObjURL>
 			<Position><X>893</X> <Y>333</Y> <Z>0</Z></Position>
-			<Rotation> 110 </Rotation>
+			<Rotation>0</Rotation>
 			<MaxScale>0.15</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
@@ -1999,7 +1999,7 @@
 		<Model>
 			<ObjURL>Environment/Leaf_5.obj</ObjURL>
 			<Position><X>942</X> <Y>349</Y> <Z>0</Z></Position>
-			<Rotation> 110 </Rotation>
+			<Rotation>0</Rotation>
 			<MaxScale>0.15</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
@@ -2011,7 +2011,7 @@
 		<Model>
 			<ObjURL>Environment/Leaf_3.obj</ObjURL>
 			<Position><X>1005</X> <Y>391</Y> <Z>0</Z></Position>
-			<Rotation> 110 </Rotation>
+			<Rotation>0</Rotation>
 			<MaxScale>0.1</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
@@ -2023,7 +2023,7 @@
 		<Model>
 			<ObjURL>Environment/Leaf2.obj</ObjURL>
 			<Position><X>1106</X> <Y>487</Y> <Z>0</Z></Position>
-			<Rotation> 110 </Rotation>
+			<Rotation>0</Rotation>
 			<MaxScale>0.15</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
@@ -2035,7 +2035,7 @@
 		<Model>
 			<ObjURL>Environment/Leaf_1.obj</ObjURL>
 			<Position><X>1041</X> <Y>618</Y> <Z>0</Z></Position>
-			<Rotation> 110 </Rotation>
+			<Rotation>0</Rotation>
 			<MaxScale>0.15</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
@@ -2047,7 +2047,7 @@
 		<Model>
 			<ObjURL>Environment/Leaf2.obj</ObjURL>
 			<Position><X>1125</X> <Y>414</Y> <Z>0</Z></Position>
-			<Rotation> 110 </Rotation>
+			<Rotation>0</Rotation>
 			<MaxScale>0.1</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
@@ -2059,7 +2059,7 @@
 		<Model>
 			<ObjURL>Environment/Leaf_4.obj</ObjURL>
 			<Position><X>1024</X> <Y>272</Y> <Z>0</Z></Position>
-			<Rotation> 110 </Rotation>
+			<Rotation>0</Rotation>
 			<MaxScale>0.15</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
@@ -2071,7 +2071,7 @@
 		<Model>
 			<ObjURL>Environment/Leaf_3.obj</ObjURL>
 			<Position><X>1072</X> <Y>308</Y> <Z>0</Z></Position>
-			<Rotation> 110 </Rotation>
+			<Rotation>0</Rotation>
 			<MaxScale>0.15</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
@@ -2083,7 +2083,7 @@
 		<Model>
 			<ObjURL>Environment/Leaf2.obj</ObjURL>
 			<Position><X>706</X> <Y>316</Y> <Z>0</Z></Position>
-			<Rotation> 110 </Rotation>
+			<Rotation>0</Rotation>
 			<MaxScale>0.1</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
@@ -2095,7 +2095,7 @@
 		<Model>
 			<ObjURL>Environment/Leaf_4.obj</ObjURL>
 			<Position><X>770</X> <Y>306</Y> <Z>0</Z></Position>
-			<Rotation> 110 </Rotation>
+			<Rotation>0</Rotation>
 			<MaxScale>0.15</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
@@ -2107,7 +2107,7 @@
 		<Model>
 			<ObjURL>Environment/Leaf_3.obj</ObjURL>
 			<Position><X>736</X> <Y>336</Y> <Z>0</Z></Position>
-			<Rotation> 110 </Rotation>
+			<Rotation>0</Rotation>
 			<MaxScale>0.15</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
@@ -2119,7 +2119,7 @@
 <Model>
 			<ObjURL>Environment/SP_Leaf.obj</ObjURL>
 			<Position><X>868</X> <Y>534</Y> <Z>10</Z></Position>
-			<Rotation>30</Rotation>
+			<Rotation>0</Rotation>
 			<MaxScale>0.01</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>5</StayingTime>
@@ -2174,7 +2174,7 @@
 		<Model>
 			<ObjURL>Environment/Leaf_3.obj</ObjURL>
 			<Position><X>1115</X> <Y>415</Y> <Z>30</Z></Position>
-			<Rotation> 110 </Rotation>
+			<Rotation>0</Rotation>
 			<MaxScale>0.15</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
@@ -2187,7 +2187,7 @@
 		<Model>
 			<ObjURL>Environment/Leaf_3.obj</ObjURL>
 			<Position><X>1088</X> <Y>388</Y> <Z>30</Z></Position>
-			<Rotation> 110 </Rotation>
+			<Rotation>0</Rotation>
 			<MaxScale>0.15</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
@@ -2200,7 +2200,7 @@
 		<Model>
 			<ObjURL>Environment/Leaf_3.obj</ObjURL>
 			<Position><X>1048</X> <Y>345</Y> <Z>30</Z></Position>
-			<Rotation> 110 </Rotation>
+			<Rotation>0</Rotation>
 			<MaxScale>0.15</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
@@ -2212,7 +2212,7 @@
 		<Model>
 			<ObjURL>Environment/Leaf_3.obj</ObjURL>
 			<Position><X>1025</X> <Y>299</Y> <Z>30</Z></Position>
-			<Rotation> 110 </Rotation>
+			<Rotation>0</Rotation>
 			<MaxScale>0.15</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
@@ -2224,7 +2224,7 @@
 		<Model>
 			<ObjURL>Environment/Leaf_3.obj</ObjURL>
 			<Position><X>1001</X> <Y>262</Y> <Z>30</Z></Position>
-			<Rotation> 110 </Rotation>
+			<Rotation>0</Rotation>
 			<MaxScale>0.15</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
@@ -2236,7 +2236,7 @@
 		<Model>
 			<ObjURL>Environment/Leaf_3.obj</ObjURL>
 			<Position><X>979</X> <Y>206</Y> <Z>30</Z></Position>
-			<Rotation> 110 </Rotation>
+			<Rotation>0</Rotation>
 			<MaxScale>0.15</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
@@ -2248,7 +2248,7 @@
 		<Model>
 			<ObjURL>Environment/Leaf_3.obj</ObjURL>
 			<Position><X>1037</X> <Y>151</Y> <Z>30</Z></Position>
-			<Rotation> 110 </Rotation>
+			<Rotation>0</Rotation>
 			<MaxScale>0.15</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
@@ -2260,7 +2260,7 @@
 		<Model>
 			<ObjURL>Environment/Leaf_3.obj</ObjURL>
 			<Position><X>1105</X> <Y>145</Y> <Z>30</Z></Position>
-			<Rotation> 110 </Rotation>
+			<Rotation>0</Rotation>
 			<MaxScale>0.15</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
@@ -2272,7 +2272,7 @@
 		<Model>
 			<ObjURL>Environment/Leaf_3.obj</ObjURL>
 			<Position><X>1176</X> <Y>176</Y> <Z>30</Z></Position>
-			<Rotation> 110 </Rotation>
+			<Rotation>0</Rotation>
 			<MaxScale>0.15</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
@@ -2284,7 +2284,7 @@
 		<Model>
 			<ObjURL>Environment/Leaf_3.obj</ObjURL>
 			<Position><X>12014</X> <Y>223</Y> <Z>30</Z></Position>
-			<Rotation> 110 </Rotation>
+			<Rotation>0</Rotation>
 			<MaxScale>0.15</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
@@ -2296,7 +2296,7 @@
 		<Model>
 			<ObjURL>Environment/Leaf_3.obj</ObjURL>
 			<Position><X>1221</X> <Y>271</Y> <Z>30</Z></Position>
-			<Rotation> 110 </Rotation>
+			<Rotation>0</Rotation>
 			<MaxScale>0.15</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
@@ -2308,7 +2308,7 @@
 		<Model>
 			<ObjURL>Environment/Leaf_3.obj</ObjURL>
 			<Position><X>1152</X> <Y>247</Y> <Z>30</Z></Position>
-			<Rotation> 110 </Rotation>
+			<Rotation>0</Rotation>
 			<MaxScale>0.15</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
@@ -2320,7 +2320,7 @@
 		<Model>
 			<ObjURL>Environment/Leaf_3.obj</ObjURL>
 			<Position><X>1164</X> <Y>228</Y> <Z>30</Z></Position>
-			<Rotation> 110 </Rotation>
+			<Rotation>0</Rotation>
 			<MaxScale>0.15</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
@@ -2332,7 +2332,7 @@
 		<Model>
 			<ObjURL>Environment/Leaf_3.obj</ObjURL>
 			<Position><X>1140</X> <Y>320</Y> <Z>30</Z></Position>
-			<Rotation> 110 </Rotation>
+			<Rotation>0</Rotation>
 			<MaxScale>0.15</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
@@ -2344,7 +2344,7 @@
 		<Model>
 			<ObjURL>Environment/Leaf_3.obj</ObjURL>
 			<Position><X>1119</X> <Y>268</Y> <Z>30</Z></Position>
-			<Rotation> 110 </Rotation>
+			<Rotation>0</Rotation>
 			<MaxScale>0.15</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
@@ -2356,7 +2356,7 @@
 		<Model>
 			<ObjURL>Environment/Leaf_3.obj</ObjURL>
 			<Position><X>1114</X> <Y>197</Y> <Z>30</Z></Position>
-			<Rotation> 110 </Rotation>
+			<Rotation>0</Rotation>
 			<MaxScale>0.15</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
@@ -2369,7 +2369,7 @@
 		<Model>
 			<ObjURL>Environment/Leaf_3.obj</ObjURL>
 			<Position><X>1058</X> <Y>240</Y> <Z>30</Z></Position>
-			<Rotation> 110 </Rotation>
+			<Rotation>0</Rotation>
 			<MaxScale>0.15</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
@@ -2381,7 +2381,7 @@
 		<Model>
 			<ObjURL>Environment/Leaf_3.obj</ObjURL>
 			<Position><X>1086</X> <Y>216</Y> <Z>30</Z></Position>
-			<Rotation> 110 </Rotation>
+			<Rotation>0</Rotation>
 			<MaxScale>0.15</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
@@ -2393,7 +2393,7 @@
 		<Model>
 			<ObjURL>Environment/Leaf_3.obj</ObjURL>
 			<Position><X>1185</X> <Y>340</Y> <Z>30</Z></Position>
-			<Rotation> 110 </Rotation>
+			<Rotation>0</Rotation>
 			<MaxScale>0.15</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
@@ -2406,7 +2406,7 @@
 		<Model>
 			<ObjURL>Environment/Leaf_3.obj</ObjURL>
 			<Position><X>1129</X> <Y>346</Y> <Z>30</Z></Position>
-			<Rotation> 110 </Rotation>
+			<Rotation>0</Rotation>
 			<MaxScale>0.15</MaxScale>
 			<ScaleSpeed>0.05</ScaleSpeed>
 			<StayingTime>1</StayingTime>
