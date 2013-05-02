@@ -5,157 +5,157 @@
 			<ObjURL>Environment/shroom_1.obj</ObjURL>
 			<Position><X>346</X> <Y>-10</Y> <Z>0</Z></Position>
 			<Rotation>0</Rotation>
-			<MaxScale>0.04</MaxScale>
-			<ScaleSpeed>0.004</ScaleSpeed>
+			<MaxScale>0.15</MaxScale>
+			<ScaleSpeed>0.001</ScaleSpeed>
 			<StayingTime>6</StayingTime>
-			<HoldingTime>0.1</HoldingTime>
+			<HoldingTime>0.2</HoldingTime>
 			<CollideSize>70</CollideSize>
 			<CircleSize>200</CircleSize>
 			<CircleColor><R>255</R> <G>0</G> <B>0</B> <A>255</A></CircleColor> 
-            <ModelColor><R>255</R> <G>255</G> <B>255</B> <A>100</A></ModelColor>
+            <ModelColor><R>255</R> <G>255</G> <B>255</B> <A>150</A></ModelColor>
 		</Model>
 		<Model>
 			<ObjURL>Environment/shroom_2.obj</ObjURL>
 			<Position><X>387</X> <Y>-10</Y> <Z>0</Z></Position>
 			<Rotation>0</Rotation>
-			<MaxScale>0.004</MaxScale>
-			<ScaleSpeed>0.05</ScaleSpeed>
+			<MaxScale>0.16</MaxScale>
+			<ScaleSpeed>0.001</ScaleSpeed>
 			<StayingTime>6</StayingTime>
-			<HoldingTime>0.1</HoldingTime>
+			<HoldingTime>0.2</HoldingTime>
 			<CollideSize>70</CollideSize>
 			<CircleSize>70</CircleSize>
 			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor> 
-            <ModelColor><R>255</R> <G>255</G> <B>255</B> <A>100</A></ModelColor>
+            <ModelColor><R>255</R> <G>255</G> <B>255</B> <A>150</A></ModelColor>
 		</Model>
 		<Model>
 			<ObjURL>Environment/shroom_3.obj</ObjURL>
 			<Position><X>496</X> <Y>-10</Y> <Z>0</Z></Position>
 			<Rotation>0</Rotation>
-			<MaxScale>0.004</MaxScale>
-			<ScaleSpeed>0.05</ScaleSpeed>
+			<MaxScale>0.1</MaxScale>
+			<ScaleSpeed>0.002</ScaleSpeed>
 			<StayingTime>6</StayingTime>
-			<HoldingTime>0.1</HoldingTime>
+			<HoldingTime>0.2</HoldingTime>
 			<CollideSize>70</CollideSize>
 			<CircleSize>70</CircleSize>
 			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor> 
-            <ModelColor><R>255</R> <G>255</G> <B>255</B> <A>100</A></ModelColor> 
+            <ModelColor><R>255</R> <G>255</G> <B>255</B> <A>150</A></ModelColor>
 		</Model>
 		<Model>
 			<ObjURL>Environment/shroom_1.obj</ObjURL>
 			<Position><X>542</X> <Y>-10</Y> <Z>0</Z></Position>
 			<Rotation>0</Rotation>
-			<MaxScale>0.04</MaxScale>
-			<ScaleSpeed>0.05</ScaleSpeed>
+			<MaxScale>0.13</MaxScale>
+			<ScaleSpeed>0.001</ScaleSpeed>
 			<StayingTime>6</StayingTime>
-			<HoldingTime>0.1</HoldingTime>
+			<HoldingTime>0.2</HoldingTime>
 			<CollideSize>70</CollideSize>
 			<CircleSize>70</CircleSize>
 			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor> 
-            <ModelColor><R>255</R> <G>255</G> <B>255</B> <A>100</A></ModelColor> 
+            <ModelColor><R>255</R> <G>255</G> <B>255</B> <A>150</A></ModelColor>
 		</Model>
 		<Model>
 			<ObjURL>Environment/shroom_2.obj</ObjURL>
 			<Position><X>637</X> <Y>-10</Y> <Z>0</Z></Position>
 			<Rotation>0</Rotation>
-			<MaxScale>0.004</MaxScale>
-			<ScaleSpeed>0.05</ScaleSpeed>
+			<MaxScale>0.11</MaxScale>
+			<ScaleSpeed>0.001</ScaleSpeed>
 			<StayingTime>6</StayingTime>
-			<HoldingTime>0.1</HoldingTime>
+			<HoldingTime>0.2</HoldingTime>
 			<CollideSize>70</CollideSize>
 			<CircleSize>70</CircleSize>
 			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor> 
-            <ModelColor><R>255</R> <G>255</G> <B>255</B> <A>100</A></ModelColor> 
+            <ModelColor><R>255</R> <G>255</G> <B>255</B> <A>150</A></ModelColor>
 		</Model>
 		<Model>
 			<ObjURL>Environment/shroom_1.obj</ObjURL>
 			<Position><X>689</X> <Y>-10</Y> <Z>0</Z></Position>
 			<Rotation>0</Rotation>
-			<MaxScale>0.004</MaxScale>
-			<ScaleSpeed>0.05</ScaleSpeed>
+			<MaxScale>0.1</MaxScale>
+			<ScaleSpeed>0.002</ScaleSpeed>
 			<StayingTime>6</StayingTime>
-			<HoldingTime>7</HoldingTime>			
+			<HoldingTime>0.2</HoldingTime>
 			<CollideSize>70</CollideSize>
 			<CircleSize>70</CircleSize>
 			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor> 
-            <ModelColor><R>255</R> <G>255</G> <B>255</B> <A>100</A></ModelColor> 
+            <ModelColor><R>255</R> <G>255</G> <B>255</B> <A>50</A></ModelColor>
 		</Model>
 		<Model>
 			<ObjURL>Environment/shroom_3.obj</ObjURL>
 			<Position><X>749</X> <Y>-10</Y> <Z>0</Z></Position>
 			<Rotation>0</Rotation>
-			<MaxScale>0.04</MaxScale>
-			<ScaleSpeed>0.05</ScaleSpeed>
+			<MaxScale>0.17</MaxScale>
+			<ScaleSpeed>0.001</ScaleSpeed>
 			<StayingTime>6</StayingTime>
-			<HoldingTime>0.1</HoldingTime>
+			<HoldingTime>0.2</HoldingTime>
 			<CollideSize>70</CollideSize>
 			<CircleSize>70</CircleSize>
 			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor> 
-            <ModelColor><R>255</R> <G>255</G> <B>255</B> <A>100</A></ModelColor> 
+            <ModelColor><R>255</R> <G>255</G> <B>255</B> <A>150</A></ModelColor>
 		</Model>
 		<Model>
 			<ObjURL>Environment/shroom_2.obj</ObjURL>
 			<Position><X>750</X> <Y>-10</Y> <Z>0</Z></Position>
 			<Rotation>0</Rotation>
-			<MaxScale>0.04</MaxScale>
-			<ScaleSpeed>0.05</ScaleSpeed>
+			<MaxScale>0.1</MaxScale>
+			<ScaleSpeed>0.003</ScaleSpeed>
 			<StayingTime>6</StayingTime>
-			<HoldingTime>0.1</HoldingTime>
+			<HoldingTime>0.2</HoldingTime>
 			<CollideSize>70</CollideSize>
 			<CircleSize>70</CircleSize>
 			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor> 
-            <ModelColor><R>255</R> <G>255</G> <B>255</B> <A>100</A></ModelColor> 
+            <ModelColor><R>255</R> <G>255</G> <B>255</B> <A>150</A></ModelColor>
 		</Model>
 		<Model>
 			<ObjURL>Environment/shroom_1.obj</ObjURL>
 			<Position><X>868</X> <Y>-10</Y> <Z>0</Z></Position>
 			<Rotation>0</Rotation>
-			<MaxScale>0.04</MaxScale>
-			<ScaleSpeed>0.05</ScaleSpeed>
+			<MaxScale>0.16</MaxScale>
+			<ScaleSpeed>0.001</ScaleSpeed>
 			<StayingTime>6</StayingTime>
-			<HoldingTime>0.1</HoldingTime>
+			<HoldingTime>0.2</HoldingTime>
 			<CollideSize>70</CollideSize>
 			<CircleSize>70</CircleSize>
 			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor> 
-            <ModelColor><R>255</R> <G>255</G> <B>255</B> <A>100</A></ModelColor> 
+            <ModelColor><R>255</R> <G>255</G> <B>255</B> <A>150</A></ModelColor>
 		</Model>
 		<Model>
 			<ObjURL>Environment/shroom_2.obj</ObjURL>
 			<Position><X>893</X> <Y>-10</Y> <Z>0</Z></Position>
 			<Rotation>0</Rotation>
-			<MaxScale>0.04</MaxScale>
-			<ScaleSpeed>0.05</ScaleSpeed>
+			<MaxScale>0.1</MaxScale>
+			<ScaleSpeed>0.005</ScaleSpeed>
 			<StayingTime>6</StayingTime>
-			<HoldingTime>0.1</HoldingTime>
+			<HoldingTime>0.2</HoldingTime>
 			<CollideSize>70</CollideSize>
 			<CircleSize>70</CircleSize>
 			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor> 
-            <ModelColor><R>255</R> <G>255</G> <B>255</B> <A>100</A></ModelColor> 
+            <ModelColor><R>255</R> <G>255</G> <B>255</B> <A>150</A></ModelColor>
 		</Model>
 		<Model>
 			<ObjURL>Environment/shroom_1.obj</ObjURL>
 			<Position><X>1005</X> <Y>-10</Y> <Z>0</Z></Position>
 			<Rotation>0</Rotation>
-			<MaxScale>0.04</MaxScale>
-			<ScaleSpeed>0.05</ScaleSpeed>
+            <MaxScale>0.12</MaxScale>
+			<ScaleSpeed>0.001</ScaleSpeed>
 			<StayingTime>6</StayingTime>
-			<HoldingTime>0.1</HoldingTime>
+			<HoldingTime>0.2</HoldingTime>
 			<CollideSize>70</CollideSize>
 			<CircleSize>70</CircleSize>
 			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor> 
-            <ModelColor><R>255</R> <G>255</G> <B>255</B> <A>100</A></ModelColor> 
+            <ModelColor><R>255</R> <G>255</G> <B>255</B> <A>150</A></ModelColor>
 		</Model>
 		<Model>
 			<ObjURL>Environment/shroom_3.obj</ObjURL>
 			<Position><X>1007</X> <Y>-10</Y> <Z>0</Z></Position>
 			<Rotation>0</Rotation>
-			<MaxScale>0.04</MaxScale>
-			<ScaleSpeed>0.05</ScaleSpeed>
+			<MaxScale>0.13</MaxScale>
+			<ScaleSpeed>0.003</ScaleSpeed>
 			<StayingTime>6</StayingTime>
-			<HoldingTime>0.1</HoldingTime>
+			<HoldingTime>0.2</HoldingTime>
 			<CollideSize>70</CollideSize>
 			<CircleSize>70</CircleSize>
 			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor> 
-            <ModelColor><R>255</R> <G>255</G> <B>255</B> <A>100</A></ModelColor> 
+            <ModelColor><R>255</R> <G>255</G> <B>255</B> <A>150</A></ModelColor>
 		</Model>
 
 	</GroupObj>
