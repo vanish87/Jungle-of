@@ -122,7 +122,7 @@ namespace Jungle
 		player.wind_.Draw();
         ofSetColor(255, 255, 255);
         if(!player.detected_)
-            title_.draw(ofPoint(0,0), w_, h_);
+            title_.draw(ofPoint(0,0), ofGetScreenWidth(), ofGetScreenHeight());
         ofDisableAlphaBlending();
 
 		ofPopMatrix();

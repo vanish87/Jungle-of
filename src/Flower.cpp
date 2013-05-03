@@ -25,13 +25,13 @@ namespace Jungle {
         holding_time_ = 3;
         staying_time_ = 5;
         
-        sounds_[0].loadSound("Audio/kalimba-1.mp3");
-		sounds_[1].loadSound("Audio/kalimba-2.mp3");
-		sounds_[2].loadSound("Audio/kalimba-3.mp3");
-		sounds_[3].loadSound("Audio/kalimba-4.mp3");
-		sounds_[4].loadSound("Audio/kalimba-5.mp3");
-		sounds_[5].loadSound("Audio/kalimba-6.mp3");
-		sounds_[6].loadSound("Audio/kalimba-7.mp3");
+        sounds_[0].loadSound("audio/kailmba-1.mp3");
+		sounds_[1].loadSound("audio/kailmba-2.mp3");
+		sounds_[2].loadSound("audio/kailmba-3.mp3");
+		sounds_[3].loadSound("audio/kailmba-4.mp3");
+		sounds_[4].loadSound("audio/kailmba-5.mp3");
+		sounds_[5].loadSound("audio/kailmba-6.mp3");
+		sounds_[6].loadSound("audio/kailmba-7.mp3");
     };
     Flower::~Flower(void)
     {
