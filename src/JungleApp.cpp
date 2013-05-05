@@ -2,7 +2,7 @@
 
 namespace Jungle
 {
-	const bool KINECT_ENABLE = true;
+	const bool KINECT_ENABLE = false;
 	const bool JUNGLE_DEBUG = false;
 	//--------------------------------------------------------------
 	void JungleApp::setup(){
