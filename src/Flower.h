@@ -58,6 +58,7 @@ namespace Jungle {
         
         float collide_size_;
         ofSoundPlayer sounds_[7];
+		float pitch;
         bool falling_;
         
     };

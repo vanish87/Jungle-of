@@ -101,6 +101,7 @@ namespace Jungle {
 				if (!sounds_[index].getIsPlaying())
 				{
 					sounds_[index].play();
+					sounds_[index].setSpeed(pitch);
 				}
 				time_ = 0;
 			}			
