@@ -59,7 +59,7 @@ namespace Jungle {
 		ofVec3f org_pos_;
         
         float collide_size_;
-        ofSoundPlayer sounds_[7];
+        ofSoundPlayer sounds_[4];
 		float pitch_;
         bool falling_;
         

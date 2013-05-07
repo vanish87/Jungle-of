@@ -27,13 +27,10 @@ namespace Jungle {
         
         pitch_ = 1.0f;
         
-        sounds_[0].loadSound("audio/kailmba-1.mp3");
-		sounds_[1].loadSound("audio/kailmba-2.mp3");
-		sounds_[2].loadSound("audio/kailmba-3.mp3");
-		sounds_[3].loadSound("audio/kailmba-4.mp3");
-		sounds_[4].loadSound("audio/kailmba-5.mp3");
-		sounds_[5].loadSound("audio/kailmba-6.mp3");
-		sounds_[6].loadSound("audio/kailmba-7.mp3");
+		sounds_[0].loadSound("audio/kalimba-e3-1.mp3");
+		sounds_[1].loadSound("audio/kalimba-e3-2.mp3");
+		sounds_[2].loadSound("audio/kalimba-e3-3.mp3");
+		sounds_[3].loadSound("audio/kalimba-e3-4.mp3");
     };
     Flower::~Flower(void)
     {
@@ -103,7 +100,7 @@ namespace Jungle {
             {
 				flower_state_ = GROWING;
 				
-				int index = ofRandom(0,7);
+				int index = ofRandom(0,4);
 				if (!sounds_[index].getIsPlaying())
 				{
 					sounds_[index].play();
