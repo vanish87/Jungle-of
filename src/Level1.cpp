@@ -69,7 +69,7 @@ namespace Jungle
 		player.Update();
         
         max_leaf_ = 0;
-       
+        unsigned int fruit_count = 0;
 		SceneType &scene = JungleApp::SceneManagerInstance().GetDynamicObj();
 		for(SceneType::iterator it = scene.begin(); it!= scene.end(); ++it)
 		{
@@ -95,6 +95,19 @@ namespace Jungle
                 max_leaf_ += it->GetTriggeringCount();
                 //cout<<max_leaf_<<endl;
                 if( max_leaf_ > 50)
+				{
+                    JungleApp::SceneManagerInstance().Enable(Group::FRUIT,true);
+                }
+                else
+                {
+                    JungleApp::SceneManagerInstance().Enable(Group::FRUIT,false);
+                }
+            }
+            if(it->GetType() == Group::FRUIT)
+            {
+                fruit_count += it->GetTriggeringCount();
+                //cout<<max_leaf_<<endl;
+                if( fruit_count > 4)
 				{
                     JungleApp::SceneManagerInstance().Enable(Group::MUSHROOM,true);
                 }
