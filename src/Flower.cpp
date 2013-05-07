@@ -25,6 +25,8 @@ namespace Jungle {
         holding_time_ = 3;
         staying_time_ = 5;
         
+        pitch_ = 1.0f;
+        
         sounds_[0].loadSound("audio/kailmba-1.mp3");
 		sounds_[1].loadSound("audio/kailmba-2.mp3");
 		sounds_[2].loadSound("audio/kailmba-3.mp3");
@@ -49,6 +51,10 @@ namespace Jungle {
     void Flower::SetFalling(bool falling)
     {
         falling_ = falling;
+    }
+    void Flower::SetPitch(float pitch)
+    {
+        pitch_ = pitch;
     }
     
     void Flower::Update(float frame_time)
@@ -101,7 +107,7 @@ namespace Jungle {
 				if (!sounds_[index].getIsPlaying())
 				{
 					sounds_[index].play();
-					sounds_[index].setSpeed(pitch);
+					sounds_[index].setSpeed(pitch_);
 				}
 				time_ = 0;
 			}			

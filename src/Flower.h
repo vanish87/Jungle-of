@@ -28,6 +28,7 @@ namespace Jungle {
 		void SetCollideSize(float size);
         
         void SetFalling(bool falling);
+        void SetPitch(float pitch);
         
         void SetColor(ofColor color);
 		ofVec3f GetScreenPos(ofVec3f world_pos, ofCamera& camera);
@@ -58,7 +59,7 @@ namespace Jungle {
         
         float collide_size_;
         ofSoundPlayer sounds_[7];
-		float pitch;
+		float pitch_;
         bool falling_;
         
     };

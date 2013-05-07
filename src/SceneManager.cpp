@@ -102,6 +102,7 @@ namespace Jungle
                         
                         
                         bool falling = file.getValue("FallingEnable", false);
+                        float pitch = file.getValue("Pitch", 1.0f);
                         
 						Flower flower;
 						flower.loadModel(url);
@@ -116,6 +117,7 @@ namespace Jungle
 						flower.SetCircleColor(color);
                         flower.SetColor(mcolor);
                         flower.SetFalling(falling);
+                        flower.SetPitch(pitch);
 						flower.Enable(false);
 						group_model.push_back(flower);
 						file.popTag();
