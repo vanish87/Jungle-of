@@ -98,11 +98,11 @@ namespace Jungle
 
         bg_1_.AddToScene();
 		//tree_.AddToScene();
-        tree1_.AddToScene();
-        tree2_.AddToScene();
-        tree3_.AddToScene();
-        tree4_.AddToScene();
-        tree5_.AddToScene();
+        //tree1_.AddToScene();
+        //tree2_.AddToScene();
+        //tree3_.AddToScene();
+        //tree4_.AddToScene();
+       // tree5_.AddToScene();
         
 		atmo.loadSound("Audio/jungle-atmos-2.mp3");
 		atmo.setLoop(true);

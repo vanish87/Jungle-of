@@ -1,9 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClCompile Include="src\GamingScene2.cpp">
-      <Filter>src</Filter>
-    </ClCompile>
     <ClCompile Include="src\JungleApp.cpp">
       <Filter>src</Filter>
     </ClCompile>
@@ -130,12 +127,6 @@
     <ClCompile Include="..\..\..\addons\ofxOpenNI\src\ofxGestureGenerator.cpp">
       <Filter>addons\ofxOpenNI</Filter>
     </ClCompile>
-    <ClCompile Include="src\GamingScene3.cpp">
-      <Filter>src</Filter>
-    </ClCompile>
-    <ClCompile Include="src\GamingScene4.cpp">
-      <Filter>src</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\..\addons\ofxParticleEmitter\src\ofx3DParticleEmitter.cpp">
       <Filter>addons\ofxParticleEmitter</Filter>
     </ClCompile>
@@ -145,19 +136,10 @@
     <ClCompile Include="..\..\..\addons\ofxParticleEmitter\src\ofxParticleEmitter.cpp">
       <Filter>addons\ofxParticleEmitter</Filter>
     </ClCompile>
-    <ClCompile Include="src\ButterFly.cpp">
-      <Filter>src</Filter>
-    </ClCompile>
     <ClCompile Include="src\SceneManager.cpp">
       <Filter>src</Filter>
     </ClCompile>
-    <ClCompile Include="src\GamingScene1.cpp">
-      <Filter>src</Filter>
-    </ClCompile>
     <ClCompile Include="src\WindGenerator.cpp">
-      <Filter>src</Filter>
-    </ClCompile>
-    <ClCompile Include="src\Flower.cpp">
       <Filter>src</Filter>
     </ClCompile>
     <ClCompile Include="src\Level1.cpp">
@@ -169,9 +151,6 @@
     <ClCompile Include="src\JungleParticle.cpp">
       <Filter>src\Particle</Filter>
     </ClCompile>
-    <ClCompile Include="src\GamingScene6.cpp">
-      <Filter>src</Filter>
-    </ClCompile>
     <ClCompile Include="src\StaticScene.cpp">
       <Filter>src</Filter>
     </ClCompile>
@@ -181,20 +160,41 @@
     <ClCompile Include="src\Player.cpp">
       <Filter>src</Filter>
     </ClCompile>
-    <ClCompile Include="src\GamingScene.cpp">
-      <Filter>src</Filter>
-    </ClCompile>
     <ClCompile Include="src\CRSpline.cpp">
       <Filter>src</Filter>
     </ClCompile>
     <ClCompile Include="src\Group.cpp">
       <Filter>src</Filter>
     </ClCompile>
+    <ClCompile Include="src\ButterFly.cpp">
+      <Filter>src\SceneObject</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Flower.cpp">
+      <Filter>src\SceneObject</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Tree.cpp">
+      <Filter>src\SceneObject</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GamingScene.cpp">
+      <Filter>src\Legacy</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GamingScene1.cpp">
+      <Filter>src\Legacy</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GamingScene2.cpp">
+      <Filter>src\Legacy</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GamingScene3.cpp">
+      <Filter>src\Legacy</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GamingScene4.cpp">
+      <Filter>src\Legacy</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GamingScene6.cpp">
+      <Filter>src\Legacy</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="src\GamingScene2.h">
-      <Filter>src</Filter>
-    </ClInclude>
     <ClInclude Include="src\JungleApp.h">
       <Filter>src</Filter>
     </ClInclude>
@@ -729,13 +729,7 @@
     <ClInclude Include="..\..\..\addons\ofxOpenNI\src\ofxGestureGenerator.h">
       <Filter>addons\ofxOpenNI</Filter>
     </ClInclude>
-    <ClInclude Include="src\GamingScene3.h">
-      <Filter>src</Filter>
-    </ClInclude>
     <ClInclude Include="src\PreDef.h">
-      <Filter>src</Filter>
-    </ClInclude>
-    <ClInclude Include="src\GamingScene4.h">
       <Filter>src</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\addons\ofxKinectUsers\src\ofxKTools.h">
@@ -750,19 +744,10 @@
     <ClInclude Include="..\..\..\addons\ofxParticleEmitter\src\ofxParticleEmitter.h">
       <Filter>addons\ofxParticleEmitter</Filter>
     </ClInclude>
-    <ClInclude Include="src\ButterFly.h">
-      <Filter>src</Filter>
-    </ClInclude>
     <ClInclude Include="src\SceneManager.h">
       <Filter>src</Filter>
     </ClInclude>
-    <ClInclude Include="src\GamingScene1.h">
-      <Filter>src</Filter>
-    </ClInclude>
     <ClInclude Include="src\WindGenerator.h">
-      <Filter>src</Filter>
-    </ClInclude>
-    <ClInclude Include="src\Flower.h">
       <Filter>src</Filter>
     </ClInclude>
     <ClInclude Include="src\Level1.h">
@@ -774,9 +759,6 @@
     <ClInclude Include="src\JungleParticle.h">
       <Filter>src\Particle</Filter>
     </ClInclude>
-    <ClInclude Include="src\GamingScene6.h">
-      <Filter>src</Filter>
-    </ClInclude>
     <ClInclude Include="src\StaticScene.h">
       <Filter>src</Filter>
     </ClInclude>
@@ -786,14 +768,38 @@
     <ClInclude Include="src\Player.h">
       <Filter>src</Filter>
     </ClInclude>
-    <ClInclude Include="src\GamingScene.h">
-      <Filter>src</Filter>
-    </ClInclude>
     <ClInclude Include="src\CRSpline.h">
       <Filter>src</Filter>
     </ClInclude>
     <ClInclude Include="src\Group.h">
       <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ButterFly.h">
+      <Filter>src\SceneObject</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Flower.h">
+      <Filter>src\SceneObject</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Tree.h">
+      <Filter>src\SceneObject</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GamingScene.h">
+      <Filter>src\Legacy</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GamingScene1.h">
+      <Filter>src\Legacy</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GamingScene2.h">
+      <Filter>src\Legacy</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GamingScene3.h">
+      <Filter>src\Legacy</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GamingScene4.h">
+      <Filter>src\Legacy</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GamingScene6.h">
+      <Filter>src\Legacy</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -817,6 +823,12 @@
     </Filter>
     <Filter Include="src\Particle">
       <UniqueIdentifier>{ed2305d2-e22d-4862-b223-a0fd1d2bb552}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\SceneObject">
+      <UniqueIdentifier>{9d446496-9271-4685-808a-768710495051}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Legacy">
+      <UniqueIdentifier>{877404d3-6b33-42ff-839d-b2be39fff7fc}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>

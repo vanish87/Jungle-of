@@ -180,6 +180,7 @@ if not exist "$(ProjectDir)\bin\data" mkdir  "$(ProjectDir)\bin\data"
     <ClCompile Include="src\State.cpp" />
     <ClCompile Include="src\StateManager.cpp" />
     <ClCompile Include="src\StaticScene.cpp" />
+    <ClCompile Include="src\Tree.cpp" />
     <ClCompile Include="src\WindGenerator.cpp" />
     <ClCompile Include="src\WindParticle.cpp" />
   </ItemGroup>
@@ -383,6 +384,7 @@ if not exist "$(ProjectDir)\bin\data" mkdir  "$(ProjectDir)\bin\data"
     <ClInclude Include="src\State.h" />
     <ClInclude Include="src\StateManager.h" />
     <ClInclude Include="src\StaticScene.h" />
+    <ClInclude Include="src\Tree.h" />
     <ClInclude Include="src\WindGenerator.h" />
     <ClInclude Include="src\WindParticle.h" />
   </ItemGroup>

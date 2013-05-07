@@ -10,7 +10,7 @@ namespace Jungle {
 	class Group :public SceneModel
 	{
 	public:
-		Group(string name, float staying_time, vector<Flower> models);
+		Group(string name, float staying_time, vector<Flower*> models);
 		~Group(void);
 
 		virtual void Enable( bool enable );
@@ -26,7 +26,7 @@ namespace Jungle {
 		string name_;
 		float staying_time_;
 		float time_;
-		vector<Flower> models_;
+		vector<Flower*> models_;
 
 	};
 

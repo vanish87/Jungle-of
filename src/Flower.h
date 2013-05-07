@@ -7,6 +7,7 @@
 namespace Jungle {
     class Flower : public SceneModel
     {
+	protected:
         enum State
         {
 			HOLDING,
@@ -38,7 +39,7 @@ namespace Jungle {
 		bool IsGrowing();
 		void SetGrowing();
 
-		void Triggering(bool trigger);
+		virtual void Triggering(bool trigger);
 		void SetDisapp();
 	public:
         ofColor color_;

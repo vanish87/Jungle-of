@@ -1,5 +1,6 @@
 <Group>
 	<Name>Mushrooms</Name>
+  <Type>Flower</Type>
 	<GroupObj>
 		<Model>
 			<ObjURL>Environment/shroom_1.obj</ObjURL>
@@ -189,6 +190,7 @@
 
 <Group>
 	<Name>Tree1</Name>
+  <Type>Flower</Type>
 	<GroupObj>
 			<Model>
 			<ObjURL>Environment/Leaf_1.obj</ObjURL>
@@ -648,7 +650,8 @@
 
 
 <Group>
-<Name>Tree2</Name>
+  <Name>Tree2</Name>
+  <Type>Flower</Type>
 	<GroupObj>
 
 		<Model>
@@ -1318,7 +1321,8 @@
 
 
 <Group>
-<Name>Tree3</Name>
+  <Name>Tree3</Name>
+  <Type>Flower</Type>
 	<GroupObj>
 			
 		<Model>
@@ -2017,7 +2021,8 @@
 
 
 <Group>
-<Name>Tree4</Name>
+  <Name>Tree4</Name>
+  <Type>Flower</Type>
 	<GroupObj>
 
 		<Model>
@@ -2682,7 +2687,8 @@
 </Group>
 
 <Group>
-<Name>Tree5</Name>
+  <Name>Tree5</Name>
+  <Type>Flower</Type>
 	<GroupObj>
 		<Model>
 			<ObjURL>Environment/Leaf_3.obj</ObjURL>
@@ -2994,6 +3000,159 @@
 </Group>
 
 
+<Group>
+  <Name>Tree6</Name>
+  <Type>Tree</Type>
+  <GroupObj>
+    <Model>
+      <ObjURL>Environment/Tree_1.obj</ObjURL>
+      <Position>
+        <X>155</X>
+        <Y>-200</Y>
+        <Z>-30</Z>
+      </Position>
+      <Rotation>0</Rotation>
+      <MaxScale>1</MaxScale>
+      <ScaleSpeed>0.005</ScaleSpeed>
+      <StayingTime>60</StayingTime>
+      <HoldingTime>0.1</HoldingTime>
+      <CollideSize>70</CollideSize>
+      <CircleSize>70</CircleSize>
+      <CircleColor>
+        <R>255</R>
+        <G>255</G>
+        <B>255</B>
+        <A>255</A>
+      </CircleColor>
+      <ModelColor>
+        <R>255</R>
+        <G>255</G>
+        <B>255</B>
+        <A>255</A>
+      </ModelColor>
+      <FallingEnable>0</FallingEnable>
+      <Pitch>1.0</Pitch>
+    </Model>
+    <Model>
+      <ObjURL>Environment/Tree_2.obj</ObjURL>
+      <Position>
+        <X>450</X>
+        <Y>-200</Y>
+        <Z>-30</Z>
+      </Position>
+      <Rotation>0</Rotation>
+      <MaxScale>1</MaxScale>
+      <ScaleSpeed>0.005</ScaleSpeed>
+      <StayingTime>60</StayingTime>
+      <HoldingTime>0.1</HoldingTime>
+      <CollideSize>70</CollideSize>
+      <CircleSize>70</CircleSize>
+      <CircleColor>
+        <R>255</R>
+        <G>255</G>
+        <B>255</B>
+        <A>255</A>
+      </CircleColor>
+      <ModelColor>
+        <R>255</R>
+        <G>255</G>
+        <B>255</B>
+        <A>255</A>
+      </ModelColor>
+      <FallingEnable>0</FallingEnable>
+      <Pitch>1.0</Pitch>
+    </Model>
+    <Model>
+      <ObjURL>Environment/Tree_3.obj</ObjURL>
+      <Position>
+        <X>691</X>
+        <Y>-200</Y>
+        <Z>-30</Z>
+      </Position>
+      <Rotation>0</Rotation>
+      <MaxScale>1</MaxScale>
+      <ScaleSpeed>0.005</ScaleSpeed>
+      <StayingTime>60</StayingTime>
+      <HoldingTime>0.1</HoldingTime>
+      <CollideSize>70</CollideSize>
+      <CircleSize>70</CircleSize>
+      <CircleColor>
+        <R>255</R>
+        <G>255</G>
+        <B>255</B>
+        <A>255</A>
+      </CircleColor>
+      <ModelColor>
+        <R>255</R>
+        <G>255</G>
+        <B>255</B>
+        <A>255</A>
+      </ModelColor>
+      <FallingEnable>0</FallingEnable>
+      <Pitch>1.0</Pitch>
+    </Model>
+    <Model>
+      <ObjURL>Environment/Tree_4.obj</ObjURL>
+      <Position>
+        <X>941</X>
+        <Y>-200</Y>
+        <Z>-30</Z>
+      </Position>
+      <Rotation>0</Rotation>
+      <MaxScale>1</MaxScale>
+      <ScaleSpeed>0.005</ScaleSpeed>
+      <StayingTime>60</StayingTime>
+      <HoldingTime>0.1</HoldingTime>
+      <CollideSize>70</CollideSize>
+      <CircleSize>70</CircleSize>
+      <CircleColor>
+        <R>255</R>
+        <G>255</G>
+        <B>255</B>
+        <A>255</A>
+      </CircleColor>
+      <ModelColor>
+        <R>255</R>
+        <G>255</G>
+        <B>255</B>
+        <A>255</A>
+      </ModelColor>
+      <FallingEnable>0</FallingEnable>
+      <Pitch>1.0</Pitch>
+    </Model>
+    <Model>
+      <ObjURL>Environment/Tree_5.obj</ObjURL>
+      <Position>
+        <X>1116</X>
+        <Y>-200</Y>
+        <Z>-30</Z>
+      </Position>
+      <Rotation>0</Rotation>
+      <MaxScale>1</MaxScale>
+      <ScaleSpeed>0.005</ScaleSpeed>
+      <StayingTime>60</StayingTime>
+      <HoldingTime>0.1</HoldingTime>
+      <CollideSize>70</CollideSize>
+      <CircleSize>70</CircleSize>
+      <CircleColor>
+        <R>255</R>
+        <G>255</G>
+        <B>255</B>
+        <A>255</A>
+      </CircleColor>
+      <ModelColor>
+        <R>255</R>
+        <G>255</G>
+        <B>255</B>
+        <A>255</A>
+      </ModelColor>
+      <FallingEnable>0</FallingEnable>
+      <Pitch>1.0</Pitch>
+    </Model>
+   </GroupObj>
+</Group>
+
+
 
 <LevelIndex>
 	<Group>
@@ -3005,7 +3164,7 @@
 	<Group>
 		<Name>Tree2</Name>
 	</Group>
-		<Group>
+	<Group>
 		<Name>Tree3</Name>
 	</Group>
 	<Group>
@@ -3014,5 +3173,8 @@
 	<Group>
 		<Name>Tree5</Name>
 	</Group>
+  <Group>
+    <Name>Tree6</Name>
+  </Group>
 </LevelIndex>
 
