@@ -32,7 +32,7 @@ namespace Jungle
 
 		SceneType dynamic_objects_;
 
-		vector<vector<string>> level_index_;
+		vector<vector<string> > level_index_;
 
 	private:
 		SceneManager(const SceneManager & rhs);
