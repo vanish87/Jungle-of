@@ -53,7 +53,7 @@ namespace Jungle
         if(!JungleApp::SceneManagerInstance().LoadScene("SceneConfig.xml"))
             cout<<"Cannot Load Scene"<<endl;
 			//throw exception("Cannot Load Scene");;
-       
+       JungleApp::SceneManagerInstance().Enable(Group::TREE,true);
         
         
 		//circle_.loadImage("Environment/glowing-circle-2.png");
@@ -77,6 +77,11 @@ namespace Jungle
 				it->Update(player.r_hand_pos_, ofVec3f(0,0,0));
 
 			it->Update(ofGetLastFrameTime());
+			if(it->GetType() == Group::TREE)
+				if(it->GetTriggeringCount() > 4)
+				{
+					JungleApp::SceneManagerInstance().Enable(Group::LEAF,true);
+				}
 		}
 
 		//update static scene
@@ -102,7 +107,8 @@ namespace Jungle
 		SceneType &scene = JungleApp::SceneManagerInstance().GetDynamicObj();
 		for(SceneType::iterator it = scene.begin(); it!= scene.end(); ++it)
 		{
-			it->Draw();
+			if(it->Enabled())
+				it->Draw();
 		}
 		ofPopMatrix();
 

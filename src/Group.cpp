@@ -3,8 +3,9 @@
 
 namespace Jungle
 {
-	Group::Group( string name, float staying_time, vector<Flower*> models )
-		:name_(name), staying_time_(staying_time), time_(0), models_(models)
+	Group::Group( string name, float staying_time, vector<Flower*> models , GROUP_TYPE type)
+		:name_(name), staying_time_(staying_time), time_(0), models_(models),
+		type_(type), triggering_count_(0)
 	{
 		
 	}
@@ -20,16 +21,18 @@ namespace Jungle
 
 	void Group::Update( float frame_time )
 	{
-		enable_ = false;
+		//enable_ = false;
+
+		triggering_count_ = 0;
 		for(vector<Flower*>::iterator it = models_.begin(); it !=models_.end(); ++it)
 		{
 			(*it)->Update(frame_time);
  			if((*it)->IsGrowing())
  			{
+				triggering_count_++;
 				//enable_ = true;
  			}
 		}
-
 		/*if(time_ > staying_time_)
 		{
 			time_ = 0;
@@ -56,6 +59,7 @@ namespace Jungle
 
 	void Group::Update( ofVec3f lhand_pos, ofVec3f rhand_pos /*= ofVec3f(0,0,0)*/ )
 	{
+		if(enable_)
 		for(vector<Flower*>::iterator it = models_.begin(); it !=models_.end(); ++it)
 		{
 			if((*it)->Collided(lhand_pos) || (*it)->Collided(rhand_pos))
@@ -75,6 +79,12 @@ namespace Jungle
 		{
 			(*it)->Draw();
 		}
+
+	}
+
+	unsigned int Group::GetTriggeringCount()
+	{
+		return triggering_count_;
 	}
 
 }

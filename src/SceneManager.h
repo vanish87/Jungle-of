@@ -22,6 +22,8 @@ namespace Jungle
 
 		bool LoadScene(string file_name);
 
+		void Enable(Group::GROUP_TYPE type, bool enable);
+
 
 		SceneType &GetDynamicObj();
 	private:
@@ -29,6 +31,8 @@ namespace Jungle
 		vector<SceneModel*> scene_obj_list_;
 
 		SceneType dynamic_objects_;
+
+		vector<vector<string>> level_index_;
 
 	private:
 		SceneManager(const SceneManager & rhs);

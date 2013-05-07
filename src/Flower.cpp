@@ -223,7 +223,7 @@ namespace Jungle {
 
 	bool Flower::IsGrowing()
 	{
-		return flower_state_ == GROWING;
+		return (flower_state_ == GROWING && !(scale.x < max_scale_));
 	}
 
 	void Flower::SetGrowing()

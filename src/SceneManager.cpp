@@ -55,7 +55,10 @@ namespace Jungle
 			return false;
 		}
 
+
 		file.pushTag("LevelIndex");
+		for(size_t i =0; i < file.getNumTags("Level"); ++i)
+		{
 			vector<string> group_name;
 			for(size_t i =0; i < file.getNumTags("Group"); ++i)
 			{
@@ -64,6 +67,8 @@ namespace Jungle
 				group_name.push_back(name);
 				file.popTag();
 			}
+			level_index_.push_back(group_name);
+		}
 		file.popTag();
 
 		SceneType scene;
@@ -72,7 +77,7 @@ namespace Jungle
 		{
 			file.pushTag("Group",i);
 			string name = file.getValue("Name","NONE");
-			if(name == group_name[i])
+			//if(name == group_name[i])
 			{
 				string type = file.getValue("Type","NONE");
 				if(type == "Flower")
@@ -130,7 +135,7 @@ namespace Jungle
 
 						float group_staying_time= file.getValue("StayingTime",1);
 
-						Group flower_group(name, group_staying_time, group_model);
+						Group flower_group(name, group_staying_time, group_model, Group::LEAF);
 						scene.push_back(flower_group);
 					}
 				}
@@ -190,7 +195,7 @@ namespace Jungle
 
 						float group_staying_time= file.getValue("StayingTime",1);
 
-						Group flower_group(name, group_staying_time, group_model);
+						Group flower_group(name, group_staying_time, group_model, Group::TREE);
 						scene.push_back(flower_group);
 					}
 				}
@@ -209,6 +214,15 @@ namespace Jungle
 	Jungle::SceneType &SceneManager::GetDynamicObj()
 	{
 		return dynamic_objects_;
+	}
+
+	void SceneManager::Enable( Group::GROUP_TYPE type, bool enable )
+	{
+		for(SceneType::iterator it = dynamic_objects_.begin(); it!= dynamic_objects_.end(); ++it)
+		{
+			if(it->GetType() == type)
+				it->Enable(enable);
+		}
 	}
 
 }
