@@ -1,16 +1,16 @@
-#ifndef TREE_H_
-#define TREE_H_
+#ifndef MUSHROOM_H_
+#define MUSHROOM_H_
 
 #pragma once
 #include "Flower.h"
 
 namespace Jungle
 {
-	class Tree : public Flower
+	class Mushroom : public Flower
 	{
 	public:
-		Tree(void);
-		~Tree(void);
+		Mushroom(void);
+		~Mushroom(void);
 
 		virtual void Update( float frame_time );
 

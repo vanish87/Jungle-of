@@ -1,9 +1,9 @@
-#include "Tree.h"
+#include "Mushroom.h"
 
 
 namespace Jungle
 {
-	Tree::Tree(void)
+	Mushroom::Mushroom(void)
 		: Flower()
 	{
 		sounds_[0].loadSound("audio/kailmba-1.mp3");
@@ -16,11 +16,11 @@ namespace Jungle
 	}
 
 
-	Tree::~Tree(void)
+	Mushroom::~Mushroom(void)
 	{
 	}
 
-	void Tree::Update( float frame_time )
+	void Mushroom::Update( float frame_time )
 	{
 		if(enable_ && flower_state_ != WAITING)
 		{            
@@ -58,13 +58,13 @@ namespace Jungle
 		setScale(scale.x, scale.y, scale.z);      
 	}
 
-	bool Tree::Collided( ofVec3f pos )
+	bool Mushroom::Collided( ofVec3f pos )
 	{
 		int h_ = ofGetWindowHeight();
 		ofVec3f bt_pos = pos;
 		bt_pos.z = 0;
 		bt_pos.y = h_-bt_pos.y;
-		ofVec3f mh_pos = ofVec3f(getPosition().x, getPosition().y + 200, 0);
+		ofVec3f mh_pos = ofVec3f(getPosition().x, getPosition().y, 0);
 		if( (bt_pos - mh_pos).length() < collide_size_)
 			return true;
 		else
@@ -73,7 +73,7 @@ namespace Jungle
 		}
 	}
 
-	void Tree::Triggering( bool trigger )
+	void Mushroom::Triggering( bool trigger )
 	{
 		if(!enable_) enable_ = true;
 		if(trigger)

@@ -38,21 +38,23 @@ namespace Jungle
 			time_ = 0;
 			enable_ = false;
 		}
-		if(enable_)
+		
+        if(enable_)
 		{
-			time_ += frame_time;
-			for(vector<Flower>::iterator it = models_.begin(); it !=models_.end(); ++it)
-			{
-				it->SetGrowing();
-			}
+//			time_ += frame_time;
+//			for(vector<Flower>::iterator it = models_.begin(); it !=models_.end(); ++it)
+//			{
+//				it->SetGrowing();
+//			}
 		}
 		else
 		{
-			for(vector<Flower>::iterator it = models_.begin(); it !=models_.end(); ++it)
+			for(vector<Flower*>::iterator it = models_.begin(); it !=models_.end(); ++it)
 			{
-				it->SetDisapp();
+				(*it)->SetDisapp();
 			}
-		}*/
+		}
+         */
 
 		//cout<<name_<<" "<<time_<<endl;
 	}
@@ -60,17 +62,20 @@ namespace Jungle
 	void Group::Update( ofVec3f lhand_pos, ofVec3f rhand_pos /*= ofVec3f(0,0,0)*/ )
 	{
 		if(enable_)
-		for(vector<Flower*>::iterator it = models_.begin(); it !=models_.end(); ++it)
-		{
-			if((*it)->Collided(lhand_pos) || (*it)->Collided(rhand_pos))
-			{
-				(*it)->Triggering(true);
-			}
-			else
-			{
-				(*it)->Triggering(false);
-			}
-		}
+        {
+            for(vector<Flower*>::iterator it = models_.begin(); it !=models_.end(); ++it)
+            {
+                if((*it)->Collided(lhand_pos) || (*it)->Collided(rhand_pos))
+                {
+                    (*it)->Triggering(true);
+                }
+                else
+                {
+                    (*it)->Triggering(false);
+                }
+            }
+        }
+
 	}
 
 	void Group::Draw()

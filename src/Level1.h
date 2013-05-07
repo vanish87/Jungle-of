@@ -12,12 +12,6 @@ namespace Jungle
 {
 	class Level1 :public State
 	{
-
-		enum State
-		{
-			LEAVES,
-			MUSHROOM
-		};
 	public:
 		Level1(void);
 		~Level1(void);
@@ -48,6 +42,8 @@ namespace Jungle
 		ofVec3f start_pos_;
         
         ofLight light_;
+        
+        unsigned int max_leaf_;
         
         vector<Flower> mushrooms_;
         int index_;

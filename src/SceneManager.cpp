@@ -2,6 +2,7 @@
 #include "Flower.h"
 #include "Group.h"
 #include "Tree.h"
+#include "Mushroom.h"
 
 namespace Jungle
 {
@@ -140,7 +141,7 @@ namespace Jungle
 					}
 				}
 				else
-                if(type == "MUSHROOM")
+                if(type == "Mushroom")
                 {
                     vector<Flower*> group_model;
 					if(file.tagExists("GroupObj"))
@@ -173,7 +174,7 @@ namespace Jungle
 							bool falling = file.getValue("FallingEnable", false);
 							float pitch = file.getValue("Pitch", 1.0f);
                             
-							Flower* flower = new Flower();
+							Mushroom* flower = new Mushroom();
 							flower->loadModel(url);
 							flower->setPosition(pos.x,pos.y,pos.z);
 							flower->setRotation(0,180,1,0,0);

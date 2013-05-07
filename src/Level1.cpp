@@ -31,7 +31,7 @@ namespace Jungle
         light_.enable();
         ofBackground(255);
         
-
+        max_leaf_ = 0;
 
 		// Mushroom Placement        
         title_.loadImage("UI/title-screen-3.png");
@@ -67,6 +67,8 @@ namespace Jungle
 	{	
 		Player& player = JungleApp::PlayerInstance();
 		player.Update();
+        
+        max_leaf_ = 0;
        
 		SceneType &scene = JungleApp::SceneManagerInstance().GetDynamicObj();
 		for(SceneType::iterator it = scene.begin(); it!= scene.end(); ++it)
@@ -86,6 +88,19 @@ namespace Jungle
                 else
                 {
                     JungleApp::SceneManagerInstance().Enable(Group::LEAF,false);
+                }
+            }
+            if(it->GetType() == Group::LEAF)
+            {
+                max_leaf_ += it->GetTriggeringCount();
+                //cout<<max_leaf_<<endl;
+                if( max_leaf_ > 50)
+				{
+                    JungleApp::SceneManagerInstance().Enable(Group::MUSHROOM,true);
+                }
+                else
+                {
+                    JungleApp::SceneManagerInstance().Enable(Group::MUSHROOM,false);
                 }
             }
 		}
@@ -113,8 +128,7 @@ namespace Jungle
 		SceneType &scene = JungleApp::SceneManagerInstance().GetDynamicObj();
 		for(SceneType::iterator it = scene.begin(); it!= scene.end(); ++it)
 		{
-			if(it->Enabled())
-				it->Draw();
+            it->Draw();
 		}
 		ofPopMatrix();
 
