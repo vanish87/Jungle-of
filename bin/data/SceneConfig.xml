@@ -154,6 +154,52 @@
 	<Name>Mushrooms</Name>
     <Type>Mushroom</Type>
 	<GroupObj>
+		
+		<Model>
+			<ObjURL>Environment/shroom_1.obj</ObjURL>
+			<Position><X>80</X> <Y>-10</Y> <Z>0</Z></Position>
+			<Rotation>0</Rotation>
+			<MaxScale>0.15</MaxScale>
+			<ScaleSpeed>0.001</ScaleSpeed>
+			<StayingTime>6</StayingTime>
+			<HoldingTime>0.2</HoldingTime>
+			<CollideSize>70</CollideSize>
+			<CircleSize>200</CircleSize>
+			<CircleColor><R>255</R> <G>0</G> <B>0</B> <A>255</A></CircleColor> 
+            <ModelColor><R>255</R> <G>255</G> <B>255</B> <A>150</A></ModelColor>            
+            <FallingEnable>0</FallingEnable>
+            <Pitch>1.0</Pitch>
+		</Model>
+		<Model>
+			<ObjURL>Environment/shroom_2.obj</ObjURL>
+			<Position><X>130</X> <Y>-10</Y> <Z>0</Z></Position>
+			<Rotation>0</Rotation>
+			<MaxScale>0.16</MaxScale>
+			<ScaleSpeed>0.001</ScaleSpeed>
+			<StayingTime>6</StayingTime>
+			<HoldingTime>0.2</HoldingTime>
+			<CollideSize>70</CollideSize>
+			<CircleSize>70</CircleSize>
+			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor> 
+            <ModelColor><R>255</R> <G>255</G> <B>255</B> <A>150</A></ModelColor>            
+            <FallingEnable>0</FallingEnable>
+            <Pitch>1.0</Pitch>
+		</Model>
+		<Model>
+			<ObjURL>Environment/shroom_3.obj</ObjURL>
+			<Position><X>207</X> <Y>-10</Y> <Z>0</Z></Position>
+			<Rotation>0</Rotation>
+			<MaxScale>0.1</MaxScale>
+			<ScaleSpeed>0.002</ScaleSpeed>
+			<StayingTime>6</StayingTime>
+			<HoldingTime>0.2</HoldingTime>
+			<CollideSize>70</CollideSize>
+			<CircleSize>70</CircleSize>
+			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor> 
+            <ModelColor><R>255</R> <G>255</G> <B>255</B> <A>150</A></ModelColor>            
+            <FallingEnable>0</FallingEnable>
+            <Pitch>1.0</Pitch>
+		</Model>
 		<Model>
 			<ObjURL>Environment/shroom_1.obj</ObjURL>
 			<Position><X>346</X> <Y>-10</Y> <Z>0</Z></Position>
@@ -321,7 +367,22 @@
 		</Model>
 		<Model>
 			<ObjURL>Environment/shroom_3.obj</ObjURL>
-			<Position><X>1007</X> <Y>-10</Y> <Z>0</Z></Position>
+			<Position><X>1058</X> <Y>-10</Y> <Z>0</Z></Position>
+			<Rotation>0</Rotation>
+			<MaxScale>0.13</MaxScale>
+			<ScaleSpeed>0.003</ScaleSpeed>
+			<StayingTime>6</StayingTime>
+			<HoldingTime>0.2</HoldingTime>
+			<CollideSize>70</CollideSize>
+			<CircleSize>70</CircleSize>
+			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor> 
+            <ModelColor><R>255</R> <G>255</G> <B>255</B> <A>150</A></ModelColor>            
+            <FallingEnable>0</FallingEnable>
+            <Pitch>1.0</Pitch>
+		</Model>
+		<Model>
+			<ObjURL>Environment/shroom_3.obj</ObjURL>
+			<Position><X>1111</X> <Y>-10</Y> <Z>0</Z></Position>
 			<Rotation>0</Rotation>
 			<MaxScale>0.13</MaxScale>
 			<ScaleSpeed>0.003</ScaleSpeed>
@@ -335,10 +396,24 @@
             <Pitch>1.0</Pitch>
 		</Model>
 
+		<Model>
+			<ObjURL>Environment/shroom_3.obj</ObjURL>
+			<Position><X>1200</X> <Y>-10</Y> <Z>0</Z></Position>
+			<Rotation>0</Rotation>
+			<MaxScale>0.13</MaxScale>
+			<ScaleSpeed>0.003</ScaleSpeed>
+			<StayingTime>6</StayingTime>
+			<HoldingTime>0.2</HoldingTime>
+			<CollideSize>70</CollideSize>
+			<CircleSize>70</CircleSize>
+			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor> 
+            <ModelColor><R>255</R> <G>255</G> <B>255</B> <A>150</A></ModelColor>            
+            <FallingEnable>0</FallingEnable>
+            <Pitch>1.0</Pitch>
+		</Model>
 	</GroupObj>
 	<StayingTime>4</StayingTime>
 </Group>
-
 
 <Group>
 	<Name>Tree1</Name>
@@ -794,7 +869,48 @@
             <FallingEnable>0</FallingEnable>
             <Pitch>1.0</Pitch>
 		</Model>
-	
+		<Model>
+			<ObjURL>Environment/SP_Leaf.obj</ObjURL>
+			<Position><X>80</X> <Y>238</Y> <Z>10</Z></Position>
+			<Rotation>0</Rotation>
+			<MaxScale>0.1</MaxScale>
+			<ScaleSpeed>0.005</ScaleSpeed>
+			<StayingTime>5</StayingTime>
+			<HoldingTime>0.1</HoldingTime>	
+			<CollideSize>70</CollideSize>
+			<CircleSize>70</CircleSize>
+			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor> 
+            <ModelColor><R>255</R> <G>255</G> <B>255</B> <A>100</A></ModelColor>            
+            <FallingEnable>1</FallingEnable>
+		</Model>
+		<Model>
+			<ObjURL>Environment/SP_Leaf.obj</ObjURL>
+			<Position><X>130</X> <Y>495</Y> <Z>10</Z></Position>
+			<Rotation>0</Rotation>
+			<MaxScale>0.1</MaxScale>
+			<ScaleSpeed>0.005</ScaleSpeed>
+			<StayingTime>5</StayingTime>
+			<HoldingTime>0.1</HoldingTime>	
+			<CollideSize>70</CollideSize>
+			<CircleSize>70</CircleSize>
+			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor> 
+            <ModelColor><R>255</R> <G>255</G> <B>255</B> <A>100</A></ModelColor>            
+            <FallingEnable>1</FallingEnable>
+		</Model>
+		<Model>
+			<ObjURL>Environment/SP_Leaf.obj</ObjURL>
+			<Position><X>207</X> <Y>354</Y> <Z>10</Z></Position>
+			<Rotation>0</Rotation>
+			<MaxScale>0.1</MaxScale>
+			<ScaleSpeed>0.005</ScaleSpeed>
+			<StayingTime>5</StayingTime>
+			<HoldingTime>0.1</HoldingTime>	
+			<CollideSize>70</CollideSize>
+			<CircleSize>70</CircleSize>
+			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor> 
+            <ModelColor><R>255</R> <G>255</G> <B>255</B> <A>100</A></ModelColor>            
+            <FallingEnable>1</FallingEnable>
+		</Model>
 
 	</GroupObj>
 	<StayingTime>4</StayingTime>
@@ -3146,7 +3262,49 @@
             <FallingEnable>0</FallingEnable>
             <Pitch>1.0</Pitch>
 		</Model>
-	
+	<Model>
+			<ObjURL>Environment/SP_Leaf.obj</ObjURL>
+			<Position><X>1058</X> <Y>404</Y> <Z>10</Z></Position>
+			<Rotation>0</Rotation>
+			<MaxScale>0.1</MaxScale>
+			<ScaleSpeed>0.005</ScaleSpeed>
+			<StayingTime>5</StayingTime>
+			<HoldingTime>0.1</HoldingTime>	
+			<CollideSize>70</CollideSize>
+			<CircleSize>70</CircleSize>
+			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor> 
+            <ModelColor><R>255</R> <G>255</G> <B>255</B> <A>100</A></ModelColor>            
+            <FallingEnable>1</FallingEnable>
+		</Model>
+<Model>
+			<ObjURL>Environment/SP_Leaf.obj</ObjURL>
+			<Position><X>1111</X> <Y>275</Y> <Z>10</Z></Position>
+			<Rotation>0</Rotation>
+			<MaxScale>0.1</MaxScale>
+			<ScaleSpeed>0.005</ScaleSpeed>
+			<StayingTime>5</StayingTime>
+			<HoldingTime>0.1</HoldingTime>	
+			<CollideSize>70</CollideSize>
+			<CircleSize>70</CircleSize>
+			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor> 
+            <ModelColor><R>255</R> <G>255</G> <B>255</B> <A>100</A></ModelColor>            
+            <FallingEnable>1</FallingEnable>
+		</Model>
+<Model>
+			<ObjURL>Environment/SP_Leaf.obj</ObjURL>
+			<Position><X>1200</X> <Y>187</Y> <Z>10</Z></Position>
+			<Rotation>0</Rotation>
+			<MaxScale>0.1</MaxScale>
+			<ScaleSpeed>0.005</ScaleSpeed>
+			<StayingTime>5</StayingTime>
+			<HoldingTime>0.1</HoldingTime>	
+			<CollideSize>70</CollideSize>
+			<CircleSize>70</CircleSize>
+			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor> 
+            <ModelColor><R>255</R> <G>255</G> <B>255</B> <A>100</A></ModelColor>            
+            <FallingEnable>1</FallingEnable>
+		</Model>
+
 	</GroupObj>
 	<StayingTime>4</StayingTime>
 </Group>
