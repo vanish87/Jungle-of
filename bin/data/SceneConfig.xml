@@ -3264,7 +3264,7 @@
 		</Model>
 	<Model>
 			<ObjURL>Environment/SP_Leaf.obj</ObjURL>
-			<Position><X>1058</X> <Y>404</Y> <Z>10</Z></Position>
+			<Position><X>1058</X> <Y>404</Y> <Z>60</Z></Position>
 			<Rotation>0</Rotation>
 			<MaxScale>0.1</MaxScale>
 			<ScaleSpeed>0.005</ScaleSpeed>
@@ -3278,7 +3278,7 @@
 		</Model>
 <Model>
 			<ObjURL>Environment/SP_Leaf.obj</ObjURL>
-			<Position><X>1111</X> <Y>275</Y> <Z>10</Z></Position>
+			<Position><X>1111</X> <Y>275</Y> <Z>60</Z></Position>
 			<Rotation>0</Rotation>
 			<MaxScale>0.1</MaxScale>
 			<ScaleSpeed>0.005</ScaleSpeed>
@@ -3292,7 +3292,7 @@
 		</Model>
 <Model>
 			<ObjURL>Environment/SP_Leaf.obj</ObjURL>
-			<Position><X>1200</X> <Y>187</Y> <Z>10</Z></Position>
+			<Position><X>1200</X> <Y>187</Y> <Z>60</Z></Position>
 			<Rotation>0</Rotation>
 			<MaxScale>0.1</MaxScale>
 			<ScaleSpeed>0.005</ScaleSpeed>
