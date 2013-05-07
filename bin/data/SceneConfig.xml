@@ -152,7 +152,7 @@
 
 <Group>
 	<Name>Mushrooms</Name>
-  <Type>Flower</Type>
+    <Type>Mushroom</Type>
 	<GroupObj>
 		<Model>
 			<ObjURL>Environment/shroom_1.obj</ObjURL>

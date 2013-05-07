@@ -78,10 +78,16 @@ namespace Jungle
 
 			it->Update(ofGetLastFrameTime());
 			if(it->GetType() == Group::TREE)
+            {
 				if(it->GetTriggeringCount() > 4)
 				{
 					JungleApp::SceneManagerInstance().Enable(Group::LEAF,true);
 				}
+                else
+                {
+                    JungleApp::SceneManagerInstance().Enable(Group::LEAF,false);
+                }
+            }
 		}
 
 		//update static scene
