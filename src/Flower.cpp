@@ -103,12 +103,22 @@ namespace Jungle {
             {
 				flower_state_ = GROWING;
 				
-				int index = ofRandom(0,7);
-				if (!sounds_[index].getIsPlaying())
-				{
-					sounds_[index].play();
-					sounds_[index].setSpeed(pitch_);
-				}
+                
+                //playing fruit sound
+                if(falling_)
+                {
+                    
+                }
+                //playing leaf sound
+                else
+                {                    
+                    int index = ofRandom(0,7);
+                    if (!sounds_[index].getIsPlaying())
+                    {
+                        sounds_[index].play();
+                        sounds_[index].setSpeed(pitch_);
+                    }
+                }
 				time_ = 0;
 			}			
 			break;
