@@ -14,6 +14,7 @@ namespace Jungle {
 		{
 			TREE,
 			LEAF,
+            FRUIT,
 			MUSHROOM
 		};
 	public:

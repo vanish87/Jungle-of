@@ -27,106 +27,54 @@ namespace Jungle
 		tree_.setRotation(0, 180, 0, 0, 1);
 		tree_.Enable(true);
         
-        ///
-        
-//        tree1_.loadModel("Environment/Tree_1.obj");
-//		tree1_.setPosition(155 , -200, -30);
-//		tree1_.setScale(1,1,1);
-//		tree1_.setRotation(0, 180, 0, 0, 1);
-//		tree1_.Enable(true);
-//        
-//        tree2_.loadModel("Environment/Tree_2.obj");
-//		tree2_.setPosition(450 , -200, -30);
-//		tree2_.setScale(1,1.24,1);
-//		tree2_.setRotation(0, 180, 0, 0, 1);
-//		tree2_.Enable(true);
-//        
-//        tree3_.loadModel("Environment/Tree_3.obj");
-//		tree3_.setPosition(691 , -170, -30);
-//		tree3_.setScale(1,1.1,1);
-//		tree3_.setRotation(0, 180, 0, 0, 1);
-//		tree3_.Enable(true);
-//        
-//        tree4_.loadModel("Environment/Tree_4.obj");
-//		tree4_.setPosition(941 , -200, -30);
-//		tree4_.setScale(1,1.24,1);
-//		tree4_.setRotation(0, 180, 0, 0, 1);
-//		tree4_.Enable(true);
-//        
-//        tree5_.loadModel("Environment/Tree_5.obj");
-//		tree5_.setPosition(1116 , -190, -30);
-//		tree5_.setScale(0.87,0.87,0.87);
-//		tree5_.setRotation(0, 180, 0, 0, 1);
-//		tree5_.Enable(true);
-    
-        ////
         
         bg_1_.loadModel("Environment/mountain2.obj");
-		bg_1_.setPosition(600,-115,-270);
+		bg_1_.setPosition(603,-117,-290);
 		bg_1_.setScale(2,2,2);
 		bg_1_.setRotation(0, 180, 0, 0, 1);
         bg_1_.setRotation(1, 180, 0, 1, 0);
 		bg_1_.Enable(true);
         
-        ground_1_.loadModel("Environment/ground_1.obj");
-		ground_1_.setPosition(147,-20,-10);
-		ground_1_.setScale(0.3,0.3,0.3);
+        ground_1_.loadModel("Environment/front.obj");
+		ground_1_.setPosition(600,-24,50);
+		ground_1_.setScale(2,2,2);
 		ground_1_.setRotation(0, 180, 0, 0, 1);
-        ground_1_.setRotation(1, 180, 0, 1, 0);
+        //ground_1_.setRotation(1, 180, 0, 1, 0);
 		ground_1_.Enable(true);
         
-        ground_2_.loadModel("Environment/ground_2.obj");
-		ground_2_.setPosition(445,-20,-10);
-		ground_2_.setScale(0.3,0.3,0.3);
+        ground_2_.loadModel("Environment/second.obj");
+		ground_2_.setPosition(600,-24,0);
+		ground_2_.setScale(2,2,2);
 		ground_2_.setRotation(0, 180, 0, 0, 1);
-        ground_2_.setRotation(1, 180, 0, 1, 0);
+       // ground_2_.setRotation(1, 180, 0, 1, 0);
 		ground_2_.Enable(true);
         
-        ground_3_.loadModel("Environment/ground_3.obj");
-		ground_3_.setPosition(689,-20,-10);
-		ground_3_.setScale(0.3,0.3,0.3);
+        ground_3_.loadModel("Environment/back.obj");
+		ground_3_.setPosition(600,-24,-50);
+		ground_3_.setScale(2,2,2);
 		ground_3_.setRotation(0, 180, 0, 0, 1);
-        ground_3_.setRotation(1, 180, 0, 1, 0);
+        //ground_3_.setRotation(1, 180, 0, 1, 0);
 		ground_3_.Enable(true);
         
-        ground_4_.loadModel("Environment/ground_2.obj");
-		ground_4_.setPosition(933,-20,-10);
-		ground_4_.setScale(0.3,0.3,0.3);
-		ground_4_.setRotation(0, 180, 0, 0, 1);
-        ground_4_.setRotation(1, 180, 0, 1, 0);
-		ground_4_.Enable(true);
-        
-        ground_5_.loadModel("Environment/ground_1.obj");
-		ground_5_.setPosition(1114,-20,-10);
-		ground_5_.setScale(0.3,0.3,0.3);
-		ground_5_.setRotation(0, 180, 0, 0, 1);
-        ground_5_.setRotation(1, 180, 0, 1, 0);
-		ground_5_.Enable(true);
         
         model_ = &tree_;
         
         ground_1_.AddToScene();
         ground_2_.AddToScene();
         ground_3_.AddToScene();
-        ground_4_.AddToScene();
-        ground_5_.AddToScene();
+   
 
         bg_1_.AddToScene();
 
         
 		atmo.loadSound("Audio/jungle-atmos-2.mp3");
 		atmo.setLoop(true);
-        
 		atmo.play();
-        
-        
-
 	}
 
 	void StaticScene::Update()
 	{
 		JungleApp::SceneManagerInstance().Update();
-        
         
 	}
 
@@ -136,7 +84,7 @@ namespace Jungle
         //set background here
         ofBackground(14, 28, 54);
 		//set background Gradient here
-		ofBackgroundGradient(ofColor(105,119,120),ofColor(14,28,54), OF_GRADIENT_LINEAR);
+		ofBackgroundGradient(ofColor(230,0,0),ofColor(14,28,54), OF_GRADIENT_LINEAR);
 
 		glEnable(GL_DEPTH_TEST);
 
