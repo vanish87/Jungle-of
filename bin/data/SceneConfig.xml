@@ -3056,6 +3056,11 @@
 	</GroupObj>
 	<StayingTime>4</StayingTime>
 </Group>
+
+<Group>
+    <Name>SP_Leaf</Name>
+    <Type>SP_Leaf</Type>
+	<GroupObj>
 <Model>
     <ObjURL>Environment/SP_Leaf.obj</ObjURL>
     <Position><X>80</X> <Y>238</Y> <Z>10</Z></Position>
@@ -3310,18 +3315,9 @@
     <ModelColor><R>255</R> <G>255</G> <B>255</B> <A>100</A></ModelColor>
     <FallingEnable>1</FallingEnable>
 </Model>
-
-<Group>
-    <Name>SP_Leaf</Name>
-    <Type>SP_Leaf</Type>
-	<GroupObj>
-
-
-
     </GroupObj>
 	<StayingTime>4</StayingTime>
 </Group>
-
         
 <LevelIndex>
   <Level>
