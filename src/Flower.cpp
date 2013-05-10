@@ -85,7 +85,7 @@ namespace Jungle {
 			}
 			break;
 		case DISAPPEARING:
-			if(scale.x > 0)
+			if(scale.x > max_scale_ * 0.3)
 				scale -= scale_speed_;
 			else
 			{
@@ -120,15 +120,18 @@ namespace Jungle {
 			}			
 			break;
 		case FALLING:
-			if(pos.y > -10)
+			if(pos.y > 10)
             {
                 //pos.x += sin(ofGetElapsedTimef())* ofRandom(-10,10);
 				pos.y-=3;
             }
 			else
 			{
-				flower_state_ = DISAPPEARING;
-				time_ = 0;
+                if(time_ > 7)
+                {
+                    flower_state_ = DISAPPEARING;
+                    time_ = 0;
+                }
 			}
 			break;
 		default:

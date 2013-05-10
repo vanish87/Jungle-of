@@ -94,7 +94,7 @@ namespace Jungle
             {
                 max_leaf_ += it->GetTriggeringCount();
                 //cout<<max_leaf_<<endl;
-                if( max_leaf_ > 50)
+                if( max_leaf_ > 130)
 				{
                     JungleApp::SceneManagerInstance().Enable(Group::FRUIT,true);
                 }
@@ -181,7 +181,7 @@ namespace Jungle
 		if(JUNGLE_DEBUG)
 		{
 			ofSetColor(255, 255, 255,255);
-			ofDrawBitmapString("angle "+ ofToString(player.wind_.emitter_.angle), 20, 20);
+			ofDrawBitmapString("leaf num "+ ofToString(max_leaf_), 20, 20);
 			//ofDrawBitmapString("v length "+ ofToString((bt_pos - mh_pos).length()), 20, 40);
 			//ofDrawBitmapString("scale "+ ofToString(mushrooms_[index_].getScale().x), 20, 60);
 			
