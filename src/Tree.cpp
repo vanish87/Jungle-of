@@ -80,6 +80,12 @@ namespace Jungle
 			if(flower_state_ == WAITING)
 			{
 				//play sound here
+				int index = ofRandom(0,4);
+				if (!sounds_[index].getIsPlaying())
+				{
+					sounds_[index].play();
+					sounds_[index].setSpeed(pitch_);
+				}
 				flower_state_ = GROWING;
 				time_ = 0;
 			}			
