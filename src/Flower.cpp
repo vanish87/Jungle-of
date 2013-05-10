@@ -100,14 +100,6 @@ namespace Jungle {
             {
 				flower_state_ = GROWING;
 				
-<<<<<<< HEAD
-				int index = ofRandom(0,4);
-				if (!sounds_[index].getIsPlaying())
-				{
-					sounds_[index].play();
-					sounds_[index].setSpeed(pitch_);
-				}
-=======
                 
                 //playing fruit sound
                 if(falling_)
@@ -117,14 +109,13 @@ namespace Jungle {
                 //playing leaf sound
                 else
                 {                    
-                    int index = ofRandom(0,7);
+                    int index = ofRandom(0,4);
                     if (!sounds_[index].getIsPlaying())
                     {
                         sounds_[index].play();
                         sounds_[index].setSpeed(pitch_);
                     }
                 }
->>>>>>> 4d72324b9ff7c90407502ce7d79514bba6c51826
 				time_ = 0;
 			}			
 			break;

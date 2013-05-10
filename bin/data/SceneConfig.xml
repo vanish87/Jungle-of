@@ -3059,7 +3059,7 @@
 
 <Group>
     <Name>SP_Leaf</Name>
-    <Type>SP_Leaf</Type>
+    <Type>Fruit</Type>
 	<GroupObj>
 <Model>
     <ObjURL>Environment/SP_Leaf.obj</ObjURL>

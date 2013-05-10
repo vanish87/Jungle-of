@@ -193,6 +193,9 @@
     <ClCompile Include="src\GamingScene6.cpp">
       <Filter>src\Legacy</Filter>
     </ClCompile>
+    <ClCompile Include="src\Mushroom.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\JungleApp.h">
@@ -800,6 +803,9 @@
     </ClInclude>
     <ClInclude Include="src\GamingScene6.h">
       <Filter>src\Legacy</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Mushroom.h">
+      <Filter>src</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
