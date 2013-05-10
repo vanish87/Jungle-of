@@ -57,6 +57,9 @@ namespace Jungle
         SceneModel bush_;
         
 		SceneModel* model_ ;
+        
+        ofColor back_color_start_;
+        ofColor back_color_end_;
 
 		int w_;
 		int h_;

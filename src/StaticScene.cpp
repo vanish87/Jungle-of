@@ -65,6 +65,9 @@ namespace Jungle
    
 
         bg_1_.AddToScene();
+        
+        back_color_start_ = ofColor(230,0,0);
+        back_color_end_ = ofColor((14,28,54));
 
         
 		atmo.loadSound("Audio/jungle-atmos-2.mp3");
@@ -84,7 +87,8 @@ namespace Jungle
         //set background here
         ofBackground(14, 28, 54);
 		//set background Gradient here
-		ofBackgroundGradient(ofColor(230,0,0),ofColor(14,28,54), OF_GRADIENT_LINEAR);
+        ofBackgroundGradient(back_color_start_, back_color_end_,OF_GRADIENT_LINEAR);
+		//ofBackgroundGradient(ofColor(230,0,0),ofColor(14,28,54), OF_GRADIENT_LINEAR);
 
 		glEnable(GL_DEPTH_TEST);
 
@@ -102,82 +106,123 @@ namespace Jungle
 	{        
        
 
-		ofVec3f pos = model_->getPosition();
-		ofVec3f scale = model_->getScale();
+		ofVec3f pos; //= model_->getPosition();
+		ofVec3f scale; //= model_->getScale();
 		switch (key)
 		{
-		case 's':
+		case '1':
 			pos.z+=5;
 			break;
-		case 'w': 
+		case '2':
 			pos.z-=5;
 			break;	
-		case 'q':
+		case '3':
 			pos.y+=5;
 			break;
-		case 'z':
+		case '4':
 			pos.y-=5;
 			break;
-		case 'a':
+		case '5':
 			pos.x-=5;
 			break;
-		case 'd':
+		case '6':
 			pos.x+=5;
 			break;
-		case 'e':  
+		case '7':
 			scale+=0.1;
 			model_->setScale(scale.x, scale.y,scale.z);
 			break;
-		case 'c':
+		case '8':
 			scale-=0.1;
 			model_->setScale(scale.x, scale.y,scale.z);
 			break;
-		case 'y':
+		case '9':
 			break;
-		case 'h':
+		case 'q':
 			break;
-		case 'g':
+		case 'w':
 			break;
-		case 'j':
+		case 'e':
 			break;
-        case '4':
+        case 'r':
             pos = ground_.getPosition();
             model_ = &bg_4_;
+            back_color_start_.set(0, 255, 0);
             break;
-        case '5':   
+        case 't':
 			pos = ground_.getPosition();
 			model_ = &ground_;
 			break;		
-        case '6':  
+        case 'y':
 			pos = tree_.getPosition();
 			model_ = &tree_;
 			break;
-		case '3':     
+		case 'u':
 			pos = bg_3_.getPosition();
 			model_ = &bg_3_;
 			break;
-		case '2':   
+		case 'i':
 			pos = bg_2_.getPosition();
 			model_ = &bg_2_;
 			break;
-		case '1':     
+		case 'o':
 			pos = bg_1_.getPosition();
 			model_ = &bg_1_;
 			break;
-        case '7':
+        case 'p':
             pos = rocks_.getPosition();
             model_ = &rocks_;
             break;
-
-		case 'm':     
+		case 'a':
+                pos = ground_.getPosition();
+                model_ = &bg_4_;
+                back_color_start_.set(206, 234, 235);
 			break;
-		case 'n':     
+		case 's':
+                pos = ground_.getPosition();
+                model_ = &bg_4_;
+                back_color_start_.set(186, 186, 186);
 			break;
-		case 't':     
+		case 'd':
+                pos = ground_.getPosition();
+                model_ = &bg_4_;
+                back_color_start_.set(239, 41, 94);
 			break;
-		case 'r':     
+		case 'f':
+                pos = ground_.getPosition();
+                model_ = &bg_4_;
+                back_color_start_.set(14, 28, 54);
 			break;
-
+            case 'g':
+                pos = ground_.getPosition();
+                model_ = &bg_4_;
+                back_color_start_.set(150, 33, 166);
+                break;
+            case 'h':
+                pos = ground_.getPosition();
+                model_ = &bg_4_;
+                back_color_start_.set(85, 50, 133);
+                break;
+            case 'j':
+                pos = ground_.getPosition();
+                model_ = &bg_4_;
+                back_color_start_.set(255, 182, 22);
+                break;
+            case 'k':
+                pos = ground_.getPosition();
+                model_ = &bg_4_;
+                back_color_start_.set(242, 82, 96);
+                break;
+            case 'l':
+                pos = ground_.getPosition();
+                model_ = &bg_4_;
+                back_color_start_.set(85, 50, 133);
+                break;
+            case ';':
+                pos = ground_.getPosition();
+                model_ = &bg_4_;
+                back_color_start_.set(255, 182, 22);
+                break;
 		default:
 			break;
 		}

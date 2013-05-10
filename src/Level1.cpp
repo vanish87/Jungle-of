@@ -199,14 +199,14 @@ namespace Jungle
         
         int index = 0;
         index_ = index;
-        ofVec3f pos = mushrooms_[index].getPosition();
-		ofVec3f scale = mushrooms_[index].getScale();
+        ofVec3f pos;// = mushrooms_[index].getPosition();
+		ofVec3f scale;// = mushrooms_[index].getScale();
         
         ofVec3f cam_pos=player.player_camera_.getPosition();
 
         //static scene
-        //this->GetParent()->keyPressed(key);
-        //return;
+        this->GetParent()->keyPressed(key);
+        return;
 		switch (key)
 		{
             case 's':
