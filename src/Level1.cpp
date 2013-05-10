@@ -20,12 +20,13 @@ namespace Jungle
 		Player& player = JungleApp::PlayerInstance();
         
         light_.setAmbientColor(ofFloatColor(0.5, 0.5, 0.5));
-        light_.setDiffuseColor(ofFloatColor(1 ,1 ,1));
+        light_.setDiffuseColor(ofFloatColor(0 ,1 ,0));
+        light_.setSpecularColor(ofFloatColor(0,1,0));
         light_.setPointLight();
-        light_.setPosition(20, 100, 40);
         ofQuaternion q;
-        q.makeRotate(-45, 1, 0, 0);
-        light_.setOrientation(q);
+        q.makeRotate(0, 0, 1, 0);
+        light_.setDirectional();
+        light_.setPosition(1024, 768, 0);
         
         ofEnableLighting();
         light_.enable();
@@ -55,6 +56,9 @@ namespace Jungle
 			//throw exception("Cannot Load Scene");;
        JungleApp::SceneManagerInstance().Enable(Group::TREE,true);
         
+        
+       SceneType &scene = JungleApp::SceneManagerInstance().GetDynamicObj();
+
         
 		//circle_.loadImage("Environment/glowing-circle-2.png");
 		w_ = ofGetWindowWidth();
@@ -203,6 +207,8 @@ namespace Jungle
 		ofVec3f scale;// = mushrooms_[index].getScale();
         
         ofVec3f cam_pos=player.player_camera_.getPosition();
+        
+        ofQuaternion q;
 
         //static scene
         this->GetParent()->keyPressed(key);
@@ -210,10 +216,10 @@ namespace Jungle
 		switch (key)
 		{
             case 's':
-                pos.z+=1;
+                angle_+=1;
                 break;
             case 'w':
-                pos.z-=1;
+                angle_-=1;
                 break;
             case 'q':
                 pos.y+=1;
@@ -277,9 +283,12 @@ namespace Jungle
             default:
                 break;
 		}
-        
-        player.player_camera_.setPosition(cam_pos);
-		mushrooms_[index].setPosition(pos.x, pos.y, pos.z);
+    
+        q.makeRotate(angle_, 1, 0, 0);
+        //light_.setPosition(500, angle_, 0);
+        light_.setOrientation(q);
+        //player.player_camera_.setPosition(cam_pos);
+		//mushrooms_[index].setPosition(pos.x, pos.y, pos.z);
 	}
 
 	void Level1::mouseMoved( int x, int y )

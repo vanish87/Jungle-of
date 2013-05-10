@@ -21,9 +21,14 @@ namespace Jungle
 		virtual void Update(float frame_time);
 
 		virtual bool Collided(ofVec3f pos);
+        
+        virtual void AddTexture(string tex);
+        virtual void Settexture(int num);
 
 	protected:
 		bool enable_;
+        
+        vector<ofTexture> textures_;
 	};
 }
 

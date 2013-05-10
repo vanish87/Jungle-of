@@ -37,6 +37,22 @@ namespace Jungle
 	{
 		return false;
 	}
+    void SceneModel::AddTexture(string tex_name)
+    {
+        if(textures_.empty())
+        {
+            ofxAssimpMeshHelper* mesh = &this->modelMeshes[0];
+            textures_.push_back(mesh->texture);
+        }
+        ofTexture tex;
+		ofLoadImage(tex,tex_name);
+        textures_.push_back(tex);
+    }
+    void SceneModel::Settexture(int num)
+    {
+        ofxAssimpMeshHelper* mesh = &this->modelMeshes[0];
+        mesh->texture = textures_[num];
+    }
 
 
 }

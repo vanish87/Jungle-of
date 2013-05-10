@@ -31,7 +31,7 @@ namespace Jungle {
 
 		GROUP_TYPE GetType(){return type_;};
 		unsigned int GetTriggeringCount();
-	private:
+	public:
 
 		string name_;
 		GROUP_TYPE type_;
