@@ -42,6 +42,7 @@ namespace Jungle
 		ofVec3f start_pos_;
         
         ofLight light_;
+        float angle_;
         
         unsigned int max_leaf_;
         

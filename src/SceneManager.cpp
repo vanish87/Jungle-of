@@ -300,6 +300,7 @@ namespace Jungle
 							flower->setPosition(pos.x,pos.y,pos.z);
 							flower->setRotation(0,180,1,0,0);
 							flower->setRotation(1,rotation,0,0,1);
+                            flower->setScale(0.4, 0.4, 0.4);
 							flower->SetMaxScale(max_scale);
 							flower->SetScaleSpeed(scale_speed);
 							flower->staying_time_ = staying_time + ofRandom(-3, 3);
