@@ -127,7 +127,7 @@ namespace Jungle {
             }
 			else
 			{
-                if(time_ > 7)
+                if(time_ > 4)
                 {
                     flower_state_ = DISAPPEARING;
                     time_ = 0;
