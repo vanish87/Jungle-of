@@ -130,8 +130,8 @@
       <ScaleSpeed>0.005</ScaleSpeed>
       <StayingTime>60</StayingTime>
       <HoldingTime>0.1</HoldingTime>
-      <CollideSize>70</CollideSize>
-      <CircleSize>70</CircleSize>
+      <CollideSize>150</CollideSize>
+      <CircleSize>150</CircleSize>
       <CircleColor>
         <R>255</R>
         <G>255</G>
