@@ -1,4 +1,42 @@
 <Group>
+    <Name>Clouds</Name>
+    <Type>Cloud</Type>
+    <GroupObj>
+        <Model>
+			<ObjURL>Environment/Cloud_1.obj</ObjURL>
+			<Position><X>144</X> <Y>641</Y> <Z>30</Z></Position>
+			<Rotation>0</Rotation>
+			<MaxScale>0.1</MaxScale>
+			<ScaleSpeed>0.005</ScaleSpeed>
+			<StayingTime>10</StayingTime>
+			<HoldingTime>0.1</HoldingTime>
+			<CollideSize>70</CollideSize>
+			<CircleSize>70</CircleSize>
+			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
+            <ModelColor><R>255</R> <G>255</G> <B>255</B> <A>100</A></ModelColor>
+            <FallingEnable>0</FallingEnable>
+            <Pitch>1.0</Pitch>
+		</Model>
+        <Model>
+			<ObjURL>Environment/Cloud_2.obj</ObjURL>
+			<Position><X>1103</X> <Y>647</Y> <Z>30</Z></Position>
+			<Rotation>0</Rotation>
+			<MaxScale>0.1</MaxScale>
+			<ScaleSpeed>0.005</ScaleSpeed>
+			<StayingTime>10</StayingTime>
+			<HoldingTime>0.1</HoldingTime>
+			<CollideSize>70</CollideSize>
+			<CircleSize>70</CircleSize>
+			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
+            <ModelColor><R>255</R> <G>255</G> <B>255</B> <A>100</A></ModelColor>
+            <FallingEnable>0</FallingEnable>
+            <Pitch>1.0</Pitch>
+		</Model>
+    </GroupObj>
+</Group>
+
+
+<Group>
   <Name>Tree6</Name>
   <Type>Tree</Type>
   <GroupObj>
@@ -2634,22 +2672,7 @@
             <FallingEnable>0</FallingEnable>
             <Pitch>1.0</Pitch>
 		</Model>
-		<Model>
-			<ObjURL>Environment/Leaf_1.obj</ObjURL>
-			<Position><X>1041</X> <Y>618</Y> <Z>0</Z></Position>
-			<Rotation>0</Rotation>
-			<MaxScale>0.15</MaxScale>
-			<ScaleSpeed>0.005</ScaleSpeed>
-			<StayingTime>10</StayingTime>
-			<HoldingTime>0.1</HoldingTime>
-			<CollideSize>70</CollideSize>
-			<CircleSize>70</CircleSize>
-			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor> 
-            <ModelColor><R>255</R> <G>255</G> <B>255</B> <A>100</A></ModelColor>            
-            <FallingEnable>0</FallingEnable>
-            <Pitch>1.0</Pitch>
-		</Model>
-		<Model>
+				<Model>
 			<ObjURL>Environment/Leaf2.obj</ObjURL>
 			<Position><X>1125</X> <Y>414</Y> <Z>0</Z></Position>
 			<Rotation>0</Rotation>
@@ -3347,6 +3370,9 @@
       <Group>
 		  <Name>SP_Leaf</Name>
 	  </Group>
+      <Group>
+          <Name>Clouds</Name>
+      </Group>
   </Level>
 </LevelIndex>
 
