@@ -192,7 +192,6 @@
 	<Name>Mushrooms</Name>
     <Type>Mushroom</Type>
 	<GroupObj>
-		
 		<Model>
 			<ObjURL>Environment/shroom_1.obj</ObjURL>
 			<Position><X>80</X> <Y>-10</Y> <Z>0</Z></Position>
@@ -457,7 +456,67 @@
 	<Name>Tree1</Name>
   <Type>Flower</Type>
 	<GroupObj>
-			<Model>
+		<Model>
+			<ObjURL>Environment/Leaf_1.obj</ObjURL>
+			<Position><X>150</X> <Y>523</Y> <Z>0</Z></Position>
+			<Rotation>0</Rotation>
+			<MaxScale>0.1</MaxScale>
+			<ScaleSpeed>0.005</ScaleSpeed>
+			<StayingTime>10</StayingTime>
+			<HoldingTime>0.1</HoldingTime>
+			<CollideSize>70</CollideSize>
+			<CircleSize>70</CircleSize>
+			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
+            <ModelColor><R>255</R> <G>255</G> <B>255</B> <A>100</A></ModelColor>
+            <FallingEnable>0</FallingEnable>
+            <Pitch>1.0</Pitch>
+		</Model>
+        <Model>
+			<ObjURL>Environment/Leaf_3.obj</ObjURL>
+			<Position><X>82</X> <Y>476</Y> <Z>0</Z></Position>
+			<Rotation>0</Rotation>
+			<MaxScale>0.1</MaxScale>
+			<ScaleSpeed>0.005</ScaleSpeed>
+			<StayingTime>10</StayingTime>
+			<HoldingTime>0.1</HoldingTime>
+			<CollideSize>70</CollideSize>
+			<CircleSize>70</CircleSize>
+			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
+            <ModelColor><R>255</R> <G>255</G> <B>255</B> <A>100</A></ModelColor>
+            <FallingEnable>0</FallingEnable>
+            <Pitch>1.0</Pitch>
+		</Model>
+        <Model>
+			<ObjURL>Environment/Leaf_4.obj</ObjURL>
+			<Position><X>15</X> <Y>400</Y> <Z>0</Z></Position>
+			<Rotation>0</Rotation>
+			<MaxScale>0.1</MaxScale>
+			<ScaleSpeed>0.005</ScaleSpeed>
+			<StayingTime>10</StayingTime>
+			<HoldingTime>0.1</HoldingTime>
+			<CollideSize>70</CollideSize>
+			<CircleSize>70</CircleSize>
+			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
+            <ModelColor><R>255</R> <G>255</G> <B>255</B> <A>100</A></ModelColor>
+            <FallingEnable>0</FallingEnable>
+            <Pitch>1.0</Pitch>
+		</Model>
+        <Model>
+			<ObjURL>Environment/Leaf_5.obj</ObjURL>
+			<Position><X>226</X> <Y>178</Y> <Z>0</Z></Position>
+			<Rotation>0</Rotation>
+			<MaxScale>0.1</MaxScale>
+			<ScaleSpeed>0.005</ScaleSpeed>
+			<StayingTime>10</StayingTime>
+			<HoldingTime>0.1</HoldingTime>
+			<CollideSize>70</CollideSize>
+			<CircleSize>70</CircleSize>
+			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
+            <ModelColor><R>255</R> <G>255</G> <B>255</B> <A>100</A></ModelColor>
+            <FallingEnable>0</FallingEnable>
+            <Pitch>1.0</Pitch>
+		</Model>
+        <Model>
 			<ObjURL>Environment/Leaf_1.obj</ObjURL>
 			<Position><X>1</X> <Y>202</Y> <Z>0</Z></Position>
 			<Rotation>0</Rotation>
@@ -918,52 +977,6 @@
   <Name>Tree2</Name>
   <Type>Flower</Type>
 	<GroupObj>
-
-		<Model>
-			<ObjURL>Environment/Leaf_1.obj</ObjURL>
-			<Position><X>450</X> <Y>680</Y> <Z>0</Z></Position>
-			<Rotation>0</Rotation>
-			<MaxScale>0.15</MaxScale>
-			<ScaleSpeed>0.005</ScaleSpeed>
-			<StayingTime>10</StayingTime>
-			<HoldingTime>0.1</HoldingTime>	
-			<CollideSize>70</CollideSize>
-			<CircleSize>70</CircleSize>
-			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor> 
-            <ModelColor><R>255</R> <G>255</G> <B>255</B> <A>100</A></ModelColor>            
-            <FallingEnable>0</FallingEnable>
-            <Pitch>1.252</Pitch>
-		</Model>
-		<Model>
-			<ObjURL>Environment/Leaf_3.obj</ObjURL>
-			<Position><X>429</X> <Y>645</Y> <Z>0</Z></Position>
-			<Rotation>0</Rotation>
-		<MaxScale>0.15</MaxScale>
-			<ScaleSpeed>0.005</ScaleSpeed>
-			<StayingTime>10</StayingTime>
-			<HoldingTime>0.1</HoldingTime>	
-			<CollideSize>70</CollideSize>
-			<CircleSize>70</CircleSize>
-			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor> 
-            <ModelColor><R>255</R> <G>255</G> <B>255</B> <A>100</A></ModelColor>            
-            <FallingEnable>0</FallingEnable>
-            <Pitch>1.252</Pitch>
-		</Model>
-		<Model>
-			<ObjURL>Environment/Leaf_5.obj</ObjURL>
-			<Position><X>476</X> <Y>639</Y> <Z>0</Z></Position>
-			<Rotation>0</Rotation>
-		<MaxScale>0.15</MaxScale>
-			<ScaleSpeed>0.005</ScaleSpeed>
-			<StayingTime>10</StayingTime>
-			<HoldingTime>0.1</HoldingTime>
-			<CollideSize>70</CollideSize>
-			<CircleSize>70</CircleSize>
-			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor> 
-            <ModelColor><R>255</R> <G>255</G> <B>255</B> <A>100</A></ModelColor>            
-            <FallingEnable>0</FallingEnable>
-            <Pitch>1.252</Pitch>
-		</Model>
 		<Model>
 			<ObjURL>Environment/Leaf_4.obj</ObjURL>
 			<Position><X>366</X> <Y>593</Y> <Z>0</Z></Position>
@@ -1325,22 +1338,8 @@
             <FallingEnable>0</FallingEnable>
             <Pitch>1.252</Pitch>
 		</Model>
-		<Model>
-			<ObjURL>Environment/Leaf_3.obj</ObjURL>
-			<Position><X>560</X> <Y>518</Y> <Z>0</Z></Position>
-			<Rotation>0</Rotation>
-		<MaxScale>0.15</MaxScale>
-			<ScaleSpeed>0.005</ScaleSpeed>
-			<StayingTime>10</StayingTime>
-			<HoldingTime>0.1</HoldingTime>
-			<CollideSize>70</CollideSize>
-			<CircleSize>70</CircleSize>
-			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor> 
-            <ModelColor><R>255</R> <G>255</G> <B>255</B> <A>100</A></ModelColor>            
-            <FallingEnable>0</FallingEnable>
-            <Pitch>1.252</Pitch>
-		</Model>
-		<Model>
+
+	<Model>
 			<ObjURL>Environment/Leaf_5.obj</ObjURL>
 			<Position><X>345</X> <Y>357</Y> <Z>0</Z></Position>
 			<Rotation>0</Rotation>
@@ -1403,21 +1402,6 @@
 		<Model>
 			<ObjURL>Environment/Leaf_5.obj</ObjURL>
 			<Position><X>621</X> <Y>487</Y> <Z>0</Z></Position>
-			<Rotation>0</Rotation>
-			<MaxScale>0.15</MaxScale>
-			<ScaleSpeed>0.005</ScaleSpeed>
-			<StayingTime>10</StayingTime>
-			<HoldingTime>0.1</HoldingTime>
-			<CollideSize>70</CollideSize>
-			<CircleSize>70</CircleSize>
-			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor> 
-            <ModelColor><R>255</R> <G>255</G> <B>255</B> <A>100</A></ModelColor>            
-            <FallingEnable>0</FallingEnable>
-            <Pitch>1.252</Pitch>
-		</Model>
-		<Model>
-			<ObjURL>Environment/Leaf_4.obj</ObjURL>
-			<Position><X>556</X> <Y>618</Y> <Z>0</Z></Position>
 			<Rotation>0</Rotation>
 			<MaxScale>0.15</MaxScale>
 			<ScaleSpeed>0.005</ScaleSpeed>
@@ -1524,15 +1508,26 @@
 	<StayingTime>4</StayingTime>
 </Group>
 
-
-
-
-
 <Group>
   <Name>Tree3</Name>
   <Type>Flower</Type>
 	<GroupObj>
-			
+        <Model>
+			<ObjURL>Environment/Leaf_4.obj</ObjURL>
+			<Position><X>693</X> <Y>568</Y> <Z>0</Z></Position>
+			<Rotation>0</Rotation>
+			<MaxScale>0.1</MaxScale>
+			<ScaleSpeed>0.005</ScaleSpeed>
+			<StayingTime>10</StayingTime>
+			<HoldingTime>0.1</HoldingTime>
+			<CollideSize>70</CollideSize>
+			<CircleSize>70</CircleSize>
+			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
+            <ModelColor><R>255</R> <G>255</G> <B>255</B> <A>100</A></ModelColor>
+            <FallingEnable>0</FallingEnable>
+            <Pitch>1.59</Pitch>
+		</Model>
+
 		<Model>
 			<ObjURL>Environment/Leaf_4.obj</ObjURL>
 			<Position><X>695</X> <Y>60</Y> <Z>0</Z></Position>
@@ -1567,22 +1562,6 @@
 		<Model>
 			<ObjURL>Environment/Leaf_5.obj</ObjURL>
 			<Position><X>681</X> <Y>457</Y> <Z>0</Z></Position>
-			<Rotation>0</Rotation>
-			<MaxScale>0.1</MaxScale>
-			<ScaleSpeed>0.005</ScaleSpeed>
-			<StayingTime>10</StayingTime>
-			<HoldingTime>0.1</HoldingTime>
-			<CollideSize>70</CollideSize>
-			<CircleSize>70</CircleSize>
-			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor> 
-            <ModelColor><R>255</R> <G>255</G> <B>255</B> <A>100</A></ModelColor>            
-            <FallingEnable>0</FallingEnable>
-            <Pitch>1.59</Pitch>
-		</Model>
-
-		<Model>
-			<ObjURL>Environment/Leaf_1.obj</ObjURL>
-			<Position><X>726</X> <Y>462</Y> <Z>0</Z></Position>
 			<Rotation>0</Rotation>
 			<MaxScale>0.1</MaxScale>
 			<ScaleSpeed>0.005</ScaleSpeed>
@@ -1927,21 +1906,6 @@
             <Pitch>1.59</Pitch>
 		</Model>
         <Model>
-			<ObjURL>Environment/Leaf_4.obj</ObjURL>
-			<Position><X>721</X> <Y>584</Y> <Z>0</Z></Position>
-			<Rotation>0</Rotation>
-			<MaxScale>0.1</MaxScale>
-			<ScaleSpeed>0.005</ScaleSpeed>
-			<StayingTime>10</StayingTime>
-			<HoldingTime>0.1</HoldingTime>
-			<CollideSize>70</CollideSize>
-			<CircleSize>70</CircleSize>
-			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor> 
-            <ModelColor><R>255</R> <G>255</G> <B>255</B> <A>100</A></ModelColor>            
-            <FallingEnable>0</FallingEnable>
-            <Pitch>1.59</Pitch>
-		</Model>
-        <Model>
 			<ObjURL>Environment/Leaf_1.obj</ObjURL>
 			<Position><X>668</X> <Y>283</Y> <Z>0</Z></Position>
 			<Rotation>0</Rotation>
@@ -2091,22 +2055,7 @@
             <FallingEnable>0</FallingEnable>
             <Pitch>1.59</Pitch>
 		</Model>
-        <Model>
-			<ObjURL>Environment/Leaf_4.obj</ObjURL>
-			<Position><X>644</X> <Y>508</Y> <Z>0</Z></Position>
-			<Rotation>0</Rotation>
-			<MaxScale>0.1</MaxScale>
-			<ScaleSpeed>0.005</ScaleSpeed>
-			<StayingTime>10</StayingTime>
-			<HoldingTime>0.1</HoldingTime>
-			<CollideSize>70</CollideSize>
-			<CircleSize>70</CircleSize>
-			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor> 
-            <ModelColor><R>255</R> <G>255</G> <B>255</B> <A>100</A></ModelColor>            
-            <FallingEnable>0</FallingEnable>
-            <Pitch>1.59</Pitch>
-		</Model>
-        <Model>
+               <Model>
 			<ObjURL>Environment/Leaf_4.obj</ObjURL>
 			<Position><X>627</X> <Y>438</Y> <Z>0</Z></Position>
 			<Rotation>0</Rotation>
@@ -2175,98 +2124,7 @@
   <Name>Tree4</Name>
   <Type>Flower</Type>
 	<GroupObj>
-
-		<Model>
-			<ObjURL>Environment/Leaf_1.obj</ObjURL>
-			<Position><X>935</X> <Y>680</Y> <Z>0</Z></Position>
-			<Rotation>0</Rotation>
-			<MaxScale>0.15</MaxScale>
-			<ScaleSpeed>0.005</ScaleSpeed>
-			<StayingTime>10</StayingTime>
-			<HoldingTime>0.1</HoldingTime>	
-			<CollideSize>70</CollideSize>
-			<CircleSize>70</CircleSize>
-			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor> 
-            <ModelColor><R>255</R> <G>255</G> <B>255</B> <A>100</A></ModelColor>            
-            <FallingEnable>0</FallingEnable>
-            <Pitch>1.84</Pitch>
-		</Model>
-		<Model>
-			<ObjURL>Environment/Leaf_3.obj</ObjURL>
-			<Position><X>914</X> <Y>645</Y> <Z>0</Z></Position>
-			<Rotation>0</Rotation>
-		<MaxScale>0.15</MaxScale>
-			<ScaleSpeed>0.005</ScaleSpeed>
-			<StayingTime>10</StayingTime>
-			<HoldingTime>0.1</HoldingTime>	
-			<CollideSize>70</CollideSize>
-			<CircleSize>70</CircleSize>
-			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor> 
-            <ModelColor><R>255</R> <G>255</G> <B>255</B> <A>100</A></ModelColor>            
-            <FallingEnable>0</FallingEnable>
-            <Pitch>1.84</Pitch>
-		</Model>
-		<Model>
-			<ObjURL>Environment/Leaf_5.obj</ObjURL>
-			<Position><X>961</X> <Y>639</Y> <Z>0</Z></Position>
-			<Rotation>0</Rotation>
-		<MaxScale>0.15</MaxScale>
-			<ScaleSpeed>0.005</ScaleSpeed>
-			<StayingTime>10</StayingTime>
-			<HoldingTime>0.1</HoldingTime>
-			<CollideSize>70</CollideSize>
-			<CircleSize>70</CircleSize>
-			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor> 
-            <ModelColor><R>255</R> <G>255</G> <B>255</B> <A>100</A></ModelColor>            
-            <FallingEnable>0</FallingEnable>
-            <Pitch>1.84</Pitch>
-		</Model>
-		<Model>
-			<ObjURL>Environment/Leaf_4.obj</ObjURL>
-			<Position><X>851</X> <Y>593</Y> <Z>0</Z></Position>
-			<Rotation>0</Rotation>
-		<MaxScale>0.15</MaxScale>
-			<ScaleSpeed>0.005</ScaleSpeed>
-			<StayingTime>10</StayingTime>
-			<HoldingTime>0.1</HoldingTime>
-			<CollideSize>70</CollideSize>
-			<CircleSize>70</CircleSize>
-			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor> 
-            <ModelColor><R>255</R> <G>255</G> <B>255</B> <A>100</A></ModelColor>            
-            <FallingEnable>0</FallingEnable>
-            <Pitch>1.84</Pitch>
-		</Model>
-		<Model>
-			<ObjURL>Environment/Leaf_1.obj</ObjURL>
-			<Position><X>913</X> <Y>585</Y> <Z>0</Z></Position>
-			<Rotation>0</Rotation>
-			<MaxScale>0.15</MaxScale>
-			<ScaleSpeed>0.005</ScaleSpeed>
-			<StayingTime>10</StayingTime>
-			<HoldingTime>0.1</HoldingTime>
-			<CollideSize>70</CollideSize>
-			<CircleSize>70</CircleSize>
-			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor> 
-            <ModelColor><R>255</R> <G>255</G> <B>255</B> <A>100</A></ModelColor>            
-            <FallingEnable>0</FallingEnable>
-            <Pitch>1.84</Pitch>
-		</Model>
-		<Model>
-			<ObjURL>Environment/Leaf_3.obj</ObjURL>
-			<Position><X>979</X> <Y>588</Y> <Z>0</Z></Position>
-			<Rotation>0</Rotation>
-			<MaxScale>0.15</MaxScale>
-			<ScaleSpeed>0.005</ScaleSpeed>
-			<StayingTime>10</StayingTime>
-			<HoldingTime>0.1</HoldingTime>
-			<CollideSize>70</CollideSize>
-			<CircleSize>70</CircleSize>
-			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor> 
-            <ModelColor><R>255</R> <G>255</G> <B>255</B> <A>100</A></ModelColor>            
-            <FallingEnable>0</FallingEnable>
-            <Pitch>1.84</Pitch>
-		</Model>
-		<Model>
+            <Model>
 			<ObjURL>Environment/Leaf_4.obj</ObjURL>
 			<Position><X>1108</X> <Y>543</Y> <Z>0</Z></Position>
 			<Rotation>0</Rotation>
@@ -2341,21 +2199,7 @@
             <FallingEnable>0</FallingEnable>
             <Pitch>1.84</Pitch>
 		</Model>
-		<Model>
-			<ObjURL>Environment/Leaf_1.obj</ObjURL>
-			<Position><X>824</X> <Y>417</Y> <Z>0</Z></Position>
-			<Rotation>0</Rotation>
-			<MaxScale>0.15</MaxScale>
-			<ScaleSpeed>0.005</ScaleSpeed>
-			<StayingTime>10</StayingTime>
-			<HoldingTime>0.1</HoldingTime>
-			<CollideSize>70</CollideSize>
-			<CircleSize>70</CircleSize>
-			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor> 
-            <ModelColor><R>255</R> <G>255</G> <B>255</B> <A>100</A></ModelColor>            
-            <FallingEnable>0</FallingEnable>
-            <Pitch>1.84</Pitch>
-		</Model>
+	
 		<Model>
 			<ObjURL>Environment/Leaf_3.obj</ObjURL>
 			<Position><X>766</X> <Y>444</Y> <Z>0</Z></Position>
@@ -2371,52 +2215,7 @@
             <FallingEnable>0</FallingEnable>
             <Pitch>1.84</Pitch>
 		</Model>
-		<Model>
-			<ObjURL>Environment/Leaf_4.obj</ObjURL>
-			<Position><X>800</X> <Y>513</Y> <Z>0</Z></Position>
-			<Rotation>0</Rotation>
-			<MaxScale>0.15</MaxScale>
-			<ScaleSpeed>0.005</ScaleSpeed>
-			<StayingTime>10</StayingTime>
-			<HoldingTime>0.1</HoldingTime>
-			<CollideSize>70</CollideSize>
-			<CircleSize>70</CircleSize>
-			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor> 
-            <ModelColor><R>255</R> <G>255</G> <B>255</B> <A>100</A></ModelColor>            
-            <FallingEnable>0</FallingEnable>
-            <Pitch>1.84</Pitch>
-		</Model>
-		<Model>
-			<ObjURL>Environment/Leaf_5.obj</ObjURL>
-			<Position><X>839</X> <Y>569</Y> <Z>0</Z></Position>
-			<Rotation>0</Rotation>
-		<MaxScale>0.15</MaxScale>
-			<ScaleSpeed>0.005</ScaleSpeed>
-			<StayingTime>10</StayingTime>
-			<HoldingTime>0.1</HoldingTime>
-			<CollideSize>70</CollideSize>
-			<CircleSize>70</CircleSize>
-			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor> 
-            <ModelColor><R>255</R> <G>255</G> <B>255</B> <A>100</A></ModelColor>            
-            <FallingEnable>0</FallingEnable>
-            <Pitch>1.84</Pitch>
-		</Model>
-		<Model>
-			<ObjURL>Environment/Leaf_1.obj</ObjURL>
-			<Position><X>927</X> <Y>508</Y> <Z>0</Z></Position>
-			<Rotation>0</Rotation>
-			<MaxScale>0.15</MaxScale>
-			<ScaleSpeed>0.005</ScaleSpeed>
-			<StayingTime>10</StayingTime>
-			<HoldingTime>0.1</HoldingTime>
-			<CollideSize>70</CollideSize>
-			<CircleSize>70</CircleSize>
-			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor> 
-            <ModelColor><R>255</R> <G>255</G> <B>255</B> <A>100</A></ModelColor>            
-            <FallingEnable>0</FallingEnable>
-            <Pitch>1.84</Pitch>
-		</Model>
-		<Model>
+							<Model>
 			<ObjURL>Environment/Leaf_3.obj</ObjURL>
 			<Position><X>931</X> <Y>409</Y> <Z>0</Z></Position>
 			<Rotation>0</Rotation>
@@ -2521,23 +2320,7 @@
             <FallingEnable>0</FallingEnable>
             <Pitch>1.84</Pitch>
 		</Model>
-
-		<Model>
-			<ObjURL>Environment/Leaf_5.obj</ObjURL>
-			<Position><X>866</X> <Y>540</Y> <Z>0</Z></Position>
-			<Rotation>0</Rotation>
-			<MaxScale>0.15</MaxScale>
-			<ScaleSpeed>0.005</ScaleSpeed>
-			<StayingTime>10</StayingTime>
-			<HoldingTime>0.1</HoldingTime>
-			<CollideSize>70</CollideSize>
-			<CircleSize>70</CircleSize>
-			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor> 
-            <ModelColor><R>255</R> <G>255</G> <B>255</B> <A>100</A></ModelColor>            
-            <FallingEnable>0</FallingEnable>
-            <Pitch>1.84</Pitch>
-		</Model>
-		<Model>
+            <Model>
 			<ObjURL>Environment/Leaf_4.obj</ObjURL>
 			<Position><X>842</X> <Y>481</Y> <Z>0</Z></Position>
 			<Rotation>0</Rotation>
