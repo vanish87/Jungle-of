@@ -49,6 +49,7 @@ namespace Jungle
         vector<Flower> mushrooms_;
         int index_;
         
+		ofColor light_color_[4];
         ofImage title_;
 		bool show_title;
 

@@ -22,17 +22,21 @@ namespace Jungle
         light_.setAmbientColor(ofFloatColor(0.5, 0.5, 0.5));
         light_.setDiffuseColor(ofFloatColor(0 ,1 ,0));
         light_.setSpecularColor(ofFloatColor(0,1,0));
-        light_.setPointLight();
-        ofQuaternion q;
-        q.makeRotate(0, 0, 1, 0);
+ 
         light_.setDirectional();
         light_.setPosition(1024, 768, 0);
-        
+
         ofEnableLighting();
         light_.enable();
         ofBackground(255);
+
+		light_color_[0].set(255, 0,		0);
+		light_color_[1].set(0,	255,	0);
+		light_color_[2].set(255,	255,	0);
+		light_color_[3].set(0,	255,	255);
         
         max_leaf_ = 0;
+		angle_ = 90;
 
 		// Mushroom Placement        
         title_.loadImage("UI/title-screen-3.png");
@@ -59,6 +63,8 @@ namespace Jungle
         
        SceneType &scene = JungleApp::SceneManagerInstance().GetDynamicObj();
 
+
+
         
 		//circle_.loadImage("Environment/glowing-circle-2.png");
 		w_ = ofGetWindowWidth();
@@ -72,6 +78,10 @@ namespace Jungle
 		Player& player = JungleApp::PlayerInstance();
 		player.Update();
         
+		ofQuaternion q;
+		q.makeRotate(90, 1, 0, 0);
+		light_.setOrientation(q);
+
         max_leaf_ = 0;
         unsigned int fruit_count = 0;
 		SceneType &scene = JungleApp::SceneManagerInstance().GetDynamicObj();
@@ -87,10 +97,12 @@ namespace Jungle
             {
 				if(it->GetTriggeringCount() > 4)
 				{
+					light_.setDiffuseColor(light_color_[1]);
 					JungleApp::SceneManagerInstance().Enable(Group::LEAF,true);
 				}
                 else
                 {
+					light_.setDiffuseColor(light_color_[0]);
                     JungleApp::SceneManagerInstance().Enable(Group::LEAF,false);
                 }
             }
@@ -100,6 +112,7 @@ namespace Jungle
                 //cout<<max_leaf_<<endl;
                 if( max_leaf_ > 130)
 				{
+					light_.setDiffuseColor(light_color_[2]);
                     JungleApp::SceneManagerInstance().Enable(Group::FRUIT,true);
                 }
                 else
@@ -113,6 +126,7 @@ namespace Jungle
                 //cout<<max_leaf_<<endl;
                 if( fruit_count > 4)
 				{
+					light_.setDiffuseColor(light_color_[3]);
                     JungleApp::SceneManagerInstance().Enable(Group::MUSHROOM,true);
                 }
                 else
@@ -186,10 +200,10 @@ namespace Jungle
 		{
 			ofSetColor(255, 255, 255,255);
 			ofDrawBitmapString("leaf num "+ ofToString(max_leaf_), 20, 20);
-			//ofDrawBitmapString("v length "+ ofToString((bt_pos - mh_pos).length()), 20, 40);
+			ofDrawBitmapString("angle  "+ ofToString(angle_), 20, 40);
 			//ofDrawBitmapString("scale "+ ofToString(mushrooms_[index_].getScale().x), 20, 60);
 			
-			ofDrawBitmapString("Mouse pos " + ofToString(ofGetMouseX())+ " " +ofToString(h_ - ofGetMouseY()), 20, 40);
+			ofDrawBitmapString("Mouse pos " + ofToString(ofGetMouseX())+ " " +ofToString(h_ - ofGetMouseY()), 20, 60);
 			//ofDrawBitmapString("pre "+ ofToString(player.pre_hand_pos_.x) + " "+ ofToString(player.pre_hand_pos_.y), 20, 80);
 			//ofDrawBitmapString("hand "+ ofToString(bt_pos.x) + " "+ ofToString(bt_pos.y), 20, 100);
 		}
@@ -211,8 +225,8 @@ namespace Jungle
         ofQuaternion q;
 
         //static scene
-        this->GetParent()->keyPressed(key);
-        return;
+        //this->GetParent()->keyPressed(key);
+        //return;
 		switch (key)
 		{
             case 's':

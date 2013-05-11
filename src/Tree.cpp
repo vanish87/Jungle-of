@@ -33,12 +33,12 @@ namespace Jungle
 			{
 				scale += scale_speed_;
 			}
-			if(time_ > staying_time_)
-			{
-				flower_state_ = DISAPPEARING;
-				org_pos_ = pos;
-				time_=0;			
-			}
+// 			if(time_ > staying_time_)
+// 			{
+// 				flower_state_ = DISAPPEARING;
+// 				org_pos_ = pos;
+// 				time_=0;			
+// 			}
 			break;
 		case DISAPPEARING:
 			if(scale.x > 0)
