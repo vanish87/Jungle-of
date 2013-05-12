@@ -4,7 +4,7 @@
     <GroupObj>
         <Model>
 			<ObjURL>Environment/Cloud_1.obj</ObjURL>
-			<Position><X>144</X> <Y>641</Y> <Z>30</Z></Position>
+			<Position><X>144</X> <Y>641</Y> <Z>0</Z></Position>
 			<Rotation>0</Rotation>
 			<MaxScale>0.1</MaxScale>
 			<ScaleSpeed>0.005</ScaleSpeed>
@@ -19,7 +19,7 @@
 		</Model>
         <Model>
 			<ObjURL>Environment/Cloud_2.obj</ObjURL>
-			<Position><X>1103</X> <Y>647</Y> <Z>30</Z></Position>
+			<Position><X>1103</X> <Y>647</Y> <Z>0</Z></Position>
 			<Rotation>0</Rotation>
 			<MaxScale>0.1</MaxScale>
 			<ScaleSpeed>0.005</ScaleSpeed>
@@ -62,8 +62,8 @@
       </CircleColor>
       <ModelColor>
         <R>255</R>
-        <G>0</G>
-        <B>0</B>
+        <G>255</G>
+        <B>255</B>
         <A>255</A>
       </ModelColor>
       <FallingEnable>0</FallingEnable>

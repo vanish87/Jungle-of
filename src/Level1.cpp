@@ -88,6 +88,7 @@ namespace Jungle
 
         max_leaf_ = 0;
         unsigned int fruit_count = 0;
+        unsigned int cloud_count = 0;
         vector<unsigned short> light_index = JungleApp::SceneManagerInstance().GetLighting();
 		SceneType &scene = JungleApp::SceneManagerInstance().GetDynamicObj();
 		for(SceneType::iterator it = scene.begin(); it!= scene.end(); ++it)
@@ -102,10 +103,8 @@ namespace Jungle
             {
 				if(it->GetTriggeringCount() > 4)
 				{
-					//light_.setDiffuseColor(light_color_[light_index[1]]);
-                    light_.setAmbientColor(stage_color_[1][light_index[1]]);
-                    //ofColor lcolor = light_color_[light_index[1]];
-                    //cout<<(int)lcolor.r<<(int)lcolor.g<<(int)lcolor.b<<(int)lcolor.a<<endl;
+					light_.setDiffuseColor(stage_color_[1][1]);
+                    light_.setAmbientColor(stage_color_[1][1]);
 					JungleApp::SceneManagerInstance().Enable(Group::LEAF,true);
 				}
                 else
@@ -120,8 +119,9 @@ namespace Jungle
                 //cout<<max_leaf_<<endl;
                 if( max_leaf_ > 80)
 				{
-                    
-                    light_.setAmbientColor(stage_color_[2][light_index[2]]);
+                    light_.setDiffuseColor(stage_color_[2][1]);
+
+                    light_.setAmbientColor(stage_color_[2][1]);
 					//light_.setDiffuseColor(light_color_[light_index[2]]);
                     JungleApp::SceneManagerInstance().Enable(Group::FRUIT,true);
                 }
@@ -136,14 +136,38 @@ namespace Jungle
                 //cout<<max_leaf_<<endl;
                 if( fruit_count > 4)
 				{
+                    light_.setDiffuseColor(stage_color_[3][1]);
+
+                    light_.setAmbientColor(stage_color_[3][1]);
                     
-                    light_.setAmbientColor(stage_color_[3][light_index[3]]);
+                    //ofColor lcolor = stage_color_[3][1];
+                    //cout<<(int)lcolor.r<<(int)lcolor.g<<(int)lcolor.b<<(int)lcolor.a<<endl;
 					//light_.setDiffuseColor(light_color_[light_index[3]]);
                     JungleApp::SceneManagerInstance().Enable(Group::MUSHROOM,true);
                 }
                 else
                 {
                     JungleApp::SceneManagerInstance().Enable(Group::MUSHROOM,false);
+                }
+            }
+            if(it->GetType() == Group::MUSHROOM)
+            {
+                cloud_count += it->GetTriggeringCount();
+                //cout<<max_leaf_<<endl;
+                if( cloud_count > 4)
+				{
+                    light_.setDiffuseColor(stage_color_[0][1]);
+                    
+                    light_.setAmbientColor(stage_color_[0][1]);
+                    
+                    //ofColor lcolor = stage_color_[3][1];
+                    //cout<<(int)lcolor.r<<(int)lcolor.g<<(int)lcolor.b<<(int)lcolor.a<<endl;
+					//light_.setDiffuseColor(light_color_[light_index[3]]);
+                    JungleApp::SceneManagerInstance().Enable(Group::CLOUD,true);
+                }
+                else
+                {
+                    JungleApp::SceneManagerInstance().Enable(Group::CLOUD,false);
                 }
             }
 		}
