@@ -21,9 +21,12 @@ namespace Jungle
 		void AddToScene( SceneModel* scene_obj );
 
 		bool LoadScene(string file_name);
+        void ReadColorSet(ofxXmlSettings &file);
 
 		void Enable(Group::GROUP_TYPE type, bool enable);
-
+        void Reset();
+        vector<unsigned short>& GetLighting();
+        vector<vector<ofColor> > GetStageColor();
 
 		SceneType &GetDynamicObj();
 	private:
@@ -31,6 +34,10 @@ namespace Jungle
 		vector<SceneModel*> scene_obj_list_;
 
 		SceneType dynamic_objects_;
+        
+        vector<vector<ofColor> > stage_colors_;
+        vector<unsigned short> stage_index_;
+        vector<vector<ofColor> > obj_colors_;
 
 		vector<vector<string> > level_index_;
 

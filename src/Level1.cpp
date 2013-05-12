@@ -19,9 +19,9 @@ namespace Jungle
         
 		Player& player = JungleApp::PlayerInstance();
         
-        light_.setAmbientColor(ofFloatColor(0.5, 0.5, 0.5));
-        light_.setDiffuseColor(ofFloatColor(0 ,1 ,0));
-        light_.setSpecularColor(ofFloatColor(0,1,0));
+        light_.setAmbientColor(ofFloatColor(1, 0, 0));
+        light_.setDiffuseColor(ofFloatColor(1 ,1 ,1));
+        light_.setSpecularColor(ofFloatColor(0,0,0));
  
         light_.setDirectional();
         light_.setPosition(1024, 768, 0);
@@ -30,10 +30,6 @@ namespace Jungle
         light_.enable();
         ofBackground(255);
 
-		light_color_[0].set(255, 0,		0);
-		light_color_[1].set(0,	255,	0);
-		light_color_[2].set(255,	255,	0);
-		light_color_[3].set(0,	255,	255);
         
         max_leaf_ = 0;
 		angle_ = 90;
@@ -59,8 +55,16 @@ namespace Jungle
             cout<<"Cannot Load Scene"<<endl;
 			//throw exception("Cannot Load Scene");;
        JungleApp::SceneManagerInstance().Enable(Group::TREE,true);
+        JungleApp::SceneManagerInstance().Reset();
+        //JungleApp::SceneManagerInstance().Reset();
         
-        
+        stage_color_ = JungleApp::SceneManagerInstance().GetStageColor();
+        //light_color_ = stage_color[1];
+//        
+//        cout<<(int)light_color_[0].r<<" "<<
+//        (int)light_color_[0].g<<" "<<
+//        (int)light_color_[0].b<<" "<<
+//        (int)light_color_[0].a<<endl;
        SceneType &scene = JungleApp::SceneManagerInstance().GetDynamicObj();
 
 
@@ -79,11 +83,12 @@ namespace Jungle
 		player.Update();
         
 		ofQuaternion q;
-		q.makeRotate(90, 1, 0, 0);
+		q.makeRotate(angle_, 1, 0, 0);
 		light_.setOrientation(q);
 
         max_leaf_ = 0;
         unsigned int fruit_count = 0;
+        vector<unsigned short> light_index = JungleApp::SceneManagerInstance().GetLighting();
 		SceneType &scene = JungleApp::SceneManagerInstance().GetDynamicObj();
 		for(SceneType::iterator it = scene.begin(); it!= scene.end(); ++it)
 		{
@@ -97,12 +102,15 @@ namespace Jungle
             {
 				if(it->GetTriggeringCount() > 4)
 				{
-					light_.setDiffuseColor(light_color_[1]);
+					//light_.setDiffuseColor(light_color_[light_index[1]]);
+                    light_.setAmbientColor(stage_color_[1][light_index[1]]);
+                    //ofColor lcolor = light_color_[light_index[1]];
+                    //cout<<(int)lcolor.r<<(int)lcolor.g<<(int)lcolor.b<<(int)lcolor.a<<endl;
 					JungleApp::SceneManagerInstance().Enable(Group::LEAF,true);
 				}
                 else
                 {
-					light_.setDiffuseColor(light_color_[0]);
+					//light_.setDiffuseColor(light_color_[light_index[0]]);
                     JungleApp::SceneManagerInstance().Enable(Group::LEAF,false);
                 }
             }
@@ -110,9 +118,11 @@ namespace Jungle
             {
                 max_leaf_ += it->GetTriggeringCount();
                 //cout<<max_leaf_<<endl;
-                if( max_leaf_ > 130)
+                if( max_leaf_ > 80)
 				{
-					light_.setDiffuseColor(light_color_[2]);
+                    
+                    light_.setAmbientColor(stage_color_[2][light_index[2]]);
+					//light_.setDiffuseColor(light_color_[light_index[2]]);
                     JungleApp::SceneManagerInstance().Enable(Group::FRUIT,true);
                 }
                 else
@@ -126,7 +136,9 @@ namespace Jungle
                 //cout<<max_leaf_<<endl;
                 if( fruit_count > 4)
 				{
-					light_.setDiffuseColor(light_color_[3]);
+                    
+                    light_.setAmbientColor(stage_color_[3][light_index[3]]);
+					//light_.setDiffuseColor(light_color_[light_index[3]]);
                     JungleApp::SceneManagerInstance().Enable(Group::MUSHROOM,true);
                 }
                 else
@@ -148,6 +160,8 @@ namespace Jungle
 		ofCamera camera = player.GetCamera();
 
         ofEnableAlphaBlending();
+        glEnable(GL_BLEND);
+        glBlendFunc(GL_SRC_ALPHA, GL_ONE);
 		camera.begin();        
         ofEnableLighting();
         light_.enable();         

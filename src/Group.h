@@ -15,7 +15,8 @@ namespace Jungle {
 			TREE,
 			LEAF,
             FRUIT,
-			MUSHROOM
+			MUSHROOM,
+            CLOUD
 		};
 	public:
 		Group(string name, float staying_time, vector<Flower*> models, GROUP_TYPE type);
@@ -28,6 +29,8 @@ namespace Jungle {
 		void Draw();
 
 		void Update( ofVec3f lhand_pos, ofVec3f rhand_pos = ofVec3f(0,0,0));
+        
+        void SetColor(ofColor color);
 
 		GROUP_TYPE GetType(){return type_;};
 		unsigned int GetTriggeringCount();

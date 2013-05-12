@@ -36,21 +36,21 @@ namespace Jungle
 		bg_1_.Enable(true);
         
         ground_1_.loadModel("Environment/front.obj");
-		ground_1_.setPosition(600,-24,50);
+		ground_1_.setPosition(600,-24,-280);
 		ground_1_.setScale(2,2,2);
 		ground_1_.setRotation(0, 180, 0, 0, 1);
-        //ground_1_.setRotation(1, 180, 0, 1, 0);
+        ground_1_.setRotation(1, 180, 0, 1, 0);
 		ground_1_.Enable(true);
         
         ground_2_.loadModel("Environment/second.obj");
-		ground_2_.setPosition(600,-24,0);
+		ground_2_.setPosition(600,-24,-8);
 		ground_2_.setScale(2,2,2);
 		ground_2_.setRotation(0, 180, 0, 0, 1);
        // ground_2_.setRotation(1, 180, 0, 1, 0);
 		ground_2_.Enable(true);
         
         ground_3_.loadModel("Environment/back.obj");
-		ground_3_.setPosition(600,-24,-50);
+		ground_3_.setPosition(600,-24,-10);
 		ground_3_.setScale(2,2,2);
 		ground_3_.setRotation(0, 180, 0, 0, 1);
         //ground_3_.setRotation(1, 180, 0, 1, 0);

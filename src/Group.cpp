@@ -91,5 +91,13 @@ namespace Jungle
 	{
 		return triggering_count_;
 	}
+    
+    void Group::SetColor(ofColor color)
+    {
+        for(vector<Flower*>::iterator it = models_.begin(); it!= models_.end(); ++it)
+        {
+            (*it)->SetColor(color);
+        }
+    }
 
 }

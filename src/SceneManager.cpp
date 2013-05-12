@@ -40,6 +40,116 @@ namespace Jungle
 	{
 		scene_obj_list_.push_back(scene_obj);
 	}
+    
+    void SceneManager::Reset()
+    {
+        unsigned char objcolor = ofRandom(0, obj_colors_.size());        
+//        for(SceneType::iterator it = dynamic_objects_.begin(); it!= dynamic_objects_.end(); ++it)
+//		{
+//			if(it->GetType() == Group::TREE)
+//            {
+//                it->SetColor(obj_colors_[objcolor][0]);
+//            }
+//            else
+//            if(it->GetType() == Group::LEAF)
+//            {
+//                it->SetColor(obj_colors_[objcolor][1]);
+//            }
+//            else
+//            if(it->GetType() == Group::MUSHROOM)
+//            {
+//                it->SetColor(obj_colors_[objcolor][2]);
+//            }
+//            else
+//            if(it->GetType() == Group::FRUIT)
+//            {
+//                it->SetColor(obj_colors_[objcolor][3]);
+//            }
+//		}
+        
+        cout<<stage_index_[0]<<stage_index_[1]<<stage_index_[2]<<stage_index_[3]<<endl;
+        unsigned short index = ofRandom(0,2);
+        cout<<index<<endl;
+        swap(stage_index_[index],stage_index_[3-index]);
+        swap(stage_index_[1-index],stage_index_[2+index]);
+        
+        cout<<stage_index_[0]<<stage_index_[1]<<stage_index_[2]<<stage_index_[3]<<endl;
+        
+        
+        
+    }
+    vector<unsigned short>& SceneManager::GetLighting()
+    {
+        return stage_index_;
+    }
+    
+    vector<vector<ofColor> > SceneManager::GetStageColor()
+    {
+        return stage_colors_;
+    }
+    
+    void SceneManager::ReadColorSet(ofxXmlSettings &file)
+    {
+        file.pushTag("ColorSet");
+		for(size_t i =0; i < file.getNumTags("Stage"); ++i)
+		{
+            file.pushTag("Stage",i);
+			vector<ofColor> stage_color;
+            file.pushTag("Backgroud");
+            ofColor color = ofColor(
+                file.getValue("R",0), file.getValue("G",0), file.getValue("B",0), file.getValue("A",0));
+            file.popTag();
+            file.pushTag("Light");            
+            ofColor lcolor = ofColor(
+                file.getValue("R",0), file.getValue("G",0), file.getValue("B",0), file.getValue("A",0));
+            file.popTag();
+			stage_color.push_back(color);
+            stage_color.push_back(lcolor);
+            cout<<(int)lcolor.r<<(int)lcolor.g<<(int)lcolor.b<<(int)lcolor.a<<endl;
+            stage_colors_.push_back(stage_color);
+            file.popTag();
+		}
+		file.popTag();
+        
+        file.pushTag("ObjColorSet");
+		for(size_t i =0; i < file.getNumTags("Set"); ++i)
+		{
+            file.pushTag("Set",i);
+			vector<ofColor> stage_color;
+            file.pushTag("Tree");
+            ofColor color = ofColor(
+                                    file.getValue("R",0), file.getValue("G",0), file.getValue("B",0), file.getValue("A",0));
+            file.popTag();
+			stage_color.push_back(color);
+            
+            file.pushTag("Leaf");
+            color =
+                ofColor(file.getValue("R",0), file.getValue("G",0), file.getValue("B",0), file.getValue("A",0));
+            file.popTag();
+            stage_color.push_back(color);
+            
+            file.pushTag("Mushroom");
+            color =
+            ofColor(file.getValue("R",0), file.getValue("G",0), file.getValue("B",0), file.getValue("A",0));
+            file.popTag();
+            stage_color.push_back(color);
+            
+            file.pushTag("Fruit");
+            color =
+            ofColor(file.getValue("R",0), file.getValue("G",0), file.getValue("B",0), file.getValue("A",0));
+            file.popTag();
+            stage_color.push_back(color);
+            
+            obj_colors_.push_back(stage_color);
+            file.popTag();
+		}
+        stage_index_.push_back(0);
+        stage_index_.push_back(1);
+        stage_index_.push_back(2);
+        stage_index_.push_back(3);
+		file.popTag();
+        
+    }
 
 	bool SceneManager::LoadScene( string file_name )
 	{
@@ -56,7 +166,8 @@ namespace Jungle
 			return false;
 		}
 
-
+        ReadColorSet(file);
+        
 		file.pushTag("LevelIndex");
 		for(size_t i =0; i < file.getNumTags("Level"); ++i)
 		{

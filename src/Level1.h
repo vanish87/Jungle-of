@@ -49,7 +49,7 @@ namespace Jungle
         vector<Flower> mushrooms_;
         int index_;
         
-		ofColor light_color_[4];
+		vector<vector<ofColor> > stage_color_;
         ofImage title_;
 		bool show_title;
 

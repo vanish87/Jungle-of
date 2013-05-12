@@ -62,8 +62,8 @@
       </CircleColor>
       <ModelColor>
         <R>255</R>
-        <G>255</G>
-        <B>255</B>
+        <G>0</G>
+        <B>0</B>
         <A>255</A>
       </ModelColor>
       <FallingEnable>0</FallingEnable>
@@ -3312,4 +3312,35 @@
       </Group>
   </Level>
 </LevelIndex>
+
+<ColorSet>
+    <Stage>
+        <Backgroud><R>95</R> <G>10</G> <B>11</B> <A>125</A></Backgroud>
+        <Light><R>255</R> <G>0</G> <B>0</B> <A>255</A></Light>
+    </Stage>
+    <Stage>
+        <Backgroud><R>95</R> <G>10</G> <B>11</B> <A>125</A></Backgroud>
+        <Light><R>0</R> <G>255</G> <B>0</B> <A>255</A></Light>
+    </Stage>
+    <Stage>
+        <Backgroud><R>95</R> <G>10</G> <B>11</B> <A>125</A></Backgroud>
+        <Light><R>0</R> <G>0</G> <B>255</B> <A>255</A></Light>
+    </Stage>
+    <Stage>
+        <Backgroud><R>95</R> <G>10</G> <B>11</B> <A>125</A></Backgroud>
+        <Light><R>255</R> <G>215</G> <B>0</B> <A>255</A></Light>
+    </Stage>
+</ColorSet>
+<ObjColorSet>
+    <Set>
+        <Tree> <R>255</R> <G>255</G> <B>255</B> <A>255</A> </Tree>
+        <Leaf> <R>255</R> <G>255</G> <B>255</B> <A>200</A> </Leaf>
+        <Mushroom> <R>255</R> <G>255</G> <B>255</B> <A>255</A> </Mushroom>
+        <Fruit> <R>255</R> <G>255</G> <B>255</B> <A>200</A> </Fruit>
+    </Set>
+</ObjColorSet>
+    
+        
+        
+            
 
