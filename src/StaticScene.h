@@ -35,6 +35,8 @@ namespace Jungle
 
 		virtual void userOut( ofxUser & user );
 
+		void SetBackgroundStart(ofColor color);
+
 	private:
 		SceneModel tree_;
         SceneModel tree1_;

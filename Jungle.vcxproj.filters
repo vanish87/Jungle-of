@@ -196,6 +196,9 @@
     <ClCompile Include="src\Mushroom.cpp">
       <Filter>src</Filter>
     </ClCompile>
+    <ClCompile Include="src\Cloud.cpp">
+      <Filter>src\SceneObject</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\JungleApp.h">
@@ -806,6 +809,12 @@
     </ClInclude>
     <ClInclude Include="src\Mushroom.h">
       <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Utility.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Cloud.h">
+      <Filter>src\SceneObject</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

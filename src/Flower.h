@@ -21,7 +21,7 @@ namespace Jungle {
         ~Flower(void);
         
         virtual void Update(float frame_time);
-        void Draw();
+        virtual void Draw();
         void SetMaxScale(float scale);
 		void SetScaleSpeed(float speed);
 		void SetCircleSize(float size);

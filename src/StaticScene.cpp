@@ -268,4 +268,9 @@ namespace Jungle
 	{
 	}
 
+	void StaticScene::SetBackgroundStart( ofColor color )
+	{
+		back_color_start_ = color;
+	}
+
 }

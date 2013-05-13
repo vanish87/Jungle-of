@@ -2,6 +2,7 @@
 #include "Flower.h"
 #include "Group.h"
 #include "Tree.h"
+#include "Cloud.h"
 #include "Mushroom.h"
 
 namespace Jungle
@@ -44,36 +45,36 @@ namespace Jungle
     void SceneManager::Reset()
     {
         unsigned char objcolor = ofRandom(0, obj_colors_.size());        
-//        for(SceneType::iterator it = dynamic_objects_.begin(); it!= dynamic_objects_.end(); ++it)
-//		{
-//			if(it->GetType() == Group::TREE)
-//            {
-//                it->SetColor(obj_colors_[objcolor][0]);
-//            }
-//            else
-//            if(it->GetType() == Group::LEAF)
-//            {
-//                it->SetColor(obj_colors_[objcolor][1]);
-//            }
-//            else
-//            if(it->GetType() == Group::MUSHROOM)
-//            {
-//                it->SetColor(obj_colors_[objcolor][2]);
-//            }
-//            else
-//            if(it->GetType() == Group::FRUIT)
-//            {
-//                it->SetColor(obj_colors_[objcolor][3]);
-//            }
-//		}
+       for(SceneType::iterator it = dynamic_objects_.begin(); it!= dynamic_objects_.end(); ++it)
+		{
+			if(it->GetType() == Group::TREE)
+           {
+               it->SetColor(obj_colors_[objcolor][0]);
+           }
+           else
+           if(it->GetType() == Group::LEAF)
+           {
+               it->SetColor(obj_colors_[objcolor][1]);
+           }
+           else
+           if(it->GetType() == Group::MUSHROOM)
+           {
+               it->SetColor(obj_colors_[objcolor][2]);
+           }
+           else
+           if(it->GetType() == Group::FRUIT)
+           {
+               it->SetColor(obj_colors_[objcolor][3]);
+           }
+		}
         
-        cout<<stage_index_[0]<<stage_index_[1]<<stage_index_[2]<<stage_index_[3]<<endl;
+        //cout<<stage_index_[0]<<stage_index_[1]<<stage_index_[2]<<stage_index_[3]<<endl;
         unsigned short index = ofRandom(0,2);
         cout<<index<<endl;
         swap(stage_index_[index],stage_index_[3-index]);
         swap(stage_index_[1-index],stage_index_[2+index]);
         
-        cout<<stage_index_[0]<<stage_index_[1]<<stage_index_[2]<<stage_index_[3]<<endl;
+       // cout<<stage_index_[0]<<stage_index_[1]<<stage_index_[2]<<stage_index_[3]<<endl;
         
         
         
@@ -467,7 +468,7 @@ namespace Jungle
                                 bool falling = file.getValue("FallingEnable", false);
                                 float pitch = file.getValue("Pitch", 1.0f);
                                 
-                                Flower* flower = new Flower();
+                                Cloud* flower = new Cloud();
                                 flower->loadModel(url);
                                 flower->setPosition(pos.x,pos.y,pos.z);
                                 flower->setRotation(0,180,1,0,0);
@@ -481,6 +482,7 @@ namespace Jungle
                                 flower->SetColor(mcolor);
                                 flower->SetFalling(falling);
                                 flower->SetPitch(pitch);
+								flower->InitDroplet();
                                 flower->Enable(false);
                                 group_model.push_back(flower);
                                 file.popTag();
@@ -510,13 +512,24 @@ namespace Jungle
 		return dynamic_objects_;
 	}
 
-	void SceneManager::Enable( Group::GROUP_TYPE type, bool enable )
+	void SceneManager::Enable( Group::GROUP_TYPE type, bool enable, unsigned int index)
 	{
 		for(SceneType::iterator it = dynamic_objects_.begin(); it!= dynamic_objects_.end(); ++it)
 		{
 			if(it->GetType() == type)
 				it->Enable(enable);
 		}
+	}
+
+	int SceneManager::GetTriggeringCount( Group::GROUP_TYPE type )
+	{
+		int ret = 0;
+		for(SceneType::iterator it = dynamic_objects_.begin(); it!= dynamic_objects_.end(); ++it)
+		{
+			if(it->GetType() == type)
+				ret+=it->GetTriggeringCount();
+		}
+		return ret;
 	}
 
 }

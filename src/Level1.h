@@ -16,6 +16,15 @@ namespace Jungle
 		Level1(void);
 		~Level1(void);
 
+		enum Stage
+		{
+			TREE,
+			LEAF,
+			FRUIT,
+			CLOUD,
+			MUSHROOM
+		};
+
 		virtual void Steup();
 
 		virtual void Update();
@@ -43,6 +52,9 @@ namespace Jungle
         
         ofLight light_;
         float angle_;
+		vector<float> time_;
+
+		Stage current_stage_;
         
         unsigned int max_leaf_;
         

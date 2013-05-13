@@ -23,7 +23,8 @@ namespace Jungle
 		bool LoadScene(string file_name);
         void ReadColorSet(ofxXmlSettings &file);
 
-		void Enable(Group::GROUP_TYPE type, bool enable);
+		void Enable(Group::GROUP_TYPE type, bool enable, unsigned int index = 0);
+		int GetTriggeringCount(Group::GROUP_TYPE type);
         void Reset();
         vector<unsigned short>& GetLighting();
         vector<vector<ofColor> > GetStageColor();

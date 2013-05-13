@@ -3368,9 +3368,9 @@
       <Group>
 		  <Name>SP_Leaf</Name>
 	  </Group>
-      <Group>
-          <Name>Clouds</Name>
-      </Group>
+    <Group>
+      <Name>Clouds</Name>
+    </Group>
   </Level>
 </LevelIndex>
 
