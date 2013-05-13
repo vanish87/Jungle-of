@@ -57,7 +57,6 @@ namespace Jungle
         //ground_3_.setRotation(1, 180, 0, 1, 0);
 		ground_3_.Enable(true);
         
-        
         model_ = &tree_;
         
         ground_1_.AddToScene();
@@ -98,15 +97,12 @@ namespace Jungle
 		ofPopMatrix();
 
 		glDisable(GL_DEPTH_TEST);
-
-
                
 	}
 
 	void StaticScene::keyPressed( int key )
 	{        
        
-
 		ofVec3f pos; //= model_->getPosition();
 		ofVec3f scale; //= model_->getScale();
 		switch (key)
