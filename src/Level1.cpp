@@ -240,6 +240,10 @@ namespace Jungle
 				current_stage_ = FRUIT;
 				JungleApp::SceneManagerInstance().Enable(Group::MUSHROOM,false);
 			}
+            if(scene_mag_.GetTriggeringCount(Group::MUSHROOM) > 10)
+            {
+                current_stage_ = CLOUD;
+            }
 			break;
 		default:
 			break;

@@ -21,8 +21,8 @@ namespace Jungle
 			TREE,
 			LEAF,
 			FRUIT,
-			CLOUD,
-			MUSHROOM
+			MUSHROOM,
+            CLOUD
 		};
 
 		virtual void Steup();

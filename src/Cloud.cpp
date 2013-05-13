@@ -99,20 +99,12 @@ namespace Jungle {
 				time_ = 0;
 			}			
 			break;
-		case FALLING:
-			if(pos.y > 10)
-            {
-                //pos.x += sin(ofGetElapsedTimef())* ofRandom(-10,10);
-				pos.y-=3;
-            }
-			else
-			{
-                if(time_ > 4)
+		case WAITING:
+                if(rain_)
                 {
-                    flower_state_ = DISAPPEARING;
-                    time_ = 0;
+                  rain_=!rain_;
+                  droplet_pos_.clear();
                 }
-			}
 			break;
 		default:
 			break;
@@ -182,8 +174,10 @@ namespace Jungle {
 			dpos.x += 50 * ofRandom(-1,1);
 			dpos.y += 20 * ofRandom(-1,1);
             droplet_pos_.push_back(dpos);
+            speed_.push_back(ofRandom(3,10));
         }
-        for(vector<ofVec3f>::iterator it = droplet_pos_.begin(); it!= droplet_pos_.end(); ++it)
+        vector<float>::iterator sit = speed_.begin();
+        for(vector<ofVec3f>::iterator it = droplet_pos_.begin(); it!= droplet_pos_.end(); ++it,++sit)
         {
             ofVec3f dpos = *it;
             if(dpos.y < 0)
@@ -193,7 +187,7 @@ namespace Jungle {
                 dpos.y += 20 * ofRandom(-1,1);
                 //rain_ = false;
             }
-            it->set(dpos.x, dpos.y - 3,dpos.z);
+            it->set(dpos.x, dpos.y - *sit,dpos.z);
         }
     }
 
@@ -205,7 +199,9 @@ namespace Jungle {
 			max_time_ += ofGetLastFrameTime();
 		}
 		else
-			max_time_ = 0;
+        {
+            rain_ = false;
+        }
 	}
 
     

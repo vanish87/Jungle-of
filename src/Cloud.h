@@ -25,6 +25,7 @@ namespace Jungle {
 		float max_time_;
 		vector<SceneModel> droplet_;
         vector<ofVec3f> droplet_pos_;
+        vector<float> speed_;
         
     };
 }

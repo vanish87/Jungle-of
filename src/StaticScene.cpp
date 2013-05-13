@@ -47,14 +47,14 @@ namespace Jungle
 		ground_2_.setPosition(598,-24,0);
 		ground_2_.setScale(2,2,2);
 		ground_2_.setRotation(0, 180, 0, 0, 1);
-        ground_2_.setRotation(1, 180, 0, 1, 0);
+       // ground_2_.setRotation(1, 180, 0, 1, 0);
 		ground_2_.Enable(true);
         
         ground_3_.loadModel("Environment/back.obj");
 		ground_3_.setPosition(598,-24,-50);
 		ground_3_.setScale(2,2,2);
 		ground_3_.setRotation(0, 180, 0, 0, 1);
-        ground_3_.setRotation(1, 180, 0, 1, 0);
+        //ground_3_.setRotation(1, 180, 0, 1, 0);
 		ground_3_.Enable(true);
         
         model_ = &tree_;
@@ -66,8 +66,8 @@ namespace Jungle
 
         bg_1_.AddToScene();
         
-        back_color_start_ = ofColor(19,79,178);
-        back_color_end_ = ofColor((14,28,54));
+        back_color_start_ = ofColor(255,255,255);
+        back_color_end_ = ofColor((255,255,255));
 
         
 		atmo.loadSound("Audio/jungle-atmos-2.mp3");
