@@ -15,7 +15,7 @@ namespace Jungle {
 		for (size_t i = 0; i < 5; ++i)
 		{
 			SceneModel droplet;
-			droplet.loadModel("Environment/SP_Leaf.obj");
+			droplet.loadModel("Environment/Droplet.obj");
 			droplet.setPosition(pos.x,pos.y,pos.z);
 			droplet.setRotation(0,180,1,0,0);
 			droplet_.push_back(droplet);

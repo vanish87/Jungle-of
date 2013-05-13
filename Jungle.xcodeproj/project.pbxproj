@@ -58,6 +58,7 @@
 		BC0193A016D17D6600867BBC /* OscPrintReceivedElements.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BC01939416D17D6600867BBC /* OscPrintReceivedElements.cpp */; };
 		BC0193A116D17D6600867BBC /* OscReceivedElements.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BC01939616D17D6600867BBC /* OscReceivedElements.cpp */; };
 		BC0193A216D17D6600867BBC /* OscTypes.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BC01939816D17D6600867BBC /* OscTypes.cpp */; };
+		BC049B7A174175E300C47396 /* Cloud.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BC049B78174175E200C47396 /* Cloud.cpp */; };
 		BC0BFCAF170B7B87000EDBEE /* WindGenerator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BC0BFCAD170B7B87000EDBEE /* WindGenerator.cpp */; };
 		BC0ED3A2171B0F1D00FC92BD /* GamingScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BC0ED39A171B0F1D00FC92BD /* GamingScene.cpp */; };
 		BC0ED3A3171B0F1D00FC92BD /* Player.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BC0ED39C171B0F1D00FC92BD /* Player.cpp */; };
@@ -392,6 +393,8 @@
 		BC01939816D17D6600867BBC /* OscTypes.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = OscTypes.cpp; sourceTree = "<group>"; };
 		BC01939916D17D6600867BBC /* OscTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OscTypes.h; sourceTree = "<group>"; };
 		BC0193A316D1837400867BBC /* config.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = config.xml; path = bin/data/config.xml; sourceTree = SOURCE_ROOT; };
+		BC049B78174175E200C47396 /* Cloud.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Cloud.cpp; sourceTree = "<group>"; };
+		BC049B79174175E300C47396 /* Cloud.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Cloud.h; sourceTree = "<group>"; };
 		BC0BFCAD170B7B87000EDBEE /* WindGenerator.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = WindGenerator.cpp; sourceTree = "<group>"; };
 		BC0BFCAE170B7B87000EDBEE /* WindGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WindGenerator.h; sourceTree = "<group>"; };
 		BC0ED39A171B0F1D00FC92BD /* GamingScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GamingScene.cpp; sourceTree = "<group>"; };
@@ -1194,6 +1197,8 @@
 				BC12E0B317398E7D00331963 /* Tree.cpp */,
 				BC12E0B417398E7D00331963 /* Tree.h */,
 				BC12E0B61739973C00331963 /* Mushroom.cpp */,
+				BC049B78174175E200C47396 /* Cloud.cpp */,
+				BC049B79174175E300C47396 /* Cloud.h */,
 				BC12E0B71739973C00331963 /* Mushroom.h */,
 				BC8D7983170E2D0400DB4716 /* Level1.cpp */,
 				BC8D7984170E2D0400DB4716 /* Level1.h */,
@@ -1385,6 +1390,7 @@
 				BC99CBBC172FA2910054DC2C /* Group.cpp in Sources */,
 				BC12E0B517398E7D00331963 /* Tree.cpp in Sources */,
 				BC12E0B81739973C00331963 /* Mushroom.cpp in Sources */,
+				BC049B7A174175E300C47396 /* Cloud.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
