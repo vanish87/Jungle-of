@@ -6,10 +6,10 @@ namespace Jungle
 	Tree::Tree(void)
 		: Flower()
 	{
-		sounds_[0].loadSound("audio/tree-chord-2.mp3");
-		sounds_[1].loadSound("audio/tree-chord-2.mp3");
-		sounds_[2].loadSound("audio/tree-chord-2.mp3");
-		sounds_[3].loadSound("audio/tree-chord-2.mp3");
+		sounds_[0].loadSound("audio/tree-sound-1.mp3");
+		sounds_[1].loadSound("audio/tree-sound-2.mp3");
+		sounds_[2].loadSound("audio/tree-sound-3.mp3");
+		sounds_[3].loadSound("audio/tree-sound-4.mp3");
 
 
 	}
