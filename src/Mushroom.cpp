@@ -6,10 +6,10 @@ namespace Jungle
 	Mushroom::Mushroom(void)
 		: Flower()
 	{
-		sounds_[0].loadSound("audio/bubble-mushroom-1.mp3");
-		sounds_[1].loadSound("audio/bubble-mushroom-2.mp3");
-		sounds_[2].loadSound("audio/bubble-mushroom-3.mp3");
-		sounds_[3].loadSound("audio/bubble-mushroom-4.mp3");
+		sounds_[0].loadSound("audio/mushroom-sounds.mp3");
+		sounds_[1].loadSound("audio/mushroom-sounds.mp3");
+		sounds_[2].loadSound("audio/mushroom-sounds.mp3");
+		sounds_[3].loadSound("audio/mushroom-sounds.mp3");
 	}
 
 
