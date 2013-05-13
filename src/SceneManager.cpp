@@ -69,17 +69,17 @@ namespace Jungle
 		}
         
         //cout<<stage_index_[0]<<stage_index_[1]<<stage_index_[2]<<stage_index_[3]<<endl;
-        unsigned short index = ofRandom(0,2);
-        cout<<index<<endl;
-        swap(stage_index_[index],stage_index_[3-index]);
-        swap(stage_index_[1-index],stage_index_[2+index]);
-        
+//        unsigned short index = ofRandom(0,2);
+//        cout<<index<<endl;
+//        swap(stage_index_[index],stage_index_[3-index]);
+//        swap(stage_index_[1-index],stage_index_[2+index]);
+        random_shuffle(stage_index_.begin(), stage_index_.end());
        // cout<<stage_index_[0]<<stage_index_[1]<<stage_index_[2]<<stage_index_[3]<<endl;
         
         
         
     }
-    vector<unsigned short>& SceneManager::GetLighting()
+    vector<unsigned short>& SceneManager::GetLightingIndex()
     {
         return stage_index_;
     }

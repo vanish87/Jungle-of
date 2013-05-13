@@ -66,6 +66,7 @@ namespace Jungle
 //        (int)light_color_[0].g<<" "<<
 //        (int)light_color_[0].b<<" "<<
 //        (int)light_color_[0].a<<endl;
+            
        SceneType &scene = JungleApp::SceneManagerInstance().GetDynamicObj();
 	   light_.setDiffuseColor(stage_color_[0][1]);
 	   light_.setAmbientColor(stage_color_[0][1]);
@@ -74,6 +75,8 @@ namespace Jungle
        {
 		   time_.push_back(0.0f);
        }
+
+        
 		//circle_.loadImage("Environment/glowing-circle-2.png");
 		w_ = ofGetWindowWidth();
 		h_ = ofGetWindowHeight();
@@ -92,7 +95,7 @@ namespace Jungle
 
         unsigned int fruit_count = 0;
         unsigned int cloud_count = 0;
-        vector<unsigned short> light_index = JungleApp::SceneManagerInstance().GetLighting();
+        vector<unsigned short> light_index = JungleApp::SceneManagerInstance().GetLightingIndex();
 		SceneType &scene = JungleApp::SceneManagerInstance().GetDynamicObj();
 		SceneManager& scene_mag_ = JungleApp::SceneManagerInstance();		
 
@@ -117,6 +120,9 @@ namespace Jungle
 		switch (current_stage_)
 		{
 		case Jungle::Level1::TREE:
+            light_.setDiffuseColor(stage_color_[0][1]);
+            light_.setAmbientColor(stage_color_[0][1]);
+            static_scene->SetBackgroundStart(stage_color_[0][0]);
 			if(scene_mag_.GetTriggeringCount(Group::TREE) > 4)
 			{
 				JungleApp::SceneManagerInstance().Enable(Group::LEAF,true);

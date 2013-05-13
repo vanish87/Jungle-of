@@ -16,8 +16,6 @@ namespace Jungle {
 		{
 			SceneModel droplet;
 			droplet.loadModel("Environment/Droplet.obj");
-			droplet.setPosition(pos.x,pos.y,pos.z);
-			droplet.setRotation(0,180,1,0,0);
 			droplet_.push_back(droplet);
 		}
 		max_time_ = 0;
@@ -63,19 +61,7 @@ namespace Jungle {
 
 			if(rain_)
 			{
-				
-				for(vector<SceneModel>::iterator it = droplet_.begin(); it != droplet_.end(); ++it)
-				{					
-					ofVec3f dpos = it->getPosition();
-					if(dpos.y < 0)
-					{
-						dpos = pos;
-						dpos.x += 50 * ofRandom(-1,1);
-						dpos.y += 20 * ofRandom(-1,1);
-						rain_ = false;
-					}
-					it->setPosition(dpos.x, dpos.y - 1,dpos.z);
-				}
+				UpdateRain();
 			}
 			break;
 		case DISAPPEARING:
@@ -165,9 +151,11 @@ namespace Jungle {
 			}
 
 			if(rain_)
-				for(vector<SceneModel>::iterator it = droplet_.begin(); it != droplet_.end(); ++it)
+				for(vector<ofVec3f>::iterator it = droplet_pos_.begin(); it != droplet_pos_.end(); ++it)
 				{
-					it->drawFaces();
+                    SceneModel dmodel = droplet_[ofRandom(0, droplet_.size())];
+                    dmodel.setPosition(it->x, it->y, it->z);
+					dmodel.drawFaces();
 				}
 		}
 	}
@@ -180,10 +168,34 @@ namespace Jungle {
 			dpos.x += 50 * ofRandom(-1,1);
 			dpos.y += 20 * ofRandom(-1,1);
 			it->setPosition(dpos.x, dpos.y,dpos.z);
-			it->setScale(0.1,0.1,0.1);
 			it->setRotation(0,180,1,0,0);
+            it->setRotation(1, 45, 0, 0, 1);            
+			it->setScale(0.1, 0.1/1.414,0.1);
 		}
 	}
+    
+    void Cloud::UpdateRain()
+    {
+        if(droplet_pos_.size() < 70 && ofRandom(0,1)< 0.3)
+        {
+            ofVec3f dpos = pos;
+			dpos.x += 50 * ofRandom(-1,1);
+			dpos.y += 20 * ofRandom(-1,1);
+            droplet_pos_.push_back(dpos);
+        }
+        for(vector<ofVec3f>::iterator it = droplet_pos_.begin(); it!= droplet_pos_.end(); ++it)
+        {
+            ofVec3f dpos = *it;
+            if(dpos.y < 0)
+            {
+                dpos = pos;
+                dpos.x += 50 * ofRandom(-1,1);
+                dpos.y += 20 * ofRandom(-1,1);
+                //rain_ = false;
+            }
+            it->set(dpos.x, dpos.y - 3,dpos.z);
+        }
+    }
 
 	void Cloud::Triggering( bool trigger )
 	{

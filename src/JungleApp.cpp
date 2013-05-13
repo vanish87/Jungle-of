@@ -38,9 +38,10 @@ namespace Jungle
 		static_scene_->Steup();
 
 		//setup all level here
+		StateManagerInstance().ChangeState(static_scene_, SOP_PUSH);
+        
 		level1_ = new Level1();
 		level1_->Steup();
-		StateManagerInstance().ChangeState(static_scene_, SOP_PUSH);
 		StateManagerInstance().ChangeState(level1_, SOP_PUSH);
         
         ofSetFrameRate(60);

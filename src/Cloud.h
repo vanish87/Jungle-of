@@ -16,12 +16,15 @@ namespace Jungle {
 		virtual void Draw();
 
 		virtual void Triggering( bool trigger );
+        
+        void UpdateRain();
 
 	public:
 
 		bool rain_;
 		float max_time_;
 		vector<SceneModel> droplet_;
+        vector<ofVec3f> droplet_pos_;
         
     };
 }
