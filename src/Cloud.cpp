@@ -72,6 +72,7 @@ namespace Jungle {
 						dpos = pos;
 						dpos.x += 50 * ofRandom(-1,1);
 						dpos.y += 20 * ofRandom(-1,1);
+						rain_ = false;
 					}
 					it->setPosition(dpos.x, dpos.y - 1,dpos.z);
 				}
