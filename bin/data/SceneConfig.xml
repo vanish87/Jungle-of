@@ -3422,26 +3422,21 @@
 <ColorSet>
    
     <Stage>
-        <Backgroud><R>19</R> <G>79</G> <B>178</B> <A>125</A></Backgroud>
-        <Light><R>255</R> <G>232</G> <B>44</B> <A>255</A></Light>
+        <Backgroud><R>61</R> <G>157</G> <B>242</B> <A>125</A></Backgroud>
+        <Light><R>255</R> <G>163</G> <B>13</B> <A>255</A></Light>
+    </Stage>    
+       <Stage>
+        <Backgroud><R>75</R> <G>178</G> <B>242</B> <A>125</A></Backgroud>
+        <Light><R>242</R> <G>85</G> <B>22</B> <A>255</A></Light>
     </Stage>
-    
-    
     <Stage>
-        <Backgroud><R>19</R> <G>79</G> <B>178</B> <A>125</A></Backgroud>
-        <Light><R>255</R> <G>210</G> <B>74</B> <A>255</A></Light>
+        <Backgroud><R>107</R> <G>204</G> <B>242</B> <A>125</A></Backgroud>
+        <Light><R>201</R> <G>5</G> <B>2</B> <A>255</A></Light>
     </Stage>
-   
     <Stage>
-        <Backgroud><R>19</R> <G>79</G> <B>178</B> <A>125</A></Backgroud>
-        <Light><R>255</R> <G>204</G> <B>0</B> <A>255</A></Light>
+        <Backgroud><R>153</R> <G>233</G> <B>242</B> <A>125</A></Backgroud>
+        <Light><R>102</R> <G>11</G> <B>85</B> <A>255</A></Light>
     </Stage>
-    
-    <Stage>
-        <Backgroud><R>19</R> <G>79</G> <B>178</B> <A>125</A></Backgroud>
-        <Light><R>255</R> <G>158</G> <B>157</B> <A>255</A></Light>
-    </Stage>
-    
 </ColorSet>
 <ObjColorSet>
     <Set>
@@ -3452,11 +3447,61 @@
     </Set>
 </ObjColorSet>
 
-
+<!--
+ 
+ ///// PURPLE STAGE ///////
+ 
+ <Stage>
+ <Backgroud><R>19</R> <G>79</G> <B>178</B> <A>125</A></Backgroud>
+ <Light><R>255</R> <G>163</G> <B>13</B> <A>255</A></Light>
+ </Stage>
+ <Stage>
+ <Backgroud><R>19</R> <G>79</G> <B>178</B> <A>125</A></Backgroud>
+ <Light><R>242</R> <G>85</G> <B>22</B> <A>255</A></Light>
+ </Stage>
+ <Stage>
+ <Backgroud><R>19</R> <G>79</G> <B>178</B> <A>125</A></Backgroud>
+ <Light><R>201</R> <G>5</G> <B>2</B> <A>255</A></Light>
+ </Stage>
+ <Stage>
+ <Backgroud><R>19</R> <G>79</G> <B>178</B> <A>125</A></Backgroud>
+ <Light><R>102</R> <G>11</G> <B>85</B> <A>255</A></Light>
+ </Stage>
+ 
+ 
+ 
+ -->
 
 
 
 <!--
+ 
+ /////// YELLOW SCALE  //////////
+ 
+ <Stage>
+ <Backgroud><R>19</R> <G>79</G> <B>178</B> <A>125</A></Backgroud>
+ <Light><R>255</R> <G>232</G> <B>44</B> <A>255</A></Light>
+ </Stage>
+ <Stage>
+ <Backgroud><R>19</R> <G>79</G> <B>178</B> <A>125</A></Backgroud>
+ <Light><R>255</R> <G>204</G> <B>0</B> <A>255</A></Light>
+ </Stage>
+ <Stage>
+ <Backgroud><R>19</R> <G>79</G> <B>178</B> <A>125</A></Backgroud>
+ <Light><R>255</R> <G>158</G> <B>157</B> <A>255</A></Light>
+ </Stage>
+ <Stage>
+ <Backgroud><R>19</R> <G>79</G> <B>178</B> <A>125</A></Backgroud>
+ <Light><R>255</R> <G>210</G> <B>74</B> <A>255</A></Light>
+ </Stage>
+  
+ 
+ -->
+
+
+<!--
+ 
+ ///////// RANDOM COLORS (PASTEL) //////////
  <Stage>
  <Backgroud><R>95</R> <G>10</G> <B>11</B> <A>125</A></Backgroud>
  <Light><R>63</R> <G>184</G> <B>175</B> <A>255</A></Light>
