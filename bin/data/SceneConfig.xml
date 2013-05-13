@@ -3055,6 +3055,51 @@
             <FallingEnable>0</FallingEnable>
             <Pitch>2.0</Pitch>
 		</Model>
+        <Model>
+			<ObjURL>Environment/Leaf_3.obj</ObjURL>
+			<Position><X>1172</X> <Y>481</Y> <Z>30</Z></Position>
+			<Rotation>0</Rotation>
+			<MaxScale>0.15</MaxScale>
+			<ScaleSpeed>0.005</ScaleSpeed>
+			<StayingTime>10</StayingTime>
+			<HoldingTime>0.1</HoldingTime>
+			<CollideSize>70</CollideSize>
+			<CircleSize>70</CircleSize>
+			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
+            <ModelColor><R>255</R> <G>255</G> <B>255</B> <A>100</A></ModelColor>
+            <FallingEnable>0</FallingEnable>
+            <Pitch>2.0</Pitch>
+		</Model>
+        <Model>
+			<ObjURL>Environment/Leaf_3.obj</ObjURL>
+			<Position><X>1223</X> <Y>409</Y> <Z>30</Z></Position>
+			<Rotation>0</Rotation>
+			<MaxScale>0.15</MaxScale>
+			<ScaleSpeed>0.005</ScaleSpeed>
+			<StayingTime>10</StayingTime>
+			<HoldingTime>0.1</HoldingTime>
+			<CollideSize>70</CollideSize>
+			<CircleSize>70</CircleSize>
+			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
+            <ModelColor><R>255</R> <G>255</G> <B>255</B> <A>100</A></ModelColor>
+            <FallingEnable>0</FallingEnable>
+            <Pitch>2.0</Pitch>
+		</Model>
+        <Model>
+			<ObjURL>Environment/Leaf_3.obj</ObjURL>
+			<Position><X>1239</X> <Y>345</Y> <Z>30</Z></Position>
+			<Rotation>0</Rotation>
+			<MaxScale>0.15</MaxScale>
+			<ScaleSpeed>0.005</ScaleSpeed>
+			<StayingTime>10</StayingTime>
+			<HoldingTime>0.1</HoldingTime>
+			<CollideSize>70</CollideSize>
+			<CircleSize>70</CircleSize>
+			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
+            <ModelColor><R>255</R> <G>255</G> <B>255</B> <A>100</A></ModelColor>
+            <FallingEnable>0</FallingEnable>
+            <Pitch>2.0</Pitch>
+		</Model>
 	</GroupObj>
 	<StayingTime>4</StayingTime>
 </Group>
@@ -3375,22 +3420,28 @@
 </LevelIndex>
 
 <ColorSet>
+   
     <Stage>
-        <Backgroud><R>95</R> <G>10</G> <B>11</B> <A>125</A></Backgroud>
-        <Light><R>255</R> <G>0</G> <B>0</B> <A>255</A></Light>
+        <Backgroud><R>19</R> <G>79</G> <B>178</B> <A>125</A></Backgroud>
+        <Light><R>255</R> <G>232</G> <B>44</B> <A>255</A></Light>
     </Stage>
+    
+    
     <Stage>
-        <Backgroud><R>95</R> <G>10</G> <B>11</B> <A>125</A></Backgroud>
-        <Light><R>0</R> <G>255</G> <B>0</B> <A>255</A></Light>
+        <Backgroud><R>19</R> <G>79</G> <B>178</B> <A>125</A></Backgroud>
+        <Light><R>255</R> <G>210</G> <B>74</B> <A>255</A></Light>
     </Stage>
+   
     <Stage>
-        <Backgroud><R>95</R> <G>10</G> <B>11</B> <A>125</A></Backgroud>
-        <Light><R>0</R> <G>0</G> <B>255</B> <A>255</A></Light>
+        <Backgroud><R>19</R> <G>79</G> <B>178</B> <A>125</A></Backgroud>
+        <Light><R>255</R> <G>204</G> <B>0</B> <A>255</A></Light>
     </Stage>
+    
     <Stage>
-        <Backgroud><R>95</R> <G>10</G> <B>11</B> <A>125</A></Backgroud>
-        <Light><R>255</R> <G>215</G> <B>0</B> <A>255</A></Light>
+        <Backgroud><R>19</R> <G>79</G> <B>178</B> <A>125</A></Backgroud>
+        <Light><R>255</R> <G>158</G> <B>157</B> <A>255</A></Light>
     </Stage>
+    
 </ColorSet>
 <ObjColorSet>
     <Set>
@@ -3400,8 +3451,35 @@
         <Fruit> <R>255</R> <G>255</G> <B>255</B> <A>200</A> </Fruit>
     </Set>
 </ObjColorSet>
-    
-        
-        
-            
+
+
+
+
+
+<!--
+ <Stage>
+ <Backgroud><R>95</R> <G>10</G> <B>11</B> <A>125</A></Backgroud>
+ <Light><R>63</R> <G>184</G> <B>175</B> <A>255</A></Light>
+ </Stage>
+ 
+ 
+ <Stage>
+ <Backgroud><R>95</R> <G>10</G> <B>11</B> <A>125</A></Backgroud>
+ <Light><R>72</R> <G>153</G> <B>60</B> <A>255</A></Light>
+ </Stage>
+ 
+ <Stage>
+ <Backgroud><R>95</R> <G>10</G> <B>11</B> <A>125</A></Backgroud>
+ <Light><R>255</R> <G>215</G> <B>0</B> <A>255</A></Light>
+ </Stage>
+ 
+ <Stage>
+ <Backgroud><R>95</R> <G>10</G> <B>11</B> <A>125</A></Backgroud>
+ <Light><R>255</R> <G>158</G> <B>157</B> <A>255</A></Light>
+ </Stage>
+ 
+ -->
+ 
+ 
+ 
 

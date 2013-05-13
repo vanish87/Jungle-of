@@ -37,8 +37,7 @@ namespace Jungle
         
         ground_1_.loadModel("Environment/front.obj");
 
-		ground_1_.setPosition(598,-24,50);
-
+		ground_1_.setPosition(680,-24,50);
 		ground_1_.setScale(2,2,2);
 		ground_1_.setRotation(0, 180, 0, 0, 1);
         ground_1_.setRotation(1, 180, 0, 1, 0);
@@ -68,7 +67,7 @@ namespace Jungle
 
         bg_1_.AddToScene();
         
-        back_color_start_ = ofColor(230,0,0);
+        back_color_start_ = ofColor(19,79,178);
         back_color_end_ = ofColor((14,28,54));
 
         
