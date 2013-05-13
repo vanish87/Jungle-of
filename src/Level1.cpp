@@ -147,20 +147,20 @@ namespace Jungle
 				time_[0] = 1;
 
 			//fruit->leaf
-			time_[1] -=ofGetLastFrameTime();
-			if(time_[1] > 0)
-			{
-				ofColor lcolor = light_.getDiffuseColor();
-				ofColor color = Lerp(stage_color_[1][1], stage_color_[2][1], time_[1]);
-
-				ofColor bcolor = Lerp(stage_color_[1][0], stage_color_[2][0], time_[1]);
-				static_scene->SetBackgroundStart(bcolor);
-
-				light_.setDiffuseColor(color);
-				light_.setAmbientColor(color);
-			}
-			else				
-				time_[1] = 0;
+//			time_[1] -=ofGetLastFrameTime();
+//			if(time_[1] > 0)
+//			{
+//				ofColor lcolor = light_.getDiffuseColor();
+//				ofColor color = Lerp(stage_color_[1][1], stage_color_[2][1], time_[1]);
+//
+//				ofColor bcolor = Lerp(stage_color_[1][0], stage_color_[2][0], time_[1]);
+//				static_scene->SetBackgroundStart(bcolor);
+//
+//				light_.setDiffuseColor(color);
+//				light_.setAmbientColor(color);
+//			}
+//			else				
+//				time_[1] = 0;
 
 			if( scene_mag_.GetTriggeringCount(Group::LEAF) > 80)
 			{
@@ -186,20 +186,20 @@ namespace Jungle
 				time_[1] = 1;
 
 			//mushroom->fruit
-			time_[2] -=ofGetLastFrameTime();
-			if(time_[2] > 0)
-			{
-				ofColor lcolor = light_.getDiffuseColor();
-				ofColor color = Lerp(stage_color_[2][1], stage_color_[3][1], time_[2]);
-
-				ofColor bcolor = Lerp(stage_color_[2][0], stage_color_[3][0], time_[2]);
-				static_scene->SetBackgroundStart(bcolor);
-
-				light_.setDiffuseColor(color);
-				light_.setAmbientColor(color);
-			}
-			else				
-				time_[2] = 0;
+//			time_[2] -=ofGetLastFrameTime();
+//			if(time_[2] > 0)
+//			{
+//				ofColor lcolor = light_.getDiffuseColor();
+//				ofColor color = Lerp(stage_color_[2][1], stage_color_[3][1], time_[2]);
+//
+//				ofColor bcolor = Lerp(stage_color_[2][0], stage_color_[3][0], time_[2]);
+//				static_scene->SetBackgroundStart(bcolor);
+//
+//				light_.setDiffuseColor(color);
+//				light_.setAmbientColor(color);
+//			}
+//			else				
+//				time_[2] = 0;
 
 			if( scene_mag_.GetTriggeringCount(Group::FRUIT) > 4)
 			{
