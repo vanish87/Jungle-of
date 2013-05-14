@@ -210,14 +210,12 @@ namespace Jungle
 			else
 			{
 				JungleApp::SceneManagerInstance().Enable(Group::MUSHROOM,false);
-				if( scene_mag_.GetTriggeringCount(Group::LEAF) < 80 && time_[2] == 0)
+				if( scene_mag_.GetTriggeringCount(Group::LEAF) < 80)
 				{
 					JungleApp::SceneManagerInstance().Enable(Group::FRUIT,false);
 					current_stage_ = LEAF;
 				}
 			}
-			break;
-		case Jungle::Level1::CLOUD:
 			break;
 		case Jungle::Level1::MUSHROOM:
 			time_[2] +=ofGetLastFrameTime();
@@ -244,7 +242,10 @@ namespace Jungle
             {
                 current_stage_ = CLOUD;
             }
-			break;
+			break;                
+        case Jungle::Level1::CLOUD:
+                
+            break;
 		default:
 			break;
 		}
