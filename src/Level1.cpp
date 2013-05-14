@@ -33,7 +33,7 @@ namespace Jungle
 
         
         max_leaf_ = 0;
-		angle_ = 90;
+		angle_ = 180;
 
 		// Mushroom Placement        
         title_.loadImage("UI/title-screen-3.png");
