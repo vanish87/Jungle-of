@@ -39,32 +39,32 @@ namespace Jungle
 			emitter2_.sourcePosition.y = r_hand_pos.y;
 			emitter2_.update();
             
-            if((l_hand_pos-pl_hand_pos_).length() < 10)
-            {
-				ltime_+=ofGetLastFrameTime();
-				if(ltime_ > 3)
-				{
-					lenable_ = false;
-					ltime_ = 0;
-				}
-            }
-			else
+//            if((l_hand_pos-pl_hand_pos_).length() < 10)
+//            {
+//				ltime_+=ofGetLastFrameTime();
+//				if(ltime_ > 3)
+//				{
+//					lenable_ = false;
+//					ltime_ = 0;
+//				}
+//            }
+//			else
 			{
 				lenable_ = true;
 			}
             
             
-            if((r_hand_pos-pr_hand_pos_).length() < 10)
-			{
-
-				rtime_+=ofGetLastFrameTime();
-				if(rtime_ > 3)
-				{
-					renable_ = false;
-					rtime_ = 0;
-				}
-			}
-			else
+//            if((r_hand_pos-pr_hand_pos_).length() < 10)
+//			{
+//
+//				rtime_+=ofGetLastFrameTime();
+//				if(rtime_ > 3)
+//				{
+//					renable_ = false;
+//					rtime_ = 0;
+//				}
+//			}
+//			else
 			{
 				renable_ = true;
 			}

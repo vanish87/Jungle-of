@@ -63,6 +63,8 @@ namespace Jungle {
 		float pitch_;
         bool falling_;
         
+        float triggering_time_;
+        
     };
 }
 
