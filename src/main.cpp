@@ -6,7 +6,11 @@
 int main( ){
 
     ofAppGlutWindow window;
+<<<<<<< HEAD
     window.setGlutDisplayString("rgba double samples>=1");
+=======
+    window.setGlutDisplayString("rgba double samples>=4");
+>>>>>>> bg color change
 	//ofSetupOpenGL(&window, 1024,768, OF_WINDOW);			// <-------- setup the GL context
 	ofSetupOpenGL(&window, 1280,720, OF_WINDOW);
 	

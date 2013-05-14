@@ -35,14 +35,14 @@ namespace Jungle
 		ground_1_.Enable(true);
         
         ground_2_.loadModel("Environment/second.obj");
-		ground_2_.setPosition(680,-24,0);
+		ground_2_.setPosition(680,-24,-60);
 		ground_2_.setScale(2,2,2);
 		ground_2_.setRotation(0, 180, 0, 0, 1);
         ground_2_.setRotation(1, 180, 0, 1, 0);
 		ground_2_.Enable(true);
         
         ground_3_.loadModel("Environment/back.obj");
-		ground_3_.setPosition(680,-24,-50);
+		ground_3_.setPosition(680,-24,-175);
 		ground_3_.setScale(2,2,2);
         ground_3_.setRotation(0, 180, 0, 0, 1);
         ground_3_.setRotation(1, 180, 0, 1, 0);
@@ -93,14 +93,14 @@ namespace Jungle
 	void StaticScene::keyPressed( int key )
 	{        
        
-		ofVec3f pos; //= model_->getPosition();
-		ofVec3f scale; //= model_->getScale();
+		ofVec3f pos = model_->getPosition();
+		ofVec3f scale = model_->getScale();
 		switch (key)
 		{
 		case '1':
 			pos.z+=5;
 			break;
-		case '2':
+		case '2': 
 			pos.z-=5;
 			break;	
 		case '3':
@@ -133,16 +133,16 @@ namespace Jungle
 			break;
         case 'r':
             pos = ground_.getPosition();
-            model_ = &bg_4_;
-            back_color_start_.set(0, 255, 0);
+            model_ = &ground_3_;
+            //back_color_start_.set(0, 255, 0);
             break;
         case 't':
 			pos = ground_.getPosition();
-			model_ = &ground_;
+			model_ = &ground_2_;
 			break;		
         case 'y':
 			pos = tree_.getPosition();
-			model_ = &tree_;
+			model_ = &ground_1_;
 			break;
 		case 'u':
 			pos = bg_3_.getPosition();
@@ -253,9 +253,10 @@ namespace Jungle
 	{
 	}
 
-	void StaticScene::SetBackgroundStart( ofColor color )
+	void StaticScene::SetBackground( ofColor scolor, ofColor ecolor )
 	{
-		back_color_start_ = color;
+		back_color_start_ = scolor;
+        back_color_end_ = ecolor;
 	}
 
 }

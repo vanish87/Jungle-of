@@ -68,8 +68,8 @@ namespace Jungle
 //        (int)light_color_[0].a<<endl;
             
        SceneType &scene = JungleApp::SceneManagerInstance().GetDynamicObj();
-	   light_.setDiffuseColor(stage_color_[0][1]);
-	   light_.setAmbientColor(stage_color_[0][1]);
+	   light_.setDiffuseColor(stage_color_[0][2]);
+	   light_.setAmbientColor(stage_color_[0][2]);
 	   current_stage_ = TREE;
        for (unsigned int i =0; i < 5; ++i)
        {
@@ -120,9 +120,9 @@ namespace Jungle
 		switch (current_stage_)
 		{
 		case Jungle::Level1::TREE:
-            light_.setDiffuseColor(stage_color_[0][1]);
-            light_.setAmbientColor(stage_color_[0][1]);
-            static_scene->SetBackgroundStart(stage_color_[0][0]);
+            light_.setDiffuseColor(stage_color_[0][2]);
+            light_.setAmbientColor(stage_color_[0][2]);
+            static_scene->SetBackground(stage_color_[0][0], stage_color_[0][1]);
 			if(scene_mag_.GetTriggeringCount(Group::TREE) > 4)
 			{
 				JungleApp::SceneManagerInstance().Enable(Group::LEAF,true);
@@ -134,9 +134,10 @@ namespace Jungle
 			time_[0] +=ofGetLastFrameTime();
 			if(time_[0] < 1)
 			{
-				ofColor color = Lerp(stage_color_[0][1], stage_color_[1][1], time_[0]);
+				ofColor color = Lerp(stage_color_[0][2],  stage_color_[1][2], time_[0]);
 				ofColor bcolor = Lerp(stage_color_[0][0], stage_color_[1][0], time_[0]);
-				static_scene->SetBackgroundStart(bcolor);
+                ofColor ecolor = Lerp(stage_color_[0][1], stage_color_[1][1], time_[0]);
+				static_scene->SetBackground(bcolor,ecolor);
 
 				light_.setDiffuseColor(color);
 				light_.setAmbientColor(color);
@@ -155,10 +156,11 @@ namespace Jungle
 			time_[1] +=ofGetLastFrameTime();
 			if(time_[1] < 1)
 			{
-				ofColor color = Lerp(stage_color_[1][1], stage_color_[2][1], time_[1]);
+				ofColor color = Lerp(stage_color_[1][2], stage_color_[2][2], time_[1]);
 
 				ofColor bcolor = Lerp(stage_color_[1][0], stage_color_[2][0], time_[1]);
-				static_scene->SetBackgroundStart(bcolor);
+                ofColor ecolor = Lerp(stage_color_[1][1], stage_color_[2][1], time_[1]);
+				static_scene->SetBackground(bcolor,ecolor);
 
 				light_.setDiffuseColor(color);
 				light_.setAmbientColor(color);
@@ -184,10 +186,11 @@ namespace Jungle
 			time_[2] +=ofGetLastFrameTime();
 			if(time_[2] < 1)
 			{
-				ofColor color = Lerp(stage_color_[2][1], stage_color_[3][1], time_[2]);
+				ofColor color = Lerp(stage_color_[2][2], stage_color_[3][2], time_[2]);
 
 				ofColor bcolor = Lerp(stage_color_[2][0], stage_color_[3][0], time_[2]);
-				static_scene->SetBackgroundStart(bcolor);
+                ofColor ecolor = Lerp(stage_color_[2][1], stage_color_[3][1], time_[2]);
+				static_scene->SetBackground(bcolor,ecolor);
 
 				light_.setDiffuseColor(color);
 				light_.setAmbientColor(color);
@@ -211,10 +214,11 @@ namespace Jungle
 			time_[3] +=ofGetLastFrameTime();
 			if(time_[3] < 1)
 			{
-				ofColor color = Lerp(stage_color_[3][1], stage_color_[4][1], time_[3]);
+				ofColor color = Lerp(stage_color_[3][2], stage_color_[4][2], time_[3]);
 
 				ofColor bcolor = Lerp(stage_color_[3][0], stage_color_[4][0], time_[3]);
-				static_scene->SetBackgroundStart(bcolor);
+                ofColor ecolor = Lerp(stage_color_[3][1], stage_color_[4][1], time_[3]);
+				static_scene->SetBackground(bcolor,ecolor);
 
 				light_.setDiffuseColor(color);
 				light_.setAmbientColor(color);
@@ -412,8 +416,8 @@ namespace Jungle
         ofQuaternion q;
 
         //static scene
-        //this->GetParent()->keyPressed(key);
-        //return;
+        this->GetParent()->keyPressed(key);
+        return;
 		switch (key)
 		{
             case 's':
@@ -530,8 +534,8 @@ namespace Jungle
 
 
 		JungleApp::SceneManagerInstance().Reset();
-		light_.setDiffuseColor(stage_color_[0][1]);
-		light_.setAmbientColor(stage_color_[0][1]);
+		light_.setDiffuseColor(stage_color_[0][2]);
+		light_.setAmbientColor(stage_color_[0][2]);
 		current_stage_ = TREE;
 	}
 
