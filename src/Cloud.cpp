@@ -122,12 +122,25 @@ namespace Jungle {
 
 	void Cloud::InitDroplet()
 	{
+<<<<<<< HEAD
 		rain_emitter_.loadFromXml("UI/rain.pex");
 		rain_emitter_.sourcePositionVariance.x = 100;
 		rain_emitter_.sourcePositionVariance.y = 20;
 		rain_emitter_.sourcePosition.x = pos.x;
 		rain_emitter_.sourcePosition.y = pos.y;
 		rain_emitter_.sourcePosition.z = 50;
+=======
+		for(vector<SceneModel>::iterator it = droplet_.begin(); it != droplet_.end(); ++it)
+		{
+			ofVec3f dpos = pos;
+			dpos.x += 50 * ofRandom(-1,1);
+			dpos.y += 20 * ofRandom(-1,1);
+			it->setPosition(dpos.x, dpos.y,dpos.z);
+			it->setRotation(0,180,1,0,0);
+            it->setRotation(1, 0, 0, 0, 1);
+			it->setScale(0.1, 0.1/1.414,0.1);
+		}
+>>>>>>> 14d3d425cd9b59a09780f6eb2fc6fb49b5afa6c5
 	}
     
 	void Cloud::Triggering( bool trigger )

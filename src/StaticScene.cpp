@@ -19,17 +19,17 @@ namespace Jungle
 		x_ = ofGetWindowPositionX();
 		y_ = ofGetWindowPositionY();
 
-		//no need background 
-		//background is Gradient color now
-		tree_.loadModel("Environment/Tree_Last.obj");
-		tree_.setPosition(690 , -200, 0);
-		tree_.setScale(2,2,2);
-		tree_.setRotation(0, 180, 0, 0, 1);
-		tree_.Enable(true);
+//		no need background
+//		background is Gradient color now
+//		tree_.loadModel("Environment/Tree_Last.obj");
+//		tree_.setPosition(690 , -200, 0);
+//		tree_.setScale(2,2,2);
+//		tree_.setRotation(0, 180, 0, 0, 1);
+//		tree_.Enable(true);
         
         
         bg_1_.loadModel("Environment/mountain2.obj");
-		bg_1_.setPosition(603,-117,-290);
+		bg_1_.setPosition(603,-117,0);
 		bg_1_.setScale(2,2,2);
 		bg_1_.setRotation(0, 180, 0, 0, 1);
         bg_1_.setRotation(1, 180, 0, 1, 0);
@@ -37,38 +37,39 @@ namespace Jungle
         
         ground_1_.loadModel("Environment/front.obj");
 
-		ground_1_.setPosition(680,-24,50);
+		ground_1_.setPosition(680,-24,200);
 		ground_1_.setScale(2,2,2);
 		ground_1_.setRotation(0, 180, 0, 0, 1);
         ground_1_.setRotation(1, 180, 0, 1, 0);
 		ground_1_.Enable(true);
         
         ground_2_.loadModel("Environment/second.obj");
-		ground_2_.setPosition(598,-24,0);
+		ground_2_.setPosition(680,-24,0);
 		ground_2_.setScale(2,2,2);
 		ground_2_.setRotation(0, 180, 0, 0, 1);
-       // ground_2_.setRotation(1, 180, 0, 1, 0);
+        ground_2_.setRotation(1, 180, 0, 1, 0);
 		ground_2_.Enable(true);
         
         ground_3_.loadModel("Environment/back.obj");
-		ground_3_.setPosition(598,-24,-50);
+		ground_3_.setPosition(680,-24,-50);
 		ground_3_.setScale(2,2,2);
-		ground_3_.setRotation(0, 180, 0, 0, 1);
-        //ground_3_.setRotation(1, 180, 0, 1, 0);
+        ground_3_.setRotation(0, 180, 0, 0, 1);
+        ground_3_.setRotation(1, 180, 0, 1, 0);
 		ground_3_.Enable(true);
         
         model_ = &tree_;
         
-        ground_1_.AddToScene();
-        ground_2_.AddToScene();
-        ground_3_.AddToScene();
+       
    
 
         bg_1_.AddToScene();
         
         back_color_start_ = ofColor(255,255,255);
         back_color_end_ = ofColor((255,255,255));
-
+   
+        ground_3_.AddToScene();
+        ground_2_.AddToScene();
+        ground_1_.AddToScene();
         
 		atmo.loadSound("Audio/jungle-atmos-2.mp3");
 		atmo.setLoop(true);
