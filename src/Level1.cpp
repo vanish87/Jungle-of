@@ -168,14 +168,14 @@ namespace Jungle
 			else
 				time_[1] = 1;
 
-			if( scene_mag_.GetTriggeringCount(Group::FRUIT) > 4)
+			if( scene_mag_.GetTriggeringCount(Group::FRUIT) > 3)
 			{
 				current_stage_ = MUSHROOM;
 				JungleApp::SceneManagerInstance().Enable(Group::MUSHROOM,true);
 			}
 			else
 			{
-				if( scene_mag_.GetTriggeringCount(Group::LEAF) < 30)
+				if( scene_mag_.GetTriggeringCount(Group::LEAF) < 20)
 				{
 					JungleApp::SceneManagerInstance().Enable(Group::FRUIT,false);
 					current_stage_ = LEAF;
@@ -198,13 +198,13 @@ namespace Jungle
 			else
 				time_[2] = 1;
 
-			if(scene_mag_.GetTriggeringCount(Group::MUSHROOM) > 5)
+			if(scene_mag_.GetTriggeringCount(Group::MUSHROOM) > 3)
 			{
 				scene_mag_.Enable(Group::CLOUD,true);
 				current_stage_ = CLOUD;
 			}
 			else
-			if( scene_mag_.GetTriggeringCount(Group::FRUIT) < 4)
+			if( scene_mag_.GetTriggeringCount(Group::FRUIT) < 2)
 			{
 				current_stage_ = FRUIT;
 				JungleApp::SceneManagerInstance().Enable(Group::MUSHROOM,false);
@@ -226,7 +226,7 @@ namespace Jungle
 			else
 				time_[3] = 1;
 
-			if(scene_mag_.GetTriggeringCount(Group::MUSHROOM) < 5)
+			if(scene_mag_.GetTriggeringCount(Group::MUSHROOM) < 2)
 			{
 				scene_mag_.Enable(Group::CLOUD,false);
 				current_stage_ = MUSHROOM;
