@@ -3432,13 +3432,13 @@
            <Light><R>255</R> <G>255</G> <B>255</B> <A>255</A></Light>
     </Stage>
     <Stage>
-        <Backgroud_Start><R>107</R> <G>204</G> <B>242</B> <A>125</A></Backgroud_Start>
-		<Backgroud_End><R>61</R> <G>157</G> <B>242</B> <A>125</A></Backgroud_End>
+        <Backgroud_Start><R>209</R> <G>238</G> <B>253</B> <A>255</A></Backgroud_Start>
+		<Backgroud_End><R>57</R> <G>164</G> <B>232</B> <A>255</A></Backgroud_End>
         <Light><R>255</R> <G>255</G> <B>255</B> <A>255</A></Light>
     </Stage>
     <Stage>
-        <Backgroud_Start><R>95</R> <G>10</G> <B>11</B> <A>125</A></Backgroud_Start>
-		<Backgroud_End><R>61</R> <G>157</G> <B>242</B> <A>125</A></Backgroud_End>
+        <Backgroud_Start><R>253</R> <G>186</G> <B>181</B> <A>255</A></Backgroud_Start>
+		<Backgroud_End><R>173</R> <G>220</G> <B>250</B> <A>125</A></Backgroud_End>
         <Light><R>255</R> <G>255</G> <B>255</B> <A>255</A></Light>
     </Stage>
     <Stage>

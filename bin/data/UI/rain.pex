@@ -1,5 +1,5 @@
 <particleEmitterConfig>
-<texture name="circles.png"></texture>
+<texture name="rain.png"></texture>
 <sourcePosition x="198" y="660"></sourcePosition>
 <sourcePositionVariance x="178" y="20"></sourcePositionVariance>
 
