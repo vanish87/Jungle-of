@@ -26,6 +26,7 @@ namespace Jungle {
         staying_time_ = 5;
         
         pitch_ = 1.0f;
+        triggering_time_ = 0;
         
 		sounds_[0].loadSound("audio/kalimba-e3-1.mp3");
 		sounds_[1].loadSound("audio/kalimba-e3-2.mp3");
@@ -70,13 +71,15 @@ namespace Jungle {
 			}
 			if(time_ > staying_time_)
 			{
-                if(falling_)
-                {
-                    flower_state_ = FALLING;
-                    org_pos_ = pos;
-                    time_ = 0;
-                }
-                else
+//                if(falling_)
+//                {
+//                        flower_state_ = FALLING;
+//                        org_pos_ = pos;
+//                        time_ = 0;
+//                        triggering_time_ = 0;
+//                    
+//                }
+//                else
                 {
                     flower_state_ = DISAPPEARING;
                     org_pos_ = pos;
@@ -93,6 +96,7 @@ namespace Jungle {
 				pos = org_pos_;
 				flower_state_ = WAITING;
 				time_ = 0;
+                triggering_time_ = 0;
 			}
 			break;
 		case HOLDING:		
@@ -263,6 +267,16 @@ namespace Jungle {
 			else
 			if(flower_state_ == GROWING)
 				time_ = 0;
+            
+            if(falling_)
+            {
+                triggering_time_+=ofGetLastFrameTime();
+                if(triggering_time_ > 0.5)
+                {
+                    flower_state_ = FALLING;
+                }
+            }
+          
 		}
 		else
 		{

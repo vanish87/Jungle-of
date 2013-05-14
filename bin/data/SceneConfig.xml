@@ -10,8 +10,8 @@
 			<ScaleSpeed>0.005</ScaleSpeed>
 			<StayingTime>5</StayingTime>
 			<HoldingTime>0.1</HoldingTime>
-			<CollideSize>70</CollideSize>
-			<CircleSize>70</CircleSize>
+			<CollideSize>150</CollideSize>
+			<CircleSize>150</CircleSize>
 			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
             <ModelColor><R>255</R> <G>255</G> <B>255</B> <A>100</A></ModelColor>
             <FallingEnable>0</FallingEnable>
@@ -25,8 +25,8 @@
 			<ScaleSpeed>0.005</ScaleSpeed>
 			<StayingTime>5</StayingTime>
 			<HoldingTime>0.1</HoldingTime>
-			<CollideSize>70</CollideSize>
-			<CircleSize>70</CircleSize>
+			<CollideSize>150</CollideSize>
+			<CircleSize>150</CircleSize>
 			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
             <ModelColor><R>255</R> <G>255</G> <B>255</B> <A>100</A></ModelColor>
             <FallingEnable>0</FallingEnable>
@@ -40,8 +40,8 @@
 			<ScaleSpeed>0.005</ScaleSpeed>
 			<StayingTime>5</StayingTime>
 			<HoldingTime>0.1</HoldingTime>
-			<CollideSize>70</CollideSize>
-			<CircleSize>70</CircleSize>
+			<CollideSize>150</CollideSize>
+			<CircleSize>150</CircleSize>
 			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
             <ModelColor><R>255</R> <G>255</G> <B>255</B> <A>100</A></ModelColor>
             <FallingEnable>0</FallingEnable>
@@ -55,8 +55,8 @@
 			<ScaleSpeed>0.005</ScaleSpeed>
 			<StayingTime>5</StayingTime>
 			<HoldingTime>0.1</HoldingTime>
-			<CollideSize>70</CollideSize>
-			<CircleSize>70</CircleSize>
+			<CollideSize>150</CollideSize>
+			<CircleSize>150</CircleSize>
 			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
             <ModelColor><R>255</R> <G>255</G> <B>255</B> <A>100</A></ModelColor>
             <FallingEnable>0</FallingEnable>
@@ -70,8 +70,8 @@
 			<ScaleSpeed>0.005</ScaleSpeed>
 			<StayingTime>5</StayingTime>
 			<HoldingTime>0.1</HoldingTime>
-			<CollideSize>70</CollideSize>
-			<CircleSize>70</CircleSize>
+			<CollideSize>150</CollideSize>
+			<CircleSize>150</CircleSize>
 			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
             <ModelColor><R>255</R> <G>255</G> <B>255</B> <A>100</A></ModelColor>
             <FallingEnable>0</FallingEnable>
