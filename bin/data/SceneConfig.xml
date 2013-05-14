@@ -243,7 +243,7 @@
 			<ScaleSpeed>0.001</ScaleSpeed>
 			<StayingTime>12</StayingTime>
 			<HoldingTime>0.2</HoldingTime>
-			<CollideSize>70</CollideSize>
+			<CollideSize>200</CollideSize>
 			<CircleSize>200</CircleSize>
 			<CircleColor><R>255</R> <G>0</G> <B>0</B> <A>255</A></CircleColor> 
             <ModelColor><R>255</R> <G>255</G> <B>255</B> <A>150</A></ModelColor>            
@@ -258,8 +258,8 @@
 			<ScaleSpeed>0.001</ScaleSpeed>
 			<StayingTime>12</StayingTime>
 			<HoldingTime>0.2</HoldingTime>
-			<CollideSize>70</CollideSize>
-			<CircleSize>70</CircleSize>
+			<CollideSize>200</CollideSize>
+			<CircleSize>200</CircleSize>
 			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor> 
             <ModelColor><R>255</R> <G>255</G> <B>255</B> <A>150</A></ModelColor>            
             <FallingEnable>0</FallingEnable>
@@ -273,8 +273,8 @@
 			<ScaleSpeed>0.002</ScaleSpeed>
 			<StayingTime>12</StayingTime>
 			<HoldingTime>0.2</HoldingTime>
-			<CollideSize>70</CollideSize>
-			<CircleSize>70</CircleSize>
+			<CollideSize>200</CollideSize>
+			<CircleSize>200</CircleSize>
 			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor> 
             <ModelColor><R>255</R> <G>255</G> <B>255</B> <A>150</A></ModelColor>            
             <FallingEnable>0</FallingEnable>
@@ -288,7 +288,7 @@
 			<ScaleSpeed>0.001</ScaleSpeed>
 			<StayingTime>12</StayingTime>
 			<HoldingTime>0.2</HoldingTime>
-			<CollideSize>70</CollideSize>
+			<CollideSize>200</CollideSize>
 			<CircleSize>200</CircleSize>
 			<CircleColor><R>255</R> <G>0</G> <B>0</B> <A>255</A></CircleColor> 
             <ModelColor><R>255</R> <G>255</G> <B>255</B> <A>150</A></ModelColor>            
@@ -303,8 +303,8 @@
 			<ScaleSpeed>0.001</ScaleSpeed>
 			<StayingTime>12</StayingTime>
 			<HoldingTime>0.2</HoldingTime>
-			<CollideSize>70</CollideSize>
-			<CircleSize>70</CircleSize>
+			<CollideSize>200</CollideSize>
+			<CircleSize>200</CircleSize>
 			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor> 
             <ModelColor><R>255</R> <G>255</G> <B>255</B> <A>150</A></ModelColor>            
             <FallingEnable>0</FallingEnable>
@@ -318,8 +318,8 @@
 			<ScaleSpeed>0.002</ScaleSpeed>
 			<StayingTime>12</StayingTime>
 			<HoldingTime>0.2</HoldingTime>
-			<CollideSize>70</CollideSize>
-			<CircleSize>70</CircleSize>
+			<CollideSize>200</CollideSize>
+			<CircleSize>200</CircleSize>
 			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor> 
             <ModelColor><R>255</R> <G>255</G> <B>255</B> <A>150</A></ModelColor>            
             <FallingEnable>0</FallingEnable>
@@ -333,8 +333,8 @@
 			<ScaleSpeed>0.001</ScaleSpeed>
 			<StayingTime>12</StayingTime>
 			<HoldingTime>0.2</HoldingTime>
-			<CollideSize>70</CollideSize>
-			<CircleSize>70</CircleSize>
+			<CollideSize>200</CollideSize>
+			<CircleSize>200</CircleSize>
 			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor> 
             <ModelColor><R>255</R> <G>255</G> <B>255</B> <A>150</A></ModelColor>            
             <FallingEnable>0</FallingEnable>
@@ -348,8 +348,8 @@
 			<ScaleSpeed>0.001</ScaleSpeed>
 			<StayingTime>12</StayingTime>
 			<HoldingTime>0.2</HoldingTime>
-			<CollideSize>70</CollideSize>
-			<CircleSize>70</CircleSize>
+			<CollideSize>200</CollideSize>
+			<CircleSize>200</CircleSize>
 			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor> 
             <ModelColor><R>255</R> <G>255</G> <B>255</B> <A>150</A></ModelColor>            
             <FallingEnable>0</FallingEnable>
@@ -363,8 +363,8 @@
 			<ScaleSpeed>0.002</ScaleSpeed>
 			<StayingTime>12</StayingTime>
 			<HoldingTime>0.2</HoldingTime>
-			<CollideSize>70</CollideSize>
-			<CircleSize>70</CircleSize>
+			<CollideSize>200</CollideSize>
+			<CircleSize>200</CircleSize>
 			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor> 
             <ModelColor><R>255</R> <G>255</G> <B>255</B> <A>50</A></ModelColor>            
             <FallingEnable>0</FallingEnable>
@@ -378,8 +378,8 @@
 			<ScaleSpeed>0.001</ScaleSpeed>
 			<StayingTime>12</StayingTime>
 			<HoldingTime>0.2</HoldingTime>
-			<CollideSize>70</CollideSize>
-			<CircleSize>70</CircleSize>
+			<CollideSize>200</CollideSize>
+			<CircleSize>200</CircleSize>
 			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor> 
             <ModelColor><R>255</R> <G>255</G> <B>255</B> <A>150</A></ModelColor>            
             <FallingEnable>0</FallingEnable>
@@ -393,8 +393,8 @@
 			<ScaleSpeed>0.003</ScaleSpeed>
 			<StayingTime>12</StayingTime>
 			<HoldingTime>0.2</HoldingTime>
-			<CollideSize>70</CollideSize>
-			<CircleSize>70</CircleSize>
+			<CollideSize>200</CollideSize>
+			<CircleSize>200</CircleSize>
 			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor> 
             <ModelColor><R>255</R> <G>255</G> <B>255</B> <A>150</A></ModelColor>            
             <FallingEnable>0</FallingEnable>
@@ -408,8 +408,8 @@
 			<ScaleSpeed>0.001</ScaleSpeed>
 			<StayingTime>12</StayingTime>
 			<HoldingTime>0.2</HoldingTime>
-			<CollideSize>70</CollideSize>
-			<CircleSize>70</CircleSize>
+			<CollideSize>200</CollideSize>
+			<CircleSize>200</CircleSize>
 			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor> 
             <ModelColor><R>255</R> <G>255</G> <B>255</B> <A>150</A></ModelColor>            
             <FallingEnable>0</FallingEnable>
@@ -423,8 +423,8 @@
 			<ScaleSpeed>0.005</ScaleSpeed>
 			<StayingTime>12</StayingTime>
 			<HoldingTime>0.2</HoldingTime>
-			<CollideSize>70</CollideSize>
-			<CircleSize>70</CircleSize>
+			<CollideSize>200</CollideSize>
+			<CircleSize>200</CircleSize>
 			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor> 
             <ModelColor><R>255</R> <G>255</G> <B>255</B> <A>150</A></ModelColor>            
             <FallingEnable>0</FallingEnable>
@@ -438,8 +438,8 @@
 			<ScaleSpeed>0.001</ScaleSpeed>
 			<StayingTime>12</StayingTime>
 			<HoldingTime>0.2</HoldingTime>
-			<CollideSize>70</CollideSize>
-			<CircleSize>70</CircleSize>
+			<CollideSize>200</CollideSize>
+			<CircleSize>200</CircleSize>
 			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor> 
             <ModelColor><R>255</R> <G>255</G> <B>255</B> <A>150</A></ModelColor>            
             <FallingEnable>0</FallingEnable>
@@ -453,8 +453,8 @@
 			<ScaleSpeed>0.003</ScaleSpeed>
 			<StayingTime>12</StayingTime>
 			<HoldingTime>0.2</HoldingTime>
-			<CollideSize>70</CollideSize>
-			<CircleSize>70</CircleSize>
+			<CollideSize>200</CollideSize>
+			<CircleSize>200</CircleSize>
 			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor> 
             <ModelColor><R>255</R> <G>255</G> <B>255</B> <A>150</A></ModelColor>            
             <FallingEnable>0</FallingEnable>
@@ -468,8 +468,8 @@
 			<ScaleSpeed>0.003</ScaleSpeed>
 			<StayingTime>12</StayingTime>
 			<HoldingTime>0.2</HoldingTime>
-			<CollideSize>70</CollideSize>
-			<CircleSize>70</CircleSize>
+			<CollideSize>200</CollideSize>
+			<CircleSize>200</CircleSize>
 			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor> 
             <ModelColor><R>255</R> <G>255</G> <B>255</B> <A>150</A></ModelColor>            
             <FallingEnable>0</FallingEnable>
@@ -484,8 +484,8 @@
 			<ScaleSpeed>0.003</ScaleSpeed>
 			<StayingTime>12</StayingTime>
 			<HoldingTime>0.2</HoldingTime>
-			<CollideSize>70</CollideSize>
-			<CircleSize>70</CircleSize>
+			<CollideSize>200</CollideSize>
+			<CircleSize>200</CircleSize>
 			<CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor> 
             <ModelColor><R>255</R> <G>255</G> <B>255</B> <A>150</A></ModelColor>            
             <FallingEnable>0</FallingEnable>

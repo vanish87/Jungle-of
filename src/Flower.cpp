@@ -80,6 +80,7 @@ namespace Jungle {
 //                    
 //                }
 //                else
+                if(!falling_)
                 {
                     flower_state_ = DISAPPEARING;
                     org_pos_ = pos;
@@ -271,8 +272,9 @@ namespace Jungle {
             if(falling_)
             {
                 triggering_time_+=ofGetLastFrameTime();
-                if(triggering_time_ > 0.5)
-                {
+                if(triggering_time_ > 0.5 && flower_state_ == GROWING)
+                {                    
+                    org_pos_ = pos;
                     flower_state_ = FALLING;
                 }
             }
