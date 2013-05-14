@@ -3112,7 +3112,7 @@
     <ObjURL>Environment/SP_Leaf.obj</ObjURL>
     <Position><X>80</X> <Y>238</Y> <Z>10</Z></Position>
     <Rotation>0</Rotation>
-    <MaxScale>0.1</MaxScale>
+    <MaxScale>0.05</MaxScale>
     <ScaleSpeed>0.005</ScaleSpeed>
     <StayingTime>5</StayingTime>
     <HoldingTime>0.1</HoldingTime>
@@ -3127,7 +3127,7 @@
     <ObjURL>Environment/SP_Leaf.obj</ObjURL>
     <Position><X>130</X> <Y>495</Y> <Z>10</Z></Position>
     <Rotation>0</Rotation>
-    <MaxScale>0.1</MaxScale>
+    <MaxScale>0.08</MaxScale>
     <ScaleSpeed>0.005</ScaleSpeed>
     <StayingTime>5</StayingTime>
     <HoldingTime>0.1</HoldingTime>
@@ -3142,7 +3142,7 @@
     <ObjURL>Environment/SP_Leaf.obj</ObjURL>
     <Position><X>207</X> <Y>354</Y> <Z>10</Z></Position>
     <Rotation>0</Rotation>
-    <MaxScale>0.1</MaxScale>
+    <MaxScale>0.07</MaxScale>
     <ScaleSpeed>0.005</ScaleSpeed>
     <StayingTime>5</StayingTime>
     <HoldingTime>0.1</HoldingTime>
@@ -3158,7 +3158,7 @@
     <ObjURL>Environment/SP_Leaf.obj</ObjURL>
     <Position><X>1111</X> <Y>275</Y> <Z>60</Z></Position>
     <Rotation>0</Rotation>
-    <MaxScale>0.1</MaxScale>
+    <MaxScale>0.05</MaxScale>
     <ScaleSpeed>0.005</ScaleSpeed>
     <StayingTime>5</StayingTime>
     <HoldingTime>0.1</HoldingTime>
@@ -3188,7 +3188,7 @@
     <ObjURL>Environment/SP_Leaf.obj</ObjURL>
     <Position><X>1058</X> <Y>404</Y> <Z>60</Z></Position>
     <Rotation>0</Rotation>
-    <MaxScale>0.1</MaxScale>
+    <MaxScale>0.07</MaxScale>
     <ScaleSpeed>0.005</ScaleSpeed>
     <StayingTime>5</StayingTime>
     <HoldingTime>0.1</HoldingTime>
@@ -3218,7 +3218,7 @@
     <ObjURL>Environment/SP_Leaf.obj</ObjURL>
     <Position><X>1005</X> <Y>462</Y> <Z>10</Z></Position>
     <Rotation>0</Rotation>
-    <MaxScale>0.1</MaxScale>
+    <MaxScale>0.05</MaxScale>
     <ScaleSpeed>0.005</ScaleSpeed>
     <StayingTime>5</StayingTime>
     <HoldingTime>0.1</HoldingTime>
@@ -3233,7 +3233,7 @@
     <ObjURL>Environment/SP_Leaf.obj</ObjURL>
     <Position><X>893</X> <Y>343</Y> <Z>10</Z></Position>
     <Rotation>0</Rotation>
-    <MaxScale>0.1</MaxScale>
+    <MaxScale>0.05</MaxScale>
     <ScaleSpeed>0.005</ScaleSpeed>
     <StayingTime>5</StayingTime>
     <HoldingTime>0.1</HoldingTime>
@@ -3248,7 +3248,7 @@
     <ObjURL>Environment/SP_Leaf.obj</ObjURL>
     <Position><X>1007</X> <Y>299</Y> <Z>10</Z></Position>
     <Rotation>0</Rotation>
-    <MaxScale>0.1</MaxScale>
+    <MaxScale>0.08</MaxScale>
     <ScaleSpeed>0.005</ScaleSpeed>
     <StayingTime>5</StayingTime>
     <HoldingTime>0.1</HoldingTime>
@@ -3279,7 +3279,7 @@
     <ObjURL>Environment/SP_Leaf.obj</ObjURL>
     <Position><X>542</X> <Y>479</Y> <Z>10</Z></Position>
     <Rotation>0</Rotation>
-    <MaxScale>0.1</MaxScale>
+    <MaxScale>0.08</MaxScale>
     <ScaleSpeed>0.005</ScaleSpeed>
     <StayingTime>5</StayingTime>
     <HoldingTime>0.1</HoldingTime>
@@ -3294,7 +3294,7 @@
     <ObjURL>Environment/SP_Leaf.obj</ObjURL>
     <Position><X>346</X> <Y>397</Y> <Z>10</Z></Position>
     <Rotation>0</Rotation>
-    <MaxScale>0.1</MaxScale>
+    <MaxScale>0.05</MaxScale>
     <ScaleSpeed>0.005</ScaleSpeed>
     <StayingTime>5</StayingTime>
     <HoldingTime>0.1</HoldingTime>
@@ -3309,7 +3309,7 @@
     <ObjURL>Environment/SP_Leaf.obj</ObjURL>
     <Position><X>496</X> <Y>373</Y> <Z>10</Z></Position>
     <Rotation>0</Rotation>
-    <MaxScale>0.1</MaxScale>
+    <MaxScale>0.08</MaxScale>
     <ScaleSpeed>0.005</ScaleSpeed>
     <StayingTime>5</StayingTime>
     <HoldingTime>0.1</HoldingTime>
@@ -3339,7 +3339,7 @@
     <ObjURL>Environment/SP_Leaf.obj</ObjURL>
     <Position><X>749</X> <Y>391</Y> <Z>10</Z></Position>
     <Rotation>0</Rotation>
-    <MaxScale>0.1</MaxScale>
+    <MaxScale>0.07</MaxScale>
     <ScaleSpeed>0.005</ScaleSpeed>
     <StayingTime>5</StayingTime>
     <HoldingTime>0.1</HoldingTime>
@@ -3354,7 +3354,7 @@
     <ObjURL>Environment/SP_Leaf.obj</ObjURL>
     <Position><X>637</X> <Y>312</Y> <Z>10</Z></Position>
     <Rotation>0</Rotation>
-    <MaxScale>0.1</MaxScale>
+    <MaxScale>0.05</MaxScale>
     <ScaleSpeed>0.005</ScaleSpeed>
     <StayingTime>5</StayingTime>
     <HoldingTime>0.1</HoldingTime>
