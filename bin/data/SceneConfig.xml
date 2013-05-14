@@ -3422,29 +3422,30 @@
 <ColorSet>
    
     <Stage>
-        <Backgroud><R>61</R> <G>157</G> <B>242</B> <A>125</A></Backgroud>
+        <Backgroud_Start><R>61</R> <G>157</G> <B>242</B> <A>125</A></Backgroud_Start>
+		<Backgroud_End><R>61</R> <G>157</G> <B>242</B> <A>125</A></Backgroud_End>
         <Light><R>255</R> <G>163</G> <B>13</B> <A>255</A></Light>
     </Stage>    
        <Stage>
-        <Backgroud><R>75</R> <G>178</G> <B>242</B> <A>125</A></Backgroud>
+        <Backgroud_Start><R>75</R> <G>178</G> <B>242</B> <A>125</A></Backgroud_Start>
+		<Backgroud_End><R>61</R> <G>157</G> <B>242</B> <A>125</A></Backgroud_End>
         <Light><R>242</R> <G>85</G> <B>22</B> <A>255</A></Light>
     </Stage>
     <Stage>
-        <Backgroud><R>107</R> <G>204</G> <B>242</B> <A>125</A></Backgroud>
+        <Backgroud_Start><R>107</R> <G>204</G> <B>242</B> <A>125</A></Backgroud_Start>
+		<Backgroud_End><R>61</R> <G>157</G> <B>242</B> <A>125</A></Backgroud_End>
         <Light><R>201</R> <G>5</G> <B>2</B> <A>255</A></Light>
     </Stage>
     <Stage>
-        <Backgroud><R>95</R> <G>10</G> <B>11</B> <A>125</A></Backgroud>
+        <Backgroud_Start><R>95</R> <G>10</G> <B>11</B> <A>125</A></Backgroud_Start>
+		<Backgroud_End><R>61</R> <G>157</G> <B>242</B> <A>125</A></Backgroud_End>
         <Light><R>255</R> <G>158</G> <B>157</B> <A>255</A></Light>
     </Stage>
     <Stage>
-        <Backgroud><R>153</R> <G>233</G> <B>242</B> <A>125</A></Backgroud>
+        <Backgroud_Start><R>153</R> <G>233</G> <B>242</B> <A>125</A></Backgroud_Start>
+		<Backgroud_End><R>61</R> <G>157</G> <B>242</B> <A>125</A></Backgroud_End>
         <Light><R>102</R> <G>11</G> <B>85</B> <A>255</A></Light>
     </Stage>
-   <Stage>
-      <Backgroud> <R>153</R> <G>233</G> <B>242</B> <A>125</A> </Backgroud>
-      <Light> <R>102</R>  <G>11</G>  <B>85</B>   <A>255</A>  </Light>
-   </Stage>
 </ColorSet>
 <ObjColorSet>
     <Set>

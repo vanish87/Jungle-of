@@ -96,15 +96,22 @@ namespace Jungle
 		{
             file.pushTag("Stage",i);
 			vector<ofColor> stage_color;
-            file.pushTag("Backgroud");
+            file.pushTag("Backgroud_Start");
             ofColor color = ofColor(
                 file.getValue("R",0), file.getValue("G",0), file.getValue("B",0), file.getValue("A",0));
             file.popTag();
+			
+			file.pushTag("Backgroud_End");
+            ofColor ecolor = ofColor(
+				file.getValue("R",0), file.getValue("G",0), file.getValue("B",0), file.getValue("A",0));
+            file.popTag();
+			
             file.pushTag("Light");            
             ofColor lcolor = ofColor(
                 file.getValue("R",0), file.getValue("G",0), file.getValue("B",0), file.getValue("A",0));
             file.popTag();
 			stage_color.push_back(color);
+			stage_color.push_back(ecolor);
             stage_color.push_back(lcolor);
             cout<<(int)lcolor.r<<(int)lcolor.g<<(int)lcolor.b<<(int)lcolor.a<<endl;
             stage_colors_.push_back(stage_color);
