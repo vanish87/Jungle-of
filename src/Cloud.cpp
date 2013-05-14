@@ -161,7 +161,7 @@ namespace Jungle {
 			dpos.y += 20 * ofRandom(-1,1);
 			it->setPosition(dpos.x, dpos.y,dpos.z);
 			it->setRotation(0,180,1,0,0);
-            it->setRotation(1, 45, 0, 0, 1);            
+            it->setRotation(1, 0, 0, 0, 1);
 			it->setScale(0.1, 0.1/1.414,0.1);
 		}
 	}
