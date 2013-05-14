@@ -122,7 +122,8 @@ namespace Jungle {
 
 	void Cloud::InitDroplet()
 	{
-		rain_emitter_.loadFromXml("UI/rain.pex");
+		if(!rain_emitter_.loadFromXml("UI/rain.pex"))
+            cout<<"error"<<endl;
 		rain_emitter_.sourcePositionVariance.x = 100;
 		rain_emitter_.sourcePositionVariance.y = 20;
 		rain_emitter_.sourcePosition.x = pos.x;

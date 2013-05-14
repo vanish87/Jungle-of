@@ -68,14 +68,14 @@
 		BC0ED3AB171B0FAE00FC92BD /* GamingScene6.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BC0ED3A9171B0FAE00FC92BD /* GamingScene6.cpp */; };
 		BC12E0B517398E7D00331963 /* Tree.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BC12E0B317398E7D00331963 /* Tree.cpp */; };
 		BC12E0B81739973C00331963 /* Mushroom.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BC12E0B61739973C00331963 /* Mushroom.cpp */; };
-		BC15384A16F50DA800023C7D /* ofx3DParticleEmitter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BC15384416F50DA800023C7D /* ofx3DParticleEmitter.cpp */; };
 		BC15384B16F50DA800023C7D /* ofxListParticleEmitter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BC15384616F50DA800023C7D /* ofxListParticleEmitter.cpp */; };
-		BC15384C16F50DA800023C7D /* ofxParticleEmitter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BC15384816F50DA800023C7D /* ofxParticleEmitter.cpp */; };
 		BC42777316E4664B00FF4CFE /* GamingScene3.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BC42777116E4664B00FF4CFE /* GamingScene3.cpp */; };
 		BC48739B16DBFAD9009E7B19 /* Flower.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BC48739A16DBFAD9009E7B19 /* Flower.cpp */; };
 		BC4A099117089B0B00DA37DD /* GamingScene1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BC4A098F17089B0B00DA37DD /* GamingScene1.cpp */; };
 		BC4A099717089BBB00DA37DD /* ButterFly.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BC4A099517089BBB00DA37DD /* ButterFly.cpp */; };
 		BC4A09A51708A8E700DA37DD /* WindParticle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BC4A09A31708A8E700DA37DD /* WindParticle.cpp */; };
+		BC52FE9717422A1200D83C09 /* ofx3DParticleEmitter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BC52FE9317422A1200D83C09 /* ofx3DParticleEmitter.cpp */; };
+		BC52FE9817422A1200D83C09 /* ofxParticleEmitter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BC52FE9517422A1200D83C09 /* ofxParticleEmitter.cpp */; };
 		BC67296616ECF672001F7C77 /* GamingScene4.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BC67296416ECF672001F7C77 /* GamingScene4.cpp */; };
 		BC72959C1721C0CF0072FB4A /* CRSpline.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BC72959A1721C0CF0072FB4A /* CRSpline.cpp */; };
 		BC8D7985170E2D0400DB4716 /* Level1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BC8D7983170E2D0400DB4716 /* Level1.cpp */; };
@@ -413,12 +413,8 @@
 		BC12E0B417398E7D00331963 /* Tree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tree.h; sourceTree = "<group>"; };
 		BC12E0B61739973C00331963 /* Mushroom.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Mushroom.cpp; sourceTree = "<group>"; };
 		BC12E0B71739973C00331963 /* Mushroom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Mushroom.h; sourceTree = "<group>"; };
-		BC15384416F50DA800023C7D /* ofx3DParticleEmitter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ofx3DParticleEmitter.cpp; path = ../../../addons/ofxParticleEmitter/src/ofx3DParticleEmitter.cpp; sourceTree = "<group>"; };
-		BC15384516F50DA800023C7D /* ofx3DParticleEmitter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ofx3DParticleEmitter.h; path = ../../../addons/ofxParticleEmitter/src/ofx3DParticleEmitter.h; sourceTree = "<group>"; };
 		BC15384616F50DA800023C7D /* ofxListParticleEmitter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ofxListParticleEmitter.cpp; path = ../../../addons/ofxParticleEmitter/src/ofxListParticleEmitter.cpp; sourceTree = "<group>"; };
 		BC15384716F50DA800023C7D /* ofxListParticleEmitter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ofxListParticleEmitter.h; path = ../../../addons/ofxParticleEmitter/src/ofxListParticleEmitter.h; sourceTree = "<group>"; };
-		BC15384816F50DA800023C7D /* ofxParticleEmitter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ofxParticleEmitter.cpp; path = ../../../addons/ofxParticleEmitter/src/ofxParticleEmitter.cpp; sourceTree = "<group>"; };
-		BC15384916F50DA800023C7D /* ofxParticleEmitter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ofxParticleEmitter.h; path = ../../../addons/ofxParticleEmitter/src/ofxParticleEmitter.h; sourceTree = "<group>"; };
 		BC42777116E4664B00FF4CFE /* GamingScene3.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GamingScene3.cpp; sourceTree = "<group>"; };
 		BC42777216E4664B00FF4CFE /* GamingScene3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GamingScene3.h; sourceTree = "<group>"; };
 		BC48739916DBFACC009E7B19 /* Flower.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Flower.h; sourceTree = "<group>"; };
@@ -429,6 +425,10 @@
 		BC4A099617089BBB00DA37DD /* ButterFly.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ButterFly.h; sourceTree = "<group>"; };
 		BC4A09A31708A8E700DA37DD /* WindParticle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = WindParticle.cpp; sourceTree = "<group>"; };
 		BC4A09A41708A8E700DA37DD /* WindParticle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WindParticle.h; sourceTree = "<group>"; };
+		BC52FE9317422A1200D83C09 /* ofx3DParticleEmitter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ofx3DParticleEmitter.cpp; path = ../../../addons/ofxParticleEmitter/src/ofx3DParticleEmitter.cpp; sourceTree = "<group>"; };
+		BC52FE9417422A1200D83C09 /* ofx3DParticleEmitter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ofx3DParticleEmitter.h; path = ../../../addons/ofxParticleEmitter/src/ofx3DParticleEmitter.h; sourceTree = "<group>"; };
+		BC52FE9517422A1200D83C09 /* ofxParticleEmitter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ofxParticleEmitter.cpp; path = ../../../addons/ofxParticleEmitter/src/ofxParticleEmitter.cpp; sourceTree = "<group>"; };
+		BC52FE9617422A1200D83C09 /* ofxParticleEmitter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ofxParticleEmitter.h; path = ../../../addons/ofxParticleEmitter/src/ofxParticleEmitter.h; sourceTree = "<group>"; };
 		BC67296416ECF672001F7C77 /* GamingScene4.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GamingScene4.cpp; sourceTree = "<group>"; };
 		BC67296516ECF672001F7C77 /* GamingScene4.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GamingScene4.h; sourceTree = "<group>"; };
 		BC72959A1721C0CF0072FB4A /* CRSpline.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CRSpline.cpp; sourceTree = "<group>"; };
@@ -1128,12 +1128,12 @@
 		BC15384316F50D7400023C7D /* ofxParticleEmitter */ = {
 			isa = PBXGroup;
 			children = (
-				BC15384416F50DA800023C7D /* ofx3DParticleEmitter.cpp */,
-				BC15384516F50DA800023C7D /* ofx3DParticleEmitter.h */,
+				BC52FE9317422A1200D83C09 /* ofx3DParticleEmitter.cpp */,
+				BC52FE9417422A1200D83C09 /* ofx3DParticleEmitter.h */,
+				BC52FE9517422A1200D83C09 /* ofxParticleEmitter.cpp */,
+				BC52FE9617422A1200D83C09 /* ofxParticleEmitter.h */,
 				BC15384616F50DA800023C7D /* ofxListParticleEmitter.cpp */,
 				BC15384716F50DA800023C7D /* ofxListParticleEmitter.h */,
-				BC15384816F50DA800023C7D /* ofxParticleEmitter.cpp */,
-				BC15384916F50DA800023C7D /* ofxParticleEmitter.h */,
 			);
 			name = ofxParticleEmitter;
 			sourceTree = "<group>";
@@ -1371,9 +1371,7 @@
 				BCDA581416DFE70100EC5ED9 /* GamingScene2.cpp in Sources */,
 				BC42777316E4664B00FF4CFE /* GamingScene3.cpp in Sources */,
 				BC67296616ECF672001F7C77 /* GamingScene4.cpp in Sources */,
-				BC15384A16F50DA800023C7D /* ofx3DParticleEmitter.cpp in Sources */,
 				BC15384B16F50DA800023C7D /* ofxListParticleEmitter.cpp in Sources */,
-				BC15384C16F50DA800023C7D /* ofxParticleEmitter.cpp in Sources */,
 				BC4A099117089B0B00DA37DD /* GamingScene1.cpp in Sources */,
 				BC4A099717089BBB00DA37DD /* ButterFly.cpp in Sources */,
 				BC4A09A51708A8E700DA37DD /* WindParticle.cpp in Sources */,
@@ -1391,6 +1389,8 @@
 				BC12E0B517398E7D00331963 /* Tree.cpp in Sources */,
 				BC12E0B81739973C00331963 /* Mushroom.cpp in Sources */,
 				BC049B7A174175E300C47396 /* Cloud.cpp in Sources */,
+				BC52FE9717422A1200D83C09 /* ofx3DParticleEmitter.cpp in Sources */,
+				BC52FE9817422A1200D83C09 /* ofxParticleEmitter.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
