@@ -42,7 +42,7 @@ namespace Jungle {
 				flower_state_  = DISAPPEARING;
 				time_ = 0;
 			}
-			if (triggering_time_ > 1)
+			if (triggering_time_ > 0.3)
 			{
 				flower_state_ = FALLING;
 			}
@@ -55,10 +55,10 @@ namespace Jungle {
 			break;
 		case DISAPPEARING:
 			if(scale.x > max_scale_ * 0.3)
-				scale -= scale_speed_;
+				;//scale -= scale_speed_;
 			else
 			{
-				scale = ofVec3f(0, 0, 0);
+				//scale = ofVec3f(0, 0, 0);
 				flower_state_ = WAITING;
 				time_ = 0;
 			}

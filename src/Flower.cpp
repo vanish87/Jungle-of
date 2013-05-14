@@ -80,7 +80,7 @@ namespace Jungle {
 //                    
 //                }
 //                else
-                if(!falling_)
+                //if(!falling_)
                 {
                     flower_state_ = DISAPPEARING;
                     org_pos_ = pos;
@@ -94,7 +94,8 @@ namespace Jungle {
 			else
 			{
 				scale = ofVec3f(0, 0, 0);
-				pos = org_pos_;
+                if(falling_)
+                    pos = org_pos_;
 				flower_state_ = WAITING;
 				time_ = 0;
                 triggering_time_ = 0;
