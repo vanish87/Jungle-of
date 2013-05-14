@@ -3375,22 +3375,22 @@
     <Stage>
         <Backgroud_Start><R>255</R> <G>226</G> <B>158</B> <A>255</A></Backgroud_Start>
         <Backgroud_End><R>4</R> <G>19</G> <B>69</B> <A>255</A></Backgroud_End>
-        <Light><R>255</R> <G>255</G> <B>255</B> <A>255</A></Light>
+        <Light><R>0</R> <G>80</G> <B>180</B> <A>255</A></Light>
     </Stage>    
        <Stage>
            <Backgroud_Start><R>159</R> <G>244</G> <B>225</B> <A>255</A></Backgroud_Start>
         <Backgroud_End><R>5</R> <G>74</G> <B>123</B> <A>255</A></Backgroud_End>
-           <Light><R>255</R> <G>255</G> <B>255</B> <A>255</A></Light>
+           <Light><R>10</R> <G>100</G> <B>180</B> <A>255</A></Light>
     </Stage>
     <Stage>
-        <Backgroud_Start><R>209</R> <G>238</G> <B>253</B> <A>255</A></Backgroud_Start>
-		<Backgroud_End><R>57</R> <G>164</G> <B>232</B> <A>255</A></Backgroud_End>
-        <Light><R>255</R> <G>255</G> <B>255</B> <A>255</A></Light>
+        <Backgroud_Start><R>57</R> <G>164</G> <B>232</B> <A>255</A></Backgroud_Start>
+		<Backgroud_End><R>209</R> <G>238</G> <B>253</B> <A>255</A></Backgroud_End>
+        <Light><R>165</R> <G>180</G> <B>180</B> <A>255</A></Light>
     </Stage>
     <Stage>
-        <Backgroud_Start><R>253</R> <G>186</G> <B>181</B> <A>255</A></Backgroud_Start>
-		<Backgroud_End><R>173</R> <G>220</G> <B>250</B> <A>125</A></Backgroud_End>
-        <Light><R>255</R> <G>255</G> <B>255</B> <A>255</A></Light>
+        <Backgroud_Start><R>173</R> <G>220</G> <B>250</B> <A>255</A></Backgroud_Start>
+		<Backgroud_End><R>253</R> <G>186</G> <B>181</B> <A>255</A></Backgroud_End>
+        <Light><R>200</R> <G>80</G> <B>0</B> <A>255</A></Light>
     </Stage>
     <Stage>
         <Backgroud_Start><R>153</R> <G>233</G> <B>242</B> <A>125</A></Backgroud_Start>
