@@ -18,16 +18,7 @@ namespace Jungle
 		h_ = ofGetWindowHeight();
 		x_ = ofGetWindowPositionX();
 		y_ = ofGetWindowPositionY();
-
-//		no need background
-//		background is Gradient color now
-//		tree_.loadModel("Environment/Tree_Last.obj");
-//		tree_.setPosition(690 , -200, 0);
-//		tree_.setScale(2,2,2);
-//		tree_.setRotation(0, 180, 0, 0, 1);
-//		tree_.Enable(true);
-        
-        
+                
         bg_1_.loadModel("Environment/mountain.obj");
 		bg_1_.setPosition(648,-20,-500);
 		bg_1_.setScale(2,2,2);
@@ -58,9 +49,7 @@ namespace Jungle
 		ground_3_.Enable(true);
         
         model_ = &tree_;
-        
-       
-   
+    
 
         bg_1_.AddToScene();
         
