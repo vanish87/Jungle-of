@@ -3070,7 +3070,7 @@
     <CollideSize>70</CollideSize>
     <CircleSize>70</CircleSize>
     <CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
-    <ModelColor><R>255</R> <G>255</G> <B>255</B> <A>100</A></ModelColor>
+    <ModelColor><R>204</R> <G>17</G> <B>66</B> <A>100</A></ModelColor>
     <FallingEnable>1</FallingEnable>
 	<Pitch>2.0</Pitch>
 </Model>
@@ -3085,7 +3085,7 @@
     <CollideSize>70</CollideSize>
     <CircleSize>70</CircleSize>
     <CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
-    <ModelColor><R>255</R> <G>255</G> <B>255</B> <A>100</A></ModelColor>
+    <ModelColor><R>204</R> <G>17</G> <B>66</B> <A>100</A></ModelColor>
     <FallingEnable>1</FallingEnable>
 	<Pitch>2.0</Pitch>
 </Model>
@@ -3100,7 +3100,7 @@
     <CollideSize>70</CollideSize>
     <CircleSize>70</CircleSize>
     <CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
-    <ModelColor><R>255</R> <G>255</G> <B>255</B> <A>100</A></ModelColor>
+    <ModelColor><R>204</R> <G>17</G> <B>66</B> <A>100</A></ModelColor>
     <FallingEnable>1</FallingEnable>
 	<Pitch>2.0</Pitch>
 </Model>
@@ -3116,7 +3116,7 @@
     <CollideSize>70</CollideSize>
     <CircleSize>70</CircleSize>
     <CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
-    <ModelColor><R>255</R> <G>255</G> <B>255</B> <A>100</A></ModelColor>
+    <ModelColor><R>204</R> <G>17</G> <B>66</B> <A>100</A></ModelColor>
     <FallingEnable>1</FallingEnable>
 	<Pitch>2.0</Pitch>
 </Model>
@@ -3131,7 +3131,7 @@
     <CollideSize>70</CollideSize>
     <CircleSize>70</CircleSize>
     <CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
-    <ModelColor><R>255</R> <G>255</G> <B>255</B> <A>100</A></ModelColor>
+    <ModelColor><R>204</R> <G>17</G> <B>66</B> <A>100</A></ModelColor>
     <FallingEnable>1</FallingEnable>
 	<Pitch>2.0</Pitch>
 </Model>
@@ -3146,7 +3146,7 @@
     <CollideSize>70</CollideSize>
     <CircleSize>70</CircleSize>
     <CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
-    <ModelColor><R>255</R> <G>255</G> <B>255</B> <A>100</A></ModelColor>
+    <ModelColor><R>204</R> <G>17</G> <B>60</B> <A>100</A></ModelColor>
     <FallingEnable>1</FallingEnable>
 	<Pitch>2.0</Pitch>
 </Model>
@@ -3161,7 +3161,7 @@
     <CollideSize>70</CollideSize>
     <CircleSize>70</CircleSize>
     <CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
-    <ModelColor><R>255</R> <G>255</G> <B>255</B> <A>100</A></ModelColor>
+    <ModelColor><R>204</R> <G>17</G> <B>60</B> <A>100</A></ModelColor>
     <FallingEnable>1</FallingEnable>
 	<Pitch>2.0</Pitch>
 </Model>
@@ -3176,7 +3176,7 @@
     <CollideSize>70</CollideSize>
     <CircleSize>70</CircleSize>
     <CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
-    <ModelColor><R>255</R> <G>255</G> <B>255</B> <A>100</A></ModelColor>
+    <ModelColor><R>204</R> <G>17</G> <B>60</B> <A>100</A></ModelColor>
     <FallingEnable>1</FallingEnable>
 	<Pitch>2.0</Pitch>
 </Model>
@@ -3191,7 +3191,7 @@
     <CollideSize>70</CollideSize>
     <CircleSize>70</CircleSize>
     <CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
-    <ModelColor><R>255</R> <G>255</G> <B>255</B> <A>100</A></ModelColor>
+    <ModelColor><R>204</R> <G>17</G> <B>60</B> <A>100</A></ModelColor>
     <FallingEnable>1</FallingEnable>
 	<Pitch>2.0</Pitch>
 </Model>
@@ -3206,7 +3206,7 @@
     <CollideSize>70</CollideSize>
     <CircleSize>70</CircleSize>
     <CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
-    <ModelColor><R>255</R> <G>255</G> <B>255</B> <A>100</A></ModelColor>
+    <ModelColor><R>204</R> <G>17</G> <B>60</B> <A>100</A></ModelColor>
     <FallingEnable>1</FallingEnable>
 	<Pitch>2.0</Pitch>
 </Model>
@@ -3222,7 +3222,7 @@
     <CollideSize>70</CollideSize>
     <CircleSize>70</CircleSize>
     <CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
-    <ModelColor><R>255</R> <G>255</G> <B>255</B> <A>100</A></ModelColor>
+    <ModelColor><R>204</R> <G>17</G> <B>60</B> <A>100</A></ModelColor>
     <FallingEnable>1</FallingEnable>
 	<Pitch>2.0</Pitch>
 </Model>
@@ -3237,7 +3237,7 @@
     <CollideSize>70</CollideSize>
     <CircleSize>70</CircleSize>
     <CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
-    <ModelColor><R>255</R> <G>255</G> <B>255</B> <A>100</A></ModelColor>
+    <ModelColor><R>204</R> <G>17</G> <B>60</B> <A>100</A></ModelColor>
     <FallingEnable>1</FallingEnable>
 	<Pitch>2.0</Pitch>
 </Model>
@@ -3252,7 +3252,7 @@
     <CollideSize>70</CollideSize>
     <CircleSize>70</CircleSize>
     <CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
-    <ModelColor><R>255</R> <G>255</G> <B>255</B> <A>100</A></ModelColor>
+    <ModelColor><R>204</R> <G>17</G> <B>60</B> <A>100</A></ModelColor>
     <FallingEnable>1</FallingEnable>
 	<Pitch>2.0</Pitch>
 </Model>
@@ -3267,7 +3267,7 @@
     <CollideSize>70</CollideSize>
     <CircleSize>70</CircleSize>
     <CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
-    <ModelColor><R>255</R> <G>255</G> <B>255</B> <A>100</A></ModelColor>
+    <ModelColor><R>204</R> <G>17</G> <B>60</B> <A>100</A></ModelColor>
     <FallingEnable>1</FallingEnable>
 	<Pitch>2.0</Pitch>
 </Model>
@@ -3282,7 +3282,7 @@
     <CollideSize>70</CollideSize>
     <CircleSize>70</CircleSize>
     <CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
-    <ModelColor><R>255</R> <G>255</G> <B>255</B> <A>100</A></ModelColor>
+    <ModelColor><R>204</R> <G>17</G> <B>60</B> <A>100</A></ModelColor>
     <FallingEnable>1</FallingEnable>
 	<Pitch>2.0</Pitch>
 </Model>
@@ -3297,7 +3297,7 @@
     <CollideSize>70</CollideSize>
     <CircleSize>70</CircleSize>
     <CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
-    <ModelColor><R>255</R> <G>255</G> <B>255</B> <A>100</A></ModelColor>
+    <ModelColor><R>204</R> <G>17</G> <B>60</B> <A>100</A></ModelColor>
     <FallingEnable>1</FallingEnable>
 	<Pitch>2.0</Pitch>
 </Model>
@@ -3312,7 +3312,7 @@
     <CollideSize>70</CollideSize>
     <CircleSize>70</CircleSize>
     <CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
-    <ModelColor><R>255</R> <G>255</G> <B>255</B> <A>100</A></ModelColor>
+    <ModelColor><R>204</R> <G>17</G> <B>60</B> <A>100</A></ModelColor>
     <FallingEnable>1</FallingEnable>
 	<Pitch>2.0</Pitch>
 </Model>
@@ -3327,7 +3327,7 @@
     <CollideSize>70</CollideSize>
     <CircleSize>70</CircleSize>
     <CircleColor><R>95</R> <G>10</G> <B>11</B> <A>125</A></CircleColor>
-    <ModelColor><R>255</R> <G>255</G> <B>255</B> <A>100</A></ModelColor>
+    <ModelColor><R>204</R> <G>17</G> <B>60</B> <A>100</A></ModelColor>
     <FallingEnable>1</FallingEnable>
 	<Pitch>2.0</Pitch>
 </Model>
