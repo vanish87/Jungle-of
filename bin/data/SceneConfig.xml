@@ -8,7 +8,7 @@
 			<Rotation>0</Rotation>
 			<MaxScale>0.3</MaxScale>
 			<ScaleSpeed>0.005</ScaleSpeed>
-			<StayingTime>5</StayingTime>
+			<StayingTime>10</StayingTime>
 			<HoldingTime>0.1</HoldingTime>
 			<CollideSize>150</CollideSize>
 			<CircleSize>150</CircleSize>
@@ -23,7 +23,7 @@
 			<Rotation>0</Rotation>
 			<MaxScale>0.3</MaxScale>
 			<ScaleSpeed>0.005</ScaleSpeed>
-			<StayingTime>5</StayingTime>
+			<StayingTime>10</StayingTime>
 			<HoldingTime>0.1</HoldingTime>
 			<CollideSize>150</CollideSize>
 			<CircleSize>150</CircleSize>
@@ -38,7 +38,7 @@
 			<Rotation>180</Rotation>
 			<MaxScale>0.27</MaxScale>
 			<ScaleSpeed>0.005</ScaleSpeed>
-			<StayingTime>5</StayingTime>
+			<StayingTime>10</StayingTime>
 			<HoldingTime>0.1</HoldingTime>
 			<CollideSize>150</CollideSize>
 			<CircleSize>150</CircleSize>
@@ -53,7 +53,7 @@
 			<Rotation>180</Rotation>
 			<MaxScale>0.3</MaxScale>
 			<ScaleSpeed>0.005</ScaleSpeed>
-			<StayingTime>5</StayingTime>
+			<StayingTime>10</StayingTime>
 			<HoldingTime>0.1</HoldingTime>
 			<CollideSize>150</CollideSize>
 			<CircleSize>150</CircleSize>
@@ -68,7 +68,7 @@
 			<Rotation>0</Rotation>
 			<MaxScale>0.3</MaxScale>
 			<ScaleSpeed>0.005</ScaleSpeed>
-			<StayingTime>5</StayingTime>
+			<StayingTime>10</StayingTime>
 			<HoldingTime>0.1</HoldingTime>
 			<CollideSize>150</CollideSize>
 			<CircleSize>150</CircleSize>
