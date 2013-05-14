@@ -74,8 +74,6 @@
 		BC4A099117089B0B00DA37DD /* GamingScene1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BC4A098F17089B0B00DA37DD /* GamingScene1.cpp */; };
 		BC4A099717089BBB00DA37DD /* ButterFly.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BC4A099517089BBB00DA37DD /* ButterFly.cpp */; };
 		BC4A09A51708A8E700DA37DD /* WindParticle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BC4A09A31708A8E700DA37DD /* WindParticle.cpp */; };
-		BC52FEA01742BFB900D83C09 /* ofx3DParticleEmitter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BC52FE9C1742BFB900D83C09 /* ofx3DParticleEmitter.cpp */; };
-		BC52FEA11742BFB900D83C09 /* ofxParticleEmitter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BC52FE9E1742BFB900D83C09 /* ofxParticleEmitter.cpp */; };
 		BC67296616ECF672001F7C77 /* GamingScene4.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BC67296416ECF672001F7C77 /* GamingScene4.cpp */; };
 		BC72959C1721C0CF0072FB4A /* CRSpline.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BC72959A1721C0CF0072FB4A /* CRSpline.cpp */; };
 		BC8D7985170E2D0400DB4716 /* Level1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BC8D7983170E2D0400DB4716 /* Level1.cpp */; };
@@ -89,6 +87,8 @@
 		BCAF17E016DAA6630067261D /* State.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BCAF17D916DAA6630067261D /* State.cpp */; };
 		BCAF17E116DAA6630067261D /* StateManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BCAF17DB16DAA6630067261D /* StateManager.cpp */; };
 		BCDA581416DFE70100EC5ED9 /* GamingScene2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BCDA581216DFE70100EC5ED9 /* GamingScene2.cpp */; };
+		CF2599EA1742C6A30033F3EA /* ofx3DParticleEmitter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CF2599E61742C6A30033F3EA /* ofx3DParticleEmitter.cpp */; };
+		CF2599EB1742C6A30033F3EA /* ofxParticleEmitter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CF2599E81742C6A30033F3EA /* ofxParticleEmitter.cpp */; };
 		E4328149138ABC9F0047C5CB /* openFrameworksDebug.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E4328148138ABC890047C5CB /* openFrameworksDebug.a */; };
 		E45BE97B0E8CC7DD009D7055 /* AGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E45BE9710E8CC7DD009D7055 /* AGL.framework */; };
 		E45BE97C0E8CC7DD009D7055 /* ApplicationServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E45BE9720E8CC7DD009D7055 /* ApplicationServices.framework */; };
@@ -425,10 +425,6 @@
 		BC4A099617089BBB00DA37DD /* ButterFly.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ButterFly.h; sourceTree = "<group>"; };
 		BC4A09A31708A8E700DA37DD /* WindParticle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = WindParticle.cpp; sourceTree = "<group>"; };
 		BC4A09A41708A8E700DA37DD /* WindParticle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WindParticle.h; sourceTree = "<group>"; };
-		BC52FE9C1742BFB900D83C09 /* ofx3DParticleEmitter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ofx3DParticleEmitter.cpp; path = ../../../addons/ofxParticleEmitter/src/ofx3DParticleEmitter.cpp; sourceTree = "<group>"; };
-		BC52FE9D1742BFB900D83C09 /* ofx3DParticleEmitter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ofx3DParticleEmitter.h; path = ../../../addons/ofxParticleEmitter/src/ofx3DParticleEmitter.h; sourceTree = "<group>"; };
-		BC52FE9E1742BFB900D83C09 /* ofxParticleEmitter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ofxParticleEmitter.cpp; path = ../../../addons/ofxParticleEmitter/src/ofxParticleEmitter.cpp; sourceTree = "<group>"; };
-		BC52FE9F1742BFB900D83C09 /* ofxParticleEmitter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ofxParticleEmitter.h; path = ../../../addons/ofxParticleEmitter/src/ofxParticleEmitter.h; sourceTree = "<group>"; };
 		BC67296416ECF672001F7C77 /* GamingScene4.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GamingScene4.cpp; sourceTree = "<group>"; };
 		BC67296516ECF672001F7C77 /* GamingScene4.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GamingScene4.h; sourceTree = "<group>"; };
 		BC72959A1721C0CF0072FB4A /* CRSpline.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CRSpline.cpp; sourceTree = "<group>"; };
@@ -455,6 +451,10 @@
 		BCAF17DC16DAA6630067261D /* StateManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StateManager.h; sourceTree = "<group>"; };
 		BCDA581216DFE70100EC5ED9 /* GamingScene2.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GamingScene2.cpp; sourceTree = "<group>"; };
 		BCDA581316DFE70100EC5ED9 /* GamingScene2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GamingScene2.h; sourceTree = "<group>"; };
+		CF2599E61742C6A30033F3EA /* ofx3DParticleEmitter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ofx3DParticleEmitter.cpp; path = ../../../../ofx3DParticleEmitter.cpp; sourceTree = "<group>"; };
+		CF2599E71742C6A30033F3EA /* ofx3DParticleEmitter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ofx3DParticleEmitter.h; path = ../../../../ofx3DParticleEmitter.h; sourceTree = "<group>"; };
+		CF2599E81742C6A30033F3EA /* ofxParticleEmitter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ofxParticleEmitter.cpp; path = ../../../../ofxParticleEmitter.cpp; sourceTree = "<group>"; };
+		CF2599E91742C6A30033F3EA /* ofxParticleEmitter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ofxParticleEmitter.h; path = ../../../../ofxParticleEmitter.h; sourceTree = "<group>"; };
 		E4328143138ABC890047C5CB /* openFrameworksLib.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = openFrameworksLib.xcodeproj; path = ../../../libs/openFrameworksCompiled/project/osx/openFrameworksLib.xcodeproj; sourceTree = SOURCE_ROOT; };
 		E45BE9710E8CC7DD009D7055 /* AGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AGL.framework; path = /System/Library/Frameworks/AGL.framework; sourceTree = "<absolute>"; };
 		E45BE9720E8CC7DD009D7055 /* ApplicationServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ApplicationServices.framework; path = /System/Library/Frameworks/ApplicationServices.framework; sourceTree = "<absolute>"; };
@@ -1128,10 +1128,10 @@
 		BC15384316F50D7400023C7D /* ofxParticleEmitter */ = {
 			isa = PBXGroup;
 			children = (
-				BC52FE9C1742BFB900D83C09 /* ofx3DParticleEmitter.cpp */,
-				BC52FE9D1742BFB900D83C09 /* ofx3DParticleEmitter.h */,
-				BC52FE9E1742BFB900D83C09 /* ofxParticleEmitter.cpp */,
-				BC52FE9F1742BFB900D83C09 /* ofxParticleEmitter.h */,
+				CF2599E61742C6A30033F3EA /* ofx3DParticleEmitter.cpp */,
+				CF2599E71742C6A30033F3EA /* ofx3DParticleEmitter.h */,
+				CF2599E81742C6A30033F3EA /* ofxParticleEmitter.cpp */,
+				CF2599E91742C6A30033F3EA /* ofxParticleEmitter.h */,
 				BC15384616F50DA800023C7D /* ofxListParticleEmitter.cpp */,
 				BC15384716F50DA800023C7D /* ofxListParticleEmitter.h */,
 			);
@@ -1389,8 +1389,8 @@
 				BC12E0B517398E7D00331963 /* Tree.cpp in Sources */,
 				BC12E0B81739973C00331963 /* Mushroom.cpp in Sources */,
 				BC049B7A174175E300C47396 /* Cloud.cpp in Sources */,
-				BC52FEA01742BFB900D83C09 /* ofx3DParticleEmitter.cpp in Sources */,
-				BC52FEA11742BFB900D83C09 /* ofxParticleEmitter.cpp in Sources */,
+				CF2599EA1742C6A30033F3EA /* ofx3DParticleEmitter.cpp in Sources */,
+				CF2599EB1742C6A30033F3EA /* ofxParticleEmitter.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
