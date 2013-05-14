@@ -134,9 +134,7 @@ namespace Jungle
 			time_[0] +=ofGetLastFrameTime();
 			if(time_[0] < 1)
 			{
-				ofColor lcolor = light_.getDiffuseColor();
 				ofColor color = Lerp(stage_color_[0][1], stage_color_[1][1], time_[0]);
-
 				ofColor bcolor = Lerp(stage_color_[0][0], stage_color_[1][0], time_[0]);
 				static_scene->SetBackgroundStart(bcolor);
 
@@ -145,22 +143,6 @@ namespace Jungle
 			}
 			else
 				time_[0] = 1;
-
-			//fruit->leaf
-//			time_[1] -=ofGetLastFrameTime();
-//			if(time_[1] > 0)
-//			{
-//				ofColor lcolor = light_.getDiffuseColor();
-//				ofColor color = Lerp(stage_color_[1][1], stage_color_[2][1], time_[1]);
-//
-//				ofColor bcolor = Lerp(stage_color_[1][0], stage_color_[2][0], time_[1]);
-//				static_scene->SetBackgroundStart(bcolor);
-//
-//				light_.setDiffuseColor(color);
-//				light_.setAmbientColor(color);
-//			}
-//			else				
-//				time_[1] = 0;
 
 			if( scene_mag_.GetTriggeringCount(Group::LEAF) > 80)
 			{
@@ -173,7 +155,6 @@ namespace Jungle
 			time_[1] +=ofGetLastFrameTime();
 			if(time_[1] < 1)
 			{
-				ofColor lcolor = light_.getDiffuseColor();
 				ofColor color = Lerp(stage_color_[1][1], stage_color_[2][1], time_[1]);
 
 				ofColor bcolor = Lerp(stage_color_[1][0], stage_color_[2][0], time_[1]);
@@ -185,31 +166,13 @@ namespace Jungle
 			else
 				time_[1] = 1;
 
-			//mushroom->fruit
-//			time_[2] -=ofGetLastFrameTime();
-//			if(time_[2] > 0)
-//			{
-//				ofColor lcolor = light_.getDiffuseColor();
-//				ofColor color = Lerp(stage_color_[2][1], stage_color_[3][1], time_[2]);
-//
-//				ofColor bcolor = Lerp(stage_color_[2][0], stage_color_[3][0], time_[2]);
-//				static_scene->SetBackgroundStart(bcolor);
-//
-//				light_.setDiffuseColor(color);
-//				light_.setAmbientColor(color);
-//			}
-//			else				
-//				time_[2] = 0;
-
 			if( scene_mag_.GetTriggeringCount(Group::FRUIT) > 4)
 			{
 				current_stage_ = MUSHROOM;
 				JungleApp::SceneManagerInstance().Enable(Group::MUSHROOM,true);
-				JungleApp::SceneManagerInstance().Enable(Group::CLOUD,  true);
 			}
 			else
 			{
-				JungleApp::SceneManagerInstance().Enable(Group::MUSHROOM,false);
 				if( scene_mag_.GetTriggeringCount(Group::LEAF) < 80)
 				{
 					JungleApp::SceneManagerInstance().Enable(Group::FRUIT,false);
@@ -221,7 +184,6 @@ namespace Jungle
 			time_[2] +=ofGetLastFrameTime();
 			if(time_[2] < 1)
 			{
-				ofColor lcolor = light_.getDiffuseColor();
 				ofColor color = Lerp(stage_color_[2][1], stage_color_[3][1], time_[2]);
 
 				ofColor bcolor = Lerp(stage_color_[2][0], stage_color_[3][0], time_[2]);
@@ -233,18 +195,38 @@ namespace Jungle
 			else
 				time_[2] = 1;
 
+			if(scene_mag_.GetTriggeringCount(Group::MUSHROOM) > 10)
+			{
+				scene_mag_.Enable(Group::CLOUD,true);
+				current_stage_ = CLOUD;
+			}
+			else
 			if( scene_mag_.GetTriggeringCount(Group::FRUIT) < 4)
 			{
 				current_stage_ = FRUIT;
 				JungleApp::SceneManagerInstance().Enable(Group::MUSHROOM,false);
-			}
-            if(scene_mag_.GetTriggeringCount(Group::MUSHROOM) > 10)
-            {
-                current_stage_ = CLOUD;
-            }
+			}           
 			break;                
         case Jungle::Level1::CLOUD:
-                
+			time_[3] +=ofGetLastFrameTime();
+			if(time_[3] < 1)
+			{
+				ofColor color = Lerp(stage_color_[3][1], stage_color_[4][1], time_[3]);
+
+				ofColor bcolor = Lerp(stage_color_[3][0], stage_color_[4][0], time_[3]);
+				static_scene->SetBackgroundStart(bcolor);
+
+				light_.setDiffuseColor(color);
+				light_.setAmbientColor(color);
+			}
+			else
+				time_[3] = 1;
+
+			if(scene_mag_.GetTriggeringCount(Group::MUSHROOM) < 10)
+			{
+				scene_mag_.Enable(Group::CLOUD,false);
+				current_stage_ = MUSHROOM;
+			}
             break;
 		default:
 			break;
@@ -354,7 +336,17 @@ namespace Jungle
 		SceneType &scene = JungleApp::SceneManagerInstance().GetDynamicObj();
 		for(SceneType::iterator it = scene.begin(); it!= scene.end(); ++it)
 		{
-            it->Draw();
+			if (it->GetType() != Group::CLOUD)
+			{
+				it->Draw();
+			}
+		}
+		for(SceneType::iterator it = scene.begin(); it!= scene.end(); ++it)
+		{
+			if (it->GetType() == Group::CLOUD)
+			{
+				it->Draw();
+			}
 		}
 		ofPopMatrix();
 

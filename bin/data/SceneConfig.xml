@@ -8,7 +8,7 @@
 			<Rotation>0</Rotation>
 			<MaxScale>0.3</MaxScale>
 			<ScaleSpeed>0.005</ScaleSpeed>
-			<StayingTime>20</StayingTime>
+			<StayingTime>5</StayingTime>
 			<HoldingTime>0.1</HoldingTime>
 			<CollideSize>70</CollideSize>
 			<CircleSize>70</CircleSize>
@@ -23,7 +23,7 @@
 			<Rotation>0</Rotation>
 			<MaxScale>0.3</MaxScale>
 			<ScaleSpeed>0.005</ScaleSpeed>
-			<StayingTime>20</StayingTime>
+			<StayingTime>5</StayingTime>
 			<HoldingTime>0.1</HoldingTime>
 			<CollideSize>70</CollideSize>
 			<CircleSize>70</CircleSize>
@@ -38,7 +38,7 @@
 			<Rotation>180</Rotation>
 			<MaxScale>0.27</MaxScale>
 			<ScaleSpeed>0.005</ScaleSpeed>
-			<StayingTime>20</StayingTime>
+			<StayingTime>5</StayingTime>
 			<HoldingTime>0.1</HoldingTime>
 			<CollideSize>70</CollideSize>
 			<CircleSize>70</CircleSize>
@@ -53,7 +53,7 @@
 			<Rotation>180</Rotation>
 			<MaxScale>0.3</MaxScale>
 			<ScaleSpeed>0.005</ScaleSpeed>
-			<StayingTime>20</StayingTime>
+			<StayingTime>5</StayingTime>
 			<HoldingTime>0.1</HoldingTime>
 			<CollideSize>70</CollideSize>
 			<CircleSize>70</CircleSize>
@@ -68,7 +68,7 @@
 			<Rotation>0</Rotation>
 			<MaxScale>0.3</MaxScale>
 			<ScaleSpeed>0.005</ScaleSpeed>
-			<StayingTime>20</StayingTime>
+			<StayingTime>5</StayingTime>
 			<HoldingTime>0.1</HoldingTime>
 			<CollideSize>70</CollideSize>
 			<CircleSize>70</CircleSize>
@@ -3437,6 +3437,14 @@
         <Backgroud><R>153</R> <G>233</G> <B>242</B> <A>125</A></Backgroud>
         <Light><R>102</R> <G>11</G> <B>85</B> <A>255</A></Light>
     </Stage>
+    <Stage>
+        <Backgroud><R>153</R> <G>233</G> <B>242</B> <A>125</A></Backgroud>
+        <Light><R>102</R> <G>11</G> <B>85</B> <A>255</A></Light>
+    </Stage>
+   <Stage>
+      <Backgroud> <R>153</R> <G>233</G> <B>242</B> <A>125</A> </Backgroud>
+      <Light> <R>102</R>  <G>11</G>  <B>85</B>   <A>255</A>  </Light>
+   </Stage>
 </ColorSet>
 <ObjColorSet>
     <Set>

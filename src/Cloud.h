@@ -3,6 +3,7 @@
 
 #pragma once
 #include "Flower.h"
+#include "ofx3DParticleEmitter.h"
 
 namespace Jungle {
     class Cloud : public Flower
@@ -20,12 +21,8 @@ namespace Jungle {
         void UpdateRain();
 
 	public:
-
-		bool rain_;
-		float max_time_;
-		vector<SceneModel> droplet_;
-        vector<ofVec3f> droplet_pos_;
-        vector<float> speed_;
+		ofx3DParticleEmitter rain_emitter_;
+		float triggering_time_;
         
     };
 }

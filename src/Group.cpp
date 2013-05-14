@@ -17,6 +17,13 @@ namespace Jungle
 	void Group::Enable( bool enable )
 	{
 		enable_ = enable;
+		if(type_ == CLOUD)
+		{
+			for(vector<Flower*>::iterator it = models_.begin(); it !=models_.end(); ++it)
+			{
+				(*it)->Triggering(false);
+			}
+		}
 	}
 
 	void Group::Update( float frame_time )
