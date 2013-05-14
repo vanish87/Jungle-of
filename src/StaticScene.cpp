@@ -73,20 +73,18 @@ namespace Jungle
 
 	void StaticScene::Draw()
 	{
-		ofSetColor(255, 255, 255);
-        //set background here
-        ofBackground(14, 28, 54);
+		ofSetColor(255, 255, 255, 255);
 		//set background Gradient here
         ofBackgroundGradient(back_color_start_, back_color_end_,OF_GRADIENT_LINEAR);
 		//ofBackgroundGradient(ofColor(230,0,0),ofColor(14,28,54), OF_GRADIENT_LINEAR);
 
-		glEnable(GL_DEPTH_TEST);
+		//glEnable(GL_DEPTH_TEST);
 
 		ofPushMatrix();				
 		JungleApp::SceneManagerInstance().Draw();
 		ofPopMatrix();
 
-		glDisable(GL_DEPTH_TEST);
+		//glDisable(GL_DEPTH_TEST);
                
 	}
 

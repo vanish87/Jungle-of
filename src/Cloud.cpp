@@ -108,11 +108,11 @@ namespace Jungle {
 				drawFaces();
 				break;
 			case FALLING:
-				drawFaces();
 				ofDisableLighting();
 				ofEnableAlphaBlending();
 				rain_emitter_.draw(0,0);
 				ofEnableLighting();
+                drawFaces();
 				break;
 			case HOLDING:
 				break;
