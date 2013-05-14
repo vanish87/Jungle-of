@@ -9,7 +9,7 @@
 <angle value="90.00"></angle>
 <angleVariance value="30.00"></angleVariance>
 
-<gravity x="0.00" y="-434.21"></gravity>
+<gravity x="0.00" y="-334.21"></gravity>
 <radialAcceleration value="0.00"></radialAcceleration>
 <radialAccelVariance value="0.00"></radialAccelVariance>
 <tangentialAcceleration value="0.00"></tangentialAcceleration>
