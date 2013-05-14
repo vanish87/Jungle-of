@@ -95,8 +95,8 @@
       <ScaleSpeed>0.005</ScaleSpeed>
       <StayingTime>60</StayingTime>
       <HoldingTime>0.1</HoldingTime>
-      <CollideSize>150</CollideSize>
-      <CircleSize>150</CircleSize>
+      <CollideSize>200</CollideSize>
+      <CircleSize>200</CircleSize>
       <CircleColor>
         <R>255</R>
         <G>255</G>
@@ -124,8 +124,8 @@
       <ScaleSpeed>0.005</ScaleSpeed>
       <StayingTime>60</StayingTime>
       <HoldingTime>0.1</HoldingTime>
-      <CollideSize>150</CollideSize>
-      <CircleSize>150</CircleSize>
+      <CollideSize>200</CollideSize>
+      <CircleSize>200</CircleSize>
       <CircleColor>
         <R>255</R>
         <G>255</G>
@@ -153,8 +153,8 @@
       <ScaleSpeed>0.005</ScaleSpeed>
       <StayingTime>60</StayingTime>
       <HoldingTime>0.1</HoldingTime>
-      <CollideSize>150</CollideSize>
-      <CircleSize>150</CircleSize>
+      <CollideSize>200</CollideSize>
+      <CircleSize>200</CircleSize>
       <CircleColor>
         <R>255</R>
         <G>255</G>
@@ -182,8 +182,8 @@
       <ScaleSpeed>0.005</ScaleSpeed>
       <StayingTime>60</StayingTime>
       <HoldingTime>0.1</HoldingTime>
-      <CollideSize>150</CollideSize>
-      <CircleSize>150</CircleSize>
+      <CollideSize>200</CollideSize>
+      <CircleSize>200</CircleSize>
       <CircleColor>
         <R>255</R>
         <G>255</G>
@@ -211,8 +211,8 @@
       <ScaleSpeed>0.005</ScaleSpeed>
       <StayingTime>60</StayingTime>
       <HoldingTime>0.1</HoldingTime>
-      <CollideSize>150</CollideSize>
-      <CircleSize>150</CircleSize>
+      <CollideSize>200</CollideSize>
+      <CircleSize>200</CircleSize>
       <CircleColor>
         <R>255</R>
         <G>255</G>
@@ -3393,9 +3393,9 @@
         <Light><R>200</R> <G>100</G> <B>0</B> <A>255</A></Light>
     </Stage>
     <Stage>
-        <Backgroud_Start><R>153</R> <G>233</G> <B>242</B> <A>125</A></Backgroud_Start>
-		<Backgroud_End><R>61</R> <G>157</G> <B>242</B> <A>125</A></Backgroud_End>
-        <Light><R>255</R> <G>255</G> <B>255</B> <A>255</A></Light>
+        <Backgroud_Start><R>231</R> <G>167</G> <B>203</B> <A>125</A></Backgroud_Start>
+		<Backgroud_End><R>27</R> <G>20</G> <B>83</B> <A>125</A></Backgroud_End>
+        <Light><R>5</R> <G>60</G> <B>90</B> <A>255</A></Light>
     </Stage>
 </ColorSet>
 <ObjColorSet>
