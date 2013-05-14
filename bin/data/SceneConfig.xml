@@ -3434,8 +3434,8 @@
         <Light><R>201</R> <G>5</G> <B>2</B> <A>255</A></Light>
     </Stage>
     <Stage>
-        <Backgroud><R>153</R> <G>233</G> <B>242</B> <A>125</A></Backgroud>
-        <Light><R>102</R> <G>11</G> <B>85</B> <A>255</A></Light>
+        <Backgroud><R>95</R> <G>10</G> <B>11</B> <A>125</A></Backgroud>
+        <Light><R>255</R> <G>158</G> <B>157</B> <A>255</A></Light>
     </Stage>
 </ColorSet>
 <ObjColorSet>

@@ -3,8 +3,8 @@
 # Created with Kaydara FBX
 # 
 
-newmtl ground_Color
-map_Kd ground_Color.png
+newmtl groundLayer_2
+map_Kd groundLayer_2.png
 Ka 0.000000 0.000000 0.000000
 Kd 0.800000 0.800000 0.800000
 illum 1
