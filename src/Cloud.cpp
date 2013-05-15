@@ -13,6 +13,7 @@ namespace Jungle {
 	
     Cloud::Cloud(void)
 	{
+		rainning_time_ = 0;
 		triggering_time_ = 0;
 		time_ = 0;
     };
@@ -32,6 +33,7 @@ namespace Jungle {
 		switch (flower_state_)
 		{
 		case GROWING:
+			org_pos_ = pos;
 			if(scale.x < max_scale_)
 			{
 				scale += scale_speed_;
@@ -47,16 +49,13 @@ namespace Jungle {
 				flower_state_ = FALLING;
 			}
 			break;
-		case FALLING:
-			
+		case FALLING:			
 			{
+				rainning_time_+=ofGetLastFrameTime();
 				rain_emitter_.update();
 			}
 			break;
 		case DISAPPEARING:
-			if(scale.x > max_scale_ * 0.3)
-				;//scale -= scale_speed_;
-			else
 			{
 				//scale = ofVec3f(0, 0, 0);
 				flower_state_ = WAITING;
@@ -108,11 +107,12 @@ namespace Jungle {
 				drawFaces();
 				break;
 			case FALLING:
+
+				drawFaces();
 				ofDisableLighting();
 				ofEnableAlphaBlending();
 				rain_emitter_.draw(0,0);
 				ofEnableLighting();
-                drawFaces();
 				break;
 			case HOLDING:
 				break;
@@ -148,6 +148,21 @@ namespace Jungle {
 			}
 			triggering_time_ = 0;
         }
+	}
+
+	bool Cloud::IsGrowing()
+	{
+		if(rainning_time_ > 5)
+			return true;
+		else
+			return false;
+	}
+
+	void Cloud::Reset()
+	{
+		Flower::Reset();
+		triggering_time_ = 0;
+		rainning_time_ = 0;
 	}
 
     

@@ -36,11 +36,13 @@ namespace Jungle {
 
 		virtual bool Collided(ofVec3f pos);
 
-		bool IsGrowing();
+		virtual bool IsGrowing();
 		void SetGrowing();
 
 		virtual void Triggering(bool trigger);
 		void SetDisapp();
+
+		virtual void Reset();
 	public:
         ofColor color_;
         ofColor circle_color_;

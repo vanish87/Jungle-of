@@ -18,6 +18,8 @@ namespace Jungle
 
 		virtual void Triggering( bool trigger );
 
+		virtual void Reset();
+
 	};
 
 }

@@ -301,6 +301,15 @@ namespace Jungle {
 		}
 	}
 
+	void Flower::Reset()
+	{
+		time_ = 0;
+		pos = org_pos_;
+		flower_state_ = WAITING;
+		enable_ = false;
+		setScale(0, 0, 0);
+	}
+
 
 
     

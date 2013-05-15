@@ -47,25 +47,27 @@ namespace Jungle
         unsigned char objcolor = ofRandom(0, obj_colors_.size());        
        for(SceneType::iterator it = dynamic_objects_.begin(); it!= dynamic_objects_.end(); ++it)
 		{
-			if(it->GetType() == Group::TREE)
-           {
-               it->SetColor(obj_colors_[objcolor][0]);
-           }
-           else
-           if(it->GetType() == Group::LEAF)
-           {
-               it->SetColor(obj_colors_[objcolor][1]);
-           }
-           else
-           if(it->GetType() == Group::MUSHROOM)
-           {
-               it->SetColor(obj_colors_[objcolor][2]);
-           }
-           else
-           if(it->GetType() == Group::FRUIT)
-           {
-               it->SetColor(obj_colors_[objcolor][3]);
-           }
+// 			if(it->GetType() == Group::TREE)
+//            {
+//                it->SetColor(obj_colors_[objcolor][0]);
+//            }
+//            else
+//            if(it->GetType() == Group::LEAF)
+//            {
+//                it->SetColor(obj_colors_[objcolor][1]);
+//            }
+//            else
+//            if(it->GetType() == Group::MUSHROOM)
+//            {
+//                it->SetColor(obj_colors_[objcolor][2]);
+//            }
+//            else
+//            if(it->GetType() == Group::FRUIT)
+//            {
+//                it->SetColor(obj_colors_[objcolor][3]);
+//            }
+
+		   it->Reset();
 		}
         
         //cout<<stage_index_[0]<<stage_index_[1]<<stage_index_[2]<<stage_index_[3]<<endl;
@@ -75,6 +77,9 @@ namespace Jungle
 //        swap(stage_index_[1-index],stage_index_[2+index]);
         random_shuffle(stage_index_.begin(), stage_index_.end());
        // cout<<stage_index_[0]<<stage_index_[1]<<stage_index_[2]<<stage_index_[3]<<endl;
+
+
+
         
         
         

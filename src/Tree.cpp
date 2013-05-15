@@ -29,6 +29,7 @@ namespace Jungle
 		switch (flower_state_)
 		{
 		case GROWING:
+			org_pos_ = pos;
 			if(scale.x < max_scale_)
 			{
 				scale += scale_speed_;
@@ -93,6 +94,12 @@ namespace Jungle
 			if(flower_state_ == GROWING)
 					time_ = 0;
 		}
+	}
+
+	void Tree::Reset()
+	{
+		Flower::Reset();
+		setScale(0.4, 0.4, 0.4);
 	}
 
 }

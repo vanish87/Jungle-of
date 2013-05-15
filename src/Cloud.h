@@ -20,9 +20,14 @@ namespace Jungle {
         
         void UpdateRain();
 
+		virtual bool IsGrowing();
+
+		virtual void Reset();
+
 	public:
 		ofx3DParticleEmitter rain_emitter_;
 		float triggering_time_;
+		float rainning_time_;
         
     };
 }

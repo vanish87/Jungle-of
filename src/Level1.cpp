@@ -56,7 +56,7 @@ namespace Jungle
             cout<<"Cannot Load Scene"<<endl;
 			//throw exception("Cannot Load Scene");;
        JungleApp::SceneManagerInstance().Enable(Group::TREE,true);
-        JungleApp::SceneManagerInstance().Reset();
+       // JungleApp::SceneManagerInstance().Reset();
         //JungleApp::SceneManagerInstance().Reset();
         
         stage_color_ = JungleApp::SceneManagerInstance().GetStageColor();
@@ -75,7 +75,7 @@ namespace Jungle
        {
 		   time_.push_back(0.0f);
        }
-
+	   lightning_time_ = 0;
         
 		//circle_.loadImage("Environment/glowing-circle-2.png");
 		w_ = ofGetWindowWidth();
@@ -173,14 +173,6 @@ namespace Jungle
 				current_stage_ = MUSHROOM;
 				JungleApp::SceneManagerInstance().Enable(Group::MUSHROOM,true);
 			}
-			else
-			{
-				if( scene_mag_.GetTriggeringCount(Group::LEAF) < 20)
-				{
-					JungleApp::SceneManagerInstance().Enable(Group::FRUIT,false);
-					current_stage_ = LEAF;
-				}
-			}
 			break;
 		case Jungle::Level1::MUSHROOM:
 			time_[2] +=ofGetLastFrameTime();
@@ -203,12 +195,6 @@ namespace Jungle
 				scene_mag_.Enable(Group::CLOUD,true);
 				current_stage_ = CLOUD;
 			}
-			else
-			if( scene_mag_.GetTriggeringCount(Group::FRUIT) < 2)
-			{
-				current_stage_ = FRUIT;
-				JungleApp::SceneManagerInstance().Enable(Group::MUSHROOM,false);
-			}           
 			break;                
         case Jungle::Level1::CLOUD:
 			time_[3] +=ofGetLastFrameTime();
@@ -226,12 +212,28 @@ namespace Jungle
 			else
 				time_[3] = 2;
 
-			if(scene_mag_.GetTriggeringCount(Group::MUSHROOM) < 2)
+			if(scene_mag_.GetTriggeringCount(Group::CLOUD) > 1)
 			{
-				scene_mag_.Enable(Group::CLOUD,false);
-				current_stage_ = MUSHROOM;
+				current_stage_ = LIGHTING;
 			}
             break;
+		case LIGHTING:
+			
+			if(Lightning())
+			{
+				scene_mag_.Reset();
+
+				current_stage_ = TREE;
+				scene_mag_.Enable(Group::LEAF,false);
+				scene_mag_.Enable(Group::MUSHROOM,false);
+				scene_mag_.Enable(Group::FRUIT,false);
+				scene_mag_.Enable(Group::CLOUD,false);
+				for (int i =0; i < time_.size(); ++i)
+				{
+					time_[i] = 0;
+				}
+			}
+			break;
 		default:
 			break;
 		}
@@ -537,6 +539,22 @@ namespace Jungle
 		light_.setDiffuseColor(stage_color_[0][2]);
 		light_.setAmbientColor(stage_color_[0][2]);
 		current_stage_ = TREE;
+	}
+
+	bool Level1::Lightning()
+	{
+		StaticScene* static_scene = static_cast<StaticScene*>(this->GetParent());
+		static_scene->SetBackground(ofColor(255,255,255,255),ofColor(255,255,255,255));
+		light_.setAmbientColor(ofColor(255,255,255,255));
+		light_.setDiffuseColor(ofColor(255,255,255,255));
+		lightning_time_+=ofGetLastFrameTime();
+		if(lightning_time_>0.3)
+		{
+			lightning_time_ = 0;
+			return true;
+		}
+		else
+			return false;
 	}
 
 }

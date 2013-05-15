@@ -22,7 +22,8 @@ namespace Jungle
 			LEAF,
 			FRUIT,
 			MUSHROOM,
-            CLOUD
+            CLOUD,
+			LIGHTING
 		};
 
 		virtual void Steup();
@@ -47,12 +48,16 @@ namespace Jungle
 
 		virtual void userOut( ofxUser & user );
 
+		bool Lightning();
+
 	private:	
 		ofVec3f start_pos_;
         
         ofLight light_;
         float angle_;
 		vector<float> time_;
+
+		float lightning_time_;
 
 		Stage current_stage_;
         
