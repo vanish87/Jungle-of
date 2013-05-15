@@ -143,7 +143,7 @@ namespace Jungle
 				light_.setAmbientColor(color);
 			}
 			else
-				time_[0] = 1;
+				time_[0] = 2;
 
 			if( scene_mag_.GetTriggeringCount(Group::LEAF) > 80)
 			{
@@ -166,7 +166,7 @@ namespace Jungle
 				light_.setAmbientColor(color);
 			}
 			else
-				time_[1] = 1;
+				time_[1] = 2;
 
 			if( scene_mag_.GetTriggeringCount(Group::FRUIT) > 3)
 			{
@@ -196,7 +196,7 @@ namespace Jungle
 				light_.setAmbientColor(color);
 			}
 			else
-				time_[2] = 1;
+				time_[2] = 2;
 
 			if(scene_mag_.GetTriggeringCount(Group::MUSHROOM) > 3)
 			{
@@ -224,7 +224,7 @@ namespace Jungle
 				light_.setAmbientColor(color);
 			}
 			else
-				time_[3] = 1;
+				time_[3] = 2;
 
 			if(scene_mag_.GetTriggeringCount(Group::MUSHROOM) < 2)
 			{
