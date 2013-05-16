@@ -73,6 +73,7 @@ namespace Jungle
 		//ofImage circle_;
         
         float lightning_count_;
+        ofxAssimpModelLoader lightning_;
 
 		int w_;
 		int h_;

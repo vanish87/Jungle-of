@@ -153,10 +153,14 @@ namespace Jungle {
                 if(rainning_time_ > 5)
                 {
                     //stop rainning
-                    
-                    flower_state_ = GROWING;
-                    triggering_time_ = 0;
-                    rainning_time_ = 0;
+                    //if(sound.getposition()== 1)
+                    {
+                        //stop
+                        //play fade
+                        flower_state_ = GROWING;
+                        triggering_time_ = 0;
+                        rainning_time_ = 0;
+                    }
                 }
 			}
         }

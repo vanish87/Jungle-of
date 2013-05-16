@@ -76,6 +76,10 @@ namespace Jungle
 		   time_.push_back(0.0f);
        }
 	   lightning_time_ = 0;
+       lightning_.loadModel("Environment/Lightning.obj");
+        lightning_.setPosition(500, 500, 0);
+        lightning_.setRotation(0, 180, 1, 0, 0);
+        lightning_.setRotation(1, 180, 0, 1, 0);
         
 		//circle_.loadImage("Environment/glowing-circle-2.png");
 		w_ = ofGetWindowWidth();
@@ -275,6 +279,7 @@ namespace Jungle
         lightning_count_++;
 		if(lightning_time_>5)
 		{
+            //play thunder 
 			lightning_time_ = 0;
             lightning_count_ = 0;
 			return true;
@@ -302,6 +307,7 @@ namespace Jungle
 		//draw mushrooms        
 		ofPushMatrix();
 		SceneType &scene = JungleApp::SceneManagerInstance().GetDynamicObj();
+        lightning_.drawFaces();
 		for(SceneType::iterator it = scene.begin(); it!= scene.end(); ++it)
 		{
 			if (it->GetType() != Group::CLOUD)
@@ -483,6 +489,18 @@ namespace Jungle
 
 	void Level1::userIn( ofxUser & user )
 	{
+        JungleApp::SceneManagerInstance().Reset();
+		SceneManager& scene_mag = JungleApp::SceneManagerInstance();
+        
+        current_stage_ = TREE;
+        scene_mag.Enable(Group::LEAF,false);
+        scene_mag.Enable(Group::MUSHROOM,false);
+        scene_mag.Enable(Group::FRUIT,false);
+        scene_mag.Enable(Group::CLOUD,false);
+        for (int i =0; i < time_.size(); ++i)
+        {
+            time_[i] = 0;
+        }
 
 	}
 
