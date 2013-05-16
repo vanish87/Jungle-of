@@ -24,8 +24,8 @@ namespace Jungle {
 
 		virtual void Reset();
 		
-		ofSoundPlayer rainsound();
-		ofSoundPlayer rainend();
+		ofSoundPlayer rainsound;
+		ofSoundPlayer rainend;
 
 	public:
 		ofx3DParticleEmitter rain_emitter_;
