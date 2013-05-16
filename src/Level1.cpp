@@ -79,9 +79,10 @@ namespace Jungle
        }
 	   lightning_time_ = 0;
        lightning_.loadModel("Environment/Lightning.obj");
-        lightning_.setPosition(500, 500, 0);
-        lightning_.setRotation(0, 180, 1, 0, 0);
-        lightning_.setRotation(1, 180, 0, 1, 0);
+        lightning_.setPosition(800, 0, 0);
+        lightning_.setScale(1.1, 1.2, 1.1);
+//        lightning_.setRotation(0, 180, 1, 0, 0);
+        lightning_.setRotation(0, 180, 0, 1, 0);
         
 		//circle_.loadImage("Environment/glowing-circle-2.png");
 		w_ = ofGetWindowWidth();
@@ -247,15 +248,18 @@ namespace Jungle
 	}
     bool Level1::Lightning()
 	{
+        
+		lightning_time_+=ofGetLastFrameTime();
 		StaticScene* static_scene = static_cast<StaticScene*>(this->GetParent());     
         //cout<<lightning_time_<<endl;
         if ((lightning_time_ > 0.1 && 0.3>lightning_time_)
-            || (1.1 < lightning_time_ && lightning_time_ < 1.2)
+            || (1.1 < lightning_time_ && lightning_time_ < 1.15)
             || (1.5 < lightning_time_ && lightning_time_ < 1.7)
             || 5 <lightning_time_)
         {
             //start lightning
             
+            lightning_.Enable(true);
             static_scene->SetBackground(ofColor(255,255,255,255),ofColor(255,255,255,255));
             light_.setAmbientColor(ofColor(255,255,255,255));
             light_.setDiffuseColor(ofColor(255,255,255,255));
@@ -263,6 +267,7 @@ namespace Jungle
         }
         else
         {
+            lightning_.Enable(false);
             ofColor bcolor = stage_color_[4][0];
             ofColor color = stage_color_[4][1];
             ofColor ecolor = stage_color_[4][2];
@@ -277,7 +282,6 @@ namespace Jungle
             light_.setAmbientColor(ecolor);
             light_.setDiffuseColor(ecolor);
         }
-		lightning_time_+=ofGetLastFrameTime();
         lightning_count_++;
 		if(lightning_time_>5)
 		{
@@ -285,6 +289,7 @@ namespace Jungle
             thunder.play();
 			lightning_time_ = 0;
             lightning_count_ = 0;
+            lightning_.Enable(false);
 			return true;
 		}
 		else
@@ -310,7 +315,6 @@ namespace Jungle
 		//draw mushrooms        
 		ofPushMatrix();
 		SceneType &scene = JungleApp::SceneManagerInstance().GetDynamicObj();
-        lightning_.drawFaces();
 		for(SceneType::iterator it = scene.begin(); it!= scene.end(); ++it)
 		{
 			if (it->GetType() != Group::CLOUD)
@@ -332,7 +336,9 @@ namespace Jungle
 
 		camera.end();
 		ofDisableAlphaBlending();
-
+        
+        if(lightning_.Enabled())
+            lightning_.drawFaces();
         
         ofDisableLighting();
         ofEnableAlphaBlending();   

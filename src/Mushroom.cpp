@@ -92,5 +92,13 @@ namespace Jungle
 					time_ = 0;
 		}
 	}
+    
+    void Mushroom::Reset()
+    {
+        time_ = 0;
+		flower_state_ = WAITING;
+		enable_ = false;
+		setScale(0, 0, 0);
+    }
 
 }

@@ -53,6 +53,7 @@ namespace Jungle {
     void Flower::SetPitch(float pitch)
     {
         pitch_ = pitch;
+        org_pos_ = pos;
     }
     
     void Flower::Update(float frame_time)
