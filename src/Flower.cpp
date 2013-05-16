@@ -139,7 +139,7 @@ namespace Jungle {
 			{
                 //play one of two droping sounds
                 int index = ofRandom(4,6);
-                cout<<time_<<endl;
+                //cout<<time_<<endl;
                 if (!sounds_[index].getIsPlaying() && time_ < 0.3)
                 {
                     sounds_[index].setVolume(0.7);

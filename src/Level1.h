@@ -74,6 +74,8 @@ namespace Jungle
         
         float lightning_count_;
         SceneModel lightning_;
+        
+        bool white_screen_;
 
 		int w_;
 		int h_;

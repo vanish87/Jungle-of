@@ -83,6 +83,7 @@ namespace Jungle
         lightning_.setScale(1.1, 1.2, 1.1);
 //        lightning_.setRotation(0, 180, 1, 0, 0);
         lightning_.setRotation(0, 180, 0, 1, 0);
+        white_screen_ = false;
         
 		//circle_.loadImage("Environment/glowing-circle-2.png");
 		w_ = ofGetWindowWidth();
@@ -254,8 +255,7 @@ namespace Jungle
         //cout<<lightning_time_<<endl;
         if ((lightning_time_ > 0.1 && 0.3>lightning_time_)
             || (1.1 < lightning_time_ && lightning_time_ < 1.15)
-            || (1.5 < lightning_time_ && lightning_time_ < 1.7)
-            || 5 <lightning_time_)
+            || (1.5 < lightning_time_ && lightning_time_ < 1.7))
         {
             //start lightning
             
@@ -282,11 +282,22 @@ namespace Jungle
             light_.setAmbientColor(ecolor);
             light_.setDiffuseColor(ecolor);
         }
+        if(5 <lightning_time_)
+        {            
+            static_scene->SetBackground(ofColor(255,255,255,255),ofColor(255,255,255,255));
+            light_.setAmbientColor(ofColor(255,255,255,255));
+            light_.setDiffuseColor(ofColor(255,255,255,255));
+            if (!thunder.getIsPlaying())
+            {
+                thunder.setVolume(0.75);
+                thunder.play();
+            }
+            white_screen_ = true;
+        }
         lightning_count_++;
-		if(lightning_time_>5)
+		if(lightning_time_>6)
 		{
-			thunder.setVolume(0.75);
-            thunder.play();
+            white_screen_ = false;
 			lightning_time_ = 0;
             lightning_count_ = 0;
             lightning_.Enable(false);
@@ -298,7 +309,11 @@ namespace Jungle
 
 	void Level1::Draw()
 	{
-
+        if(white_screen_)
+        {
+            ofSetColor(255, 255, 255);
+            return;
+        }
 		Player& player = JungleApp::PlayerInstance();
 
 		ofCamera camera = player.GetCamera();
