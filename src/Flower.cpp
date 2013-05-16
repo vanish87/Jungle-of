@@ -108,7 +108,7 @@ namespace Jungle {
 				flower_state_ = GROWING;
 				
                 
-                //playing fruit sound
+
                 if(falling_)
                 {
                     
@@ -275,7 +275,8 @@ namespace Jungle {
             {
                 triggering_time_+=ofGetLastFrameTime();
                 if(triggering_time_ > 0.5 && flower_state_ == GROWING)
-                {                    
+                {
+                    //play fruit
                     org_pos_ = pos;
                     flower_state_ = FALLING;
                 }
