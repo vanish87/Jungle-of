@@ -61,7 +61,7 @@ namespace Jungle
         ground_1_.AddToScene();
         
 		atmo.setVolume(0.5);
-		atmo.loadSound("Audio/jungle-atmos-2.mp3");
+		atmo.loadSound("audio/jungle-atmos-2.mp3");
 		atmo.setLoop(true);
 		atmo.play();
 	}
@@ -69,7 +69,7 @@ namespace Jungle
 	void StaticScene::Update()
 	{
 		JungleApp::SceneManagerInstance().Update();
-        
+        if(!atmo.getIsPlaying()) cout<<"eda"<<endl;
 	}
 
 	void StaticScene::Draw()

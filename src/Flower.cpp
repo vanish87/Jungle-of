@@ -136,6 +136,13 @@ namespace Jungle {
             }
 			else
 			{
+                //play one of two droping sounds
+                int index = ofRandom(4,6);
+                if (!sounds_[index].getIsPlaying() && time_ < 0.5)
+                {
+                    sounds_[index].setVolume(0.7);
+                    sounds_[index].play();
+                }
                 if(time_ > 4)
                 {
                     flower_state_ = DISAPPEARING;
@@ -278,13 +285,7 @@ namespace Jungle {
                 triggering_time_+=ofGetLastFrameTime();
                 if(triggering_time_ > 0.5 && flower_state_ == GROWING)
                 {
-					//play one of two droping sounds
-                    int index = ofRandom(4,6);
-                    if (!sounds_[index].getIsPlaying())
-                    {
-						sounds_[index].setVolume(0.7);
-                        sounds_[index].play();
-                    }
+					
                     org_pos_ = pos;
                     flower_state_ = FALLING;
                 }

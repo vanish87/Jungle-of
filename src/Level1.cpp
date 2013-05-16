@@ -535,6 +535,10 @@ namespace Jungle
         {
             time_[i] = 0;
         }
+        
+        player.l_hand_pos_.set(0, 0);
+        player.r_hand_pos_.set(0, 0);
+        
 	}
 
 	
