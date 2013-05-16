@@ -32,6 +32,8 @@ namespace Jungle {
 		sounds_[1].loadSound("audio/leaves-2.mp3");
 		sounds_[2].loadSound("audio/leaves-3.mp3");
 		sounds_[3].loadSound("audio/leaves-4.mp3");
+		sounds_[4].loadSound("audio/fall-1.mp3");
+		sounds_[5].loadSound("audio/fall-2.mp3");
     };
     Flower::~Flower(void)
     {
@@ -276,7 +278,13 @@ namespace Jungle {
                 triggering_time_+=ofGetLastFrameTime();
                 if(triggering_time_ > 0.5 && flower_state_ == GROWING)
                 {
-                    //play fruit
+					//play one of two droping sounds
+                    int index = ofRandom(4,6);
+                    if (!sounds_[index].getIsPlaying())
+                    {
+						sounds_[index].setVolume(0.7);
+                        sounds_[index].play();
+                    }
                     org_pos_ = pos;
                     flower_state_ = FALLING;
                 }
