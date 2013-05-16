@@ -18,8 +18,8 @@ namespace Jungle {
 		time_ = 0;
         triggering_ = false;
 		
-		rainsound.loadSound("rainloop.mp3");
-		rainend.loadSound("rainloop-end.mp3");
+		rainsound.loadSound("audio/rainloop.mp3");
+		rainend.loadSound("audio/rainloop-end.mp3");
     };
     Cloud::~Cloud(void)
     {

@@ -31,7 +31,7 @@ namespace Jungle
         light_.enable();
         ofBackground(255);
 		
-		thunder.loadSound("thunder.mp3");
+		thunder.loadSound("audio/thunder.mp3");
 
         lightning_count_ = 0;
         max_leaf_ = 0;
