@@ -60,16 +60,17 @@ namespace Jungle
         ground_2_.AddToScene();
         ground_1_.AddToScene();
         
-		atmo.setVolume(0.5);
+		//
 		atmo.loadSound("audio/jungle-atmos-2.mp3");
 		atmo.setLoop(true);
 		atmo.play();
+        
+        //atmo.setVolume(0.5);
 	}
 
 	void StaticScene::Update()
 	{
 		JungleApp::SceneManagerInstance().Update();
-        if(!atmo.getIsPlaying()) cout<<"eda"<<endl;
 	}
 
 	void StaticScene::Draw()

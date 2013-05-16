@@ -133,12 +133,14 @@ namespace Jungle {
             {
                 //pos.x += sin(ofGetElapsedTimef())* ofRandom(-10,10);
 				pos.y-=3;
+                time_ = 0;
             }
 			else
 			{
                 //play one of two droping sounds
                 int index = ofRandom(4,6);
-                if (!sounds_[index].getIsPlaying() && time_ < 0.5)
+                cout<<time_<<endl;
+                if (!sounds_[index].getIsPlaying() && time_ < 0.3)
                 {
                     sounds_[index].setVolume(0.7);
                     sounds_[index].play();
