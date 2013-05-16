@@ -28,10 +28,10 @@ namespace Jungle {
         pitch_ = 1.0f;
         triggering_time_ = 0;
         
-		sounds_[0].loadSound("audio/kalimba-e3-1.mp3");
-		sounds_[1].loadSound("audio/kalimba-e3-2.mp3");
-		sounds_[2].loadSound("audio/kalimba-e3-3.mp3");
-		sounds_[3].loadSound("audio/kalimba-e3-4.mp3");
+		sounds_[0].loadSound("audio/leaves-1.mp3");
+		sounds_[1].loadSound("audio/leaves-2.mp3");
+		sounds_[2].loadSound("audio/leaves-3.mp3");
+		sounds_[3].loadSound("audio/leaves-4.mp3");
     };
     Flower::~Flower(void)
     {

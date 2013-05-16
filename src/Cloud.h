@@ -23,6 +23,9 @@ namespace Jungle {
 		virtual bool IsGrowing();
 
 		virtual void Reset();
+		
+		ofSoundPlayer rainsound();
+		ofSoundPlayer rainend();
 
 	public:
 		ofx3DParticleEmitter rain_emitter_;

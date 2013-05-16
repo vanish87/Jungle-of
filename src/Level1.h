@@ -81,7 +81,7 @@ namespace Jungle
 		int y_;
        
         
-//        ofSoundPlayer trigger1;
+		ofSoundPlayer thunder;
 //        ofSoundPlayer trigger2;
 	};
 }

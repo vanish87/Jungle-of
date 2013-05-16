@@ -30,6 +30,8 @@ namespace Jungle
         ofEnableLighting();
         light_.enable();
         ofBackground(255);
+		
+		thunder.load("thunder.mp3");
 
         lightning_count_ = 0;
         max_leaf_ = 0;
@@ -279,7 +281,8 @@ namespace Jungle
         lightning_count_++;
 		if(lightning_time_>5)
 		{
-            //play thunder 
+			thunder.setVolume(0.75);
+            thunder.play();
 			lightning_time_ = 0;
             lightning_count_ = 0;
 			return true;

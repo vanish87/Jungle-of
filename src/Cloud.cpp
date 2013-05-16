@@ -17,6 +17,9 @@ namespace Jungle {
 		triggering_time_ = 0;
 		time_ = 0;
         triggering_ = false;
+		
+		rainsound.loadsound("rainloop.mp3");
+		rainend.loadsound("rainloop-end.mp3");
     };
     Cloud::~Cloud(void)
     {
@@ -47,7 +50,8 @@ namespace Jungle {
 			}
 			if (triggering_time_ > 0.3)
 			{
-                //start rainning
+				rainloop.setLoop(true);
+                rainloop.play();
 				flower_state_ = FALLING;
 			}
 			break;
@@ -153,10 +157,10 @@ namespace Jungle {
                 if(rainning_time_ > 5)
                 {
                     //stop rainning
-                    //if(sound.getposition()== 1)
+                    if(rainsound.getposition()== 1)
                     {
-                        //stop
-                        //play fade
+                        rainsound.stop();
+                        rainend.play();
                         flower_state_ = GROWING;
                         triggering_time_ = 0;
                         rainning_time_ = 0;
