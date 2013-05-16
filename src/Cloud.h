@@ -28,6 +28,7 @@ namespace Jungle {
 		ofx3DParticleEmitter rain_emitter_;
 		float triggering_time_;
 		float rainning_time_;
+        bool triggering_;
         
     };
 }

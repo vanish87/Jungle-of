@@ -71,6 +71,8 @@ namespace Jungle
 		bool show_title;
 
 		//ofImage circle_;
+        
+        float lightning_count_;
 
 		int w_;
 		int h_;

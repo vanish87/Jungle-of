@@ -16,6 +16,7 @@ namespace Jungle {
 		rainning_time_ = 0;
 		triggering_time_ = 0;
 		time_ = 0;
+        triggering_ = false;
     };
     Cloud::~Cloud(void)
     {
@@ -46,12 +47,14 @@ namespace Jungle {
 			}
 			if (triggering_time_ > 0.3)
 			{
+                //start rainning
 				flower_state_ = FALLING;
 			}
 			break;
 		case FALLING:			
 			{
-				rainning_time_+=ofGetLastFrameTime();
+                
+                rainning_time_+=ofGetLastFrameTime();
 				rain_emitter_.update();
 			}
 			break;
@@ -67,13 +70,10 @@ namespace Jungle {
             {
 				flower_state_ = GROWING;
 				
-                
-                //playing fruit sound
                 if(falling_)
                 {
                     
                 }
-                //playing leaf sound
                 else
                 {                    
                     int index = ofRandom(0,4);
@@ -138,21 +138,33 @@ namespace Jungle {
 			flower_state_ = GROWING;
 		if(trigger)
 		{
-			triggering_time_ += ofGetLastFrameTime();
+            triggering_ = true;
+            triggering_time_ += ofGetLastFrameTime();
 		}
 		else
         {
+            if(triggering_)
+            {
+               rainning_time_ = 0;
+                triggering_ = false;
+            }
 			if (flower_state_ == FALLING)
 			{
-				flower_state_ = GROWING;
+                if(rainning_time_ > 5)
+                {
+                    //stop rainning
+                    
+                    flower_state_ = GROWING;
+                    triggering_time_ = 0;
+                    rainning_time_ = 0;
+                }
 			}
-			triggering_time_ = 0;
         }
 	}
 
 	bool Cloud::IsGrowing()
 	{
-		if(rainning_time_ > 5)
+		if(rainning_time_ > 0)
 			return true;
 		else
 			return false;
