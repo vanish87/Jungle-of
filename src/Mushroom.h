@@ -17,6 +17,8 @@ namespace Jungle
 		virtual bool Collided( ofVec3f pos );
 
 		virtual void Triggering( bool trigger );
+        
+        virtual void Reset();
 
 	};
 
