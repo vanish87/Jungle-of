@@ -157,7 +157,7 @@ namespace Jungle {
                 if(rainning_time_ > 5)
                 {
                     //stop rainning
-                    if(rainsound.getPosition() > 0.95)
+                    if(rainsound.getIsPlaying() && rainsound.getPosition() > 0.95)
                     {
                         rainsound.setLoop(false);
                         rainend.play();
@@ -181,8 +181,11 @@ namespace Jungle {
 	void Cloud::Reset()
 	{
 		Flower::Reset();
-        rainsound.setLoop(false);
-        rainend.play();
+        if(rainsound.getIsPlaying())
+        {
+            rainsound.setLoop(false);
+            rainend.play();
+        }
 		triggering_time_ = 0;
 		rainning_time_ = 0;
 	}

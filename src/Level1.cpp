@@ -221,7 +221,7 @@ namespace Jungle
 			else
 				time_[3] = 2;
 
-			if(scene_mag_.GetTriggeringCount(Group::CLOUD) > 2)
+			if(scene_mag_.GetTriggeringCount(Group::CLOUD) > 3)
 			{
 				current_stage_ = LIGHTING;
 			}
@@ -513,18 +513,18 @@ namespace Jungle
 
 	void Level1::userIn( ofxUser & user )
 	{
-        JungleApp::SceneManagerInstance().Reset();
-		SceneManager& scene_mag = JungleApp::SceneManagerInstance();
-        
-        current_stage_ = TREE;
-        scene_mag.Enable(Group::LEAF,false);
-        scene_mag.Enable(Group::MUSHROOM,false);
-        scene_mag.Enable(Group::FRUIT,false);
-        scene_mag.Enable(Group::CLOUD,false);
-        for (int i =0; i < time_.size(); ++i)
-        {
-            time_[i] = 0;
-        }
+//        JungleApp::SceneManagerInstance().Reset();
+//		SceneManager& scene_mag = JungleApp::SceneManagerInstance();
+//        
+//        current_stage_ = TREE;
+//        scene_mag.Enable(Group::LEAF,false);
+//        scene_mag.Enable(Group::MUSHROOM,false);
+//        scene_mag.Enable(Group::FRUIT,false);
+//        scene_mag.Enable(Group::CLOUD,false);
+//        for (int i =0; i < time_.size(); ++i)
+//        {
+//            time_[i] = 0;
+//        }
 
 	}
 
@@ -535,24 +535,34 @@ namespace Jungle
 
 	void Level1::userOut( ofxUser & user )
 	{
-        Player& player = JungleApp::PlayerInstance();
-        player.detected_ = false;
-
-		JungleApp::SceneManagerInstance().Reset();
-		SceneManager& scene_mag = JungleApp::SceneManagerInstance();
-        
-        current_stage_ = TREE;
-        scene_mag.Enable(Group::LEAF,false);
-        scene_mag.Enable(Group::MUSHROOM,false);
-        scene_mag.Enable(Group::FRUIT,false);
-        scene_mag.Enable(Group::CLOUD,false);
-        for (int i =0; i < time_.size(); ++i)
+        //cout<<"user out"<<endl;
+        //if(user.bones)
         {
-            time_[i] = 0;
+            Player& player = JungleApp::PlayerInstance();
+            player.detected_ = false;
+            
+            player.l_hand_pos_.set(0, 0);
+            player.r_hand_pos_.set(0, 0);
+            
+            if(!player.Detected())
+            {
+                JungleApp::SceneManagerInstance().Reset();
+                SceneManager& scene_mag = JungleApp::SceneManagerInstance();
+                
+                current_stage_ = TREE;
+                scene_mag.Enable(Group::LEAF,false);
+                scene_mag.Enable(Group::MUSHROOM,false);
+                scene_mag.Enable(Group::FRUIT,false);
+                scene_mag.Enable(Group::CLOUD,false);
+                for (int i =0; i < time_.size(); ++i)
+                {
+                    time_[i] = 0;
+                }
+                
+            }
+            
         }
-        
-        player.l_hand_pos_.set(0, 0);
-        player.r_hand_pos_.set(0, 0);
+       
         
 	}
 

@@ -17,7 +17,7 @@ namespace Jungle {
         ~Player(void);
         
         void Update();
-
+        bool Detected();
 		ofCamera& GetCamera();
 		void SetHandPos( ofVec3f pos );
 		ofVec3f GetHandPos();

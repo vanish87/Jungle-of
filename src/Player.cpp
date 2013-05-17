@@ -27,6 +27,19 @@ namespace Jungle
     {
     }
     
+    bool Player::Detected()
+    {
+        ofxUser* user = JungleApp::KinectInstance().users;
+        for(int i =0; i< MAX_USERS; ++i)
+		{
+			if(user[i].isActive&& user[i].bones)
+			{
+                return true;
+            }
+        }
+        return false;
+    }
+    
     void Player::Update()
     {
         ofxUser* user = JungleApp::KinectInstance().users;

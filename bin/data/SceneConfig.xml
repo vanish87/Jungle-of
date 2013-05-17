@@ -95,8 +95,8 @@
       <ScaleSpeed>0.005</ScaleSpeed>
       <StayingTime>60</StayingTime>
       <HoldingTime>0.1</HoldingTime>
-      <CollideSize>200</CollideSize>
-      <CircleSize>200</CircleSize>
+      <CollideSize>450</CollideSize>
+      <CircleSize>450</CircleSize>
       <CircleColor>
         <R>255</R>
         <G>255</G>
@@ -124,8 +124,8 @@
       <ScaleSpeed>0.005</ScaleSpeed>
       <StayingTime>60</StayingTime>
       <HoldingTime>0.1</HoldingTime>
-      <CollideSize>200</CollideSize>
-      <CircleSize>200</CircleSize>
+      <CollideSize>400</CollideSize>
+      <CircleSize>400</CircleSize>
       <CircleColor>
         <R>255</R>
         <G>255</G>
@@ -182,8 +182,8 @@
       <ScaleSpeed>0.005</ScaleSpeed>
       <StayingTime>60</StayingTime>
       <HoldingTime>0.1</HoldingTime>
-      <CollideSize>200</CollideSize>
-      <CircleSize>200</CircleSize>
+      <CollideSize>350</CollideSize>
+      <CircleSize>350</CircleSize>
       <CircleColor>
         <R>255</R>
         <G>255</G>
@@ -211,8 +211,8 @@
       <ScaleSpeed>0.005</ScaleSpeed>
       <StayingTime>60</StayingTime>
       <HoldingTime>0.1</HoldingTime>
-      <CollideSize>200</CollideSize>
-      <CircleSize>200</CircleSize>
+      <CollideSize>450</CollideSize>
+      <CircleSize>450</CircleSize>
       <CircleColor>
         <R>255</R>
         <G>255</G>
